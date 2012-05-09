@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1LaserSensorData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::LaserSensorData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorData" prot="public" virt="non-virtual">SensorData</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1a477a4fe527052a7239448b3ae0f1b7b3" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; RaveVector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;RaveVector&lt;dReal&gt; &gt; positions</definition>
+        <argsstring></argsstring>
+        <name>positions</name>
+        <briefdescription>
+<para>if positions is empty, assume the origin is t.trans for all points </para>        </briefdescription>
+        <detaileddescription>
+<para>world coordinates of the origins of each of the laser points. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="77" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1a9614354446bbb9e9ce699255d3f73b7d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; RaveVector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;RaveVector&lt;dReal&gt; &gt; ranges</definition>
+        <argsstring></argsstring>
+        <name>ranges</name>
+        <briefdescription>
+<para>Range and direction readings in the form of direction*distance. The direction is in world coordinates. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="78" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1afcd165e0f03625c94f88e90aaad98f65" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; intensity</definition>
+        <argsstring></argsstring>
+        <name>intensity</name>
+        <briefdescription>
+<para>Intensity readings. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="79" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="72" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1a27324341bb2e28fa2be2cfd0b7f0e985" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool serialize</definition>
+        <argsstring>(std::ostream &amp;O) const </argsstring>
+        <name>serialize</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a27324341bb2e28fa2be2cfd0b7f0e985">serialize</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>O</declname>
+        </param>
+        <briefdescription>
+<para>Serialize the sensor data to stream in XML format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="81" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2114" bodyend="2118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1411">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+      </node>
+      <node id="1410">
+        <label>LaserSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData"/>
+        <childnode refid="1411" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1414">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1413">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+        <childnode refid="1414" relation="usage">
+          <edgelabel>__trans</edgelabel>
+        </childnode>
+      </node>
+      <node id="1415">
+        <label>vector&lt; dReal &gt;</label>
+      </node>
+      <node id="1417">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+      <node id="1412">
+        <label>LaserSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData"/>
+        <childnode refid="1413" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1415" relation="usage">
+          <edgelabel>intensity</edgelabel>
+        </childnode>
+        <childnode refid="1416" relation="usage">
+          <edgelabel>ranges</edgelabel>
+          <edgelabel>positions</edgelabel>
+        </childnode>
+      </node>
+      <node id="1416">
+        <label>vector&lt; RaveVector&lt; dReal &gt; &gt;</label>
+        <childnode refid="1417" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="70" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="69" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a0503a26959ec94efdab737ce47842afe" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserSensorData</scope><name>__stamp</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a5786ccc78c0aae6ca580507121b3c24a" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserSensorData</scope><name>__trans</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::LaserSensorData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1afcd165e0f03625c94f88e90aaad98f65" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserSensorData</scope><name>intensity</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1a477a4fe527052a7239448b3ae0f1b7b3" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserSensorData</scope><name>positions</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1a9614354446bbb9e9ce699255d3f73b7d" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserSensorData</scope><name>ranges</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1a27324341bb2e28fa2be2cfd0b7f0e985" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::LaserSensorData</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a2ce106fe3cd9771a5b0770339c411829" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::LaserSensorData</scope><name>~SensorData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="installation__linux" kind="page">
+    <compoundname>installation_linux</compoundname>
+    <title>Linuxユーザーのためのインストール方法</title>
+    <detaileddescription>
+<para>最新のソースコードは<ulink url="http://sourceforge.net/projects/openrave">sourceforge</ulink>から入手できます．まずは以下のコマンドを入力しソースコードをダウンロードしてください．</para><para><verbatim>
+svn co https://openrave.svn.sourceforge.net/svnroot/openrave/tags/latest_stable openrave
+</verbatim></para><para>OpenRAVEはqt4でのみ動作します．SoQtまたはOpenRAVEをコンパイルする前に<computeroutput>qt3-dev-tools</computeroutput> や <computeroutput>libqt3-headers</computeroutput> のような，全てのqt3に関連するパッケージを削除してください．</para><para>もし通常の手順にしたがってコンパイルしたのにエラーが発生した場合，それはgccのバージョンが旧い為かもしれません．gccのバージョンはver. 4.1もしくはそれ以上のものを使用してください．あなたのPC環境でのgccのバージョンは<computeroutput>gcc --version</computeroutput>で確認することができます．</para><sect1 id="installation__linux_1ilinux_package">
+<title>必要なパッケージのインストール</title>
+<para>OpenRAVEはいくつかの標準パッケージを使用して開発されています．あなたのPC環境に合わせてパッケージマネージャから必要なパッケージをインストールしてください．</para><sect2 id="installation__linux_1ilinux_ubuntu">
+<title>Ubuntu</title>
+<para><verbatim>
+sudo add-apt-repository ppa:openrave/release
+sudo sh -c &apos;echo &quot;deb-src http://ppa.launchpad.net/openrave/release/ubuntu `lsb_release -cs` main&quot; &gt;&gt; /etc/apt/sources.list.d/openrave-release-`lsb_release -cs`.list&apos;
+sudo apt-get update
+sudo apt-get build-dep openrave
+</verbatim></para></sect2>
+<sect2 id="installation__linux_1ilinux_fedora">
+<title>Fedoraユーザ</title>
+<para>ffmpegのためにlivna yumレポジトリを追加する必要があるかもしれません．必要なパッケージをインストールするには以下のコマンドを実行してください．</para><para><verbatim>
+sudo yum install qt4-devel Coin2-devel glew-devel gsm-devel x264 x264-devel ffmpeg-devel libdc1394-devel libtheora-devel libmp4v2-devel ode-devel boost-devel cmake
+</verbatim></para><para>パッケージマネージャから<bold>soqt-develをインストールする場合には，間違ったバージョンのQtをコンパイルするかもしれませんので注意してください．</bold>もしソースファイルからSoQtをコンパイルする場合には，<computeroutput>QTDIR</computeroutput> と正しいバージョンであることを確認してください．</para></sect2>
+</sect1>
+<sect1 id="installation__linux_1ilinux_libraries">
+<title>旧Linuxに必要なライブラリ</title>
+<para>（パッケージマネージャにない場合のみ，これらのライブラリをソースからインストールしてください．</para><para><itemizedlist>
+<listitem><para><bold></bold> <ulink url="http://www.boost.org/users/download/">boost</ulink></para></listitem><listitem><para><bold></bold> <ulink url="http://www.coin3d.org">Coin3d</ulink></para></listitem><listitem><para><bold></bold> <ulink url="ftp://ftp.coin3d.org/pub/snapshots/SoQt-latest.tar.gz">SoQt</ulink></para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><bold>x86-64ユーザ：</bold> SoQtはSoQtComponent.cppでコンパイルエラーを起こすかもしれません．これを修正するため，<computeroutput>src/Inventor/Qt/SoQtComponent.cppファイルの<computeroutput>unsigned</computeroutput> long key</computeroutput>を<computeroutput>SbDict::Key key</computeroutput>に置換してください．</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="installation__linux_1ilinux_collisionphysics">
+<title>干渉検知と物理シミュレータ</title>
+<para>OpenRAVEは特定の干渉検知器と提携しているわけではありませんが，基本的な機能のために少なくとも１つの干渉検知器を必要とします．ここにOpenRAVEのプラグインをもつ以下のライブラリを紹介します．</para><para><itemizedlist>
+<listitem><para><ulink url="http://www.ode.org">ODE Collision/Physics</ulink> - ver. 0.8-0.10.1が動作検証済みです．ODEは倍精度でコンパイルすることができます．<itemizedlist>
+<listitem><para>0.10.1において<computeroutput>--enable-new-trimesh</computeroutput> のオプションを指定すると不規則にOpenRAVEが動作を停止することが報告されています．このため，その危険性を承知して使用してください．</para></listitem><listitem><para>もしenable-new-trimeshオプションを使用しない場合，奇妙なバグのためにassertsを無効にする（<computeroutput>--disable-asserts）ことが必要です．</computeroutput> </para></listitem><listitem><para>0.10以上のバージョンでx86-64のディストリビューションにインストールする場合，ODEの構成を<computeroutput>--enable-sharedにしてください．</computeroutput> </para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><ulink url="http://www.bulletphysics.com">Bullet Collision</ulink> (v2.74以上) - システムディレクトリにインストールすることが必要です．そうすればOpenRAVEは<computeroutput>pkg-configで見つけることができます．もし<computeroutput>configureの自動ツールを使っている場合，<computeroutput>autogen.shを実行する前に<computeroutput>install-shを削除する必要があります．コマンドラインでは以下のようになります．</computeroutput> Bulletのインストールは<computeroutput>pkg-configで認識されているから，<computeroutput>bullet.pcが必要です．</computeroutput>  </computeroutput> </computeroutput> </computeroutput> PQP</computeroutput>  - ソースコードは内部の<bold>pqpraveプラグインに含まれています．</bold> </para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="installation__linux_1ilinux_python">
+<title>Python</title>
+<para><ulink url="http://openrave.org/ja/main/tutorials/openravepy_beginning.html#openravepy-beginning">openravepy</ulink>を利用するためにOpenRAVEをコンパイルする前に以下のパッケージをインストールしてください．</para><para><verbatim>
+sudo apt-get install libboost-python-dev python python-dev python-numpy python-scipy ipython
+</verbatim></para><para>Pythonパスを設定するために，bashファイルに以下の行を追加してください．</para><para><verbatim>
+export PYTHONPATH=$PYTHONPATH:`openrave-config --python-dir`
+</verbatim></para></sect1>
+<sect1 id="installation__linux_1ilinux_octavematlab">
+<title>Octave/Matlab</title>
+<para><ulink url="http://www.gnu.org/software/octave/">Octave</ulink> と Matlab は共にサポートされています．OpenRAVEのビルドシステムはOctave/Matlabを自動的に検出し，それぞれのmexファイルをコンパイルします．</para><para>Octave ユーザー:<itemizedlist>
+<listitem><para><computeroutput>mkoctfile</computeroutput> があなたの環境パスにあることを確認してください．Octaveをパッケージマネージャからインストールする場合は，<bold>octave headers</bold>パッケージもインストールしてください．</para></listitem><listitem><para>OCTAVE_PATH （デフォルトは <computeroutput>/usr/local/share/openrave/octave）に<computeroutput>$OPENRAVE_INSTALL/share/openrave/octave</computeroutput> を追加してください．</computeroutput> </para></listitem></itemizedlist>
+</para><para>Matlab ユーザー:<itemizedlist>
+<listitem><para><computeroutput>mex</computeroutput> がシステムパスにあることを確認してください．</para></listitem><listitem><para>Matlabのパス（デフォルトは<computeroutput>/usr/local/share/openrave/matlab）に<computeroutput>$OPENRAVE_INSTALL/share/openrave/matlab</computeroutput> を追加してください．</computeroutput> </para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="installation__linux_1ilinux_building">
+<title>OpenRAVEのインストール</title>
+<para>全ての必要なライブラリがインストールされたら，ついにOpenRAVEをインストールです．OpenRAVEのソースファイルをダウンロードしたフォルダに移動し，以下を入力してください．</para><para>このコマンドは全てのファイルをコンパイルします．それが終了した後，それらのファイルをインストールするには次のコマンドを入力してください．</para><para><verbatim>
+make install
+</verbatim></para><para>既にOpenRAVEのシステムインストールがある場合で、そのインストールを保護するために以下のコマンドも実行できます。（symlinkがインストールされない） <verbatim>
+make altinstall
+</verbatim></para><para>異なるインストール先を指定したい場合は，以下のオプションと共にmakeを実行してください．</para><para><verbatim>
+make prefix=/my/new/dir
+</verbatim></para><para>最初のインストールの後，ライブラリが追加された場合，cmakeがキャッシュされたファイルを以下のように削除してください．もしキャッシュファイルが削除されない場合，新しいシステム設定は反映されません．</para><para><verbatim>
+rm build/CMakeCache.txt
+</verbatim></para></sect1>
+<sect1 id="installation__linux_1ilinux_bash">
+<title>Bashシェル</title>
+<para>タブでOpenRAVEプログラムのコマンドを補完したり，bashでの最適なOpenRAVE環境を入れるのに以下のコマンドを<computeroutput>~/</computeroutput>.bashrcファイルにいれてください．</para><para><verbatim>
+source `openrave-config --prefix`/share/openrave/openravebash
+</verbatim> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

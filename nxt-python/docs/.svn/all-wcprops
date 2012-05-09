@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/323/trunk/docs
+END
+nxt_push.1
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/323/trunk/docs/nxt_push.1
+END
+nxt_test.1
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/323/trunk/docs/nxt_test.1
+END
+nxt_filer.1
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/323/trunk/docs/nxt_filer.1
+END
+seealso.url
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/186/trunk/docs/seealso.url
+END

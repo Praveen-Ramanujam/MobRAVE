@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="orshowsensors.cpp-example" kind="example">
+    <compoundname>orshowsensors.cpp</compoundname>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Rosen Diankov</para></simplesect>
+Shows how to toggle sensor power and rendering options</para><para><image type="html" name="showsensors_camera.jpg">Camera Sensor.</image>
+ <image type="latex" name="showsensors_camera.jpg" width="20cm">Camera Sensor.</image>
+</para><para><image type="html" name="showsensors_laser.jpg">Laser Sensor.</image>
+ <image type="latex" name="showsensors_laser.jpg" width="20cm">Laser Sensor.</image>
+</para><para><bold>Full Example Code:</bold> <programlisting><codeline></codeline>
+<codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="openrave-core_8h" kindref="compound">openrave-core.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/thread/thread.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WIN32_LEAN_AND_MEAN</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;winsock2.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>usleep(micro)<sp/>Sleep(micro/1000)</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">OpenRAVE;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opencvsaving_8cpp_1a87e5a6712bd042f3257acfbf82827714" kindref="member">SetViewer</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>viewername)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1af0d19499c5ac95f5e1ac60b29187d7c4" kindref="member">ViewerBasePtr</ref><sp/>viewer<sp/>=<sp/><ref refid="namespaceOpenRAVE_1a75b6125ec62afca70c38afe81f572db1" kindref="member">RaveCreateViewer</ref>(penv,viewername);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_ASSERT(!!viewer);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>attach<sp/>it<sp/>to<sp/>the<sp/>environment:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;AddViewer(viewer);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>finally<sp/>you<sp/>call<sp/>the<sp/>viewer&apos;s<sp/>infinite<sp/>loop<sp/>(this<sp/>is<sp/>why<sp/>you<sp/>need<sp/>a<sp/>separate<sp/>thread):</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showgui<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>viewer-&gt;main(showgui);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ikfastloader_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>argv)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ab89ccf2331c4ee81662f687cedaa1781" kindref="member" tooltip="Explicitly initializes the global OpenRAVE state (optional).">RaveInitialize</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>start<sp/>openrave<sp/>core</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv<sp/>=<sp/><ref refid="namespaceOpenRAVE_1aec9c3dd6a1f2908a1eb84ca59243e00a" kindref="member">RaveCreateEnvironment</ref>();<sp/></highlight><highlight class="comment">//<sp/>create<sp/>the<sp/>main<sp/>environment</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>boost::thread<sp/>thviewer(boost::bind(<ref refid="opencvsaving_8cpp_1a87e5a6712bd042f3257acfbf82827714" kindref="member">SetViewer</ref>,penv,</highlight><highlight class="stringliteral">&quot;qtcoin&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;Load(</highlight><highlight class="stringliteral">&quot;data/testwamcamera.env.xml&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ienablesensor<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>all<sp/>the<sp/>sensors,<sp/>this<sp/>includes<sp/>all<sp/>attached<sp/>robot<sp/>sensors</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;SensorBasePtr&gt;<sp/>sensors;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;GetSensors(sensors);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>isensor<sp/>=<sp/>0;<sp/>isensor<sp/>&lt;<sp/>sensors.size();<sp/>++isensor)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sensors[isensor]-&gt;Configure(isensor<sp/>==<sp/>ienablesensor<sp/>?<sp/>SensorBase::CC_PowerOn<sp/>:<sp/>SensorBase::CC_PowerOff);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sensors[isensor]-&gt;Configure(isensor<sp/>==<sp/>ienablesensor<sp/>?<sp/>SensorBase::CC_RenderDataOn<sp/>:<sp/>SensorBase::CC_RenderDataOff);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ienablesensor<sp/>=<sp/>(ienablesensor+1)%sensors.size();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usleep(5000000);<sp/></highlight><highlight class="comment">//<sp/>5s</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

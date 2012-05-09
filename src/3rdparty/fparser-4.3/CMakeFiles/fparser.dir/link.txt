@@ -1,0 +1,2 @@
+/usr/bin/ar cr libfparser.a  CMakeFiles/fparser.dir/fparser.cc.o
+/usr/bin/ranlib libfparser.a

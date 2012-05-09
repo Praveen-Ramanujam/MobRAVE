@@ -1,0 +1,57 @@
+\hypertarget{classOpenRAVE_1_1KinBody_1_1ManageData}{
+\subsection{ManageData Class Reference}
+\label{classOpenRAVE_1_1KinBody_1_1ManageData}\index{OpenRAVE::KinBody::ManageData@{OpenRAVE::KinBody::ManageData}}
+}
+
+
+Access point of the sensor system that manages the body.  
+
+
+
+
+Inherited by BodyData.
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual XMLReadableConstPtr \hyperlink{classOpenRAVE_1_1KinBody_1_1ManageData_aa6b2b0537af9c4f866af4d490825feb0}{GetData} () const =0
+\item 
+virtual KinBody::LinkPtr \hyperlink{classOpenRAVE_1_1KinBody_1_1ManageData_ad37372e87ef720bad3b3fb5a58b5daf5}{GetOffsetLink} () const =0
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1ManageData_acd2229d4405249dbbbd772c9686409de}{
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1ManageData_acd2229d4405249dbbbd772c9686409de}{IsPresent} () const =0}
+\label{classOpenRAVE_1_1KinBody_1_1ManageData_acd2229d4405249dbbbd772c9686409de}
+
+\begin{DoxyCompactList}\small\item\em true if the object is being updated by the system due to its presence in the real environment \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1ManageData_ad39e678855b8c0b0d294b6d346396462}{
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1ManageData_ad39e678855b8c0b0d294b6d346396462}{IsEnabled} () const =0}
+\label{classOpenRAVE_1_1KinBody_1_1ManageData_ad39e678855b8c0b0d294b6d346396462}
+
+\begin{DoxyCompactList}\small\item\em true if should update openrave body \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1ManageData_ae7bc78361f30bfda0286c8af11392f2d}{
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1ManageData_ae7bc78361f30bfda0286c8af11392f2d}{IsLocked} () const =0}
+\label{classOpenRAVE_1_1KinBody_1_1ManageData_ae7bc78361f30bfda0286c8af11392f2d}
+
+\begin{DoxyCompactList}\small\item\em if true, the vision system should not destroy this object once it stops being present \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1ManageData_a652890825714be86dde479f3283e0978}{
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1ManageData_a652890825714be86dde479f3283e0978}{Lock} (bool bDoLock)=0}
+\label{classOpenRAVE_1_1KinBody_1_1ManageData_a652890825714be86dde479f3283e0978}
+
+\begin{DoxyCompactList}\small\item\em set a lock on a particular body \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Access point of the sensor system that manages the body. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1ManageData_aa6b2b0537af9c4f866af4d490825feb0}{
+\index{OpenRAVE::KinBody::ManageData@{OpenRAVE::KinBody::ManageData}!GetData@{GetData}}
+\index{GetData@{GetData}!OpenRAVE::KinBody::ManageData@{OpenRAVE::KinBody::ManageData}}
+\paragraph[{GetData}]{\setlength{\rightskip}{0pt plus 5cm}virtual XMLReadableConstPtr GetData () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1ManageData_aa6b2b0537af9c4f866af4d490825feb0}
+returns a pointer to the data used to initialize the BODY with AddKinBody. if psize is not NULL, will be filled with the size of the data in bytes This function will be used to restore bodies that were removed \hypertarget{classOpenRAVE_1_1KinBody_1_1ManageData_ad37372e87ef720bad3b3fb5a58b5daf5}{
+\index{OpenRAVE::KinBody::ManageData@{OpenRAVE::KinBody::ManageData}!GetOffsetLink@{GetOffsetLink}}
+\index{GetOffsetLink@{GetOffsetLink}!OpenRAVE::KinBody::ManageData@{OpenRAVE::KinBody::ManageData}}
+\paragraph[{GetOffsetLink}]{\setlength{\rightskip}{0pt plus 5cm}virtual KinBody::LinkPtr GetOffsetLink () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1ManageData_ad37372e87ef720bad3b3fb5a58b5daf5}
+particular link that sensor system is tracking. All transformations describe this link. 

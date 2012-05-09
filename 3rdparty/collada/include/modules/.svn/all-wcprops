@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/include/modules
+END
+daeLIBXMLPlugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/include/modules/daeLIBXMLPlugin.h
+END
+daeSTLDatabase.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/include/modules/daeSTLDatabase.h
+END
+stdErrPlugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/include/modules/stdErrPlugin.h
+END

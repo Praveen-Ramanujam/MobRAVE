@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="FindOpenRAVE.cmake-example" kind="example">
+    <compoundname>FindOpenRAVE.cmake</compoundname>
+    <detaileddescription>
+<para>Allows OpenRAVE installation to be found when using the CMake build system. <programlisting><codeline><highlight class="preprocessor">#<sp/>-<sp/>Find<sp/>Open<sp/>Robotics<sp/>Automation<sp/>Virtual<sp/>Enviornment<sp/>(OpenRAVE)<sp/>Installation</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>http://www.openrave.org</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>OpenRAVE<sp/>provides<sp/>an<sp/>environment<sp/>for<sp/>testing,<sp/>developing,<sp/>and<sp/>deploying<sp/>motion<sp/>planning<sp/>algorithms</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>in<sp/>real-world<sp/>robotics<sp/>applications.<sp/>The<sp/>main<sp/>focus<sp/>is<sp/>on<sp/>simulation<sp/>and<sp/>analysis<sp/>of<sp/>kinematic<sp/>and</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>geometric<sp/>information<sp/>related<sp/>to<sp/>motion<sp/>planning.<sp/>OpenRAVE&apos;s<sp/>stand-alone<sp/>nature<sp/>allows<sp/>is<sp/>to<sp/>be<sp/>easily</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>integrated<sp/>into<sp/>existing<sp/>robotics<sp/>systems.<sp/>An<sp/>important<sp/>target<sp/>application<sp/>is<sp/>industrial<sp/>robotics<sp/>automation.</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#==================================================================================</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>Copyright<sp/>(C)<sp/>2009-2011<sp/>Rosen<sp/>Diankov</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>Distributed<sp/>under<sp/>the<sp/>OSI-approved<sp/>BSD<sp/>License<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>see<sp/>accompanying<sp/>file<sp/>Copyright.txt<sp/>for<sp/>details.</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>This<sp/>software<sp/>is<sp/>distributed<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>See<sp/>the<sp/>License<sp/>for<sp/>more<sp/>information.</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#=============================================================================</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>(To<sp/>distributed<sp/>this<sp/>file<sp/>outside<sp/>of<sp/>CMake,<sp/>substitute<sp/>the<sp/>full</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/><sp/>License<sp/>text<sp/>for<sp/>the<sp/>above<sp/>reference.)</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#==================================================================================</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">set</highlight><highlight class="normal">(_OpenRAVE_PATHS)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(NOT<sp/>OpenRAVE_DIR)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>WIN32<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#<sp/>search<sp/>in<sp/>the<sp/>registry</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(_OpenRAVE_CONFIG_NAME<sp/></highlight><highlight class="stringliteral">&quot;openrave-config.exe&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>get_filename_component(OpenRAVE_VERSION_STRING<sp/></highlight><highlight class="stringliteral">&quot;[HKEY_LOCAL_MACHINE\\SOFTWARE\\OpenRAVE;]&quot;</highlight><highlight class="normal"><sp/>NAME)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>message(STATUS<sp/></highlight><highlight class="stringliteral">&quot;OpenRAVE<sp/>${OpenRAVE_VERSION_STRING}<sp/>found<sp/>in<sp/>registry&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if(<sp/>OpenRAVE_VERSION_STRING<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>get_filename_component(_OpenRAVE_PATH<sp/>&quot;[HKEY_LOCAL_MACHINE\\SOFTWARE\\OpenRAVE\\${OpenRAVE_VERSION_STRING};InstallRoot]</highlight><highlight class="stringliteral">&quot;<sp/>ABSOLUTE)</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>set(_OpenRAVE_PATHS<sp/>${_OpenRAVE_PATHS}<sp/>${_OpenRAVE_PATH})</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>endif(<sp/>OpenRAVE_VERSION_STRING<sp/>)</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/>else(WIN32)</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>set(_OpenRAVE_CONFIG_NAME<sp/>&quot;</highlight><highlight class="normal">openrave-config</highlight><highlight class="stringliteral">&quot;)</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/>endif(WIN32)</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/>#<sp/>search<sp/>for<sp/>the<sp/>config<sp/>path</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/>find_program(_OpenRAVE_CONFIG_EXECUTABLE<sp/>NAMES<sp/>${_OpenRAVE_CONFIG_NAME}<sp/>DOC<sp/>&quot;</highlight><highlight class="normal">openrave<sp/>executable</highlight><highlight class="stringliteral">&quot;)</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/>if(<sp/>_OpenRAVE_CONFIG_EXECUTABLE<sp/>)</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>get_filename_component(_OpenRAVE_PATH<sp/>&quot;</highlight><highlight class="normal">${_OpenRAVE_CONFIG_EXECUTABLE}</highlight><highlight class="stringliteral">&quot;<sp/>PATH)<sp/>#<sp/>bin</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>get_filename_component(_OpenRAVE_PATH<sp/>&quot;</highlight><highlight class="normal">${_OpenRAVE_PATH}</highlight><highlight class="stringliteral">&quot;<sp/>PATH)</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>set(_OpenRAVE_PATHS<sp/>${_OpenRAVE_PATHS}<sp/>${_OpenRAVE_PATH})</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/>endif(<sp/>_OpenRAVE_CONFIG_EXECUTABLE<sp/>)</highlight></codeline>
+<codeline><highlight class="stringliteral">endif(NOT<sp/>OpenRAVE_DIR)</highlight></codeline>
+<codeline><highlight class="stringliteral"></highlight></codeline>
+<codeline><highlight class="stringliteral">find_package(OpenRAVE<sp/>NO_MODULE<sp/>PATHS<sp/>${_OpenRAVE_PATHS})</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

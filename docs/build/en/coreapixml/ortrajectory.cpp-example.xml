@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="ortrajectory.cpp-example" kind="example">
+    <compoundname>ortrajectory.cpp</compoundname>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Rosen Diankov</para></simplesect>
+<image type="html" name="cppexample_ortrajectory.jpg">Robot moving in random configurations.</image>
+ <image type="latex" name="cppexample_ortrajectory.jpg" width="10cm">Robot moving in random configurations.</image>
+</para><para>Shows how to send a cubicaly interpolated trajectory to the robot controller. The actual trajectory consists of two points: the current configuration and the target configuration.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref><sp/>traj<sp/>=<sp/><ref refid="namespaceOpenRAVE_1aa987900651248eee02dc1ce6647dc543" kindref="member" tooltip="Return an empty trajectory instance.">RaveCreateTrajectory</ref>(penv,</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>traj-&gt;Init(probot-&gt;GetActiveConfigurationSpecification());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>probot-&gt;GetActiveDOFValues(q);<sp/></highlight><highlight class="comment">//<sp/>get<sp/>current<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>traj-&gt;Insert(0,q);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>q[0]<sp/>=<sp/>0.5;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>traj-&gt;Insert(1,q);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1_1planningutils_1a164e0c7cc3c0c50d13573f72aa57f2dc" kindref="member" tooltip="retimes the trajectory points consisting of active dofs of the robot">planningutils::RetimeActiveDOFTrajectory</ref>(probot,traj);</highlight></codeline>
+</programlisting></para><para>The demo also adds a collision check at the target point to make sure robot is going to a collision free configuration.</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RobotBase::RobotStateSaver<sp/>saver(probot);<sp/></highlight><highlight class="comment">//<sp/>add<sp/>a<sp/>state<sp/>saver<sp/>so<sp/>robot<sp/>is<sp/>not<sp/>moved<sp/>permenantly</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probot-&gt;SetDOFValues(q);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>penv-&gt;CheckCollision(<ref refid="namespaceOpenRAVE_1ae14278c03739b5661d2542c17ca5db8e" kindref="member">RobotBaseConstPtr</ref>(probot))<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>robot<sp/>in<sp/>collision<sp/>at<sp/>final<sp/>point,<sp/>so<sp/>reject</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting></para><para>In order for the path itself to be collision free, we would have to use planners.</para><para><bold>Full Example Code:</bold> <programlisting><codeline></codeline>
+<codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="openrave-core_8h" kindref="compound">openrave-core.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/thread/thread.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="planningutils_8h" kindref="compound" tooltip="Planning related utilities likes samplers, distance metrics, etc.">openrave/planningutils.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">OpenRAVE;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WIN32_LEAN_AND_MEAN</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>usleep(micro)<sp/>Sleep(micro/1000)</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opencvsaving_8cpp_1a87e5a6712bd042f3257acfbf82827714" kindref="member">SetViewer</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>viewername)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1af0d19499c5ac95f5e1ac60b29187d7c4" kindref="member">ViewerBasePtr</ref><sp/>viewer<sp/>=<sp/><ref refid="namespaceOpenRAVE_1a75b6125ec62afca70c38afe81f572db1" kindref="member">RaveCreateViewer</ref>(penv,viewername);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;AddViewer(viewer);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>viewer-&gt;main(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ikfastloader_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>argv)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>scenefilename<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;data/lab1.env.xml&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>viewername<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;qtcoin&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ab89ccf2331c4ee81662f687cedaa1781" kindref="member" tooltip="Explicitly initializes the global OpenRAVE state (optional).">RaveInitialize</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv<sp/>=<sp/><ref refid="namespaceOpenRAVE_1aec9c3dd6a1f2908a1eb84ca59243e00a" kindref="member">RaveCreateEnvironment</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;SetDebugLevel(<ref refid="namespaceOpenRAVE_1ab658e6d84759440dbf3c890446075395abd3809f60dd27203b26d387b072b090f" kindref="member">Level_Debug</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>boost::thread<sp/>thviewer(boost::bind(<ref refid="opencvsaving_8cpp_1a87e5a6712bd042f3257acfbf82827714" kindref="member">SetViewer</ref>,penv,viewername));<sp/></highlight><highlight class="comment">//<sp/>create<sp/>the<sp/>viewer</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>usleep(300000);<sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>the<sp/>viewer<sp/>to<sp/>init</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;Load(scenefilename);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;RobotBasePtr&gt;<sp/>vrobots;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;GetRobots(vrobots);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>probot<sp/>=<sp/>vrobots.at(0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;dReal&gt;<sp/>q;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EnvironmentMutex::scoped_lock<sp/>lock(penv-&gt;GetMutex());<sp/></highlight><highlight class="comment">//<sp/>lock<sp/>environment</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref><sp/>traj<sp/>=<sp/><ref refid="namespaceOpenRAVE_1aa987900651248eee02dc1ce6647dc543" kindref="member" tooltip="Return an empty trajectory instance.">RaveCreateTrajectory</ref>(penv,</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>traj-&gt;Init(probot-&gt;GetActiveConfigurationSpecification());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probot-&gt;GetActiveDOFValues(q);<sp/></highlight><highlight class="comment">//<sp/>get<sp/>current<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>traj-&gt;Insert(0,q);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q[<ref refid="namespaceOpenRAVE_1a71fdac6520a636ef5daab82808551813" kindref="member">RaveRandomInt</ref>()%probot-&gt;GetDOF()]<sp/>+=<sp/><ref refid="namespaceOpenRAVE_1af106eea57ab2fbb2e632347a3371a813" kindref="member">RaveRandomFloat</ref>()-0.5;<sp/></highlight><highlight class="comment">//<sp/>move<sp/>a<sp/>random<sp/>axis</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>for<sp/>collisions</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RobotBase::RobotStateSaver<sp/>saver(probot);<sp/></highlight><highlight class="comment">//<sp/>add<sp/>a<sp/>state<sp/>saver<sp/>so<sp/>robot<sp/>is<sp/>not<sp/>moved<sp/>permenantly</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probot-&gt;SetDOFValues(q);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>penv-&gt;CheckCollision(<ref refid="namespaceOpenRAVE_1ae14278c03739b5661d2542c17ca5db8e" kindref="member">RobotBaseConstPtr</ref>(probot))<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>robot<sp/>in<sp/>collision<sp/>at<sp/>final<sp/>point,<sp/>so<sp/>reject</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>traj-&gt;Insert(1,q);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1_1planningutils_1a164e0c7cc3c0c50d13573f72aa57f2dc" kindref="member" tooltip="retimes the trajectory points consisting of active dofs of the robot">planningutils::RetimeActiveDOFTrajectory</ref>(traj,probot);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probot-&gt;GetController()-&gt;SetPath(traj);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setting<sp/>through<sp/>the<sp/>robot<sp/>is<sp/>also<sp/>possible:<sp/>probot-&gt;SetMotion(traj);</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>unlock<sp/>the<sp/>environment<sp/>and<sp/>wait<sp/>for<sp/>the<sp/>robot<sp/>to<sp/>finish</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!probot-&gt;GetController()-&gt;IsDone())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usleep(1000);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>thviewer.join();<sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>the<sp/>viewer<sp/>thread<sp/>to<sp/>exit</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;Destroy();<sp/></highlight><highlight class="comment">//<sp/>destroy</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

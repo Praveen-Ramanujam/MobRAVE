@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/grasp/!svn/ver/1182/OpenGRASP/OpenRAVE_Plugins/viewers/qtosgrave/src/cameras
+END
+perspectivecameramanager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/grasp/!svn/ver/1182/OpenGRASP/OpenRAVE_Plugins/viewers/qtosgrave/src/cameras/perspectivecameramanager.cpp
+END
+cameramanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/grasp/!svn/ver/1182/OpenGRASP/OpenRAVE_Plugins/viewers/qtosgrave/src/cameras/cameramanager.h
+END
+orthocameramanager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/grasp/!svn/ver/1182/OpenGRASP/OpenRAVE_Plugins/viewers/qtosgrave/src/cameras/orthocameramanager.cpp
+END
+perspectivecameramanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/grasp/!svn/ver/1182/OpenGRASP/OpenRAVE_Plugins/viewers/qtosgrave/src/cameras/perspectivecameramanager.h
+END
+orthocameramanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/grasp/!svn/ver/1182/OpenGRASP/OpenRAVE_Plugins/viewers/qtosgrave/src/cameras/orthocameramanager.h
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/grasp/!svn/ver/1182/OpenGRASP/OpenRAVE_Plugins/viewers/qtosgrave/src/cameras/SConscript
+END
+cameramanager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/grasp/!svn/ver/1182/OpenGRASP/OpenRAVE_Plugins/viewers/qtosgrave/src/cameras/cameramanager.cpp
+END
+export.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/grasp/!svn/ver/1182/OpenGRASP/OpenRAVE_Plugins/viewers/qtosgrave/src/cameras/export.h
+END

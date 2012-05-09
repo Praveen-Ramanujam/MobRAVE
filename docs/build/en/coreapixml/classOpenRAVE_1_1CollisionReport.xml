@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1CollisionReport" kind="class" prot="public">
+    <compoundname>OpenRAVE::CollisionReport</compoundname>
+    <includes refid="collisionchecker_8h" local="no">collisionchecker.h</includes>
+    <innerclass refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT" prot="public">OpenRAVE::CollisionReport::CONTACT</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionReport_1a849fa981f121eb25a67e4e14392840ba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+<para>the options that the <ref refid="classOpenRAVE_1_1CollisionReport" kindref="compound">CollisionReport</ref> was called with </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="71" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionReport_1a81562e5e77f8d4ee032d8990e5e1741e" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref></type>
+        <definition>KinBody::LinkConstPtr plink1</definition>
+        <argsstring></argsstring>
+        <name>plink1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="73" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionReport_1a66034fcc62ac4142477872950ef70663" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref></type>
+        <definition>KinBody::LinkConstPtr plink2</definition>
+        <argsstring></argsstring>
+        <name>plink2</name>
+        <briefdescription>
+<para>the colliding links if a collision involves a bodies. Collisions do not always occur with 2 bodies like ray collisions, so these fields can be empty. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="73" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionReport_1a2d4acb52d99b57b5b524aaa557ab91eb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int numCols</definition>
+        <argsstring></argsstring>
+        <name>numCols</name>
+        <briefdescription>
+<para>this is the number of objects that collide with the object of interest </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="76" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionReport_1a4d32ef985c209aaaca9a4e61c9855e0b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref> &gt;</type>
+        <definition>std::vector&lt;KinBody::LinkConstPtr&gt; vLinkColliding</definition>
+        <argsstring></argsstring>
+        <name>vLinkColliding</name>
+        <briefdescription>
+<para>objects colliding with this object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="77" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionReport_1a39ecee22e3be662c17e9c9d28215dd66" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal minDistance</definition>
+        <argsstring></argsstring>
+        <name>minDistance</name>
+        <briefdescription>
+<para>minimum distance from last query, filled if CO_Distance option is set </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="79" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionReport_1a04fc6ba3cfd80183ace93d10661cf32f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int numWithinTol</definition>
+        <argsstring></argsstring>
+        <name>numWithinTol</name>
+        <briefdescription>
+<para>number of objects within tolerance of this object, filled if CO_UseTolerance option is set </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="80" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionReport_1afd310727fc8474b0057786fadf2088df" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT" kindref="compound">CONTACT</ref> &gt;</type>
+        <definition>std::vector&lt;CONTACT&gt; contacts</definition>
+        <argsstring></argsstring>
+        <name>contacts</name>
+        <briefdescription>
+<para>the convention is that the normal will be &quot;out&quot; of plink1&apos;s surface. Filled if CO_UseContacts option is set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="82" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1CollisionReport_1aee4dc1859dffe934cc277b4dd0c8637e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CollisionReport</definition>
+        <argsstring>()</argsstring>
+        <name>CollisionReport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="53" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1CollisionReport_1a40e8cbeb2c34e4d900eb2dfe7086a1e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Reset</definition>
+        <argsstring>(int coloptions=0)</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>int</type>
+          <declname>coloptions</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="84" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2012" bodyend="2020"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1CollisionReport_1a197d6a1cee7fe4171230acf60afa0a51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string __str__</definition>
+        <argsstring>() const </argsstring>
+        <name>__str__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="85" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2022" bodyend="2035"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Holds information about a particular collision that occured. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1011">
+        <label>vector&lt; KinBody::LinkConstPtr &gt;</label>
+      </node>
+      <node id="1009">
+        <label>CONTACT</label>
+        <link refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT"/>
+        <childnode refid="1010" relation="usage">
+          <edgelabel>norm</edgelabel>
+          <edgelabel>pos</edgelabel>
+        </childnode>
+      </node>
+      <node id="1008">
+        <label>vector&lt; CONTACT &gt;</label>
+        <childnode refid="1009" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1010">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+      <node id="1007">
+        <label>CollisionReport</label>
+        <link refid="classOpenRAVE_1_1CollisionReport"/>
+        <childnode refid="1008" relation="usage">
+          <edgelabel>contacts</edgelabel>
+        </childnode>
+        <childnode refid="1011" relation="usage">
+          <edgelabel>vLinkColliding</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="51" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="50" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1CollisionReport_1a197d6a1cee7fe4171230acf60afa0a51" prot="public" virt="virtual"><scope>OpenRAVE::CollisionReport</scope><name>__str__</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1aee4dc1859dffe934cc277b4dd0c8637e" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport</scope><name>CollisionReport</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1afd310727fc8474b0057786fadf2088df" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport</scope><name>contacts</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1a39ecee22e3be662c17e9c9d28215dd66" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport</scope><name>minDistance</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1a2d4acb52d99b57b5b524aaa557ab91eb" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport</scope><name>numCols</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1a04fc6ba3cfd80183ace93d10661cf32f" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport</scope><name>numWithinTol</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1a849fa981f121eb25a67e4e14392840ba" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport</scope><name>options</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1a81562e5e77f8d4ee032d8990e5e1741e" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport</scope><name>plink1</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1a66034fcc62ac4142477872950ef70663" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport</scope><name>plink2</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1a40e8cbeb2c34e4d900eb2dfe7086a1e4" prot="public" virt="virtual"><scope>OpenRAVE::CollisionReport</scope><name>Reset</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1a4d32ef985c209aaaca9a4e61c9855e0b" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport</scope><name>vLinkColliding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

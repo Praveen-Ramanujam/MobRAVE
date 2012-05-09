@@ -1,0 +1,14 @@
+#Inventor V2.1 ascii
+
+SoTexture2
+{
+	filename "turbo.png" 
+}
+
+SoCube
+{
+	width 80
+	height 80
+	depth 0.01
+}
+

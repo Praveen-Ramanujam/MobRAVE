@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1TactileSensorData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::TactileSensorData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorData" prot="public" virt="non-virtual">SensorData</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1TactileSensorData_1a931ef360f019ea5f6265c8160f710ee6" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt;</type>
+        <definition>std::vector&lt;Vector&gt; forces</definition>
+        <argsstring></argsstring>
+        <name>forces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="165" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1TactileSensorData_1a972c8980eeb77603fbda2827c16ae213" prot="public" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 9 &gt;</type>
+        <definition>boost::array&lt;dReal,9&gt; force_covariance</definition>
+        <argsstring></argsstring>
+        <name>force_covariance</name>
+        <briefdescription>
+<para>xyz force of each individual element </para>        </briefdescription>
+        <detaileddescription>
+<para>row major 3x3 matrix of the uncertainty on the xyz force measurements </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="166" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1TactileSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="162" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="162" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>tactle data </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1913">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+      </node>
+      <node id="1912">
+        <label>TactileSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1TactileSensorData"/>
+        <childnode refid="1913" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1917">
+        <label>vector&lt; Vector &gt;</label>
+        <childnode refid="1918" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1916">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1915">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+        <childnode refid="1916" relation="usage">
+          <edgelabel>__trans</edgelabel>
+        </childnode>
+      </node>
+      <node id="1914">
+        <label>TactileSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1TactileSensorData"/>
+        <childnode refid="1915" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1917" relation="usage">
+          <edgelabel>forces</edgelabel>
+        </childnode>
+      </node>
+      <node id="1918">
+        <label>RaveVector</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="160" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="159" bodyend="167"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a0503a26959ec94efdab737ce47842afe" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::TactileSensorData</scope><name>__stamp</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a5786ccc78c0aae6ca580507121b3c24a" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::TactileSensorData</scope><name>__trans</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1TactileSensorData_1a972c8980eeb77603fbda2827c16ae213" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::TactileSensorData</scope><name>force_covariance</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1TactileSensorData_1a931ef360f019ea5f6265c8160f710ee6" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::TactileSensorData</scope><name>forces</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1TactileSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::TactileSensorData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a27324341bb2e28fa2be2cfd0b7f0e985" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::TactileSensorData</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a2ce106fe3cd9771a5b0770339c411829" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::TactileSensorData</scope><name>~SensorData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

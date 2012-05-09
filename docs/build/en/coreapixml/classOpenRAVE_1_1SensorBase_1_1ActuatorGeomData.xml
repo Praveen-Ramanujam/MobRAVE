@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::ActuatorGeomData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry" prot="public" virt="non-virtual">SensorGeometry</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1ab5a727ddd033a0bde23403d30011fc19" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal maxtorque</definition>
+        <argsstring></argsstring>
+        <name>maxtorque</name>
+        <briefdescription>
+<para>Maximum possible torque actuator can apply (on output side). This includes the actuator&apos;s rotor, if one exists. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="310" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a402d33d5ad787eb009ff27cf15f37f0c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal maxcurrent</definition>
+        <argsstring></argsstring>
+        <name>maxcurrent</name>
+        <briefdescription>
+<para>Maximum permissible current of the actuator. If this current value is exceeded for a prolonged period of time, then an error could occur (due to heat, etc). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="311" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a7e338be5eaedc90739ebd23b11bea20c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal nominalcurrent</definition>
+        <argsstring></argsstring>
+        <name>nominalcurrent</name>
+        <briefdescription>
+<para>Rated current of the actuator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="312" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a4cefe2cfbfeb8a71c13ab7c39d1cc0bb" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal maxvelocity</definition>
+        <argsstring></argsstring>
+        <name>maxvelocity</name>
+        <briefdescription>
+<para>Maximum permissible velocity of the system (on output side). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="313" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1acf2b76b1c9363c93a1c27d6f21745b9e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal maxacceleration</definition>
+        <argsstring></argsstring>
+        <name>maxacceleration</name>
+        <briefdescription>
+<para>Maximum permissible acceleration of the system (on output side). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="314" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1ad9a8b532b3536aadf70cc8c26d1be942" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal maxjerk</definition>
+        <argsstring></argsstring>
+        <name>maxjerk</name>
+        <briefdescription>
+<para>Maximum permissible jerking of the system (on output side). The jerk results from a sudden change in acceleration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="315" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a97fe337c5c9b96df4cd69543a3fe86c2" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal staticfriction</definition>
+        <argsstring></argsstring>
+        <name>staticfriction</name>
+        <briefdescription>
+<para>minimum torque that must be applied for actuator to overcome static friction </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="316" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a37be090708ad43469d393164704447a7" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal viscousfriction</definition>
+        <argsstring></argsstring>
+        <name>viscousfriction</name>
+        <briefdescription>
+<para>friction depending on the velocity of the actuator </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="317" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="307" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="307" bodyend="309"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="719">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="718">
+        <label>ActuatorGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData"/>
+        <childnode refid="719" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="721">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="720">
+        <label>ActuatorGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData"/>
+        <childnode refid="721" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="305" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="304" bodyend="318"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::ActuatorGeomData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1acf2b76b1c9363c93a1c27d6f21745b9e" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorGeomData</scope><name>maxacceleration</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a402d33d5ad787eb009ff27cf15f37f0c" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorGeomData</scope><name>maxcurrent</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1ad9a8b532b3536aadf70cc8c26d1be942" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorGeomData</scope><name>maxjerk</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1ab5a727ddd033a0bde23403d30011fc19" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorGeomData</scope><name>maxtorque</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a4cefe2cfbfeb8a71c13ab7c39d1cc0bb" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorGeomData</scope><name>maxvelocity</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a7e338be5eaedc90739ebd23b11bea20c" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorGeomData</scope><name>nominalcurrent</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a97fe337c5c9b96df4cd69543a3fe86c2" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorGeomData</scope><name>staticfriction</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a37be090708ad43469d393164704447a7" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorGeomData</scope><name>viscousfriction</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a2448e133d651783f1acfe3f944ba4dc3" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::ActuatorGeomData</scope><name>~SensorGeometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

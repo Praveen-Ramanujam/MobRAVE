@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$classOpenRAVE_1_1InterfaceBase.html" title="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface..." alt="" coords="1165,203,1267,232"/>
+<area shape="rect" title="STL class." alt="" coords="197,192,251,221"/>
+<area shape="rect" href="$classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html" title="A group referencing the values of one body in the environment." alt="" coords="605,309,661,339"/>
+<area shape="rect" title="STL class." alt="" coords="7,192,145,221"/>
+<area shape="rect" href="$classOpenRAVE_1_1ConfigurationSpecification.html" title="A configuration specification references values in the environment that then define..." alt="" coords="1519,255,1689,284"/>
+</map>

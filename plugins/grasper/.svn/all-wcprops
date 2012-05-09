@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/grasper
+END
+grasper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/grasper/grasper.cpp
+END
+grasperplanner.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/grasper/grasperplanner.cpp
+END
+plugindefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/grasper/plugindefs.h
+END
+graspermodule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/grasper/graspermodule.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/grasper/CMakeLists.txt
+END

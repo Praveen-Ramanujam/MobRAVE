@@ -1,0 +1,37 @@
+\hypertarget{classOpenRAVE_1_1GraphHandle}{
+\subsection{GraphHandle Class Reference}
+\label{classOpenRAVE_1_1GraphHandle}\index{OpenRAVE::GraphHandle@{OpenRAVE::GraphHandle}}
+}
+
+
+Handle holding the plot from the viewers. The plot will continue to be drawn as long as a reference to this handle is held.  
+
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1GraphHandle_a1e4f3343130d6f10fba4b13f3be3913d}{SetTransform} (const RaveTransform$<$ float $>$ \&t) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em Changes the underlying transformation of the plot. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1GraphHandle_a5f9250c51a292ef2849ed651b59d27e4}{
+virtual void \hyperlink{classOpenRAVE_1_1GraphHandle_a5f9250c51a292ef2849ed651b59d27e4}{SetShow} (bool bshow) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION}
+\label{classOpenRAVE_1_1GraphHandle_a5f9250c51a292ef2849ed651b59d27e4}
+
+\begin{DoxyCompactList}\small\item\em Shows or hides the plot without destroying its resources. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Handle holding the plot from the viewers. The plot will continue to be drawn as long as a reference to this handle is held. Designed to be multi-\/thread safe and destruction and modification of the viewer plot can be done at any time. The viewers internally handle synchronization and threading issues. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1GraphHandle_a1e4f3343130d6f10fba4b13f3be3913d}{
+\index{OpenRAVE::GraphHandle@{OpenRAVE::GraphHandle}!SetTransform@{SetTransform}}
+\index{SetTransform@{SetTransform}!OpenRAVE::GraphHandle@{OpenRAVE::GraphHandle}}
+\paragraph[{SetTransform}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetTransform (const RaveTransform$<$ float $>$ \& {\em t})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1GraphHandle_a1e4f3343130d6f10fba4b13f3be3913d}
+
+
+Changes the underlying transformation of the plot. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em t}]new transformation of the plot \end{DoxyParams}

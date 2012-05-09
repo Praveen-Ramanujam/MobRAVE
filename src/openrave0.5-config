@@ -1,0 +1,90 @@
+#!/bin/sh
+
+prefix=/usr/local
+exec_prefix=/usr/local
+exec_prefix_set=no
+
+usage="\
+Usage: openrave-config [--prefix[=DIR]] [--exec-prefix[=DIR]] [--version] [--cflags] [--libs] [--libs-core] [--libs-only-l] [--libs-only-L] [--cflags-only-I] [--shared-libs] [--python-dir] [--octave-dir] [--matlab-dir] [--share-dir] [--usage | --help]"
+
+if test $# -eq 0; then
+      exit 1
+fi
+
+while test $# -gt 0; do
+  case "$1" in
+  -*=*) optarg=`echo "$1" | sed 's/[-_a-zA-Z0-9]*=//'` ;;
+  *) optarg= ;;
+  esac
+
+  case $1 in
+    --prefix=*)
+      prefix=$optarg
+      if test $exec_prefix_set = no ; then
+        exec_prefix=$optarg
+      fi
+      ;;
+    --prefix)
+      echo $prefix
+      ;;
+    --exec-prefix=*)
+      exec_prefix=$optarg
+      exec_prefix_set=yes
+      ;;
+    --exec-prefix)
+      echo $exec_prefix
+      ;;
+    --version)
+      echo 0.5.0
+      ;;
+    --cflags)
+      echo  -I/usr/local/include/openrave-0.5  -I/usr/include -DOPENRAVE_DLL -DOPENRAVE_CORE_DLL 
+      ;;
+    --cppflags)
+      echo  -I/usr/local/include/openrave-0.5  -I/usr/include -DOPENRAVE_DLL -DOPENRAVE_CORE_DLL 
+      ;;
+    --cflags-only-I)
+      echo -I/usr/local/include/openrave-0.5  -I/usr/include
+      ;;
+    --libs)
+      echo -L/usr/local/lib -lopenrave0.5  -L/usr/lib /usr/lib/libboost_thread-mt.so
+      ;;
+    --libs-core)
+      echo -L/usr/local/lib -lopenrave0.5 -lopenrave-core0.5  -L/usr/lib /usr/lib/libboost_thread-mt.so
+      ;;
+    --libs-only-l)
+      echo -lopenrave0.5 /usr/lib/libboost_thread-mt.so
+      ;;
+    --libs-only-L)
+      echo -L/usr/local/lib  -L/usr/lib
+      ;;
+    --shared-libs)
+      echo -L/usr/local/lib -lopenrave0.5  -L/usr/lib /usr/lib/libboost_thread-mt.so
+      ;;
+    --python-dir)
+      echo /usr/local/lib/python2.6/dist-packages
+      ;;
+    --octave-dir)
+      echo /usr/local/share/openrave-0.5/octave
+      ;;
+    --matlab-dir)
+      echo /usr/local/share/openrave-0.5/matlab
+      ;;
+    --share-dir)
+      echo /usr/local/share/openrave-0.5
+      ;;
+    --usage)
+      echo "${usage}"
+      exit 0
+      ;;
+    --help)
+      echo "${usage}"
+      exit 0
+      ;;
+    *)
+      echo "${usage}" 1>&2
+      exit 1
+      ;;
+  esac
+  shift
+done

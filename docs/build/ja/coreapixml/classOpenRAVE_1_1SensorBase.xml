@@ -1,0 +1,817 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1InterfaceBase" prot="public" virt="non-virtual">InterfaceBase</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData" prot="public">OpenRAVE::SensorBase::ActuatorGeomData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData" prot="public">OpenRAVE::SensorBase::ActuatorSensorData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1CameraGeomData" prot="public">OpenRAVE::SensorBase::CameraGeomData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData" prot="public">OpenRAVE::SensorBase::CameraSensorData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1Force6DGeomData" prot="public">OpenRAVE::SensorBase::Force6DGeomData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData" prot="public">OpenRAVE::SensorBase::Force6DSensorData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1IMUGeomData" prot="public">OpenRAVE::SensorBase::IMUGeomData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData" prot="public">OpenRAVE::SensorBase::IMUSensorData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1JointEncoderGeomData" prot="public">OpenRAVE::SensorBase::JointEncoderGeomData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData" prot="public">OpenRAVE::SensorBase::JointEncoderSensorData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData" prot="public">OpenRAVE::SensorBase::LaserGeomData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData" prot="public">OpenRAVE::SensorBase::LaserSensorData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData" prot="public">OpenRAVE::SensorBase::OdometryGeomData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData" prot="public">OpenRAVE::SensorBase::OdometrySensorData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1SensorData" prot="public">OpenRAVE::SensorBase::SensorData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry" prot="public">OpenRAVE::SensorBase::SensorGeometry</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1TactileGeomData" prot="public">OpenRAVE::SensorBase::TactileGeomData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1TactileSensorData" prot="public">OpenRAVE::SensorBase::TactileSensorData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1TouchGeomData" prot="public">OpenRAVE::SensorBase::TouchGeomData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase_1_1TouchSensorData" prot="public">OpenRAVE::SensorBase::TouchSensorData</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" prot="public" static="no">
+        <name>SensorType</name>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a936ea626f25292f8acfc15830a7ad202" prot="public">
+          <name>ST_Invalid</name>
+          <initializer>0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a4541d21a4d11deb0969d56dd284fa075" prot="public">
+          <name>ST_Laser</name>
+          <initializer>1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435ae11c3a3455d4bd69e29d3adcdc516485" prot="public">
+          <name>ST_Camera</name>
+          <initializer>2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435aa5d3d03a421042b56e9ed7041b03d96b" prot="public">
+          <name>ST_JointEncoder</name>
+          <initializer>3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a5357cf23ce464e19f67c73122a0a42d9" prot="public">
+          <name>ST_Force6D</name>
+          <initializer>4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435ad1d86d8a2bfe8a9d7aff51d2dfff434b" prot="public">
+          <name>ST_IMU</name>
+          <initializer>5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a95bd0b32d2de8ad24080c0bae1d1b09e" prot="public">
+          <name>ST_Odometry</name>
+          <initializer>6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435ad222298b6f04034b44003e0f29536cc2" prot="public">
+          <name>ST_Tactile</name>
+          <initializer>7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a92435db0e476a975a85f3040d7227215" prot="public">
+          <name>ST_Actuator</name>
+          <initializer>8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a335d8820608490ed884ecbbec504eb68" prot="public">
+          <name>ST_Touch</name>
+          <initializer> 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435ad7cbba96be0dc71f7b614e056dd780ab" prot="public">
+          <name>ST_Gyro</name>
+          <initializer> 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a63dc1952ea8ab1be1a9d393fdfd080c1" prot="public">
+          <name>ST_Intensity</name>
+          <initializer> 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435aaf1a7495fb60915da5d25784d355d346" prot="public">
+          <name>ST_Color</name>
+          <initializer> 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a59b9461851a9a00c41589c55aa33a9d3" prot="public">
+          <name>ST_Accelerometer</name>
+          <initializer> 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435af148609b52480eb24a6ada7fa17cef6c" prot="public">
+          <name>ST_NumberofSensorTypes</name>
+          <initializer>14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="32" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="31" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="enum" id="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbc" prot="public" static="no">
+        <name>ConfigureCommand</name>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcaa12aa3389243d888c0211e5e84a2bec3" prot="public">
+          <name>CC_PowerOn</name>
+          <initializer>0x10</initializer>
+          <briefdescription>
+<para>turns the sensor on, starts gathering data and using processor cycles. If the power is already on, servers as a reset. (off by default) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcabe79d3489e53b22662cb01e3fd5a2aa4" prot="public">
+          <name>CC_PowerOff</name>
+          <initializer>0x11</initializer>
+          <briefdescription>
+<para>turns the sensor off, stops gathering data (off by default). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcadf063ee2e225c3f6714361882241089f" prot="public">
+          <name>CC_PowerCheck</name>
+          <initializer>0x12</initializer>
+          <briefdescription>
+<para>returns whether power is on </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcaaf7af7837769edb49e4b9366044b8ebc" prot="public">
+          <name>CC_RenderDataOn</name>
+          <initializer>0x20</initializer>
+          <briefdescription>
+<para>turns on any rendering of the sensor data (off by default) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbca6b764a7cba110931b6035302dd83b574" prot="public">
+          <name>CC_RenderDataOff</name>
+          <initializer>0x21</initializer>
+          <briefdescription>
+<para>turns off any rendering of the sensor data (off by default) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcadc438b5d23e19d70df1e4425302e26d0" prot="public">
+          <name>CC_RenderDataCheck</name>
+          <initializer>0x23</initializer>
+          <briefdescription>
+<para>returns whether data rendering is on </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbca6041933887566ae587fb1babcfa3794d" prot="public">
+          <name>CC_RenderGeometryOn</name>
+          <initializer>0x30</initializer>
+          <briefdescription>
+<para>turns on any rendering of the sensor geometry (on by default) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcac80f84e0b1dab127526e2c7517f9fd16" prot="public">
+          <name>CC_RenderGeometryOff</name>
+          <initializer>0x31</initializer>
+          <briefdescription>
+<para>turns off any rendering of the sensor geometry (on by default) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbca0f1f04ef2d988fc5e5bc061c6eba352e" prot="public">
+          <name>CC_RenderGeometryCheck</name>
+          <initializer>0x32</initializer>
+          <briefdescription>
+<para>returns whether geometry rendering is on </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>A set of commands used for run-time sensor configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="332" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="331" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1SensorBase_1aa5104349256c671083819c3d801f99fc" prot="public" static="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics" kindref="compound">geometry::RaveCameraIntrinsics</ref>&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>typedef geometry::RaveCameraIntrinsics&lt;dReal&gt; CameraIntrinsics</definition>
+        <argsstring></argsstring>
+        <name>CameraIntrinsics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="50" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1SensorBase_1adfb77411b1a558ad93cf53a7da1ca06f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1SensorBase_1_1SensorData" kindref="compound">SensorBase::SensorData</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;SensorBase::SensorData&gt; SensorDataPtr</definition>
+        <argsstring></argsstring>
+        <name>SensorDataPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="66" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1SensorBase_1a8a80a84d6814d2de51a5b66cf2295814" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1SensorBase_1_1SensorData" kindref="compound">SensorBase::SensorData</ref> const  &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;SensorBase::SensorData const&gt; SensorDataConstPtr</definition>
+        <argsstring></argsstring>
+        <name>SensorDataConstPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="67" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1SensorBase_1a91b8c682028d7df3a937281bd419680d" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry" kindref="compound">SensorBase::SensorGeometry</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;SensorBase::SensorGeometry&gt; SensorGeometryPtr</definition>
+        <argsstring></argsstring>
+        <name>SensorGeometryPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="202" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1SensorBase_1a8bf7987bcbc067f1ac9da6d99e3f0273" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry" kindref="compound">SensorBase::SensorGeometry</ref> const  &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;SensorBase::SensorGeometry const&gt; SensorGeometryConstPtr</definition>
+        <argsstring></argsstring>
+        <name>SensorGeometryConstPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="203" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1aaf2ed934b37cbbd236fdd1b01a5f5005" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+<para>name of the sensor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="408" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1a5a4f9536984507dfa311d57f00ece076" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SensorBase</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>SensorBase</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="320" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="320" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1a6801281af326361f11f3768255cd2319" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~SensorBase</definition>
+        <argsstring>()</argsstring>
+        <name>~SensorBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="322" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="322" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1ae02c7c4987dd11f5fb7657e18c7c8318" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Configure</definition>
+        <argsstring>(ConfigureCommand command, bool blocking=false)=0</argsstring>
+        <name>Configure</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbc" kindref="member">ConfigureCommand</ref></type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>blocking</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Configures properties of the sensor like power. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbc" kindref="member">ConfigureCommand</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blocking</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If set to true, makes sure the configuration ends before this function returns.(might cause problems if environment is locked). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classOpenRAVE_1_1openrave__exception" kindref="compound">openrave_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if command doesn&apos;t succeed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1afa04259a5131e4b12c964d7c66d7c89a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SimulationStep</definition>
+        <argsstring>(dReal fTimeElapsed) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SimulationStep</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>fTimeElapsed</declname>
+        </param>
+        <briefdescription>
+<para>Simulate one step forward for sensors. </para>        </briefdescription>
+        <detaileddescription>
+<para>Only valid if this sensor is simulation based. A sensor hooked up to a real device can ignore this call </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1a080408b00865d76ab0890ae98207d980" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a91b8c682028d7df3a937281bd419680d" kindref="member">SensorGeometryPtr</ref></type>
+        <definition>virtual SensorGeometryPtr GetSensorGeometry</definition>
+        <argsstring>(SensorType type=ST_Invalid)=0</argsstring>
+        <name>GetSensorGeometry</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+          <declname>type</declname>
+          <defval>ST_Invalid</defval>
+        </param>
+        <briefdescription>
+<para>Returns the sensor geometry. This method is thread safe. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the requested sensor type to create. A sensor can support many types. If type is ST_Invalid, then returns a data structure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sensor geometry pointer, use delete to destroy it </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1ae4531cd4b3e1de9708d9fc2cce769eff" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1adfb77411b1a558ad93cf53a7da1ca06f" kindref="member">SensorDataPtr</ref></type>
+        <definition>virtual SensorDataPtr CreateSensorData</definition>
+        <argsstring>(SensorType type=ST_Invalid)=0</argsstring>
+        <name>CreateSensorData</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+          <declname>type</declname>
+          <defval>ST_Invalid</defval>
+        </param>
+        <briefdescription>
+<para>Creates the sensor data to be specifically used by this class. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the requested sensor type to create. A sensor can support many types. If type is ST_Invalid, then returns a data structure of the type most representative of this sensor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new <ref refid="classOpenRAVE_1_1SensorBase_1_1SensorData" kindref="compound">SensorData</ref> class </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1ad7b2e5f8884dd4897de003828e8e8146" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool GetSensorData</definition>
+        <argsstring>(SensorDataPtr psensordata)=0</argsstring>
+        <name>GetSensorData</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1SensorBase_1adfb77411b1a558ad93cf53a7da1ca06f" kindref="member">SensorDataPtr</ref></type>
+          <declname>psensordata</declname>
+        </param>
+        <briefdescription>
+<para>Copy the most recent published data of the sensor given the type. </para>        </briefdescription>
+        <detaileddescription>
+<para>Once GetSensorData returns, the caller has full unrestricted access to the data. This method is thread safe. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>psensordata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to <ref refid="classOpenRAVE_1_1SensorBase_1_1SensorData" kindref="compound">SensorData</ref> returned from CreateSensorData, the plugin will use psensordata-&gt;GetType() in order to return the correctly supported type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1a3d9771c99399198411c3715160d7d415" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Supports</definition>
+        <argsstring>(SensorType type)=0</argsstring>
+        <name>Supports</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>returns true if sensor supports a particular sensor type </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1a2b064fc102932710baf4ada2799d7236" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SetTransform</definition>
+        <argsstring>(const Transform &amp;trans)=0</argsstring>
+        <name>SetTransform</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+<para>Set the transform of a sensor (global coordinate system). </para>        </briefdescription>
+        <detaileddescription>
+<para>Sensors attached to the robot have their transforms automatically set every time the robot is moved <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>trans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The transform defining the frame of the sensor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1a11e61e806d5650919a0c8d2cfd76a358" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>virtual Transform GetTransform</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1ab17d44ea62751790d35594754f7069e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref></type>
+        <definition>virtual UserDataPtr RegisterDataCallback</definition>
+        <argsstring>(SensorType type, const boost::function&lt; void(SensorDataConstPtr)&gt; &amp;callback) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>RegisterDataCallback</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const boost::function&lt; void(<ref refid="classOpenRAVE_1_1SensorBase_1a8a80a84d6814d2de51a5b66cf2295814" kindref="member">SensorDataConstPtr</ref>)&gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Register a callback whenever new sensor data comes in. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sensor type to register for </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user function to call, note that this might block the thread generating/receiving sensor data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1a3cc720dbc55fa8e07a0f85343d3bb136" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; GetName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the name of the sensor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="392" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="392" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1acd410c7697191dd9af60ce515fb94215" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetName</definition>
+        <argsstring>(const std::string &amp;newname)</argsstring>
+        <name>SetName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="395" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="395" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1a90092f801b2f4091b5509d6ea1307ce9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Init</definition>
+        <argsstring>(const std::string &amp;) RAVE_DEPRECATED</argsstring>
+        <name>Init</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000053"><xreftitle>非推奨</xreftitle><xrefdescription><para>(11/03/28) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="400" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="400" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1ad04571abe5ee94304a92c24bd2863d2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Reset</definition>
+        <argsstring>(int) RAVE_DEPRECATED</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="403" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="403" bodyend="405"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InterfaceType</type>
+        <definition>static InterfaceType GetInterfaceTypeStatic</definition>
+        <argsstring>()</argsstring>
+        <name>GetInterfaceTypeStatic</name>
+        <briefdescription>
+<para>return the static interface type this class points to (used for safe casting) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="326" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="326" bodyend="328"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1af386ad7515f485242895df543029d333" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* GetHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetHash</name>
+        <reimplements refid="classOpenRAVE_1_1InterfaceBase_1abfb0be978f0f9899582785d67c4b3d40">GetHash</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="411" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="411" bodyend="413"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><bold>[interface]</bold> A sensor measures physical properties from the environment. <bold>If not specified, method is not multi-thread safe.</bold> See <ref refid="arch__sensor" kindref="compound">Sensor Concepts</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1801">
+        <label>SensorBase</label>
+        <link refid="classOpenRAVE_1_1SensorBase"/>
+        <childnode refid="1802" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1802">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1803">
+        <label>SensorBase</label>
+        <link refid="classOpenRAVE_1_1SensorBase"/>
+        <childnode refid="1804" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1805" relation="usage">
+          <edgelabel>_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="1805">
+        <label>string</label>
+        <childnode refid="1806" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1807">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1805" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1806">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1808">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1805" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1804">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1805" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1807" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1808" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="29" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="28" bodyend="414"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>__description</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1aaf2ed934b37cbbd236fdd1b01a5f5005" prot="protected" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>_name</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1aa5104349256c671083819c3d801f99fc" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>CameraIntrinsics</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcadf063ee2e225c3f6714361882241089f" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>CC_PowerCheck</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcabe79d3489e53b22662cb01e3fd5a2aa4" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>CC_PowerOff</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcaa12aa3389243d888c0211e5e84a2bec3" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>CC_PowerOn</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcadc438b5d23e19d70df1e4425302e26d0" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>CC_RenderDataCheck</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbca6b764a7cba110931b6035302dd83b574" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>CC_RenderDataOff</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcaaf7af7837769edb49e4b9366044b8ebc" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>CC_RenderDataOn</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbca0f1f04ef2d988fc5e5bc061c6eba352e" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>CC_RenderGeometryCheck</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbcac80f84e0b1dab127526e2c7517f9fd16" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>CC_RenderGeometryOff</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbca6041933887566ae587fb1babcfa3794d" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>CC_RenderGeometryOn</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>Clone</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1ae02c7c4987dd11f5fb7657e18c7c8318" prot="public" virt="pure-virtual"><scope>OpenRAVE::SensorBase</scope><name>Configure</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a48dea54d66d3cd48fda033d19cad7dbc" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ConfigureCommand</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1ae4531cd4b3e1de9708d9fc2cce769eff" prot="public" virt="pure-virtual"><scope>OpenRAVE::SensorBase</scope><name>CreateSensorData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1af386ad7515f485242895df543029d333" prot="private" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>GetHash</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a3cc720dbc55fa8e07a0f85343d3bb136" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>GetName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1ad7b2e5f8884dd4897de003828e8e8146" prot="public" virt="pure-virtual"><scope>OpenRAVE::SensorBase</scope><name>GetSensorData</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a080408b00865d76ab0890ae98207d980" prot="public" virt="pure-virtual"><scope>OpenRAVE::SensorBase</scope><name>GetSensorGeometry</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a11e61e806d5650919a0c8d2cfd76a358" prot="public" virt="pure-virtual"><scope>OpenRAVE::SensorBase</scope><name>GetTransform</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a90092f801b2f4091b5509d6ea1307ce9" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>Init</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>RegisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1ab17d44ea62751790d35594754f7069e5" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>RegisterDataCallback</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1ad04571abe5ee94304a92c24bd2863d2f" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>Reset</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a5a4f9536984507dfa311d57f00ece076" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>SensorBase</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a8a80a84d6814d2de51a5b66cf2295814" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>SensorDataConstPtr</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1adfb77411b1a558ad93cf53a7da1ca06f" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>SensorDataPtr</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a8bf7987bcbc067f1ac9da6d99e3f0273" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>SensorGeometryConstPtr</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a91b8c682028d7df3a937281bd419680d" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>SensorGeometryPtr</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>SensorType</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>SetDescription</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1acd410c7697191dd9af60ce515fb94215" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>SetName</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a2b064fc102932710baf4ada2799d7236" prot="public" virt="pure-virtual"><scope>OpenRAVE::SensorBase</scope><name>SetTransform</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1afa04259a5131e4b12c964d7c66d7c89a" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>SimulationStep</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a59b9461851a9a00c41589c55aa33a9d3" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Accelerometer</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a92435db0e476a975a85f3040d7227215" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Actuator</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435ae11c3a3455d4bd69e29d3adcdc516485" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Camera</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435aaf1a7495fb60915da5d25784d355d346" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Color</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a5357cf23ce464e19f67c73122a0a42d9" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Force6D</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435ad7cbba96be0dc71f7b614e056dd780ab" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Gyro</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435ad1d86d8a2bfe8a9d7aff51d2dfff434b" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_IMU</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a63dc1952ea8ab1be1a9d393fdfd080c1" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Intensity</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a936ea626f25292f8acfc15830a7ad202" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Invalid</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435aa5d3d03a421042b56e9ed7041b03d96b" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_JointEncoder</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a4541d21a4d11deb0969d56dd284fa075" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Laser</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435af148609b52480eb24a6ada7fa17cef6c" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_NumberofSensorTypes</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a95bd0b32d2de8ad24080c0bae1d1b09e" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Odometry</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435ad222298b6f04034b44003e0f29536cc2" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Tactile</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435a335d8820608490ed884ecbbec504eb68" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase</scope><name>ST_Touch</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a3d9771c99399198411c3715160d7d415" prot="public" virt="pure-virtual"><scope>OpenRAVE::SensorBase</scope><name>Supports</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>~InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1a6801281af326361f11f3768255cd2319" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase</scope><name>~SensorBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

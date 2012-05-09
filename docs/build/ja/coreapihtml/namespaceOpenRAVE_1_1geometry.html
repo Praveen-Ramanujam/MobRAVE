@@ -1,0 +1,857 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: ネームスペース OpenRAVE::geometry 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li class="current"><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="namespaces.html"><span>ネームスペース一覧</span></a></li>
+      <li><a href="namespacemembers.html"><span>ネームスペースメンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="namespaceOpenRAVE_1_1geometry.html">geometry</a>
+  </div>
+</div>
+<div class="contents">
+<h1>ネームスペース OpenRAVE::geometry</h1>
+<p>Templated math and geometric functions.  
+<a href="#_details">[詳細]</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>構成</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Vector class containing 4 dimensions.  <a href="classOpenRAVE_1_1geometry_1_1RaveVector.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransform.html">RaveTransform</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affine transformation parameterized with quaterions.  <a href="classOpenRAVE_1_1geometry_1_1RaveTransform.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affine transformation parameterized with rotation matrices. Scales and shears are not supported.  <a href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">ray</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A ray defined by an origin and a direction.  <a href="classOpenRAVE_1_1geometry_1_1ray.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1geometry_1_1aabb.html">aabb</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An axis aligned bounding box.  <a href="classOpenRAVE_1_1geometry_1_1aabb.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1geometry_1_1obb.html">obb</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An oriented bounding box.  <a href="classOpenRAVE_1_1geometry_1_1obb.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1geometry_1_1triangle.html">triangle</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A triangle defined by 3 points.  <a href="classOpenRAVE_1_1geometry_1_1triangle.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1geometry_1_1frustum.html">frustum</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A pyramid with its vertex clipped.  <a href="classOpenRAVE_1_1geometry_1_1frustum.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics.html">RaveCameraIntrinsics</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">intrinsic parameters for a camera.  <a href="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics.html#_details">[詳細]</a><br/></td></tr>
+<tr><td colspan="2"><h2>関数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#a3bdbd2cc79f06ca2c08f59946cfb789e">MATH_SQRT</a> (float f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#a7a0a990edad220db4a91151a80862a53">MATH_SQRT</a> (double f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#a385cfc9dc9cbf1ca104d1bbed973ed32">MATH_SIN</a> (float f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#af2769f5fcc025339a38d3d2435a9d639">MATH_SIN</a> (double f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#afba208e07cd534031df027a712be452d">MATH_COS</a> (float f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#a8f2e39b0b80783e25b7c7e865183ac87">MATH_COS</a> (double f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#ad48f4fda0c292c947d6161e8484218ba">MATH_FABS</a> (float f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#a0266dddd12adf6195754c57a25436afa">MATH_FABS</a> (double f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#aedc3766011ea14e0c1e3acf6004ac446">MATH_ACOS</a> (float f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#aa1dc1d88ba525bab8cbab954387ab361">MATH_ACOS</a> (double f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#a537e9c110e4df16454a0420097837ed2">MATH_ASIN</a> (float f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#aff667390630b57a8a938d3587aa7c6ac">MATH_ASIN</a> (double f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#a010a3cbfcb63b09b257881a8b854d9a7">MATH_ATAN2</a> (float fy, float fx)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#a1613b3da4d62ab3bfd8388610a6ea8d6">MATH_ATAN2</a> (double fy, double fx)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#ab1d15f654176037877fe49f856d97aa8">operator*</a> (float f, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;left)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#af31de2189b0cd52cb6e684977b70e5bc">operator*</a> (double f, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;left)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga8a5d9ee6c215ae740e449a8310e4e9d4">quatFromAxisAngle</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;axis, T angle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts an axis-angle rotation into a quaternion.  <a href="group__affine__math.html#ga8a5d9ee6c215ae740e449a8310e4e9d4"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gacf8a968523673f5e3e3c08ffafd75a84">quatFromAxisAngle</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;axisangle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts an axis-angle rotation into a quaternion.  <a href="group__affine__math.html#gacf8a968523673f5e3e3c08ffafd75a84"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gad512ee3ebabb8c45bea16c84ca9ea9d4">quatFromMatrix</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a>&lt; T &gt; &amp;rotation)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the rotation of a matrix into a quaternion.  <a href="group__affine__math.html#gad512ee3ebabb8c45bea16c84ca9ea9d4"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gadee9ddfd3bb8c56e599cf252853ff144">matrixFromQuat</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;quat)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a quaternion to a 3x3 matrix.  <a href="group__affine__math.html#gadee9ddfd3bb8c56e599cf252853ff144"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gacf10676c714b228545f93be252163d76">matrixFromQuat</a> (<a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a>&lt; T &gt; &amp;rotation, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;quat)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a quaternion to a 3x3 matrix.  <a href="group__affine__math.html#gacf10676c714b228545f93be252163d76"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gad596e9d743a4d08e54db0f01b1657002">matrixFromAxisAngle</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;axis, T angle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts an axis-angle rotation to a 3x3 matrix.  <a href="group__affine__math.html#gad596e9d743a4d08e54db0f01b1657002"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga25cf5562e674415477d2bcd80f95cc5b">matrixFromAxisAngle</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;axisangle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts an axis-angle rotation to a 3x3 matrix.  <a href="group__affine__math.html#ga25cf5562e674415477d2bcd80f95cc5b"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gac36d0b93e56274bdfb6e1e648b829536">quatMultiply</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;quat0, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;quat1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Multiply two quaternions.  <a href="group__affine__math.html#gac36d0b93e56274bdfb6e1e648b829536"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga7aa03948b7cc76653b754376dcd55bae">quatInverse</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;quat)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inverted a quaternion rotation.  <a href="group__affine__math.html#ga7aa03948b7cc76653b754376dcd55bae"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gab1abf41daa0f130493c4a0591b03b4ec">quatSlerp</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;quat0, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;quat1, T t)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sphereical linear interpolation between two quaternions.  <a href="group__affine__math.html#gab1abf41daa0f130493c4a0591b03b4ec"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#abdec155ca769068a555c8ab7e65c3389">dQSlerp</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;qa, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;_qb, T t)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga53ddf2e9014f577a6915e180a3cf01e1">quatRotate</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;q, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;t)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">transform a vector by a quaternion  <a href="group__affine__math.html#ga53ddf2e9014f577a6915e180a3cf01e1"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gaa6b1411c303ea16ecb279ae4a08735c0">quatRotateDirection</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;sourcedir, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;targetdir)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the minimal quaternion that orients sourcedir to targetdir.  <a href="group__affine__math.html#gaa6b1411c303ea16ecb279ae4a08735c0"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; T, <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga436efaa950bb38f3b3b8a891e5da5591">normalizeAxisRotation</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;axis, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;quat)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Find the rotation theta around axis such that rot(axis,theta) * q is closest to the identity rotation.  <a href="group__affine__math.html#ga436efaa950bb38f3b3b8a891e5da5591"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga95a2de86a8789000c0a12ce91bbefe0c">axisAngleFromQuat</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;quat)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts a quaternion into the axis-angle representation.  <a href="group__affine__math.html#ga95a2de86a8789000c0a12ce91bbefe0c"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gabf46823a4c5b59c9ac3e72f0905bea24">axisAngleFromMatrix</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a>&lt; T &gt; &amp;rotation)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the rotation of a matrix into axis-angle representation.  <a href="group__affine__math.html#gabf46823a4c5b59c9ac3e72f0905bea24"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga9db1071fa2f5264616dabb3b3d16eec9">transformLookat</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;vlookat, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;vcamerapos, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;vcameraup)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns a camera matrix that looks along a ray with a desired up vector.  <a href="group__affine__math.html#ga9db1071fa2f5264616dabb3b3d16eec9"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">int&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#ga3264b6e233d1bacaa2176bf9e7a74399">insideQuadrilateral</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;v, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;verts)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tests a point inside a 3D quadrilateral.  <a href="group__geometric__primitives.html#ga3264b6e233d1bacaa2176bf9e7a74399"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">int&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#gafa7d69f62abeb6dcb2784b10ad6ef8a5">insideTriangle</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; v, const <a class="el" href="classOpenRAVE_1_1geometry_1_1triangle.html">triangle</a>&lt; T &gt; &amp;tri)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tests a point insdie a 3D triangle.  <a href="group__geometric__primitives.html#gafa7d69f62abeb6dcb2784b10ad6ef8a5"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#ga1c4f9c919f34e3f44e4dbe3fd4abfb8e">RayAABBTest</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">ray</a>&lt; T &gt; &amp;r, const <a class="el" href="classOpenRAVE_1_1geometry_1_1aabb.html">aabb</a>&lt; T &gt; &amp;ab)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Test collision of a ray with an axis aligned bounding box.  <a href="group__geometric__primitives.html#ga1c4f9c919f34e3f44e4dbe3fd4abfb8e"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#gabd242edf62b381f793017cce0f2bec93">RayOBBTest</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">ray</a>&lt; T &gt; &amp;r, const <a class="el" href="classOpenRAVE_1_1geometry_1_1obb.html">obb</a>&lt; T &gt; &amp;o)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Test collision of a ray and an oriented bounding box.  <a href="group__geometric__primitives.html#gabd242edf62b381f793017cce0f2bec93"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#gadda8d6c416e9ccfdbaf22e6755929e7e">IsOBBinFrustum</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1obb.html">obb</a>&lt; T &gt; &amp;o, const <a class="el" href="classOpenRAVE_1_1geometry_1_1frustum.html">frustum</a>&lt; T &gt; &amp;fr)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Test collision of an oriented bounding box and a frustum.  <a href="group__geometric__primitives.html#gadda8d6c416e9ccfdbaf22e6755929e7e"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#ga0d29be0998203e5a7b521ccb728533f6">IsOBBinConvexHull</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1obb.html">obb</a>&lt; T &gt; &amp;o, const U &amp;vplanes)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tests if an oriented bounding box is inside a 3D convex hull.  <a href="group__geometric__primitives.html#ga0d29be0998203e5a7b521ccb728533f6"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#ga07425830ea25e001f8682da7f2504875">TriTriCollision</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;u1, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;u2, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;u3, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;v1, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;v2, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;v3, <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;contactpos, <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;contactnorm)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Test collision if two 3D triangles.Assuming triangle vertices are declared counter-clockwise!!  <a href="group__geometric__primitives.html#ga07425830ea25e001f8682da7f2504875"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1obb.html">obb</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#ga1aaf2360c518e6a9106315a87aaec95d">OBBFromAABB</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1aabb.html">aabb</a>&lt; T &gt; &amp;ab, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a>&lt; T &gt; &amp;t)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transform an axis aligned bounding box to an oriented bounding box.  <a href="group__geometric__primitives.html#ga1aaf2360c518e6a9106315a87aaec95d"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1obb.html">obb</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#ga645564c4c561b14b14b90d6d02c0e766">OBBFromAABB</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1aabb.html">aabb</a>&lt; T &gt; &amp;ab, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransform.html">RaveTransform</a>&lt; T &gt; &amp;t)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transform an axis aligned bounding box to an oriented bounding box.  <a href="group__geometric__primitives.html#ga645564c4c561b14b14b90d6d02c0e766"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1obb.html">obb</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#ga94bf61739c3a0110d5230da07bde8b37">TransformOBB</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransform.html">RaveTransform</a>&lt; T &gt; &amp;t, const <a class="el" href="classOpenRAVE_1_1geometry_1_1obb.html">obb</a>&lt; T &gt; &amp;o)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transforms an oriented bounding box.  <a href="group__geometric__primitives.html#ga94bf61739c3a0110d5230da07bde8b37"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1geometry_1_1obb.html">obb</a>&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#ga588d811884a84cddef8910f749dc5aee">TransformOBB</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a>&lt; T &gt; &amp;t, const <a class="el" href="classOpenRAVE_1_1geometry_1_1obb.html">obb</a>&lt; T &gt; &amp;o)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Transforms an oriented bounding box.  <a href="group__geometric__primitives.html#ga588d811884a84cddef8910f749dc5aee"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#gaa3201f1b56aca79d1fd12499f5c66e50">AABBCollision</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1aabb.html">aabb</a>&lt; T &gt; &amp;ab1, const <a class="el" href="classOpenRAVE_1_1geometry_1_1aabb.html">aabb</a>&lt; T &gt; &amp;ab2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">projects an obb along the world axes  <a href="group__geometric__primitives.html#gaa3201f1b56aca79d1fd12499f5c66e50"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Primitive Serialization functions.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp7d51180c86e76dfc0132e641a7316a52"></a> Don't add new lines to the output &lt;&lt; operators. Some applications use it to serialize the data to send across the network. </p>
+</div></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#aae7311f073989970a1ab1d34fa8b946c">operator&lt;&lt;</a> (std::ostream &amp;O, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; U &gt; &amp;v)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::istream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#aa2e16d81c858602abbc4a828510d6ab4">operator&gt;&gt;</a> (std::istream &amp;I, <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; U &gt; &amp;v)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#ab90ce8155aaf777b0fdf95736fcc7be7">operator&lt;&lt;</a> (std::ostream &amp;O, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransform.html">RaveTransform</a>&lt; U &gt; &amp;v)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::istream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#a0f7c3ef1ef9d18db3c693dc1cf483dcc">operator&gt;&gt;</a> (std::istream &amp;I, <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransform.html">RaveTransform</a>&lt; U &gt; &amp;v)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#a6ff518fbec39bea10fbe04d53590d7f0">operator&lt;&lt;</a> (std::ostream &amp;O, const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">ray</a>&lt; U &gt; &amp;r)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::istream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#aaf84acd33cf41c2c199720aa2ecaf317">operator&gt;&gt;</a> (std::istream &amp;I, <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">ray</a>&lt; U &gt; &amp;r)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#ad671f7a65724072dcc220442b480b0a2">operator&lt;&lt;</a> (std::ostream &amp;O, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a>&lt; U &gt; &amp;v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">serialize in column order! This is the format transformations are passed across the network  <a href="#ad671f7a65724072dcc220442b480b0a2"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::istream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE_1_1geometry.html#a0b70ec7b3559a0cacd66d2b3f98a11d6">operator&gt;&gt;</a> (std::istream &amp;I, <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.html">RaveTransformMatrix</a>&lt; U &gt; &amp;v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">de-serialize in column order! This is the format transformations are passed across the network  <a href="#a0b70ec7b3559a0cacd66d2b3f98a11d6"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Distnace functions.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpb5b6051cc2ee505e55561aa9d30eee1e"></a> </p>
+</div></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">T&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometric__primitives.html#ga9b1575cfd9a4571c57d72449b303ba6e">DistVertexOBBSq</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt; T &gt; &amp;v, const <a class="el" href="classOpenRAVE_1_1geometry_1_1obb.html">obb</a>&lt; T &gt; &amp;o)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The minimum distance form the vertex to the oriented bounding box.  <a href="group__geometric__primitives.html#ga9b1575cfd9a4571c57d72449b303ba6e"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>Templated math and geometric functions. </p>
+<hr/><h2>関数</h2>
+<a class="anchor" id="abdec155ca769068a555c8ab7e65c3389"></a><!-- doxytag: member="OpenRAVE::geometry::dQSlerp" ref="abdec155ca769068a555c8ab7e65c3389" args="(const RaveVector&lt; T &gt; &amp;qa, const RaveVector&lt; T &gt; &amp;_qb, T t)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt;T&gt; OpenRAVE::geometry::dQSlerp </td>
+          <td>(</td>
+          <td class="paramtype">const RaveVector&lt; T &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>qa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; T &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>_qb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&nbsp;</td>
+          <td class="paramname"> <em>t</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00934">934</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1dc1d88ba525bab8cbab954387ab361"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_ACOS" ref="aa1dc1d88ba525bab8cbab954387ab361" args="(double f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double OpenRAVE::geometry::MATH_ACOS </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00084">84</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aedc3766011ea14e0c1e3acf6004ac446"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_ACOS" ref="aedc3766011ea14e0c1e3acf6004ac446" args="(float f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float OpenRAVE::geometry::MATH_ACOS </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00081">81</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aff667390630b57a8a938d3587aa7c6ac"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_ASIN" ref="aff667390630b57a8a938d3587aa7c6ac" args="(double f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double OpenRAVE::geometry::MATH_ASIN </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00092">92</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a537e9c110e4df16454a0420097837ed2"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_ASIN" ref="a537e9c110e4df16454a0420097837ed2" args="(float f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float OpenRAVE::geometry::MATH_ASIN </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00089">89</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1613b3da4d62ab3bfd8388610a6ea8d6"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_ATAN2" ref="a1613b3da4d62ab3bfd8388610a6ea8d6" args="(double fy, double fx)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double OpenRAVE::geometry::MATH_ATAN2 </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>fy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>fx</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00100">100</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a010a3cbfcb63b09b257881a8b854d9a7"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_ATAN2" ref="a010a3cbfcb63b09b257881a8b854d9a7" args="(float fy, float fx)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float OpenRAVE::geometry::MATH_ATAN2 </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fx</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00097">97</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f2e39b0b80783e25b7c7e865183ac87"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_COS" ref="a8f2e39b0b80783e25b7c7e865183ac87" args="(double f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double OpenRAVE::geometry::MATH_COS </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00068">68</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="afba208e07cd534031df027a712be452d"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_COS" ref="afba208e07cd534031df027a712be452d" args="(float f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float OpenRAVE::geometry::MATH_COS </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00065">65</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0266dddd12adf6195754c57a25436afa"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_FABS" ref="a0266dddd12adf6195754c57a25436afa" args="(double f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double OpenRAVE::geometry::MATH_FABS </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00076">76</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad48f4fda0c292c947d6161e8484218ba"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_FABS" ref="ad48f4fda0c292c947d6161e8484218ba" args="(float f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float OpenRAVE::geometry::MATH_FABS </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00073">73</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="af2769f5fcc025339a38d3d2435a9d639"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_SIN" ref="af2769f5fcc025339a38d3d2435a9d639" args="(double f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double OpenRAVE::geometry::MATH_SIN </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00060">60</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a385cfc9dc9cbf1ca104d1bbed973ed32"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_SIN" ref="a385cfc9dc9cbf1ca104d1bbed973ed32" args="(float f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float OpenRAVE::geometry::MATH_SIN </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00057">57</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a0a990edad220db4a91151a80862a53"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_SQRT" ref="a7a0a990edad220db4a91151a80862a53" args="(double f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double OpenRAVE::geometry::MATH_SQRT </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00052">52</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3bdbd2cc79f06ca2c08f59946cfb789e"></a><!-- doxytag: member="OpenRAVE::geometry::MATH_SQRT" ref="a3bdbd2cc79f06ca2c08f59946cfb789e" args="(float f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float OpenRAVE::geometry::MATH_SQRT </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00049">49</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="af31de2189b0cd52cb6e684977b70e5bc"></a><!-- doxytag: member="OpenRAVE::geometry::operator*" ref="af31de2189b0cd52cb6e684977b70e5bc" args="(double f, const RaveVector&lt; T &gt; &amp;left)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt;T&gt; OpenRAVE::geometry::operator* </td>
+          <td>(</td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; T &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>left</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00284">284</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1d15f654176037877fe49f856d97aa8"></a><!-- doxytag: member="OpenRAVE::geometry::operator*" ref="ab1d15f654176037877fe49f856d97aa8" args="(float f, const RaveVector&lt; T &gt; &amp;left)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1geometry_1_1RaveVector.html">RaveVector</a>&lt;T&gt; OpenRAVE::geometry::operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; T &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>left</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00273">273</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad671f7a65724072dcc220442b480b0a2"></a><!-- doxytag: member="OpenRAVE::geometry::operator&lt;&lt;" ref="ad671f7a65724072dcc220442b480b0a2" args="(std::ostream &amp;O, const RaveTransformMatrix&lt; U &gt; &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; OpenRAVE::geometry::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>O</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveTransformMatrix&lt; U &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>serialize in column order! This is the format transformations are passed across the network </p>
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00700">700</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ff518fbec39bea10fbe04d53590d7f0"></a><!-- doxytag: member="OpenRAVE::geometry::operator&lt;&lt;" ref="a6ff518fbec39bea10fbe04d53590d7f0" args="(std::ostream &amp;O, const ray&lt; U &gt; &amp;r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; OpenRAVE::geometry::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>O</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ray&lt; U &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>r</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00686">686</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab90ce8155aaf777b0fdf95736fcc7be7"></a><!-- doxytag: member="OpenRAVE::geometry::operator&lt;&lt;" ref="ab90ce8155aaf777b0fdf95736fcc7be7" args="(std::ostream &amp;O, const RaveTransform&lt; U &gt; &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; OpenRAVE::geometry::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>O</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveTransform&lt; U &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00674">674</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aae7311f073989970a1ab1d34fa8b946c"></a><!-- doxytag: member="OpenRAVE::geometry::operator&lt;&lt;" ref="aae7311f073989970a1ab1d34fa8b946c" args="(std::ostream &amp;O, const RaveVector&lt; U &gt; &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; OpenRAVE::geometry::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>O</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; U &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00662">662</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b70ec7b3559a0cacd66d2b3f98a11d6"></a><!-- doxytag: member="OpenRAVE::geometry::operator&gt;&gt;" ref="a0b70ec7b3559a0cacd66d2b3f98a11d6" args="(std::istream &amp;I, RaveTransformMatrix&lt; U &gt; &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; OpenRAVE::geometry::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&nbsp;</td>
+          <td class="paramname"> <em>I</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RaveTransformMatrix&lt; U &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>de-serialize in column order! This is the format transformations are passed across the network </p>
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00707">707</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf84acd33cf41c2c199720aa2ecaf317"></a><!-- doxytag: member="OpenRAVE::geometry::operator&gt;&gt;" ref="aaf84acd33cf41c2c199720aa2ecaf317" args="(std::istream &amp;I, ray&lt; U &gt; &amp;r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; OpenRAVE::geometry::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&nbsp;</td>
+          <td class="paramname"> <em>I</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ray&lt; U &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>r</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00692">692</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f7c3ef1ef9d18db3c693dc1cf483dcc"></a><!-- doxytag: member="OpenRAVE::geometry::operator&gt;&gt;" ref="a0f7c3ef1ef9d18db3c693dc1cf483dcc" args="(std::istream &amp;I, RaveTransform&lt; U &gt; &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; OpenRAVE::geometry::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&nbsp;</td>
+          <td class="paramname"> <em>I</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RaveTransform&lt; U &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00680">680</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2e16d81c858602abbc4a828510d6ab4"></a><!-- doxytag: member="OpenRAVE::geometry::operator&gt;&gt;" ref="aa2e16d81c858602abbc4a828510d6ab4" args="(std::istream &amp;I, RaveVector&lt; U &gt; &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; OpenRAVE::geometry::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&nbsp;</td>
+          <td class="paramname"> <em>I</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RaveVector&lt; U &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="geometry_8h_source.html">geometry.h</a> の <a class="el" href="geometry_8h_source.html#l00668">668</a> 行で定義されています。</p>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:17 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

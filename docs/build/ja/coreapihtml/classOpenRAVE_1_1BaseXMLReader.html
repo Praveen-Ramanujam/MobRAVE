@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: クラス BaseXMLReader 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="classOpenRAVE_1_1BaseXMLReader.html">BaseXMLReader</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス BaseXMLReader</h1><!-- doxytag: class="OpenRAVE::BaseXMLReader" -->
+<p><code>#include &lt;<a class="el" href="openrave_8h_source.html">openrave.h</a>&gt;</code></p>
+<div class="dynheader">
+BaseXMLReaderに対する継承グラフ</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1BaseXMLReader__inherit__graph.png" border="0" usemap="#BaseXMLReader_inherit__map" alt="Inheritance graph"/></div>
+<map name="BaseXMLReader_inherit__map" id="BaseXMLReader_inherit__map">
+<area shape="rect" href="classCustomController_1_1PIDXMLReader.html" title="PIDXMLReader" alt="" coords="5,83,115,112"/><area shape="rect" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Reader.html" title="Reader" alt="" coords="139,83,200,112"/><area shape="rect" href="classOpenRAVE_1_1DummyXMLReader.html" title="reads until the tag ends" alt="" coords="224,83,357,112"/><area shape="rect" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html" title="Describes a common and serializable interface for planning parameters." alt="" coords="381,83,512,112"/><area shape="rect" href="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader.html" title="SimpleXMLReader" alt="" coords="536,83,664,112"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+BaseXMLReaderのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1BaseXMLReader__coll__graph.png" border="0" usemap="#BaseXMLReader_coll__map" alt="Collaboration graph"/></div>
+<map name="BaseXMLReader_coll__map" id="BaseXMLReader_coll__map">
+<area shape="rect" title="STL class." alt="" coords="48,85,101,115"/><area shape="rect" title="STL class." alt="" coords="5,5,144,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="classOpenRAVE_1_1BaseXMLReader-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9">ProcessElement</a> { <a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9a55670b1a206d4da09ef69e3690ee7bba">PE_Pass</a> = 0, 
+<a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9a5123a3d32d744694919844d9675ede67">PE_Support</a> = 1, 
+<a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9a14953fbbe151fd55cd76395cdccc4af6">PE_Ignore</a> = 2
+ }</td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a5143187ada5e3a593490b42b2851bbbe">BaseXMLReader</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a034ab256eb83ff95644a30e038957979">~BaseXMLReader</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a4518fd20d196b853bb157999524b6fde">XMLReadablePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a96a8303765bddf9742cbc422f8a9c2d6">GetReadable</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9">ProcessElement</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a96b3e3b4503108964001ad58ab724ac3">startElement</a> (const std::string &amp;name, const <a class="el" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a> &amp;atts)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a3b5c1a1dc1e0965a9e27f139b18db4d9">endElement</a> (const std::string &amp;name)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a0b124434353fd2e48d951c2053e63408">characters</a> (const std::string &amp;ch)=0</td></tr>
+<tr><td colspan="2"><h2>Public 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a895aefe990ffe9af66bb5cd4e37d3579">_filename</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">XML filename/resource used for this class (can be empty).  <a href="#a895aefe990ffe9af66bb5cd4e37d3579"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>base class for all xml readers. XMLReaders are used to process data from xml files. Custom readers can be registered through <a class="el" href="classOpenRAVE_1_1EnvironmentBase.html" title="Maintains a world state, which serves as the gateway to all functions offered through...">EnvironmentBase</a>. By default it can record all data that is encountered inside the xml reader </p>
+<dl><dt><b>例: </b></dt><dd>
+<p><a class="el" href="customreader_8cpp-example.html#_a7">customreader.cpp</a>.</p>
+</dd>
+</dl>
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00665">665</a> 行で定義されています。</p>
+<hr/><h2>列挙型</h2>
+<a class="anchor" id="a5f6b74d2490bcfd578227b002ec9c5d9"></a><!-- doxytag: member="OpenRAVE::BaseXMLReader::ProcessElement" ref="a5f6b74d2490bcfd578227b002ec9c5d9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9">ProcessElement</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>列挙型の値: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a5f6b74d2490bcfd578227b002ec9c5d9a55670b1a206d4da09ef69e3690ee7bba"></a><!-- doxytag: member="PE_Pass" ref="a5f6b74d2490bcfd578227b002ec9c5d9a55670b1a206d4da09ef69e3690ee7bba" args="" -->PE_Pass</em>&nbsp;</td><td>
+<p>current tag was not supported, so pass onto another class </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5f6b74d2490bcfd578227b002ec9c5d9a5123a3d32d744694919844d9675ede67"></a><!-- doxytag: member="PE_Support" ref="a5f6b74d2490bcfd578227b002ec9c5d9a5123a3d32d744694919844d9675ede67" args="" -->PE_Support</em>&nbsp;</td><td>
+<p>current tag will be processed by this class </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a5f6b74d2490bcfd578227b002ec9c5d9a14953fbbe151fd55cd76395cdccc4af6"></a><!-- doxytag: member="PE_Ignore" ref="a5f6b74d2490bcfd578227b002ec9c5d9a14953fbbe151fd55cd76395cdccc4af6" args="" -->PE_Ignore</em>&nbsp;</td><td>
+<p>current tag and all its children should be ignored </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+<dl><dt><b>例: </b></dt><dd><a class="el" href="customreader_8cpp-example.html#a13">customreader.cpp</a>.</dd>
+</dl>
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00668">668</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a5143187ada5e3a593490b42b2851bbbe"></a><!-- doxytag: member="OpenRAVE::BaseXMLReader::BaseXMLReader" ref="a5143187ada5e3a593490b42b2851bbbe" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html">BaseXMLReader</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00674">674</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a034ab256eb83ff95644a30e038957979"></a><!-- doxytag: member="OpenRAVE::BaseXMLReader::~BaseXMLReader" ref="a034ab256eb83ff95644a30e038957979" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="classOpenRAVE_1_1BaseXMLReader.html">BaseXMLReader</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00676">676</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a0b124434353fd2e48d951c2053e63408"></a><!-- doxytag: member="OpenRAVE::BaseXMLReader::characters" ref="a0b124434353fd2e48d951c2053e63408" args="(const std::string &amp;ch)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void characters </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>ch</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>gets called for all data in between tags. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ch</em>&nbsp;</td><td>a string to the data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classCustomController_1_1PIDXMLReader.html#a91544148bc143140fe0474224180233d">PIDXMLReader</a>, <a class="el" href="classOpenRAVE_1_1DummyXMLReader.html#a5d492a895c2aa0a0d048f2262e1f7405">DummyXMLReader</a>, <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Reader.html#a5d492a895c2aa0a0d048f2262e1f7405">Reader</a>, <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a91544148bc143140fe0474224180233d">PlannerParameters</a>, と <a class="el" href="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader.html#a91544148bc143140fe0474224180233d">SimpleXMLReader</a>で実装されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b5c1a1dc1e0965a9e27f139b18db4d9"></a><!-- doxytag: member="OpenRAVE::BaseXMLReader::endElement" ref="a3b5c1a1dc1e0965a9e27f139b18db4d9" args="(const std::string &amp;name)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool endElement </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Gets called at the end of each "&lt;/type&gt;" expression. In this case, name is "type" </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>of the tag, will be always lower case </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if XMLReader has finished parsing (one condition is that name==_fieldname) , otherwise false </dd></dl>
+
+<p><a class="el" href="classCustomController_1_1PIDXMLReader.html#afc6f1ff707e6fd690100c89e3cd4c291">PIDXMLReader</a>, <a class="el" href="classOpenRAVE_1_1DummyXMLReader.html#a657c251dd2fbd2e107a114294f921bf7">DummyXMLReader</a>, <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Reader.html#a657c251dd2fbd2e107a114294f921bf7">Reader</a>, <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#afc6f1ff707e6fd690100c89e3cd4c291">PlannerParameters</a>, と <a class="el" href="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader.html#afc6f1ff707e6fd690100c89e3cd4c291">SimpleXMLReader</a>で実装されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a96a8303765bddf9742cbc422f8a9c2d6"></a><!-- doxytag: member="OpenRAVE::BaseXMLReader::GetReadable" ref="a96a8303765bddf9742cbc422f8a9c2d6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a4518fd20d196b853bb157999524b6fde">XMLReadablePtr</a> GetReadable </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>a readable interface that stores the information processsed for the current tag This pointer is used to the <a class="el" href="classOpenRAVE_1_1InterfaceBase.html" title="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</a> class registered readers </p>
+
+<p><a class="el" href="classCustomController_1_1PIDXMLReader.html#a96a8303765bddf9742cbc422f8a9c2d6">PIDXMLReader</a>, と <a class="el" href="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader.html#a96a8303765bddf9742cbc422f8a9c2d6">SimpleXMLReader</a>で再定義されています。</p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00681">681</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a96b3e3b4503108964001ad58ab724ac3"></a><!-- doxytag: member="OpenRAVE::BaseXMLReader::startElement" ref="a96b3e3b4503108964001ad58ab724ac3" args="(const std::string &amp;name, const AttributesList &amp;atts)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9">ProcessElement</a> startElement </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>atts</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Gets called in the beginning of each "&lt;type&gt;" expression. In this case, name is "type" </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>of the tag, will be always lower case </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>atts</em>&nbsp;</td><td>string of attributes where the first std::string is the attribute name and second is the value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if tag is accepted and this class will process it, otherwise false </dd></dl>
+
+<p><a class="el" href="classCustomController_1_1PIDXMLReader.html#aeef176e516fa467c3a1ea9c210f96d48">PIDXMLReader</a>, <a class="el" href="classOpenRAVE_1_1DummyXMLReader.html#ac774a5875e3574f18e13f0bb78f42c6f">DummyXMLReader</a>, <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Reader.html#ac774a5875e3574f18e13f0bb78f42c6f">Reader</a>, <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aeef176e516fa467c3a1ea9c210f96d48">PlannerParameters</a>, と <a class="el" href="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader.html#aeef176e516fa467c3a1ea9c210f96d48">SimpleXMLReader</a>で実装されています。</p>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="a895aefe990ffe9af66bb5cd4e37d3579"></a><!-- doxytag: member="OpenRAVE::BaseXMLReader::_filename" ref="a895aefe990ffe9af66bb5cd4e37d3579" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a895aefe990ffe9af66bb5cd4e37d3579">_filename</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>XML filename/resource used for this class (can be empty). </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00701">701</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>include/openrave/<a class="el" href="openrave_8h_source.html">openrave.h (r2848/r2811)</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:11 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

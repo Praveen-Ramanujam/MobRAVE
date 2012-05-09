@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/breathe
+END
+LICENCE
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/breathe/LICENCE
+END
+README.rst
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/breathe/README.rst
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/breathe/__init__.py
+END
+builder.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/breathe/builder.py
+END

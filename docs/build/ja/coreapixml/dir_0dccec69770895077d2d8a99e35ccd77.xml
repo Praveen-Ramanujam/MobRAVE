@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="dir_0dccec69770895077d2d8a99e35ccd77" kind="dir">
+    <compoundname>build/include/</compoundname>
+    <innerdir refid="dir_819e225eb055bb67119e4865c958672b">build/include/openrave/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/build/include/"/>
+  </compounddef>
+</doxygen>

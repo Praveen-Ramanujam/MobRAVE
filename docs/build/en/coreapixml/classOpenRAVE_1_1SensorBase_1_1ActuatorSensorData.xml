@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::ActuatorSensorData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorData" prot="public" virt="non-virtual">SensorData</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3c" prot="public" static="no">
+        <name>ActuatorState</name>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3ca9db5ef562213f8bec88be67e1e2d7d10" prot="public">
+          <name>AS_Undefined</name>
+          <initializer>0</initializer>
+          <briefdescription>
+<para>returned when no state is defined </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3ca94f00fffd972fc0bc603b3ea47101254" prot="public">
+          <name>AS_Idle</name>
+          <initializer>1</initializer>
+          <briefdescription>
+<para>this actuator is idle </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3ca32ea9206752f7b87d3bd9fbd85cb08f3" prot="public">
+          <name>AS_Moving</name>
+          <initializer>2</initializer>
+          <briefdescription>
+<para>this actuator is in motion from previous commands </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3cad320e5c2ae66e3c49f5a1771a29effd6" prot="public">
+          <name>AS_Stalled</name>
+          <initializer>3</initializer>
+          <briefdescription>
+<para>the actuator is stalled, needs to be unstalled by sending a ready signal </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3ca083b3c14ce5e0fc3cc25f3f9f284c319" prot="public">
+          <name>AS_Braked</name>
+          <initializer>4</initializer>
+          <briefdescription>
+<para>the actuator is braked </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>the state of the actuator </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="174" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="174" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1a7b138acf2fe7916ac29f367701714636" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3c" kindref="member">ActuatorState</ref></type>
+        <definition>ActuatorState state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="188" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1a63e8fdafcf41e40ff6d9d7289bd1c305" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal measuredcurrent</definition>
+        <argsstring></argsstring>
+        <name>measuredcurrent</name>
+        <briefdescription>
+<para>measured current from the actuator </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="189" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1a02579f8c545c868b31b89bf00c194f53" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal measuredtemperature</definition>
+        <argsstring></argsstring>
+        <name>measuredtemperature</name>
+        <briefdescription>
+<para>measured temperature from the actuator </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="190" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1ad9a9a10b35c10cc05a1a5acd2bb7882b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal appliedcurrent</definition>
+        <argsstring></argsstring>
+        <name>appliedcurrent</name>
+        <briefdescription>
+<para>current sent to the actuator </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="191" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1a9c29c979519f2725378d98f25918563a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ActuatorSensorData</definition>
+        <argsstring>()</argsstring>
+        <name>ActuatorSensorData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="182" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="182" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="184" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="184" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An actuator for modeling motors and other mechanisms that produce torque/force. The actuator has only one degree of freedom. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="723">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+      </node>
+      <node id="722">
+        <label>ActuatorSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData"/>
+        <childnode refid="723" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="726">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="725">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+        <childnode refid="726" relation="usage">
+          <edgelabel>__trans</edgelabel>
+        </childnode>
+      </node>
+      <node id="724">
+        <label>ActuatorSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData"/>
+        <childnode refid="725" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="171" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="170" bodyend="192"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a0503a26959ec94efdab737ce47842afe" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>__stamp</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a5786ccc78c0aae6ca580507121b3c24a" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>__trans</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1a9c29c979519f2725378d98f25918563a" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>ActuatorSensorData</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3c" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>ActuatorState</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1ad9a9a10b35c10cc05a1a5acd2bb7882b" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>appliedcurrent</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3ca083b3c14ce5e0fc3cc25f3f9f284c319" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>AS_Braked</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3ca94f00fffd972fc0bc603b3ea47101254" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>AS_Idle</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3ca32ea9206752f7b87d3bd9fbd85cb08f3" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>AS_Moving</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3cad320e5c2ae66e3c49f5a1771a29effd6" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>AS_Stalled</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1aff7db6eb3c126e9c2c2c116ed181fa3ca9db5ef562213f8bec88be67e1e2d7d10" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>AS_Undefined</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1a63e8fdafcf41e40ff6d9d7289bd1c305" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>measuredcurrent</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1a02579f8c545c868b31b89bf00c194f53" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>measuredtemperature</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a27324341bb2e28fa2be2cfd0b7f0e985" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1a7b138acf2fe7916ac29f367701714636" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>state</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a2ce106fe3cd9771a5b0770339c411829" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::ActuatorSensorData</scope><name>~SensorData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1geometry_1_1obb" kind="class" prot="public">
+    <compoundname>OpenRAVE::geometry::obb</compoundname>
+    <includes refid="geometry_8h" local="no">geometry.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1obb_1a03eaac86e9a1081f590fefde96d049d8" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="579" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1obb_1a0a2211068fc366a7a037b35f81d6ebcf" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; up</definition>
+        <argsstring></argsstring>
+        <name>up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="579" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1obb_1a358d165f685f7746473d110c6cfe7198" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="579" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1obb_1ab7f63b564ef04ccd22dfa2899cdd2b10" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="579" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1obb_1a8bc80a93cf1da1acaefbf0cbdf5881c0" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; extents</definition>
+        <argsstring></argsstring>
+        <name>extents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="579" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An oriented bounding box. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="577" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="576" bodyend="580"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1geometry_1_1obb_1a358d165f685f7746473d110c6cfe7198" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::obb</scope><name>dir</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1obb_1a8bc80a93cf1da1acaefbf0cbdf5881c0" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::obb</scope><name>extents</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1obb_1ab7f63b564ef04ccd22dfa2899cdd2b10" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::obb</scope><name>pos</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1obb_1a03eaac86e9a1081f590fefde96d049d8" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::obb</scope><name>right</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1obb_1a0a2211068fc366a7a037b35f81d6ebcf" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::obb</scope><name>up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="namespaceOpenRAVE_1_1LocalXML" kind="namespace">
+    <compoundname>OpenRAVE::LocalXML</compoundname>
+    <innerclass refid="structOpenRAVE_1_1LocalXML_1_1XMLREADERDATA" prot="public">OpenRAVE::LocalXML::XMLREADERDATA</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1LocalXML_1afe895c0fdff78b5cde3e7c8a820955c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenRAVE::LocalXML::RaveXMLErrorFunc</definition>
+        <argsstring>(void *ctx, const char *msg,...)</argsstring>
+        <name>RaveXMLErrorFunc</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2257" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2256" bodyend="2264"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1LocalXML_1af4b816d19ab1ab7a5d0c0479ba1d445c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenRAVE::LocalXML::DefaultStartElementSAXFunc</definition>
+        <argsstring>(void *ctx, const xmlChar *name, const xmlChar **atts)</argsstring>
+        <name>DefaultStartElementSAXFunc</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const xmlChar **</type>
+          <declname>atts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2275" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2274" bodyend="2297"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1LocalXML_1afb29139f4bf6b6820617f4ef86528e49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenRAVE::LocalXML::DefaultEndElementSAXFunc</definition>
+        <argsstring>(void *ctx, const xmlChar *name)</argsstring>
+        <name>DefaultEndElementSAXFunc</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2300" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2299" bodyend="2315"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1LocalXML_1aa81c170a6cccaae40b42ef8e0c3b323f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpenRAVE::LocalXML::DefaultCharactersSAXFunc</definition>
+        <argsstring>(void *ctx, const xmlChar *ch, int len)</argsstring>
+        <name>DefaultCharactersSAXFunc</name>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const xmlChar *</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2318" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2317" bodyend="2326"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1LocalXML_1a26dcac9b9415c2195046e2b91a7654b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenRAVE::LocalXML::xmlDetectSAX2</definition>
+        <argsstring>(xmlParserCtxtPtr ctxt)</argsstring>
+        <name>xmlDetectSAX2</name>
+        <param>
+          <type>xmlParserCtxtPtr</type>
+          <declname>ctxt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2329" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2328" bodyend="2348"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1LocalXML_1a509c2492a6af93fb83c0e25ba24867f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OpenRAVE::LocalXML::ParseXMLData</definition>
+        <argsstring>(BaseXMLReaderPtr preader, const char *buffer, int size)</argsstring>
+        <name>ParseXMLData</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5465be4feef36a211b06feebdc5e3b42" kindref="member">BaseXMLReaderPtr</ref></type>
+          <declname>preader</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2351" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2350" bodyend="2405"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2254"/>
+  </compounddef>
+</doxygen>

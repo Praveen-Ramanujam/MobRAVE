@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave
+END
+pqprave.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqprave.cpp
+END
+collisionPQP.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/collisionPQP.h
+END
+plugindefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/plugindefs.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/CMakeLists.txt
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners
+END
+trajectorytiming.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/trajectorytiming.cpp
+END
+workspacetrajectorytracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/workspacetrajectorytracker.cpp
+END
+pathoptimizers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/pathoptimizers.cpp
+END
+randomized-astar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/randomized-astar.cpp
+END
+rplanners.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/rplanners.cpp
+END
+plugindefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/plugindefs.h
+END
+plannerparameters.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/plannerparameters.h
+END
+rplanners.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/rplanners.h
+END
+graspgradient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/graspgradient.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/CMakeLists.txt
+END
+rrt.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/rrt.h
+END
+parabolicsmoother.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/parabolicsmoother.cpp
+END

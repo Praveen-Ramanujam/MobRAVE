@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/interfaces
+END
+VisualFeedback.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/interfaces/VisualFeedback.py
+END
+BaseManipulation.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/interfaces/BaseManipulation.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/interfaces/__init__.py
+END
+Grasper.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/interfaces/Grasper.py
+END
+TaskManipulation.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/interfaces/TaskManipulation.py
+END

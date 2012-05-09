@@ -1,0 +1,11 @@
+Import('builder')
+
+builder.library('cameras', 'CAMERAS_LIBRARY', Split("""
+	command
+	common
+	reflection
+"""), Split("""
+	cameramanager.cpp
+	orthocameramanager.cpp
+	perspectivecameramanager.cpp
+"""))

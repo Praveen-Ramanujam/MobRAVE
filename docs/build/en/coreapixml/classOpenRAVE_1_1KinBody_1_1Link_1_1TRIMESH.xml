@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH" kind="class" prot="public">
+    <compoundname>OpenRAVE::KinBody::Link::TRIMESH</compoundname>
+    <includes refid="kinbody_8h" local="no">kinbody.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1a35d7c6736445e92561be6400cc66ec68" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt;</type>
+        <definition>std::vector&lt;Vector&gt; vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="69" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1a09b99bec043972ddf991b62d86d7807d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; indices</definition>
+        <argsstring></argsstring>
+        <name>indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="70" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1aa400f00641aef69d0f67d66c474f21a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplyTransform</definition>
+        <argsstring>(const Transform &amp;t)</argsstring>
+        <name>ApplyTransform</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1acb47ba3d8dcc61decdd9041004a8c8e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ApplyTransform</definition>
+        <argsstring>(const TransformMatrix &amp;t)</argsstring>
+        <name>ApplyTransform</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1aed57495d2314a15e0e3687936f1dfdf3" kindref="member">TransformMatrix</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1add133d6bc393a1ade122f72320a6e165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Append</definition>
+        <argsstring>(const TRIMESH &amp;mesh)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH" kindref="compound">TRIMESH</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>append another <ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH" kindref="compound">TRIMESH</ref> to this tri mesh </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1aab278507003862410ed55a28ffcb9cac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Append</definition>
+        <argsstring>(const TRIMESH &amp;mesh, const Transform &amp;trans)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH" kindref="compound">TRIMESH</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1accc614b17312d3e289a05ba5060f0eb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1aabb" kindref="compound">AABB</ref></type>
+        <definition>AABB ComputeAABB</definition>
+        <argsstring>() const </argsstring>
+        <name>ComputeAABB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1a8f93db950d50b34438dc4e45c23cb420" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void serialize</definition>
+        <argsstring>(std::ostream &amp;o, int options=0) const </argsstring>
+        <name>serialize</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="80"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1a66c38dc8863d136343e6cce3072ec372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend OPENRAVE_API std::ostream &amp;</type>
+        <definition>OPENRAVE_API std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;O, const TRIMESH &amp;trimesh)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH" kindref="compound">TRIMESH</ref> &amp;</type>
+          <declname>trimesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="82"/>
+      </memberdef>
+      <memberdef kind="friend" id="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1a24f118acad7e0592186e509c84c5ddc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend OPENRAVE_API std::istream &amp;</type>
+        <definition>OPENRAVE_API std::istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;I, TRIMESH &amp;trimesh)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>I</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH" kindref="compound">TRIMESH</ref> &amp;</type>
+          <declname>trimesh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>User data for trimesh geometries. Vertices are defined in counter-clockwise order for outward pointing faces. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1949">
+        <label>vector&lt; Vector &gt;</label>
+        <childnode refid="1950" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1947">
+        <label>TRIMESH</label>
+        <link refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH"/>
+        <childnode refid="1948" relation="usage">
+          <edgelabel>indices</edgelabel>
+        </childnode>
+        <childnode refid="1949" relation="usage">
+          <edgelabel>vertices</edgelabel>
+        </childnode>
+      </node>
+      <node id="1948">
+        <label>vector&lt; int &gt;</label>
+      </node>
+      <node id="1950">
+        <label>RaveVector</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="67" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="66" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1add133d6bc393a1ade122f72320a6e165" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::TRIMESH</scope><name>Append</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1aab278507003862410ed55a28ffcb9cac" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::TRIMESH</scope><name>Append</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1aa400f00641aef69d0f67d66c474f21a2" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::TRIMESH</scope><name>ApplyTransform</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1acb47ba3d8dcc61decdd9041004a8c8e9" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::TRIMESH</scope><name>ApplyTransform</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1accc614b17312d3e289a05ba5060f0eb8" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::TRIMESH</scope><name>ComputeAABB</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1a09b99bec043972ddf991b62d86d7807d" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::TRIMESH</scope><name>indices</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1a66c38dc8863d136343e6cce3072ec372" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::TRIMESH</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1a24f118acad7e0592186e509c84c5ddc1" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::TRIMESH</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1a8f93db950d50b34438dc4e45c23cb420" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::TRIMESH</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH_1a35d7c6736445e92561be6400cc66ec68" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::TRIMESH</scope><name>vertices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

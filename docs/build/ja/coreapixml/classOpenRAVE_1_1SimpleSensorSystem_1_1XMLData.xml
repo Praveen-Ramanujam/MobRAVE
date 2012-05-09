@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SimpleSensorSystem::XMLData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1XMLReadable" prot="public" virt="non-virtual">XMLReadable</basecompoundref>
+    <includes refid="sensorsystem_8h" local="no">sensorsystem.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1ae11b63eb07eb4e5796c29a511b8e50cd" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string sid</definition>
+        <argsstring></argsstring>
+        <name>sid</name>
+        <briefdescription>
+<para>global id for the system id </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="85" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a7441ef0865bcb3db9b8064dd7375c1ea" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="86" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a5066cdd8c3272a6ee04da4d3c10efc54" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string strOffsetLink</definition>
+        <argsstring></argsstring>
+        <name>strOffsetLink</name>
+        <briefdescription>
+<para>the link where the markers are attached (if any) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="87" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a7a7cfa080ab73d2c5819a486f6f03e40" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform transOffset</definition>
+        <argsstring></argsstring>
+        <name>transOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="88" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a066e8f0d73ffe336a558360d2715e617" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform transPreOffset</definition>
+        <argsstring></argsstring>
+        <name>transPreOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="88" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1adbabe3ef66355e3eb2e0714dcabbac51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SimpleSensorSystem</definition>
+        <argsstring></argsstring>
+        <name>SimpleSensorSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="90" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a9dd78231cdf4cbc33ddbfdc742dee48b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>XMLData</definition>
+        <argsstring>(const std::string &amp;xmlid)</argsstring>
+        <name>XMLData</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>xmlid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="79" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="79" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1abd3b9e9657eab1a5a1ea756f05fa771d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void copy</definition>
+        <argsstring>(boost::shared_ptr&lt; XMLData const  &gt; pdata)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData" kindref="compound">XMLData</ref> const  &gt;</type>
+          <declname>pdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="81" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="81" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2071">
+        <label>XMLReadable</label>
+        <link refid="classOpenRAVE_1_1XMLReadable"/>
+      </node>
+      <node id="2070">
+        <label>XMLData</label>
+        <link refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData"/>
+        <childnode refid="2071" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2076">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="2074">
+        <label>string</label>
+        <childnode refid="2075" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2073">
+        <label>XMLReadable</label>
+        <link refid="classOpenRAVE_1_1XMLReadable"/>
+        <childnode refid="2074" relation="usage">
+          <edgelabel>__xmlid</edgelabel>
+        </childnode>
+      </node>
+      <node id="2075">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2072">
+        <label>XMLData</label>
+        <link refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData"/>
+        <childnode refid="2073" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2076" relation="usage">
+          <edgelabel>transOffset</edgelabel>
+          <edgelabel>transPreOffset</edgelabel>
+        </childnode>
+        <childnode refid="2074" relation="usage">
+          <edgelabel>strOffsetLink</edgelabel>
+          <edgelabel>sid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="77" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="77" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1abd3b9e9657eab1a5a1ea756f05fa771d" prot="public" virt="virtual"><scope>OpenRAVE::SimpleSensorSystem::XMLData</scope><name>copy</name></member>
+      <member refid="classOpenRAVE_1_1XMLReadable_1a0821649216dd12d46644e17732a6f03b" prot="public" virt="virtual"><scope>OpenRAVE::SimpleSensorSystem::XMLData</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a7441ef0865bcb3db9b8064dd7375c1ea" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::XMLData</scope><name>id</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1ae11b63eb07eb4e5796c29a511b8e50cd" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::XMLData</scope><name>sid</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a5066cdd8c3272a6ee04da4d3c10efc54" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::XMLData</scope><name>strOffsetLink</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a7a7cfa080ab73d2c5819a486f6f03e40" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::XMLData</scope><name>transOffset</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a066e8f0d73ffe336a558360d2715e617" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::XMLData</scope><name>transPreOffset</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a9dd78231cdf4cbc33ddbfdc742dee48b" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::XMLData</scope><name>XMLData</name></member>
+      <member refid="classOpenRAVE_1_1XMLReadable_1af15a81c4a38531ede7ba24014b511539" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::XMLData</scope><name>XMLReadable</name></member>
+      <member refid="classOpenRAVE_1_1XMLReadable_1ad5134b6ff094d23e59c5fedd318219a7" prot="public" virt="virtual"><scope>OpenRAVE::SimpleSensorSystem::XMLData</scope><name>~XMLReadable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

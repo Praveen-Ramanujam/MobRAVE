@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SpaceSamplerBase" kind="class" prot="public">
+    <compoundname>OpenRAVE::SpaceSamplerBase</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1InterfaceBase" prot="public" virt="non-virtual">InterfaceBase</basecompoundref>
+    <includes refid="spacesampler_8h" local="no">spacesampler.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1aad0bdf88c334a0580faa2e74543fa923" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SpaceSamplerBase</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>SpaceSamplerBase</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="44" bodyfile="/home/pra3cob/openrave/include/openrave/spacesampler.h" bodystart="44" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1ad9f395da402d7bb9aaef7706d7b9be4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~SpaceSamplerBase</definition>
+        <argsstring>()</argsstring>
+        <name>~SpaceSamplerBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="46" bodyfile="/home/pra3cob/openrave/include/openrave/spacesampler.h" bodystart="46" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1a0841286ea829596bce2ceab61ef3645c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetSeed</definition>
+        <argsstring>(uint32_t seed) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetSeed</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+<para>sets a new seed. For sequence samplers, the seed describes the n^th sample to begin at. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1adda3b11ca875fd0b90192d3700fdc024" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetSpaceDOF</definition>
+        <argsstring>(int dof) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetSpaceDOF</name>
+        <param>
+          <type>int</type>
+          <declname>dof</declname>
+        </param>
+        <briefdescription>
+<para>Sets the degrees of freedom of the space (note this is different from the parameterization dimension). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1a50e5a2752e24bf4c5dfaa2873696a5a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int GetDOF</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetDOF</name>
+        <briefdescription>
+<para>returns the degrees of freedom of the sampling space </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1a1c2746b270bee7389df0b315a18a719c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int GetNumberOfValues</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetNumberOfValues</name>
+        <briefdescription>
+<para>Dimension of the return samples. </para>        </briefdescription>
+        <detaileddescription>
+<para>Number of values used to represent the parameterization of the space (&gt;= dof). For example, let a quaternion describe a 3D rotation. The DOF of the space is 3, while the dimension of the returned samples is 4. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1a6b5a7d9721433cddd2a0a96bdcf04ecf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Supports</definition>
+        <argsstring>(SampleDataType type) const =0</argsstring>
+        <name>Supports</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a58596e0cb321ccf00bbe8d13b7b8fb2c" kindref="member">SampleDataType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1a01de3c15828fffc3e8fde1384735f428" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetLimits</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;vLowerLimit, std::vector&lt; dReal &gt; &amp;vUpperLimit) const OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>GetLimits</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vLowerLimit</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vUpperLimit</declname>
+        </param>
+        <briefdescription>
+<para>returns the minimum and maximum values returned for each dimension (size is <ref refid="classOpenRAVE_1_1SpaceSamplerBase_1a1c2746b270bee7389df0b315a18a719c" kindref="member">GetNumberOfValues()</ref>) </para>        </briefdescription>
+        <detaileddescription>
+<para>By default the limits should be in [0,1]^N. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1afb999fb02a4ba0107783be362f3ec6fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetLimits</definition>
+        <argsstring>(std::vector&lt; uint32_t &gt; &amp;vLowerLimit, std::vector&lt; uint32_t &gt; &amp;vUpperLimit) const OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>GetLimits</name>
+        <param>
+          <type>std::vector&lt; uint32_t &gt; &amp;</type>
+          <declname>vLowerLimit</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; uint32_t &gt; &amp;</type>
+          <declname>vUpperLimit</declname>
+        </param>
+        <briefdescription>
+<para>returns the minimum and maximum values returned for each dimension (size is <ref refid="classOpenRAVE_1_1SpaceSamplerBase_1a1c2746b270bee7389df0b315a18a719c" kindref="member">GetNumberOfValues()</ref>) </para>        </briefdescription>
+        <detaileddescription>
+<para>By default the limits should be [0,2^32-1] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1ac7edf671cbb636f75edb247680ea6a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SampleSequence</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;samples, size_t num=1, IntervalType interval=IT_Closed) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SampleSequence</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937" kindref="member">IntervalType</ref></type>
+          <declname>interval</declname>
+          <defval>IT_Closed</defval>
+        </param>
+        <briefdescription>
+<para>sequentially sampling returning the next &apos;num&apos; samples </para>        </briefdescription>
+        <detaileddescription>
+<para>The sampler can fail by returning an array of size 0. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the values of the samples. This is a num*GetNumberOfValues() array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of samples to return </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sampling intervel for each of the dimensions. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1a34363c72ec66a1249f4c94000d15fd7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SampleSequence</definition>
+        <argsstring>(std::vector&lt; uint32_t &gt; &amp;sample, size_t num=1) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SampleSequence</name>
+        <param>
+          <type>std::vector&lt; uint32_t &gt; &amp;</type>
+          <declname>sample</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>sequentially sampling returning the next &apos;num&apos; samples </para>        </briefdescription>
+        <detaileddescription>
+<para>The sampler can fail by returning an array of size 0. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the values of the samples. This is a num*GetNumberOfValues() array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of samples to return </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1a090abc1c115a60100fc8ed5c85a5ebc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SampleComplete</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;samples, size_t num, IntervalType interval=IT_Closed) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SampleComplete</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937" kindref="member">IntervalType</ref></type>
+          <declname>interval</declname>
+          <defval>IT_Closed</defval>
+        </param>
+        <briefdescription>
+<para>returns N samples that best approximate the entire sampling space. </para>        </briefdescription>
+        <detaileddescription>
+<para>The sampler can fail by returning an array of size 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1a996ca169f30d50c4b58f7dd249d312c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SampleComplete</definition>
+        <argsstring>(std::vector&lt; uint32_t &gt; &amp;samples, size_t num) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SampleComplete</name>
+        <param>
+          <type>std::vector&lt; uint32_t &gt; &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>returns N samples that best approximate the entire sampling space. </para>        </briefdescription>
+        <detaileddescription>
+<para>The sampler can fail by returning an array of size 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InterfaceType</type>
+        <definition>static InterfaceType GetInterfaceTypeStatic</definition>
+        <argsstring>()</argsstring>
+        <name>GetInterfaceTypeStatic</name>
+        <briefdescription>
+<para>return the static interface type this class points to (used for safe casting) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="50" bodyfile="/home/pra3cob/openrave/include/openrave/spacesampler.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SpaceSamplerBase_1af386ad7515f485242895df543029d333" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* GetHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetHash</name>
+        <reimplements refid="classOpenRAVE_1_1InterfaceBase_1abfb0be978f0f9899582785d67c4b3d40">GetHash</reimplements>
+        <briefdescription>
+<para>Sets a distance metric for measuring samples. Used when computing neighborhood sampling. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="114" bodyfile="/home/pra3cob/openrave/include/openrave/spacesampler.h" bodystart="114" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><bold>[interface]</bold> Contains space samplers commonly used in planners. <bold>If not specified, method is not multi-thread safe.</bold> See <ref refid="arch__spacesampler" kindref="compound">SpaceSampler Concepts</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1873">
+        <label>SpaceSamplerBase</label>
+        <link refid="classOpenRAVE_1_1SpaceSamplerBase"/>
+        <childnode refid="1874" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1874">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1875">
+        <label>SpaceSamplerBase</label>
+        <link refid="classOpenRAVE_1_1SpaceSamplerBase"/>
+        <childnode refid="1876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1877">
+        <label>string</label>
+        <childnode refid="1878" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1879">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1877" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1878">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1880">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1877" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1876">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1877" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1879" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1880" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h" line="42" bodyfile="/home/pra3cob/openrave/include/openrave/spacesampler.h" bodystart="41" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>__description</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>Clone</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1a50e5a2752e24bf4c5dfaa2873696a5a9" prot="public" virt="pure-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetDOF</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1af386ad7515f485242895df543029d333" prot="private" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetHash</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1a01de3c15828fffc3e8fde1384735f428" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetLimits</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1afb999fb02a4ba0107783be362f3ec6fe" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetLimits</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1a1c2746b270bee7389df0b315a18a719c" prot="public" virt="pure-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetNumberOfValues</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>RegisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1a090abc1c115a60100fc8ed5c85a5ebc2" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>SampleComplete</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1a996ca169f30d50c4b58f7dd249d312c9" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>SampleComplete</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1ac7edf671cbb636f75edb247680ea6a87" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>SampleSequence</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1a34363c72ec66a1249f4c94000d15fd7b" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>SampleSequence</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>SetDescription</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1a0841286ea829596bce2ceab61ef3645c" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>SetSeed</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1adda3b11ca875fd0b90192d3700fdc024" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>SetSpaceDOF</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1aad0bdf88c334a0580faa2e74543fa923" prot="public" virt="non-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>SpaceSamplerBase</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1a6b5a7d9721433cddd2a0a96bdcf04ecf" prot="public" virt="pure-virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>Supports</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>~InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1SpaceSamplerBase_1ad9f395da402d7bb9aaef7706d7b9be4d" prot="public" virt="virtual"><scope>OpenRAVE::SpaceSamplerBase</scope><name>~SpaceSamplerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransform}{
+\subsection{RaveTransform$<$ T $>$ Class Template Reference}
+\label{classOpenRAVE_1_1geometry_1_1RaveTransform}\index{OpenRAVE::geometry::RaveTransform@{OpenRAVE::geometry::RaveTransform}}
+}
+
+
+Affine transformation parameterized with quaterions.  
+
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransform_a9fd0b1d5190b14e4c8a354b875103bfd}{
+\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform_a9fd0b1d5190b14e4c8a354b875103bfd}{operator$\ast$} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&r) const }
+\label{classOpenRAVE_1_1geometry_1_1RaveTransform_a9fd0b1d5190b14e4c8a354b875103bfd}
+
+\begin{DoxyCompactList}\small\item\em transform a 3 dim vector \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransform_a1a50fdbaa13ce6896da2e56679edf765}{
+\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform_a1a50fdbaa13ce6896da2e56679edf765}{rotate} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&r) const }
+\label{classOpenRAVE_1_1geometry_1_1RaveTransform_a1a50fdbaa13ce6896da2e56679edf765}
+
+\begin{DoxyCompactList}\small\item\em transform a vector by the rotation component only \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransform_ab62dd1c9c7281ec7662ae671341d0241}{
+\hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform}{RaveTransform}$<$ T $>$ \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform_ab62dd1c9c7281ec7662ae671341d0241}{rotate} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform}{RaveTransform}$<$ T $>$ \&r) const }
+\label{classOpenRAVE_1_1geometry_1_1RaveTransform_ab62dd1c9c7281ec7662ae671341d0241}
+
+\begin{DoxyCompactList}\small\item\em transform a transform by the rotation component only \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransform_abc0c6acd93346ae4a8009931a8c69d26}{
+\hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform}{RaveTransform}$<$ T $>$ \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform_abc0c6acd93346ae4a8009931a8c69d26}{operator$\ast$} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform}{RaveTransform}$<$ T $>$ \&r) const }
+\label{classOpenRAVE_1_1geometry_1_1RaveTransform_abc0c6acd93346ae4a8009931a8c69d26}
+
+\begin{DoxyCompactList}\small\item\em t = this $\ast$ r \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransform_aad5195f0043f898ac6fbf0a8bceca2c6}{
+\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform_aad5195f0043f898ac6fbf0a8bceca2c6}{trans}}
+\label{classOpenRAVE_1_1geometry_1_1RaveTransform_aad5195f0043f898ac6fbf0a8bceca2c6}
+
+\begin{DoxyCompactList}\small\item\em rot is a quaternion=(cos(ang/2),axisx$\ast$sin(ang/2),axisy$\ast$sin(ang/2),axisz$\ast$sin(ang/2)) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$ class OpenRAVE::geometry::RaveTransform$<$ T $>$}
+
+Affine transformation parameterized with quaterions. 

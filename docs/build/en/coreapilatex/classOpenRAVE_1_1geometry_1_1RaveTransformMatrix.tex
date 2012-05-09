@@ -1,0 +1,59 @@
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{
+\subsection{RaveTransformMatrix$<$ T $>$ Class Template Reference}
+\label{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}\index{OpenRAVE::geometry::RaveTransformMatrix@{OpenRAVE::geometry::RaveTransformMatrix}}
+}
+
+
+Affine transformation parameterized with rotation matrices. Scales and shears are not supported.  
+
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_adeb4f0cf3457e5c58aa980091e9c83c5}{
+\hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_adeb4f0cf3457e5c58aa980091e9c83c5}{operator$\ast$} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \&r) const }
+\label{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_adeb4f0cf3457e5c58aa980091e9c83c5}
+
+\begin{DoxyCompactList}\small\item\em t = this $\ast$ r \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_a5452318a7e4027a0907e7492ce8389f6}{
+\hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_a5452318a7e4027a0907e7492ce8389f6}{inverse} () const }
+\label{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_a5452318a7e4027a0907e7492ce8389f6}
+
+\begin{DoxyCompactList}\small\item\em being on the safe side, do the full inverse incase someone uses scaling. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_acb4433f3f4564fe3bda155f5ca6d241b}{m} \mbox{[}12\mbox{]}
+\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_aad5195f0043f898ac6fbf0a8bceca2c6}{
+\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_aad5195f0043f898ac6fbf0a8bceca2c6}{trans}}
+\label{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_aad5195f0043f898ac6fbf0a8bceca2c6}
+
+\begin{DoxyCompactList}\small\item\em translation component \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_ab5a48a63b8969c5e91ed48475fc92923}{
+{\footnotesize template$<$typename U $>$ }\\std::ostream \& \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_ab5a48a63b8969c5e91ed48475fc92923}{operator$<$$<$} (std::ostream \&O, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ U $>$ \&v)}
+\label{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_ab5a48a63b8969c5e91ed48475fc92923}
+
+\begin{DoxyCompactList}\small\item\em serialize in column order! This is the format transformations are passed across the network \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_a07486f83f8fcc37b79f62b689a6dba1b}{
+{\footnotesize template$<$typename U $>$ }\\std::istream \& \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_a07486f83f8fcc37b79f62b689a6dba1b}{operator$>$$>$} (std::istream \&I, \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ U $>$ \&v)}
+\label{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_a07486f83f8fcc37b79f62b689a6dba1b}
+
+\begin{DoxyCompactList}\small\item\em de-\/serialize in column order! This is the format transformations are passed across the network \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$ class OpenRAVE::geometry::RaveTransformMatrix$<$ T $>$}
+
+Affine transformation parameterized with rotation matrices. Scales and shears are not supported. 
+
+\subsubsection{Member Data Documentation}
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_acb4433f3f4564fe3bda155f5ca6d241b}{
+\index{OpenRAVE::geometry::RaveTransformMatrix@{OpenRAVE::geometry::RaveTransformMatrix}!m@{m}}
+\index{m@{m}!OpenRAVE::geometry::RaveTransformMatrix@{OpenRAVE::geometry::RaveTransformMatrix}}
+\paragraph[{m}]{\setlength{\rightskip}{0pt plus 5cm}T {\bf m}\mbox{[}12\mbox{]}}\hfill}
+\label{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix_acb4433f3f4564fe3bda155f5ca6d241b}
+3x3 rotation matrix. Note that each row is 4 elements long! So row 1 starts at m\mbox{[}4\mbox{]}, row 2 at m\mbox{[}8\mbox{]} The reason is to maintain 16 byte alignment when sizeof(T) is 4 bytes 

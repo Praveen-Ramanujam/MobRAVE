@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classstd_1_1istringstream" kind="class" prot="public">
+    <compoundname>std::istringstream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::basic_istringstream&lt; char &gt;</basecompoundref>
+    <briefdescription>
+<para>STL class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1329">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="1330" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1331">
+        <label>ios_base</label>
+      </node>
+      <node id="1330">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="1331" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1328">
+        <label>basic_istringstream&lt; char &gt;</label>
+        <childnode refid="1329" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1327">
+        <label>istringstream</label>
+        <childnode refid="1328" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1334">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="1335" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1336">
+        <label>ios_base</label>
+      </node>
+      <node id="1335">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="1336" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1333">
+        <label>basic_istringstream&lt; char &gt;</label>
+        <childnode refid="1334" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1332">
+        <label>istringstream</label>
+        <childnode refid="1333" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="[STL]" line="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

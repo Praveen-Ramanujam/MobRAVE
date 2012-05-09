@@ -1,0 +1,1118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1RobotBase_1_1Manipulator" kind="class" prot="public">
+    <compoundname>OpenRAVE::RobotBase::Manipulator</compoundname>
+    <includes refid="robot_8h" local="no">robot.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1aaf2ed934b37cbbd236fdd1b01a5f5005" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="231" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a1df66995ccb948e3c879ae8df4c7cc45" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+        <definition>LinkPtr _pBase</definition>
+        <argsstring></argsstring>
+        <name>_pBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="232" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a0aed29f35f1a2eade750bcccfe880c86" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+        <definition>LinkPtr _pEndEffector</definition>
+        <argsstring></argsstring>
+        <name>_pEndEffector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="232" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a93714236a15909e9fb83641f095dc8eb" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform _tLocalTool</definition>
+        <argsstring></argsstring>
+        <name>_tLocalTool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="233" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a2193c631a96cebe54cc71b4aaf44bc0f" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; _vClosingDirection</definition>
+        <argsstring></argsstring>
+        <name>_vClosingDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="234" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ad0301cd428a3c3fe44babdddb524a078" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector _vdirection</definition>
+        <argsstring></argsstring>
+        <name>_vdirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="235" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ad8a2af4ce11be0dca40e6c5529f53312" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1adc64503b74e38e98eedcbc031b3e37ff" kindref="member">IkSolverBasePtr</ref></type>
+        <definition>IkSolverBasePtr _pIkSolver</definition>
+        <argsstring></argsstring>
+        <name>_pIkSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="236" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a6467cc354af9ccc617bbf7a2a0185f50" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _strIkSolver</definition>
+        <argsstring></argsstring>
+        <name>_strIkSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="237" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a06e8b45efe1699af0520ca886402f495" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; _vgripperjointnames</definition>
+        <argsstring></argsstring>
+        <name>_vgripperjointnames</name>
+        <briefdescription>
+<para>names of the gripper joints </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="238" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a91adb4292cb705acffbbb8db89c32731" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1afca3cd803319e1caa2cfb0f763a601b8" kindref="member">RobotBaseWeakPtr</ref></type>
+        <definition>RobotBaseWeakPtr _probot</definition>
+        <argsstring></argsstring>
+        <name>_probot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="241" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a993998f31d374f6d725993544a4f8878" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; __vgripperdofindices</definition>
+        <argsstring></argsstring>
+        <name>__vgripperdofindices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="242" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a430f75877c04ece9388bf341e96d142e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; __varmdofindices</definition>
+        <argsstring></argsstring>
+        <name>__varmdofindices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="242" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a5d8b8633413f4b63bd95df0ea5c9bded" prot="private" static="no" mutable="yes">
+        <type>std::string</type>
+        <definition>std::string __hashstructure</definition>
+        <argsstring></argsstring>
+        <name>__hashstructure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="243" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a61e494c2c8ea510786dd432b2d982414" prot="private" static="no" mutable="yes">
+        <type>std::string</type>
+        <definition>std::string __hashkinematicsstructure</definition>
+        <argsstring></argsstring>
+        <name>__hashkinematicsstructure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="243" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a1a96c3d16a7b03f3cca0bd53348be088" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class RobotBase</definition>
+        <argsstring></argsstring>
+        <name>RobotBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="256" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a861533b340fe03f07b5d4d7a13cf7a92" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Manipulator</definition>
+        <argsstring>(RobotBasePtr probot)</argsstring>
+        <name>Manipulator</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>probot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1afaddc6e580c48ca9e0efa77a3169b36e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Manipulator</definition>
+        <argsstring>(const Manipulator &amp;r)</argsstring>
+        <name>Manipulator</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator" kindref="compound">Manipulator</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1af11a1382f8b1e817179c648537e50d5a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Manipulator</definition>
+        <argsstring>(RobotBasePtr probot, const Manipulator &amp;r)</argsstring>
+        <name>Manipulator</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>probot</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator" kindref="compound">Manipulator</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a89f9cae36bfc74378ea4290cff0d6938" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~Manipulator</definition>
+        <argsstring>()</argsstring>
+        <name>~Manipulator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a2206c7317f62f083c3f57868ba82bfee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>virtual Transform GetTransform</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTransform</name>
+        <briefdescription>
+<para>Return the transformation of the end effector (manipulator frame). </para>        </briefdescription>
+        <detaileddescription>
+<para>All inverse kinematics and grasping queries are specifying this frame. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a9f0d02ac3cfde33c10f7f57b224be196" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>virtual Transform GetEndEffectorTransform</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEndEffectorTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="46" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a3cc720dbc55fa8e07a0f85343d3bb136" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; GetName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="50" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a8d4e8b42f55281a47dd90d525f19e9c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+        <definition>virtual RobotBasePtr GetRobot</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRobot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="53" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ae2b496857b0c5970bf0544e938e96125" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SetIkSolver</definition>
+        <argsstring>(IkSolverBasePtr iksolver)</argsstring>
+        <name>SetIkSolver</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1adc64503b74e38e98eedcbc031b3e37ff" kindref="member">IkSolverBasePtr</ref></type>
+          <declname>iksolver</declname>
+        </param>
+        <briefdescription>
+<para>Sets the ik solver and initializes it with the current manipulator. </para>        </briefdescription>
+        <detaileddescription>
+<para>Due to complications with translation,rotation,direction,and ray ik, the ik solver should take into account the grasp transform (_tLocalTool) internally. The actual ik primitives are transformed into the base frame only. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a9ada1e961494800a5feae0672896f797" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1adc64503b74e38e98eedcbc031b3e37ff" kindref="member">IkSolverBasePtr</ref></type>
+        <definition>virtual IkSolverBasePtr GetIkSolver</definition>
+        <argsstring>() const </argsstring>
+        <name>GetIkSolver</name>
+        <briefdescription>
+<para>Returns the currently set ik solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="65" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ab73a54e94fe2be07ec7dc08220585ae9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int GetNumFreeParameters</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetNumFreeParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000049"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/02/08) use <ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a9ada1e961494800a5feae0672896f797" kindref="member">GetIkSolver()</ref>-&gt;<ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ab73a54e94fe2be07ec7dc08220585ae9" kindref="member">GetNumFreeParameters()</ref> </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ad1c511325beab0040d0b5f764291ec86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool GetFreeParameters</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;vFreeParameters) const RAVE_DEPRECATED</argsstring>
+        <name>GetFreeParameters</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vFreeParameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000050"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/02/08) use <ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a9ada1e961494800a5feae0672896f797" kindref="member">GetIkSolver()</ref>-&gt;<ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ad1c511325beab0040d0b5f764291ec86" kindref="member">GetFreeParameters()</ref> </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ab77b38a94a16401b402f178513e9af5d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+        <definition>virtual LinkPtr GetBase</definition>
+        <argsstring>() const </argsstring>
+        <name>GetBase</name>
+        <briefdescription>
+<para>the base used for the iksolver </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="76" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a359b65aa0b4feca9d86f6f300dd0a50a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+        <definition>virtual LinkPtr GetEndEffector</definition>
+        <argsstring>() const </argsstring>
+        <name>GetEndEffector</name>
+        <briefdescription>
+<para>the end effector link (used to define workspace distance) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="81" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1afc05cfe6a87b76f1027596591ee688ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>virtual Transform GetLocalToolTransform</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLocalToolTransform</name>
+        <briefdescription>
+<para>Return transform with respect to end effector defining the grasp coordinate system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="86" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a853353ac859599b30cee9e99b17fa728" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetLocalToolTransform</definition>
+        <argsstring>(const Transform &amp;t)</argsstring>
+        <name>SetLocalToolTransform</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Sets the local tool transform with respect to the end effector. </para>        </briefdescription>
+        <detaileddescription>
+<para>Because this call will change manipulator hash, it resets the loaded IK and sets the Prop_RobotManipulatorTool message. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a427344bec7ce8135433b47fd0b04f1f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>virtual Transform GetGraspTransform</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetGraspTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000051"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/15) use GetLocalToolTransform </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="96" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1af77d0225ce1ef4be58ca978d1cd13f10" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::vector&lt; int &gt; &amp;</type>
+        <definition>virtual const std::vector&lt;int&gt;&amp; GetGripperIndices</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGripperIndices</name>
+        <briefdescription>
+<para>Gripper indices of the joints that the manipulator controls. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="101" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ade23a90fcb4102d98f20dddad76ded75" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::vector&lt; int &gt; &amp;</type>
+        <definition>virtual const std::vector&lt;int&gt;&amp; GetArmIndices</definition>
+        <argsstring>() const </argsstring>
+        <name>GetArmIndices</name>
+        <briefdescription>
+<para>Return the indices of the DOFs of the arm (used for IK, etc). </para>        </briefdescription>
+        <detaileddescription>
+<para>Usually the DOF indices from pBase to pEndEffector </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="108" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a29109f7d70f0066ba24f7b5ef6deb835" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+        <definition>virtual const std::vector&lt;dReal&gt;&amp; GetClosingDirection</definition>
+        <argsstring>() const </argsstring>
+        <name>GetClosingDirection</name>
+        <briefdescription>
+<para>return the normal direction to move joints to &apos;close&apos; the hand </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="113" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ad07d05c88555a8420be3012a74950a00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>virtual Vector GetLocalToolDirection</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLocalToolDirection</name>
+        <briefdescription>
+<para>direction of palm/head/manipulator used for approaching. defined inside the manipulator/grasp coordinate system </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="118" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a92a9ef35f92ddbef89fc434defe397fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>virtual Vector GetDirection</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000052"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/15) use GetLocalToolDirection </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="123" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1afe8f72c898a5e9200f5132a2a58e52cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool FindIKSolution</definition>
+        <argsstring>(const IkParameterization &amp;param, std::vector&lt; dReal &gt; &amp;solution, int filteroptions) const </argsstring>
+        <name>FindIKSolution</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>solution</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filteroptions</declname>
+        </param>
+        <briefdescription>
+<para>Find a close solution to the current robot&apos;s joint values. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function is a wrapper around the IkSolver interface. Note that the solution returned is not guaranteed to be the closest solution. In order to compute that, will have to compute all the ik solutions using FindIKSolutions. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformation of the end-effector in the global coord system </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>solution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Will be of size <ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ade23a90fcb4102d98f20dddad76ded75" kindref="member">GetArmIndices()</ref>.size() and contain the best solution </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">filteroptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bitmask of <ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdc" kindref="member">IkFilterOptions</ref> values controlling what is checked for each ik solution. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a78e54bc38deabcbaf2b1b7c8584dbaeb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool FindIKSolution</definition>
+        <argsstring>(const IkParameterization &amp;param, const std::vector&lt; dReal &gt; &amp;vFreeParameters, std::vector&lt; dReal &gt; &amp;solution, int filteroptions) const </argsstring>
+        <name>FindIKSolution</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vFreeParameters</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>solution</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filteroptions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a89829fe0eeca1eb5ca8424bc8575b346" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool FindIKSolutions</definition>
+        <argsstring>(const IkParameterization &amp;param, std::vector&lt; std::vector&lt; dReal &gt; &gt; &amp;solutions, int filteroptions) const </argsstring>
+        <name>FindIKSolutions</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt; &amp;</type>
+          <declname>solutions</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filteroptions</declname>
+        </param>
+        <briefdescription>
+<para>Find all the IK solutions for the given end effector transform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformation of the end-effector in the global coord system </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>solutions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of all solutions, each element in solutions is of size <ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ade23a90fcb4102d98f20dddad76ded75" kindref="member">GetArmIndices()</ref>.size() </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">filteroptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bitmask of <ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdc" kindref="member">IkFilterOptions</ref> values controlling what is checked for each ik solution. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a2976149bb8393a5c0835e63d41a80136" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool FindIKSolutions</definition>
+        <argsstring>(const IkParameterization &amp;param, const std::vector&lt; dReal &gt; &amp;vFreeParameters, std::vector&lt; std::vector&lt; dReal &gt; &gt; &amp;solutions, int filteroptions) const </argsstring>
+        <name>FindIKSolutions</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vFreeParameters</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt; &amp;</type>
+          <declname>solutions</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filteroptions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1af4452ae2258d7656aa374bc0530edc1f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref></type>
+        <definition>virtual IkParameterization GetIkParameterization</definition>
+        <argsstring>(IkParameterizationType iktype) const </argsstring>
+        <name>GetIkParameterization</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref></type>
+          <declname>iktype</declname>
+        </param>
+        <briefdescription>
+<para>returns the parameterization of a given IK type for the current manipulator position. </para>        </briefdescription>
+        <detaileddescription>
+<para>Ideally pluging the returned ik parameterization into FindIkSolution should return the a manipulator configuration such that a new call to GetIkParameterization returns the same values. In other words: <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ikparam<sp/>=<sp/>manip-&gt;GetIkParameterization(iktype);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>...<sp/>move<sp/>robot</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;dReal&gt;<sp/>sol;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/><ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1afe8f72c898a5e9200f5132a2a58e52cb" kindref="member" tooltip="Find a close solution to the current robot&amp;#39;s joint values.">FindIKSolution</ref>(ikparam,sol,<sp/>filteroptions)<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>manip-&gt;GetRobot()-&gt;SetActiveDOFs(manip-&gt;GetArmIndices());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>manip-&gt;GetRobot()-&gt;SetActiveDOFValues(sol);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_ASSERT(<sp/>dist(manip-&gt;GetIkParameterization(iktype),<sp/>ikparam)<sp/>&lt;=<sp/>epsilon<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iktype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of parameterization to request </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ae88cd3fc2bd2b4da5ea6b84ed9edc6b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref></type>
+        <definition>virtual IkParameterization GetIkParameterization</definition>
+        <argsstring>(const IkParameterization &amp;ikparam) const </argsstring>
+        <name>GetIkParameterization</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>ikparam</declname>
+        </param>
+        <briefdescription>
+<para>returns a full parameterization of a given IK type for the current manipulator position using an existing <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> as the seed. </para>        </briefdescription>
+        <detaileddescription>
+<para>Ideally pluging the returned ik parameterization into FindIkSolution should return the a manipulator configuration such that a new call to GetIkParameterization returns the same values. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ikparam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Some IK types like Lookat3D and TranslationLocalGlobal6D set constraints in the global coordinate system of the manipulator. Because these values are not stored in manipulator itself, they have to be passed in through an existing <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a814285268af782cfac89350db77df299" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetChildJoints</definition>
+        <argsstring>(std::vector&lt; JointPtr &gt; &amp;vjoints) const </argsstring>
+        <name>GetChildJoints</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classOpenRAVE_1_1KinBody_1ad3fc7b64912fd0b7343faaefbc96b3ef" kindref="member">JointPtr</ref> &gt; &amp;</type>
+          <declname>vjoints</declname>
+        </param>
+        <briefdescription>
+<para>Get all child joints of the manipulator starting at the pEndEffector link. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ae7d4690b82988f471033acbd0bb460ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetChildDOFIndices</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;vdofndices) const </argsstring>
+        <name>GetChildDOFIndices</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>vdofndices</declname>
+        </param>
+        <briefdescription>
+<para>Get all child DOF indices of the manipulator starting at the pEndEffector link. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a63a72836eeef2579aff6424767e91007" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool IsChildLink</definition>
+        <argsstring>(LinkConstPtr plink) const </argsstring>
+        <name>IsChildLink</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">LinkConstPtr</ref></type>
+          <declname>plink</declname>
+        </param>
+        <briefdescription>
+<para>returns true if a link is part of the child links of the manipulator. </para>        </briefdescription>
+        <detaileddescription>
+<para>The child links do not include the arm links. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a235e6b3b9b27422cdf11846a71f5ca66" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetChildLinks</definition>
+        <argsstring>(std::vector&lt; LinkPtr &gt; &amp;vlinks) const </argsstring>
+        <name>GetChildLinks</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref> &gt; &amp;</type>
+          <declname>vlinks</declname>
+        </param>
+        <briefdescription>
+<para>Get all child links of the manipulator starting at pEndEffector link. </para>        </briefdescription>
+        <detaileddescription>
+<para>The child links do not include the arm links. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a9891f6fc2999ae047ebc9d06c0bf4069" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetIndependentLinks</definition>
+        <argsstring>(std::vector&lt; LinkPtr &gt; &amp;vlinks) const </argsstring>
+        <name>GetIndependentLinks</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref> &gt; &amp;</type>
+          <declname>vlinks</declname>
+        </param>
+        <briefdescription>
+<para>Get all links that are independent of the arm and gripper joints. </para>        </briefdescription>
+        <detaileddescription>
+<para>In other words, returns all links not on the path from the base to the end effector and not children of the end effector. The base and all links rigidly attached to it are also returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a409973001a95f36e715c2f227fd28c5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool CheckEndEffectorCollision</definition>
+        <argsstring>(const Transform &amp;tEE, CollisionReportPtr report=CollisionReportPtr()) const </argsstring>
+        <name>CheckEndEffectorCollision</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>tEE</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref></type>
+          <declname>report</declname>
+          <defval><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Checks collision with only the gripper given its end-effector transform. Ignores disabled links. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tEE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the end effector transform </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">report</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[optional] collision report </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if a collision occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a03b7a7ec9520a1302bbfd13ac2e2e225" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool CheckIndependentCollision</definition>
+        <argsstring>(CollisionReportPtr report=CollisionReportPtr()) const </argsstring>
+        <name>CheckIndependentCollision</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref></type>
+          <declname>report</declname>
+          <defval><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Checks collision with the environment with all the independent links of the robot. Ignores disabled links. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">report</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[optional] collision report </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if a collision occurred </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a27b105dc167c45d59ff59d5f6198c431" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool IsGrabbing</definition>
+        <argsstring>(KinBodyConstPtr body) const </argsstring>
+        <name>IsGrabbing</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref></type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>return true if the body is being grabbed by any link on this manipulator </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1aa52f91874dcc3f6a9525294c819b5634" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CalculateJacobian</definition>
+        <argsstring>(boost::multi_array&lt; dReal, 2 &gt; &amp;mjacobian) const </argsstring>
+        <name>CalculateJacobian</name>
+        <param>
+          <type>boost::multi_array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 2 &gt; &amp;</type>
+          <declname>mjacobian</declname>
+        </param>
+        <briefdescription>
+<para>computes the jacobian of the manipulator arm indices from the current manipulator frame origin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a20e08189ce7cdd52494706e4221481ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CalculateRotationJacobian</definition>
+        <argsstring>(boost::multi_array&lt; dReal, 2 &gt; &amp;mjacobian) const </argsstring>
+        <name>CalculateRotationJacobian</name>
+        <param>
+          <type>boost::multi_array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 2 &gt; &amp;</type>
+          <declname>mjacobian</declname>
+        </param>
+        <briefdescription>
+<para>computes the quaternion jacobian of the manipulator arm indices from the current manipulator frame rotation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a47689e0294c39e5accb1c634a5b0296c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CalculateAngularVelocityJacobian</definition>
+        <argsstring>(boost::multi_array&lt; dReal, 2 &gt; &amp;mjacobian) const </argsstring>
+        <name>CalculateAngularVelocityJacobian</name>
+        <param>
+          <type>boost::multi_array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 2 &gt; &amp;</type>
+          <declname>mjacobian</declname>
+        </param>
+        <briefdescription>
+<para>computes the angule axis jacobian of the manipulator arm indices. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ac3d3423a3fae6eb66bc8e0ff6fc23e3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void serialize</definition>
+        <argsstring>(std::ostream &amp;o, int options) const </argsstring>
+        <name>serialize</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ae230a8d361998e79a15128bfe18ec86a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; GetStructureHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetStructureHash</name>
+        <briefdescription>
+<para>Return hash of just the manipulator definition. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a7322a77b768ce7997022a7b4b4ca46fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; GetKinematicsStructureHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetKinematicsStructureHash</name>
+        <briefdescription>
+<para>Return hash of all kinematics information that involves solving the inverse kinematics equations. </para>        </briefdescription>
+        <detaileddescription>
+<para>This includes joint axes, joint positions, and final grasp transform. Hash is used to cache the solvers. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="229"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a chain of joints for an arm and set of joints for a gripper. Simplifies operating with them. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1458">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1460">
+        <label>string</label>
+        <childnode refid="1461" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1457">
+        <label>vector&lt; dReal &gt;</label>
+      </node>
+      <node id="1459">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+      <node id="1456">
+        <label>Manipulator</label>
+        <link refid="classOpenRAVE_1_1RobotBase_1_1Manipulator"/>
+        <childnode refid="1457" relation="usage">
+          <edgelabel>_vClosingDirection</edgelabel>
+        </childnode>
+        <childnode refid="1458" relation="usage">
+          <edgelabel>_tLocalTool</edgelabel>
+        </childnode>
+        <childnode refid="1459" relation="usage">
+          <edgelabel>_vdirection</edgelabel>
+        </childnode>
+        <childnode refid="1460" relation="usage">
+          <edgelabel>_name</edgelabel>
+          <edgelabel>__hashstructure</edgelabel>
+          <edgelabel>__hashkinematicsstructure</edgelabel>
+          <edgelabel>_strIkSolver</edgelabel>
+        </childnode>
+        <childnode refid="1462" relation="usage">
+          <edgelabel>__vgripperdofindices</edgelabel>
+          <edgelabel>__varmdofindices</edgelabel>
+        </childnode>
+        <childnode refid="1463" relation="usage">
+          <edgelabel>_vgripperjointnames</edgelabel>
+        </childnode>
+      </node>
+      <node id="1463">
+        <label>vector&lt; std::string &gt;</label>
+        <childnode refid="1460" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1461">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1462">
+        <label>vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="33" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="32" bodyend="257"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a61e494c2c8ea510786dd432b2d982414" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>__hashkinematicsstructure</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a5d8b8633413f4b63bd95df0ea5c9bded" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>__hashstructure</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a430f75877c04ece9388bf341e96d142e" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>__varmdofindices</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a993998f31d374f6d725993544a4f8878" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>__vgripperdofindices</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1aaf2ed934b37cbbd236fdd1b01a5f5005" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>_name</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a1df66995ccb948e3c879ae8df4c7cc45" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>_pBase</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a0aed29f35f1a2eade750bcccfe880c86" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>_pEndEffector</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ad8a2af4ce11be0dca40e6c5529f53312" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>_pIkSolver</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a91adb4292cb705acffbbb8db89c32731" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>_probot</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a6467cc354af9ccc617bbf7a2a0185f50" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>_strIkSolver</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a93714236a15909e9fb83641f095dc8eb" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>_tLocalTool</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a2193c631a96cebe54cc71b4aaf44bc0f" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>_vClosingDirection</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ad0301cd428a3c3fe44babdddb524a078" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>_vdirection</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a06e8b45efe1699af0520ca886402f495" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>_vgripperjointnames</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a47689e0294c39e5accb1c634a5b0296c" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>CalculateAngularVelocityJacobian</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1aa52f91874dcc3f6a9525294c819b5634" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>CalculateJacobian</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a20e08189ce7cdd52494706e4221481ec" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>CalculateRotationJacobian</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a409973001a95f36e715c2f227fd28c5a" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>CheckEndEffectorCollision</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a03b7a7ec9520a1302bbfd13ac2e2e225" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>CheckIndependentCollision</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1afe8f72c898a5e9200f5132a2a58e52cb" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>FindIKSolution</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a78e54bc38deabcbaf2b1b7c8584dbaeb" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>FindIKSolution</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a89829fe0eeca1eb5ca8424bc8575b346" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>FindIKSolutions</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a2976149bb8393a5c0835e63d41a80136" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>FindIKSolutions</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ade23a90fcb4102d98f20dddad76ded75" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetArmIndices</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ab77b38a94a16401b402f178513e9af5d" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetBase</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ae7d4690b82988f471033acbd0bb460ae" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetChildDOFIndices</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a814285268af782cfac89350db77df299" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetChildJoints</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a235e6b3b9b27422cdf11846a71f5ca66" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetChildLinks</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a29109f7d70f0066ba24f7b5ef6deb835" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetClosingDirection</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a92a9ef35f92ddbef89fc434defe397fc" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetDirection</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a359b65aa0b4feca9d86f6f300dd0a50a" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetEndEffector</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a9f0d02ac3cfde33c10f7f57b224be196" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetEndEffectorTransform</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ad1c511325beab0040d0b5f764291ec86" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetFreeParameters</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a427344bec7ce8135433b47fd0b04f1f4" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetGraspTransform</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1af77d0225ce1ef4be58ca978d1cd13f10" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetGripperIndices</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1af4452ae2258d7656aa374bc0530edc1f" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetIkParameterization</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ae88cd3fc2bd2b4da5ea6b84ed9edc6b9" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetIkParameterization</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a9ada1e961494800a5feae0672896f797" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetIkSolver</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a9891f6fc2999ae047ebc9d06c0bf4069" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetIndependentLinks</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a7322a77b768ce7997022a7b4b4ca46fe" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetKinematicsStructureHash</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ad07d05c88555a8420be3012a74950a00" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetLocalToolDirection</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1afc05cfe6a87b76f1027596591ee688ce" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetLocalToolTransform</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a3cc720dbc55fa8e07a0f85343d3bb136" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetName</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ab73a54e94fe2be07ec7dc08220585ae9" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetNumFreeParameters</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a8d4e8b42f55281a47dd90d525f19e9c4" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetRobot</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ae230a8d361998e79a15128bfe18ec86a" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetStructureHash</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a2206c7317f62f083c3f57868ba82bfee" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>GetTransform</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a63a72836eeef2579aff6424767e91007" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>IsChildLink</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a27b105dc167c45d59ff59d5f6198c431" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>IsGrabbing</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a861533b340fe03f07b5d4d7a13cf7a92" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>Manipulator</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1afaddc6e580c48ca9e0efa77a3169b36e" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>Manipulator</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1af11a1382f8b1e817179c648537e50d5a" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>Manipulator</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ac3d3423a3fae6eb66bc8e0ff6fc23e3e" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1ae2b496857b0c5970bf0544e938e96125" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>SetIkSolver</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a853353ac859599b30cee9e99b17fa728" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>SetLocalToolTransform</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Manipulator_1a89f9cae36bfc74378ea4290cff0d6938" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::Manipulator</scope><name>~Manipulator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

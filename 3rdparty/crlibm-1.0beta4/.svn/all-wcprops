@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4
+END
+trigpi.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/trigpi.c
+END
+asincos.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/asincos.c
+END
+exp-td.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/exp-td.c
+END
+trigpi.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/trigpi.h
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/AUTHORS
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/VERSION
+END
+asincos.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/asincos.h
+END
+pow.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/pow.c
+END
+exp-td.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/exp-td.h
+END
+triple-double.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/triple-double.c
+END
+pow.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/pow.h
+END
+triple-double.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/triple-double.h
+END
+double-extended.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/double-extended.h
+END
+expm1-standalone.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/expm1-standalone.c
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/INSTALL
+END
+exp-td-standalone.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/exp-td-standalone.c
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/COPYING
+END
+log10-td.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/log10-td.c
+END
+expm1.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/expm1.c
+END
+csh_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/csh_fast.c
+END
+atan_accurate.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/atan_accurate.c
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/NEWS
+END
+trigo_accurate.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/trigo_accurate.c
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/CMakeLists.txt
+END
+log10-td.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/log10-td.h
+END
+expm1.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/expm1.h
+END
+csh_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/csh_fast.h
+END
+atan_accurate.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/atan_accurate.h
+END
+atan_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/atan_fast.c
+END
+trigo_accurate.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/trigo_accurate.h
+END
+trigo_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/trigo_fast.c
+END
+crlibm_private.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/crlibm_private.c
+END
+atan_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/atan_fast.h
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/ChangeLog
+END
+trigo_fast.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/trigo_fast.h
+END
+log-de.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/log-de.c
+END
+crlibm_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/crlibm_private.h
+END
+log2-td.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/log2-td.c
+END
+log-de.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/log-de.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/README
+END
+crlibm.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/crlibm.h
+END
+log2-td.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/log2-td.h
+END
+log.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/log.c
+END
+log1p.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/log1p.c
+END
+rem_pio2_accurate.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/rem_pio2_accurate.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/TODO
+END
+log-td.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/log-td.c
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/log.h
+END
+rem_pio2_accurate.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/rem_pio2_accurate.h
+END
+log-td.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/log-td.h
+END
+COPYING.LIB
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/COPYING.LIB
+END

@@ -1,0 +1,1237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: クラス Manipulator 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="classOpenRAVE_1_1RobotBase.html">RobotBase</a>::<a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html">Manipulator</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス Manipulator</h1><!-- doxytag: class="OpenRAVE::RobotBase::Manipulator" -->
+<p>Defines a chain of joints for an arm and set of joints for a gripper. Simplifies operating with them.  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="robot_8h_source.html">robot.h</a>&gt;</code></p>
+<div class="dynheader">
+Manipulatorのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1RobotBase_1_1Manipulator__coll__graph.png" border="0" usemap="#Manipulator_coll__map" alt="Collaboration graph"/></div>
+<map name="Manipulator_coll__map" id="Manipulator_coll__map">
+<area shape="rect" title="STL class." alt="" coords="197,251,251,280"/><area shape="rect" title="STL class." alt="" coords="7,251,145,280"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="classOpenRAVE_1_1RobotBase_1_1Manipulator-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a89f9cae36bfc74378ea4290cff0d6938">~Manipulator</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a2206c7317f62f083c3f57868ba82bfee">GetTransform</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the transformation of the end effector (manipulator frame).  <a href="#a2206c7317f62f083c3f57868ba82bfee"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a9f0d02ac3cfde33c10f7f57b224be196">GetEndEffectorTransform</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a3cc720dbc55fa8e07a0f85343d3bb136">GetName</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a8d4e8b42f55281a47dd90d525f19e9c4">GetRobot</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ae2b496857b0c5970bf0544e938e96125">SetIkSolver</a> (<a class="el" href="namespaceOpenRAVE.html#adc64503b74e38e98eedcbc031b3e37ff">IkSolverBasePtr</a> iksolver)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the ik solver and initializes it with the current manipulator.  <a href="#ae2b496857b0c5970bf0544e938e96125"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#adc64503b74e38e98eedcbc031b3e37ff">IkSolverBasePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a9ada1e961494800a5feae0672896f797">GetIkSolver</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the currently set ik solver.  <a href="#a9ada1e961494800a5feae0672896f797"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ab73a54e94fe2be07ec7dc08220585ae9">GetNumFreeParameters</a> () const <a class="el" href="classOpenRAVE_1_1RobotBase.html#ad7131b2e388f7f953e9cc14f7336c8e2">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ad1c511325beab0040d0b5f764291ec86">GetFreeParameters</a> (std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;vFreeParameters) const <a class="el" href="classOpenRAVE_1_1RobotBase.html#ad7131b2e388f7f953e9cc14f7336c8e2">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ab77b38a94a16401b402f178513e9af5d">GetBase</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the base used for the iksolver  <a href="#ab77b38a94a16401b402f178513e9af5d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a359b65aa0b4feca9d86f6f300dd0a50a">GetEndEffector</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the end effector link (used to define workspace distance)  <a href="#a359b65aa0b4feca9d86f6f300dd0a50a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#afc05cfe6a87b76f1027596591ee688ce">GetLocalToolTransform</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return transform with respect to end effector defining the grasp coordinate system.  <a href="#afc05cfe6a87b76f1027596591ee688ce"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a853353ac859599b30cee9e99b17fa728">SetLocalToolTransform</a> (const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;t)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the local tool transform with respect to the end effector.  <a href="#a853353ac859599b30cee9e99b17fa728"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a427344bec7ce8135433b47fd0b04f1f4">GetGraspTransform</a> () const <a class="el" href="classOpenRAVE_1_1RobotBase.html#ad7131b2e388f7f953e9cc14f7336c8e2">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; int &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#af77d0225ce1ef4be58ca978d1cd13f10">GetGripperIndices</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gripper indices of the joints that the manipulator controls.  <a href="#af77d0225ce1ef4be58ca978d1cd13f10"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; int &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ade23a90fcb4102d98f20dddad76ded75">GetArmIndices</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the indices of the DOFs of the arm (used for IK, etc).  <a href="#ade23a90fcb4102d98f20dddad76ded75"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a29109f7d70f0066ba24f7b5ef6deb835">GetClosingDirection</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return the normal direction to move joints to 'close' the hand  <a href="#a29109f7d70f0066ba24f7b5ef6deb835"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ad07d05c88555a8420be3012a74950a00">GetLocalToolDirection</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">direction of palm/head/manipulator used for approaching. defined inside the manipulator/grasp coordinate system  <a href="#ad07d05c88555a8420be3012a74950a00"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a92a9ef35f92ddbef89fc434defe397fc">GetDirection</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#afe8f72c898a5e9200f5132a2a58e52cb">FindIKSolution</a> (const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;param, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;solution, int filteroptions) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Find a close solution to the current robot's joint values.  <a href="#afe8f72c898a5e9200f5132a2a58e52cb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a78e54bc38deabcbaf2b1b7c8584dbaeb">FindIKSolution</a> (const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;param, const std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;vFreeParameters, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;solution, int filteroptions) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a89829fe0eeca1eb5ca8424bc8575b346">FindIKSolutions</a> (const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;param, std::vector&lt; std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &gt; &amp;solutions, int filteroptions) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Find all the IK solutions for the given end effector transform.  <a href="#a89829fe0eeca1eb5ca8424bc8575b346"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a2976149bb8393a5c0835e63d41a80136">FindIKSolutions</a> (const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;param, const std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;vFreeParameters, std::vector&lt; std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &gt; &amp;solutions, int filteroptions) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#af4452ae2258d7656aa374bc0530edc1f">GetIkParameterization</a> (<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> iktype) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns the parameterization of a given IK type for the current manipulator position.  <a href="#af4452ae2258d7656aa374bc0530edc1f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ae88cd3fc2bd2b4da5ea6b84ed9edc6b9">GetIkParameterization</a> (const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;ikparam) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns a full parameterization of a given IK type for the current manipulator position using an existing <a class="el" href="classOpenRAVE_1_1IkParameterization.html" title="Parameterization of basic primitives for querying inverse-kinematics solutions.">IkParameterization</a> as the seed.  <a href="#ae88cd3fc2bd2b4da5ea6b84ed9edc6b9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a814285268af782cfac89350db77df299">GetChildJoints</a> (std::vector&lt; <a class="el" href="classOpenRAVE_1_1KinBody.html#ad3fc7b64912fd0b7343faaefbc96b3ef">JointPtr</a> &gt; &amp;vjoints) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get all child joints of the manipulator starting at the pEndEffector link.  <a href="#a814285268af782cfac89350db77df299"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ae7d4690b82988f471033acbd0bb460ae">GetChildDOFIndices</a> (std::vector&lt; int &gt; &amp;vdofndices) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get all child DOF indices of the manipulator starting at the pEndEffector link.  <a href="#ae7d4690b82988f471033acbd0bb460ae"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a63a72836eeef2579aff6424767e91007">IsChildLink</a> (<a class="el" href="classOpenRAVE_1_1KinBody.html#a99c416f979a09dfc6ef42fd62bd4e77e">LinkConstPtr</a> plink) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns true if a link is part of the child links of the manipulator.  <a href="#a63a72836eeef2579aff6424767e91007"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a235e6b3b9b27422cdf11846a71f5ca66">GetChildLinks</a> (std::vector&lt; <a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a> &gt; &amp;vlinks) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get all child links of the manipulator starting at pEndEffector link.  <a href="#a235e6b3b9b27422cdf11846a71f5ca66"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a9891f6fc2999ae047ebc9d06c0bf4069">GetIndependentLinks</a> (std::vector&lt; <a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a> &gt; &amp;vlinks) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get all links that are independent of the arm and gripper joints.  <a href="#a9891f6fc2999ae047ebc9d06c0bf4069"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a409973001a95f36e715c2f227fd28c5a">CheckEndEffectorCollision</a> (const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;tEE, <a class="el" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report=<a class="el" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>()) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Checks collision with only the gripper given its end-effector transform. Ignores disabled links.  <a href="#a409973001a95f36e715c2f227fd28c5a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a03b7a7ec9520a1302bbfd13ac2e2e225">CheckIndependentCollision</a> (<a class="el" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report=<a class="el" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>()) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Checks collision with the environment with all the independent links of the robot. Ignores disabled links.  <a href="#a03b7a7ec9520a1302bbfd13ac2e2e225"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a27b105dc167c45d59ff59d5f6198c431">IsGrabbing</a> (<a class="el" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> body) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return true if the body is being grabbed by any link on this manipulator  <a href="#a27b105dc167c45d59ff59d5f6198c431"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#aa52f91874dcc3f6a9525294c819b5634">CalculateJacobian</a> (boost::multi_array&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>, 2 &gt; &amp;mjacobian) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">computes the jacobian of the manipulator arm indices from the current manipulator frame origin.  <a href="#aa52f91874dcc3f6a9525294c819b5634"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a20e08189ce7cdd52494706e4221481ec">CalculateRotationJacobian</a> (boost::multi_array&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>, 2 &gt; &amp;mjacobian) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">computes the quaternion jacobian of the manipulator arm indices from the current manipulator frame rotation.  <a href="#a20e08189ce7cdd52494706e4221481ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a47689e0294c39e5accb1c634a5b0296c">CalculateAngularVelocityJacobian</a> (boost::multi_array&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>, 2 &gt; &amp;mjacobian) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">computes the angule axis jacobian of the manipulator arm indices.  <a href="#a47689e0294c39e5accb1c634a5b0296c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ac3d3423a3fae6eb66bc8e0ff6fc23e3e">serialize</a> (std::ostream &amp;o, int options) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ae230a8d361998e79a15128bfe18ec86a">GetStructureHash</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return hash of just the manipulator definition.  <a href="#ae230a8d361998e79a15128bfe18ec86a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a7322a77b768ce7997022a7b4b4ca46fe">GetKinematicsStructureHash</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return hash of all kinematics information that involves solving the inverse kinematics equations.  <a href="#a7322a77b768ce7997022a7b4b4ca46fe"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#aaf2ed934b37cbbd236fdd1b01a5f5005">_name</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a1df66995ccb948e3c879ae8df4c7cc45">_pBase</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a0aed29f35f1a2eade750bcccfe880c86">_pEndEffector</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a93714236a15909e9fb83641f095dc8eb">_tLocalTool</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a2193c631a96cebe54cc71b4aaf44bc0f">_vClosingDirection</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ad0301cd428a3c3fe44babdddb524a078">_vdirection</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#adc64503b74e38e98eedcbc031b3e37ff">IkSolverBasePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ad8a2af4ce11be0dca40e6c5529f53312">_pIkSolver</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a6467cc354af9ccc617bbf7a2a0185f50">_strIkSolver</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a06e8b45efe1699af0520ca886402f495">_vgripperjointnames</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">names of the gripper joints  <a href="#a06e8b45efe1699af0520ca886402f495"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>Defines a chain of joints for an arm and set of joints for a gripper. Simplifies operating with them. </p>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00032">32</a> 行で定義されています。</p>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a89f9cae36bfc74378ea4290cff0d6938"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::~Manipulator" ref="a89f9cae36bfc74378ea4290cff0d6938" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html">Manipulator</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a47689e0294c39e5accb1c634a5b0296c"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::CalculateAngularVelocityJacobian" ref="a47689e0294c39e5accb1c634a5b0296c" args="(boost::multi_array&lt; dReal, 2 &gt; &amp;mjacobian) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CalculateAngularVelocityJacobian </td>
+          <td>(</td>
+          <td class="paramtype">boost::multi_array&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>, 2 &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>mjacobian</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>computes the angule axis jacobian of the manipulator arm indices. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa52f91874dcc3f6a9525294c819b5634"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::CalculateJacobian" ref="aa52f91874dcc3f6a9525294c819b5634" args="(boost::multi_array&lt; dReal, 2 &gt; &amp;mjacobian) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CalculateJacobian </td>
+          <td>(</td>
+          <td class="paramtype">boost::multi_array&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>, 2 &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>mjacobian</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>computes the jacobian of the manipulator arm indices from the current manipulator frame origin. </p>
+
+</div>
+</div>
+<a class="anchor" id="a20e08189ce7cdd52494706e4221481ec"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::CalculateRotationJacobian" ref="a20e08189ce7cdd52494706e4221481ec" args="(boost::multi_array&lt; dReal, 2 &gt; &amp;mjacobian) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CalculateRotationJacobian </td>
+          <td>(</td>
+          <td class="paramtype">boost::multi_array&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>, 2 &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>mjacobian</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>computes the quaternion jacobian of the manipulator arm indices from the current manipulator frame rotation. </p>
+
+</div>
+</div>
+<a class="anchor" id="a409973001a95f36e715c2f227fd28c5a"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::CheckEndEffectorCollision" ref="a409973001a95f36e715c2f227fd28c5a" args="(const Transform &amp;tEE, CollisionReportPtr report=CollisionReportPtr()) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CheckEndEffectorCollision </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tEE</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>report</em> = <code><a class="el" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>()</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Checks collision with only the gripper given its end-effector transform. Ignores disabled links. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>tEE</em>&nbsp;</td><td>the end effector transform </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>report</em>&nbsp;</td><td>[optional] collision report </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if a collision occurred </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a03b7a7ec9520a1302bbfd13ac2e2e225"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::CheckIndependentCollision" ref="a03b7a7ec9520a1302bbfd13ac2e2e225" args="(CollisionReportPtr report=CollisionReportPtr()) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CheckIndependentCollision </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>report</em> = <code><a class="el" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>()</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Checks collision with the environment with all the independent links of the robot. Ignores disabled links. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>report</em>&nbsp;</td><td>[optional] collision report </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if a collision occurred </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a78e54bc38deabcbaf2b1b7c8584dbaeb"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::FindIKSolution" ref="a78e54bc38deabcbaf2b1b7c8584dbaeb" args="(const IkParameterization &amp;param, const std::vector&lt; dReal &gt; &amp;vFreeParameters, std::vector&lt; dReal &gt; &amp;solution, int filteroptions) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool FindIKSolution </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>vFreeParameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>solution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>filteroptions</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe8f72c898a5e9200f5132a2a58e52cb"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::FindIKSolution" ref="afe8f72c898a5e9200f5132a2a58e52cb" args="(const IkParameterization &amp;param, std::vector&lt; dReal &gt; &amp;solution, int filteroptions) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool FindIKSolution </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>solution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>filteroptions</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Find a close solution to the current robot's joint values. </p>
+<p>The function is a wrapper around the IkSolver interface. Note that the solution returned is not guaranteed to be the closest solution. In order to compute that, will have to compute all the ik solutions using FindIKSolutions. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>param</em>&nbsp;</td><td>The transformation of the end-effector in the global coord system </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>solution</em>&nbsp;</td><td>Will be of size <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ade23a90fcb4102d98f20dddad76ded75" title="Return the indices of the DOFs of the arm (used for IK, etc).">GetArmIndices()</a>.size() and contain the best solution </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>filteroptions</em>&nbsp;</td><td>A bitmask of <a class="el" href="namespaceOpenRAVE.html#a89401ff7c557d6d1ede96b550fb22bdc">IkFilterOptions</a> values controlling what is checked for each ik solution. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2976149bb8393a5c0835e63d41a80136"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::FindIKSolutions" ref="a2976149bb8393a5c0835e63d41a80136" args="(const IkParameterization &amp;param, const std::vector&lt; dReal &gt; &amp;vFreeParameters, std::vector&lt; std::vector&lt; dReal &gt; &gt; &amp;solutions, int filteroptions) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool FindIKSolutions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>vFreeParameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>solutions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>filteroptions</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a89829fe0eeca1eb5ca8424bc8575b346"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::FindIKSolutions" ref="a89829fe0eeca1eb5ca8424bc8575b346" args="(const IkParameterization &amp;param, std::vector&lt; std::vector&lt; dReal &gt; &gt; &amp;solutions, int filteroptions) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool FindIKSolutions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>solutions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>filteroptions</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Find all the IK solutions for the given end effector transform. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>param</em>&nbsp;</td><td>The transformation of the end-effector in the global coord system </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>solutions</em>&nbsp;</td><td>An array of all solutions, each element in solutions is of size <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ade23a90fcb4102d98f20dddad76ded75" title="Return the indices of the DOFs of the arm (used for IK, etc).">GetArmIndices()</a>.size() </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>filteroptions</em>&nbsp;</td><td>A bitmask of <a class="el" href="namespaceOpenRAVE.html#a89401ff7c557d6d1ede96b550fb22bdc">IkFilterOptions</a> values controlling what is checked for each ik solution. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ade23a90fcb4102d98f20dddad76ded75"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetArmIndices" ref="ade23a90fcb4102d98f20dddad76ded75" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::vector&lt;int&gt;&amp; GetArmIndices </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the indices of the DOFs of the arm (used for IK, etc). </p>
+<p>Usually the DOF indices from pBase to pEndEffector </p>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00108">108</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab77b38a94a16401b402f178513e9af5d"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetBase" ref="ab77b38a94a16401b402f178513e9af5d" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a> GetBase </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the base used for the iksolver </p>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00076">76</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7d4690b82988f471033acbd0bb460ae"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetChildDOFIndices" ref="ae7d4690b82988f471033acbd0bb460ae" args="(std::vector&lt; int &gt; &amp;vdofndices) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GetChildDOFIndices </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>vdofndices</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get all child DOF indices of the manipulator starting at the pEndEffector link. </p>
+
+</div>
+</div>
+<a class="anchor" id="a814285268af782cfac89350db77df299"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetChildJoints" ref="a814285268af782cfac89350db77df299" args="(std::vector&lt; JointPtr &gt; &amp;vjoints) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GetChildJoints </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classOpenRAVE_1_1KinBody.html#ad3fc7b64912fd0b7343faaefbc96b3ef">JointPtr</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>vjoints</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get all child joints of the manipulator starting at the pEndEffector link. </p>
+
+</div>
+</div>
+<a class="anchor" id="a235e6b3b9b27422cdf11846a71f5ca66"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetChildLinks" ref="a235e6b3b9b27422cdf11846a71f5ca66" args="(std::vector&lt; LinkPtr &gt; &amp;vlinks) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GetChildLinks </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>vlinks</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get all child links of the manipulator starting at pEndEffector link. </p>
+<p>The child links do not include the arm links. </p>
+
+</div>
+</div>
+<a class="anchor" id="a29109f7d70f0066ba24f7b5ef6deb835"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetClosingDirection" ref="a29109f7d70f0066ba24f7b5ef6deb835" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp; GetClosingDirection </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return the normal direction to move joints to 'close' the hand </p>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00113">113</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a92a9ef35f92ddbef89fc434defe397fc"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetDirection" ref="a92a9ef35f92ddbef89fc434defe397fc" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> GetDirection </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000052">非推奨:</a></b></dt><dd>(11/10/15) use GetLocalToolDirection </dd></dl>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00123">123</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a359b65aa0b4feca9d86f6f300dd0a50a"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetEndEffector" ref="a359b65aa0b4feca9d86f6f300dd0a50a" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a> GetEndEffector </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the end effector link (used to define workspace distance) </p>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00081">81</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f0d02ac3cfde33c10f7f57b224be196"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetEndEffectorTransform" ref="a9f0d02ac3cfde33c10f7f57b224be196" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> GetEndEffectorTransform </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00046">46</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1c511325beab0040d0b5f764291ec86"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetFreeParameters" ref="ad1c511325beab0040d0b5f764291ec86" args="(std::vector&lt; dReal &gt; &amp;vFreeParameters) const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool GetFreeParameters </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>vFreeParameters</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000050">非推奨:</a></b></dt><dd>(11/02/08) use <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a9ada1e961494800a5feae0672896f797" title="Returns the currently set ik solver.">GetIkSolver()</a>-&gt;<a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ad1c511325beab0040d0b5f764291ec86">GetFreeParameters()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a427344bec7ce8135433b47fd0b04f1f4"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetGraspTransform" ref="a427344bec7ce8135433b47fd0b04f1f4" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> GetGraspTransform </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000051">非推奨:</a></b></dt><dd>(11/10/15) use GetLocalToolTransform </dd></dl>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00096">96</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="af77d0225ce1ef4be58ca978d1cd13f10"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetGripperIndices" ref="af77d0225ce1ef4be58ca978d1cd13f10" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::vector&lt;int&gt;&amp; GetGripperIndices </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gripper indices of the joints that the manipulator controls. </p>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00101">101</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae88cd3fc2bd2b4da5ea6b84ed9edc6b9"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetIkParameterization" ref="ae88cd3fc2bd2b4da5ea6b84ed9edc6b9" args="(const IkParameterization &amp;ikparam) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> GetIkParameterization </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ikparam</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>returns a full parameterization of a given IK type for the current manipulator position using an existing <a class="el" href="classOpenRAVE_1_1IkParameterization.html" title="Parameterization of basic primitives for querying inverse-kinematics solutions.">IkParameterization</a> as the seed. </p>
+<p>Ideally pluging the returned ik parameterization into FindIkSolution should return the a manipulator configuration such that a new call to GetIkParameterization returns the same values. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ikparam</em>&nbsp;</td><td>Some IK types like Lookat3D and TranslationLocalGlobal6D set constraints in the global coordinate system of the manipulator. Because these values are not stored in manipulator itself, they have to be passed in through an existing <a class="el" href="classOpenRAVE_1_1IkParameterization.html" title="Parameterization of basic primitives for querying inverse-kinematics solutions.">IkParameterization</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af4452ae2258d7656aa374bc0530edc1f"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetIkParameterization" ref="af4452ae2258d7656aa374bc0530edc1f" args="(IkParameterizationType iktype) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> GetIkParameterization </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a>&nbsp;</td>
+          <td class="paramname"> <em>iktype</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>returns the parameterization of a given IK type for the current manipulator position. </p>
+<p>Ideally pluging the returned ik parameterization into FindIkSolution should return the a manipulator configuration such that a new call to GetIkParameterization returns the same values. In other words: </p>
+<div class="fragment"><pre class="fragment">            ikparam = manip-&gt;GetIkParameterization(iktype);
+            ... move robot
+            std::vector&lt;dReal&gt; sol;
+            <span class="keywordflow">if</span>( <a class="code" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#afe8f72c898a5e9200f5132a2a58e52cb" title="Find a close solution to the current robot&amp;#39;s joint values.">FindIKSolution</a>(ikparam,sol, filteroptions) ) {
+                manip-&gt;GetRobot()-&gt;SetActiveDOFs(manip-&gt;GetArmIndices());
+                manip-&gt;GetRobot()-&gt;SetActiveDOFValues(sol);
+                BOOST_ASSERT( dist(manip-&gt;GetIkParameterization(iktype), ikparam) &lt;= epsilon );
+            }
+</pre></div> <dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>iktype</em>&nbsp;</td><td>the type of parameterization to request </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9ada1e961494800a5feae0672896f797"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetIkSolver" ref="a9ada1e961494800a5feae0672896f797" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#adc64503b74e38e98eedcbc031b3e37ff">IkSolverBasePtr</a> GetIkSolver </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the currently set ik solver. </p>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00065">65</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9891f6fc2999ae047ebc9d06c0bf4069"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetIndependentLinks" ref="a9891f6fc2999ae047ebc9d06c0bf4069" args="(std::vector&lt; LinkPtr &gt; &amp;vlinks) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GetIndependentLinks </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>vlinks</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get all links that are independent of the arm and gripper joints. </p>
+<p>In other words, returns all links not on the path from the base to the end effector and not children of the end effector. The base and all links rigidly attached to it are also returned. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7322a77b768ce7997022a7b4b4ca46fe"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetKinematicsStructureHash" ref="a7322a77b768ce7997022a7b4b4ca46fe" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; GetKinematicsStructureHash </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return hash of all kinematics information that involves solving the inverse kinematics equations. </p>
+<p>This includes joint axes, joint positions, and final grasp transform. Hash is used to cache the solvers. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad07d05c88555a8420be3012a74950a00"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetLocalToolDirection" ref="ad07d05c88555a8420be3012a74950a00" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> GetLocalToolDirection </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>direction of palm/head/manipulator used for approaching. defined inside the manipulator/grasp coordinate system </p>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00118">118</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="afc05cfe6a87b76f1027596591ee688ce"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetLocalToolTransform" ref="afc05cfe6a87b76f1027596591ee688ce" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> GetLocalToolTransform </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return transform with respect to end effector defining the grasp coordinate system. </p>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00086">86</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3cc720dbc55fa8e07a0f85343d3bb136"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetName" ref="a3cc720dbc55fa8e07a0f85343d3bb136" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; GetName </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00050">50</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab73a54e94fe2be07ec7dc08220585ae9"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetNumFreeParameters" ref="ab73a54e94fe2be07ec7dc08220585ae9" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int GetNumFreeParameters </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000049">非推奨:</a></b></dt><dd>(11/02/08) use <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a9ada1e961494800a5feae0672896f797" title="Returns the currently set ik solver.">GetIkSolver()</a>-&gt;<a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ab73a54e94fe2be07ec7dc08220585ae9">GetNumFreeParameters()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8d4e8b42f55281a47dd90d525f19e9c4"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetRobot" ref="a8d4e8b42f55281a47dd90d525f19e9c4" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> GetRobot </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00053">53</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae230a8d361998e79a15128bfe18ec86a"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetStructureHash" ref="ae230a8d361998e79a15128bfe18ec86a" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; GetStructureHash </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return hash of just the manipulator definition. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2206c7317f62f083c3f57868ba82bfee"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::GetTransform" ref="a2206c7317f62f083c3f57868ba82bfee" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> GetTransform </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the transformation of the end effector (manipulator frame). </p>
+<p>All inverse kinematics and grasping queries are specifying this frame. </p>
+
+</div>
+</div>
+<a class="anchor" id="a63a72836eeef2579aff6424767e91007"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::IsChildLink" ref="a63a72836eeef2579aff6424767e91007" args="(LinkConstPtr plink) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IsChildLink </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1KinBody.html#a99c416f979a09dfc6ef42fd62bd4e77e">LinkConstPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>plink</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>returns true if a link is part of the child links of the manipulator. </p>
+<p>The child links do not include the arm links. </p>
+
+</div>
+</div>
+<a class="anchor" id="a27b105dc167c45d59ff59d5f6198c431"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::IsGrabbing" ref="a27b105dc167c45d59ff59d5f6198c431" args="(KinBodyConstPtr body) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IsGrabbing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>body</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return true if the body is being grabbed by any link on this manipulator </p>
+
+</div>
+</div>
+<a class="anchor" id="ac3d3423a3fae6eb66bc8e0ff6fc23e3e"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::serialize" ref="ac3d3423a3fae6eb66bc8e0ff6fc23e3e" args="(std::ostream &amp;o, int options) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void serialize </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>options</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae2b496857b0c5970bf0544e938e96125"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::SetIkSolver" ref="ae2b496857b0c5970bf0544e938e96125" args="(IkSolverBasePtr iksolver)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SetIkSolver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#adc64503b74e38e98eedcbc031b3e37ff">IkSolverBasePtr</a>&nbsp;</td>
+          <td class="paramname"> <em>iksolver</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sets the ik solver and initializes it with the current manipulator. </p>
+<p>Due to complications with translation,rotation,direction,and ray ik, the ik solver should take into account the grasp transform (_tLocalTool) internally. The actual ik primitives are transformed into the base frame only. </p>
+
+</div>
+</div>
+<a class="anchor" id="a853353ac859599b30cee9e99b17fa728"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::SetLocalToolTransform" ref="a853353ac859599b30cee9e99b17fa728" args="(const Transform &amp;t)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetLocalToolTransform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>t</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sets the local tool transform with respect to the end effector. </p>
+<p>Because this call will change manipulator hash, it resets the loaded IK and sets the Prop_RobotManipulatorTool message. </p>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="aaf2ed934b37cbbd236fdd1b01a5f5005"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::_name" ref="aaf2ed934b37cbbd236fdd1b01a5f5005" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#aaf2ed934b37cbbd236fdd1b01a5f5005">_name</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00231">231</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1df66995ccb948e3c879ae8df4c7cc45"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::_pBase" ref="a1df66995ccb948e3c879ae8df4c7cc45" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a> <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a1df66995ccb948e3c879ae8df4c7cc45">_pBase</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00232">232</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0aed29f35f1a2eade750bcccfe880c86"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::_pEndEffector" ref="a0aed29f35f1a2eade750bcccfe880c86" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">LinkPtr</a> <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a0aed29f35f1a2eade750bcccfe880c86">_pEndEffector</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00232">232</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8a2af4ce11be0dca40e6c5529f53312"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::_pIkSolver" ref="ad8a2af4ce11be0dca40e6c5529f53312" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#adc64503b74e38e98eedcbc031b3e37ff">IkSolverBasePtr</a> <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ad8a2af4ce11be0dca40e6c5529f53312">_pIkSolver</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00236">236</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6467cc354af9ccc617bbf7a2a0185f50"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::_strIkSolver" ref="a6467cc354af9ccc617bbf7a2a0185f50" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a6467cc354af9ccc617bbf7a2a0185f50">_strIkSolver</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00237">237</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a93714236a15909e9fb83641f095dc8eb"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::_tLocalTool" ref="a93714236a15909e9fb83641f095dc8eb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a93714236a15909e9fb83641f095dc8eb">_tLocalTool</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00233">233</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2193c631a96cebe54cc71b4aaf44bc0f"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::_vClosingDirection" ref="a2193c631a96cebe54cc71b4aaf44bc0f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt; <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a2193c631a96cebe54cc71b4aaf44bc0f">_vClosingDirection</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00234">234</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0301cd428a3c3fe44babdddb524a078"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::_vdirection" ref="ad0301cd428a3c3fe44babdddb524a078" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#ad0301cd428a3c3fe44babdddb524a078">_vdirection</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00235">235</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a06e8b45efe1699af0520ca886402f495"></a><!-- doxytag: member="OpenRAVE::RobotBase::Manipulator::_vgripperjointnames" ref="a06e8b45efe1699af0520ca886402f495" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html#a06e8b45efe1699af0520ca886402f495">_vgripperjointnames</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>names of the gripper joints </p>
+
+<p> <a class="el" href="robot_8h_source.html">robot.h</a> の <a class="el" href="robot_8h_source.html#l00238">238</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>include/openrave/<a class="el" href="robot_8h_source.html">robot.h (r2848/r2831)</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:13 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

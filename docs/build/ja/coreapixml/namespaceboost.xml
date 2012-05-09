@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="namespaceboost" kind="namespace">
+    <compoundname>boost</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceboost_1a6ea615b0e29a9b35870fb8662f0e1291" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void boost::assertion_failed</definition>
+        <argsstring>(char const *expr, char const *function, char const *file, long line)</argsstring>
+        <name>assertion_failed</name>
+        <param>
+          <type>char const *</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1836" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1835" bodyend="1838"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Modifications controlling boost library behavior. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1834"/>
+  </compounddef>
+</doxygen>

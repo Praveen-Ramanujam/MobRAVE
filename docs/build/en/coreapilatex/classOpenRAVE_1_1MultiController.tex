@@ -1,0 +1,99 @@
+\hypertarget{classOpenRAVE_1_1MultiController}{
+\subsection{MultiController Class Reference}
+\label{classOpenRAVE_1_1MultiController}\index{OpenRAVE::MultiController@{OpenRAVE::MultiController}}
+}
+
+
+controller that manage multiple controllers, allows users to easily set multiple controllers for one robot.  
+
+
+
+
+Inheritance diagram for MultiController:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classOpenRAVE_1_1MultiController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for MultiController:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classOpenRAVE_1_1MultiController__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1MultiController_ad5666862ecbce5aee42019ec18687268}{
+virtual bool \hyperlink{classOpenRAVE_1_1MultiController_ad5666862ecbce5aee42019ec18687268}{Init} (RobotBasePtr robot, const std::vector$<$ int $>$ \&dofindices, int nControlTransformation)}
+\label{classOpenRAVE_1_1MultiController_ad5666862ecbce5aee42019ec18687268}
+
+\begin{DoxyCompactList}\small\item\em removes all controllers. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1MultiController_a908295878cfb74d5e6ef193e2e7c6cbc}{AttachController} (ControllerBasePtr controller, const std::vector$<$ int $>$ \&dofindices, int nControlTransformation)
+\begin{DoxyCompactList}\small\item\em initializes and adds a controller, must be called after being initialized. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1MultiController_a865e2cee305a6c50e2b449d5920be590}{
+virtual void \hyperlink{classOpenRAVE_1_1MultiController_a865e2cee305a6c50e2b449d5920be590}{RemoveController} (ControllerBasePtr controller)}
+\label{classOpenRAVE_1_1MultiController_a865e2cee305a6c50e2b449d5920be590}
+
+\begin{DoxyCompactList}\small\item\em removes a controller from being managed. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1MultiController_a9c508b103e44320830142f2b450e6d5e}{
+virtual ControllerBasePtr \hyperlink{classOpenRAVE_1_1MultiController_a9c508b103e44320830142f2b450e6d5e}{GetController} (int dof) const }
+\label{classOpenRAVE_1_1MultiController_a9c508b103e44320830142f2b450e6d5e}
+
+\begin{DoxyCompactList}\small\item\em gets the controller responsible for dof (in the robot). If dof $<$ 0, returns the transform controller. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1MultiController_a223430ff4833c832a9689262eeb6a509}{
+virtual bool \hyperlink{classOpenRAVE_1_1MultiController_a223430ff4833c832a9689262eeb6a509}{IsDone} ()}
+\label{classOpenRAVE_1_1MultiController_a223430ff4833c832a9689262eeb6a509}
+
+\begin{DoxyCompactList}\small\item\em returns true only if all controllers return true \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1MultiController_aeeadca62100efc2104208ddac5603bef}{
+virtual dReal \hyperlink{classOpenRAVE_1_1MultiController_aeeadca62100efc2104208ddac5603bef}{GetTime} () const }
+\label{classOpenRAVE_1_1MultiController_aeeadca62100efc2104208ddac5603bef}
+
+\begin{DoxyCompactList}\small\item\em return the maximum time \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1MultiController_aa9cb5e097c6ecb5d0b157f9b7c581085}{GetTorque} (std::vector$<$ dReal $>$ \&torque) const 
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+controller that manage multiple controllers, allows users to easily set multiple controllers for one robot. The class also make sure individual controllers do not have colliding DOF. It ignores the \begin{Desc}
+\item[Examples: ]\par
+
+
+\hyperlink{ormulticontrol_8cpp-example}{ormulticontrol.cpp}.
+
+\end{Desc}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1MultiController_a908295878cfb74d5e6ef193e2e7c6cbc}{
+\index{OpenRAVE::MultiController@{OpenRAVE::MultiController}!AttachController@{AttachController}}
+\index{AttachController@{AttachController}!OpenRAVE::MultiController@{OpenRAVE::MultiController}}
+\paragraph[{AttachController}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool AttachController (ControllerBasePtr {\em controller}, \/  const std::vector$<$ int $>$ \& {\em dofindices}, \/  int {\em nControlTransformation})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1MultiController_a908295878cfb74d5e6ef193e2e7c6cbc}
+
+
+initializes and adds a controller, must be called after being initialized. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em controller}]the controller to init \item[{\em dofindices}]robot dof indices to control \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]if the controller dofs interfere with current set dofs, will throw an exception \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1MultiController_aa9cb5e097c6ecb5d0b157f9b7c581085}{
+\index{OpenRAVE::MultiController@{OpenRAVE::MultiController}!GetTorque@{GetTorque}}
+\index{GetTorque@{GetTorque}!OpenRAVE::MultiController@{OpenRAVE::MultiController}}
+\paragraph[{GetTorque}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetTorque (std::vector$<$ dReal $>$ \& {\em torque}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1MultiController_aa9cb5e097c6ecb5d0b157f9b7c581085}
+get torque/current/strain values 
+\begin{DoxyParams}{Parameters}
+\item[{\em torque}]\mbox{[}out\mbox{]} -\/ returns the current torque/current/strain exerted by each of the dofs from outside forces. The feedforward and friction terms should be subtracted out already \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classOpenRAVE_1_1ControllerBase_a5850b39ddc68841ef2961c2eb7bf7b8f}{ControllerBase}.
+

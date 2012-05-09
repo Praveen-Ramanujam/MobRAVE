@@ -1,0 +1,329 @@
+\hypertarget{group__affine__math}{
+\subsection{Affine Math}
+\label{group__affine__math}\index{Affine Math@{Affine Math}}
+}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Vector class containing 4 dimensions. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform}{RaveTransform$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Affine transformation parameterized with quaterions. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Affine transformation parameterized with rotation matrices. Scales and shears are not supported. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\RaveVector$<$ T $>$ \hyperlink{group__affine__math_ga8a5d9ee6c215ae740e449a8310e4e9d4}{quatFromAxisAngle} (const RaveVector$<$ T $>$ \&axis, T angle)
+\begin{DoxyCompactList}\small\item\em Converts an axis-\/angle rotation into a quaternion. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveVector$<$ T $>$ \hyperlink{group__affine__math_gacf8a968523673f5e3e3c08ffafd75a84}{quatFromAxisAngle} (const RaveVector$<$ T $>$ \&axisangle)
+\begin{DoxyCompactList}\small\item\em Converts an axis-\/angle rotation into a quaternion. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveVector$<$ T $>$ \hyperlink{group__affine__math_gad512ee3ebabb8c45bea16c84ca9ea9d4}{quatFromMatrix} (const RaveTransformMatrix$<$ T $>$ \&rotation)
+\begin{DoxyCompactList}\small\item\em Converts the rotation of a matrix into a quaternion. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveTransformMatrix$<$ T $>$ \hyperlink{group__affine__math_gadee9ddfd3bb8c56e599cf252853ff144}{matrixFromQuat} (const RaveVector$<$ T $>$ \&quat)
+\begin{DoxyCompactList}\small\item\em Converts a quaternion to a 3x3 matrix. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{group__affine__math_gacf10676c714b228545f93be252163d76}{matrixFromQuat} (RaveTransformMatrix$<$ T $>$ \&rotation, const RaveVector$<$ T $>$ \&quat)
+\begin{DoxyCompactList}\small\item\em Converts a quaternion to a 3x3 matrix. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveTransformMatrix$<$ T $>$ \hyperlink{group__affine__math_gad596e9d743a4d08e54db0f01b1657002}{matrixFromAxisAngle} (const RaveVector$<$ T $>$ \&axis, T angle)
+\begin{DoxyCompactList}\small\item\em Converts an axis-\/angle rotation to a 3x3 matrix. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveTransformMatrix$<$ T $>$ \hyperlink{group__affine__math_ga25cf5562e674415477d2bcd80f95cc5b}{matrixFromAxisAngle} (const RaveVector$<$ T $>$ \&axisangle)
+\begin{DoxyCompactList}\small\item\em Converts an axis-\/angle rotation to a 3x3 matrix. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveVector$<$ T $>$ \hyperlink{group__affine__math_gac36d0b93e56274bdfb6e1e648b829536}{quatMultiply} (const RaveVector$<$ T $>$ \&quat0, const RaveVector$<$ T $>$ \&quat1)
+\begin{DoxyCompactList}\small\item\em Multiply two quaternions. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveVector$<$ T $>$ \hyperlink{group__affine__math_ga7aa03948b7cc76653b754376dcd55bae}{quatInverse} (const RaveVector$<$ T $>$ \&quat)
+\begin{DoxyCompactList}\small\item\em Inverted a quaternion rotation. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveVector$<$ T $>$ \hyperlink{group__affine__math_gab1abf41daa0f130493c4a0591b03b4ec}{quatSlerp} (const RaveVector$<$ T $>$ \&quat0, const RaveVector$<$ T $>$ \&quat1, T t)
+\begin{DoxyCompactList}\small\item\em Sphereical linear interpolation between two quaternions. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveVector$<$ T $>$ \hyperlink{group__affine__math_ga53ddf2e9014f577a6915e180a3cf01e1}{quatRotate} (const RaveVector$<$ T $>$ \&q, const RaveVector$<$ T $>$ \&t)
+\begin{DoxyCompactList}\small\item\em transform a vector by a quaternion \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveVector$<$ T $>$ \hyperlink{group__affine__math_gaa6b1411c303ea16ecb279ae4a08735c0}{quatRotateDirection} (const RaveVector$<$ T $>$ \&sourcedir, const RaveVector$<$ T $>$ \&targetdir)
+\begin{DoxyCompactList}\small\item\em Return the minimal quaternion that orients sourcedir to targetdir. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std::pair$<$ T, RaveVector$<$ T $>$ $>$ \hyperlink{group__affine__math_ga436efaa950bb38f3b3b8a891e5da5591}{normalizeAxisRotation} (const RaveVector$<$ T $>$ \&axis, const RaveVector$<$ T $>$ \&quat)
+\begin{DoxyCompactList}\small\item\em Find the rotation theta around axis such that rot(axis,theta) $\ast$ q is closest to the identity rotation. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveVector$<$ T $>$ \hyperlink{group__affine__math_ga95a2de86a8789000c0a12ce91bbefe0c}{axisAngleFromQuat} (const RaveVector$<$ T $>$ \&quat)
+\begin{DoxyCompactList}\small\item\em Converts a quaternion into the axis-\/angle representation. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveVector$<$ T $>$ \hyperlink{group__affine__math_gabf46823a4c5b59c9ac3e72f0905bea24}{axisAngleFromMatrix} (const RaveTransformMatrix$<$ T $>$ \&rotation)
+\begin{DoxyCompactList}\small\item\em Converts the rotation of a matrix into axis-\/angle representation. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\RaveTransformMatrix$<$ T $>$ \hyperlink{group__affine__math_ga9db1071fa2f5264616dabb3b3d16eec9}{transformLookat} (const RaveVector$<$ T $>$ \&vlookat, const RaveVector$<$ T $>$ \&vcamerapos, const RaveVector$<$ T $>$ \&vcameraup)
+\begin{DoxyCompactList}\small\item\em Returns a camera matrix that looks along a ray with a desired up vector. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ \begin{DoxyCompactItemize}
+\item 
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gac8e9a4de3eada3445281cf83f63a71ad}{RaveExp} (dReal f)
+\begin{DoxyCompactList}\small\item\em exponential \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga2358b3045fbf4f2dd3d6047c266ddb97}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga2358b3045fbf4f2dd3d6047c266ddb97}{RaveLog} (dReal f)}
+\label{group__affine__math_ga2358b3045fbf4f2dd3d6047c266ddb97}
+
+\begin{DoxyCompactList}\small\item\em logarithm \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_gafbca1a5656b1543abb89d45cf8ac4ca3}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gafbca1a5656b1543abb89d45cf8ac4ca3}{RaveCos} (dReal f)}
+\label{group__affine__math_gafbca1a5656b1543abb89d45cf8ac4ca3}
+
+\begin{DoxyCompactList}\small\item\em cosine \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga7941e0b1a64c2dd182c2ac751d08eb1e}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga7941e0b1a64c2dd182c2ac751d08eb1e}{RaveSin} (dReal f)}
+\label{group__affine__math_ga7941e0b1a64c2dd182c2ac751d08eb1e}
+
+\begin{DoxyCompactList}\small\item\em sine \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_gae39adb12086da21a4e0fe39c96aff1d6}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gae39adb12086da21a4e0fe39c96aff1d6}{RaveTan} (dReal f)}
+\label{group__affine__math_gae39adb12086da21a4e0fe39c96aff1d6}
+
+\begin{DoxyCompactList}\small\item\em tangent \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_gaaa147e7be9eb0e01250291e2aa3a81bf}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gaaa147e7be9eb0e01250291e2aa3a81bf}{RaveLog2} (dReal f)}
+\label{group__affine__math_gaaa147e7be9eb0e01250291e2aa3a81bf}
+
+\begin{DoxyCompactList}\small\item\em base 2 logarithm \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_gab7abc4771e520f8baa20554f4c6d12c2}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gab7abc4771e520f8baa20554f4c6d12c2}{RaveLog10} (dReal f)}
+\label{group__affine__math_gab7abc4771e520f8baa20554f4c6d12c2}
+
+\begin{DoxyCompactList}\small\item\em base 10 logarithm \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga97b4b78434f3e9b0b57cbd9d7b4b6610}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga97b4b78434f3e9b0b57cbd9d7b4b6610}{RaveAcos} (dReal f)}
+\label{group__affine__math_ga97b4b78434f3e9b0b57cbd9d7b4b6610}
+
+\begin{DoxyCompactList}\small\item\em arccosine \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_gabae52eb1a8ad7fc3bc90da48a4718941}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gabae52eb1a8ad7fc3bc90da48a4718941}{RaveAsin} (dReal f)}
+\label{group__affine__math_gabae52eb1a8ad7fc3bc90da48a4718941}
+
+\begin{DoxyCompactList}\small\item\em arcsine \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga5099467e8cef4035d8e2ee264c9e312b}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga5099467e8cef4035d8e2ee264c9e312b}{RaveAtan2} (dReal fy, dReal fx)}
+\label{group__affine__math_ga5099467e8cef4035d8e2ee264c9e312b}
+
+\begin{DoxyCompactList}\small\item\em arctangent2 covering entire circle \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga793937be7953d32b65f2141199cd23d9}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga793937be7953d32b65f2141199cd23d9}{RavePow} (dReal fx, dReal fy)}
+\label{group__affine__math_ga793937be7953d32b65f2141199cd23d9}
+
+\begin{DoxyCompactList}\small\item\em power x$^\wedge$y \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga4fbefacd06b4565772517dae42e2cbcc}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga4fbefacd06b4565772517dae42e2cbcc}{RaveSqrt} (dReal f)}
+\label{group__affine__math_ga4fbefacd06b4565772517dae42e2cbcc}
+
+\begin{DoxyCompactList}\small\item\em square-\/root \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga3723ea5834c83fdbf64b9b9ad1d95cc6}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga3723ea5834c83fdbf64b9b9ad1d95cc6}{RaveFabs} (dReal f)}
+\label{group__affine__math_ga3723ea5834c83fdbf64b9b9ad1d95cc6}
+
+\begin{DoxyCompactList}\small\item\em absolute value \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+A set of classes and functions that provide the basic affine math operations with vectors, matrices, and quaternions. 
+
+\subsubsection{Function Documentation}
+\hypertarget{group__affine__math_gabf46823a4c5b59c9ac3e72f0905bea24}{
+\index{affine\_\-math@{affine\_\-math}!axisAngleFromMatrix@{axisAngleFromMatrix}}
+\index{axisAngleFromMatrix@{axisAngleFromMatrix}!affine_math@{affine\_\-math}}
+\paragraph[{axisAngleFromMatrix}]{\setlength{\rightskip}{0pt plus 5cm}RaveVector$<$T$>$ OpenRAVE::geometry::axisAngleFromMatrix (const RaveTransformMatrix$<$ T $>$ \& {\em rotation})}\hfill}
+\label{group__affine__math_gabf46823a4c5b59c9ac3e72f0905bea24}
+
+
+Converts the rotation of a matrix into axis-\/angle representation. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rotation}]3x3 rotation matrix \end{DoxyParams}
+\hypertarget{group__affine__math_ga95a2de86a8789000c0a12ce91bbefe0c}{
+\index{affine\_\-math@{affine\_\-math}!axisAngleFromQuat@{axisAngleFromQuat}}
+\index{axisAngleFromQuat@{axisAngleFromQuat}!affine_math@{affine\_\-math}}
+\paragraph[{axisAngleFromQuat}]{\setlength{\rightskip}{0pt plus 5cm}RaveVector$<$T$>$ OpenRAVE::geometry::axisAngleFromQuat (const RaveVector$<$ T $>$ \& {\em quat})}\hfill}
+\label{group__affine__math_ga95a2de86a8789000c0a12ce91bbefe0c}
+
+
+Converts a quaternion into the axis-\/angle representation. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em quat}]quaternion, (s,vx,vy,vz) \end{DoxyParams}
+\hypertarget{group__affine__math_ga25cf5562e674415477d2bcd80f95cc5b}{
+\index{affine\_\-math@{affine\_\-math}!matrixFromAxisAngle@{matrixFromAxisAngle}}
+\index{matrixFromAxisAngle@{matrixFromAxisAngle}!affine_math@{affine\_\-math}}
+\paragraph[{matrixFromAxisAngle}]{\setlength{\rightskip}{0pt plus 5cm}RaveTransformMatrix$<$T$>$ OpenRAVE::geometry::matrixFromAxisAngle (const RaveVector$<$ T $>$ \& {\em axisangle})}\hfill}
+\label{group__affine__math_ga25cf5562e674415477d2bcd80f95cc5b}
+
+
+Converts an axis-\/angle rotation to a 3x3 matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em axis}]unit axis $\ast$ rotation angle (radians), 3 values \end{DoxyParams}
+\hypertarget{group__affine__math_gad596e9d743a4d08e54db0f01b1657002}{
+\index{affine\_\-math@{affine\_\-math}!matrixFromAxisAngle@{matrixFromAxisAngle}}
+\index{matrixFromAxisAngle@{matrixFromAxisAngle}!affine_math@{affine\_\-math}}
+\paragraph[{matrixFromAxisAngle}]{\setlength{\rightskip}{0pt plus 5cm}RaveTransformMatrix$<$T$>$ OpenRAVE::geometry::matrixFromAxisAngle (const RaveVector$<$ T $>$ \& {\em axis}, \/  T {\em angle})}\hfill}
+\label{group__affine__math_gad596e9d743a4d08e54db0f01b1657002}
+
+
+Converts an axis-\/angle rotation to a 3x3 matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em axis}]unit axis, 3 values \item[{\em angle}]rotation angle (radians) \end{DoxyParams}
+\hypertarget{group__affine__math_gacf10676c714b228545f93be252163d76}{
+\index{affine\_\-math@{affine\_\-math}!matrixFromQuat@{matrixFromQuat}}
+\index{matrixFromQuat@{matrixFromQuat}!affine_math@{affine\_\-math}}
+\paragraph[{matrixFromQuat}]{\setlength{\rightskip}{0pt plus 5cm}void OpenRAVE::geometry::matrixFromQuat (RaveTransformMatrix$<$ T $>$ \& {\em rotation}, \/  const RaveVector$<$ T $>$ \& {\em quat})}\hfill}
+\label{group__affine__math_gacf10676c714b228545f93be252163d76}
+
+
+Converts a quaternion to a 3x3 matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em rotation}]\item[\mbox{$\leftarrow$} {\em quat}]quaternion, (s,vx,vy,vz) \end{DoxyParams}
+\hypertarget{group__affine__math_gadee9ddfd3bb8c56e599cf252853ff144}{
+\index{affine\_\-math@{affine\_\-math}!matrixFromQuat@{matrixFromQuat}}
+\index{matrixFromQuat@{matrixFromQuat}!affine_math@{affine\_\-math}}
+\paragraph[{matrixFromQuat}]{\setlength{\rightskip}{0pt plus 5cm}RaveTransformMatrix$<$T$>$ OpenRAVE::geometry::matrixFromQuat (const RaveVector$<$ T $>$ \& {\em quat})}\hfill}
+\label{group__affine__math_gadee9ddfd3bb8c56e599cf252853ff144}
+
+
+Converts a quaternion to a 3x3 matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em quat}]quaternion, (s,vx,vy,vz) \end{DoxyParams}
+\hypertarget{group__affine__math_ga436efaa950bb38f3b3b8a891e5da5591}{
+\index{affine\_\-math@{affine\_\-math}!normalizeAxisRotation@{normalizeAxisRotation}}
+\index{normalizeAxisRotation@{normalizeAxisRotation}!affine_math@{affine\_\-math}}
+\paragraph[{normalizeAxisRotation}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$T, RaveVector$<$T$>$ $>$ OpenRAVE::geometry::normalizeAxisRotation (const RaveVector$<$ T $>$ \& {\em axis}, \/  const RaveVector$<$ T $>$ \& {\em quat})}\hfill}
+\label{group__affine__math_ga436efaa950bb38f3b3b8a891e5da5591}
+
+
+Find the rotation theta around axis such that rot(axis,theta) $\ast$ q is closest to the identity rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em axis}]axis to minimize rotation about \item[\mbox{$\leftarrow$} {\em quat}]input \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle that minimizes the rotation along with the normalized rotation rot(axis,theta)$\ast$q 
+\end{DoxyReturn}
+\hypertarget{group__affine__math_gacf8a968523673f5e3e3c08ffafd75a84}{
+\index{affine\_\-math@{affine\_\-math}!quatFromAxisAngle@{quatFromAxisAngle}}
+\index{quatFromAxisAngle@{quatFromAxisAngle}!affine_math@{affine\_\-math}}
+\paragraph[{quatFromAxisAngle}]{\setlength{\rightskip}{0pt plus 5cm}RaveVector$<$T$>$ OpenRAVE::geometry::quatFromAxisAngle (const RaveVector$<$ T $>$ \& {\em axisangle})}\hfill}
+\label{group__affine__math_gacf8a968523673f5e3e3c08ffafd75a84}
+
+
+Converts an axis-\/angle rotation into a quaternion. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em axisangle}]unit axis $\ast$ rotation angle (radians), 3 values \end{DoxyParams}
+\hypertarget{group__affine__math_ga8a5d9ee6c215ae740e449a8310e4e9d4}{
+\index{affine\_\-math@{affine\_\-math}!quatFromAxisAngle@{quatFromAxisAngle}}
+\index{quatFromAxisAngle@{quatFromAxisAngle}!affine_math@{affine\_\-math}}
+\paragraph[{quatFromAxisAngle}]{\setlength{\rightskip}{0pt plus 5cm}RaveVector$<$T$>$ OpenRAVE::geometry::quatFromAxisAngle (const RaveVector$<$ T $>$ \& {\em axis}, \/  T {\em angle})}\hfill}
+\label{group__affine__math_ga8a5d9ee6c215ae740e449a8310e4e9d4}
+
+
+Converts an axis-\/angle rotation into a quaternion. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em axis}]unit axis, 3 values \item[{\em angle}]rotation angle (radians) \end{DoxyParams}
+\begin{Desc}
+\item[Examples: ]\par
+\hyperlink{orplanning__ik_8cpp-example}{orplanning\_\-ik.cpp}.\end{Desc}
+\hypertarget{group__affine__math_gad512ee3ebabb8c45bea16c84ca9ea9d4}{
+\index{affine\_\-math@{affine\_\-math}!quatFromMatrix@{quatFromMatrix}}
+\index{quatFromMatrix@{quatFromMatrix}!affine_math@{affine\_\-math}}
+\paragraph[{quatFromMatrix}]{\setlength{\rightskip}{0pt plus 5cm}RaveVector$<$T$>$ OpenRAVE::geometry::quatFromMatrix (const RaveTransformMatrix$<$ T $>$ \& {\em rotation})}\hfill}
+\label{group__affine__math_gad512ee3ebabb8c45bea16c84ca9ea9d4}
+
+
+Converts the rotation of a matrix into a quaternion. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em t}]transform for extracting the 3x3 rotation. \end{DoxyParams}
+\hypertarget{group__affine__math_ga7aa03948b7cc76653b754376dcd55bae}{
+\index{affine\_\-math@{affine\_\-math}!quatInverse@{quatInverse}}
+\index{quatInverse@{quatInverse}!affine_math@{affine\_\-math}}
+\paragraph[{quatInverse}]{\setlength{\rightskip}{0pt plus 5cm}RaveVector$<$T$>$ OpenRAVE::geometry::quatInverse (const RaveVector$<$ T $>$ \& {\em quat})}\hfill}
+\label{group__affine__math_ga7aa03948b7cc76653b754376dcd55bae}
+
+
+Inverted a quaternion rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em quat}]quaternion, (s,vx,vy,vz) \end{DoxyParams}
+\hypertarget{group__affine__math_gac36d0b93e56274bdfb6e1e648b829536}{
+\index{affine\_\-math@{affine\_\-math}!quatMultiply@{quatMultiply}}
+\index{quatMultiply@{quatMultiply}!affine_math@{affine\_\-math}}
+\paragraph[{quatMultiply}]{\setlength{\rightskip}{0pt plus 5cm}RaveVector$<$T$>$ OpenRAVE::geometry::quatMultiply (const RaveVector$<$ T $>$ \& {\em quat0}, \/  const RaveVector$<$ T $>$ \& {\em quat1})}\hfill}
+\label{group__affine__math_gac36d0b93e56274bdfb6e1e648b829536}
+
+
+Multiply two quaternions. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em quat0}]quaternion, (s,vx,vy,vz) \item[{\em quat1}]quaternion, (s,vx,vy,vz) \end{DoxyParams}
+\begin{Desc}
+\item[Examples: ]\par
+\hyperlink{orplanning__ik_8cpp-example}{orplanning\_\-ik.cpp}.\end{Desc}
+\hypertarget{group__affine__math_ga53ddf2e9014f577a6915e180a3cf01e1}{
+\index{affine\_\-math@{affine\_\-math}!quatRotate@{quatRotate}}
+\index{quatRotate@{quatRotate}!affine_math@{affine\_\-math}}
+\paragraph[{quatRotate}]{\setlength{\rightskip}{0pt plus 5cm}RaveVector$<$T$>$ OpenRAVE::geometry::quatRotate (const RaveVector$<$ T $>$ \& {\em q}, \/  const RaveVector$<$ T $>$ \& {\em t})}\hfill}
+\label{group__affine__math_ga53ddf2e9014f577a6915e180a3cf01e1}
+
+
+transform a vector by a quaternion 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em }]\end{DoxyParams}
+\hypertarget{group__affine__math_gaa6b1411c303ea16ecb279ae4a08735c0}{
+\index{affine\_\-math@{affine\_\-math}!quatRotateDirection@{quatRotateDirection}}
+\index{quatRotateDirection@{quatRotateDirection}!affine_math@{affine\_\-math}}
+\paragraph[{quatRotateDirection}]{\setlength{\rightskip}{0pt plus 5cm}RaveVector$<$T$>$ OpenRAVE::geometry::quatRotateDirection (const RaveVector$<$ T $>$ \& {\em sourcedir}, \/  const RaveVector$<$ T $>$ \& {\em targetdir})}\hfill}
+\label{group__affine__math_gaa6b1411c303ea16ecb279ae4a08735c0}
+
+
+Return the minimal quaternion that orients sourcedir to targetdir. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sourcedir}]direction of the original vector, 3 values \item[{\em targetdir}]new direction, 3 values \end{DoxyParams}
+\hypertarget{group__affine__math_gab1abf41daa0f130493c4a0591b03b4ec}{
+\index{affine\_\-math@{affine\_\-math}!quatSlerp@{quatSlerp}}
+\index{quatSlerp@{quatSlerp}!affine_math@{affine\_\-math}}
+\paragraph[{quatSlerp}]{\setlength{\rightskip}{0pt plus 5cm}RaveVector$<$T$>$ OpenRAVE::geometry::quatSlerp (const RaveVector$<$ T $>$ \& {\em quat0}, \/  const RaveVector$<$ T $>$ \& {\em quat1}, \/  T {\em t})}\hfill}
+\label{group__affine__math_gab1abf41daa0f130493c4a0591b03b4ec}
+
+
+Sphereical linear interpolation between two quaternions. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em quat0}]quaternion, (s,vx,vy,vz) \item[{\em quat1}]quaternion, (s,vx,vy,vz) \item[{\em t}]real value in \mbox{[}0,1\mbox{]}. 0 returns quat1, 1 returns quat2 \end{DoxyParams}
+\hypertarget{group__affine__math_gac8e9a4de3eada3445281cf83f63a71ad}{
+\index{affine\_\-math@{affine\_\-math}!RaveExp@{RaveExp}}
+\index{RaveExp@{RaveExp}!affine_math@{affine\_\-math}}
+\paragraph[{RaveExp}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API dReal OpenRAVE::RaveExp (dReal {\em f})}\hfill}
+\label{group__affine__math_gac8e9a4de3eada3445281cf83f63a71ad}
+
+
+exponential 
+
+Wrappers of common basic math functions, allows \hyperlink{namespaceOpenRAVE}{OpenRAVE} to control the precision requirements. \hypertarget{group__affine__math_ga9db1071fa2f5264616dabb3b3d16eec9}{
+\index{affine\_\-math@{affine\_\-math}!transformLookat@{transformLookat}}
+\index{transformLookat@{transformLookat}!affine_math@{affine\_\-math}}
+\paragraph[{transformLookat}]{\setlength{\rightskip}{0pt plus 5cm}RaveTransformMatrix$<$T$>$ OpenRAVE::geometry::transformLookat (const RaveVector$<$ T $>$ \& {\em vlookat}, \/  const RaveVector$<$ T $>$ \& {\em vcamerapos}, \/  const RaveVector$<$ T $>$ \& {\em vcameraup})}\hfill}
+\label{group__affine__math_ga9db1071fa2f5264616dabb3b3d16eec9}
+
+
+Returns a camera matrix that looks along a ray with a desired up vector. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em vlookat}]the point space to look at, the camera will rotation and zoom around this point \item[\mbox{$\leftarrow$} {\em vcampos}]the position of the camera in space \item[\mbox{$\leftarrow$} {\em vcamup}]vector from the camera \end{DoxyParams}

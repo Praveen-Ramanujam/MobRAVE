@@ -1,0 +1,86 @@
+\hypertarget{classOpenRAVE_1_1SensorSystemBase}{
+\subsection{SensorSystemBase Class Reference}
+\label{classOpenRAVE_1_1SensorSystemBase}\index{OpenRAVE::SensorSystemBase@{OpenRAVE::SensorSystemBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} Used to manage the creation and destruction of bodies. See \hyperlink{arch__sensorsystem}{Sensor System Concepts}.  
+
+
+
+
+Inheritance diagram for SensorSystemBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classOpenRAVE_1_1SensorSystemBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for SensorSystemBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{classOpenRAVE_1_1SensorSystemBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1SensorSystemBase_a43a787400d2a563b9eee1a149225c18a}{
+virtual void \hyperlink{classOpenRAVE_1_1SensorSystemBase_a43a787400d2a563b9eee1a149225c18a}{Reset} ()=0}
+\label{classOpenRAVE_1_1SensorSystemBase_a43a787400d2a563b9eee1a149225c18a}
+
+\begin{DoxyCompactList}\small\item\em resets the system and stops managing all objects. Any objects that are not locked, are deleted \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SensorSystemBase_ae1bb21dc8031749ad2dd549b7c9d6cc6}{
+virtual void \hyperlink{classOpenRAVE_1_1SensorSystemBase_ae1bb21dc8031749ad2dd549b7c9d6cc6}{AddRegisteredBodies} (const std::vector$<$ KinBodyPtr $>$ \&vbodies)=0}
+\label{classOpenRAVE_1_1SensorSystemBase_ae1bb21dc8031749ad2dd549b7c9d6cc6}
+
+\begin{DoxyCompactList}\small\item\em automatically register bodies that have some type of SensorSystem data (usually done through xml) \item\end{DoxyCompactList}\item 
+virtual KinBody::ManageDataPtr \hyperlink{classOpenRAVE_1_1SensorSystemBase_a97c5f9efa14de77c511e1c83048ada63}{AddKinBody} (KinBodyPtr pbody, XMLReadableConstPtr pdata)=0
+\item 
+\hypertarget{classOpenRAVE_1_1SensorSystemBase_a4363ba6a1a7e1599c6987bf3a185660b}{
+virtual bool \hyperlink{classOpenRAVE_1_1SensorSystemBase_a4363ba6a1a7e1599c6987bf3a185660b}{RemoveKinBody} (KinBodyPtr pbody)=0}
+\label{classOpenRAVE_1_1SensorSystemBase_a4363ba6a1a7e1599c6987bf3a185660b}
+
+\begin{DoxyCompactList}\small\item\em remove body from sensory system. If bDestroy is true, will also deallocate the memory \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SensorSystemBase_affd950fc48ad8eb437bf8a19e8d10b5c}{
+virtual bool \hyperlink{classOpenRAVE_1_1SensorSystemBase_affd950fc48ad8eb437bf8a19e8d10b5c}{IsBodyPresent} (KinBodyPtr pbody)=0}
+\label{classOpenRAVE_1_1SensorSystemBase_affd950fc48ad8eb437bf8a19e8d10b5c}
+
+\begin{DoxyCompactList}\small\item\em returns true if body is present \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SensorSystemBase_af12324167a3e2d2d82f97d7c6376645d}{
+virtual bool \hyperlink{classOpenRAVE_1_1SensorSystemBase_af12324167a3e2d2d82f97d7c6376645d}{EnableBody} (KinBodyPtr pbody, bool bEnable)=0}
+\label{classOpenRAVE_1_1SensorSystemBase_af12324167a3e2d2d82f97d7c6376645d}
+
+\begin{DoxyCompactList}\small\item\em enable/disable a body from being updated by the sensor system \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1SensorSystemBase_afbf8616af8f2414b866e5ce416072af4}{SwitchBody} (KinBodyPtr pbody1, KinBodyPtr pbody2)=0
+\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1SensorSystemBase_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1SensorSystemBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1SensorSystemBase_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em return the static interface type this class points to (used for safe casting) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} Used to manage the creation and destruction of bodies. See \hyperlink{arch__sensorsystem}{Sensor System Concepts}. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1SensorSystemBase_a97c5f9efa14de77c511e1c83048ada63}{
+\index{OpenRAVE::SensorSystemBase@{OpenRAVE::SensorSystemBase}!AddKinBody@{AddKinBody}}
+\index{AddKinBody@{AddKinBody}!OpenRAVE::SensorSystemBase@{OpenRAVE::SensorSystemBase}}
+\paragraph[{AddKinBody}]{\setlength{\rightskip}{0pt plus 5cm}virtual KinBody::ManageDataPtr AddKinBody (KinBodyPtr {\em pbody}, \/  XMLReadableConstPtr {\em pdata})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SensorSystemBase_a97c5f9efa14de77c511e1c83048ada63}
+add body for registering with sensor system pdata is a pointer to a data structor holding tracking/registration information for the system \hypertarget{classOpenRAVE_1_1SensorSystemBase_afbf8616af8f2414b866e5ce416072af4}{
+\index{OpenRAVE::SensorSystemBase@{OpenRAVE::SensorSystemBase}!SwitchBody@{SwitchBody}}
+\index{SwitchBody@{SwitchBody}!OpenRAVE::SensorSystemBase@{OpenRAVE::SensorSystemBase}}
+\paragraph[{SwitchBody}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SwitchBody (KinBodyPtr {\em pbody1}, \/  KinBodyPtr {\em pbody2})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SensorSystemBase_afbf8616af8f2414b866e5ce416072af4}
+switches the registrations of two bodies. Can be used to quickly change the models of the current bodies 
+\begin{DoxyParams}{Parameters}
+\item[{\em pbody1}]First body to switch \item[{\em pbody2}]Second body to switch \end{DoxyParams}

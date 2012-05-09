@@ -1,0 +1,162 @@
+\hypertarget{group__geometric__primitives}{
+\subsection{Geometric Primitives}
+\label{group__geometric__primitives}\index{Geometric Primitives@{Geometric Primitives}}
+}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{ray$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em A ray defined by an origin and a direction. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1aabb}{aabb$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em An axis aligned bounding box. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em An oriented bounding box. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1triangle}{triangle$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em A triangle defined by 3 points. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1frustum}{frustum$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em A pyramid with its vertex clipped. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__geometric__primitives_ga3264b6e233d1bacaa2176bf9e7a74399}{
+{\footnotesize template$<$typename T $>$ }\\int \hyperlink{group__geometric__primitives_ga3264b6e233d1bacaa2176bf9e7a74399}{insideQuadrilateral} (const RaveVector$<$ T $>$ \&v, const RaveVector$<$ T $>$ \&verts)}
+\label{group__geometric__primitives_ga3264b6e233d1bacaa2176bf9e7a74399}
+
+\begin{DoxyCompactList}\small\item\em Tests a point inside a 3D quadrilateral. \item\end{DoxyCompactList}\item 
+\hypertarget{group__geometric__primitives_gafa7d69f62abeb6dcb2784b10ad6ef8a5}{
+{\footnotesize template$<$typename T $>$ }\\int \hyperlink{group__geometric__primitives_gafa7d69f62abeb6dcb2784b10ad6ef8a5}{insideTriangle} (const RaveVector$<$ T $>$ v, const triangle$<$ T $>$ \&tri)}
+\label{group__geometric__primitives_gafa7d69f62abeb6dcb2784b10ad6ef8a5}
+
+\begin{DoxyCompactList}\small\item\em Tests a point insdie a 3D triangle. \item\end{DoxyCompactList}\item 
+\hypertarget{group__geometric__primitives_ga1c4f9c919f34e3f44e4dbe3fd4abfb8e}{
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{group__geometric__primitives_ga1c4f9c919f34e3f44e4dbe3fd4abfb8e}{RayAABBTest} (const ray$<$ T $>$ \&r, const aabb$<$ T $>$ \&ab)}
+\label{group__geometric__primitives_ga1c4f9c919f34e3f44e4dbe3fd4abfb8e}
+
+\begin{DoxyCompactList}\small\item\em Test collision of a ray with an axis aligned bounding box. \item\end{DoxyCompactList}\item 
+\hypertarget{group__geometric__primitives_gabd242edf62b381f793017cce0f2bec93}{
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{group__geometric__primitives_gabd242edf62b381f793017cce0f2bec93}{RayOBBTest} (const ray$<$ T $>$ \&r, const obb$<$ T $>$ \&o)}
+\label{group__geometric__primitives_gabd242edf62b381f793017cce0f2bec93}
+
+\begin{DoxyCompactList}\small\item\em Test collision of a ray and an oriented bounding box. \item\end{DoxyCompactList}\item 
+\hypertarget{group__geometric__primitives_gadda8d6c416e9ccfdbaf22e6755929e7e}{
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{group__geometric__primitives_gadda8d6c416e9ccfdbaf22e6755929e7e}{IsOBBinFrustum} (const obb$<$ T $>$ \&o, const frustum$<$ T $>$ \&fr)}
+\label{group__geometric__primitives_gadda8d6c416e9ccfdbaf22e6755929e7e}
+
+\begin{DoxyCompactList}\small\item\em Test collision of an oriented bounding box and a frustum. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\bool \hyperlink{group__geometric__primitives_ga0d29be0998203e5a7b521ccb728533f6}{IsOBBinConvexHull} (const obb$<$ T $>$ \&o, const U \&vplanes)
+\begin{DoxyCompactList}\small\item\em Tests if an oriented bounding box is inside a 3D convex hull. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{group__geometric__primitives_ga07425830ea25e001f8682da7f2504875}{TriTriCollision} (const RaveVector$<$ T $>$ \&u1, const RaveVector$<$ T $>$ \&u2, const RaveVector$<$ T $>$ \&u3, const RaveVector$<$ T $>$ \&v1, const RaveVector$<$ T $>$ \&v2, const RaveVector$<$ T $>$ \&v3, RaveVector$<$ T $>$ \&contactpos, RaveVector$<$ T $>$ \&contactnorm)
+\begin{DoxyCompactList}\small\item\em Test collision if two 3D triangles.
+
+Assuming triangle vertices are declared counter-\/clockwise!! \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\obb$<$ T $>$ \hyperlink{group__geometric__primitives_ga1aaf2360c518e6a9106315a87aaec95d}{OBBFromAABB} (const aabb$<$ T $>$ \&ab, const RaveTransformMatrix$<$ T $>$ \&t)
+\begin{DoxyCompactList}\small\item\em Transform an axis aligned bounding box to an oriented bounding box. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\obb$<$ T $>$ \hyperlink{group__geometric__primitives_ga645564c4c561b14b14b90d6d02c0e766}{OBBFromAABB} (const aabb$<$ T $>$ \&ab, const RaveTransform$<$ T $>$ \&t)
+\begin{DoxyCompactList}\small\item\em Transform an axis aligned bounding box to an oriented bounding box. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\obb$<$ T $>$ \hyperlink{group__geometric__primitives_ga94bf61739c3a0110d5230da07bde8b37}{TransformOBB} (const RaveTransform$<$ T $>$ \&t, const obb$<$ T $>$ \&o)
+\begin{DoxyCompactList}\small\item\em Transforms an oriented bounding box. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\obb$<$ T $>$ \hyperlink{group__geometric__primitives_ga588d811884a84cddef8910f749dc5aee}{TransformOBB} (const RaveTransformMatrix$<$ T $>$ \&t, const obb$<$ T $>$ \&o)
+\begin{DoxyCompactList}\small\item\em Transforms an oriented bounding box. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{group__geometric__primitives_gaa3201f1b56aca79d1fd12499f5c66e50}{AABBCollision} (const aabb$<$ T $>$ \&ab1, const aabb$<$ T $>$ \&ab2)
+\begin{DoxyCompactList}\small\item\em projects an obb along the world axes \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Distnace functions.}
+\label{_amgrpb5b6051cc2ee505e55561aa9d30eee1e}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__geometric__primitives_ga9b1575cfd9a4571c57d72449b303ba6e}{
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{group__geometric__primitives_ga9b1575cfd9a4571c57d72449b303ba6e}{DistVertexOBBSq} (const RaveVector$<$ T $>$ \&v, const obb$<$ T $>$ \&o)}
+\label{group__geometric__primitives_ga9b1575cfd9a4571c57d72449b303ba6e}
+
+\begin{DoxyCompactList}\small\item\em The minimum distance form the vertex to the oriented bounding box. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+A set of geometric primitives and functions offering collision detection and other distance measurement capabilities. 
+
+\subsubsection{Function Documentation}
+\hypertarget{group__geometric__primitives_gaa3201f1b56aca79d1fd12499f5c66e50}{
+\index{geometric\_\-primitives@{geometric\_\-primitives}!AABBCollision@{AABBCollision}}
+\index{AABBCollision@{AABBCollision}!geometric_primitives@{geometric\_\-primitives}}
+\paragraph[{AABBCollision}]{\setlength{\rightskip}{0pt plus 5cm}bool OpenRAVE::geometry::AABBCollision (const aabb$<$ T $>$ \& {\em ab1}, \/  const aabb$<$ T $>$ \& {\em ab2})}\hfill}
+\label{group__geometric__primitives_gaa3201f1b56aca79d1fd12499f5c66e50}
+
+
+projects an obb along the world axes 
+
+Test collision between two axis-\/aligned bounding boxes. \hypertarget{group__geometric__primitives_ga0d29be0998203e5a7b521ccb728533f6}{
+\index{geometric\_\-primitives@{geometric\_\-primitives}!IsOBBinConvexHull@{IsOBBinConvexHull}}
+\index{IsOBBinConvexHull@{IsOBBinConvexHull}!geometric_primitives@{geometric\_\-primitives}}
+\paragraph[{IsOBBinConvexHull}]{\setlength{\rightskip}{0pt plus 5cm}bool OpenRAVE::geometry::IsOBBinConvexHull (const obb$<$ T $>$ \& {\em o}, \/  const U \& {\em vplanes})}\hfill}
+\label{group__geometric__primitives_ga0d29be0998203e5a7b521ccb728533f6}
+
+
+Tests if an oriented bounding box is inside a 3D convex hull. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em vplanes}]the plane normals of the convex hull, normals should be facing inside. \end{DoxyParams}
+\hypertarget{group__geometric__primitives_ga645564c4c561b14b14b90d6d02c0e766}{
+\index{geometric\_\-primitives@{geometric\_\-primitives}!OBBFromAABB@{OBBFromAABB}}
+\index{OBBFromAABB@{OBBFromAABB}!geometric_primitives@{geometric\_\-primitives}}
+\paragraph[{OBBFromAABB}]{\setlength{\rightskip}{0pt plus 5cm}obb$<$T$>$ OpenRAVE::geometry::OBBFromAABB (const aabb$<$ T $>$ \& {\em ab}, \/  const RaveTransform$<$ T $>$ \& {\em t})}\hfill}
+\label{group__geometric__primitives_ga645564c4c561b14b14b90d6d02c0e766}
+
+
+Transform an axis aligned bounding box to an oriented bounding box. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em t}]transformation used to set the coordinate system of ab. \end{DoxyParams}
+\hypertarget{group__geometric__primitives_ga1aaf2360c518e6a9106315a87aaec95d}{
+\index{geometric\_\-primitives@{geometric\_\-primitives}!OBBFromAABB@{OBBFromAABB}}
+\index{OBBFromAABB@{OBBFromAABB}!geometric_primitives@{geometric\_\-primitives}}
+\paragraph[{OBBFromAABB}]{\setlength{\rightskip}{0pt plus 5cm}obb$<$T$>$ OpenRAVE::geometry::OBBFromAABB (const aabb$<$ T $>$ \& {\em ab}, \/  const RaveTransformMatrix$<$ T $>$ \& {\em t})}\hfill}
+\label{group__geometric__primitives_ga1aaf2360c518e6a9106315a87aaec95d}
+
+
+Transform an axis aligned bounding box to an oriented bounding box. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em t}]transformation used to set the coordinate system of ab. \end{DoxyParams}
+\hypertarget{group__geometric__primitives_ga588d811884a84cddef8910f749dc5aee}{
+\index{geometric\_\-primitives@{geometric\_\-primitives}!TransformOBB@{TransformOBB}}
+\index{TransformOBB@{TransformOBB}!geometric_primitives@{geometric\_\-primitives}}
+\paragraph[{TransformOBB}]{\setlength{\rightskip}{0pt plus 5cm}obb$<$T$>$ OpenRAVE::geometry::TransformOBB (const RaveTransformMatrix$<$ T $>$ \& {\em t}, \/  const obb$<$ T $>$ \& {\em o})}\hfill}
+\label{group__geometric__primitives_ga588d811884a84cddef8910f749dc5aee}
+
+
+Transforms an oriented bounding box. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em t}]transformation used to set the coordinate system of o. \end{DoxyParams}
+\hypertarget{group__geometric__primitives_ga94bf61739c3a0110d5230da07bde8b37}{
+\index{geometric\_\-primitives@{geometric\_\-primitives}!TransformOBB@{TransformOBB}}
+\index{TransformOBB@{TransformOBB}!geometric_primitives@{geometric\_\-primitives}}
+\paragraph[{TransformOBB}]{\setlength{\rightskip}{0pt plus 5cm}obb$<$T$>$ OpenRAVE::geometry::TransformOBB (const RaveTransform$<$ T $>$ \& {\em t}, \/  const obb$<$ T $>$ \& {\em o})}\hfill}
+\label{group__geometric__primitives_ga94bf61739c3a0110d5230da07bde8b37}
+
+
+Transforms an oriented bounding box. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em t}]transformation used to set the coordinate system of o. \end{DoxyParams}
+\hypertarget{group__geometric__primitives_ga07425830ea25e001f8682da7f2504875}{
+\index{geometric\_\-primitives@{geometric\_\-primitives}!TriTriCollision@{TriTriCollision}}
+\index{TriTriCollision@{TriTriCollision}!geometric_primitives@{geometric\_\-primitives}}
+\paragraph[{TriTriCollision}]{\setlength{\rightskip}{0pt plus 5cm}bool OpenRAVE::geometry::TriTriCollision (const RaveVector$<$ T $>$ \& {\em u1}, \/  const RaveVector$<$ T $>$ \& {\em u2}, \/  const RaveVector$<$ T $>$ \& {\em u3}, \/  const RaveVector$<$ T $>$ \& {\em v1}, \/  const RaveVector$<$ T $>$ \& {\em v2}, \/  const RaveVector$<$ T $>$ \& {\em v3}, \/  RaveVector$<$ T $>$ \& {\em contactpos}, \/  RaveVector$<$ T $>$ \& {\em contactnorm})}\hfill}
+\label{group__geometric__primitives_ga07425830ea25e001f8682da7f2504875}
+
+
+Test collision if two 3D triangles.
+
+Assuming triangle vertices are declared counter-\/clockwise!! 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em contactnorm}]if triangles collide, then filled with the normal of the second triangle \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if triangles collide. 
+\end{DoxyReturn}

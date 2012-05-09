@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="spacesampler_8h" kind="file">
+    <compoundname>spacesampler.h</compoundname>
+    <includedby refid="openrave_8h" local="no">include/openrave/openrave.h</includedby>
+    <invincdepgraph>
+      <node id="2356">
+        <label>include/openrave/spacesampler.h</label>
+        <link refid="spacesampler.h"/>
+        <childnode refid="2357" relation="include">
+        </childnode>
+      </node>
+      <node id="2367">
+        <label>src/cppexamples/ikfastloader.cpp</label>
+        <link refid="ikfastloader_8cpp"/>
+      </node>
+      <node id="2376">
+        <label>src/cppexamples/orshowsensors.cpp</label>
+        <link refid="orshowsensors_8cpp"/>
+      </node>
+      <node id="2359">
+        <label>src/cppexamples/orpythonbinding.cpp</label>
+        <link refid="orpythonbinding_8cpp"/>
+      </node>
+      <node id="2366">
+        <label>src/libopenrave-core/openrave-core.h</label>
+        <link refid="openrave-core_8h"/>
+        <childnode refid="2367" relation="include">
+        </childnode>
+        <childnode refid="2368" relation="include">
+        </childnode>
+        <childnode refid="2369" relation="include">
+        </childnode>
+        <childnode refid="2370" relation="include">
+        </childnode>
+        <childnode refid="2371" relation="include">
+        </childnode>
+        <childnode refid="2372" relation="include">
+        </childnode>
+        <childnode refid="2362" relation="include">
+        </childnode>
+        <childnode refid="2373" relation="include">
+        </childnode>
+        <childnode refid="2374" relation="include">
+        </childnode>
+        <childnode refid="2375" relation="include">
+        </childnode>
+        <childnode refid="2376" relation="include">
+        </childnode>
+        <childnode refid="2363" relation="include">
+        </childnode>
+        <childnode refid="2364" relation="include">
+        </childnode>
+      </node>
+      <node id="2364">
+        <label>src/cppexamples/oryoubotcontrol.cpp</label>
+        <link refid="oryoubotcontrol_8cpp"/>
+      </node>
+      <node id="2371">
+        <label>src/cppexamples/orikfilter.cpp</label>
+        <link refid="orikfilter_8cpp"/>
+      </node>
+      <node id="2374">
+        <label>src/cppexamples/orplanning_module.cpp</label>
+        <link refid="orplanning__module_8cpp"/>
+      </node>
+      <node id="2365">
+        <label>include/openrave/plugin.h</label>
+        <link refid="plugin_8h"/>
+        <childnode refid="2358" relation="include">
+        </childnode>
+        <childnode refid="2360" relation="include">
+        </childnode>
+      </node>
+      <node id="2373">
+        <label>src/cppexamples/orplanning_ik.cpp</label>
+        <link refid="orplanning__ik_8cpp"/>
+      </node>
+      <node id="2377">
+        <label>src/libopenrave/libopenrave.cpp</label>
+        <link refid="libopenrave_8cpp"/>
+        <childnode refid="2377" relation="include">
+        </childnode>
+      </node>
+      <node id="2357">
+        <label>include/openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="2358" relation="include">
+        </childnode>
+        <childnode refid="2359" relation="include">
+        </childnode>
+        <childnode refid="2360" relation="include">
+        </childnode>
+        <childnode refid="2361" relation="include">
+        </childnode>
+        <childnode refid="2365" relation="include">
+        </childnode>
+        <childnode refid="2366" relation="include">
+        </childnode>
+        <childnode refid="2377" relation="include">
+        </childnode>
+      </node>
+      <node id="2358">
+        <label>src/cppexamples/customreader.cpp</label>
+        <link refid="customreader_8cpp"/>
+      </node>
+      <node id="2368">
+        <label>src/cppexamples/opencvsaving.cpp</label>
+        <link refid="opencvsaving_8cpp"/>
+      </node>
+      <node id="2362">
+        <label>src/cppexamples/ormulticontrol.cpp</label>
+        <link refid="ormulticontrol_8cpp"/>
+      </node>
+      <node id="2361">
+        <label>include/openrave/planningutils.h</label>
+        <link refid="planningutils_8h"/>
+        <childnode refid="2362" relation="include">
+        </childnode>
+        <childnode refid="2363" relation="include">
+        </childnode>
+        <childnode refid="2364" relation="include">
+        </childnode>
+      </node>
+      <node id="2370">
+        <label>src/cppexamples/orconveyormovement.cpp</label>
+        <link refid="orconveyormovement_8cpp"/>
+      </node>
+      <node id="2363">
+        <label>src/cppexamples/ortrajectory.cpp</label>
+        <link refid="ortrajectory_8cpp"/>
+      </node>
+      <node id="2369">
+        <label>src/cppexamples/orcollision.cpp</label>
+        <link refid="orcollision_8cpp"/>
+      </node>
+      <node id="2372">
+        <label>src/cppexamples/orloadviewer.cpp</label>
+        <link refid="orloadviewer_8cpp"/>
+      </node>
+      <node id="2360">
+        <label>src/cppexamples/plugincpp.cpp</label>
+        <link refid="plugincpp_8cpp"/>
+      </node>
+      <node id="2375">
+        <label>src/cppexamples/orplanning_planner.cpp</label>
+        <link refid="orplanning__planner_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenRAVE_1_1SpaceSamplerBase" prot="public">OpenRAVE::SpaceSamplerBase</innerclass>
+    <innernamespace refid="namespaceOpenRAVE">OpenRAVE</innernamespace>
+    <briefdescription>
+<para>Sampling definitions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2006-2011<sp/>Rosen<sp/>Diankov<sp/>&lt;rosen.diankov@gmail.com&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenRAVE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OpenRAVE<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="preprocessor">#ifndef<sp/>OPENRAVE_SPACESAMPLER_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_SPACESAMPLER_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenRAVE<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937" kindref="member" tooltip="Specifies the boundary conditions of intervals for sampling.">IntervalType</ref><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937a9c15a47d726e9fbfb50b4aed7cf35856" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937a9c15a47d726e9fbfb50b4aed7cf35856" kindref="member" tooltip="(a,b)">IT_Open</ref>=0,<sp/></highlight></codeline>
+<codeline lineno="28" refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937a7928c735c3c6ce91beca595f8e76f08e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937a7928c735c3c6ce91beca595f8e76f08e" kindref="member" tooltip="(a,b]">IT_OpenStart</ref>=1,<sp/></highlight></codeline>
+<codeline lineno="29" refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937aac880107c84b1475074c13cee32a6104" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937aac880107c84b1475074c13cee32a6104" kindref="member" tooltip="[a,b)">IT_OpenEnd</ref>=2,<sp/></highlight></codeline>
+<codeline lineno="30" refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937a35f5589548b539707ceaf7c95a7e96e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937a35f5589548b539707ceaf7c95a7e96e8" kindref="member" tooltip="[a,b]">IT_Closed</ref>=3,<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespaceOpenRAVE_1a58596e0cb321ccf00bbe8d13b7b8fb2c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a58596e0cb321ccf00bbe8d13b7b8fb2c" kindref="member">SampleDataType</ref><sp/>{</highlight></codeline>
+<codeline lineno="34" refid="namespaceOpenRAVE_1a58596e0cb321ccf00bbe8d13b7b8fb2caae7ca48f4536a051c71a10a799066bd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a58596e0cb321ccf00bbe8d13b7b8fb2caae7ca48f4536a051c71a10a799066bd3" kindref="member">SDT_Real</ref>=1,</highlight></codeline>
+<codeline lineno="35" refid="namespaceOpenRAVE_1a58596e0cb321ccf00bbe8d13b7b8fb2ca635f7c92d9bc2ff5a9ad40385c95a1d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a58596e0cb321ccf00bbe8d13b7b8fb2ca635f7c92d9bc2ff5a9ad40385c95a1d5" kindref="member">SDT_Uint32</ref>=2,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classOpenRAVE_1_1SpaceSamplerBase" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1SpaceSamplerBase" kindref="compound" tooltip="[interface] Contains space samplers commonly used in planners. If not specified,...">SpaceSamplerBase</ref><sp/>:<sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44" refid="classOpenRAVE_1_1SpaceSamplerBase_1aad0bdf88c334a0580faa2e74543fa923" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1SpaceSamplerBase_1aad0bdf88c334a0580faa2e74543fa923" kindref="member">SpaceSamplerBase</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)<sp/>:<sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref>(PT_SpaceSampler,<sp/>penv)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46" refid="classOpenRAVE_1_1SpaceSamplerBase_1ad9f395da402d7bb9aaef7706d7b9be4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1SpaceSamplerBase_1ad9f395da402d7bb9aaef7706d7b9be4d" kindref="member">~SpaceSamplerBase</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classOpenRAVE_1_1SpaceSamplerBase_1affeafe65e7c4094f282d273dedbf069b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>InterfaceType<sp/><ref refid="classOpenRAVE_1_1SpaceSamplerBase_1affeafe65e7c4094f282d273dedbf069b" kindref="member" tooltip="return the static interface type this class points to (used for safe casting)">GetInterfaceTypeStatic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PT_SpaceSampler;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetSeed(uint32_t<sp/>seed)<sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetSpaceDOF(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dof)<sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDOF()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetNumberOfValues()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Supports(<ref refid="namespaceOpenRAVE_1a58596e0cb321ccf00bbe8d13b7b8fb2c" kindref="member">SampleDataType</ref><sp/>type)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetLimits(std::vector&lt;dReal&gt;&amp;<sp/>vLowerLimit,<sp/>std::vector&lt;dReal&gt;&amp;<sp/>vUpperLimit)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetLimits(std::vector&lt;uint32_t&gt;&amp;<sp/>vLowerLimit,<sp/>std::vector&lt;uint32_t&gt;&amp;<sp/>vUpperLimit)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SampleSequence(std::vector&lt;dReal&gt;&amp;<sp/>samples,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>num=1,<ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937" kindref="member" tooltip="Specifies the boundary conditions of intervals for sampling.">IntervalType</ref><sp/>interval=<ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937a35f5589548b539707ceaf7c95a7e96e8" kindref="member" tooltip="[a,b]">IT_Closed</ref>)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SampleSequence(std::vector&lt;uint32_t&gt;&amp;<sp/>sample,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>num=1)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SampleComplete(std::vector&lt;<ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>&gt;&amp;<sp/>samples,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>num,<ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937" kindref="member" tooltip="Specifies the boundary conditions of intervals for sampling.">IntervalType</ref><sp/>interval=<ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937a35f5589548b539707ceaf7c95a7e96e8" kindref="member" tooltip="[a,b]">IT_Closed</ref>)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SampleComplete(std::vector&lt;uint32_t&gt;&amp;<sp/>samples,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>num)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//virtual<sp/>void<sp/>SetDistanceMetric(const<sp/>boost::function&lt;dReal(const<sp/>std::vector&lt;dReal&gt;&amp;,<sp/>const<sp/>std::vector&lt;dReal&gt;&amp;)&gt;&amp;<sp/>distmetricfn)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">private:</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>GetHash()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="interfacehashes_8h_1ab58c39b9bec2d81aa8441fbf397765a2" kindref="member">OPENRAVE_SPACESAMPLER_HASH</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>OpenRAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/include/openrave/spacesampler.h"/>
+  </compounddef>
+</doxygen>

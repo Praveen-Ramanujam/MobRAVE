@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="plugincpp.cpp-example" kind="example">
+    <compoundname>plugincpp.cpp</compoundname>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Rosen Diankov</para></simplesect>
+Creates a simple <ref refid="classOpenRAVE_1_1ModuleBase" kindref="compound">OpenRAVE::ModuleBase</ref> interface.</para><para><bold>Full Example Code:</bold> <programlisting><codeline></codeline>
+<codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="openrave_8h" kindref="compound" tooltip="Defines the public headers that every plugin must include in order to use openrave...">openrave/openrave.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="plugin_8h" kindref="compound" tooltip="Provides helper functions for creating plugins. Defines all the necessary functions...">openrave/plugin.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">OpenRAVE;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyModule" kindref="compound">MyModule</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ModuleBase_1a5a91427df2d07efa80c64f34f54539eb" kindref="member">ModuleBase</ref></highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMyModule_1a70c9843a70fc8afb5401c63b08afe312" kindref="member">MyModule</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)<sp/>:<sp/><ref refid="classOpenRAVE_1_1ModuleBase_1a5a91427df2d07efa80c64f34f54539eb" kindref="member">ModuleBase</ref>(penv)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" kindref="member">__description</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;A<sp/>very<sp/>simple<sp/>plugin.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" kindref="member" tooltip="Registers a command and its help string.">RegisterCommand</ref>(</highlight><highlight class="stringliteral">&quot;numbodies&quot;</highlight><highlight class="normal">,boost::bind(&amp;<ref refid="classMyModule_1ad852aa14e4ab678c41b4bd0e9e4c9a61" kindref="member">MyModule::NumBodies</ref>,</highlight><highlight class="keyword">this</highlight><highlight class="normal">,_1,_2),</highlight><highlight class="stringliteral">&quot;returns<sp/>bodies&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" kindref="member" tooltip="Registers a command and its help string.">RegisterCommand</ref>(</highlight><highlight class="stringliteral">&quot;load&quot;</highlight><highlight class="normal">,boost::bind(&amp;<ref refid="classMyModule_1a3454d0158278faae615ba251964919b5" kindref="member">MyModule::Load</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,_1,_2),</highlight><highlight class="stringliteral">&quot;loads<sp/>a<sp/>given<sp/>file&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classMyModule_1a36a98806f9de4436a88d6b683b34d838" kindref="member">~MyModule</ref>()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMyModule_1ac919a991060ede6983343719401686de" kindref="member" tooltip="called when problem gets unloaded from environment">Destroy</ref>()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(</highlight><highlight class="stringliteral">&quot;module<sp/>unloaded<sp/>from<sp/>environment\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMyModule_1a02badd80bf345ba522a25ba31e620e9c" kindref="member">main</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>cmd)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(</highlight><highlight class="stringliteral">&quot;module<sp/>initialized<sp/>cmd;<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>cmd.c_str());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMyModule_1ad852aa14e4ab678c41b4bd0e9e4c9a61" kindref="member">NumBodies</ref>(ostream&amp;<sp/>sout,<sp/>istream&amp;<sp/>sinput)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;KinBodyPtr&gt;<sp/>vbodies;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" kindref="member">GetEnv</ref>()-&gt;GetBodies(vbodies);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sout<sp/>&lt;&lt;<sp/>vbodies.size();<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>publish<sp/>the<sp/>results</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMyModule_1a3454d0158278faae615ba251964919b5" kindref="member">Load</ref>(ostream&amp;<sp/>sout,<sp/>istream&amp;<sp/>sinput)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sinput<sp/>&gt;&gt;<sp/>filename;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bSuccess<sp/>=<sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" kindref="member">GetEnv</ref>()-&gt;Load(filename.c_str());<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bSuccess;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref><sp/><ref refid="customreader_8cpp_1a821cda75126120c6e71819ba8e35cabf" kindref="member">CreateInterfaceValidated</ref>(InterfaceType<sp/>type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>interfacename,<sp/>std::istream&amp;<sp/>sinput,<sp/><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((type<sp/>==<sp/>PT_Module)&amp;&amp;(interfacename<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;mymodule&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classMyModule" kindref="compound">MyModule</ref>(penv));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref>();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__plugin__exports_1gaf90c03438b94cc76e7b8a54d445ec106" kindref="member" tooltip="[helper] Validated function callback for returning a plugin&amp;#39;s information. No...">GetPluginAttributesValidated</ref>(PLUGININFO&amp;<sp/>info)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>info.interfacenames[PT_Module].push_back(</highlight><highlight class="stringliteral">&quot;MyModule&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="plugin_8h_1a6e162d18ddceb72d1e66482b37fef5eb" kindref="member">OPENRAVE_PLUGIN_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__plugin__exports_1gad6773d91dae37d0ba9de59d2a05277e4" kindref="member" tooltip="[export] Stub function to be defined by plugin that includes rave/plugin.h.">DestroyPlugin</ref>()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(</highlight><highlight class="stringliteral">&quot;destroying<sp/>plugin\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

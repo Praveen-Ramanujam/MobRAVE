@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="structConveyorBeltModule_1_1RegisteredBody" kind="struct" prot="private">
+    <compoundname>ConveyorBeltModule::RegisteredBody</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structConveyorBeltModule_1_1RegisteredBody_1a3a1a90139c2c8ab1fca0ea8b1790b7b2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="31" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structConveyorBeltModule_1_1RegisteredBody_1ad4f06c3aabd8e1531c0bb71002cad353" prot="public" static="no" mutable="no">
+        <type>dReal</type>
+        <definition>dReal appearanceprobability</definition>
+        <argsstring></argsstring>
+        <name>appearanceprobability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="32" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1726">
+        <label>string</label>
+        <childnode refid="1727" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1725">
+        <label>RegisteredBody</label>
+        <childnode refid="1726" relation="usage">
+          <edgelabel>filename</edgelabel>
+        </childnode>
+      </node>
+      <node id="1727">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="30" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="29" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structConveyorBeltModule_1_1RegisteredBody_1ad4f06c3aabd8e1531c0bb71002cad353" prot="public" virt="non-virtual"><scope>ConveyorBeltModule::RegisteredBody</scope><name>appearanceprobability</name></member>
+      <member refid="structConveyorBeltModule_1_1RegisteredBody_1a3a1a90139c2c8ab1fca0ea8b1790b7b2" prot="public" virt="non-virtual"><scope>ConveyorBeltModule::RegisteredBody</scope><name>filename</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

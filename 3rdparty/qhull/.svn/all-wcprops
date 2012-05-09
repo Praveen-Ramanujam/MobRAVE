@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull
+END
+merge.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/merge.c
+END
+global.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/global.c
+END
+merge.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/merge.h
+END
+poly2.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/poly2.c
+END
+Changes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/Changes.txt
+END
+COPYING.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/COPYING.txt
+END
+io.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/io.c
+END
+geom2.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/geom2.c
+END
+stat.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/stat.c
+END
+io.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/io.h
+END
+qset.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/qset.c
+END
+mem.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/mem.c
+END
+user.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/user.c
+END
+stat.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/stat.h
+END
+qset.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/qset.h
+END
+poly.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/poly.c
+END
+mem.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/mem.h
+END
+user.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/user.h
+END
+qhull.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/qhull.c
+END
+geom.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/geom.c
+END
+poly.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/poly.h
+END
+qhull.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/qhull.h
+END
+qhull_a.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/qhull_a.h
+END
+geom.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/geom.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/qhull/CMakeLists.txt
+END

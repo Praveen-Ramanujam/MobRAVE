@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/dualmanipulation
+END
+dualcommonmanipulation.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/dualmanipulation/dualcommonmanipulation.h
+END
+plugindefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/dualmanipulation/plugindefs.h
+END
+dualmanipulation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/dualmanipulation/dualmanipulation.cpp
+END
+dualmanipulation.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/dualmanipulation/dualmanipulation.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/dualmanipulation/CMakeLists.txt
+END

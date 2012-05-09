@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="p__basic__usage" kind="page">
+    <compoundname>p_basic_usage</compoundname>
+    <title>基本的な使い方</title>
+    <detaileddescription>
+<para>提供されているプラグインのリストを表示するには次のコマンドを実行して下さい． <verbatim>
+openrave --listplugins
+</verbatim></para><para>xmlファイルで定義されたロボットをOpenRAVE環境に読み出すには次のコマンドを実行して下さい． <verbatim>
+openrave robots/puma.robot.xml
+</verbatim></para><para>プラグインが<bold>MyProblem</bold>という問題例を定義している場合，次のコマンドで起動することができます． <verbatim>
+openrave robots/puma.robot.xml -problem MyProblem &apos;myarguments&apos;
+</verbatim></para><para>openraveと似たコマンドに<ulink url="http://openrave.org/ja/main/command_line_tools.html#openrave-py">openrave.py</ulink>というコマンドがあります．こちらはPythonで書かれているためOpenRAVEで提供されているすべてのモジュールにアクセスすることが可能で非常に機能的です．一方，openraveコマンドは既にC++でコンパイルされているため，Pythonがインストールされている開発環境でなくても実行することが可能です． </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

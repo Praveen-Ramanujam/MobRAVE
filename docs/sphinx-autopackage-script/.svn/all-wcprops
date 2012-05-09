@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/sphinx-autopackage-script
+END
+README.rst
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/sphinx-autopackage-script/README.rst
+END
+generate_modules.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/sphinx-autopackage-script/generate_modules.py
+END

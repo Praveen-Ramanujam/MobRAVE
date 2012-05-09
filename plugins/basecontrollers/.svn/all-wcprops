@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basecontrollers
+END
+basecontrollers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basecontrollers/basecontrollers.cpp
+END
+plugindefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basecontrollers/plugindefs.h
+END
+basecontrollers.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basecontrollers/basecontrollers.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basecontrollers/CMakeLists.txt
+END

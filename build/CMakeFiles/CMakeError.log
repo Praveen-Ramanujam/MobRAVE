@@ -1,0 +1,247 @@
+Determining if the function crlibm_init exists in the crlibm failed with the following output:
+Change Dir: /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[1]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[2]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=crlibm_init   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc     -DCHECK_FUNCTION_EXISTS=crlibm_init   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lcrlibm 
+/usr/bin/ld: cannot find -lcrlibm
+collect2: ld returned 1 exit status
+make[2]: *** [cmTryCompileExec] Error 1
+make[2]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec/fast] Error 2
+make[1]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file crlibm.h exists failed with the following output:
+Change Dir: /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[1]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[2]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: error: crlibm.h: No such file or directory
+make[2]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o] Error 1
+make[2]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec/fast] Error 2
+make[1]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test IS_X86_64 failed with the following output:
+Change Dir: /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[1]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[2]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/usr/bin/c++    -DIS_X86_64   -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/src.cxx
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/src.cxx: Assembler messages:
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/src.cxx:11: Error: bad expression
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/src.cxx:11: Error: junk `rax' after expression
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/src.cxx:12: Error: bad expression
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/src.cxx:12: Error: bad expression
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/src.cxx:12: Error: junk `]' after expression
+make[2]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[2]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec/fast] Error 2
+make[1]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+  int main()
+  {
+    int a = 0;
+    int*pa = &a;
+    asm(".intel_syntax\n"
+	"mov %%rax, %0\n"
+    "mov %%eax, [%%rax]\n"
+    ".att_syntax\n"
+    : : "r"(pa) : "%rax");
+    return 0;
+  }
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[1]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[2]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -I/usr/include/qt4   -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: ‘Q_WS_WIN’ undeclared (first use in this function)
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: (Each undeclared identifier is reported only once
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: for each function it appears in.)
+make[2]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o] Error 1
+make[2]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec/fast] Error 2
+make[1]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+
+File /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qglobal.h>
+
+void cmakeRequireSymbol(int dummy,...){(void)dummy;}
+int main()
+{
+#ifndef Q_WS_WIN
+  cmakeRequireSymbol(0,&Q_WS_WIN);
+#endif
+  return 0;
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[1]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[2]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -I/usr/include/qt4   -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: ‘Q_WS_QWS’ undeclared (first use in this function)
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: (Each undeclared identifier is reported only once
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: for each function it appears in.)
+make[2]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o] Error 1
+make[2]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec/fast] Error 2
+make[1]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+
+File /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qglobal.h>
+
+void cmakeRequireSymbol(int dummy,...){(void)dummy;}
+int main()
+{
+#ifndef Q_WS_QWS
+  cmakeRequireSymbol(0,&Q_WS_QWS);
+#endif
+  return 0;
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[1]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[2]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -I/usr/include/qt4   -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: ‘Q_WS_MAC’ undeclared (first use in this function)
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: (Each undeclared identifier is reported only once
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: for each function it appears in.)
+make[2]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o] Error 1
+make[2]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec/fast] Error 2
+make[1]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+
+File /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <QtCore/qglobal.h>
+
+void cmakeRequireSymbol(int dummy,...){(void)dummy;}
+int main()
+{
+#ifndef Q_WS_MAC
+  cmakeRequireSymbol(0,&Q_WS_MAC);
+#endif
+  return 0;
+}
+
+Determining if the include file ANN/ANN.h exists failed with the following output:
+Change Dir: /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[1]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[2]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o -c /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:21: error: ANN/ANN.h: No such file or directory
+make[2]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o] Error 1
+make[2]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec/fast] Error 2
+make[1]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file ffmpeg/avformat.h exists failed with the following output:
+Change Dir: /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[1]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[2]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:29: error: ffmpeg/avformat.h: No such file or directory
+make[2]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o] Error 1
+make[2]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec/fast] Error 2
+make[1]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file ffmpeg/avcodec.h exists failed with the following output:
+Change Dir: /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[1]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[2]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o   -c /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: error: ffmpeg/avcodec.h: No such file or directory
+make[2]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.c.o] Error 1
+make[2]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec/fast] Error 2
+make[1]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test HAS_AVMEDIA_TYPE_VIDEO failed with the following output:
+Change Dir: /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[1]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[2]: Entering directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/usr/bin/c++    -DHAS_AVMEDIA_TYPE_VIDEO   -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/src.cxx
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp/src.cxx:8: error: ‘AVMEDIA_TYPE_VIDEO’ was not declared in this scope
+make[2]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[2]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec/fast] Error 2
+make[1]: Leaving directory `/home/praveen/Work/openrave/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #define __STDC_CONSTANT_MACROS
+    #include <stdint.h>
+    #include <libavformat/avformat.h>
+    #include <libavcodec/avcodec.h>
+    int main()
+    {
+      return AVMEDIA_TYPE_VIDEO;
+    }

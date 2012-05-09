@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="arch__physicsengine" kind="page">
+    <compoundname>arch_physicsengine</compoundname>
+    <title>Physics Engine Concepts</title>
+    <detaileddescription>
+<para><bold>Reference:</bold> <ref refid="classOpenRAVE_1_1PhysicsEngineBase" kindref="compound">OpenRAVE::PhysicsEngineBase</ref></para><para>The physics engine for the environment can be set through <ref refid="classOpenRAVE_1_1EnvironmentBase_1a4b682d62526e5840d8fdc25343ee563c" kindref="member">OpenRAVE::EnvironmentBase::SetPhysicsEngine</ref>. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

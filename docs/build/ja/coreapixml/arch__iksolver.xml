@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="arch__iksolver" kind="page">
+    <compoundname>arch_iksolver</compoundname>
+    <title>Inverse Kinematics Solver Concepts</title>
+    <detaileddescription>
+<para><bold>Reference:</bold> <ref refid="classOpenRAVE_1_1IkSolverBase" kindref="compound">OpenRAVE::IkSolverBase</ref></para><para>Each IK solver is defined on a subset of joints of a Robot specified by the robot&apos;s manipulator. Given the position in the 3D workspace that an end effector should go to, an IK solver will find the joint configuration to take that end-effector there. Because it is common for an IK solution to have a null space, the IK solver give functionality to expose the free parameters to move the joints in null space. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

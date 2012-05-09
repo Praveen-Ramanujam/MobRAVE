@@ -1,0 +1,94 @@
+\hypertarget{namespaceOpenRAVE_1_1mathextra}{
+\subsection{OpenRAVE::mathextra Namespace Reference}
+\label{namespaceOpenRAVE_1_1mathextra}\index{OpenRAVE::mathextra@{OpenRAVE::mathextra}}
+}
+
+
+Extra math routines that are useful to have but don't really belong anywhere.  
+
+
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespaceOpenRAVE_1_1mathextra_a3c6e92adb2deae09d195c86818918c4b}{eig2} (const T $\ast$pfmat, T $\ast$peigs, T \&fv1x, T \&fv1y, T \&fv2x, T \&fv2y)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespaceOpenRAVE_1_1mathextra_ac7b910595448278e861ce787a01fc9a2}{GetCovarBasisVectors} (const T fCovariance\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}, T vbasis\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespaceOpenRAVE_1_1mathextra_a698af188ade25c457317354c0e9ebcba}{svd3} (const T $\ast$A, T $\ast$U, T $\ast$D, T $\ast$V)
+\item 
+\hypertarget{namespaceOpenRAVE_1_1mathextra_abb67a10be5fe708132dbe3792089cb43}{
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespaceOpenRAVE_1_1mathextra_abb67a10be5fe708132dbe3792089cb43}{inv2} (T $\ast$pf, T $\ast$pfres)}
+\label{namespaceOpenRAVE_1_1mathextra_abb67a10be5fe708132dbe3792089cb43}
+
+\begin{DoxyCompactList}\small\item\em takes the inverse of the 2x2 matrix pf and stores it into pfres, returns true if matrix is invertible \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_1_1mathextra_acdad3d8acab4d752d7373d9cb5a0a9db}{
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespaceOpenRAVE_1_1mathextra_acdad3d8acab4d752d7373d9cb5a0a9db}{\_\-mult3\_\-s4} (T $\ast$pfres, const T $\ast$pf1, const T $\ast$pf2)}
+\label{namespaceOpenRAVE_1_1mathextra_acdad3d8acab4d752d7373d9cb5a0a9db}
+
+\begin{DoxyCompactList}\small\item\em mult3 with a 3x3 matrix whose row stride is 16 bytes \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_1_1mathextra_ae5a24b1c71ce7b35a40ae7008ddf47ae}{
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespaceOpenRAVE_1_1mathextra_ae5a24b1c71ce7b35a40ae7008ddf47ae}{\_\-mult3\_\-s3} (T $\ast$pfres, const T $\ast$pf1, const T $\ast$pf2)}
+\label{namespaceOpenRAVE_1_1mathextra_ae5a24b1c71ce7b35a40ae7008ddf47ae}
+
+\begin{DoxyCompactList}\small\item\em mult3 with a 3x3 matrix whose row stride is 12 bytes \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_1_1mathextra_ad9d110d6d2dd3e1f4777ff1c42aa2fff}{
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespaceOpenRAVE_1_1mathextra_ad9d110d6d2dd3e1f4777ff1c42aa2fff}{matrixdet3} (const T $\ast$pf, int stride)}
+\label{namespaceOpenRAVE_1_1mathextra_ad9d110d6d2dd3e1f4777ff1c42aa2fff}
+
+\begin{DoxyCompactList}\small\item\em Compute the determinant of a 3x3 matrix whose row stride stride elements. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespaceOpenRAVE_1_1mathextra_abb859ce4ca095416219250a83ca94793}{\_\-inv3} (const T $\ast$pf, T $\ast$pfres, T $\ast$pfdet, int stride)
+\begin{DoxyCompactList}\small\item\em 3x3 matrix inverse. \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_1_1mathextra_a81c950faa17b5d293eb547c9b3bcab41}{
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespaceOpenRAVE_1_1mathextra_a81c950faa17b5d293eb547c9b3bcab41}{\_\-inv4} (const T $\ast$pf, T $\ast$pfres)}
+\label{namespaceOpenRAVE_1_1mathextra_a81c950faa17b5d293eb547c9b3bcab41}
+
+\begin{DoxyCompactList}\small\item\em 4x4 matrix inverse. \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_1_1mathextra_a98432a8613c3ee83bb5b6d2092b406ff}{
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespaceOpenRAVE_1_1mathextra_a98432a8613c3ee83bb5b6d2092b406ff}{\_\-transpose3} (const T $\ast$pf, T $\ast$pfres)}
+\label{namespaceOpenRAVE_1_1mathextra_a98432a8613c3ee83bb5b6d2092b406ff}
+
+\begin{DoxyCompactList}\small\item\em Transpose a 3x3 matrix. \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_1_1mathextra_af6485a9fbc08e970a019a8c78df0d54b}{
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{namespaceOpenRAVE_1_1mathextra_af6485a9fbc08e970a019a8c78df0d54b}{\_\-transpose4} (const T $\ast$pf, T $\ast$pfres)}
+\label{namespaceOpenRAVE_1_1mathextra_af6485a9fbc08e970a019a8c78df0d54b}
+
+\begin{DoxyCompactList}\small\item\em Transpose a 4x4 matrix. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Extra math routines that are useful to have but don't really belong anywhere. 
+
+\subsubsection{Function Documentation}
+\hypertarget{namespaceOpenRAVE_1_1mathextra_abb859ce4ca095416219250a83ca94793}{
+\index{OpenRAVE::mathextra@{OpenRAVE::mathextra}!\_\-inv3@{\_\-inv3}}
+\index{\_\-inv3@{\_\-inv3}!OpenRAVE::mathextra@{OpenRAVE::mathextra}}
+\paragraph[{\_\-inv3}]{\setlength{\rightskip}{0pt plus 5cm}T$\ast$ OpenRAVE::mathextra::\_\-inv3 (const T $\ast$ {\em pf}, \/  T $\ast$ {\em pfres}, \/  T $\ast$ {\em pfdet}, \/  int {\em stride})}\hfill}
+\label{namespaceOpenRAVE_1_1mathextra_abb859ce4ca095416219250a83ca94793}
+
+
+3x3 matrix inverse. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em pf}]the input 3x3 matrix \item[\mbox{$\rightarrow$} {\em pf}]the result of the operation, can be the same matrix as pf \item[\mbox{$\rightarrow$} {\em pfdet}]if not NULL, fills it with the determinant of the source matrix \item[\mbox{$\leftarrow$} {\em stride}]the stride in elements between elements. \end{DoxyParams}
+\hypertarget{namespaceOpenRAVE_1_1mathextra_a3c6e92adb2deae09d195c86818918c4b}{
+\index{OpenRAVE::mathextra@{OpenRAVE::mathextra}!eig2@{eig2}}
+\index{eig2@{eig2}!OpenRAVE::mathextra@{OpenRAVE::mathextra}}
+\paragraph[{eig2}]{\setlength{\rightskip}{0pt plus 5cm}bool eig2 (const T $\ast$ {\em pfmat}, \/  T $\ast$ {\em peigs}, \/  T \& {\em fv1x}, \/  T \& {\em fv1y}, \/  T \& {\em fv2x}, \/  T \& {\em fv2y})}\hfill}
+\label{namespaceOpenRAVE_1_1mathextra_a3c6e92adb2deae09d195c86818918c4b}
+extract eigen values and vectors from a 2x2 matrix and returns true if all values are real returned eigen vectors are normalized \hypertarget{namespaceOpenRAVE_1_1mathextra_ac7b910595448278e861ce787a01fc9a2}{
+\index{OpenRAVE::mathextra@{OpenRAVE::mathextra}!GetCovarBasisVectors@{GetCovarBasisVectors}}
+\index{GetCovarBasisVectors@{GetCovarBasisVectors}!OpenRAVE::mathextra@{OpenRAVE::mathextra}}
+\paragraph[{GetCovarBasisVectors}]{\setlength{\rightskip}{0pt plus 5cm}void OpenRAVE::mathextra::GetCovarBasisVectors (const T {\em fCovariance}\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}, \/  T {\em vbasis}\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})}\hfill}
+\label{namespaceOpenRAVE_1_1mathextra_ac7b910595448278e861ce787a01fc9a2}
+Computes the eigenvectors of the covariance matrix and forms a basis 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em fCovariance}]a symmetric 3x3 matrix. \item[\mbox{$\rightarrow$} {\em vbasis}]the basis vectors extracted (form a right hand coordinate system). \end{DoxyParams}
+\hypertarget{namespaceOpenRAVE_1_1mathextra_a698af188ade25c457317354c0e9ebcba}{
+\index{OpenRAVE::mathextra@{OpenRAVE::mathextra}!svd3@{svd3}}
+\index{svd3@{svd3}!OpenRAVE::mathextra@{OpenRAVE::mathextra}}
+\paragraph[{svd3}]{\setlength{\rightskip}{0pt plus 5cm}void svd3 (const T $\ast$ {\em A}, \/  T $\ast$ {\em U}, \/  T $\ast$ {\em D}, \/  T $\ast$ {\em V})}\hfill}
+\label{namespaceOpenRAVE_1_1mathextra_a698af188ade25c457317354c0e9ebcba}
+SVD of a 3x3 matrix A such that A = U$\ast$diag(D)$\ast$V' The row stride for all matrices is 3$\ast$sizeof(T) bytes 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em A}]3x3 matrix \item[\mbox{$\rightarrow$} {\em U}]3x3 matrix \item[\mbox{$\rightarrow$} {\em D}]3x1 matrix \item[\mbox{$\rightarrow$} {\em V}]3x3 matrix \end{DoxyParams}

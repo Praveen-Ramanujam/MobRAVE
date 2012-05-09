@@ -1,0 +1,699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: クラス InterfaceBase 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="classOpenRAVE_1_1InterfaceBase.html">InterfaceBase</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス InterfaceBase<br/>
+<small>
+[<a class="el" href="group__interfaces.html">Base Interface Classes</a>]</small>
+</h1><!-- doxytag: class="OpenRAVE::InterfaceBase" -->
+<p><b>[interface]</b> Base class for all interfaces that <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> provides. See <a class="el" href="interface__concepts.html">Base Interface Concepts</a>.  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="interface_8h_source.html">interface.h</a>&gt;</code></p>
+<div class="dynheader">
+InterfaceBaseに対する継承グラフ</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1InterfaceBase__inherit__graph.png" border="0" usemap="#InterfaceBase_inherit__map" alt="Inheritance graph"/></div>
+<map name="InterfaceBase_inherit__map" id="InterfaceBase_inherit__map">
+<area shape="rect" href="classOpenRAVE_1_1CollisionCheckerBase.html" title="[interface] Responsible for all collision checking queries of the environment. If..." alt="" coords="159,5,305,35"/><area shape="rect" href="classOpenRAVE_1_1ControllerBase.html" title="[interface] Abstract base class to encapsulate a local controller. If not specified..." alt="" coords="179,59,285,88"/><area shape="rect" href="classOpenRAVE_1_1IkSolverBase.html" title="[interface] Base class for all Inverse Kinematic solvers. If not specified, method..." alt="" coords="183,112,281,141"/><area shape="rect" href="classOpenRAVE_1_1KinBody.html" title="[interface] A kinematic body of links and joints. If not specified, method is not..." alt="" coords="197,165,267,195"/><area shape="rect" href="classOpenRAVE_1_1ModuleBase.html" title="[interface] A loadable module of user code meant to solve a specific domain. If not..." alt="" coords="185,219,279,248"/><area shape="rect" href="classOpenRAVE_1_1PhysicsEngineBase.html" title="[interface] The physics engine interfaces supporting simulations and dynamics. See..." alt="" coords="164,272,300,301"/><area shape="rect" href="classOpenRAVE_1_1PlannerBase.html" title="[interface] Planner interface that generates trajectories for target objects to follow..." alt="" coords="184,325,280,355"/><area shape="rect" href="classOpenRAVE_1_1SensorBase.html" title="[interface] A sensor measures physical properties from the environment. If not specified..." alt="" coords="187,379,277,408"/><area shape="rect" href="classOpenRAVE_1_1SensorSystemBase.html" title="[interface] Used to manage the creation and destruction of bodies. See Sensor System..." alt="" coords="164,432,300,461"/><area shape="rect" href="classOpenRAVE_1_1SpaceSamplerBase.html" title="[interface] Contains space samplers commonly used in planners. If not specified,..." alt="" coords="164,485,300,515"/><area shape="rect" href="classOpenRAVE_1_1TrajectoryBase.html" title="[interface] Encapsulate a time&#45;parameterized trajectories of robot configurations..." alt="" coords="179,539,285,568"/><area shape="rect" href="classOpenRAVE_1_1ViewerBase.html" title="[interface] Base class for the graphics and gui engine that renders the environment..." alt="" coords="187,592,277,621"/><area shape="rect" href="classCustomController.html" title="CustomController" alt="" coords="369,19,489,48"/><area shape="rect" href="classOpenRAVE_1_1MultiController.html" title="controller that manage multiple controllers, allows users to easily set multiple..." alt="" coords="377,72,481,101"/><area shape="rect" href="classOpenRAVE_1_1RobotBase.html" title="[interface] A robot is a kinematic body that has attached manipulators, sensors,..." alt="" coords="387,152,472,181"/><area shape="rect" href="classConveyorBeltModule.html" title="Holds a registered set of bodies, at every time step creates new bodies and moves..." alt="" coords="359,205,500,235"/><area shape="rect" href="classMyModule.html" title="MyModule" alt="" coords="389,259,469,288"/><area shape="rect" href="classPythonBindingModule.html" title="PythonBindingModule" alt="" coords="356,312,503,341"/><area shape="rect" href="classOpenRAVE_1_1SimpleSensorSystem.html" title="A very simple sensor system example that manages raw detection data." alt="" coords="356,432,503,461"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+InterfaceBaseのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1InterfaceBase__coll__graph.png" border="0" usemap="#InterfaceBase_coll__map" alt="Collaboration graph"/></div>
+<map name="InterfaceBase_coll__map" id="InterfaceBase_coll__map">
+<area shape="rect" title="STL class." alt="" coords="197,93,251,123"/><area shape="rect" title="STL class." alt="" coords="7,93,145,123"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="classOpenRAVE_1_1InterfaceBase-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>構成</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase_1_1InterfaceCommand.html">InterfaceCommand</a></td></tr>
+<tr><td colspan="2"><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a4518fd20d196b853bb157999524b6fde">XMLReadablePtr</a>, <br class="typebreak"/>
+<a class="el" href="classOpenRAVE_1_1CaseInsensitiveCompare.html">CaseInsensitiveCompare</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a14a2c1d323f2f411a9b9eb1e14b99aca">READERSMAP</a></td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a1505a042027909cb3c715713812d554f">InterfaceBase</a> (InterfaceType type, <a class="el" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> penv)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a90ab55ffa15c68875747d2ac2458b8e1">~InterfaceBase</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">InterfaceType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#ab6da1a274144d2dae86c4414fdc00c8a">GetInterfaceType</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a23e085422cc13cf058b9f9558a7d9de6">GetXMLId</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a909d5f1a5ae6d3fbb73b69c26b3e6bb4">GetPluginName</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a847c7f827694fd3db16f20b5669e1743">GetEnv</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a14a2c1d323f2f411a9b9eb1e14b99aca">READERSMAP</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a843c0a1f79a31b230bb85f265f97be6c">GetReadableInterfaces</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a4518fd20d196b853bb157999524b6fde">XMLReadablePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a948f97af111d83fad6ff054f88aaa214">GetReadableInterface</a> (const std::string &amp;xmltag) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a1b571821be060055bf6f2474e12fa5a3">GetDescription</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Documentation of the interface in reStructuredText format. See <a class="el" href="writing__plugins.html#writing_plugins_doc">Documenting Interfaces</a>.  <a href="#a1b571821be060055bf6f2474e12fa5a3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a9d548988a71fd50f890acdec255bdc17">SetDescription</a> (const std::string &amp;description)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#ab3a2d5e41d756988959d9f5cdccfe284">SetUserData</a> (<a class="el" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a> data)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">set user data  <a href="#ab3a2d5e41d756988959d9f5cdccfe284"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#aba2de87983f5e6ad881df19cc6198018">SetUserData</a> (boost::shared_ptr&lt; void &gt; data) <a class="el" href="namespaceOpenRAVE.html#af23fc4c2c72950a8c02f38ef71680bc6">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a975ebca32c743c8530807758e7c46618">GetUserData</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return the user custom data  <a href="#a975ebca32c743c8530807758e7c46618"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a155ad446997ca5823937f9c171c17021">GetURI</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the URI used to load the interface (sometimes this is not possible if the definition lies inside an environment file).  <a href="#a155ad446997ca5823937f9c171c17021"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#adebf2ecc7ec47f5d27229457e84cab87">GetXMLFilename</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#aadffdb83bc22dcdd5dd50c27d1bb5496">Clone</a> (<a class="el" href="namespaceOpenRAVE.html#a98930a0f0fa346643e6694577adac990">InterfaceBaseConstPtr</a> preference, int cloningoptions)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clone the contents of an interface to the current interface.  <a href="#aadffdb83bc22dcdd5dd50c27d1bb5496"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a1293cda647f18fe751e66b910af52407">SendCommand</a> (std::ostream &amp;os, std::istream &amp;is)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Used to send special commands to the interface and receive output.  <a href="#a1293cda647f18fe751e66b910af52407"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Protected 型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; bool(std::ostream <br class="typebreak"/>
+&amp;, std::istream &amp;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#af078e9e99c82cbd71d0bfa325438514e">InterfaceCommandFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The function to be executed for every command.  <a href="#af078e9e99c82cbd71d0bfa325438514e"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Protected メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a840776899a1d3677582fc6ef87be6ef2">RegisterCommand</a> (const std::string &amp;cmdname, <a class="el" href="classOpenRAVE_1_1InterfaceBase.html#af078e9e99c82cbd71d0bfa325438514e">InterfaceCommandFn</a> fncmd, const std::string &amp;strhelp)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Registers a command and its help string.  <a href="#a840776899a1d3677582fc6ef87be6ef2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a1a70446e03a29c6c9a5650886027cd2e">UnregisterCommand</a> (const std::string &amp;cmdname)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Unregisters the command.  <a href="#a1a70446e03a29c6c9a5650886027cd2e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#abfb0be978f0f9899582785d67c4b3d40">GetHash</a> () const =0</td></tr>
+<tr><td colspan="2"><h2>Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a22f4da10ed5f1c80a18f2bcd96776c1a">__description</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p><b>[interface]</b> Base class for all interfaces that <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> provides. See <a class="el" href="interface__concepts.html">Base Interface Concepts</a>. </p>
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00040">40</a> 行で定義されています。</p>
+<hr/><h2>型定義</h2>
+<a class="anchor" id="af078e9e99c82cbd71d0bfa325438514e"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::InterfaceCommandFn" ref="af078e9e99c82cbd71d0bfa325438514e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;bool (std::ostream&amp;, std::istream&amp;)&gt; <a class="el" href="classOpenRAVE_1_1InterfaceBase.html#af078e9e99c82cbd71d0bfa325438514e">InterfaceCommandFn</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The function to be executed for every command. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sinput</em>&nbsp;</td><td>- input of the command </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sout</em>&nbsp;</td><td>- output of the command </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>If false, there was an error with the command, true if successful </dd></dl>
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00140">140</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a14a2c1d323f2f411a9b9eb1e14b99aca"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::READERSMAP" ref="a14a2c1d323f2f411a9b9eb1e14b99aca" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, <a class="el" href="namespaceOpenRAVE.html#a4518fd20d196b853bb157999524b6fde">XMLReadablePtr</a>, <a class="el" href="classOpenRAVE_1_1CaseInsensitiveCompare.html">CaseInsensitiveCompare</a>&gt; <a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a14a2c1d323f2f411a9b9eb1e14b99aca">READERSMAP</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00043">43</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a1505a042027909cb3c715713812d554f"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::InterfaceBase" ref="a1505a042027909cb3c715713812d554f" args="(InterfaceType type, EnvironmentBasePtr penv)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html">InterfaceBase</a> </td>
+          <td>(</td>
+          <td class="paramtype">InterfaceType&nbsp;</td>
+          <td class="paramname"> <em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a>&nbsp;</td>
+          <td class="paramname"> <em>penv</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a90ab55ffa15c68875747d2ac2458b8e1"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::~InterfaceBase" ref="a90ab55ffa15c68875747d2ac2458b8e1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="classOpenRAVE_1_1InterfaceBase.html">InterfaceBase</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="aadffdb83bc22dcdd5dd50c27d1bb5496"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::Clone" ref="aadffdb83bc22dcdd5dd50c27d1bb5496" args="(InterfaceBaseConstPtr preference, int cloningoptions)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a98930a0f0fa346643e6694577adac990">InterfaceBaseConstPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>preference</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cloningoptions</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Clone the contents of an interface to the current interface. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>preference</em>&nbsp;</td><td>the interface whose information to clone </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cloningoptions</em>&nbsp;</td><td>mask of CloningOptions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>例外:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="classOpenRAVE_1_1openrave__exception.html" title="Exception that all OpenRAVE internal methods throw; the error codes are held in OpenRAVEErrorCode...">openrave_exception</a></em>&nbsp;</td><td>if command doesn't succeed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classOpenRAVE_1_1KinBody.html#aadffdb83bc22dcdd5dd50c27d1bb5496">KinBody</a>, <a class="el" href="classOpenRAVE_1_1RobotBase.html#aadffdb83bc22dcdd5dd50c27d1bb5496">RobotBase</a>, と <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#aadffdb83bc22dcdd5dd50c27d1bb5496">TrajectoryBase</a>で再定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b571821be060055bf6f2474e12fa5a3"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::GetDescription" ref="a1b571821be060055bf6f2474e12fa5a3" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; GetDescription </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Documentation of the interface in reStructuredText format. See <a class="el" href="writing__plugins.html#writing_plugins_doc">Documenting Interfaces</a>. </p>
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00080">80</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a847c7f827694fd3db16f20b5669e1743"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::GetEnv" ref="a847c7f827694fd3db16f20b5669e1743" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> GetEnv </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>戻り値:</b></dt><dd>the environment that this interface is attached to </dd></dl>
+<dl><dt><b>例: </b></dt><dd><a class="el" href="orconveyormovement_8cpp-example.html#a14">orconveyormovement.cpp</a>, <a class="el" href="orpythonbinding_8cpp-example.html#a16">orpythonbinding.cpp</a>, と <a class="el" href="plugincpp_8cpp-example.html#a13">plugincpp.cpp</a>.</dd>
+</dl>
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00066">66</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="abfb0be978f0f9899582785d67c4b3d40"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::GetHash" ref="abfb0be978f0f9899582785d67c4b3d40" args="() const =0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* GetHash </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [protected, pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6da1a274144d2dae86c4414fdc00c8a"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::GetInterfaceType" ref="ab6da1a274144d2dae86c4414fdc00c8a" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">InterfaceType GetInterfaceType </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00048">48</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a909d5f1a5ae6d3fbb73b69c26b3e6bb4"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::GetPluginName" ref="a909d5f1a5ae6d3fbb73b69c26b3e6bb4" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; GetPluginName </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>set internally by RaveDatabase </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>the pluginname this interface was loaded from </dd></dl>
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00061">61</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a948f97af111d83fad6ff054f88aaa214"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::GetReadableInterface" ref="a948f97af111d83fad6ff054f88aaa214" args="(const std::string &amp;xmltag) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a4518fd20d196b853bb157999524b6fde">XMLReadablePtr</a> GetReadableInterface </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>xmltag</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>例: </b></dt><dd><a class="el" href="customreader_8cpp-example.html#a33">customreader.cpp</a>.</dd>
+</dl>
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00073">73</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a843c0a1f79a31b230bb85f265f97be6c"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::GetReadableInterfaces" ref="a843c0a1f79a31b230bb85f265f97be6c" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a14a2c1d323f2f411a9b9eb1e14b99aca">READERSMAP</a>&amp; GetReadableInterfaces </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00070">70</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a155ad446997ca5823937f9c171c17021"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::GetURI" ref="a155ad446997ca5823937f9c171c17021" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; GetURI </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the URI used to load the interface (sometimes this is not possible if the definition lies inside an environment file). </p>
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00102">102</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a975ebca32c743c8530807758e7c46618"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::GetUserData" ref="a975ebca32c743c8530807758e7c46618" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a> GetUserData </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return the user custom data </p>
+<dl><dt><b>例: </b></dt><dd><a class="el" href="orpythonbinding_8cpp-example.html#a14">orpythonbinding.cpp</a>.</dd>
+</dl>
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00097">97</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="adebf2ecc7ec47f5d27229457e84cab87"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::GetXMLFilename" ref="adebf2ecc7ec47f5d27229457e84cab87" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; GetXMLFilename </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00105">105</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a23e085422cc13cf058b9f9558a7d9de6"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::GetXMLId" ref="a23e085422cc13cf058b9f9558a7d9de6" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; GetXMLId </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>set internally by RaveDatabase </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>the unique identifier that describes this class type, case is ignored should be the same id used to create the object </dd></dl>
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00055">55</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a840776899a1d3677582fc6ef87be6ef2"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::RegisterCommand" ref="a840776899a1d3677582fc6ef87be6ef2" args="(const std::string &amp;cmdname, InterfaceCommandFn fncmd, const std::string &amp;strhelp)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RegisterCommand </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>cmdname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#af078e9e99c82cbd71d0bfa325438514e">InterfaceCommandFn</a>&nbsp;</td>
+          <td class="paramname"> <em>fncmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>strhelp</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Registers a command and its help string. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>cmdname</em>&nbsp;</td><td>- command name, converted to lower case </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>fncmd</em>&nbsp;</td><td>function to execute for the command </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>strhelp</em>&nbsp;</td><td>- help string in reStructuredText, see <a class="el" href="writing__plugins.html#writing_plugins_doc">Documenting Interfaces</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>例外:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="classOpenRAVE_1_1openrave__exception.html" title="Exception that all OpenRAVE internal methods throw; the error codes are held in OpenRAVEErrorCode...">openrave_exception</a></em>&nbsp;</td><td>Throw if there exists a registered command already. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>例: </b></dt><dd><a class="el" href="orconveyormovement_8cpp-example.html#a9">orconveyormovement.cpp</a>, と <a class="el" href="plugincpp_8cpp-example.html#a6">plugincpp.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a1293cda647f18fe751e66b910af52407"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::SendCommand" ref="a1293cda647f18fe751e66b910af52407" args="(std::ostream &amp;os, std::istream &amp;is)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SendCommand </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::istream &amp;&nbsp;</td>
+          <td class="paramname"> <em>is</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Used to send special commands to the interface and receive output. </p>
+<p>The command must be registered by <a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a840776899a1d3677582fc6ef87be6ef2">RegisterCommand</a>. A special command '<b>help'</b> is always supported and provides a way for the user to query the current commands and the help string. The format of the returned help commands are in reStructuredText. The following commands are possible:</p>
+<ul>
+<li>'<b>help</b> [command name]' - get the help string of just that command.</li>
+<li>'<b>help</b> commands' - return the names of all the possible commands</li>
+</ul>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>is</em>&nbsp;</td><td>the input stream containing the command </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>os</em>&nbsp;</td><td>the output stream containing the output </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>例外:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="classOpenRAVE_1_1openrave__exception.html" title="Exception that all OpenRAVE internal methods throw; the error codes are held in OpenRAVEErrorCode...">openrave_exception</a></em>&nbsp;</td><td>Throw if the command is not supported. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if the command is successfully processed, otherwise false. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9d548988a71fd50f890acdec255bdc17"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::SetDescription" ref="a9d548988a71fd50f890acdec255bdc17" args="(const std::string &amp;description)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetDescription </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>description</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00084">84</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aba2de87983f5e6ad881df19cc6198018"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::SetUserData" ref="aba2de87983f5e6ad881df19cc6198018" args="(boost::shared_ptr&lt; void &gt; data) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetUserData </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; void &gt;&nbsp;</td>
+          <td class="paramname"> <em>data</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">非推奨:</a></b></dt><dd></dd></dl>
+
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00093">93</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3a2d5e41d756988959d9f5cdccfe284"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::SetUserData" ref="ab3a2d5e41d756988959d9f5cdccfe284" args="(UserDataPtr data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetUserData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>data</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set user data </p>
+<dl><dt><b>例: </b></dt><dd><a class="el" href="orpythonbinding_8cpp-example.html#a8">orpythonbinding.cpp</a>.</dd>
+</dl>
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00089">89</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a70446e03a29c6c9a5650886027cd2e"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::UnregisterCommand" ref="a1a70446e03a29c6c9a5650886027cd2e" args="(const std::string &amp;cmdname)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UnregisterCommand </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>cmdname</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Unregisters the command. </p>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="a22f4da10ed5f1c80a18f2bcd96776c1a"></a><!-- doxytag: member="OpenRAVE::InterfaceBase::__description" ref="a22f4da10ed5f1c80a18f2bcd96776c1a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classOpenRAVE_1_1InterfaceBase.html#a22f4da10ed5f1c80a18f2bcd96776c1a">__description</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>例: </b></dt><dd><a class="el" href="orconveyormovement_8cpp-example.html#a8">orconveyormovement.cpp</a>, と <a class="el" href="plugincpp_8cpp-example.html#a5">plugincpp.cpp</a>.</dd>
+</dl>
+<p> <a class="el" href="interface_8h_source.html">interface.h</a> の <a class="el" href="interface_8h_source.html#l00164">164</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>include/openrave/<a class="el" href="interface_8h_source.html">interface.h (r2848/r2841)</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:10 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

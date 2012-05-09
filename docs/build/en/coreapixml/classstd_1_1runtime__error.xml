@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classstd_1_1runtime__error" kind="class" prot="public">
+    <compoundname>std::runtime_error</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
+    <derivedcompoundref refid="classstd_1_1overflow__error" prot="public" virt="non-virtual">overflow_error</derivedcompoundref>
+    <derivedcompoundref refid="classstd_1_1range__error" prot="public" virt="non-virtual">range_error</derivedcompoundref>
+    <derivedcompoundref refid="classstd_1_1underflow__error" prot="public" virt="non-virtual">underflow_error</derivedcompoundref>
+    <briefdescription>
+<para>STL class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1793">
+        <label>range_error</label>
+        <childnode refid="1790" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1794">
+        <label>underflow_error</label>
+        <childnode refid="1790" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1790">
+        <label>runtime_error</label>
+        <childnode refid="1791" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1791">
+        <label>exception</label>
+      </node>
+      <node id="1792">
+        <label>overflow_error</label>
+        <childnode refid="1790" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1795">
+        <label>runtime_error</label>
+        <childnode refid="1796" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1796">
+        <label>exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="[STL]" line="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

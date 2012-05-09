@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1KinBody_1_1BodyState" kind="class" prot="public">
+    <compoundname>OpenRAVE::KinBody::BodyState</compoundname>
+    <includes refid="kinbody_8h" local="no">kinbody.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1BodyState_1a2e7a67b7f0ca2ef899b9b4e3b4213224" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+        <definition>KinBodyPtr pbody</definition>
+        <argsstring></argsstring>
+        <name>pbody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="768" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1BodyState_1a2820769dc07e008b6965ab387f7e732b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; RaveTransform&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;RaveTransform&lt;dReal&gt; &gt; vectrans</definition>
+        <argsstring></argsstring>
+        <name>vectrans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="769" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1BodyState_1a0cfa2b4ded8988f369003b144cb920ca" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; jointvalues</definition>
+        <argsstring></argsstring>
+        <name>jointvalues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="770" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="770" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1BodyState_1ad816fac7cac68c9813059bdff0055c1e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref></type>
+        <definition>UserDataPtr pviewerdata</definition>
+        <argsstring></argsstring>
+        <name>pviewerdata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="771" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="771" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1BodyState_1a5d99722282438f92fc1294b9e883536d" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref></type>
+        <definition>UserDataPtr puserdata</definition>
+        <argsstring></argsstring>
+        <name>puserdata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="771" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="771" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1BodyState_1a6fffaab81a83fa45de50727fce7e05ca" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string strname</definition>
+        <argsstring></argsstring>
+        <name>strname</name>
+        <briefdescription>
+<para>name of the body </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="772" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="772" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1BodyState_1a0d0fc8720609838df254a3ae73c67822" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int environmentid</definition>
+        <argsstring></argsstring>
+        <name>environmentid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="773" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="773" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1BodyState_1af9511a3a28d251f21478a1a8ecb3e24d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BodyState</definition>
+        <argsstring>()</argsstring>
+        <name>BodyState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="764" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="764" bodyend="765"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1BodyState_1a80e576f3bc5f60c687964c759ca4548d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~BodyState</definition>
+        <argsstring>()</argsstring>
+        <name>~BodyState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="766" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="766" bodyend="767"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores the state of the current body that is published in a thread safe way from the environment without requiring locking the environment. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="977">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="974">
+        <label>BodyState</label>
+        <link refid="classOpenRAVE_1_1KinBody_1_1BodyState"/>
+        <childnode refid="975" relation="usage">
+          <edgelabel>jointvalues</edgelabel>
+        </childnode>
+        <childnode refid="976" relation="usage">
+          <edgelabel>vectrans</edgelabel>
+        </childnode>
+        <childnode refid="978" relation="usage">
+          <edgelabel>strname</edgelabel>
+        </childnode>
+      </node>
+      <node id="978">
+        <label>string</label>
+        <childnode refid="979" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="975">
+        <label>vector&lt; dReal &gt;</label>
+      </node>
+      <node id="979">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="976">
+        <label>vector&lt; RaveTransform&lt; dReal &gt; &gt;</label>
+        <childnode refid="977" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="762" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="761" bodyend="774"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1KinBody_1_1BodyState_1af9511a3a28d251f21478a1a8ecb3e24d" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::BodyState</scope><name>BodyState</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1BodyState_1a0d0fc8720609838df254a3ae73c67822" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::BodyState</scope><name>environmentid</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1BodyState_1a0cfa2b4ded8988f369003b144cb920ca" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::BodyState</scope><name>jointvalues</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1BodyState_1a2e7a67b7f0ca2ef899b9b4e3b4213224" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::BodyState</scope><name>pbody</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1BodyState_1a5d99722282438f92fc1294b9e883536d" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::BodyState</scope><name>puserdata</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1BodyState_1ad816fac7cac68c9813059bdff0055c1e" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::BodyState</scope><name>pviewerdata</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1BodyState_1a6fffaab81a83fa45de50727fce7e05ca" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::BodyState</scope><name>strname</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1BodyState_1a2820769dc07e008b6965ab387f7e732b" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::BodyState</scope><name>vectrans</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1BodyState_1a80e576f3bc5f60c687964c759ca4548d" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::BodyState</scope><name>~BodyState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

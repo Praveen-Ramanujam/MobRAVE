@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/366/trunk/scripts
+END
+nxt_server
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/337/trunk/scripts/nxt_server
+END
+fantom_test
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/348/trunk/scripts/fantom_test
+END
+nxt_test
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/365/trunk/scripts/nxt_test
+END
+nxt_push
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/366/trunk/scripts/nxt_push
+END
+nxt_filer
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/360/trunk/scripts/nxt_filer
+END

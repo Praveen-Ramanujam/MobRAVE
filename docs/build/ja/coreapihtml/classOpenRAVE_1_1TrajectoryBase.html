@@ -1,0 +1,1307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: クラス TrajectoryBase 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="classOpenRAVE_1_1TrajectoryBase.html">TrajectoryBase</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス TrajectoryBase<br/>
+<small>
+[<a class="el" href="group__interfaces.html">Base Interface Classes</a>]</small>
+</h1><!-- doxytag: class="OpenRAVE::TrajectoryBase" --><!-- doxytag: inherits="OpenRAVE::InterfaceBase" -->
+<p><b>[interface]</b> Encapsulate a time-parameterized trajectories of robot configurations. <b>If not specified, method is not multi-thread safe.</b>   
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="trajectory_8h_source.html">trajectory.h</a>&gt;</code></p>
+<div class="dynheader">
+TrajectoryBaseに対する継承グラフ</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1TrajectoryBase__inherit__graph.png" border="0" usemap="#TrajectoryBase_inherit__map" alt="Inheritance graph"/></div>
+<map name="TrajectoryBase_inherit__map" id="TrajectoryBase_inherit__map">
+<area shape="rect" href="classOpenRAVE_1_1InterfaceBase.html" title="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface..." alt="" coords="8,5,109,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+TrajectoryBaseのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1TrajectoryBase__coll__graph.png" border="0" usemap="#TrajectoryBase_coll__map" alt="Collaboration graph"/></div>
+<map name="TrajectoryBase_coll__map" id="TrajectoryBase_coll__map">
+<area shape="rect" href="classOpenRAVE_1_1InterfaceBase.html" title="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface..." alt="" coords="1203,111,1304,140"/><area shape="rect" title="STL class." alt="" coords="255,85,308,115"/><area shape="rect" title="STL class." alt="" coords="7,85,145,115"/><area shape="rect" href="classOpenRAVE_1_1TrajectoryBase_1_1Point.html" title="Point" alt="" coords="709,247,760,276"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="classOpenRAVE_1_1TrajectoryBase-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>構成</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase_1_1Point.html">Point</a></td></tr>
+<tr><td colspan="2"><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classOpenRAVE_1_1TrajectoryBase_1_1Point.html">Point</a> TPOINT&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a1a0492e1cf8f7fc2ea314e483a50ef2b">TrajectoryBase</a> (<a class="el" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> penv)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a3d2a9a01377ad57032b16627454b9298">~TrajectoryBase</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#ada3d183ab9d1d31a6b4e305c2ac174e6">Init</a> (const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;spec)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a2d4b62249bd00ee23a28a491fce41dc1">Insert</a> (size_t index, const std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;data, bool bOverwrite=false)=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets/inserts new waypoints in the same configuration specification as the trajectory.  <a href="#a2d4b62249bd00ee23a28a491fce41dc1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a1adb5dcb120bbec5da9e326a84d61fb9">Insert</a> (size_t index, const std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;data, const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;spec, bool bOverwrite=false)=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets/inserts new waypoints in a <b>user-given</b> configuration specification.  <a href="#a1adb5dcb120bbec5da9e326a84d61fb9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#aa2b3c4b3091179afbb354f985e15701f">Remove</a> (size_t startindex, size_t endindex)=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">removes a number of waypoints starting at the specified index  <a href="#aa2b3c4b3091179afbb354f985e15701f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a479f3837904daa33d4e11e7fadd28aed">Sample</a> (std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;data, <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> time) const =0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">samples a data point on the trajectory at a particular time  <a href="#a479f3837904daa33d4e11e7fadd28aed"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#acbaf4d3d503703e9d8274b73b880e969">Sample</a> (std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;data, <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> time, const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;spec) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">samples a data point on the trajectory at a particular time and returns data for the group specified.  <a href="#acbaf4d3d503703e9d8274b73b880e969"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak"/>
+<a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a420ec6d8dcc4536a352c0b731bf8bc53">GetConfigurationSpecification</a> () const =0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#aee0058cd9ab78480cbef78db3bf1fc75">GetNumWaypoints</a> () const =0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return the number of waypoints  <a href="#aee0058cd9ab78480cbef78db3bf1fc75"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a27ce506aadd014e6c7e960daf5840e92">GetWaypoints</a> (size_t startindex, size_t endindex, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;data) const =0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return a set of waypoints in the range [startindex,endindex)  <a href="#a27ce506aadd014e6c7e960daf5840e92"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a6a20ad14d835b86e00ecfb25fd1b2b3b">GetWaypoints</a> (size_t startindex, size_t endindex, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;data, const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;spec) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return a set of waypoints in the range [startindex,endindex) in a different configuration specification.  <a href="#a6a20ad14d835b86e00ecfb25fd1b2b3b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#aaf8eb26adc6ee1d49723d97bc5b06fc6">GetWaypoint</a> (int index, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;data) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns one waypoint  <a href="#aaf8eb26adc6ee1d49723d97bc5b06fc6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#accf42064cea2190dc8756f945d40b59b">GetWaypoint</a> (int index, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;data, const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;spec) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns one waypoint  <a href="#accf42064cea2190dc8756f945d40b59b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#adde787bbcf5b10de65353d70095ac74f">GetDuration</a> () const =0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return the duration of the trajectory in seconds  <a href="#adde787bbcf5b10de65353d70095ac74f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#adfa364ca828b73e2e46ebe94c16ab492">serialize</a> (std::ostream &amp;O, int options=0) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">output the trajectory in XML format  <a href="#adfa364ca828b73e2e46ebe94c16ab492"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#adaeacd32f1a27831c97032e1e6b24944">deserialize</a> (std::istream &amp;I)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">initialize the trajectory  <a href="#adaeacd32f1a27831c97032e1e6b24944"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#aadffdb83bc22dcdd5dd50c27d1bb5496">Clone</a> (<a class="el" href="namespaceOpenRAVE.html#a98930a0f0fa346643e6694577adac990">InterfaceBaseConstPtr</a> preference, int cloningoptions)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clone the contents of an interface to the current interface.  <a href="#aadffdb83bc22dcdd5dd50c27d1bb5496"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a59dda2f7a9f5935bf9542c394069f6ee">SampleTrajectory</a> (<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> time, <a class="el" href="classOpenRAVE_1_1TrajectoryBase_1_1Point.html">Point</a> &amp;tp) const <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::vector<br class="typebreak"/>
+&lt; <a class="el" href="classOpenRAVE_1_1TrajectoryBase_1_1Point.html">Point</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a28d819266bc461377ede27b048f0a2f5">GetPoints</a> () const <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a181d63496678472a4e902bcea6fea659">GetDOF</a> () const <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a536656d38490de6aadc079c9f20b754d">GetTotalDuration</a> () const <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#af8ac97f47745ae12998f6637e11ceaab">Write</a> (std::ostream &amp;O, int options) const <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#ac92225ac78a03d41680a022e11a5f4b2">Read</a> (std::istream &amp;I, <a class="el" href="namespaceOpenRAVE.html#ae14278c03739b5661d2542c17ca5db8e">RobotBaseConstPtr</a>) <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#aadc88793694f7fdb20427e235bcfed49">GetInterpMethod</a> () const <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#ae8962475965fc74539a8a1ff1c227f61">CalcTrajTiming</a> (<a class="el" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> probot, int interp, bool autocalc, bool activedof, <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> fmaxvelmult=1) <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#acff991618208e360f3c8f6af691fb947">Clear</a> () <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#af75c151370d2a44fbd1c94bc2b6b06cd">AddPoint</a> (const <a class="el" href="classOpenRAVE_1_1TrajectoryBase_1_1Point.html">Point</a> &amp;p) <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#acfa84d2797c5b267c12d0ef048493ba0">Reset</a> (int dof) <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td></tr>
+<tr><td colspan="2"><h2>Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static InterfaceType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#affeafe65e7c4094f282d273dedbf069b">GetInterfaceTypeStatic</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return the static interface type this class points to (used for safe casting)  <a href="#affeafe65e7c4094f282d273dedbf069b"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Static Public 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int TO_OneLine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a52698d8bfef94dd709800b3ab81fdc7e">RAVE_DEPRECATED</a> = 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int TO_NoHeader&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a721ee98d03faa355053f17ae6f21ca98">RAVE_DEPRECATED</a> = 2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int <br class="typebreak"/>
+TO_IncludeTimestamps&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#ab39e1b10b432d633678b9f221429bb92">RAVE_DEPRECATED</a> = 4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int <br class="typebreak"/>
+TO_IncludeBaseTransformation&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#aa81206fce5ec09a7746fcdd7621cd269">RAVE_DEPRECATED</a> = 8</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int <br class="typebreak"/>
+TO_IncludeVelocities&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a7d19cf7496aca21f9d3466068dad4c74">RAVE_DEPRECATED</a> = 0x10</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int TO_IncludeTorques&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#aa2b71f320aa8317dd7c95a98282ad86a">RAVE_DEPRECATED</a> = 0x20</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int <br class="typebreak"/>
+TO_InterpolationMask&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a35c5722763a85351388727311a4cbf70">RAVE_DEPRECATED</a> = 0x1c0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int NONE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a07f3821811305c7c0895e7925448e4d8">RAVE_DEPRECATED</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int LINEAR&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#aed8bb5f4096a3957265d2629954d7217">RAVE_DEPRECATED</a> = 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int LINEAR_BLEND&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a7b44c6158a12f5fcf1df7e4c92d1f276">RAVE_DEPRECATED</a> = 2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int CUBIC&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a87484890b029c7e756d4d74b452702f5">RAVE_DEPRECATED</a> = 3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int QUINTIC&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a581f95b06ac8e10ba91eabc4f147aa58">RAVE_DEPRECATED</a> = 4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int NUM_METHODS&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#ac479481c8fd8db495a55b8f6095449cd">RAVE_DEPRECATED</a> = 5</td></tr>
+<tr><td colspan="2"><h2>Protected メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#aa3c159b394f2e4ec46ac49416a2acf17">TrajectoryBasePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a02ad4bf783dae1e01a6fd404f5bcc421">shared_trajectory</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#ae4a194e7d8dcb23b1acad4ff9f84ad49">TrajectoryBaseConstPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a0c62c56a55d665490310dd63605888e3">shared_trajectory_const</a> () const </td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p><b>[interface]</b> Encapsulate a time-parameterized trajectories of robot configurations. <b>If not specified, method is not multi-thread safe.</b>  </p>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00029">29</a> 行で定義されています。</p>
+<hr/><h2>型定義</h2>
+<a class="anchor" id="a16220697329e6c8f40dd5e0ec4f4b384"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="a16220697329e6c8f40dd5e0ec4f4b384" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classOpenRAVE_1_1TrajectoryBase_1_1Point.html">Point</a> TPOINT <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000056">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00165">165</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a1a0492e1cf8f7fc2ea314e483a50ef2b"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::TrajectoryBase" ref="a1a0492e1cf8f7fc2ea314e483a50ef2b" args="(EnvironmentBasePtr penv)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1TrajectoryBase.html">TrajectoryBase</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a>&nbsp;</td>
+          <td class="paramname"> <em>penv</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d2a9a01377ad57032b16627454b9298"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::~TrajectoryBase" ref="a3d2a9a01377ad57032b16627454b9298" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="classOpenRAVE_1_1TrajectoryBase.html">TrajectoryBase</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00033">33</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="af75c151370d2a44fbd1c94bc2b6b06cd"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::AddPoint" ref="af75c151370d2a44fbd1c94bc2b6b06cd" args="(const Point &amp;p) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AddPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1TrajectoryBase_1_1Point.html">Point</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000066">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae8962475965fc74539a8a1ff1c227f61"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::CalcTrajTiming" ref="ae8962475965fc74539a8a1ff1c227f61" args="(RobotBasePtr probot, int interp, bool autocalc, bool activedof, dReal fmaxvelmult=1) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CalcTrajTiming </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a>&nbsp;</td>
+          <td class="paramname"> <em>probot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>interp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>autocalc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>activedof</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td>
+          <td class="paramname"> <em>fmaxvelmult</em> = <code>1</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000064">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acff991618208e360f3c8f6af691fb947"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::Clear" ref="acff991618208e360f3c8f6af691fb947" args="() RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Clear </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000065">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00205">205</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aadffdb83bc22dcdd5dd50c27d1bb5496"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::Clone" ref="aadffdb83bc22dcdd5dd50c27d1bb5496" args="(InterfaceBaseConstPtr preference, int cloningoptions)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a98930a0f0fa346643e6694577adac990">InterfaceBaseConstPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>preference</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cloningoptions</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Clone the contents of an interface to the current interface. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>preference</em>&nbsp;</td><td>the interface whose information to clone </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cloningoptions</em>&nbsp;</td><td>mask of CloningOptions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>例外:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="classOpenRAVE_1_1openrave__exception.html" title="Exception that all OpenRAVE internal methods throw; the error codes are held in OpenRAVEErrorCode...">openrave_exception</a></em>&nbsp;</td><td>if command doesn't succeed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classOpenRAVE_1_1InterfaceBase.html#aadffdb83bc22dcdd5dd50c27d1bb5496">InterfaceBase</a>を再定義しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="adaeacd32f1a27831c97032e1e6b24944"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::deserialize" ref="adaeacd32f1a27831c97032e1e6b24944" args="(std::istream &amp;I)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void deserialize </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&nbsp;</td>
+          <td class="paramname"> <em>I</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>initialize the trajectory </p>
+
+</div>
+</div>
+<a class="anchor" id="a420ec6d8dcc4536a352c0b731bf8bc53"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetConfigurationSpecification" ref="a420ec6d8dcc4536a352c0b731bf8bc53" args="() const =0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a>&amp; GetConfigurationSpecification </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a181d63496678472a4e902bcea6fea659"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetDOF" ref="a181d63496678472a4e902bcea6fea659" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GetDOF </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000059">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00174">174</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="adde787bbcf5b10de65353d70095ac74f"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetDuration" ref="adde787bbcf5b10de65353d70095ac74f" args="() const =0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> GetDuration </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return the duration of the trajectory in seconds </p>
+
+</div>
+</div>
+<a class="anchor" id="affeafe65e7c4094f282d273dedbf069b"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetInterfaceTypeStatic" ref="affeafe65e7c4094f282d273dedbf069b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static InterfaceType GetInterfaceTypeStatic </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return the static interface type this class points to (used for safe casting) </p>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00037">37</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aadc88793694f7fdb20427e235bcfed49"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetInterpMethod" ref="aadc88793694f7fdb20427e235bcfed49" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int GetInterpMethod </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000063">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00197">197</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aee0058cd9ab78480cbef78db3bf1fc75"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetNumWaypoints" ref="aee0058cd9ab78480cbef78db3bf1fc75" args="() const =0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t GetNumWaypoints </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return the number of waypoints </p>
+
+</div>
+</div>
+<a class="anchor" id="a28d819266bc461377ede27b048f0a2f5"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetPoints" ref="a28d819266bc461377ede27b048f0a2f5" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::vector&lt;<a class="el" href="classOpenRAVE_1_1TrajectoryBase_1_1Point.html">Point</a>&gt;&amp; GetPoints </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000058">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a536656d38490de6aadc079c9f20b754d"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetTotalDuration" ref="a536656d38490de6aadc079c9f20b754d" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> GetTotalDuration </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000060">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00179">179</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="accf42064cea2190dc8756f945d40b59b"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetWaypoint" ref="accf42064cea2190dc8756f945d40b59b" args="(int index, std::vector&lt; dReal &gt; &amp;data, const ConfigurationSpecification &amp;spec) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GetWaypoint </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spec</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>returns one waypoint </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>index[in]</em>&nbsp;</td><td>index of the waypoint. If &lt; 0, then counting starts from the last waypoint. For example GetWaypoints(-1,data) returns the last waypoint. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data[out]</em>&nbsp;</td><td>the data of the waypoint </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00122">122</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf8eb26adc6ee1d49723d97bc5b06fc6"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetWaypoint" ref="aaf8eb26adc6ee1d49723d97bc5b06fc6" args="(int index, std::vector&lt; dReal &gt; &amp;data) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GetWaypoint </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>returns one waypoint </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>index[in]</em>&nbsp;</td><td>index of the waypoint. If &lt; 0, then counting starts from the last waypoint. For example GetWaypoints(-1,data) returns the last waypoint. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data[out]</em>&nbsp;</td><td>the data of the waypoint </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00107">107</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6a20ad14d835b86e00ecfb25fd1b2b3b"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetWaypoints" ref="a6a20ad14d835b86e00ecfb25fd1b2b3b" args="(size_t startindex, size_t endindex, std::vector&lt; dReal &gt; &amp;data, const ConfigurationSpecification &amp;spec) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GetWaypoints </td>
+          <td>(</td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>startindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>endindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spec</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return a set of waypoints in the range [startindex,endindex) in a different configuration specification. </p>
+<p>The default implementation is very slow, so trajectory developers should really override it. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>startindex[in]</em>&nbsp;</td><td>the start index of the waypoint (included) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>endindex[in]</em>&nbsp;</td><td>the end index of the waypoint (not included) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>spec[in]</em>&nbsp;</td><td>the specification to return the data in </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data[out]</em>&nbsp;</td><td>the data of the waypoint </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a27ce506aadd014e6c7e960daf5840e92"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::GetWaypoints" ref="a27ce506aadd014e6c7e960daf5840e92" args="(size_t startindex, size_t endindex, std::vector&lt; dReal &gt; &amp;data) const =0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GetWaypoints </td>
+          <td>(</td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>startindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>endindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return a set of waypoints in the range [startindex,endindex) </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>startindex[in]</em>&nbsp;</td><td>the start index of the waypoint (included) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>endindex[in]</em>&nbsp;</td><td>the end index of the waypoint (not included) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data[out]</em>&nbsp;</td><td>the data of the waypoint </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ada3d183ab9d1d31a6b4e305c2ac174e6"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::Init" ref="ada3d183ab9d1d31a6b4e305c2ac174e6" args="(const ConfigurationSpecification &amp;spec)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spec</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1adb5dcb120bbec5da9e326a84d61fb9"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::Insert" ref="a1adb5dcb120bbec5da9e326a84d61fb9" args="(size_t index, const std::vector&lt; dReal &gt; &amp;data, const ConfigurationSpecification &amp;spec, bool bOverwrite=false)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Insert </td>
+          <td>(</td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>bOverwrite</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sets/inserts new waypoints in a <b>user-given</b> configuration specification. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>The index where to start modifying the trajectory. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>The data to insert, can represent multiple consecutive waypoints. data.size()/GetConfigurationSpecification().<a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a181d63496678472a4e902bcea6fea659">GetDOF()</a> waypoints are added. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>spec</em>&nbsp;</td><td>the specification in which the input data come in. Depending on what data is offered, some values of this trajectory's specification might not be initialized. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bOverwrite</em>&nbsp;</td><td>If true, will overwrite the waypoints starting at index, and will insert new waypoints only if end of trajectory is reached. If false, will insert the points before index: a 0 index inserts the new data in the beginning, a <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#aee0058cd9ab78480cbef78db3bf1fc75" title="return the number of waypoints">GetNumWaypoints()</a> index inserts the new data at the end. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2d4b62249bd00ee23a28a491fce41dc1"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::Insert" ref="a2d4b62249bd00ee23a28a491fce41dc1" args="(size_t index, const std::vector&lt; dReal &gt; &amp;data, bool bOverwrite=false)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Insert </td>
+          <td>(</td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>bOverwrite</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sets/inserts new waypoints in the same configuration specification as the trajectory. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>index</em>&nbsp;</td><td>The index where to start modifying the trajectory. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>The data to insert, can represent multiple consecutive waypoints. data.size()/GetConfigurationSpecification().<a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a181d63496678472a4e902bcea6fea659">GetDOF()</a> waypoints are added. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bOverwrite</em>&nbsp;</td><td>If true, will overwrite the waypoints starting at index, and will insert new waypoints only if end of trajectory is reached. If false, will insert the points before index: a 0 index inserts the new data in the beginning, a <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#aee0058cd9ab78480cbef78db3bf1fc75" title="return the number of waypoints">GetNumWaypoints()</a> index inserts the new data at the end. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac92225ac78a03d41680a022e11a5f4b2"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::Read" ref="ac92225ac78a03d41680a022e11a5f4b2" args="(std::istream &amp;I, RobotBaseConstPtr) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Read </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&nbsp;</td>
+          <td class="paramname"> <em>I</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#ae14278c03739b5661d2542c17ca5db8e">RobotBaseConstPtr</a>&nbsp;</td>
+          <td class="paramname"></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000062">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00191">191</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2b3c4b3091179afbb354f985e15701f"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::Remove" ref="aa2b3c4b3091179afbb354f985e15701f" args="(size_t startindex, size_t endindex)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Remove </td>
+          <td>(</td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>startindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>endindex</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>removes a number of waypoints starting at the specified index </p>
+
+</div>
+</div>
+<a class="anchor" id="acfa84d2797c5b267c12d0ef048493ba0"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::Reset" ref="acfa84d2797c5b267c12d0ef048493ba0" args="(int dof) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Reset </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>dof</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000067">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00214">214</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="acbaf4d3d503703e9d8274b73b880e969"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::Sample" ref="acbaf4d3d503703e9d8274b73b880e969" args="(std::vector&lt; dReal &gt; &amp;data, dReal time, const ConfigurationSpecification &amp;spec) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Sample </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td>
+          <td class="paramname"> <em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spec</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>samples a data point on the trajectory at a particular time and returns data for the group specified. </p>
+<p>The default implementation is slow, so interface developers should override it. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data[out]</em>&nbsp;</td><td>the sampled point </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>time[in]</em>&nbsp;</td><td>the time to sample </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>spec[in]</em>&nbsp;</td><td>the specification format to return the data in </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a479f3837904daa33d4e11e7fadd28aed"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::Sample" ref="a479f3837904daa33d4e11e7fadd28aed" args="(std::vector&lt; dReal &gt; &amp;data, dReal time) const =0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Sample </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td>
+          <td class="paramname"> <em>time</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>samples a data point on the trajectory at a particular time </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>data[out]</em>&nbsp;</td><td>the sampled point </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>time[in]</em>&nbsp;</td><td>the time to sample </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a59dda2f7a9f5935bf9542c394069f6ee"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::SampleTrajectory" ref="a59dda2f7a9f5935bf9542c394069f6ee" args="(dReal time, Point &amp;tp) const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SampleTrajectory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td>
+          <td class="paramname"> <em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1TrajectoryBase_1_1Point.html">Point</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tp</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000057">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adfa364ca828b73e2e46ebe94c16ab492"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::serialize" ref="adfa364ca828b73e2e46ebe94c16ab492" args="(std::ostream &amp;O, int options=0) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void serialize </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>O</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>options</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>output the trajectory in XML format </p>
+
+</div>
+</div>
+<a class="anchor" id="a02ad4bf783dae1e01a6fd404f5bcc421"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::shared_trajectory" ref="a02ad4bf783dae1e01a6fd404f5bcc421" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#aa3c159b394f2e4ec46ac49416a2acf17">TrajectoryBasePtr</a> shared_trajectory </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00235">235</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c62c56a55d665490310dd63605888e3"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::shared_trajectory_const" ref="a0c62c56a55d665490310dd63605888e3" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#ae4a194e7d8dcb23b1acad4ff9f84ad49">TrajectoryBaseConstPtr</a> shared_trajectory_const </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00238">238</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="af8ac97f47745ae12998f6637e11ceaab"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::Write" ref="af8ac97f47745ae12998f6637e11ceaab" args="(std::ostream &amp;O, int options) const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Write </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>O</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>options</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000061">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00185">185</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="ac479481c8fd8db495a55b8f6095449cd"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="ac479481c8fd8db495a55b8f6095449cd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int NUM_METHODS <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 5<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00232">232</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a581f95b06ac8e10ba91eabc4f147aa58"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="a581f95b06ac8e10ba91eabc4f147aa58" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int QUINTIC <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 4<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00231">231</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a87484890b029c7e756d4d74b452702f5"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="a87484890b029c7e756d4d74b452702f5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CUBIC <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 3<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00230">230</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b44c6158a12f5fcf1df7e4c92d1f276"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="a7b44c6158a12f5fcf1df7e4c92d1f276" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int LINEAR_BLEND <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 2<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00229">229</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aed8bb5f4096a3957265d2629954d7217"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="aed8bb5f4096a3957265d2629954d7217" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int LINEAR <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00228">228</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a07f3821811305c7c0895e7925448e4d8"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="a07f3821811305c7c0895e7925448e4d8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int NONE <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 0<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00227">227</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a35c5722763a85351388727311a4cbf70"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="a35c5722763a85351388727311a4cbf70" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int TO_InterpolationMask <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 0x1c0<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00226">226</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2b71f320aa8317dd7c95a98282ad86a"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="aa2b71f320aa8317dd7c95a98282ad86a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int TO_IncludeTorques <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 0x20<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00225">225</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d19cf7496aca21f9d3466068dad4c74"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="a7d19cf7496aca21f9d3466068dad4c74" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int TO_IncludeVelocities <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 0x10<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00224">224</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa81206fce5ec09a7746fcdd7621cd269"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="aa81206fce5ec09a7746fcdd7621cd269" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int TO_IncludeBaseTransformation <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 8<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00223">223</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab39e1b10b432d633678b9f221429bb92"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="ab39e1b10b432d633678b9f221429bb92" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int TO_IncludeTimestamps <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 4<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00222">222</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a721ee98d03faa355053f17ae6f21ca98"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="a721ee98d03faa355053f17ae6f21ca98" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int TO_NoHeader <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 2<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00221">221</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a52698d8bfef94dd709800b3ab81fdc7e"></a><!-- doxytag: member="OpenRAVE::TrajectoryBase::RAVE_DEPRECATED" ref="a52698d8bfef94dd709800b3ab81fdc7e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int TO_OneLine <a class="el" href="classOpenRAVE_1_1TrajectoryBase.html#a16220697329e6c8f40dd5e0ec4f4b384">RAVE_DEPRECATED</a> = 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000068">非推奨:</a></b></dt><dd>(11/10/04) </dd></dl>
+
+<p> <a class="el" href="trajectory_8h_source.html">trajectory.h</a> の <a class="el" href="trajectory_8h_source.html#l00220">220</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>include/openrave/<a class="el" href="trajectory_8h_source.html">trajectory.h (r2848/r2793)</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:16 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

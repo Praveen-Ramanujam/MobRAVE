@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O2 -g  -shared -Wl,-soname,convexdecompositionpy.so -o convexdecompositionpy.so CMakeFiles/convexdecompositionpy.dir/convexdecompositionpy.cpp.o CMakeFiles/convexdecompositionpy.dir/bindings.cpp.o -lstdc++ ../../3rdparty/convexdecomposition/libconvexdecomposition.a -lpython2.6 -lboost_python -lboost_thread-mt -lrt -Wl,-rpath,:::::::::::::: 

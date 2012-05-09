@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../3rdparty/crlibm-1.0beta4/crlibm.h
+interval.h
+../3rdparty/crlibm-1.0beta4/interval.h
+
+/home/praveen/Work/openrave/src/check_libm_accuracy_main.cpp
+crlibm.h
+-
+cmath
+-
+fstream
+-
+iostream
+-
+iomanip
+-
+

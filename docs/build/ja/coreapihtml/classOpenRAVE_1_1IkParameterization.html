@@ -1,0 +1,1573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: クラス IkParameterization 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス IkParameterization</h1><!-- doxytag: class="OpenRAVE::IkParameterization" -->
+<p>Parameterization of basic primitives for querying inverse-kinematics solutions.  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="openrave_8h_source.html">openrave.h</a>&gt;</code></p>
+<div class="dynheader">
+IkParameterizationのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1IkParameterization__coll__graph.png" border="0" usemap="#IkParameterization_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="classOpenRAVE_1_1IkParameterization-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a329ed7d01e46778b70d9c709e3318a52">IkParameterization</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ab994a253edd28a41888587bd321cbc57">IkParameterization</a> (const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;t)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets a 6D transform parameterization  <a href="#ab994a253edd28a41888587bd321cbc57"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a64665dcd48df2d9d27a121e9f850afa9">IkParameterization</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;r)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets a ray parameterization  <a href="#a64665dcd48df2d9d27a121e9f850afa9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a94da438fe0e35f8c244d753cc815594c">IkParameterization</a> (const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;t, <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">set a custom parameterization using a transform as the source of the data. Not all types are supported with this method.  <a href="#a94da438fe0e35f8c244d753cc815594c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ad45c935f79db7a84f920ac78cb14c8d2">GetType</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a69b3595c7be61cf3144332c58267f0b8">GetName</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ac938a6c271285a5468b805a3243e20e6">GetDOF</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the minimum degree of freedoms required for the IK type.  <a href="#ac938a6c271285a5468b805a3243e20e6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ac914934393fca4ffa7cc103ac9068ece">GetNumberOfValues</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the number of values used to represent the parameterization ( &gt;= dof ). The number of values serialized is this number plus 1 for the iktype.  <a href="#ac914934393fca4ffa7cc103ac9068ece"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a0ec3118069977eebb68a61f5966146f2">SetTransform6D</a> (const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;t)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a03781ddd35d63d859a387d28db2bedf9">SetRotation3D</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;quaternion)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a25ddbe2fc5db5250b54d9f9d1169f21b">SetTranslation3D</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;trans)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a7ac4fa8318df772b477ef589164b721a">SetDirection3D</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;dir)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ad12e02bd808ccbac29bc7572c44e103e">SetRay4D</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;ray)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a093c25024d128db072a0d6a60b85812c">SetLookat3D</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;trans)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a935c8c5f94115fb874a0bb425515344e">SetLookat3D</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;ray)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the ray direction is not used for IK, however it is needed in order to compute the error  <a href="#a935c8c5f94115fb874a0bb425515344e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a71b9c930c10b762432346b00ab5ec9c1">SetTranslationDirection5D</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;ray)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a09ba343487264fd8b56a6db983f1f601">SetTranslationXY2D</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;trans)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a267a51621bbf2dc920fa2c5b3b345c53">SetTranslationXYOrientation3D</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;trans)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ae6dc1416509fd7044c5c8444cb94b7d0">SetTranslationLocalGlobal6D</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;localtrans, const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;trans)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#aaeeb892fc06951b35559a535c379729d">GetTransform6D</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#aeb96b077bcd4d37b46a3b07467a020c3">GetRotation3D</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ad500888055d46211491d6c1ca86260fe">GetTranslation3D</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a59a61d5e202e10fe4dfe61aa8c0a6aac">GetDirection3D</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a84f91a79fcdfc891d616c99cdd136529">GetRay4D</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a385b47df91447b80429d4d85526d292f">GetLookat3D</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a5e1c7898ce63662267d2d15a135a3b40">GetLookat3DDirection</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ac74ff1ac2cbc55b259d2e2cd564b9139">GetTranslationDirection5D</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a2806e15bd61ecdbd9aadfb0a58c9d52e">GetTranslationXY2D</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ae04de3d274c7d9006c5b145ee5c19015">GetTranslationXYOrientation3D</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>, <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a8ce7e26e09a9ee89f3180038d96dd352">GetTranslationLocalGlobal6D</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a4bfb30431b8a3d0e0b3e138ad1e826c8">ComputeDistanceSqr</a> (const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;ikparam) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Computes the distance squared between two IK parmaeterizations.  <a href="#a4bfb30431b8a3d0e0b3e138ad1e826c8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ab349673fdd07cae6247793bb3961f7e4">GetValues</a> (std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator itvalues) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">fills the iterator with the serialized values of the ikparameterization.  <a href="#ab349673fdd07cae6247793bb3961f7e4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a42cd2297d86211c05de797d6b47076a3">Set</a> (std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator itvalues, <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> iktype)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a4bd290d9263727845b76174c40ff070c">GetConfigurationSpecification</a> () const </td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpd41d8cd98f00b204e9800998ecf8427e"></a> </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a7526eb60609136e3393811ad4a28ca40">SetTransform</a> (const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;t) <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a107e6a77c110e1b271d9f867926f6db0">SetRotation</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;quaternion) <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#aeca10a7f04da8a3c6b426f803034bf41">SetTranslation</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;trans) <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ab1cc946ea19248e65b169a5edbe5fa63">SetDirection</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;dir) <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a0b85989f63a9f64ba8c941544fafab7e">SetRay</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;ray) <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a5447454893a8a8331dca9e8837e4c9cd">SetLookat</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;trans) <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#af76a0a3232c7a4c61ffc5170f97d18ee">SetTranslationDirection</a> (const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;ray) <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a09552506726523be1387a844c376c5bb">GetTransform</a> () const <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a7e18da6eab083580388d28aefba2fe7a">GetRotation</a> () const <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a6c5f9ddebada439823175de9b2515acf">GetTranslation</a> () const <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a6fb6e3d1335826739d60d48f96a1319e">GetDirection</a> () const <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#af9cf79180036602f638d20ed15ac7e73">GetLookat</a> () const <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ae8329dfb8b49dbbfebcc6dbf09995bef">GetRay</a> () const <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a87a32022021e7acf7e869ae34616337d">GetTranslationDirection</a> () const <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td></tr>
+<tr><td colspan="2"><h2>Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a14e61929c0affee6b5ebd14889aff297">GetDOF</a> (<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the minimum degree of freedoms required for the IK type.  <a href="#a14e61929c0affee6b5ebd14889aff297"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#aba838fc410e5033a481e33d594ac72bd">GetNumberOfValues</a> (<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the number of values used to represent the parameterization ( &gt;= dof ). The number of values serialized is this number plus 1 for the iktype.  <a href="#aba838fc410e5033a481e33d594ac72bd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a2fcf986571f272008b879fba7d49e208">GetConfigurationSpecification</a> (<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> iktype)</td></tr>
+<tr><td colspan="2"><h2>Static Public 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_None&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a423b412c885cbc945c9beaee8b675fe1">RAVE_DEPRECATED</a> = IKP_None</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_Transform6D&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a13f2915ccabdf10aa470c49669f5a10a">RAVE_DEPRECATED</a> = IKP_Transform6D</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_Rotation3D&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ae720bdcb0182a7fcd33c120ae1780147">RAVE_DEPRECATED</a> = IKP_Rotation3D</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_Translation3D&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a971098d5b971c3d6fab450628e22b44b">RAVE_DEPRECATED</a> = IKP_Translation3D</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_Direction3D&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a6700d28e218494d0bf6b4c5507eef3df">RAVE_DEPRECATED</a> = IKP_Direction3D</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_Ray4D&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a8c6fcc6a08bf812e7a037bbf316ac9f5">RAVE_DEPRECATED</a> = IKP_Ray4D</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_Lookat3D&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a2ccda1f777b2ab6c02a39f90a457766b">RAVE_DEPRECATED</a> = IKP_Lookat3D</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_TranslationDirection5D&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a2b5ac87271423be465a724af21fd8ebd">RAVE_DEPRECATED</a> = IKP_TranslationDirection5D</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_TranslationXY2D&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#ac08cf9908c13faf1a9afa6017daea3cb">RAVE_DEPRECATED</a> = IKP_TranslationXY2D</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_TranslationXYOrientation3D&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a4aedbee16779212b3cd9fa2a00c292a5">RAVE_DEPRECATED</a> = IKP_TranslationXYOrientation3D</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_TranslationLocalGlobal6D&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#adee344290f7d19ab4c9b1f357ead87d4">RAVE_DEPRECATED</a> = IKP_TranslationLocalGlobal6D</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <br class="typebreak"/>
+Type_NumberOfParameterizations&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#af84cc5373e059d642e04eff4880e9c4e">RAVE_DEPRECATED</a> = IKP_NumberOfParameterizations</td></tr>
+<tr><td colspan="2"><h2>Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a81044c60007505a03a8cb8c6e9754fa3">_transform</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a157d1d383fc3c763780da24d52bb5870">_type</a></td></tr>
+<tr><td colspan="2"><h2>フレンド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a227bac3df3f2cff449721ce47abd5e14">operator*</a> (const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;t, const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;ikparam)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API std::ostream &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a4f4cb8291adf0107bfe9f370bc3241c8">operator&lt;&lt;</a> (std::ostream &amp;O, const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;ikparam)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API std::istream &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html#a3cdbdc16e6c7f18ba5244bc57b9c29e5">operator&gt;&gt;</a> (std::istream &amp;I, <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;ikparam)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>Parameterization of basic primitives for querying inverse-kinematics solutions. </p>
+<p>Holds the parameterization of a geometric primitive useful for autonomous manipulation scenarios like: 6D pose, 3D translation, 3D rotation, 3D look at direction, and ray look at direction. </p>
+<dl><dt><b>例: </b></dt><dd>
+<p><a class="el" href="ikfastloader_8cpp-example.html#_a9">ikfastloader.cpp</a>, と <a class="el" href="orikfilter_8cpp-example.html#_a3">orikfilter.cpp</a>.</p>
+</dd>
+</dl>
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01026">1026</a> 行で定義されています。</p>
+<hr/><h2>型定義</h2>
+<a class="anchor" id="a63fa0d3744e7eebf98b264ad1242bfad"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="a63fa0d3744e7eebf98b264ad1242bfad" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">非推奨:</a></b></dt><dd>(11/10/12) </dd></dl>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01030">1030</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a329ed7d01e46778b70d9c709e3318a52"></a><!-- doxytag: member="OpenRAVE::IkParameterization::IkParameterization" ref="a329ed7d01e46778b70d9c709e3318a52" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01044">1044</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab994a253edd28a41888587bd321cbc57"></a><!-- doxytag: member="OpenRAVE::IkParameterization::IkParameterization" ref="ab994a253edd28a41888587bd321cbc57" args="(const Transform &amp;t)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>t</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets a 6D transform parameterization </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01047">1047</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a64665dcd48df2d9d27a121e9f850afa9"></a><!-- doxytag: member="OpenRAVE::IkParameterization::IkParameterization" ref="a64665dcd48df2d9d27a121e9f850afa9" args="(const RAY &amp;r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>r</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets a ray parameterization </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01051">1051</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a94da438fe0e35f8c244d753cc815594c"></a><!-- doxytag: member="OpenRAVE::IkParameterization::IkParameterization" ref="a94da438fe0e35f8c244d753cc815594c" args="(const Transform &amp;t, IkParameterizationType type)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a>&nbsp;</td>
+          <td class="paramname"> <em>type</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set a custom parameterization using a transform as the source of the data. Not all types are supported with this method. </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01055">1055</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a4bfb30431b8a3d0e0b3e138ad1e826c8"></a><!-- doxytag: member="OpenRAVE::IkParameterization::ComputeDistanceSqr" ref="a4bfb30431b8a3d0e0b3e138ad1e826c8" args="(const IkParameterization &amp;ikparam) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> ComputeDistanceSqr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ikparam</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Computes the distance squared between two IK parmaeterizations. </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01207">1207</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bd290d9263727845b76174c40ff070c"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetConfigurationSpecification" ref="a4bd290d9263727845b76174c40ff070c" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> GetConfigurationSpecification </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01433">1433</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2fcf986571f272008b879fba7d49e208"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetConfigurationSpecification" ref="a2fcf986571f272008b879fba7d49e208" args="(IkParameterizationType iktype)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> GetConfigurationSpecification </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a>&nbsp;</td>
+          <td class="paramname"> <em>iktype</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l00819">819</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6fb6e3d1335826739d60d48f96a1319e"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetDirection" ref="a6fb6e3d1335826739d60d48f96a1319e" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetDirection </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01191">1191</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a59a61d5e202e10fe4dfe61aa8c0a6aac"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetDirection3D" ref="a59a61d5e202e10fe4dfe61aa8c0a6aac" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetDirection3D </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01134">1134</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac938a6c271285a5468b805a3243e20e6"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetDOF" ref="ac938a6c271285a5468b805a3243e20e6" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GetDOF </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the minimum degree of freedoms required for the IK type. </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01077">1077</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a14e61929c0affee6b5ebd14889aff297"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetDOF" ref="a14e61929c0affee6b5ebd14889aff297" args="(IkParameterizationType type)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int GetDOF </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a>&nbsp;</td>
+          <td class="paramname"> <em>type</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the minimum degree of freedoms required for the IK type. </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01073">1073</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="af9cf79180036602f638d20ed15ac7e73"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetLookat" ref="af9cf79180036602f638d20ed15ac7e73" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetLookat </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01194">1194</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a385b47df91447b80429d4d85526d292f"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetLookat3D" ref="a385b47df91447b80429d4d85526d292f" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetLookat3D </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01140">1140</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e1c7898ce63662267d2d15a135a3b40"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetLookat3DDirection" ref="a5e1c7898ce63662267d2d15a135a3b40" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetLookat3DDirection </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01143">1143</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a69b3595c7be61cf3144332c58267f0b8"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetName" ref="a69b3595c7be61cf3144332c58267f0b8" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; GetName </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01820">1820</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac914934393fca4ffa7cc103ac9068ece"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetNumberOfValues" ref="ac914934393fca4ffa7cc103ac9068ece" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GetNumberOfValues </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the number of values used to represent the parameterization ( &gt;= dof ). The number of values serialized is this number plus 1 for the iktype. </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01086">1086</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aba838fc410e5033a481e33d594ac72bd"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetNumberOfValues" ref="aba838fc410e5033a481e33d594ac72bd" args="(IkParameterizationType type)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int GetNumberOfValues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a>&nbsp;</td>
+          <td class="paramname"> <em>type</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the number of values used to represent the parameterization ( &gt;= dof ). The number of values serialized is this number plus 1 for the iktype. </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01082">1082</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8329dfb8b49dbbfebcc6dbf09995bef"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetRay" ref="ae8329dfb8b49dbbfebcc6dbf09995bef" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> GetRay </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01197">1197</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a84f91a79fcdfc891d616c99cdd136529"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetRay4D" ref="a84f91a79fcdfc891d616c99cdd136529" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> GetRay4D </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01137">1137</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e18da6eab083580388d28aefba2fe7a"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetRotation" ref="a7e18da6eab083580388d28aefba2fe7a" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetRotation </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01185">1185</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb96b077bcd4d37b46a3b07467a020c3"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetRotation3D" ref="aeb96b077bcd4d37b46a3b07467a020c3" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetRotation3D </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01128">1128</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a09552506726523be1387a844c376c5bb"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetTransform" ref="a09552506726523be1387a844c376c5bb" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a>&amp; GetTransform </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01182">1182</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aaeeb892fc06951b35559a535c379729d"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetTransform6D" ref="aaeeb892fc06951b35559a535c379729d" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a>&amp; GetTransform6D </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01125">1125</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c5f9ddebada439823175de9b2515acf"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetTranslation" ref="a6c5f9ddebada439823175de9b2515acf" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetTranslation </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01188">1188</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad500888055d46211491d6c1ca86260fe"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetTranslation3D" ref="ad500888055d46211491d6c1ca86260fe" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetTranslation3D </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01131">1131</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a87a32022021e7acf7e869ae34616337d"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetTranslationDirection" ref="a87a32022021e7acf7e869ae34616337d" args="() const RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> GetTranslationDirection </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01200">1200</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac74ff1ac2cbc55b259d2e2cd564b9139"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetTranslationDirection5D" ref="ac74ff1ac2cbc55b259d2e2cd564b9139" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> GetTranslationDirection5D </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01146">1146</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ce7e26e09a9ee89f3180038d96dd352"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetTranslationLocalGlobal6D" ref="a8ce7e26e09a9ee89f3180038d96dd352" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;<a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>,<a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&gt; GetTranslationLocalGlobal6D </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01155">1155</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2806e15bd61ecdbd9aadfb0a58c9d52e"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetTranslationXY2D" ref="a2806e15bd61ecdbd9aadfb0a58c9d52e" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetTranslationXY2D </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01149">1149</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae04de3d274c7d9006c5b145ee5c19015"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetTranslationXYOrientation3D" ref="ae04de3d274c7d9006c5b145ee5c19015" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetTranslationXYOrientation3D </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01152">1152</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad45c935f79db7a84f920ac78cb14c8d2"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetType" ref="ad45c935f79db7a84f920ac78cb14c8d2" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> GetType </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01067">1067</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab349673fdd07cae6247793bb3961f7e4"></a><!-- doxytag: member="OpenRAVE::IkParameterization::GetValues" ref="ab349673fdd07cae6247793bb3961f7e4" args="(std::vector&lt; dReal &gt;::iterator itvalues) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GetValues </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator&nbsp;</td>
+          <td class="paramname"> <em>itvalues</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>fills the iterator with the serialized values of the ikparameterization. </p>
+<p>the container the iterator points to needs to have <a class="el" href="classOpenRAVE_1_1IkParameterization.html#aba838fc410e5033a481e33d594ac72bd">GetNumberOfValues()</a> available. </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01282">1282</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a42cd2297d86211c05de797d6b47076a3"></a><!-- doxytag: member="OpenRAVE::IkParameterization::Set" ref="a42cd2297d86211c05de797d6b47076a3" args="(std::vector&lt; dReal &gt;::const_iterator itvalues, IkParameterizationType iktype)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Set </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator&nbsp;</td>
+          <td class="paramname"> <em>itvalues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a>&nbsp;</td>
+          <td class="paramname"> <em>iktype</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01353">1353</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1cc946ea19248e65b169a5edbe5fa63"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetDirection" ref="ab1cc946ea19248e65b169a5edbe5fa63" args="(const Vector &amp;dir) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetDirection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>dir</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01170">1170</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ac4fa8318df772b477ef589164b721a"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetDirection3D" ref="a7ac4fa8318df772b477ef589164b721a" args="(const Vector &amp;dir)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetDirection3D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>dir</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01099">1099</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5447454893a8a8331dca9e8837e4c9cd"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetLookat" ref="a5447454893a8a8331dca9e8837e4c9cd" args="(const Vector &amp;trans) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetLookat </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>trans</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01176">1176</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a935c8c5f94115fb874a0bb425515344e"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetLookat3D" ref="a935c8c5f94115fb874a0bb425515344e" args="(const RAY &amp;ray)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetLookat3D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ray</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the ray direction is not used for IK, however it is needed in order to compute the error </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01109">1109</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a093c25024d128db072a0d6a60b85812c"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetLookat3D" ref="a093c25024d128db072a0d6a60b85812c" args="(const Vector &amp;trans)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetLookat3D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>trans</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01105">1105</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b85989f63a9f64ba8c941544fafab7e"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetRay" ref="a0b85989f63a9f64ba8c941544fafab7e" args="(const RAY &amp;ray) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetRay </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ray</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01173">1173</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad12e02bd808ccbac29bc7572c44e103e"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetRay4D" ref="ad12e02bd808ccbac29bc7572c44e103e" args="(const RAY &amp;ray)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetRay4D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ray</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01102">1102</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a107e6a77c110e1b271d9f867926f6db0"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetRotation" ref="a107e6a77c110e1b271d9f867926f6db0" args="(const Vector &amp;quaternion) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetRotation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>quaternion</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01164">1164</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a03781ddd35d63d859a387d28db2bedf9"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetRotation3D" ref="a03781ddd35d63d859a387d28db2bedf9" args="(const Vector &amp;quaternion)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetRotation3D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>quaternion</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01093">1093</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7526eb60609136e3393811ad4a28ca40"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetTransform" ref="a7526eb60609136e3393811ad4a28ca40" args="(const Transform &amp;t) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetTransform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>t</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">非推奨:</a></b></dt><dd>(11/02/15) </dd></dl>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01161">1161</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ec3118069977eebb68a61f5966146f2"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetTransform6D" ref="a0ec3118069977eebb68a61f5966146f2" args="(const Transform &amp;t)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetTransform6D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>t</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01090">1090</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aeca10a7f04da8a3c6b426f803034bf41"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetTranslation" ref="aeca10a7f04da8a3c6b426f803034bf41" args="(const Vector &amp;trans) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetTranslation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>trans</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01167">1167</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a25ddbe2fc5db5250b54d9f9d1169f21b"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetTranslation3D" ref="a25ddbe2fc5db5250b54d9f9d1169f21b" args="(const Vector &amp;trans)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetTranslation3D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>trans</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01096">1096</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="af76a0a3232c7a4c61ffc5170f97d18ee"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetTranslationDirection" ref="af76a0a3232c7a4c61ffc5170f97d18ee" args="(const RAY &amp;ray) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetTranslationDirection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ray</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01179">1179</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a71b9c930c10b762432346b00ab5ec9c1"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetTranslationDirection5D" ref="a71b9c930c10b762432346b00ab5ec9c1" args="(const RAY &amp;ray)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetTranslationDirection5D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1geometry_1_1ray.html">RAY</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ray</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01112">1112</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6dc1416509fd7044c5c8444cb94b7d0"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetTranslationLocalGlobal6D" ref="ae6dc1416509fd7044c5c8444cb94b7d0" args="(const Vector &amp;localtrans, const Vector &amp;trans)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetTranslationLocalGlobal6D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>localtrans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>trans</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01121">1121</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a09ba343487264fd8b56a6db983f1f601"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetTranslationXY2D" ref="a09ba343487264fd8b56a6db983f1f601" args="(const Vector &amp;trans)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetTranslationXY2D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>trans</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01115">1115</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a267a51621bbf2dc920fa2c5b3b345c53"></a><!-- doxytag: member="OpenRAVE::IkParameterization::SetTranslationXYOrientation3D" ref="a267a51621bbf2dc920fa2c5b3b345c53" args="(const Vector &amp;trans)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetTranslationXYOrientation3D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>trans</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01118">1118</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>フレンドと関連する関数</h2>
+<a class="anchor" id="a227bac3df3f2cff449721ce47abd5e14"></a><!-- doxytag: member="OpenRAVE::IkParameterization::operator*" ref="a227bac3df3f2cff449721ce47abd5e14" args="(const Transform &amp;t, const IkParameterization &amp;ikparam)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ikparam</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01447">1447</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f4cb8291adf0107bfe9f370bc3241c8"></a><!-- doxytag: member="OpenRAVE::IkParameterization::operator&lt;&lt;" ref="a4f4cb8291adf0107bfe9f370bc3241c8" args="(std::ostream &amp;O, const IkParameterization &amp;ikparam)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPENRAVE_API std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>O</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ikparam</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l00830">830</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3cdbdc16e6c7f18ba5244bc57b9c29e5"></a><!-- doxytag: member="OpenRAVE::IkParameterization::operator&gt;&gt;" ref="a3cdbdc16e6c7f18ba5244bc57b9c29e5" args="(std::istream &amp;I, IkParameterization &amp;ikparam)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPENRAVE_API std::istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&nbsp;</td>
+          <td class="paramname"> <em>I</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ikparam</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l00883">883</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="a81044c60007505a03a8cb8c6e9754fa3"></a><!-- doxytag: member="OpenRAVE::IkParameterization::_transform" ref="a81044c60007505a03a8cb8c6e9754fa3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a81044c60007505a03a8cb8c6e9754fa3">_transform</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01439">1439</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a157d1d383fc3c763780da24d52bb5870"></a><!-- doxytag: member="OpenRAVE::IkParameterization::_type" ref="a157d1d383fc3c763780da24d52bb5870" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a157d1d383fc3c763780da24d52bb5870">_type</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01440">1440</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="af84cc5373e059d642e04eff4880e9c4e"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="af84cc5373e059d642e04eff4880e9c4e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_NumberOfParameterizations <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_NumberOfParameterizations<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01042">1042</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="adee344290f7d19ab4c9b1f357ead87d4"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="adee344290f7d19ab4c9b1f357ead87d4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_TranslationLocalGlobal6D <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_TranslationLocalGlobal6D<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01041">1041</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4aedbee16779212b3cd9fa2a00c292a5"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="a4aedbee16779212b3cd9fa2a00c292a5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_TranslationXYOrientation3D <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_TranslationXYOrientation3D<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01040">1040</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac08cf9908c13faf1a9afa6017daea3cb"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="ac08cf9908c13faf1a9afa6017daea3cb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_TranslationXY2D <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_TranslationXY2D<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01039">1039</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b5ac87271423be465a724af21fd8ebd"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="a2b5ac87271423be465a724af21fd8ebd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_TranslationDirection5D <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_TranslationDirection5D<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01038">1038</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ccda1f777b2ab6c02a39f90a457766b"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="a2ccda1f777b2ab6c02a39f90a457766b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_Lookat3D <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_Lookat3D<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01037">1037</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c6fcc6a08bf812e7a037bbf316ac9f5"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="a8c6fcc6a08bf812e7a037bbf316ac9f5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_Ray4D <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_Ray4D<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01036">1036</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6700d28e218494d0bf6b4c5507eef3df"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="a6700d28e218494d0bf6b4c5507eef3df" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_Direction3D <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_Direction3D<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01035">1035</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a971098d5b971c3d6fab450628e22b44b"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="a971098d5b971c3d6fab450628e22b44b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_Translation3D <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_Translation3D<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01034">1034</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae720bdcb0182a7fcd33c120ae1780147"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="ae720bdcb0182a7fcd33c120ae1780147" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_Rotation3D <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_Rotation3D<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01033">1033</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a13f2915ccabdf10aa470c49669f5a10a"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="a13f2915ccabdf10aa470c49669f5a10a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_Transform6D <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_Transform6D<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01032">1032</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a423b412c885cbc945c9beaee8b675fe1"></a><!-- doxytag: member="OpenRAVE::IkParameterization::RAVE_DEPRECATED" ref="a423b412c885cbc945c9beaee8b675fe1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> Type_None <a class="el" href="classOpenRAVE_1_1IkParameterization.html#a63fa0d3744e7eebf98b264ad1242bfad">RAVE_DEPRECATED</a> = IKP_None<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01031">1031</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>include/openrave/<a class="el" href="openrave_8h_source.html">openrave.h (r2848/r2811)</a></li>
+<li>src/libopenrave/<a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp (r2848/r2805)</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:12 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

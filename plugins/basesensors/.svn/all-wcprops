@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basesensors
+END
+baseflashlidar3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basesensors/baseflashlidar3d.h
+END
+plugindefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basesensors/plugindefs.h
+END
+baselaser.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basesensors/baselaser.h
+END
+basesensors.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basesensors/basesensors.cpp
+END
+basecamera.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basesensors/basecamera.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/basesensors/CMakeLists.txt
+END

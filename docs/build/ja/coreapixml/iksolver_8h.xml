@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="iksolver_8h" kind="file">
+    <compoundname>iksolver.h</compoundname>
+    <includedby refid="openrave_8h" local="no">include/openrave/openrave.h</includedby>
+    <invincdepgraph>
+      <node id="1922">
+        <label>src/cppexamples/ikfastloader.cpp</label>
+        <link refid="ikfastloader_8cpp"/>
+      </node>
+      <node id="1931">
+        <label>src/cppexamples/orshowsensors.cpp</label>
+        <link refid="orshowsensors_8cpp"/>
+      </node>
+      <node id="1914">
+        <label>src/cppexamples/orpythonbinding.cpp</label>
+        <link refid="orpythonbinding_8cpp"/>
+      </node>
+      <node id="1921">
+        <label>src/libopenrave-core/openrave-core.h</label>
+        <link refid="openrave-core_8h"/>
+        <childnode refid="1922" relation="include">
+        </childnode>
+        <childnode refid="1923" relation="include">
+        </childnode>
+        <childnode refid="1924" relation="include">
+        </childnode>
+        <childnode refid="1925" relation="include">
+        </childnode>
+        <childnode refid="1926" relation="include">
+        </childnode>
+        <childnode refid="1927" relation="include">
+        </childnode>
+        <childnode refid="1917" relation="include">
+        </childnode>
+        <childnode refid="1928" relation="include">
+        </childnode>
+        <childnode refid="1929" relation="include">
+        </childnode>
+        <childnode refid="1930" relation="include">
+        </childnode>
+        <childnode refid="1931" relation="include">
+        </childnode>
+        <childnode refid="1918" relation="include">
+        </childnode>
+        <childnode refid="1919" relation="include">
+        </childnode>
+      </node>
+      <node id="1919">
+        <label>src/cppexamples/oryoubotcontrol.cpp</label>
+        <link refid="oryoubotcontrol_8cpp"/>
+      </node>
+      <node id="1926">
+        <label>src/cppexamples/orikfilter.cpp</label>
+        <link refid="orikfilter_8cpp"/>
+      </node>
+      <node id="1929">
+        <label>src/cppexamples/orplanning_module.cpp</label>
+        <link refid="orplanning__module_8cpp"/>
+      </node>
+      <node id="1920">
+        <label>include/openrave/plugin.h</label>
+        <link refid="plugin_8h"/>
+        <childnode refid="1913" relation="include">
+        </childnode>
+        <childnode refid="1915" relation="include">
+        </childnode>
+      </node>
+      <node id="1928">
+        <label>src/cppexamples/orplanning_ik.cpp</label>
+        <link refid="orplanning__ik_8cpp"/>
+      </node>
+      <node id="1932">
+        <label>src/libopenrave/libopenrave.cpp</label>
+        <link refid="libopenrave_8cpp"/>
+        <childnode refid="1932" relation="include">
+        </childnode>
+      </node>
+      <node id="1912">
+        <label>include/openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="1913" relation="include">
+        </childnode>
+        <childnode refid="1914" relation="include">
+        </childnode>
+        <childnode refid="1915" relation="include">
+        </childnode>
+        <childnode refid="1916" relation="include">
+        </childnode>
+        <childnode refid="1920" relation="include">
+        </childnode>
+        <childnode refid="1921" relation="include">
+        </childnode>
+        <childnode refid="1932" relation="include">
+        </childnode>
+      </node>
+      <node id="1913">
+        <label>src/cppexamples/customreader.cpp</label>
+        <link refid="customreader_8cpp"/>
+      </node>
+      <node id="1923">
+        <label>src/cppexamples/opencvsaving.cpp</label>
+        <link refid="opencvsaving_8cpp"/>
+      </node>
+      <node id="1917">
+        <label>src/cppexamples/ormulticontrol.cpp</label>
+        <link refid="ormulticontrol_8cpp"/>
+      </node>
+      <node id="1916">
+        <label>include/openrave/planningutils.h</label>
+        <link refid="planningutils_8h"/>
+        <childnode refid="1917" relation="include">
+        </childnode>
+        <childnode refid="1918" relation="include">
+        </childnode>
+        <childnode refid="1919" relation="include">
+        </childnode>
+      </node>
+      <node id="1925">
+        <label>src/cppexamples/orconveyormovement.cpp</label>
+        <link refid="orconveyormovement_8cpp"/>
+      </node>
+      <node id="1918">
+        <label>src/cppexamples/ortrajectory.cpp</label>
+        <link refid="ortrajectory_8cpp"/>
+      </node>
+      <node id="1924">
+        <label>src/cppexamples/orcollision.cpp</label>
+        <link refid="orcollision_8cpp"/>
+      </node>
+      <node id="1927">
+        <label>src/cppexamples/orloadviewer.cpp</label>
+        <link refid="orloadviewer_8cpp"/>
+      </node>
+      <node id="1911">
+        <label>include/openrave/iksolver.h</label>
+        <link refid="iksolver.h"/>
+        <childnode refid="1912" relation="include">
+        </childnode>
+      </node>
+      <node id="1915">
+        <label>src/cppexamples/plugincpp.cpp</label>
+        <link refid="plugincpp_8cpp"/>
+      </node>
+      <node id="1930">
+        <label>src/cppexamples/orplanning_planner.cpp</label>
+        <link refid="orplanning__planner_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenRAVE_1_1IkSolverBase" prot="public">OpenRAVE::IkSolverBase</innerclass>
+    <innernamespace refid="namespaceOpenRAVE">OpenRAVE</innernamespace>
+    <briefdescription>
+<para>Inverse kinematics related definitions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2006-2011<sp/>Rosen<sp/>Diankov<sp/>&lt;rosen.diankov@gmail.com&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenRAVE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OpenRAVE<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="preprocessor">#ifndef<sp/>OPENRAVE_IKSOLVER_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_IKSOLVER_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenRAVE<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9" kindref="member" tooltip="Return value for the ik filter that can be optionally set on an ik solver.">IkFilterReturn</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9a7a0f5642b1a33ef86868e24bb1e2ea39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9a7a0f5642b1a33ef86868e24bb1e2ea39" kindref="member" tooltip="the ik solution is good">IKFR_Success</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="29" refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9ae0a9b98b94852a81354da20c4c388929" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9ae0a9b98b94852a81354da20c4c388929" kindref="member" tooltip="reject the ik solution">IKFR_Reject</ref><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="30" refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9a818a27efa66560252c93cc569caae79e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9a818a27efa66560252c93cc569caae79e" kindref="member" tooltip="the ik solution is rejected and the ik call itself should quit with failure">IKFR_Quit</ref><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdc" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdc" kindref="member" tooltip="Controls what information gets validated when searching for an inverse kinematics...">IkFilterOptions</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36" refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdca9e6c06d6ccbfbbe56de480a37cf0381b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdca9e6c06d6ccbfbbe56de480a37cf0381b" kindref="member" tooltip="will check environment collisions with the robot (not checked by default)">IKFO_CheckEnvCollisions</ref>=1,<sp/></highlight></codeline>
+<codeline lineno="37" refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdca1bc83e529a1beb8fc6c7cb59fa477166" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdca1bc83e529a1beb8fc6c7cb59fa477166" kindref="member" tooltip="will not check the self-collision of the robot (checked by default)">IKFO_IgnoreSelfCollisions</ref>=2,<sp/></highlight></codeline>
+<codeline lineno="38" refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdcad66d86a301f3ccd5d17bcc1197f9c321" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdcad66d86a301f3ccd5d17bcc1197f9c321" kindref="member" tooltip="will not check the joint limits of the robot (checked by default)">IKFO_IgnoreJointLimits</ref>=4,<sp/></highlight></codeline>
+<codeline lineno="39" refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdcaf98c0e29d2aee38b7af964e15a43ff3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdcaf98c0e29d2aee38b7af964e15a43ff3b" kindref="member" tooltip="will not use the custom filter, even if one is set">IKFO_IgnoreCustomFilters</ref>=8,<sp/></highlight></codeline>
+<codeline lineno="40" refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdcab6c6760e71911d36d392c861002e2a6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdcab6c6760e71911d36d392c861002e2a6c" kindref="member" tooltip="will not check collision with the environment and the end effector links and bodies...">IKFO_IgnoreEndEffectorCollisions</ref>=16,<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classOpenRAVE_1_1IkSolverBase" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1IkSolverBase" kindref="compound" tooltip="[interface] Base class for all Inverse Kinematic solvers. If not specified, method...">IkSolverBase</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60" refid="classOpenRAVE_1_1IkSolverBase_1a2f7085e3e716d58bbbc95fa53926313e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;IkFilterReturn(std::vector&lt;dReal&gt;&amp;,<sp/><ref refid="classOpenRAVE_1_1RobotBase_1ab276a11f11a647b5b79ea316fd23651d" kindref="member">RobotBase::ManipulatorPtr</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound" tooltip="Parameterization of basic primitives for querying inverse-kinematics solutions.">IkParameterization</ref>&amp;)&gt;<sp/>IkFilterCallbackFn;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classOpenRAVE_1_1IkSolverBase_1a47629e704171b37677f3837d87dfa286" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1IkSolverBase_1a47629e704171b37677f3837d87dfa286" kindref="member">IkSolverBase</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)<sp/>:<sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref>(PT_InverseKinematicsSolver,<sp/>penv)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64" refid="classOpenRAVE_1_1IkSolverBase_1a7534ba77dd8f452a48eaaa0e01beedf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1IkSolverBase_1a7534ba77dd8f452a48eaaa0e01beedf2" kindref="member">~IkSolverBase</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classOpenRAVE_1_1IkSolverBase_1affeafe65e7c4094f282d273dedbf069b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>InterfaceType<sp/><ref refid="classOpenRAVE_1_1IkSolverBase_1affeafe65e7c4094f282d273dedbf069b" kindref="member" tooltip="return the static interface type this class points to (used for safe casting)">GetInterfaceTypeStatic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PT_InverseKinematicsSolver;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="orpythonbinding_8cpp_1a7f8934a0c50d70a317cb981bc9f49af8" kindref="member">Init</ref>(<ref refid="classOpenRAVE_1_1RobotBase_1ab276a11f11a647b5b79ea316fd23651d" kindref="member">RobotBase::ManipulatorPtr</ref><sp/>pmanip)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1RobotBase_1ab276a11f11a647b5b79ea316fd23651d" kindref="member">RobotBase::ManipulatorPtr</ref><sp/>GetManipulator()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref><sp/>RegisterCustomFilter(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>priority,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IkFilterCallbackFn&amp;<sp/>filterfn);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classOpenRAVE_1_1IkSolverBase_1adda44b94bfdbdee2cc57341d6fdef299" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetCustomFilter(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IkFilterCallbackFn&amp;<sp/>filterfn)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a9bbbf668aa39f398c341e946ab8a43f5" kindref="member">RAVELOG_WARN</ref>(</highlight><highlight class="stringliteral">&quot;IkSolverBase::SetCustomFilter<sp/>is<sp/>deprecated,<sp/>have<sp/>to<sp/>use<sp/>handle=AddCustomFilter.<sp/>This<sp/>call<sp/>will<sp/>will<sp/>leak<sp/>memory\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>__listRegisteredFilters.size()<sp/>&gt;<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a9bbbf668aa39f398c341e946ab8a43f5" kindref="member">RAVELOG_WARN</ref>(</highlight><highlight class="stringliteral">&quot;IkSolverBase::SetCustomFilter<sp/>is<sp/>deprecated,<sp/>deleting<sp/>all<sp/>current<sp/>filters!\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref>(RegisterCustomFilter(0,filterfn));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetNumFreeParameters()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetFreeParameters(std::vector&lt;dReal&gt;&amp;<sp/>vFreeParameters)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Solve(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound" tooltip="Parameterization of basic primitives for querying inverse-kinematics solutions.">IkParameterization</ref>&amp;<sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;<sp/>q0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filteroptions,<sp/>boost::shared_ptr&lt;<sp/>std::vector&lt;dReal&gt;<sp/>&gt;<sp/>solution)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Solve(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound" tooltip="Parameterization of basic primitives for querying inverse-kinematics solutions.">IkParameterization</ref>&amp;<sp/>param,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filteroptions,<sp/>std::vector&lt;<sp/>std::vector&lt;dReal&gt;<sp/>&gt;&amp;<sp/>solutions)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Solve(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound" tooltip="Parameterization of basic primitives for querying inverse-kinematics solutions.">IkParameterization</ref>&amp;<sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;<sp/>q0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;<sp/>vFreeParameters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filteroptions,<sp/>boost::shared_ptr&lt;<sp/>std::vector&lt;dReal&gt;<sp/>&gt;<sp/>solution)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Solve(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound" tooltip="Parameterization of basic primitives for querying inverse-kinematics solutions.">IkParameterization</ref>&amp;<sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;<sp/>vFreeParameters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filteroptions,<sp/>std::vector&lt;<sp/>std::vector&lt;dReal&gt;<sp/>&gt;&amp;<sp/>solutions)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Supports(<ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member" tooltip="The types of inverse kinematics parameterizations supported.">IkParameterizationType</ref><sp/>iktype)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="160" refid="classOpenRAVE_1_1IkSolverBase_1addc7cbf7dfc3118af9b49f4c40617c03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1adc64503b74e38e98eedcbc031b3e37ff" kindref="member">IkSolverBasePtr</ref><sp/><ref refid="classOpenRAVE_1_1IkSolverBase_1addc7cbf7dfc3118af9b49f4c40617c03" kindref="member">shared_iksolver</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1IkSolverBase" kindref="compound" tooltip="[interface] Base class for all Inverse Kinematic solvers. If not specified, method...">IkSolverBase</ref>&gt;(shared_from_this());</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163" refid="classOpenRAVE_1_1IkSolverBase_1a3de2a1ea7a2df0d529882c0d4bf227b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1af393079e8e983a2de33101499192f6d0" kindref="member">IkSolverBaseConstPtr</ref><sp/><ref refid="classOpenRAVE_1_1IkSolverBase_1a3de2a1ea7a2df0d529882c0d4bf227b9" kindref="member">shared_iksolver_const</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1IkSolverBase" kindref="compound" tooltip="[interface] Base class for all Inverse Kinematic solvers. If not specified, method...">IkSolverBase</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&gt;(shared_from_this());</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9" kindref="member" tooltip="Return value for the ik filter that can be optionally set on an ik solver.">IkFilterReturn</ref><sp/>_CallFilters(std::vector&lt;dReal&gt;&amp;<sp/>solution,<sp/><ref refid="classOpenRAVE_1_1RobotBase_1ab276a11f11a647b5b79ea316fd23651d" kindref="member">RobotBase::ManipulatorPtr</ref><sp/>manipulator,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound" tooltip="Parameterization of basic primitives for querying inverse-kinematics solutions.">IkParameterization</ref>&amp;<sp/>param);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>GetHash()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="interfacehashes_8h_1a61c3fc7ef958dfd08ebd66f32b94e493" kindref="member">OPENRAVE_IKSOLVER_HASH</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;UserDataWeakPtr&gt;<sp/>__listRegisteredFilters;<sp/></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="classOpenRAVE_1_1IkSolverBase_1a344622b1ea75cf1514222c05f65e1f5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CustomIkSolverFilterData;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>OpenRAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/include/openrave/iksolver.h"/>
+  </compounddef>
+</doxygen>

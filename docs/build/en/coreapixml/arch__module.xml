@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="arch__module" kind="page">
+    <compoundname>arch_module</compoundname>
+    <title>Module Concepts</title>
+    <detaileddescription>
+<para><bold>Reference:</bold> <ref refid="classOpenRAVE_1_1ModuleBase" kindref="compound">OpenRAVE::ModuleBase</ref></para><para>Base class for modules the user might want to instantiate. A module registers itself with OpenRAVE&apos;s SimulateStep calls and can accept commands from the server or other plugins via SendCommand. A module stops receiving commands when it is destroyed. Modules are an easy way for developers to run and test their own code. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

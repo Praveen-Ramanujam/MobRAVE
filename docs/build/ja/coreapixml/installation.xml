@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="installation" kind="page">
+    <compoundname>installation</compoundname>
+    <title>インストール方法</title>
+    <detaileddescription>
+<para>OpenRAVEは様々なユーザーのPCの構成にあった正しいビルドシステムを生成するために<ulink url="http://www.cmake.org/">CMake</ulink>を使っています．それぞれのユーザー仕様に合った以下のページを参照してください．:</para><para><itemizedlist>
+<listitem><para><ref refid="installation__linux" kindref="compound">Linuxユーザーのためのインストール方法</ref></para></listitem><listitem><para><ref refid="installation__windows" kindref="compound">Windowsユーザーのためのインストール方法</ref></para></listitem><listitem><para><ref refid="installation__macosx" kindref="compound">Mac OSXユーザーのためのインストール方法</ref></para></listitem></itemizedlist>
+</para><sect1 id="installation_1installation_cmake">
+<title>CMakeを行う際のオプション設定について</title>
+<para>OpenRAVEをどのようにビルドするかを制御するたくさんのcmakeオプションがあります． ソースコードをダウンロードしたフォルダで，以下のコマンドを実行することによってそれらのオプションをGUIを使って設定することができます．</para><para>オプションを設定するもう１つの方法としては，cmakeコマンドを使って変更する方法があります．（実際Makefileの中身を見るとcmakeコマンドを呼び出して各デフォルトのオプションを設定していることがわかります）</para><para><itemizedlist>
+<listitem><para><bold>録画</bold> 具体的にはbuildのディレクトリに移動し，cmakeのコマンドの後に変更したいオプションの設定を追加し実行します．例えば，ffmpegの録画を無効にするために，<computeroutput>OPT_VIDEORECORDINGオプションを<computeroutput>OFFにするには，以下のようにします．</computeroutput>  </computeroutput>  cmake -DOPT_VIDEORECORDING=OFF .. </para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><bold>精度設定</bold>：倍精度でコンパイルするには，<computeroutput>OPT_DOUBLE_PRECISIONのオプションを<computeroutput>ONにします．</computeroutput>  </computeroutput>  cmake -DOPT_DOUBLE_PRECISION=ON .. </para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><bold>静的ライブラリ</bold>：静的なライブラリも構築するには <computeroutput>OPT_STATICを使用します．プラグインは変わらず動的なライブラリにリンクされます．</computeroutput> <verbatim>
+cmake -DOPT_STATIC=ON ..
+</verbatim></para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><bold>プラグイン生成</bold>：<computeroutput>OPT_PLUGINSをOFFにするとプラグインのコンパイルをしません．</computeroutput> <verbatim>
+cmake -DOPT_PLUGINS=OFF ..
+</verbatim></para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="installation_1install_structure">
+<title>インストールディレクトリの構造</title>
+<para><itemizedlist>
+<listitem><para>bin<itemizedlist>
+<listitem><para><ref refid="p__basic__usage" kindref="compound">openrave</ref> - 環境ビューワ，干渉検知，物理エンジン，サービスを起動するための実行ファイル</para></listitem><listitem><para><ulink url="http://openrave.org/ja/main/command_line_tools.html#openrave-py"><bold>openrave.py</bold></ulink> - <ulink url="http://openrave.org/ja/main/tutorials/openravepy_beginning.html#openravepy-beginning">openravepy</ulink>を通じて，環境を起動するための実行ファイル．データーベース生成，実行例を含む全てのopenrave機能を使用できます．</para></listitem><listitem><para><ref refid="openrave__config" kindref="compound">openrave-config</ref> - 環境設定ファイル</para></listitem><listitem><para>openrave-hashpy - 物体とロボットハッシュの計算。</para></listitem></itemizedlist>
+</para></listitem><listitem><para>include<itemizedlist>
+<listitem><para>rave - 全てのヘッダファイルのためのディレクトリ</para></listitem></itemizedlist>
+</para></listitem><listitem><para>lib<itemizedlist>
+<listitem><para><bold>libopenrave</bold> (.so, .a, .dll, .lib) - 提供されている<ref refid="group__interfaces" kindref="compound">Base Interface Classes</ref>にリンクした全てのプラグインライブラリ</para></listitem><listitem><para><bold>libopenrave-core</bold> (.so, .a, .dll, .lib) - 内部でOpenRAVEコアを起動することを許可されたアプリケーションのライブラリ</para></listitem><listitem><para>cmake<itemizedlist>
+<listitem><para>openraveX.Y<itemizedlist>
+<listitem><para><bold>openrave-config.cmake</bold> - cmake file for searching for openrave installations</para></listitem><listitem><para><bold>openrave-config-version.cmake</bold> - cmake file for searching for openrave installations</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem><listitem><para>pythonX.Y<itemizedlist>
+<listitem><para>site-packages (dist-packages)<itemizedlist>
+<listitem><para>openravepy - Pythonと連動した，データベース生成器や実行例．ディレクトリ構造の詳細は<ulink url="http://openrave.org/ja/main/tutorials/openravepy_beginning.html#openravepy-beginning">ここ</ulink>をご参照ください．</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem><listitem><para>share<itemizedlist>
+<listitem><para>openrave<itemizedlist>
+<listitem><para>cppexamples - 全てのC++実行例<itemizedlist>
+<listitem><para><bold>CMakeLists.txt</bold> - 全ての実行例をコンパイルするための<ulink url="http://www.cmake.org/">cmake</ulink>ファイル</para></listitem></itemizedlist>
+</para></listitem><listitem><para>data - OpenRAVE環境に呼び出し可能な環境と物体のデータファイル</para></listitem><listitem><para>models - 3Dモデルのデータ（例えばCADのデータ）</para></listitem><listitem><para>matlab - 全てのMatlabスクリプトと実行例．このスクリプトを実行するためにMATLABのパスにこのディレクトリを追加する必要があります．</para></listitem><listitem><para>octave - 全てのOctaveスクリプトと実行例．このスクリプトを実行するためにOCTAVEのパスにこのディレクトリを追加する必要があります．</para></listitem><listitem><para>plugins - コンパイルされたプラグイン</para></listitem><listitem><para>robots - <computeroutput>&lt;robot&gt;</computeroutput> or <computeroutput>&lt;kinbody&gt;</computeroutput> を含む，ロボットXMLファイル </para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

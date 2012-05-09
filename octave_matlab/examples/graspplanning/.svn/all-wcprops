@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning
+END
+RotationMatrixFromAxisAngle.m
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/RotationMatrixFromAxisAngle.m
+END
+StartTrajectory.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/StartTrajectory.m
+END
+ParseTrajData.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/ParseTrajData.m
+END
+RobotGoInitial.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/RobotGoInitial.m
+END
+SetupSceneFromGraspTables.m
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/SetupSceneFromGraspTables.m
+END
+GraspAndPlaceObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/GraspAndPlaceObject.m
+END
+addopenravepaths_graspplanning.m
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/addopenravepaths_graspplanning.m
+END
+ReadValsFromString.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/ReadValsFromString.m
+END
+runwamdemo.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/runwamdemo.m
+END
+WaitForRobot.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/WaitForRobot.m
+END
+SerializeTrajData.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/SerializeTrajData.m
+END
+RotationMatrixFromQuat.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/graspplanning/RotationMatrixFromQuat.m
+END

@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -g   CMakeFiles/check_libm_accuracy.dir/check_libm_accuracy_main.cpp.o  -o check_libm_accuracy -rdynamic ../3rdparty/crlibm-1.0beta4/libcrlibm.a 

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="arch__collisionchecker" kind="page">
+    <compoundname>arch_collisionchecker</compoundname>
+    <title>Collision Checker Concepts</title>
+    <detaileddescription>
+<para><bold>Reference:</bold> <ref refid="classOpenRAVE_1_1CollisionCheckerBase" kindref="compound">OpenRAVE::CollisionCheckerBase</ref>.</para><para>All <bold>CheckCollision</bold> functions accept an optional pointer to a <ref refid="classOpenRAVE_1_1CollisionReport" kindref="compound">OpenRAVE::CollisionReport</ref> struct, which gets filled with information about the collision that takes place. Usually requesting more precise information like distance to obstacles is computationally expensive; therefore to save computation, the user can specify what collision information should be filled in the <ref refid="classOpenRAVE_1_1CollisionReport" kindref="compound">OpenRAVE::CollisionReport</ref> with the SetCollisionOptions function.</para><para><ref refid="namespaceOpenRAVE" kindref="compound">OpenRAVE</ref> is not tied to a particular collision checker. Collision checkers can be changed with SetCollisionChecker. In order to add a new collision checker, derive a class from <ref refid="classOpenRAVE_1_1CollisionCheckerBase" kindref="compound">OpenRAVE::CollisionCheckerBase</ref> and fill all the methods it provides. Then register it in &apos;src/environment.cpp&apos; and CollisionCheckers. All collision checking is done through the overloaded EnvironmentBase::CheckCollision. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1XMLReadable" kind="class" prot="public">
+    <compoundname>OpenRAVE::XMLReadable</compoundname>
+    <derivedcompoundref refid="classCustomController_1_1XMLData" prot="public" virt="non-virtual">XMLData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" prot="public" virt="non-virtual">PlannerParameters</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData" prot="public" virt="non-virtual">XMLData</derivedcompoundref>
+    <includes refid="openrave_8h" local="no">openrave.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1XMLReadable_1a5baf878b8fdd3261a2b76abadf8e21e0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string __xmlid</definition>
+        <argsstring></argsstring>
+        <name>__xmlid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="653" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="653" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1XMLReadable_1af15a81c4a38531ede7ba24014b511539" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>XMLReadable</definition>
+        <argsstring>(const std::string &amp;xmlid)</argsstring>
+        <name>XMLReadable</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>xmlid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="645" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="645" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1XMLReadable_1ad5134b6ff094d23e59c5fedd318219a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~XMLReadable</definition>
+        <argsstring>()</argsstring>
+        <name>~XMLReadable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="647" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="647" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1XMLReadable_1a0821649216dd12d46644e17732a6f03b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; GetXMLId</definition>
+        <argsstring>() const </argsstring>
+        <name>GetXMLId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="649" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="649" bodyend="651"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>base class for readable interfaces </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2084">
+        <label>XMLReadable</label>
+        <link refid="classOpenRAVE_1_1XMLReadable"/>
+      </node>
+      <node id="2085">
+        <label>XMLData</label>
+        <link refid="classCustomController_1_1XMLData"/>
+        <childnode refid="2084" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2084" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2086">
+        <label>PlannerParameters</label>
+        <link refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters"/>
+        <childnode refid="2084" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2088">
+        <label>string</label>
+        <childnode refid="2089" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2087">
+        <label>XMLReadable</label>
+        <link refid="classOpenRAVE_1_1XMLReadable"/>
+        <childnode refid="2088" relation="usage">
+          <edgelabel>__xmlid</edgelabel>
+        </childnode>
+      </node>
+      <node id="2089">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="643" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="642" bodyend="654"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1XMLReadable_1a5baf878b8fdd3261a2b76abadf8e21e0" prot="private" virt="non-virtual"><scope>OpenRAVE::XMLReadable</scope><name>__xmlid</name></member>
+      <member refid="classOpenRAVE_1_1XMLReadable_1a0821649216dd12d46644e17732a6f03b" prot="public" virt="virtual"><scope>OpenRAVE::XMLReadable</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1XMLReadable_1af15a81c4a38531ede7ba24014b511539" prot="public" virt="non-virtual"><scope>OpenRAVE::XMLReadable</scope><name>XMLReadable</name></member>
+      <member refid="classOpenRAVE_1_1XMLReadable_1ad5134b6ff094d23e59c5fedd318219a7" prot="public" virt="virtual"><scope>OpenRAVE::XMLReadable</scope><name>~XMLReadable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

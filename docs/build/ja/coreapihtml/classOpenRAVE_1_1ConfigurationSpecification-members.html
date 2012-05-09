@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: メンバ一覧 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>ConfigurationSpecification メンバ一覧</h1>これは全メンバの一覧です。<a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a>継承メンバも含んでいます。<table>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a63d9b7e5c662b5da5584f0d927368812">_vgroups</a></td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a5624a2dfc350dfe608dc26d86b7e7c08">AddDeltaTime</a>()</td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a09106b9e4924dea94502089f75b20d89">AddVelocityGroups</a>(bool adddeltatime)</td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a10788f496736608c276546db6127792a">ConvertData</a>(std::vector&lt; dReal &gt;::iterator ittargetdata, const ConfigurationSpecification &amp;targetspec, std::vector&lt; dReal &gt;::const_iterator itsourcedata, const ConfigurationSpecification &amp;sourcespec, size_t numpoints, EnvironmentBaseConstPtr penv, bool filluninitialized=true)</td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a42b91113c92f1a813682f355d51b43df">ConvertGroupData</a>(std::vector&lt; dReal &gt;::iterator ittargetdata, size_t targetstride, const Group &amp;gtarget, std::vector&lt; dReal &gt;::const_iterator itsourcedata, size_t sourcestride, const Group &amp;gsource, size_t numpoints, EnvironmentBaseConstPtr penv)</td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a6be51f9b2c8e8199ad72e978b6e6c4da">ConvertToVelocitySpecification</a>() const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ac58749acb6422259c079fdb0b62a6d59">ExtractAffineValues</a>(std::vector&lt; dReal &gt;::iterator itvalues, std::vector&lt; dReal &gt;::const_iterator itdata, KinBodyConstPtr pbody, int affinedofs, int timederivative=0) const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ad8c580ee81ec1c23acc74af42a5422de">ExtractDeltaTime</a>(dReal &amp;deltatime, std::vector&lt; dReal &gt;::const_iterator itdata) const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a74cb255b5496f80fa38cbde4cfb853e4">ExtractIkParameterization</a>(IkParameterization &amp;ikparam, std::vector&lt; dReal &gt;::const_iterator itdata, int timederivative=0) const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a982a9ba9c94e0c983df1824b2464ddef">ExtractJointValues</a>(std::vector&lt; dReal &gt;::iterator itvalues, std::vector&lt; dReal &gt;::const_iterator itdata, KinBodyConstPtr pbody, const std::vector&lt; int &gt; &amp;indices, int timederivative=0) const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#abe95cfefe50156e8f37edca80cb87154">ExtractTransform</a>(Transform &amp;t, std::vector&lt; dReal &gt;::const_iterator itdata, KinBodyConstPtr pbody) const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a00dca7273ad0d271e131ecc1119683c2">FindCompatibleGroup</a>(const Group &amp;g, bool exactmatch=false) const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a87b31e59fa16769e474a12ba0a9f8e08">FindTimeDerivativeGroup</a>(const Group &amp;g, bool exactmatch=false) const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ac938a6c271285a5468b805a3243e20e6">GetDOF</a>() const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a047529d130cdde5c5fb9e17798a97a6c">GetTimeDerivativeSpecification</a>(int timederivative) const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ab65b63518528950d146752020602107d">InsertDeltaTime</a>(std::vector&lt; dReal &gt;::iterator itdata, dReal deltatime)</td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ab4da99dc9ebd9975a68a3d87abb1f236">InsertJointValues</a>(std::vector&lt; dReal &gt;::iterator itdata, std::vector&lt; dReal &gt;::const_iterator itvalues, KinBodyConstPtr pbody, const std::vector&lt; int &gt; &amp;indices, int timederivative=0) const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#afa8720abaf6972d6dac22a8cd1a67225">IsValid</a>() const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ab88bf03e1e56cb6f0ed1d48bb3ea60c0">operator!=</a>(const ConfigurationSpecification &amp;r) const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a960ebd93cb8c58ceab0eb48b047faa98">operator==</a>(const ConfigurationSpecification &amp;r) const </td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a54f613faeb77f06c9942d09833274962">ResetGroupOffsets</a>()</td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a2604e7d09eac46b2cd1aa71bde874c96">~ConfigurationSpecification</a>()</td><td><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td><td><code> [inline, virtual]</code></td></tr>
+</table></div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:12 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

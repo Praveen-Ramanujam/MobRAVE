@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="dir_2f5f826d7999681d6215b81abb082a29" kind="dir">
+    <compoundname>src/</compoundname>
+    <innerdir refid="dir_6b5579941f1171821235dfa8057ed3bb">src/cppexamples/</innerdir>
+    <innerdir refid="dir_764ca758fe038d18e1e0ff68e4538ebe">src/libopenrave/</innerdir>
+    <innerdir refid="dir_5c78347d7c9c217df46aae0a309e4868">src/libopenrave-core/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/src/"/>
+  </compounddef>
+</doxygen>

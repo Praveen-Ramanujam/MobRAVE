@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::OdometryGeomData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry" prot="public" virt="non-virtual">SensorGeometry</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData_1ad72c5cd70e2bba6529c2d798cbda429e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string targetid</definition>
+        <argsstring></argsstring>
+        <name>targetid</name>
+        <briefdescription>
+<para>id of the target whose odometry/pose messages are being published for </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="280" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="277" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="277" bodyend="279"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1528">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1527">
+        <label>OdometryGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData"/>
+        <childnode refid="1528" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1530">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1531">
+        <label>string</label>
+        <childnode refid="1532" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1532">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1529">
+        <label>OdometryGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData"/>
+        <childnode refid="1530" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1531" relation="usage">
+          <edgelabel>targetid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="275" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="274" bodyend="281"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::OdometryGeomData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData_1ad72c5cd70e2bba6529c2d798cbda429e" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::OdometryGeomData</scope><name>targetid</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a2448e133d651783f1acfe3f944ba4dc3" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::OdometryGeomData</scope><name>~SensorGeometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

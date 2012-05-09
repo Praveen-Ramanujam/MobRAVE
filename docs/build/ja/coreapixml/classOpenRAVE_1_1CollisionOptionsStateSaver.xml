@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1CollisionOptionsStateSaver" kind="class" prot="public">
+    <compoundname>OpenRAVE::CollisionOptionsStateSaver</compoundname>
+    <includes refid="collisionchecker_8h" local="no">collisionchecker.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionOptionsStateSaver_1a9cd88fb0121cb7572dfec821f9932b11" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _oldoptions</definition>
+        <argsstring></argsstring>
+        <name>_oldoptions</name>
+        <briefdescription>
+<para>saved options </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="218" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionOptionsStateSaver_1a718069607b69b29c919c537024463ca6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ae3e7611a64b7d4204203d69014f45fe8" kindref="member">CollisionCheckerBasePtr</ref></type>
+        <definition>CollisionCheckerBasePtr _p</definition>
+        <argsstring></argsstring>
+        <name>_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="219" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1CollisionOptionsStateSaver_1a89b2ace932ac3dd88380d4480568d038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CollisionOptionsStateSaver</definition>
+        <argsstring>(CollisionCheckerBasePtr p, int newoptions, bool required=true)</argsstring>
+        <name>CollisionOptionsStateSaver</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ae3e7611a64b7d4204203d69014f45fe8" kindref="member">CollisionCheckerBasePtr</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newoptions</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>required</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="215" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2132" bodyend="2141"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1CollisionOptionsStateSaver_1af555c726e606d1ad162de608b8e92854" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~CollisionOptionsStateSaver</definition>
+        <argsstring>()</argsstring>
+        <name>~CollisionOptionsStateSaver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="216" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2143" bodyend="2146"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper class to save and restore the collision options. If options are not supported and required is true, throws an exception. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="213" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="212" bodyend="220"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1CollisionOptionsStateSaver_1a9cd88fb0121cb7572dfec821f9932b11" prot="private" virt="non-virtual"><scope>OpenRAVE::CollisionOptionsStateSaver</scope><name>_oldoptions</name></member>
+      <member refid="classOpenRAVE_1_1CollisionOptionsStateSaver_1a718069607b69b29c919c537024463ca6" prot="private" virt="non-virtual"><scope>OpenRAVE::CollisionOptionsStateSaver</scope><name>_p</name></member>
+      <member refid="classOpenRAVE_1_1CollisionOptionsStateSaver_1a89b2ace932ac3dd88380d4480568d038" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionOptionsStateSaver</scope><name>CollisionOptionsStateSaver</name></member>
+      <member refid="classOpenRAVE_1_1CollisionOptionsStateSaver_1af555c726e606d1ad162de608b8e92854" prot="public" virt="virtual"><scope>OpenRAVE::CollisionOptionsStateSaver</scope><name>~CollisionOptionsStateSaver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

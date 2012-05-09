@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1KinBody_1_1ManageData" kind="class" prot="public">
+    <compoundname>OpenRAVE::KinBody::ManageData</compoundname>
+    <derivedcompoundref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData" prot="public" virt="non-virtual">BodyData</derivedcompoundref>
+    <includes refid="kinbody_8h" local="no">kinbody.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1ManageData_1a1df910b287a103755ee05b34a415238e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1afe93ae4b6851a3478f5995cfbfcb0446" kindref="member">SensorSystemBaseWeakPtr</ref></type>
+        <definition>SensorSystemBaseWeakPtr _psensorsystem</definition>
+        <argsstring></argsstring>
+        <name>_psensorsystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the system that owns this class, note that it is a weak pointer in order because this object is managed by the sensor system and should be deleted when it goes out of scope. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="815" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="815" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1ManageData_1aa4a8732464771a3e13bd9386bb7885c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ManageData</definition>
+        <argsstring>(SensorSystemBasePtr psensorsystem)</argsstring>
+        <name>ManageData</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1adeaf3fbb73ee82de32efcd886d780f0b" kindref="member">SensorSystemBasePtr</ref></type>
+          <declname>psensorsystem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="782" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="782" bodyend="783"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1ManageData_1a7d41319cbd5c777d79fef94151723dde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~ManageData</definition>
+        <argsstring>()</argsstring>
+        <name>~ManageData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="784" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="784" bodyend="785"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1ManageData_1a707206b177bb1a927df03c56fafda9db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1adeaf3fbb73ee82de32efcd886d780f0b" kindref="member">SensorSystemBasePtr</ref></type>
+        <definition>virtual SensorSystemBasePtr GetSystem</definition>
+        <argsstring>()</argsstring>
+        <name>GetSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="787" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="787" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1ManageData_1aa6b2b0537af9c4f866af4d490825feb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a621f0dea132e9220594b6541cbbe4aab" kindref="member">XMLReadableConstPtr</ref></type>
+        <definition>virtual XMLReadableConstPtr GetData</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetData</name>
+        <reimplementedby refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a194db41325bf612dfaf84620962ed493">GetData</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>returns a pointer to the data used to initialize the BODY with AddKinBody. if psize is not NULL, will be filled with the size of the data in bytes This function will be used to restore bodies that were removed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="794"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1ManageData_1ad37372e87ef720bad3b3fb5a58b5daf5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">KinBody::LinkPtr</ref></type>
+        <definition>virtual KinBody::LinkPtr GetOffsetLink</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetOffsetLink</name>
+        <reimplementedby refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a65d126a7915789b77492d87dc3962347">GetOffsetLink</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>particular link that sensor system is tracking. All transformations describe this link. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="798"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1ManageData_1acd2229d4405249dbbbd772c9686409de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IsPresent</definition>
+        <argsstring>() const =0</argsstring>
+        <name>IsPresent</name>
+        <reimplementedby refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a22d8212ee560a8abd6d73cccf32bbd78">IsPresent</reimplementedby>
+        <briefdescription>
+<para>true if the object is being updated by the system due to its presence in the real environment </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="801"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1ManageData_1ad39e678855b8c0b0d294b6d346396462" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IsEnabled</definition>
+        <argsstring>() const =0</argsstring>
+        <name>IsEnabled</name>
+        <reimplementedby refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1ab093c91e2859f12d929fe8665e67a8e8">IsEnabled</reimplementedby>
+        <briefdescription>
+<para>true if should update openrave body </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="804"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1ManageData_1ae7bc78361f30bfda0286c8af11392f2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IsLocked</definition>
+        <argsstring>() const =0</argsstring>
+        <name>IsLocked</name>
+        <reimplementedby refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1ac2ff4037e2a4a6160f5c44c25032d18c">IsLocked</reimplementedby>
+        <briefdescription>
+<para>if true, the vision system should not destroy this object once it stops being present </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="807"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1ManageData_1a652890825714be86dde479f3283e0978" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Lock</definition>
+        <argsstring>(bool bDoLock)=0</argsstring>
+        <name>Lock</name>
+        <reimplementedby refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a6d79e276188e4fcccb1c44f05fcc56c4">Lock</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bDoLock</declname>
+        </param>
+        <briefdescription>
+<para>set a lock on a particular body </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="810"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Access point of the sensor system that manages the body. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1452">
+        <label>ManageData</label>
+        <link refid="classOpenRAVE_1_1KinBody_1_1ManageData"/>
+      </node>
+      <node id="1453">
+        <label>BodyData</label>
+        <link refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData"/>
+        <childnode refid="1452" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="780" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="779" bodyend="816"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1KinBody_1_1ManageData_1a1df910b287a103755ee05b34a415238e" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::ManageData</scope><name>_psensorsystem</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1ManageData_1aa6b2b0537af9c4f866af4d490825feb0" prot="public" virt="pure-virtual"><scope>OpenRAVE::KinBody::ManageData</scope><name>GetData</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1ManageData_1ad37372e87ef720bad3b3fb5a58b5daf5" prot="public" virt="pure-virtual"><scope>OpenRAVE::KinBody::ManageData</scope><name>GetOffsetLink</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1ManageData_1a707206b177bb1a927df03c56fafda9db" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::ManageData</scope><name>GetSystem</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1ManageData_1ad39e678855b8c0b0d294b6d346396462" prot="public" virt="pure-virtual"><scope>OpenRAVE::KinBody::ManageData</scope><name>IsEnabled</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1ManageData_1ae7bc78361f30bfda0286c8af11392f2d" prot="public" virt="pure-virtual"><scope>OpenRAVE::KinBody::ManageData</scope><name>IsLocked</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1ManageData_1acd2229d4405249dbbbd772c9686409de" prot="public" virt="pure-virtual"><scope>OpenRAVE::KinBody::ManageData</scope><name>IsPresent</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1ManageData_1a652890825714be86dde479f3283e0978" prot="public" virt="pure-virtual"><scope>OpenRAVE::KinBody::ManageData</scope><name>Lock</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1ManageData_1aa4a8732464771a3e13bd9386bb7885c8" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::ManageData</scope><name>ManageData</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1ManageData_1a7d41319cbd5c777d79fef94151723dde" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::ManageData</scope><name>~ManageData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

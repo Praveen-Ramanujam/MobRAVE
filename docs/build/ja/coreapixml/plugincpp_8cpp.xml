@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="plugincpp_8cpp" kind="file">
+    <compoundname>plugincpp.cpp</compoundname>
+    <includes refid="openrave_8h" local="no">openrave/openrave.h</includes>
+    <includes refid="plugin_8h" local="no">openrave/plugin.h</includes>
+    <includes local="no">boost/bind.hpp</includes>
+    <incdepgraph>
+      <node id="3296">
+        <label>list</label>
+      </node>
+      <node id="3308">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="3333">
+        <label>openrave/robot.h</label>
+        <link refid="robot_8h"/>
+      </node>
+      <node id="3290">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3340">
+        <label>openrave/environment.h</label>
+        <link refid="environment_8h"/>
+      </node>
+      <node id="3325">
+        <label>openrave/plugininfo.h</label>
+        <link refid="plugininfo_8h"/>
+      </node>
+      <node id="3327">
+        <label>openrave/spacesampler.h</label>
+        <link refid="spacesampler_8h"/>
+      </node>
+      <node id="3300">
+        <label>iomanip</label>
+      </node>
+      <node id="3304">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="3320">
+        <label>limits</label>
+      </node>
+      <node id="3323">
+        <label>openrave/mathextra.h</label>
+        <link refid="mathextra_8h"/>
+        <childnode refid="3322" relation="include">
+        </childnode>
+        <childnode refid="3318" relation="include">
+        </childnode>
+        <childnode refid="3324" relation="include">
+        </childnode>
+      </node>
+      <node id="3306">
+        <label>boost/tuple/tuple.hpp</label>
+      </node>
+      <node id="3310">
+        <label>boost/thread/recursive_mutex.hpp</label>
+      </node>
+      <node id="3315">
+        <label>openrave/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="3293">
+        <label>stdint.h</label>
+      </node>
+      <node id="3312">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="3316">
+        <label>openrave/interfacehashes.h</label>
+        <link refid="interfacehashes_8h"/>
+      </node>
+      <node id="3318">
+        <label>cmath</label>
+      </node>
+      <node id="3322">
+        <label>cassert</label>
+      </node>
+      <node id="3311">
+        <label>boost/static_assert.hpp</label>
+      </node>
+      <node id="3309">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="3294">
+        <label>string</label>
+      </node>
+      <node id="3341">
+        <label>openrave/plugin.h</label>
+        <link refid="plugin_8h"/>
+        <childnode refid="3288" relation="include">
+        </childnode>
+        <childnode refid="3312" relation="include">
+        </childnode>
+      </node>
+      <node id="3305">
+        <label>boost/weak_ptr.hpp</label>
+      </node>
+      <node id="3297">
+        <label>map</label>
+      </node>
+      <node id="3299">
+        <label>exception</label>
+      </node>
+      <node id="3301">
+        <label>fstream</label>
+      </node>
+      <node id="3331">
+        <label>openrave/collisionchecker.h</label>
+        <link refid="collisionchecker_8h"/>
+      </node>
+      <node id="3303">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="3336">
+        <label>openrave/controller.h</label>
+        <link refid="controller_8h"/>
+      </node>
+      <node id="3335">
+        <label>openrave/planner.h</label>
+        <link refid="planner_8h"/>
+      </node>
+      <node id="3288">
+        <label>openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="3289" relation="include">
+        </childnode>
+        <childnode refid="3290" relation="include">
+        </childnode>
+        <childnode refid="3291" relation="include">
+        </childnode>
+        <childnode refid="3292" relation="include">
+        </childnode>
+        <childnode refid="3293" relation="include">
+        </childnode>
+        <childnode refid="3294" relation="include">
+        </childnode>
+        <childnode refid="3295" relation="include">
+        </childnode>
+        <childnode refid="3296" relation="include">
+        </childnode>
+        <childnode refid="3297" relation="include">
+        </childnode>
+        <childnode refid="3298" relation="include">
+        </childnode>
+        <childnode refid="3299" relation="include">
+        </childnode>
+        <childnode refid="3300" relation="include">
+        </childnode>
+        <childnode refid="3301" relation="include">
+        </childnode>
+        <childnode refid="3302" relation="include">
+        </childnode>
+        <childnode refid="3303" relation="include">
+        </childnode>
+        <childnode refid="3304" relation="include">
+        </childnode>
+        <childnode refid="3305" relation="include">
+        </childnode>
+        <childnode refid="3306" relation="include">
+        </childnode>
+        <childnode refid="3307" relation="include">
+        </childnode>
+        <childnode refid="3308" relation="include">
+        </childnode>
+        <childnode refid="3309" relation="include">
+        </childnode>
+        <childnode refid="3310" relation="include">
+        </childnode>
+        <childnode refid="3311" relation="include">
+        </childnode>
+        <childnode refid="3312" relation="include">
+        </childnode>
+        <childnode refid="3313" relation="include">
+        </childnode>
+        <childnode refid="3314" relation="include">
+        </childnode>
+        <childnode refid="3315" relation="include">
+        </childnode>
+        <childnode refid="3316" relation="include">
+        </childnode>
+        <childnode refid="3317" relation="include">
+        </childnode>
+        <childnode refid="3323" relation="include">
+        </childnode>
+        <childnode refid="3325" relation="include">
+        </childnode>
+        <childnode refid="3326" relation="include">
+        </childnode>
+        <childnode refid="3327" relation="include">
+        </childnode>
+        <childnode refid="3328" relation="include">
+        </childnode>
+        <childnode refid="3329" relation="include">
+        </childnode>
+        <childnode refid="3330" relation="include">
+        </childnode>
+        <childnode refid="3331" relation="include">
+        </childnode>
+        <childnode refid="3332" relation="include">
+        </childnode>
+        <childnode refid="3333" relation="include">
+        </childnode>
+        <childnode refid="3334" relation="include">
+        </childnode>
+        <childnode refid="3335" relation="include">
+        </childnode>
+        <childnode refid="3336" relation="include">
+        </childnode>
+        <childnode refid="3337" relation="include">
+        </childnode>
+        <childnode refid="3338" relation="include">
+        </childnode>
+        <childnode refid="3339" relation="include">
+        </childnode>
+        <childnode refid="3340" relation="include">
+        </childnode>
+      </node>
+      <node id="3289">
+        <label>cstdio</label>
+      </node>
+      <node id="3339">
+        <label>openrave/viewer.h</label>
+        <link refid="viewer_8h"/>
+      </node>
+      <node id="3295">
+        <label>vector</label>
+      </node>
+      <node id="3328">
+        <label>openrave/kinbody.h</label>
+        <link refid="kinbody_8h"/>
+      </node>
+      <node id="3321">
+        <label>utility</label>
+      </node>
+      <node id="3302">
+        <label>sstream</label>
+      </node>
+      <node id="3338">
+        <label>openrave/sensorsystem.h</label>
+        <link refid="sensorsystem_8h"/>
+      </node>
+      <node id="3337">
+        <label>openrave/physicsengine.h</label>
+        <link refid="physicsengine_8h"/>
+      </node>
+      <node id="3307">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="3317">
+        <label>openrave/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="3318" relation="include">
+        </childnode>
+        <childnode refid="3319" relation="include">
+        </childnode>
+        <childnode refid="3320" relation="include">
+        </childnode>
+        <childnode refid="3321" relation="include">
+        </childnode>
+        <childnode refid="3291" relation="include">
+        </childnode>
+        <childnode refid="3292" relation="include">
+        </childnode>
+        <childnode refid="3322" relation="include">
+        </childnode>
+      </node>
+      <node id="3292">
+        <label>cstdlib</label>
+      </node>
+      <node id="3319">
+        <label>iostream</label>
+      </node>
+      <node id="3329">
+        <label>openrave/trajectory.h</label>
+        <link refid="trajectory_8h"/>
+      </node>
+      <node id="3324">
+        <label>climits</label>
+      </node>
+      <node id="3342">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="3326">
+        <label>openrave/interface.h</label>
+        <link refid="interface_8h"/>
+      </node>
+      <node id="3334">
+        <label>openrave/iksolver.h</label>
+        <link refid="iksolver_8h"/>
+      </node>
+      <node id="3313">
+        <label>boost/array.hpp</label>
+      </node>
+      <node id="3330">
+        <label>openrave/module.h</label>
+        <link refid="module_8h"/>
+      </node>
+      <node id="3298">
+        <label>set</label>
+      </node>
+      <node id="3314">
+        <label>boost/multi_array.hpp</label>
+      </node>
+      <node id="3287">
+        <label>src/cppexamples/plugincpp.cpp</label>
+        <link refid="plugincpp.cpp"/>
+        <childnode refid="3288" relation="include">
+        </childnode>
+        <childnode refid="3341" relation="include">
+        </childnode>
+        <childnode refid="3342" relation="include">
+        </childnode>
+      </node>
+      <node id="3291">
+        <label>cstring</label>
+      </node>
+      <node id="3332">
+        <label>openrave/sensor.h</label>
+        <link refid="sensor_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classMyModule" prot="public">MyModule</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="plugincpp_8cpp_1a821cda75126120c6e71819ba8e35cabf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>InterfaceBasePtr</type>
+        <definition>InterfaceBasePtr CreateInterfaceValidated</definition>
+        <argsstring>(InterfaceType type, const std::string &amp;interfacename, std::istream &amp;sinput, EnvironmentBasePtr penv)</argsstring>
+        <name>CreateInterfaceValidated</name>
+        <param>
+          <type>InterfaceType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>interfacename</declname>
+        </param>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>sinput</declname>
+        </param>
+        <param>
+          <type>EnvironmentBasePtr</type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" line="55" bodyfile="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" bodystart="54" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__exports_1gaf90c03438b94cc76e7b8a54d445ec106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetPluginAttributesValidated</definition>
+        <argsstring>(PLUGININFO &amp;info)</argsstring>
+        <name>GetPluginAttributesValidated</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1PLUGININFO" kindref="compound">OpenRAVE::PLUGININFO</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para><bold><bold></bold>[helper]</bold> Validated function callback for returning a plugin&apos;s information. No checks need to be made on the parmaeters. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is called only once initially to determine what the plugin offers. It should be the safest funcdtion and should not create any static resources for the plugin. Only use when <ref refid="plugin_8h" kindref="compound">rave/plugin.h</ref> is included. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Holds information on what services this plugin provides. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" line="63" bodyfile="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__exports_1gad6773d91dae37d0ba9de59d2a05277e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OPENRAVE_PLUGIN_API void</type>
+        <definition>OPENRAVE_PLUGIN_API void DestroyPlugin</definition>
+        <argsstring>()</argsstring>
+        <name>DestroyPlugin</name>
+        <briefdescription>
+<para><bold><bold></bold>[export]</bold> Stub function to be defined by plugin that includes <ref refid="plugin_8h" kindref="compound">rave/plugin.h</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" line="68" bodyfile="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="openrave_8h" kindref="compound" tooltip="Defines the public headers that every plugin must include in order to use openrave...">openrave/openrave.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="plugin_8h" kindref="compound" tooltip="Provides helper functions for creating plugins. Defines all the necessary functions...">openrave/plugin.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">OpenRAVE;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classMyModule" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyModule" kindref="compound">MyModule</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ModuleBase" kindref="compound" tooltip="[interface] A loadable module of user code meant to solve a specific domain. If not...">ModuleBase</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="classMyModule_1a70c9843a70fc8afb5401c63b08afe312" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMyModule_1a70c9843a70fc8afb5401c63b08afe312" kindref="member">MyModule</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)<sp/>:<sp/><ref refid="classOpenRAVE_1_1ModuleBase" kindref="compound" tooltip="[interface] A loadable module of user code meant to solve a specific domain. If not...">ModuleBase</ref>(penv)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" kindref="member">__description</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;A<sp/>very<sp/>simple<sp/>plugin.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" kindref="member" tooltip="Registers a command and its help string.">RegisterCommand</ref>(</highlight><highlight class="stringliteral">&quot;numbodies&quot;</highlight><highlight class="normal">,boost::bind(&amp;<ref refid="classMyModule_1ad852aa14e4ab678c41b4bd0e9e4c9a61" kindref="member">MyModule::NumBodies</ref>,</highlight><highlight class="keyword">this</highlight><highlight class="normal">,_1,_2),</highlight><highlight class="stringliteral">&quot;returns<sp/>bodies&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" kindref="member" tooltip="Registers a command and its help string.">RegisterCommand</ref>(</highlight><highlight class="stringliteral">&quot;load&quot;</highlight><highlight class="normal">,boost::bind(&amp;<ref refid="classMyModule_1a3454d0158278faae615ba251964919b5" kindref="member">MyModule::Load</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,_1,_2),</highlight><highlight class="stringliteral">&quot;loads<sp/>a<sp/>given<sp/>file&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24" refid="classMyModule_1a36a98806f9de4436a88d6b683b34d838" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classMyModule_1a36a98806f9de4436a88d6b683b34d838" kindref="member">~MyModule</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classMyModule_1ac919a991060ede6983343719401686de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMyModule_1ac919a991060ede6983343719401686de" kindref="member" tooltip="called when problem gets unloaded from environment">Destroy</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(</highlight><highlight class="stringliteral">&quot;module<sp/>unloaded<sp/>from<sp/>environment\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classMyModule_1a02badd80bf345ba522a25ba31e620e9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMyModule_1a02badd80bf345ba522a25ba31e620e9c" kindref="member">main</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>cmd)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(</highlight><highlight class="stringliteral">&quot;module<sp/>initialized<sp/>cmd;<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>cmd.c_str());</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classMyModule_1ad852aa14e4ab678c41b4bd0e9e4c9a61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMyModule_1ad852aa14e4ab678c41b4bd0e9e4c9a61" kindref="member">NumBodies</ref>(ostream&amp;<sp/>sout,<sp/>istream&amp;<sp/>sinput)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;KinBodyPtr&gt;<sp/>vbodies;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" kindref="member">GetEnv</ref>()-&gt;GetBodies(vbodies);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sout<sp/>&lt;&lt;<sp/>vbodies.size();<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>publish<sp/>the<sp/>results</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classMyModule_1a3454d0158278faae615ba251964919b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMyModule_1a3454d0158278faae615ba251964919b5" kindref="member">Load</ref>(ostream&amp;<sp/>sout,<sp/>istream&amp;<sp/>sinput)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sinput<sp/>&gt;&gt;<sp/>filename;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bSuccess<sp/>=<sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" kindref="member">GetEnv</ref>()-&gt;Load(filename.c_str());<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>the<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bSuccess;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="plugincpp_8cpp_1a821cda75126120c6e71819ba8e35cabf" refkind="member"><highlight class="normal"><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref><sp/><ref refid="customreader_8cpp_1a821cda75126120c6e71819ba8e35cabf" kindref="member">CreateInterfaceValidated</ref>(InterfaceType<sp/>type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>interfacename,<sp/>std::istream&amp;<sp/>sinput,<sp/><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((type<sp/>==<sp/>PT_Module)&amp;&amp;(interfacename<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;mymodule&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classMyModule" kindref="compound">MyModule</ref>(penv));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="group__plugin__exports_1gaf90c03438b94cc76e7b8a54d445ec106" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__plugin__exports_1gaf90c03438b94cc76e7b8a54d445ec106" kindref="member" tooltip="[helper] Validated function callback for returning a plugin&amp;#39;s information. No...">GetPluginAttributesValidated</ref>(<ref refid="classOpenRAVE_1_1PLUGININFO" kindref="compound" tooltip="Holds all the OpenRAVE-specific information provided by a plugin.">PLUGININFO</ref>&amp;<sp/>info)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>info.<ref refid="classOpenRAVE_1_1PLUGININFO_1a2d74b2b8311c0e6ed7e4afb33a98efa0" kindref="member" tooltip="offered interfaces">interfacenames</ref>[PT_Module].push_back(</highlight><highlight class="stringliteral">&quot;MyModule&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="group__plugin__exports_1gad6773d91dae37d0ba9de59d2a05277e4" refkind="member"><highlight class="normal"><ref refid="plugin_8h_1a6e162d18ddceb72d1e66482b37fef5eb" kindref="member">OPENRAVE_PLUGIN_API</ref><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__plugin__exports_1gad6773d91dae37d0ba9de59d2a05277e4" kindref="member" tooltip="[export] Stub function to be defined by plugin that includes rave/plugin.h.">DestroyPlugin</ref>()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(</highlight><highlight class="stringliteral">&quot;destroying<sp/>plugin\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp"/>
+  </compounddef>
+</doxygen>

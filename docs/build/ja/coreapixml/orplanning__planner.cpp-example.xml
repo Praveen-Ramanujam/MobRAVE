@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="orplanning__planner.cpp-example" kind="example">
+    <compoundname>orplanning_planner.cpp</compoundname>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Rosen Diankov</para></simplesect>
+Shows how to use a planner by directly creating the planner and setting the module parameters. The default values plan for the arm joints of a particular manipulator.</para><para><bold>Full Example Code:</bold> <programlisting><codeline></codeline>
+<codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="openrave-core_8h" kindref="compound">openrave-core.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/thread/thread.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/format.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">OpenRAVE;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WIN32_LEAN_AND_MEAN</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;winsock2.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>usleep(micro)<sp/>Sleep(micro/1000)</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opencvsaving_8cpp_1a87e5a6712bd042f3257acfbf82827714" kindref="member">SetViewer</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>viewername)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1af0d19499c5ac95f5e1ac60b29187d7c4" kindref="member">ViewerBasePtr</ref><sp/>viewer<sp/>=<sp/><ref refid="namespaceOpenRAVE_1a75b6125ec62afca70c38afe81f572db1" kindref="member">RaveCreateViewer</ref>(penv,viewername);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;AddViewer(viewer);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>viewer-&gt;main(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ikfastloader_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>argv)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>scenefilename<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;data/hanoi_complex2.env.xml&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>viewername<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;qtcoin&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ab89ccf2331c4ee81662f687cedaa1781" kindref="member" tooltip="Explicitly initializes the global OpenRAVE state (optional).">RaveInitialize</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv<sp/>=<sp/><ref refid="namespaceOpenRAVE_1aec9c3dd6a1f2908a1eb84ca59243e00a" kindref="member">RaveCreateEnvironment</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a4565818cc5d4875f6c462cb6c5ab1a80" kindref="member" tooltip="Sets the global openrave debug level. A combination of DebugLevel.">RaveSetDebugLevel</ref>(<ref refid="namespaceOpenRAVE_1ab658e6d84759440dbf3c890446075395abd3809f60dd27203b26d387b072b090f" kindref="member">Level_Debug</ref>);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>boost::thread<sp/>thviewer(boost::bind(<ref refid="opencvsaving_8cpp_1a87e5a6712bd042f3257acfbf82827714" kindref="member">SetViewer</ref>,penv,viewername));<sp/></highlight><highlight class="comment">//<sp/>create<sp/>the<sp/>viewer</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>usleep(200000);<sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>the<sp/>viewer<sp/>to<sp/>init</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;Load(scenefilename);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>usleep(100000);<sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>the<sp/>viewer<sp/>to<sp/>init</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;RobotBasePtr&gt;<sp/>vrobots;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;GetRobots(vrobots);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>probot<sp/>=<sp/>vrobots.at(0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>find<sp/>the<sp/>longest<sp/>manipulator<sp/>chain<sp/>to<sp/>move</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>RobotBase::ManipulatorPtr<sp/>pmanip<sp/>=<sp/>probot-&gt;GetManipulators().at(0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>probot-&gt;GetManipulators().size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>pmanip-&gt;GetArmIndices().size()<sp/>&lt;<sp/>probot-&gt;GetManipulators()[i]-&gt;GetArmIndices().size()<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pmanip<sp/>=<sp/>probot-&gt;GetManipulators()[i];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(str(boost::format(</highlight><highlight class="stringliteral">&quot;planning<sp/>with<sp/>manipulator<sp/>%s\n&quot;</highlight><highlight class="normal">)%pmanip-&gt;GetName()));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>probot-&gt;SetActiveDOFs(pmanip-&gt;GetArmIndices());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;dReal&gt;<sp/>vlower,vupper;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>probot-&gt;GetActiveDOFLimits(vlower,vupper);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>a<sp/>planner</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ab39121477d2dd841859e79f112b52a0b" kindref="member">PlannerBasePtr</ref><sp/>planner<sp/>=<sp/><ref refid="namespaceOpenRAVE_1a917047ebc086703b4eaf0bffd6ac9527" kindref="member">RaveCreatePlanner</ref>(penv,</highlight><highlight class="stringliteral">&quot;birrt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>PlannerBase::PlannerParametersPtr<sp/>params(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>PlannerBase::PlannerParameters());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>params-&gt;_nMaxIterations<sp/>=<sp/>4000;<sp/></highlight><highlight class="comment">//<sp/>max<sp/>iterations<sp/>before<sp/>failure</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>params-&gt;SetRobotActiveJoints(probot);<sp/></highlight><highlight class="comment">//<sp/>set<sp/>planning<sp/>configuration<sp/>space<sp/>to<sp/>current<sp/>active<sp/>dofs</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>params-&gt;vgoalconfig.resize(probot-&gt;GetActiveDOF());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>pgraph;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EnvironmentMutex::scoped_lock<sp/>lock(penv-&gt;GetMutex());<sp/></highlight><highlight class="comment">//<sp/>lock<sp/>environment</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>find<sp/>a<sp/>set<sp/>of<sp/>free<sp/>joint<sp/>values<sp/>for<sp/>the<sp/>robot</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RobotBase::RobotStateSaver<sp/>saver(probot);<sp/></highlight><highlight class="comment">//<sp/>save<sp/>the<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>vlower.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>params-&gt;vgoalconfig[i]<sp/>=<sp/>vlower[i]<sp/>+<sp/>(vupper[i]-vlower[i])*<ref refid="namespaceOpenRAVE_1af106eea57ab2fbb2e632347a3371a813" kindref="member">RaveRandomFloat</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probot-&gt;SetActiveDOFValues(params-&gt;vgoalconfig);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!penv-&gt;CheckCollision(probot)<sp/>&amp;&amp;<sp/>!probot-&gt;CheckSelfCollision()<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>robot<sp/>state<sp/>is<sp/>restored</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(</highlight><highlight class="stringliteral">&quot;starting<sp/>to<sp/>plan\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probot-&gt;GetActiveDOFValues(params-&gt;vinitialconfig);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!planner-&gt;InitPlan(probot,params)<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>a<sp/>new<sp/>output<sp/>trajectory</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref><sp/>ptraj<sp/>=<sp/><ref refid="namespaceOpenRAVE_1aa987900651248eee02dc1ce6647dc543" kindref="member" tooltip="Return an empty trajectory instance.">RaveCreateTrajectory</ref>(penv,</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!planner-&gt;PlanPath(ptraj)<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a9bbbf668aa39f398c341e946ab8a43f5" kindref="member">RAVELOG_WARN</ref>(</highlight><highlight class="stringliteral">&quot;plan<sp/>failed,<sp/>trying<sp/>again\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>draw<sp/>the<sp/>end<sp/>effector<sp/>of<sp/>the<sp/>trajectory</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RobotBase::RobotStateSaver<sp/>saver(probot);<sp/></highlight><highlight class="comment">//<sp/>save<sp/>the<sp/>state<sp/>of<sp/>the<sp/>robot<sp/>since<sp/>will<sp/>be<sp/>setting<sp/>joint<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;RaveVector&lt;float&gt;<sp/>&gt;<sp/>vpoints;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;dReal&gt;<sp/>vtrajdata;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>ftime<sp/>=<sp/>0;<sp/>ftime<sp/>&lt;=<sp/>ptraj-&gt;GetDuration();<sp/>ftime<sp/>+=<sp/>0.01)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptraj-&gt;Sample(vtrajdata,ftime,probot-&gt;GetActiveConfigurationSpecification());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probot-&gt;SetActiveDOFValues(vtrajdata);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vpoints.push_back(pmanip-&gt;GetEndEffectorTransform().trans);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pgraph<sp/>=<sp/>penv-&gt;drawlinestrip(&amp;vpoints[0].x,vpoints.size(),</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(vpoints[0]),1.0f);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>the<sp/>trajectory<sp/>to<sp/>the<sp/>robot</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probot-&gt;GetController()-&gt;SetPath(ptraj);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>the<sp/>robot<sp/>to<sp/>finish</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!probot-&gt;GetController()-&gt;IsDone())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usleep(1000);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>thviewer.join();<sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>the<sp/>viewer<sp/>thread<sp/>to<sp/>exit</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;Destroy();<sp/></highlight><highlight class="comment">//<sp/>destroy</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVECamera" kind="class" prot="public">
+    <compoundname>OpenRAVECamera</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVECamera_1adc179e985fc051be06f9a9aaf713aed0" prot="public" static="no" mutable="no">
+        <type>SensorBasePtr</type>
+        <definition>SensorBasePtr pcamera</definition>
+        <argsstring></argsstring>
+        <name>pcamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" line="54" bodyfile="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVECamera_1a8e024717e317bc47393595a53f1b8bd5" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1_1CameraGeomData" kindref="compound">SensorBase::CameraGeomData</ref></type>
+        <definition>SensorBase::CameraGeomData geom</definition>
+        <argsstring></argsstring>
+        <name>geom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" line="55" bodyfile="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVECamera_1ac0bd3d73c9354dbe454fbcf5990a518e" prot="public" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData" kindref="compound">SensorBase::CameraSensorData</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt;SensorBase::CameraSensorData&gt; pdata</definition>
+        <argsstring></argsstring>
+        <name>pdata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" line="56" bodyfile="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVECamera_1aba816f4f00aa201710204894c1823010" prot="public" static="no" mutable="no">
+        <type>IplImage *</type>
+        <definition>IplImage* img</definition>
+        <argsstring></argsstring>
+        <name>img</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" line="57" bodyfile="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVECamera_1a06f7b630c99538982e381d5300b3c7cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OpenRAVECamera</definition>
+        <argsstring>(SensorBasePtr psensor)</argsstring>
+        <name>OpenRAVECamera</name>
+        <param>
+          <type>SensorBasePtr</type>
+          <declname>psensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" line="44" bodyfile="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVECamera_1a669c5f25f1268859fcf9e51a52b5a5ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~OpenRAVECamera</definition>
+        <argsstring>()</argsstring>
+        <name>~OpenRAVECamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" line="50" bodyfile="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1558">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1559">
+        <label>RaveCameraIntrinsics&lt; dReal &gt;</label>
+        <link refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics"/>
+        <childnode refid="1560" relation="usage">
+          <edgelabel>distortion_coeffs</edgelabel>
+        </childnode>
+        <childnode refid="1561" relation="usage">
+          <edgelabel>distortion_model</edgelabel>
+        </childnode>
+      </node>
+      <node id="1561">
+        <label>string</label>
+        <childnode refid="1562" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1560">
+        <label>vector&lt; dReal &gt;</label>
+      </node>
+      <node id="1562">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1556">
+        <label>OpenRAVECamera</label>
+        <link refid="classOpenRAVECamera"/>
+        <childnode refid="1557" relation="usage">
+          <edgelabel>geom</edgelabel>
+        </childnode>
+      </node>
+      <node id="1557">
+        <label>CameraGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1CameraGeomData"/>
+        <childnode refid="1558" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1559" relation="usage">
+          <edgelabel>KK</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" line="41" bodyfile="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" bodystart="40" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classOpenRAVECamera_1a8e024717e317bc47393595a53f1b8bd5" prot="public" virt="non-virtual"><scope>OpenRAVECamera</scope><name>geom</name></member>
+      <member refid="classOpenRAVECamera_1aba816f4f00aa201710204894c1823010" prot="public" virt="non-virtual"><scope>OpenRAVECamera</scope><name>img</name></member>
+      <member refid="classOpenRAVECamera_1a06f7b630c99538982e381d5300b3c7cd" prot="public" virt="non-virtual"><scope>OpenRAVECamera</scope><name>OpenRAVECamera</name></member>
+      <member refid="classOpenRAVECamera_1adc179e985fc051be06f9a9aaf713aed0" prot="public" virt="non-virtual"><scope>OpenRAVECamera</scope><name>pcamera</name></member>
+      <member refid="classOpenRAVECamera_1ac0bd3d73c9354dbe454fbcf5990a518e" prot="public" virt="non-virtual"><scope>OpenRAVECamera</scope><name>pdata</name></member>
+      <member refid="classOpenRAVECamera_1a669c5f25f1268859fcf9e51a52b5a5ef" prot="public" virt="virtual"><scope>OpenRAVECamera</scope><name>~OpenRAVECamera</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

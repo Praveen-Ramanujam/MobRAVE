@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="opencvsaving_8cpp" kind="file">
+    <compoundname>opencvsaving.cpp</compoundname>
+    <includes refid="openrave-core_8h" local="no">openrave-core.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">boost/thread/thread.hpp</includes>
+    <includes local="no">boost/bind.hpp</includes>
+    <includes local="no">opencv/cv.h</includes>
+    <includes local="no">opencv/highgui.h</includes>
+    <incdepgraph>
+      <node id="2549">
+        <label>list</label>
+      </node>
+      <node id="2561">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="2586">
+        <label>openrave/robot.h</label>
+        <link refid="robot_8h"/>
+      </node>
+      <node id="2543">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2593">
+        <label>openrave/environment.h</label>
+        <link refid="environment_8h"/>
+      </node>
+      <node id="2578">
+        <label>openrave/plugininfo.h</label>
+        <link refid="plugininfo_8h"/>
+      </node>
+      <node id="2580">
+        <label>openrave/spacesampler.h</label>
+        <link refid="spacesampler_8h"/>
+      </node>
+      <node id="2553">
+        <label>iomanip</label>
+      </node>
+      <node id="2557">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="2573">
+        <label>limits</label>
+      </node>
+      <node id="2576">
+        <label>openrave/mathextra.h</label>
+        <link refid="mathextra_8h"/>
+        <childnode refid="2575" relation="include">
+        </childnode>
+        <childnode refid="2571" relation="include">
+        </childnode>
+        <childnode refid="2577" relation="include">
+        </childnode>
+      </node>
+      <node id="2559">
+        <label>boost/tuple/tuple.hpp</label>
+      </node>
+      <node id="2595">
+        <label>opencv/cv.h</label>
+      </node>
+      <node id="2563">
+        <label>boost/thread/recursive_mutex.hpp</label>
+      </node>
+      <node id="2568">
+        <label>openrave/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="2596">
+        <label>opencv/highgui.h</label>
+      </node>
+      <node id="2546">
+        <label>stdint.h</label>
+      </node>
+      <node id="2540">
+        <label>openrave-core.h</label>
+        <link refid="openrave-core_8h"/>
+        <childnode refid="2541" relation="include">
+        </childnode>
+      </node>
+      <node id="2565">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="2569">
+        <label>openrave/interfacehashes.h</label>
+        <link refid="interfacehashes_8h"/>
+      </node>
+      <node id="2571">
+        <label>cmath</label>
+      </node>
+      <node id="2575">
+        <label>cassert</label>
+      </node>
+      <node id="2564">
+        <label>boost/static_assert.hpp</label>
+      </node>
+      <node id="2562">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="2547">
+        <label>string</label>
+      </node>
+      <node id="2558">
+        <label>boost/weak_ptr.hpp</label>
+      </node>
+      <node id="2550">
+        <label>map</label>
+      </node>
+      <node id="2552">
+        <label>exception</label>
+      </node>
+      <node id="2554">
+        <label>fstream</label>
+      </node>
+      <node id="2584">
+        <label>openrave/collisionchecker.h</label>
+        <link refid="collisionchecker_8h"/>
+      </node>
+      <node id="2556">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="2589">
+        <label>openrave/controller.h</label>
+        <link refid="controller_8h"/>
+      </node>
+      <node id="2588">
+        <label>openrave/planner.h</label>
+        <link refid="planner_8h"/>
+      </node>
+      <node id="2541">
+        <label>openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="2542" relation="include">
+        </childnode>
+        <childnode refid="2543" relation="include">
+        </childnode>
+        <childnode refid="2544" relation="include">
+        </childnode>
+        <childnode refid="2545" relation="include">
+        </childnode>
+        <childnode refid="2546" relation="include">
+        </childnode>
+        <childnode refid="2547" relation="include">
+        </childnode>
+        <childnode refid="2548" relation="include">
+        </childnode>
+        <childnode refid="2549" relation="include">
+        </childnode>
+        <childnode refid="2550" relation="include">
+        </childnode>
+        <childnode refid="2551" relation="include">
+        </childnode>
+        <childnode refid="2552" relation="include">
+        </childnode>
+        <childnode refid="2553" relation="include">
+        </childnode>
+        <childnode refid="2554" relation="include">
+        </childnode>
+        <childnode refid="2555" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+        <childnode refid="2557" relation="include">
+        </childnode>
+        <childnode refid="2558" relation="include">
+        </childnode>
+        <childnode refid="2559" relation="include">
+        </childnode>
+        <childnode refid="2560" relation="include">
+        </childnode>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2562" relation="include">
+        </childnode>
+        <childnode refid="2563" relation="include">
+        </childnode>
+        <childnode refid="2564" relation="include">
+        </childnode>
+        <childnode refid="2565" relation="include">
+        </childnode>
+        <childnode refid="2566" relation="include">
+        </childnode>
+        <childnode refid="2567" relation="include">
+        </childnode>
+        <childnode refid="2568" relation="include">
+        </childnode>
+        <childnode refid="2569" relation="include">
+        </childnode>
+        <childnode refid="2570" relation="include">
+        </childnode>
+        <childnode refid="2576" relation="include">
+        </childnode>
+        <childnode refid="2578" relation="include">
+        </childnode>
+        <childnode refid="2579" relation="include">
+        </childnode>
+        <childnode refid="2580" relation="include">
+        </childnode>
+        <childnode refid="2581" relation="include">
+        </childnode>
+        <childnode refid="2582" relation="include">
+        </childnode>
+        <childnode refid="2583" relation="include">
+        </childnode>
+        <childnode refid="2584" relation="include">
+        </childnode>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2586" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+        <childnode refid="2588" relation="include">
+        </childnode>
+        <childnode refid="2589" relation="include">
+        </childnode>
+        <childnode refid="2590" relation="include">
+        </childnode>
+        <childnode refid="2591" relation="include">
+        </childnode>
+        <childnode refid="2592" relation="include">
+        </childnode>
+        <childnode refid="2593" relation="include">
+        </childnode>
+      </node>
+      <node id="2539">
+        <label>src/cppexamples/opencvsaving.cpp</label>
+        <link refid="opencvsaving.cpp"/>
+        <childnode refid="2540" relation="include">
+        </childnode>
+        <childnode refid="2548" relation="include">
+        </childnode>
+        <childnode refid="2562" relation="include">
+        </childnode>
+        <childnode refid="2594" relation="include">
+        </childnode>
+        <childnode refid="2595" relation="include">
+        </childnode>
+        <childnode refid="2596" relation="include">
+        </childnode>
+      </node>
+      <node id="2542">
+        <label>cstdio</label>
+      </node>
+      <node id="2592">
+        <label>openrave/viewer.h</label>
+        <link refid="viewer_8h"/>
+      </node>
+      <node id="2548">
+        <label>vector</label>
+      </node>
+      <node id="2581">
+        <label>openrave/kinbody.h</label>
+        <link refid="kinbody_8h"/>
+      </node>
+      <node id="2574">
+        <label>utility</label>
+      </node>
+      <node id="2555">
+        <label>sstream</label>
+      </node>
+      <node id="2591">
+        <label>openrave/sensorsystem.h</label>
+        <link refid="sensorsystem_8h"/>
+      </node>
+      <node id="2590">
+        <label>openrave/physicsengine.h</label>
+        <link refid="physicsengine_8h"/>
+      </node>
+      <node id="2560">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="2570">
+        <label>openrave/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="2571" relation="include">
+        </childnode>
+        <childnode refid="2572" relation="include">
+        </childnode>
+        <childnode refid="2573" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2544" relation="include">
+        </childnode>
+        <childnode refid="2545" relation="include">
+        </childnode>
+        <childnode refid="2575" relation="include">
+        </childnode>
+      </node>
+      <node id="2545">
+        <label>cstdlib</label>
+      </node>
+      <node id="2572">
+        <label>iostream</label>
+      </node>
+      <node id="2582">
+        <label>openrave/trajectory.h</label>
+        <link refid="trajectory_8h"/>
+      </node>
+      <node id="2577">
+        <label>climits</label>
+      </node>
+      <node id="2594">
+        <label>boost/bind.hpp</label>
+      </node>
+      <node id="2579">
+        <label>openrave/interface.h</label>
+        <link refid="interface_8h"/>
+      </node>
+      <node id="2587">
+        <label>openrave/iksolver.h</label>
+        <link refid="iksolver_8h"/>
+      </node>
+      <node id="2566">
+        <label>boost/array.hpp</label>
+      </node>
+      <node id="2583">
+        <label>openrave/module.h</label>
+        <link refid="module_8h"/>
+      </node>
+      <node id="2551">
+        <label>set</label>
+      </node>
+      <node id="2567">
+        <label>boost/multi_array.hpp</label>
+      </node>
+      <node id="2544">
+        <label>cstring</label>
+      </node>
+      <node id="2585">
+        <label>openrave/sensor.h</label>
+        <link refid="sensor_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classOpenRAVECamera" prot="public">OpenRAVECamera</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="opencvsaving_8cpp_1a87e5a6712bd042f3257acfbf82827714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetViewer</definition>
+        <argsstring>(EnvironmentBasePtr penv, const string &amp;viewername)</argsstring>
+        <name>SetViewer</name>
+        <param>
+          <type>EnvironmentBasePtr</type>
+          <declname>penv</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>viewername</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" line="28" bodyfile="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" bodystart="27" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="opencvsaving_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" line="61" bodyfile="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp" bodystart="60" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="openrave-core_8h" kindref="compound">openrave-core.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/thread/thread.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv/cv.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv/highgui.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WIN32_LEAN_AND_MEAN</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;winsock2.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>usleep(micro)<sp/>Sleep(micro/1000)</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">OpenRAVE;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="opencvsaving_8cpp_1a87e5a6712bd042f3257acfbf82827714" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="opencvsaving_8cpp_1a87e5a6712bd042f3257acfbf82827714" kindref="member">SetViewer</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>viewername)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1af0d19499c5ac95f5e1ac60b29187d7c4" kindref="member">ViewerBasePtr</ref><sp/>viewer<sp/>=<sp/><ref refid="namespaceOpenRAVE_1a75b6125ec62afca70c38afe81f572db1" kindref="member">RaveCreateViewer</ref>(penv,viewername);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_ASSERT(!!viewer);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>attach<sp/>it<sp/>to<sp/>the<sp/>environment:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;AddViewer(viewer);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>finally<sp/>you<sp/>call<sp/>the<sp/>viewer&apos;s<sp/>infinite<sp/>loop<sp/>(this<sp/>is<sp/>why<sp/>you<sp/>need<sp/>a<sp/>separate<sp/>thread)<sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showgui<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>viewer-&gt;main(showgui);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classOpenRAVECamera" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOpenRAVECamera" kindref="compound">OpenRAVECamera</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43" refid="classOpenRAVECamera_1a06f7b630c99538982e381d5300b3c7cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVECamera_1a06f7b630c99538982e381d5300b3c7cd" kindref="member">OpenRAVECamera</ref>(<ref refid="namespaceOpenRAVE_1adb9a2496735bc0d80ced5a5d7dfb653b" kindref="member">SensorBasePtr</ref><sp/>psensor)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVECamera_1adc179e985fc051be06f9a9aaf713aed0" kindref="member">pcamera</ref>=psensor;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVECamera_1ac0bd3d73c9354dbe454fbcf5990a518e" kindref="member">pdata</ref><sp/>=<sp/>boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData" kindref="compound">SensorBase::CameraSensorData</ref>&gt;(<ref refid="classOpenRAVECamera_1adc179e985fc051be06f9a9aaf713aed0" kindref="member">pcamera</ref>-&gt;CreateSensorData(SensorBase::ST_Camera));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVECamera_1a8e024717e317bc47393595a53f1b8bd5" kindref="member">geom</ref><sp/>=<sp/>*boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1SensorBase_1_1CameraGeomData" kindref="compound">SensorBase::CameraGeomData</ref>&gt;(<ref refid="classOpenRAVECamera_1adc179e985fc051be06f9a9aaf713aed0" kindref="member">pcamera</ref>-&gt;GetSensorGeometry(SensorBase::ST_Camera));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVECamera_1aba816f4f00aa201710204894c1823010" kindref="member">img</ref><sp/>=<sp/>cvCreateImage(cvSize(geom.width,geom.height),IPL_DEPTH_8U,3);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50" refid="classOpenRAVECamera_1a669c5f25f1268859fcf9e51a52b5a5ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVECamera_1a669c5f25f1268859fcf9e51a52b5a5ef" kindref="member">~OpenRAVECamera</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvReleaseImage(&amp;<ref refid="classOpenRAVECamera_1aba816f4f00aa201710204894c1823010" kindref="member">img</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classOpenRAVECamera_1adc179e985fc051be06f9a9aaf713aed0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1adb9a2496735bc0d80ced5a5d7dfb653b" kindref="member">SensorBasePtr</ref><sp/><ref refid="classOpenRAVECamera_1adc179e985fc051be06f9a9aaf713aed0" kindref="member">pcamera</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classOpenRAVECamera_1a8e024717e317bc47393595a53f1b8bd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1SensorBase_1_1CameraGeomData" kindref="compound">SensorBase::CameraGeomData</ref><sp/><ref refid="classOpenRAVECamera_1a8e024717e317bc47393595a53f1b8bd5" kindref="member">geom</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classOpenRAVECamera_1ac0bd3d73c9354dbe454fbcf5990a518e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;SensorBase::CameraSensorData&gt;<sp/><ref refid="classOpenRAVECamera_1ac0bd3d73c9354dbe454fbcf5990a518e" kindref="member">pdata</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classOpenRAVECamera_1aba816f4f00aa201710204894c1823010" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IplImage*<sp/><ref refid="classOpenRAVECamera_1aba816f4f00aa201710204894c1823010" kindref="member">img</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="opencvsaving_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ikfastloader_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>argv)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ab89ccf2331c4ee81662f687cedaa1781" kindref="member" tooltip="Explicitly initializes the global OpenRAVE state (optional).">RaveInitialize</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>start<sp/>openrave<sp/>core</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv<sp/>=<sp/><ref refid="namespaceOpenRAVE_1aec9c3dd6a1f2908a1eb84ca59243e00a" kindref="member">RaveCreateEnvironment</ref>();<sp/></highlight><highlight class="comment">//<sp/>create<sp/>the<sp/>main<sp/>environment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::thread<sp/>thviewer(boost::bind(<ref refid="opencvsaving_8cpp_1a87e5a6712bd042f3257acfbf82827714" kindref="member">SetViewer</ref>,penv,</highlight><highlight class="stringliteral">&quot;qtcoin&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;Load(</highlight><highlight class="stringliteral">&quot;data/pa10calib_envcamera.env.xml&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;RobotBasePtr&gt;<sp/>vrobots;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;GetRobots(vrobots);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>vrobots.size()<sp/>&gt;<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(</highlight><highlight class="stringliteral">&quot;moving<sp/>the<sp/>robot<sp/>a<sp/>little\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref><sp/>t<sp/>=<sp/>vrobots.at(0)-&gt;GetTransform();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t.trans.x<sp/>+=<sp/>0.6;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vrobots.at(0)-&gt;SetTransform(t);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>extract<sp/>all<sp/>the<sp/>cameras</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;SensorBasePtr&gt;<sp/>allsensors;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;GetSensors(allsensors);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>boost::shared_ptr&lt;OpenRAVECamera&gt;<sp/>&gt;<sp/>vcameras;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/>std::vector&lt;SensorBasePtr&gt;::iterator<sp/>itsensor<sp/>=<sp/>allsensors.begin();<sp/>itsensor<sp/>!=<sp/>allsensors.end();<sp/>++itsensor)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(*itsensor)-&gt;Supports(SensorBase::ST_Camera)<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*itsensor)-&gt;Configure(SensorBase::CC_PowerOn);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*itsensor)-&gt;Configure(SensorBase::CC_RenderDataOn);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vcameras.push_back(boost::shared_ptr&lt;OpenRAVECamera&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVECamera" kindref="compound">OpenRAVECamera</ref>(*itsensor)));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>read<sp/>the<sp/>camera<sp/>data<sp/>and<sp/>save<sp/>the<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>icamera<sp/>=<sp/>0;<sp/>icamera<sp/>&lt;<sp/>vcameras.size();<sp/>++icamera)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vcameras[icamera]-&gt;pcamera-&gt;GetSensorData(vcameras[icamera]-&gt;pdata);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>vcameras[icamera]-&gt;pdata-&gt;vimagedata.size()<sp/>&gt;<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>imageData<sp/>=<sp/>vcameras[icamera]-&gt;img-&gt;imageData;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t*<sp/>src<sp/>=<sp/>&amp;vcameras[icamera]-&gt;pdata-&gt;vimagedata.at(0);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>vcameras[icamera]-&gt;geom.height;<sp/>i++,<sp/>imageData<sp/>+=<sp/>vcameras[icamera]-&gt;img-&gt;widthStep,<sp/>src<sp/>+=<sp/>3*vcameras[icamera]-&gt;geom.width)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;vcameras[icamera]-&gt;geom.width;<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageData[3*j]<sp/>=<sp/>src[3*j];</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageData[3*j+1]<sp/>=<sp/>src[3*j+1];</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageData[3*j+2]<sp/>=<sp/>src[3*j+2];</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename<sp/>=<sp/>str(boost::format(</highlight><highlight class="stringliteral">&quot;camera%d.jpg&quot;</highlight><highlight class="normal">)%icamera);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(str(boost::format(</highlight><highlight class="stringliteral">&quot;saving<sp/>image<sp/>%s&quot;</highlight><highlight class="normal">)%filename));</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvSaveImage(filename.c_str(),vcameras[icamera]-&gt;img);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usleep(200000);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/src/cppexamples/opencvsaving.cpp"/>
+  </compounddef>
+</doxygen>

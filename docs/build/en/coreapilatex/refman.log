@@ -1,0 +1,4182 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.25)  22 MAR 2012 20:42
+entering extended mode
+ %&-line parsing enabled.
+**refman.tex
+(./refman.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/tools/multicol.sty
+Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
+\c@tracingmulticols=\count88
+\mult@box=\box26
+\multicol@leftmargin=\dimen105
+\c@unbalance=\count89
+\c@collectmore=\count90
+\doublecol@number=\count91
+\multicoltolerance=\count92
+\multicolpretolerance=\count93
+\full@width=\dimen106
+\page@free=\dimen107
+\premulticols=\dimen108
+\postmulticols=\dimen109
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count94
+\c@finalcolumnbadness=\count95
+\last@try=\dimen110
+\multicolovershoot=\dimen111
+\multicolundershoot=\dimen112
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+)
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks15
+\float@box=\box52
+\@float@everytoks=\toks16
+\@floatcapt=\box53
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count97
+\lst@gtempboxa=\box54
+\lst@token=\toks17
+\lst@length=\count98
+\lst@currlwidth=\dimen113
+\lst@column=\count99
+\lst@pos=\count100
+\lst@lostspace=\dimen114
+\lst@width=\dimen115
+\lst@newlines=\count101
+\lst@lineno=\count102
+\lst@maxwidth=\dimen116
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count103
+\lst@skipnumbers=\count104
+\lst@framebox=\box55
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texmf-texlive/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)
+(/usr/share/texmf-texlive/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen117
+\Hy@linkcounter=\count105
+\Hy@pagecounter=\count106
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 2864.
+Package hyperref Info: Option `unicode' set `true' on input line 2864.
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/puenc.def
+File: puenc.def 2009/10/09 v6.79a Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing ON on input line 2993.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/hyperref/backref.sty
+Package: backref 2006/09/05 v1.28 Bibliographical back referencing
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count107
+\Field@Width=\dimen118
+\Fld@charsize=\dimen119
+\Field@toks=\toks18
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing ON on input line 4390.
+Package hyperref Info: Link coloring ON on input line 4395.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count108
+\c@Item=\count109
+\c@Hfootnote=\count110
+)
+*hyperref using driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count111
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+)) (./doxygen.sty
+Package: doxygen 
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen120
+\extrarowheight=\dimen121
+\NC@list=\toks21
+\extratabsurround=\skip45
+\backup@length=\skip46
+)
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count112
+\calc@Bcount=\count113
+\calc@Adimen=\dimen122
+\calc@Bdimen=\dimen123
+\calc@Askip=\skip47
+\calc@Bskip=\skip48
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count114
+\calc@Cskip=\skip49
+)
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip50
+\f@ncyO@elh=\skip51
+\f@ncyO@erh=\skip52
+\f@ncyO@olh=\skip53
+\f@ncyO@orh=\skip54
+\f@ncyO@elf=\skip55
+\f@ncyO@erf=\skip56
+\f@ncyO@olf=\skip57
+\f@ncyO@orf=\skip58
+)
+(/usr/share/texmf-texlive/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks22
+\verbatim@line=\toks23
+\verbatim@in@stream=\read1
+)
+\tmplength=\skip59
+
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)))
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+)
+\@indexfile=\write3
+\openout3 = `refman.idx'.
+
+
+Writing index file refman.idx
+(./refman.aux
+
+LaTeX Warning: Label `installation__windows_iwin_octavematlab' multiply defined
+.
+
+
+LaTeX Warning: Label `group__plugin__exports_ga6ae2f1554f547f27e4a5399d8aef7377
+' multiply defined.
+
+
+LaTeX Warning: Label `group__plugin__exports_ga7cb4e2769bee1dca182b4432a900bc70
+' multiply defined.
+
+
+LaTeX Warning: Label `group__plugin__exports_ga7164d2e9a268c6e44a296e9488df69cd
+' multiply defined.
+
+
+LaTeX Warning: Label `_amgrpd41d8cd98f00b204e9800998ecf8427e' multiply defined.
+
+
+
+LaTeX Warning: Label `group__affine__math_ga2358b3045fbf4f2dd3d6047c266ddb97' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__affine__math_gafbca1a5656b1543abb89d45cf8ac4ca3' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__affine__math_ga7941e0b1a64c2dd182c2ac751d08eb1e' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__affine__math_gae39adb12086da21a4e0fe39c96aff1d6' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__affine__math_gaaa147e7be9eb0e01250291e2aa3a81bf' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__affine__math_gab7abc4771e520f8baa20554f4c6d12c2' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__affine__math_ga97b4b78434f3e9b0b57cbd9d7b4b6610' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__affine__math_gabae52eb1a8ad7fc3bc90da48a4718941' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__affine__math_ga5099467e8cef4035d8e2ee264c9e312b' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__affine__math_ga793937be7953d32b65f2141199cd23d9' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__affine__math_ga4fbefacd06b4565772517dae42e2cbcc' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__affine__math_ga3723ea5834c83fdbf64b9b9ad1d95cc6' m
+ultiply defined.
+
+
+LaTeX Warning: Label `group__geometric__primitives_ga3264b6e233d1bacaa2176bf9e7
+a74399' multiply defined.
+
+
+LaTeX Warning: Label `group__geometric__primitives_gafa7d69f62abeb6dcb2784b10ad
+6ef8a5' multiply defined.
+
+
+LaTeX Warning: Label `group__geometric__primitives_ga1c4f9c919f34e3f44e4dbe3fd4
+abfb8e' multiply defined.
+
+
+LaTeX Warning: Label `group__geometric__primitives_gabd242edf62b381f793017cce0f
+2bec93' multiply defined.
+
+
+LaTeX Warning: Label `group__geometric__primitives_gadda8d6c416e9ccfdbaf22e6755
+929e7e' multiply defined.
+
+
+LaTeX Warning: Label `_amgrpb5b6051cc2ee505e55561aa9d30eee1e' multiply defined.
+
+
+
+LaTeX Warning: Label `group__geometric__primitives_ga9b1575cfd9a4571c57d72449b3
+03ba6e' multiply defined.
+
+
+LaTeX Warning: Label `_amgrpd41d8cd98f00b204e9800998ecf8427e' multiply defined.
+
+
+
+LaTeX Warning: Label `_amgrpef0faa32f592cc67b0a4ecf86076aa0d' multiply defined.
+
+
+
+LaTeX Warning: Label `_amgrpd41d8cd98f00b204e9800998ecf8427e' multiply defined.
+
+
+
+LaTeX Warning: Label `_amgrpd41d8cd98f00b204e9800998ecf8427e' multiply defined.
+
+
+
+LaTeX Warning: Label `_amgrpd41d8cd98f00b204e9800998ecf8427e' multiply defined.
+
+
+)
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 34.
+ (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 34.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count115
+\scratchdimen=\dimen124
+\scratchbox=\box56
+\nofMPsegments=\count116
+\nofMParguments=\count117
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count118
+\MPscratchDim=\dimen125
+\MPnumerator=\count119
+\everyMPtoPDFconversion=\toks25
+)
+\c@lstlisting=\count120
+Package hyperref Info: Link coloring ON on input line 34.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count121
+)
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+ (./refman.out)
+(./refman.out)
+\@outlinefile=\write4
+\openout4 = `refman.out'.
+
+\AtBeginShipoutBox=\box57
+Package hyperref Info: Option `pageanchor' set `false' on input line 35.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+
+(./refman.toc
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+ [1] [2] [3] [4] [5] [6] [7] [8] [9] [10])
+\tf@toc=\write5
+\openout5 = `refman.toc'.
+
+Package hyperref Info: Option `pageanchor' set `true' on input line 49.
+ [1] (./index.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 8.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 29.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)) [2
+
+]
+(./p__basic__usage.tex) [3
+
+] (./writing__plugins.tex
+Underfull \hbox (badness 1769) in paragraph at lines 12--13
+\T1/ptm/m/n/10 Example [][]plug-incpp.cpp[][] cre-ates a Open-RAVE::ProblemInst
+ance in-ter-face named
+ []
+
+[4
+
+]
+Overfull \hbox (216.60036pt too wide) in paragraph at lines 75--75
+[]\T1/pcr/m/n/8 set_target_properties(plugincpp PROPERTIES COMPILE_FLAGS "${Ope
+nRAVE_CXX_FLAGS}" LINK_FLAGS "${OpenRAVE_LINK_FLAGS}")[] 
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 83--83
+\T1/ptm/m/n/10 cre-ated in the \T1/pcr/m/n/10 $OPENRAVE_-INSTALL/bin \T1/ptm/m/
+n/10 di-rec-tory. It is pos-si-ble to call
+ []
+
+[5]
+Overfull \hbox (5.40022pt too wide) in paragraph at lines 133--133
+[]    \T1/pcr/m/n/8 sinput.str(""); // have to reset the stream from the previo
+us command[] 
+ []
+
+[6]
+Underfull \hbox (badness 4531) in paragraph at lines 162--163
+\T1/ptm/m/n/10 The for-mat of all in-ter-face doc-u-men-ta-tion is the widely a
+dopted stan-dard
+ []
+
+) [7] [8] (./cpp__examples.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+\T1/ptm/m/n/10 All C++ ex-am-ples are stored in \T1/pcr/m/n/10 $OPENRAVE_-
+ []
+
+[9
+
+]) [10] (./executables.tex) [11
+
+] (./installation.tex
+Overfull \hbox (67.80026pt too wide) in paragraph at lines 19--19
+[]\T1/pcr/m/n/8 cd build; cmake -DCMAKE_INSTALL_PREFIX=/my/new/install/dir -DCM
+AKE_BUILD_TYPE=Debug ..[] 
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 25--25
+[]\T1/ptm/b/n/10 Video Record-ing \T1/ptm/m/n/10 To dis-able ffm-peg video reco
+rd-ing, find the \T1/pcr/m/n/10 OPT_-
+ []
+
+[12
+
+]
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 59.
+ [13]
+Overfull \hbox (77.40027pt too wide) in paragraph at lines 108--108
+[]\T1/pcr/m/n/8 svn co https://openrave.svn.sourceforge.net/svnroot/openrave/ta
+gs/latest_stable openrave[] 
+ []
+
+
+Overfull \hbox (451.8005pt too wide) in paragraph at lines 118--118
+[]\T1/pcr/m/n/8 sudo sh -c 'echo "deb-src http://ppa.launchpad.net/openrave/rel
+ease/ubuntu `lsb_release -cs` main" >> /etc/apt/sources.list.d/openrave-release
+-`lsb_release -cs`.list'[] 
+ []
+
+
+Overfull \hbox (437.4005pt too wide) in paragraph at lines 126--126
+[]\T1/pcr/m/n/8 sudo yum install qt4-devel Coin2-devel glew-devel gsm-devel x26
+4 x264-devel ffmpeg-devel libdc1394-devel libtheora-devel libmp4v2-devel ode-de
+vel boost-devel cmake[] 
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+[]\T1/ptm/m/n/10 If not us-ing enable-new-trimesh, dis-abling as-serts (via
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 151--152
+\T1/pcr/m/n/10 --disable-asserts\T1/ptm/m/n/10 ) is nec-es-sary due to some wei
+rd bug in
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 152--153
+[]\T1/ptm/m/n/10 For 0.10+. If in-stalling on x86-64 dis-tro, con-fig-ure ODE w
+ith
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+[]\T1/ptm/m/n/10 Compile the $\OMS/cmsy/m/n/10 ^^C$\T1/ptm/m/n/10 .cpp files in
+-side \T1/pcr/m/n/10 $OPENRAVE_-
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 184--185
+\T1/pcr/m/n/10 INSTALL/share/openrave-x\T1/ptm/m/n/10 .y/matlab and ad-dit to t
+he MAT-LAB
+ []
+
+[16]
+Overfull \hbox (0.60022pt too wide) in paragraph at lines 234--234
+[]\T1/pcr/m/n/8 https://openrave.svn.sourceforge.net/svnroot/openrave/tags/late
+st_stable[] 
+ []
+
+[17]pdfTeX warning (ext4): destination with the same identifier (name{installat
+ion__windows_iwin_octavematlab}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.259 ...nstallation__windows_iwin_octavematlab}{}
+                                                  \paragraph{Installation of...
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+[]\T1/ptm/m/n/10 Add \T1/pcr/m/n/10 $OPENRAVE_-INSTALL$\OMS/cmsy/m/n/10 n$\T1/p
+cr/m/n/10 share$\OMS/cmsy/m/n/10 n$\T1/pcr/m/n/10 openrave$\OMS/cmsy/m/n/10 n$\
+T1/pcr/m/n/10 octave
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+\T1/ptm/m/n/10 to the Oc-tave path (de-fault is \T1/pcr/m/n/10 C:$\OMS/cmsy/m/n
+/10 n$\T1/pcr/m/n/10 Program
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+[]\T1/ptm/m/n/10 Compile the $\OMS/cmsy/m/n/10 ^^C$\T1/ptm/m/n/10 .cpp files in
+-side \T1/pcr/m/n/10 $OPENRAVE_-
+ []
+
+
+Underfull \hbox (badness 6364) in paragraph at lines 278--279
+\T1/pcr/m/n/10 INSTALL$\OMS/cmsy/m/n/10 n$\T1/pcr/m/n/10 share$\OMS/cmsy/m/n/10
+ n$\T1/pcr/m/n/10 openrave-$\OMS/cmsy/m/n/10 ^^C$$n$\T1/pcr/m/n/10 matlab \T1/p
+tm/m/n/10 and ad-dit to the MAT-LAB
+ []
+
+[18]
+Overfull \hbox (31.46953pt too wide) in paragraph at lines 284--285
+[]\T1/pcr/m/n/10 PYTHONPATH \T1/ptm/m/n/10 - add \T1/pcr/m/n/10 "C:$\OMS/cmsy/m
+/n/10 n$$n$\T1/pcr/m/n/10 Program Files$\OMS/cmsy/m/n/10 n$$n$\T1/pcr/m/n/10 op
+enrave$\OMS/cmsy/m/n/10 n$$n$\T1/pcr/m/n/10 share$\OMS/cmsy/m/n/10 n$$n$\T1/pcr
+/m/n/10 openrave" 
+ []
+
+[19]) [20] (./architecture__concepts.tex
+<openrave_architecture.pdf, id=1823, 871.255pt x 453.695pt>
+File: openrave_architecture.pdf Graphic file (type pdf)
+
+<use openrave_architecture.pdf>
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 6--7
+ [] 
+ []
+
+[21
+
+ <./openrave_architecture.pdf>] [22] [23] [24] [25] [26] [27] [28]) [29]
+(./interface__concepts.tex
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+[]\T1/ptm/m/n/10 All \T1/ptm/b/n/10 Check-Col-li-sion \T1/ptm/m/n/10 func-tions
+ ac-cept an op-tional pointer to a [][]Open-
+ []
+
+[30
+
+]
+Overfull \hbox (52.40025pt too wide) in paragraph at lines 41--41
+ []  \T1/pcr/m/n/8 <controller type="MyController controller arguments here"></
+controller>[] 
+ []
+
+
+Overfull \hbox (9.20023pt too wide) in paragraph at lines 47--47
+ []  \T1/pcr/m/n/8 <robot name="schunk-lwa3" file="robots/schunk-lwa3.robot.xml
+">[] 
+ []
+
+
+Overfull \hbox (148.40031pt too wide) in paragraph at lines 49--49
+ []  \T1/pcr/m/n/8 <controller type="MyController" robot="schunk-lwa3 controlle
+r arguments here"></controller>[] 
+ []
+
+
+Overfull \hbox (68.80028pt too wide) in paragraph at lines 61--61
+ []\T1/pcr/m/n/8 ControllerBasePtr pcontroller = RaveCreateController(GetEnv(),
+"MyController contr[] 
+ []
+
+[31]
+Overfull \hbox (11.20024pt too wide) in paragraph at lines 68--68
+ []\T1/pcr/m/n/8 probot->SetController(pcontroller,dofindices,nControlTransform
+ation);[] 
+ []
+
+
+Overfull \hbox (59.20027pt too wide) in paragraph at lines 78--78
+ []\T1/pcr/m/n/8 controller = RaveCreateController(env,'MyController controller
+ arguments here')[] 
+ []
+
+
+Overfull \hbox (25.60025pt too wide) in paragraph at lines 79--79
+ []\T1/pcr/m/n/8 robot.SetController(controller,range(robot.GetDOF()),controltr
+ansform=1)[] 
+ []
+
+
+Overfull \hbox (25.60025pt too wide) in paragraph at lines 88--88
+ []\T1/pcr/m/n/8 orRobotControllerSet(robotid,'MyController','controller argume
+nts here')[] 
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]\T1/ptm/m/n/10 The physics en-gine for the en-vi-ron-ment can be set through 
+[][]Open-
+ []
+
+[33]
+Overfull \hbox (34.20024pt too wide) in paragraph at lines 146--146
+[]\T1/pcr/m/n/8 PlannerBase::PlannerParametersPtr params(new PlannerBase::Plann
+erParameters());[] 
+ []
+
+[34]
+Overfull \hbox (24.60023pt too wide) in paragraph at lines 179--179
+[]\T1/pcr/m/n/8 PlannerBase::PlannerParametersPtr params(new PlannerBase::Plann
+erParameters);[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 181--181
+[]\T1/pcr/m/n/8 robot->GetActiveDOFValues(params.vinitialconfig); // set initia
+l config (use curr[] 
+ []
+
+
+Overfull \hbox (34.20024pt too wide) in paragraph at lines 188--188
+[]\T1/pcr/m/n/8 TrajectoryBasePtr ptraj = RaveCreateTrajectory(GetEnv(),robot->
+GetActiveDOF());[] 
+ []
+
+
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 195--195
+[]    \T1/pcr/m/n/8 robot->SetActiveMotion(ptraj); // trajectory is done, execu
+te on the robot[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 204--204
+[]\T1/pcr/m/n/8 CollisionOptionsStateSaver optionstate(GetEnv()->GetCollisionCh
+ecker(),GetEnv()->[] 
+ []
+
+
+Overfull \hbox (0.60022pt too wide) in paragraph at lines 205--205
+[]      \T1/pcr/m/n/8 GetCollisionChecker()->GetCollisionOptions()|CO_ActiveDOF
+s,false);[] 
+ []
+
+[35]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 231--231
+[]    \T1/pcr/m/n/8 ProcessElement startElement(const std::string& name, const 
+std::list<std::pai[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 236--236
+[]        \T1/pcr/m/n/8 switch( PlannerBase::PlannerParameters::startElement(na
+me,atts) ) {[] 
+ []
+
+
+Overfull \hbox (10.20023pt too wide) in paragraph at lines 252--252
+[]                \T1/pcr/m/n/8 RAVELOG_WARN(str(boost::format("unknown tag %s\
+n")%name));[] 
+ []
+
+[36]
+Underfull \hbox (badness 1867) in paragraph at lines 278--279
+[]\T1/ptm/m/n/10 However, the Plan-ner-Pa-ram-e-ters struc-ture had to re-flect
+ what 'path op-ti-miza-
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 278--279
+\T1/ptm/m/n/10 tion' al-go-rithm to use for post pro-cess-ing the tra-jec-tory.
+ This is now re-
+ []
+
+[37] [38] [39]) [40] (./group__plugin__exports.tex
+Underfull \hbox (badness 2384) in paragraph at lines 19--21
+[]\T1/ptm/m/n/10 typedef bool($\OMS/cmsy/m/n/10 ^^C$ [][]\T1/ptm/m/n/10 PluginE
+xportFn_-OpenRAVEGetPluginAttributes[][] )(PLUG-IN-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+[]\T1/ptm/m/n/10 OpenRAVE::InterfaceBasePtr [][]Cre-ateIn-ter-face-Val-i-dated[
+][] (Open-
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 31--32
+\T1/ptm/m/n/10 RAVE::InterfaceType type, const std::string &name, std::istream 
+&sin-put,
+ []
+
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 32.
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
+[]\T1/ptm/m/n/10 OPENRAVE_-PLUGIN_-API Open-RAVE::InterfaceBasePtr [][]Open-RAV
+E-Cre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+[]\T1/ptm/m/n/10 OPENRAVE_-PLUGIN_-API void [][]Open-RAVEG-et-Plug-i-nAt-tribut
+es[][] ([][]Open-
+ []
+
+[41
+
+]
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 59.
+ [42]) (./group__interfaces.tex [43]) (./group__geometric__primitives.tex
+[44]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 22.
+ [45]
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+\T1/ptm/m/n/10 obb$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 T $\OML/cmm/m/it/10 >$ []
+[]\T1/ptm/m/n/10 OBBFro-mAABB[][] (const aabb$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/1
+0 T $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &ab, const
+ []
+
+[46] [47]) (./group__affine__math.tex [48]
+Underfull \hbox (badness 2809) in paragraph at lines 23--24
+\T1/ptm/m/n/10 RaveTransformMatrix$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 T $\OML/c
+mm/m/it/10 >$ [][]\T1/ptm/m/n/10 ma-trixFromQuat[][] (const RaveVector$\OML/cmm
+/m/it/10 <$ \T1/ptm/m/n/10 T $\OML/cmm/m/it/10 >$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\T1/ptm/m/n/10 void [][]ma-trixFromQuat[][] (RaveTransformMatrix$\OML/cmm/m/it/
+10 <$ \T1/ptm/m/n/10 T $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &ro-ta-tion, const
+ []
+
+[49]
+Underfull \hbox (badness 1142) in paragraph at lines 31--32
+\T1/ptm/m/n/10 RaveVector$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 T $\OML/cmm/m/it/1
+0 >$ [][]\T1/ptm/m/n/10 quat-Mul-ti-ply[][] (const RaveVector$\OML/cmm/m/it/10 
+<$ \T1/ptm/m/n/10 T $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &quat0, const
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 35--36
+\T1/ptm/m/n/10 RaveVector$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 T $\OML/cmm/m/it/1
+0 >$ [][]\T1/ptm/m/n/10 quat-Slerp[][] (const RaveVector$\OML/cmm/m/it/10 <$ \T
+1/ptm/m/n/10 T $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &quat0, const
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 42.
+
+Underfull \hbox (badness 2809) in paragraph at lines 47--48
+\T1/ptm/m/n/10 RaveTransformMatrix$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 T $\OML/c
+mm/m/it/10 >$ [][]\T1/ptm/m/n/10 trans-form-Lookat[][] (const RaveVector$\OML/c
+mm/m/it/10 <$ \T1/ptm/m/n/10 T $\OML/cmm/m/it/10 >$
+ []
+
+[50] [51] [52] [53]
+Underfull \hbox (badness 1460) in paragraph at lines 205--206
+[]\T1/ptm/m/n/10 The an-gle that min-i-mizes the ro-ta-tion along with the nor-
+mal-ized ro-ta-tion
+ []
+
+[54] [55]) [56] (./namespaceboost.tex) (./namespaceOpenRAVE.tex [57
+
+] [58]
+[59]pdfTeX warning (ext4): destination with the same identifier (name{group__pl
+ugin__exports_ga6ae2f1554f547f27e4a5399d8aef7377}) has been already used, dupli
+cate ignored
+<to be read again> 
+                   \relax 
+l.95 ...r $\ast$envhash, EnvironmentBasePtr penv)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__plugin__exports_ga7cb4e2769bee1dca1
+82b4432a900bc70}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.100 ...fo, int size, const char $\ast$infohash)}
+                                                  
+Underfull \hbox (badness 2384) in paragraph at lines 100--102
+[]\T1/ptm/m/n/10 typedef bool($\OMS/cmsy/m/n/10 ^^C$ [][]\T1/ptm/m/n/10 PluginE
+xportFn_-OpenRAVEGetPluginAttributes[][] )([][]PLUG-IN-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{group__plugin
+__exports_ga7164d2e9a268c6e44a296e9488df69cd}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.105 ...cd}{PluginExportFn\_\-DestroyPlugin} )()}
+                                                  
+Underfull \hbox (badness 3977) in paragraph at lines 109--111
+[]\T1/ptm/m/n/10 typedef InterfaceBasePtr($\OMS/cmsy/m/n/10 ^^C$ [][]\T1/ptm/m/
+n/10 PluginExportFn_-CreateInterface[][] )(In-ter-face-Type
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 135--139
+[][][]\T1/ptm/m/n/10 IKFO_-CheckEnvCollisions[][] = 1, [][]IKFO_-IgnoreSelfColl
+isions[][] = 2, [][]IKFO_-
+ []
+
+[60]
+Underfull \hbox (badness 6961) in paragraph at lines 155--159
+[][][]\T1/ptm/m/n/10 ORE_-CommandNotSupported[][] = 3 , [][]ORE_-InvalidPlugin[
+][] = 5, [][]ORE_-
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 167--171
+[][][]\T1/ptm/m/n/10 Clone_-Bodies[][] = 1, [][]Clone_-Viewer[][] = 2, [][]Clon
+e_-Simulation[][] = 4, [][]Clone_-
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 176--180
+[][][]\T1/ptm/m/n/10 IKP_-Transform6D[][] = 0x67000001, [][]IKP_-Rotation3D[][]
+ = 0x34000002, [][]IKP_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--185
+[][][]\T1/ptm/m/n/10 IKP_-Ray4D[][] = 0x46000005, [][]IKP_-Lookat3D[][] = 0x230
+00006, [][]IKP_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--190
+[][][]\T1/ptm/m/n/10 IKP_-TranslationXYOrientation3D[][] = 0x33000009, [][]IKP_
+-
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 197--201
+[][][]\T1/ptm/m/n/10 DOF_-RotationAxis[][] = 8, [][]DOF_-Rotation3D[][] = 16, [
+][]DOF_-RotationQuat[][] =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--201
+\T1/ptm/m/n/10 32, [][]DOF_-RotationMask[][] = (DOF_-RotationAxis$\OMS/cmsy/m/n
+/10 j$\T1/ptm/m/n/10 DOF_-Rotation3D$\OMS/cmsy/m/n/10 j$\T1/ptm/m/n/10 DOF_-
+ []
+
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 213--217
+[]\T1/ptm/m/n/10 enum [][]Plan-ner-Ac-tion[][] { [][]PA_-None[][] = 0, [][]PA_-
+Interrupt[][] = 1, [][]PA_-
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 257--258
+[][][]\T1/ptm/m/n/10 DefineRavePrintfW[][] (_-FATALLEVEL) DefineRavePrintfW(_-E
+RRORLEVEL)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+\T1/ptm/m/n/10 DefineRavePrintfW(_-WARNLEVEL) DefineRavePrintfW(_-DEBUGLEVEL)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+\T1/ptm/m/n/10 DefineRavePrintfW(_-VERBOSELEVEL) DefineRavePrintfA(_-
+ []
+
+
+Underfull \hbox (badness 2644) in paragraph at lines 257--258
+\T1/ptm/m/n/10 FATALLEVEL) DefineRavePrintfA(_-ERRORLEVEL) DefineRavePrintfA(_-
+
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 257--258
+\T1/ptm/m/n/10 WARNLEVEL) DefineRavePrintfA(_-DEBUGLEVEL) DefineRavePrintfA(_-
+ []
+
+[62]
+Underfull \hbox (badness 2941) in paragraph at lines 275--277
+[]\T1/ptm/m/n/10 OPENRAVE_-API dou-ble [][]RaveRan-dom-Dou-ble[][] ([][]In-ter-
+val-Type[][] interval=IT_-
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 284--286
+[]\T1/ptm/m/n/10 OPENRAVE_-API std::istream & [][]operator$\OML/cmm/m/it/10 >$$
+>$[][] \T1/ptm/m/n/10 (std::istream &I, [][]Plan-ner-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+[]\T1/ptm/m/n/10 OPENRAVE_-CORE_-API En-vi-ron-ment-BasePtr [][]Cre-ateEn-vi-ro
+n-ment[][] (bool
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{group__affine
+__math_ga2358b3045fbf4f2dd3d6047c266ddb97}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.297 ...4f2dd3d6047c266ddb97}{RaveLog} (dReal f)}
+                                                   [63]pdfTeX warning (ext4): d
+estination with the same identifier (name{group__affine__math_gafbca1a5656b1543
+abb89d45cf8ac4ca3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.302 ...543abb89d45cf8ac4ca3}{RaveCos} (dReal f)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__affine__math_ga7941e0b1a64c2dd182c2
+ac751d08eb1e}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.307 ...2dd182c2ac751d08eb1e}{RaveSin} (dReal f)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__affine__math_gae39adb12086da21a4e0f
+e39c96aff1d6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.312 ...a21a4e0fe39c96aff1d6}{RaveTan} (dReal f)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__affine__math_gaaa147e7be9eb0e012502
+91e2aa3a81bf}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.317 ...e01250291e2aa3a81bf}{RaveLog2} (dReal f)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__affine__math_gab7abc4771e520f8baa20
+554f4c6d12c2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.322 ...8baa20554f4c6d12c2}{RaveLog10} (dReal f)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__affine__math_ga97b4b78434f3e9b0b57c
+bd9d7b4b6610}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.327 ...9b0b57cbd9d7b4b6610}{RaveAcos} (dReal f)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__affine__math_gabae52eb1a8ad7fc3bc90
+da48a4718941}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.332 ...fc3bc90da48a4718941}{RaveAsin} (dReal f)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__affine__math_ga5099467e8cef4035d8e2
+ee264c9e312b}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.337 ...c9e312b}{RaveAtan2} (dReal fy, dReal fx)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__affine__math_ga793937be7953d32b65f2
+141199cd23d9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.342 ...199cd23d9}{RavePow} (dReal fx, dReal fy)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__affine__math_ga4fbefacd06b456577251
+7dae42e2cbcc}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.347 ...65772517dae42e2cbcc}{RaveSqrt} (dReal f)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__affine__math_ga3723ea5834c83fdbf64b
+9b9ad1d95cc6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.352 ...fdbf64b9b9ad1d95cc6}{RaveFabs} (dReal f)}
+                                                   [64]
+Underfull \hbox (badness 7468) in paragraph at lines 391--392
+[]\T1/ptm/m/n/10 OPENRAVE_-API int [][]RaveIni-tial-ize[][] (bool bLoad-AllPlu-
+g-ins=true, int
+ []
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
+[]\T1/ptm/m/n/10 OPENRAVE_-API bool [][]Rave-Has-In-ter-face[][] (In-ter-face-T
+ype type, const
+ []
+
+
+Underfull \hbox (badness 3199) in paragraph at lines 416--418
+[]\T1/ptm/m/n/10 OPENRAVE_-API In-ter-face-BasePtr \T1/ptm/b/n/10 Rave-Cre-ateI
+n-ter-face \T1/ptm/m/n/10 (En-vi-ron-ment-
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 421--423
+[]\T1/ptm/m/n/10 OPENRAVE_-API Robot-BasePtr \T1/ptm/b/n/10 Rave-Cre-ateR-obot 
+\T1/ptm/m/n/10 (En-vi-ron-ment-BasePtr
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--428
+[]\T1/ptm/m/n/10 OPENRAVE_-API Plan-ner-BasePtr \T1/ptm/b/n/10 Rave-Cre-atePlan
+-ner \T1/ptm/m/n/10 (En-vi-ron-ment-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 441--443
+[]\T1/ptm/m/n/10 OPENRAVE_-API Mod-ule-BasePtr \T1/ptm/b/n/10 Rave-Cre-ate-Mod-
+ule \T1/ptm/m/n/10 (En-vi-ron-ment-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--448
+[]\T1/ptm/m/n/10 OPENRAVE_-API Mod-ule-BasePtr \T1/ptm/b/n/10 Rave-Cre-ateProb-
+lem \T1/ptm/m/n/10 (En-vi-ron-ment-
+ []
+
+
+Underfull \hbox (badness 6110) in paragraph at lines 456--458
+[]\T1/ptm/m/n/10 OPENRAVE_-API Ik-Solver-BasePtr \T1/ptm/b/n/10 Rave-Cre-ateIk-
+Solver \T1/ptm/m/n/10 (En-vi-ron-ment-
+ []
+
+[66]
+Underfull \hbox (badness 4765) in paragraph at lines 502--503
+[]\T1/ptm/m/n/10 OPENRAVE_-API User-Dat-aPtr [][]RaveReg-is-terXML-Reader[][] (
+In-ter-face-Type
+ []
+
+
+Underfull \hbox (badness 4954) in paragraph at lines 512--514
+[]\T1/ptm/m/n/10 OPENRAVE_-API void [][]RaveG-etEn-vi-ron-ments[][] (std::list$
+\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 En-vi-ron-ment-
+ []
+
+[67] [68] [69]
+Underfull \hbox (badness 1789) in paragraph at lines 731--735
+[]\T1/ptm/m/n/10 will not check the self-collision of the robot
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 743--743
+[]\T1/ptm/m/n/10 will not check col-li-sion with the en-
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 743--743
+\T1/ptm/m/n/10 vi-ron-ment and the end ef-fec-tor links and bod-ies at-tached t
+o the
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 743--743
+\T1/ptm/m/n/10 end ef-fec-tor links. The end ef-fec-tor links are de-fined by [
+][]Robot-
+ []
+
+
+Underfull \hbox (badness 7944) in paragraph at lines 743--743
+\T1/ptm/m/n/10 Base::Manipulator::GetChildLinks[][]. Use this op-tion when [][]
+Robot-
+ []
+
+[70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80])
+(./namespaceOpenRAVE_1_1geometry.tex [81] [82]
+Underfull \hbox (badness 2809) in paragraph at lines 40--41
+[][]\T1/ptm/m/n/10 RaveTransformMatrix[][]$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 T
+ $\OML/cmm/m/it/10 >$ [][]\T1/ptm/m/n/10 ma-trixFromQuat[][] (const [][]RaveVec
+-tor[][]$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 T $\OML/cmm/m/it/10 >$
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 48--49
+[][]\T1/ptm/m/n/10 RaveVector[][]$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 T $\OML/cm
+m/m/it/10 >$ [][]\T1/ptm/m/n/10 quat-Mul-ti-ply[][] (const [][]RaveVec-tor[][]$
+\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 T $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &quat0
+, const
+ []
+
+[83]
+Underfull \hbox (badness 2809) in paragraph at lines 64--65
+[][]\T1/ptm/m/n/10 RaveTransformMatrix[][]$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 T
+ $\OML/cmm/m/it/10 >$ [][]\T1/ptm/m/n/10 trans-form-Lookat[][] (const [][]RaveV
+ec-tor[][]$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 T $\OML/cmm/m/it/10 >$
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{group__geomet
+ric__primitives_ga3264b6e233d1bacaa2176bf9e7a74399}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.67 ...RaveVector}{RaveVector}$<$ T $>$ \&verts)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__geometric__primitives_gafa7d69f62ab
+eb6dcb2784b10ad6ef8a5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.72 ...ry_1_1triangle}{triangle}$<$ T $>$ \&tri)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__geometric__primitives_ga1c4f9c919f3
+4e3f44e4dbe3fd4abfb8e}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 ...1_1geometry_1_1aabb}{aabb}$<$ T $>$ \&ab)}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{group__geometric__primitives_gabd242edf62b
+381f793017cce0f2bec93}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 ...VE_1_1geometry_1_1obb}{obb}$<$ T $>$ \&o)}
+                                                   [84]pdfTeX warning (ext4): d
+estination with the same identifier (name{group__geometric__primitives_gadda8d6
+c416e9ccfdbaf22e6755929e7e}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 ...metry_1_1frustum}{frustum}$<$ T $>$ \&fr)}
+                                                   [85]pdfTeX warning (ext4): d
+estination with the same identifier (name{group__geometric__primitives_ga9b1575
+cfd9a4571c57d72449b303ba6e}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.157 ...E_1_1geometry_1_1obb}{obb}$<$ T $>$ \&o)}
+                                                  )
+(./namespaceOpenRAVE_1_1mathextra.tex [86] [87] [88]) [89]
+(./classOpenRAVE_1_1geometry_1_1aabb.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+) (./classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.tex
+<classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__inherit__graph.pdf, id=3131
+, 112.42pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__inherit__graph.pdf Gra
+phic file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__inherit__graph.pdf>
+<classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__coll__graph.pdf, id=3132, 1
+12.42pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__coll__graph.pdf Graphi
+c file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__coll__graph.pdf>
+[90
+
+ <./classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__inherit__graph.pdf> <./c
+lassOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__coll__graph.pdf>])
+(./classOpenRAVE_1_1RobotBase_1_1AttachedSensor.tex [91])
+(./classOpenRAVE_1_1BaseXMLReader.tex
+<classOpenRAVE_1_1BaseXMLReader__inherit__graph.pdf, id=3177, 224.84pt x 88.33p
+t>
+File: classOpenRAVE_1_1BaseXMLReader__inherit__graph.pdf Graphic file (type pdf
+)
+ <use classOpenRAVE_1_1BaseXMLReader__inherit__graph.pdf> [92 <./classOpenRAVE_
+1_1BaseXMLReader__inherit__graph.pdf>] [93])
+(./classOpenRAVE_1_1KinBody_1_1BodyState.tex)
+(./classOpenRAVE_1_1CollisionCheckerBase.tex [94]
+<classOpenRAVE_1_1CollisionCheckerBase__inherit__graph.pdf, id=3235, 118.4425pt
+ x 88.33pt>
+File: classOpenRAVE_1_1CollisionCheckerBase__inherit__graph.pdf Graphic file (t
+ype pdf)
+ <use classOpenRAVE_1_1CollisionCheckerBase__inherit__graph.pdf>
+<classOpenRAVE_1_1CollisionCheckerBase__coll__graph.pdf, id=3236, 118.4425pt x 
+88.33pt>
+File: classOpenRAVE_1_1CollisionCheckerBase__coll__graph.pdf Graphic file (type
+ pdf)
+ <use classOpenRAVE_1_1CollisionCheckerBase__coll__graph.pdf> [95 <./classOpenR
+AVE_1_1CollisionCheckerBase__inherit__graph.pdf> <./classOpenRAVE_1_1CollisionC
+heckerBase__coll__graph.pdf>]
+Underfull \hbox (badness 5316) in paragraph at lines 46--48
+[]\T1/ptm/m/n/10 virtual bool [][]En-able[][] (Kin-Body-Con-stPtr pbody, bool b
+En-able) [][]RAVE_-
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 72--74
+[]\T1/ptm/m/n/10 virtual bool [][]Check-Col-li-sion[][] (Kin-Body-Con-stPtr pbo
+dy1, Kin-Body-Con-stPtr
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+[]\T1/ptm/m/n/10 virtual bool [][]Check-Col-li-sion[][] (Kin-Body::LinkConstPtr
+ plink1, Kin-
+ []
+
+[96]
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+[]\T1/ptm/m/n/10 virtual bool [][]Check-Col-li-sion[][] (Kin-Body::LinkConstPtr
+ plink, const
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+\T1/ptm/m/n/10 std::vector$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 Kin-Body-Con-stPt
+r $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &vbodyex-cluded, const std::vector$\OML/c
+mm/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+\T1/ptm/m/n/10 Kin-Body::LinkConstPtr $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &vlin
+kex-cluded, Col-li-sion-Re-portPtr re-
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 105--106
+[]\T1/ptm/m/n/10 virtual bool [][]Check-Col-li-sion[][] (const [][]RAY[][] &ray
+, Col-li-sion-Re-portPtr re-
+ []
+
+[97] [98]) (./classOpenRAVE_1_1CollisionOptionsStateSaver.tex [99])
+(./classOpenRAVE_1_1CollisionReport.tex [100])
+(./classOpenRAVE_1_1ConfigurationSpecification.tex
+Underfull \hbox (badness 2753) in paragraph at lines 28--29
+[]\T1/ptm/m/n/10 virtual std::vector$\OML/cmm/m/it/10 <$ [][]\T1/ptm/m/n/10 Gro
+up[][] $\OML/cmm/m/it/10 >$\T1/ptm/m/n/10 ::const_-iterator [][]Find-Com-pat-i-
+ble-Group[][] (const
+ []
+
+[101]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+[]\T1/ptm/m/n/10 virtual bool [][]Ex-trac-tIk-Pa-ram-e-ter-i-za-tion[][] ([][]I
+k-Pa-ram-e-ter-i-za-tion[][] &ik-param,
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 52--53
+[]\T1/ptm/m/n/10 virtual bool [][]Ex-tractAffineVal-ues[][] (std::vector$\OML/c
+mm/m/it/10 <$ \T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10 >$\T1/ptm/m/n/10 ::iterato
+r it-val-ues,
+ []
+
+
+Underfull \hbox (badness 5403) in paragraph at lines 54--55
+[]\T1/ptm/m/n/10 virtual bool [][]Ex-trac-tJoint-Val-ues[][] (std::vector$\OML/
+cmm/m/it/10 <$ \T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10 >$\T1/ptm/m/n/10 ::iterat
+or it-val-ues,
+ []
+
+[102]
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 80--80
+[]     \T1/pcr/m/n/8 <group name="string" offset="#OFF1" dof="#D1" interpolatio
+n="string"/>[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 81--81
+[]     \T1/pcr/m/n/8 <group name="string" offset="#OFF2" dof="#D2" interpolatio
+n="string"/>[] 
+ []
+
+[103] [104] [105] [106] [107] [108]) (./classOpenRAVE_1_1ControllerBase.tex
+<classOpenRAVE_1_1ControllerBase__inherit__graph.pdf, id=3462, 88.33pt x 146.54
+75pt>
+File: classOpenRAVE_1_1ControllerBase__inherit__graph.pdf Graphic file (type pd
+f)
+ <use classOpenRAVE_1_1ControllerBase__inherit__graph.pdf>
+<classOpenRAVE_1_1ControllerBase__coll__graph.pdf, id=3463, 88.33pt x 88.33pt>
+File: classOpenRAVE_1_1ControllerBase__coll__graph.pdf Graphic file (type pdf)
+
+<use classOpenRAVE_1_1ControllerBase__coll__graph.pdf> [109 <./classOpenRAVE_1_
+1ControllerBase__inherit__graph.pdf>]
+Underfull \hbox (badness 2626) in paragraph at lines 31--32
+[]\T1/ptm/m/n/10 virtual bool [][]Init[][] (Robot-BasePtr robot, const std::str
+ing &args) [][]RAVE_-
+ []
+
+[110 <./classOpenRAVE_1_1ControllerBase__coll__graph.pdf>] [111] [112] [113]
+[114]) (./classConveyorBeltModule.tex
+<classConveyorBeltModule__inherit__graph.pdf, id=3555, 114.4275pt x 146.5475pt>
+File: classConveyorBeltModule__inherit__graph.pdf Graphic file (type pdf)
+<use classConveyorBeltModule__inherit__graph.pdf>
+<classConveyorBeltModule__coll__graph.pdf, id=3556, 114.4275pt x 146.5475pt>
+File: classConveyorBeltModule__coll__graph.pdf Graphic file (type pdf)
+
+<use classConveyorBeltModule__coll__graph.pdf> [115 <./classConveyorBeltModule_
+_inherit__graph.pdf>]) (./classOpenRAVE_1_1DummyXMLReader.tex
+<classOpenRAVE_1_1DummyXMLReader__inherit__graph.pdf, id=3569, 108.405pt x 88.3
+3pt>
+File: classOpenRAVE_1_1DummyXMLReader__inherit__graph.pdf Graphic file (type pd
+f)
+ <use classOpenRAVE_1_1DummyXMLReader__inherit__graph.pdf>
+<classOpenRAVE_1_1DummyXMLReader__coll__graph.pdf, id=3570, 108.405pt x 88.33pt
+>
+File: classOpenRAVE_1_1DummyXMLReader__coll__graph.pdf Graphic file (type pdf)
+ <use classOpenRAVE_1_1DummyXMLReader__coll__graph.pdf> [116 <./classConveyorBe
+ltModule__coll__graph.pdf> <./classOpenRAVE_1_1DummyXMLReader__inherit__graph.p
+df>]) (./classOpenRAVE_1_1EnvironmentBase.tex [117 <./classOpenRAVE_1_1DummyXML
+Reader__coll__graph.pdf>] [118]
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
+[]\T1/ptm/m/n/10 virtual bool [][]At-tachViewer[][] (Viewer-BasePtr pnewviewer)
+ [][]RAVE_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+[]\T1/ptm/m/n/10 virtual boost::shared_-ptr$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 
+boost::mutex::scoped_-lock $\OML/cmm/m/it/10 >$ [][]\T1/ptm/m/n/10 GetView-ers[
+][]
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 118--119
+[]\T1/ptm/m/n/10 virtual void [][]Get-Pub-lished-Bod-ies[][] (std::vector$\OML/
+cmm/m/it/10 <$ [][]\T1/ptm/m/n/10 Kin-Body::BodyState[][] $\OML/cmm/m/it/10 >$
+ []
+
+[119]
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
+[]\T1/ptm/m/n/10 virtual bool [][]Load[][] (const std::string &file-name, const
+ At-tributes-List
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+[]\T1/ptm/m/n/10 virtual bool [][]Load-Data[][] (const std::string &data, const
+ At-tributes-List
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 177--179
+[]\T1/ptm/m/n/10 virtual bool \T1/ptm/b/n/10 Load-XML-Data \T1/ptm/m/n/10 (cons
+t std::string &data, const At-tributes-List
+ []
+
+[120]
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
+[]\T1/ptm/m/n/10 virtual Robot-BasePtr \T1/ptm/b/n/10 Read-RobotXML-File \T1/pt
+m/m/n/10 (Robot-BasePtr robot, const
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 203--205
+[]\T1/ptm/m/n/10 virtual Robot-BasePtr \T1/ptm/b/n/10 Read-RobotXML-Data \T1/pt
+m/m/n/10 (Robot-BasePtr robot, const
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 207--208
+[]\T1/ptm/m/n/10 virtual Kin-BodyPtr [][]Read-Kin-BodyURI[][] (Kin-BodyPtr body
+, const std::string
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
+[]\T1/ptm/m/n/10 virtual Kin-BodyPtr \T1/ptm/b/n/10 Read-Kin-BodyXML-File \T1/p
+tm/m/n/10 (Kin-BodyPtr body, const
+ []
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 227--229
+[]\T1/ptm/m/n/10 virtual Kin-BodyPtr \T1/ptm/b/n/10 Read-Kin-BodyXML-Data \T1/p
+tm/m/n/10 (Kin-BodyPtr body, const
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+[]\T1/ptm/m/n/10 virtual In-ter-face-BasePtr [][]Read-In-ter-faceURI[][] (In-te
+r-face-BasePtr pin-ter-face,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+\T1/ptm/m/n/10 In-ter-face-Type type, const std::string &file-name, const At-tr
+ibutes-List
+ []
+
+
+Underfull \hbox (badness 3977) in paragraph at lines 234--236
+[]\T1/ptm/m/n/10 virtual In-ter-face-BasePtr \T1/ptm/b/n/10 Read-In-ter-faceXML
+-File \T1/ptm/m/n/10 (In-ter-face-BasePtr pin-ter-
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 234--236
+\T1/ptm/m/n/10 face, In-ter-face-Type type, const std::string &file-name, const
+ At-tributes-List
+ []
+
+[121]
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+[]\T1/ptm/m/n/10 virtual In-ter-face-BasePtr [][]Read-In-ter-face-Data[][] (In-
+ter-face-BasePtr pin-ter-
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 248--249
+\T1/ptm/m/n/10 face, In-ter-face-Type type, const std::string &data, const At-t
+ributes-List
+ []
+
+
+Underfull \hbox (badness 1910) in paragraph at lines 251--253
+[]\T1/ptm/m/n/10 virtual In-ter-face-BasePtr \T1/ptm/b/n/10 Read-In-ter-faceXML
+-Data \T1/ptm/m/n/10 (In-ter-face-BasePtr pin-ter-
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 251--253
+\T1/ptm/m/n/10 face, In-ter-face-Type type, const std::string &data, const At-t
+ributes-List
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 255--256
+[]\T1/ptm/m/n/10 virtual boost::shared_-ptr$\OML/cmm/m/it/10 <$ [][]\T1/ptm/m/n
+/10 Kin-Body::Link::TRIMESH[][] $\OML/cmm/m/it/10 >$ [][]\T1/ptm/m/n/10 ReadTri
+meshURI[][]
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 258--260
+[]\T1/ptm/m/n/10 virtual boost::shared_-ptr$\OML/cmm/m/it/10 <$ [][]\T1/ptm/m/n
+/10 Kin-Body::Link::TRIMESH[][] $\OML/cmm/m/it/10 >$ \T1/ptm/b/n/10 ReadTrimesh
+-File
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 269--270
+[]\T1/ptm/m/n/10 virtual bool [][]Par-seXML-Data[][] (Ba-seXML-Read-erPtr pread
+er, const std::string
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 280--282
+[]\T1/ptm/m/n/10 typedef boost::function$\OML/cmm/m/it/10 <$ [][]\T1/ptm/m/n/10
+ Col-li-sion-Ac-tion[][](CollisionReportPtr, bool)$\OML/cmm/m/it/10 >$ \T1/ptm/
+b/n/10 Col-li-
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 296--298
+[]\T1/ptm/m/n/10 virtual bool [][]Check-Col-li-sion[][] (Kin-Body-Con-stPtr pbo
+dy1, Kin-Body-Con-stPtr
+ []
+
+[122]
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
+[]\T1/ptm/m/n/10 virtual bool [][]Check-Col-li-sion[][] (Kin-Body::LinkConstPtr
+ plink1, Kin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+[]\T1/ptm/m/n/10 virtual bool [][]Check-Col-li-sion[][] (Kin-Body::LinkConstPtr
+ plink, const
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+\T1/ptm/m/n/10 std::vector$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 Kin-Body-Con-stPt
+r $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &vbodyex-cluded, const std::vector$\OML/c
+mm/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+\T1/ptm/m/n/10 Kin-Body::LinkConstPtr $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &vlin
+kex-cluded, Col-li-sion-Re-portPtr re-
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 312--314
+[]\T1/ptm/m/n/10 virtual bool [][]Check-Col-li-sion[][] (const [][]RAY[][] &ray
+, Col-li-sion-Re-portPtr re-
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 340--341
+[]\T1/ptm/m/n/10 virtual Open-RAVE::GraphHandlePtr [][]draw-linestrip[][] (cons
+t float $\OMS/cmsy/m/n/10 ^^C$\T1/ptm/m/n/10 ppoints,
+ []
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 340--341
+\T1/ptm/m/n/10 int num-Points, int stride, float fwidth, const RaveVector$\OML/
+cmm/m/it/10 <$ \T1/ptm/m/n/10 float $\OML/cmm/m/it/10 >$
+ []
+
+[123]
+Underfull \hbox (badness 1331) in paragraph at lines 350--351
+[]\T1/ptm/m/n/10 virtual Open-RAVE::GraphHandlePtr [][]draw-box[][] (const Rave
+Vector$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 float $\OML/cmm/m/it/10 >$
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 359--360
+[]\T1/ptm/m/n/10 virtual Open-RAVE::GraphHandlePtr [][]drawtrimesh[][] (const f
+loat $\OMS/cmsy/m/n/10 ^^C$\T1/ptm/m/n/10 ppoints, int
+ []
+
+[124] [125] [126]
+Overfull \hbox (39.26537pt too wide) in paragraph at lines 513--514
+[][][]\T1/ptm/m/n/10 CollisionCheckerBase::CheckCollision(const RAY&,KinBodyCon
+stPtr,CollisionReportPtr)[][] 
+ []
+
+
+Overfull \hbox (63.71503pt too wide) in paragraph at lines 521--522
+[][][]\T1/ptm/m/n/10 CollisionCheckerBase::CheckCollision(const RAY&,KinBody::L
+inkConstPtr,CollisionReportPtr)[][] 
+ []
+
+[127]
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+[][][]\T1/ptm/m/n/10 CollisionCheckerBase::CheckCollision(KinBodyConstPtr,const
+
+ []
+
+
+Overfull \hbox (78.30647pt too wide) in paragraph at lines 529--530
+\T1/ptm/m/n/10 std::vector$\OML/cmm/m/it/10 <$\T1/ptm/m/n/10 KinBodyConstPtr$\O
+ML/cmm/m/it/10 >$\T1/ptm/m/n/10 &,const std::vector$\OML/cmm/m/it/10 <$\T1/ptm/
+m/n/10 KinBody::LinkConstPtr$\OML/cmm/m/it/10 >$\T1/ptm/m/n/10 &,CollisionRepor
+tPtr)[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
+[][][]\T1/ptm/m/n/10 CollisionCheckerBase::CheckCollision(KinBody::LinkConstPtr
+,const
+ []
+
+
+Overfull \hbox (78.30647pt too wide) in paragraph at lines 537--538
+\T1/ptm/m/n/10 std::vector$\OML/cmm/m/it/10 <$\T1/ptm/m/n/10 KinBodyConstPtr$\O
+ML/cmm/m/it/10 >$\T1/ptm/m/n/10 &,const std::vector$\OML/cmm/m/it/10 <$\T1/ptm/
+m/n/10 KinBody::LinkConstPtr$\OML/cmm/m/it/10 >$\T1/ptm/m/n/10 &,CollisionRepor
+tPtr)[][] 
+ []
+
+
+Overfull \hbox (84.14482pt too wide) in paragraph at lines 545--546
+[][][]\T1/ptm/m/n/10 CollisionCheckerBase::CheckCollision(KinBody::LinkConstPtr
+,KinBodyConstPtr,CollisionReportPtr)[][] 
+ []
+
+
+Overfull \hbox (108.59448pt too wide) in paragraph at lines 553--554
+[][][]\T1/ptm/m/n/10 CollisionCheckerBase::CheckCollision(KinBody::LinkConstPtr
+,KinBody::LinkConstPtr,CollisionReportPtr)[][] 
+ []
+
+[128]
+Overfull \hbox (10.36546pt too wide) in paragraph at lines 561--562
+[][][]\T1/ptm/m/n/10 CollisionCheckerBase::CheckCollision(KinBody::LinkConstPtr
+,CollisionReportPtr)[][] 
+ []
+
+
+Overfull \hbox (59.69516pt too wide) in paragraph at lines 569--570
+[][][]\T1/ptm/m/n/10 CollisionCheckerBase::CheckCollision(KinBodyConstPtr,KinBo
+dyConstPtr,CollisionReportPtr)[][] 
+ []
+
+[129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139] [140]
+[141] [142] [143]) (./classOpenRAVE_1_1SensorBase_1_1Force6DSensorData.tex
+<classOpenRAVE_1_1SensorBase_1_1Force6DSensorData__inherit__graph.pdf, id=4042,
+ 112.42pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1Force6DSensorData__inherit__graph.pdf Grap
+hic file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1Force6DSensorData__inherit__graph.pdf>
+[144]
+<classOpenRAVE_1_1SensorBase_1_1Force6DSensorData__coll__graph.pdf, id=4051, 11
+2.42pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1Force6DSensorData__coll__graph.pdf Graphic
+ file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1Force6DSensorData__coll__graph.pdf>)
+(./structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction.tex [145 <./clas
+sOpenRAVE_1_1SensorBase_1_1Force6DSensorData__inherit__graph.pdf> <./classOpenR
+AVE_1_1SensorBase_1_1Force6DSensorData__coll__graph.pdf>])
+(./classOpenRAVE_1_1geometry_1_1frustum.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+) (./classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.tex
+<classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES__coll__graph.pdf, id=4076, 
+120.45pt x 102.3825pt>
+File: classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES__coll__graph.pdf Graph
+ic file (type pdf)
+
+<use classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES__coll__graph.pdf>
+[146] [147 <./classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES__coll__graph.p
+df>] [148] [149]) (./classOpenRAVE_1_1RobotBase_1_1Grabbed.tex [150])
+(./classOpenRAVE_1_1GraphHandle.tex
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+[]\T1/ptm/m/n/10 virtual void [][]Set-Show[][] (bool bshow) OPENRAVE_-DUMMY_-
+ []
+
+[151]) (./classOpenRAVE_1_1ConfigurationSpecification_1_1Group.tex [152])
+(./classOpenRAVE_1_1IkParameterization.tex [153] [154])
+(./classOpenRAVE_1_1IkSolverBase.tex
+<classOpenRAVE_1_1IkSolverBase__inherit__graph.pdf, id=4261, 84.315pt x 88.33pt
+>
+File: classOpenRAVE_1_1IkSolverBase__inherit__graph.pdf Graphic file (type pdf)
+
+ <use classOpenRAVE_1_1IkSolverBase__inherit__graph.pdf> [155]
+<classOpenRAVE_1_1IkSolverBase__coll__graph.pdf, id=4271, 84.315pt x 88.33pt>
+File: classOpenRAVE_1_1IkSolverBase__coll__graph.pdf Graphic file (type pdf)
+
+<use classOpenRAVE_1_1IkSolverBase__coll__graph.pdf>
+Underfull \hbox (badness 2409) in paragraph at lines 31--32
+[]\T1/ptm/m/n/10 typedef boost::function$\OML/cmm/m/it/10 <$ [][]\T1/ptm/m/n/10
+ Ik-Fil-ter-Re-turn[][](std::vector$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 dReal $\
+OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &, Robot-
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 40--42
+[]\T1/ptm/m/n/10 virtual void [][]Set-Cus-tom-Fil-ter[][] (const [][]Ik-Fil-ter
+-Call-backFn[][] &fil-terfn) [][]RAVE_-
+ []
+
+[156 <./classOpenRAVE_1_1IkSolverBase__inherit__graph.pdf> <./classOpenRAVE_1_1
+IkSolverBase__coll__graph.pdf>]
+Underfull \hbox (badness 4582) in paragraph at lines 48--49
+[]\T1/ptm/m/n/10 virtual bool [][]Solve[][] (const [][]Ik-Pa-ram-e-ter-i-za-tio
+n[][] &param, int fil-terop-tions,
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 50--52
+\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &q0, const std::vector$\OML/cmm/m/it/10 <$ \
+T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &vFreePa-ram-e-ters, in
+t fil-terop-tions,
+ []
+
+[157] [158] [159] [160] [161])
+(./classOpenRAVE_1_1SensorBase_1_1IMUSensorData.tex
+<classOpenRAVE_1_1SensorBase_1_1IMUSensorData__inherit__graph.pdf, id=4381, 92.
+345pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1IMUSensorData__inherit__graph.pdf Graphic 
+file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1IMUSensorData__inherit__graph.pdf>
+<classOpenRAVE_1_1SensorBase_1_1IMUSensorData__coll__graph.pdf, id=4382, 92.345
+pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1IMUSensorData__coll__graph.pdf Graphic fil
+e (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1IMUSensorData__coll__graph.pdf> [162 <./cla
+ssOpenRAVE_1_1SensorBase_1_1IMUSensorData__inherit__graph.pdf> <./classOpenRAVE
+_1_1SensorBase_1_1IMUSensorData__coll__graph.pdf>])
+(./classOpenRAVE_1_1InterfaceBase.tex
+<classOpenRAVE_1_1InterfaceBase__inherit__graph.pdf, id=4406, 383.4325pt x 471.
+7625pt>
+File: classOpenRAVE_1_1InterfaceBase__inherit__graph.pdf Graphic file (type pdf
+)
+ <use classOpenRAVE_1_1InterfaceBase__inherit__graph.pdf>
+Overfull \hbox (55.0pt too wide) in paragraph at lines 15--17
+ [] 
+ []
+
+[163] [164 <./classOpenRAVE_1_1InterfaceBase__inherit__graph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
+[]\T1/ptm/m/n/10 virtual void [][]Se-tUser-Data[][] (boost::shared_-ptr$\OML/cm
+m/m/it/10 <$ \T1/ptm/m/n/10 void $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 data) [][]
+RAVE_-
+ []
+
+[165] [166] [167]) (./classOpenRAVE_1_1KinBody_1_1Joint.tex [168] [169]
+Underfull \hbox (badness 3138) in paragraph at lines 78--80
+[]\T1/ptm/m/n/10 virtual void [][]SetJointLim-its[][] (const std::vector$\OML/c
+mm/m/it/10 <$ \T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &lower, 
+const
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 80--81
+[]\T1/ptm/m/n/10 virtual void [][]GetVe-loc-ityLim-its[][] (std::vector$\OML/cm
+m/m/it/10 <$ \T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &vmax, bo
+ol bAp-
+ []
+
+[170] [171] [172] [173] [174]
+Underfull \hbox (badness 1571) in paragraph at lines 290--293
+[]\T1/ptm/m/n/10 This does not in-dex in [][]Kin-Body::GetJoints()[][] di-rectl
+y! In other words, [][]Kin-
+ []
+
+[175] [176] [177] [178] [179] [180])
+(./classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData.tex
+<classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData__inherit__graph.pdf, id=
+4727, 130.4875pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData__inherit__graph.pdf
+ Graphic file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData__inherit__graph.pdf>
+
+<classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData__coll__graph.pdf, id=472
+8, 130.4875pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData__coll__graph.pdf Gr
+aphic file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData__coll__graph.pdf>
+[181 <./classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData__inherit__graph.p
+df>]) (./classOpenRAVE_1_1KinBody.tex
+<classOpenRAVE_1_1KinBody__inherit__graph.pdf, id=4745, 84.315pt x 146.5475pt>
+File: classOpenRAVE_1_1KinBody__inherit__graph.pdf Graphic file (type pdf)
+
+<use classOpenRAVE_1_1KinBody__inherit__graph.pdf> [182 <./classOpenRAVE_1_1Sen
+sorBase_1_1JointEncoderSensorData__coll__graph.pdf>]
+<classOpenRAVE_1_1KinBody__coll__graph.pdf, id=4759, 230.8625pt x 102.3825pt>
+File: classOpenRAVE_1_1KinBody__coll__graph.pdf Graphic file (type pdf)
+
+<use classOpenRAVE_1_1KinBody__coll__graph.pdf> [183 <./classOpenRAVE_1_1KinBod
+y__inherit__graph.pdf> <./classOpenRAVE_1_1KinBody__coll__graph.pdf>]
+Underfull \hbox (badness 6477) in paragraph at lines 50--54
+[][][]\T1/ptm/m/n/10 Prop_-Name[][] = 0x20, [][]Prop_-LinkDraw[][] = 0x40, [][]
+Prop_-LinkGeometry[][] =
+ []
+
+
+Underfull \hbox (badness 4765) in paragraph at lines 55--59
+\T1/ptm/m/n/10 = 0x400$\OMS/cmsy/m/n/10 j$\T1/ptm/m/n/10 Prop_-Links, [][]Prop_
+-RobotManipulators[][] = 0x00010000 , [][]Prop_-
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 60--64
+[][][]\T1/ptm/m/n/10 Prop_-RobotSensorPlacement[][] = 0x00040000 , [][]Prop_-Ro
+botActiveDOFs[][] =
+ []
+
+
+Underfull \hbox (badness 3713) in paragraph at lines 84--86
+[]\T1/ptm/m/n/10 virtual bool [][]Init-From-Data[][] (const std::string &data, 
+const At-tributes-List
+ []
+
+[184]
+Underfull \hbox (badness 2753) in paragraph at lines 106--107
+[]\T1/ptm/m/n/10 virtual void [][]Sub-tractD-OF-Val-ues[][] (std::vector$\OML/c
+mm/m/it/10 <$ \T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &val-ues
+1, const
+ []
+
+[185] [186]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+[]\T1/ptm/m/n/10 virtual void [][]Cal-cu-late-Ja-co-bian[][] (int linkindex, co
+nst Vec-tor &off-set,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
+[]\T1/ptm/m/n/10 virtual bool [][]Check-Self-Col-li-sion[][] (Col-li-sion-Re-po
+rtPtr re-
+ []
+
+[187]
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+[]\T1/ptm/m/n/10 virtual User-Dat-aPtr [][]Reg-is-ter-Change-Call-back[][] (int
+ prop-er-ties, const
+ []
+
+[188]
+Underfull \hbox (badness 1127) in paragraph at lines 265--267
+[]\T1/ptm/m/n/10 virtual void [][]GetD-OFVe-loc-ityLim-its[][] (std::vector$\OM
+L/cmm/m/it/10 <$ \T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &low-
+er-limit,
+ []
+
+[189]
+Underfull \hbox (badness 1077) in paragraph at lines 320--320
+[]\T1/ptm/m/it/9 similar to GetChain(int,int,std::vector$\OML/cmm/m/it/9 <$\T1/
+ptm/m/it/9 JointPtr$\OML/cmm/m/it/9 >$\T1/ptm/m/it/9 &) ex-cept re-turns the li
+nks
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
+[]\T1/ptm/m/n/10 virtual [][]Con-fig-u-ra-tionSpec-i-fi-ca-tion[][] [][]Get-Con
+-fig-u-ra-tionSpec-i-fi-ca-tionIndices[][]
+ []
+
+[190]
+Underfull \hbox (badness 10000) in paragraph at lines 408--410
+[]\T1/ptm/m/n/10 virtual boost::shared_-ptr$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 
+FunctionParserBase$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10 >
+$ $>$ [][]\T1/ptm/m/n/10 _-
+ []
+
+[191]
+Underfull \hbox (badness 10000) in paragraph at lines 428--428
+[]\T1/ptm/m/it/9 Similar to _-vDependencyOrderedJoints ex-cept in-cludes _-vecj
+oints and _-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 458--460
+[]\T1/ptm/m/n/10 std::vector$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 std::vector$\OM
+L/cmm/m/it/10 <$ \T1/ptm/m/n/10 std::pair$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 in
+t16_-t, int16_-t $\OML/cmm/m/it/10 >$ $>$ $>$ [][]\T1/ptm/m/n/10 _-
+ []
+
+[192] [193] [194] [195] [196] [197]
+Underfull \hbox (badness 1881) in paragraph at lines 821--824
+[]\T1/ptm/m/n/10 Only uses _-vecjoints and last joint for com-pu-ta-tion, so ca
+n work be-fore _-
+ []
+
+[198] [199] [200] [201] [202] [203] [204]
+Underfull \hbox (badness 10000) in paragraph at lines 1106--1107
+[]\T1/ptm/m/n/10 Copies the cur-rent ve-loc-ity of the base link and calls SetD
+-OFVe-loc-i-
+ []
+
+[205] [206] [207] [208]) (./classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver.tex
+[209]) (./classOpenRAVE_1_1planningutils_1_1LineCollisionConstraint.tex)
+(./classOpenRAVE_1_1KinBody_1_1Link.tex
+<classOpenRAVE_1_1KinBody_1_1Link__coll__graph.pdf, id=5326, 72.27pt x 102.3825
+pt>
+File: classOpenRAVE_1_1KinBody_1_1Link__coll__graph.pdf Graphic file (type pdf)
+
+ <use classOpenRAVE_1_1KinBody_1_1Link__coll__graph.pdf> [210 <./classOpenRAVE_
+1_1KinBody_1_1Link__coll__graph.pdf>] [211] [212] [213] [214] [215] [216])
+(./classOpenRAVE_1_1KinBody_1_1ManageData.tex [217])
+(./classOpenRAVE_1_1RobotBase_1_1Manipulator.tex [218]
+Underfull \hbox (badness 2351) in paragraph at lines 70--71
+[]\T1/ptm/m/n/10 virtual [][]Ik-Pa-ram-e-ter-i-za-tion[][] [][]GetIk-Pa-ram-e-t
+er-i-za-tion[][] (const [][]Ik-Pa-ram-e-ter-i-za-tion[][]
+ []
+
+[219]
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+[]\T1/ptm/m/n/10 virtual bool [][]CheckInde-pen-dent-Col-li-sion[][] (Col-li-si
+on-Re-portPtr re-
+ []
+
+[220] [221] [222] [223]
+Overfull \hbox (5.40022pt too wide) in paragraph at lines 247--247
+[]                \T1/pcr/m/n/8 manip->GetRobot()->SetActiveDOFs(manip->GetArmI
+ndices());[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 249--249
+[]                \T1/pcr/m/n/8 BOOST_ASSERT( dist(manip->GetIkParameterization
+(iktype), ikparam)[] 
+ []
+
+[224]) (./classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.tex
+[225]) (./structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC.tex)
+(./classOpenRAVE_1_1ModuleBase.tex
+<classOpenRAVE_1_1ModuleBase__inherit__graph.pdf, id=5626, 114.4275pt x 146.547
+5pt>
+File: classOpenRAVE_1_1ModuleBase__inherit__graph.pdf Graphic file (type pdf)
+ <use classOpenRAVE_1_1ModuleBase__inherit__graph.pdf> [226]
+<classOpenRAVE_1_1ModuleBase__coll__graph.pdf, id=5634, 84.315pt x 88.33pt>
+File: classOpenRAVE_1_1ModuleBase__coll__graph.pdf Graphic file (type pdf)
+
+<use classOpenRAVE_1_1ModuleBase__coll__graph.pdf> [227 <./classOpenRAVE_1_1Mod
+uleBase__inherit__graph.pdf> <./classOpenRAVE_1_1ModuleBase__coll__graph.pdf>])
+(./classOpenRAVE_1_1MultiController.tex
+<classOpenRAVE_1_1MultiController__inherit__graph.pdf, id=5662, 88.33pt x 146.5
+475pt>
+File: classOpenRAVE_1_1MultiController__inherit__graph.pdf Graphic file (type p
+df)
+ <use classOpenRAVE_1_1MultiController__inherit__graph.pdf> [228]
+<classOpenRAVE_1_1MultiController__coll__graph.pdf, id=5670, 88.33pt x 146.5475
+pt>
+File: classOpenRAVE_1_1MultiController__coll__graph.pdf Graphic file (type pdf)
+
+ <use classOpenRAVE_1_1MultiController__coll__graph.pdf> [229 <./classOpenRAVE_
+1_1MultiController__inherit__graph.pdf> <./classOpenRAVE_1_1MultiController__co
+ll__graph.pdf>] [230]) (./classOpenRAVE_1_1geometry_1_1obb.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+) (./classOpenRAVE_1_1SensorBase_1_1OdometrySensorData.tex
+<classOpenRAVE_1_1SensorBase_1_1OdometrySensorData__inherit__graph.pdf, id=5706
+, 118.4425pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1OdometrySensorData__inherit__graph.pdf Gra
+phic file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1OdometrySensorData__inherit__graph.pdf>
+[231]
+<classOpenRAVE_1_1SensorBase_1_1OdometrySensorData__coll__graph.pdf, id=5714, 1
+18.4425pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1OdometrySensorData__coll__graph.pdf Graphi
+c file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1OdometrySensorData__coll__graph.pdf>)
+(./classOpenRAVE_1_1openrave__exception.tex [232 <./classOpenRAVE_1_1SensorBase
+_1_1OdometrySensorData__inherit__graph.pdf> <./classOpenRAVE_1_1SensorBase_1_1O
+dometrySensorData__coll__graph.pdf>]) (./classOpenRAVE_1_1PhysicsEngineBase.tex
+
+<classOpenRAVE_1_1PhysicsEngineBase__inherit__graph.pdf, id=5743, 110.4125pt x 
+88.33pt>
+File: classOpenRAVE_1_1PhysicsEngineBase__inherit__graph.pdf Graphic file (type
+ pdf)
+ <use classOpenRAVE_1_1PhysicsEngineBase__inherit__graph.pdf>
+<classOpenRAVE_1_1PhysicsEngineBase__coll__graph.pdf, id=5744, 110.4125pt x 88.
+33pt>
+File: classOpenRAVE_1_1PhysicsEngineBase__coll__graph.pdf Graphic file (type pd
+f)
+ <use classOpenRAVE_1_1PhysicsEngineBase__coll__graph.pdf> [233 <./classOpenRAV
+E_1_1PhysicsEngineBase__inherit__graph.pdf>]
+Underfull \hbox (badness 1838) in paragraph at lines 36--38
+[]\T1/ptm/m/n/10 virtual bool [][]Set-Physic-sOp-tions[][] (std::ostream &sout,
+ std::istream &sin-put)
+ []
+
+[234 <./classOpenRAVE_1_1PhysicsEngineBase__coll__graph.pdf>]
+Underfull \hbox (badness 1810) in paragraph at lines 66--67
+[]\T1/ptm/m/n/10 virtual void [][]Set-Grav-ity[][] (const Vec-tor &grav-ity) OP
+ENRAVE_-DUMMY_-
+ []
+
+[235] [236] [237]) (./classOpenRAVE_1_1PlannerBase.tex
+<classOpenRAVE_1_1PlannerBase__inherit__graph.pdf, id=5830, 84.315pt x 88.33pt>
+File: classOpenRAVE_1_1PlannerBase__inherit__graph.pdf Graphic file (type pdf)
+<use classOpenRAVE_1_1PlannerBase__inherit__graph.pdf> [238]
+<classOpenRAVE_1_1PlannerBase__coll__graph.pdf, id=5839, 84.315pt x 88.33pt>
+File: classOpenRAVE_1_1PlannerBase__coll__graph.pdf Graphic file (type pdf)
+
+<use classOpenRAVE_1_1PlannerBase__coll__graph.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+[]\T1/ptm/m/n/10 virtual bool [][]Init-Plan[][] (Robot-BasePtr robot, Plan-ner-
+Pa-ram-e-ter-sCon-stPtr
+ []
+
+[239 <./classOpenRAVE_1_1PlannerBase__inherit__graph.pdf> <./classOpenRAVE_1_1P
+lannerBase__coll__graph.pdf>]
+Underfull \hbox (badness 1038) in paragraph at lines 49--51
+[]\T1/ptm/m/n/10 virtual [][]Plan-ner-Sta-tus[][] [][]Plan-Path[][] (Tra-jec-to
+-ry-BasePtr ptraj, boost::shared_-ptr$\OML/cmm/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 7451) in paragraph at lines 56--57
+[]\T1/ptm/m/n/10 virtual User-Dat-aPtr [][]Reg-is-ter-Plan-Call-back[][] (const
+ [][]Plan-Call-backFn[][] &call-
+ []
+
+[240] [241] [242]) (./classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.tex
+<classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__inherit__graph.pdf, id=5911
+, 192.72pt x 88.33pt>
+File: classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__inherit__graph.pdf Gra
+phic file (type pdf)
+
+<use classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__inherit__graph.pdf>
+<classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__coll__graph.pdf, id=5912, 3
+45.29pt x 102.3825pt>
+File: classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__coll__graph.pdf Graphi
+c file (type pdf)
+
+<use classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__coll__graph.pdf>
+Overfull \hbox (35.0pt too wide) in paragraph at lines 24--26
+ [] 
+ []
+
+[243 <./classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__inherit__graph.pdf>]
+
+Underfull \hbox (badness 6641) in paragraph at lines 35--36
+[]\T1/ptm/m/n/10 typedef boost::function$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 dRe
+al(const std::vector$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10
+ >$ \T1/ptm/m/n/10 &, const
+ []
+
+[244 <./classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__coll__graph.pdf>]
+[245] [246] [247] [248] [249] [250] [251])
+(./classOpenRAVE_1_1PlannerBase_1_1PlannerProgress.tex)
+(./classOpenRAVE_1_1PLUGININFO.tex [252])
+(./classOpenRAVE_1_1TrajectoryBase_1_1Point.tex)
+(./classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+[253]) (./classOpenRAVE_1_1geometry_1_1RaveTransform.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+) (./classOpenRAVE_1_1geometry_1_1RaveTransformMatrix.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+[254]) (./classOpenRAVE_1_1geometry_1_1RaveVector.tex [255]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+) (./classOpenRAVE_1_1geometry_1_1ray.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+) (./classOpenRAVE_1_1RobotBase.tex [256]
+<classOpenRAVE_1_1RobotBase__inherit__graph.pdf, id=6157, 84.315pt x 146.5475pt
+>
+File: classOpenRAVE_1_1RobotBase__inherit__graph.pdf Graphic file (type pdf)
+ <use classOpenRAVE_1_1RobotBase__inherit__graph.pdf>
+<classOpenRAVE_1_1RobotBase__coll__graph.pdf, id=6158, 230.8625pt x 162.6075pt>
+File: classOpenRAVE_1_1RobotBase__coll__graph.pdf Graphic file (type pdf)
+<use classOpenRAVE_1_1RobotBase__coll__graph.pdf> [257 <./classOpenRAVE_1_1Robo
+tBase__inherit__graph.pdf> <./classOpenRAVE_1_1RobotBase__coll__graph.pdf>]
+Underfull \hbox (badness 3713) in paragraph at lines 44--46
+[]\T1/ptm/m/n/10 virtual bool [][]Init-From-Data[][] (const std::string &data, 
+const At-tributes-List
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+[]\T1/ptm/m/n/10 virtual bool [][]Check-Self-Col-li-sion[][] (Col-li-sion-Re-po
+rtPtr re-
+ []
+
+[258]
+Underfull \hbox (badness 6675) in paragraph at lines 80--81
+[]\T1/ptm/m/n/10 void [][]Get-Full-Tra-jec-to-ryFro-mAc-tive[][] (Tra-jec-to-ry
+-BasePtr pfull-traj, Tra-jec-to-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\T1/ptm/m/n/10 ry-BaseC-on-stPtr pActive-Traj, bool bOver-write-Trans-forms=tru
+e) [][]RAVE_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+[]\T1/ptm/m/n/10 virtual bool [][]Grab[][] (Kin-BodyPtr body, const std::set$\O
+ML/cmm/m/it/10 <$ \T1/ptm/m/n/10 int $\OML/cmm/m/it/10 >$
+ []
+
+[259] [260]
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
+[]\T1/ptm/m/n/10 static const [][]DO-FAffine[][] DOF_-NoTransform [][]RAVE_-DEP
+RECATED[][] =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
+[]\T1/ptm/m/n/10 static const [][]DO-FAffine[][] DOF_-RotationAxis \T1/ptm/b/n/
+10 RAVE_-DEPRECATED \T1/ptm/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--181
+[]\T1/ptm/m/n/10 static const [][]DO-FAffine[][] DOF_-Rotation3D \T1/ptm/b/n/10
+ RAVE_-DEPRECATED \T1/ptm/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
+[]\T1/ptm/m/n/10 static const [][]DO-FAffine[][] DOF_-RotationQuat \T1/ptm/b/n/
+10 RAVE_-DEPRECATED \T1/ptm/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 188--189
+[]\T1/ptm/m/n/10 virtual void [][]Se-tAc-tiveD-OFs[][] (const std::vector$\OML/
+cmm/m/it/10 <$ \T1/ptm/m/n/10 int $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &dofind-i
+ces, int
+ []
+
+[261] [262]
+Underfull \hbox (badness 1509) in paragraph at lines 429--431
+[]\T1/ptm/m/n/10 virtual void [][]Sub-trac-tAc-tiveD-OF-Val-ues[][] (std::vecto
+r$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 
+&q1, const
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--453
+[]\T1/ptm/m/n/10 virtual bool [][]Se-tAc-tive-Mo-tion[][] (Tra-jec-to-ry-BaseC-
+on-stPtr ptraj) [][]RAVE_-
+ []
+
+
+Underfull \hbox (badness 5475) in paragraph at lines 455--456
+[]\T1/ptm/m/n/10 virtual void [][]Cal-cu-late-Ac-tive-Ja-co-bian[][] (int in-de
+x, const Vec-tor &off-set,
+ []
+
+
+Underfull \hbox (badness 3209) in paragraph at lines 458--460
+[]\T1/ptm/m/n/10 virtual void \T1/ptm/b/n/10 Cal-cu-late-Ac-tive-Ja-co-bian \T1
+/ptm/m/n/10 (int in-dex, const Vec-tor &off-set,
+ []
+
+[263] [264] [265] [266] [267] [268] [269] [270] [271])
+(./classOpenRAVE_1_1RobotBase_1_1RobotStateSaver.tex)
+(./classOpenRAVE_1_1SensorBase.tex [272]
+<classOpenRAVE_1_1SensorBase__inherit__graph.pdf, id=6479, 84.315pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase__inherit__graph.pdf Graphic file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase__inherit__graph.pdf>
+<classOpenRAVE_1_1SensorBase__coll__graph.pdf, id=6480, 84.315pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase__coll__graph.pdf Graphic file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase__coll__graph.pdf> [273 <./classOpenRAVE_1_1Sen
+sorBase__inherit__graph.pdf> <./classOpenRAVE_1_1SensorBase__coll__graph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 56--60
+[][][]\T1/ptm/m/n/10 CC_-RenderDataOff[][] = 0x21, [][]CC_-RenderDataCheck[][] 
+= 0x23, [][]CC_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+[]\T1/ptm/m/n/10 virtual Sen-sor-Ge-om-e-tryPtr [][]Get-Sen-sor-Ge-om-e-try[][]
+ (Sen-sorType type=ST_-
+ []
+
+[274]
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+[]\T1/ptm/m/n/10 virtual User-Dat-aPtr [][]Reg-is-ter-Dat-a-Call-back[][] (Sen-
+sorType type, const
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+\T1/ptm/m/n/10 boost::function$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 void(SensorDa
+taConstPtr)$\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &call-back) OPENRAVE_-
+ []
+
+[275] [276] [277]) (./classOpenRAVE_1_1SensorBase_1_1SensorData.tex
+<classOpenRAVE_1_1SensorBase_1_1SensorData__inherit__graph.pdf, id=6585, 236.88
+5pt x 230.8625pt>
+File: classOpenRAVE_1_1SensorBase_1_1SensorData__inherit__graph.pdf Graphic fil
+e (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1SensorData__inherit__graph.pdf> [278])
+(./classOpenRAVE_1_1SensorBase_1_1SensorGeometry.tex [279 <./classOpenRAVE_1_1S
+ensorBase_1_1SensorData__inherit__graph.pdf>])
+(./classOpenRAVE_1_1SensorSystemBase.tex
+<classOpenRAVE_1_1SensorSystemBase__inherit__graph.pdf, id=6613, 118.4425pt x 1
+46.5475pt>
+File: classOpenRAVE_1_1SensorSystemBase__inherit__graph.pdf Graphic file (type 
+pdf)
+ <use classOpenRAVE_1_1SensorSystemBase__inherit__graph.pdf>
+<classOpenRAVE_1_1SensorSystemBase__coll__graph.pdf, id=6614, 110.4125pt x 88.3
+3pt>
+File: classOpenRAVE_1_1SensorSystemBase__coll__graph.pdf Graphic file (type pdf
+)
+ <use classOpenRAVE_1_1SensorSystemBase__coll__graph.pdf> [280 <./classOpenRAVE
+_1_1SensorSystemBase__inherit__graph.pdf>] [281 <./classOpenRAVE_1_1SensorSyste
+mBase__coll__graph.pdf>])
+(./classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric.tex)
+(./classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler.tex)
+(./classOpenRAVE_1_1SimpleSensorSystem.tex [282]
+<classOpenRAVE_1_1SimpleSensorSystem__inherit__graph.pdf, id=6662, 118.4425pt x
+ 146.5475pt>
+File: classOpenRAVE_1_1SimpleSensorSystem__inherit__graph.pdf Graphic file (typ
+e pdf)
+ <use classOpenRAVE_1_1SimpleSensorSystem__inherit__graph.pdf>
+<classOpenRAVE_1_1SimpleSensorSystem__coll__graph.pdf, id=6663, 118.4425pt x 14
+6.5475pt>
+File: classOpenRAVE_1_1SimpleSensorSystem__coll__graph.pdf Graphic file (type p
+df)
+ <use classOpenRAVE_1_1SimpleSensorSystem__coll__graph.pdf> [283 <./classOpenRA
+VE_1_1SimpleSensorSystem__inherit__graph.pdf> <./classOpenRAVE_1_1SimpleSensorS
+ystem__coll__graph.pdf>]) (./classOpenRAVE_1_1SpaceSamplerBase.tex
+<classOpenRAVE_1_1SpaceSamplerBase__inherit__graph.pdf, id=6682, 110.4125pt x 8
+8.33pt>
+File: classOpenRAVE_1_1SpaceSamplerBase__inherit__graph.pdf Graphic file (type 
+pdf)
+ <use classOpenRAVE_1_1SpaceSamplerBase__inherit__graph.pdf>
+<classOpenRAVE_1_1SpaceSamplerBase__coll__graph.pdf, id=6683, 110.4125pt x 88.3
+3pt>
+File: classOpenRAVE_1_1SpaceSamplerBase__coll__graph.pdf Graphic file (type pdf
+)
+ <use classOpenRAVE_1_1SpaceSamplerBase__coll__graph.pdf> [284 <./classOpenRAVE
+_1_1SpaceSamplerBase__inherit__graph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+[]\T1/ptm/m/n/10 virtual void [][]Set-Seed[][] (uint32_-t seed) OPENRAVE_-DUMMY
+_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
+[]\T1/ptm/m/n/10 virtual void [][]SetSpaceDOF[][] (int dof) OPENRAVE_-DUMMY_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+[]\T1/ptm/m/n/10 virtual void [][]GetLim-its[][] (std::vector$\OML/cmm/m/it/10 
+<$ \T1/ptm/m/n/10 uint32_-t $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &vLow-er-Limit,
+
+ []
+
+
+Underfull \hbox (badness 4832) in paragraph at lines 50--51
+\T1/ptm/m/n/10 std::vector$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 uint32_-t $\OML/c
+mm/m/it/10 >$ \T1/ptm/m/n/10 &vUp-per-Limit) const OPENRAVE_-DUMMY_-
+ []
+
+
+Underfull \hbox (badness 4899) in paragraph at lines 52--53
+[]\T1/ptm/m/n/10 virtual void [][]Sam-ple-Se-quence[][] (std::vector$\OML/cmm/m
+/it/10 <$ \T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &sam-ples, s
+ize_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+\T1/ptm/m/n/10 t num=1, [][]In-ter-val-Type[][] interval=IT_-Closed) OPENRAVE_-
+DUMMY_-
+ []
+
+[285 <./classOpenRAVE_1_1SpaceSamplerBase__coll__graph.pdf>]
+Underfull \hbox (badness 4699) in paragraph at lines 56--57
+[]\T1/ptm/m/n/10 virtual void [][]Sam-ple-Com-plete[][] (std::vector$\OML/cmm/m
+/it/10 <$ \T1/ptm/m/n/10 dReal $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &sam-ples, s
+ize_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+\T1/ptm/m/n/10 t num, [][]In-ter-val-Type[][] interval=IT_-Closed) OPENRAVE_-DU
+MMY_-
+ []
+
+[286] [287]) (./classOpenRAVE_1_1SensorBase_1_1TactileSensorData.tex
+<classOpenRAVE_1_1SensorBase_1_1TactileSensorData__inherit__graph.pdf, id=6758,
+ 104.39pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1TactileSensorData__inherit__graph.pdf Grap
+hic file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1TactileSensorData__inherit__graph.pdf>
+<classOpenRAVE_1_1SensorBase_1_1TactileSensorData__coll__graph.pdf, id=6759, 10
+4.39pt x 88.33pt>
+File: classOpenRAVE_1_1SensorBase_1_1TactileSensorData__coll__graph.pdf Graphic
+ file (type pdf)
+
+<use classOpenRAVE_1_1SensorBase_1_1TactileSensorData__coll__graph.pdf>
+[288 <./classOpenRAVE_1_1SensorBase_1_1TactileSensorData__inherit__graph.pdf>])
+(./classOpenRAVE_1_1TrajectoryBase.tex
+<classOpenRAVE_1_1TrajectoryBase__inherit__graph.pdf, id=6772, 88.33pt x 88.33p
+t>
+File: classOpenRAVE_1_1TrajectoryBase__inherit__graph.pdf Graphic file (type pd
+f)
+ <use classOpenRAVE_1_1TrajectoryBase__inherit__graph.pdf> [289 <./classOpenRAV
+E_1_1SensorBase_1_1TactileSensorData__coll__graph.pdf>]
+<classOpenRAVE_1_1TrajectoryBase__coll__graph.pdf, id=6785, 88.33pt x 88.33pt>
+File: classOpenRAVE_1_1TrajectoryBase__coll__graph.pdf Graphic file (type pdf)
+
+<use classOpenRAVE_1_1TrajectoryBase__coll__graph.pdf> [290 <./classOpenRAVE_1_
+1TrajectoryBase__inherit__graph.pdf> <./classOpenRAVE_1_1TrajectoryBase__coll__
+graph.pdf>]
+Underfull \hbox (badness 4060) in paragraph at lines 82--84
+[]\T1/ptm/m/n/10 virtual bool [][]Sam-ple-Tra-jec-tory[][] (dReal time, [][]Poi
+nt[][] &tp) const [][]RAVE_-
+ []
+
+[291] [292] [293] [294]
+Underfull \hbox (badness 4981) in paragraph at lines 225--225
+[]\T1/ptm/m/n/10 The data to in-sert, can rep-re-sent mul-ti-ple con-sec-u-tive
+ way-points.
+ []
+
+
+Underfull \hbox (badness 4981) in paragraph at lines 237--237
+[]\T1/ptm/m/n/10 The data to in-sert, can rep-re-sent mul-ti-ple con-sec-u-tive
+ way-points.
+ []
+
+[295]) (./classOpenRAVE_1_1geometry_1_1triangle.tex [296]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+) (./classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH.tex)
+(./classOpenRAVE_1_1UserData.tex [297]) (./classOpenRAVE_1_1ViewerBase.tex
+<classOpenRAVE_1_1ViewerBase__inherit__graph.pdf, id=6957, 84.315pt x 88.33pt>
+File: classOpenRAVE_1_1ViewerBase__inherit__graph.pdf Graphic file (type pdf)
+
+<use classOpenRAVE_1_1ViewerBase__inherit__graph.pdf>
+<classOpenRAVE_1_1ViewerBase__coll__graph.pdf, id=6958, 84.315pt x 88.33pt>
+File: classOpenRAVE_1_1ViewerBase__coll__graph.pdf Graphic file (type pdf)
+
+<use classOpenRAVE_1_1ViewerBase__coll__graph.pdf> [298 <./classOpenRAVE_1_1Vie
+werBase__inherit__graph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+[]\T1/ptm/m/n/10 virtual boost::shared_-ptr$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 
+void $\OML/cmm/m/it/10 >$ [][]\T1/ptm/m/n/10 Reg-is-terItem-S-e-lec-tion-Call-b
+ack[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+\T1/ptm/m/n/10 (const [][]Item-S-e-lec-tion-Call-backFn[][] &fn-call-back) OPEN
+RAVE_-DUMMY_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+[]\T1/ptm/m/n/10 virtual boost::shared_-ptr$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 
+void $\OML/cmm/m/it/10 >$ [][]\T1/ptm/m/n/10 Reg-is-ter-View-er-Im-age-Call-bac
+k[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+\T1/ptm/m/n/10 (const [][]View-er-Im-age-Call-backFn[][] &fn-call-back) OPENRAV
+E_-DUMMY_-
+ []
+
+[299 <./classOpenRAVE_1_1ViewerBase__coll__graph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+[]\T1/ptm/m/n/10 virtual void [][]En-vi-ron-mentSync[][] () OPENRAVE_-DUMMY_-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+[]\T1/ptm/m/n/10 virtual RaveTransform$\OML/cmm/m/it/10 <$ \T1/ptm/m/n/10 float
+ $\OML/cmm/m/it/10 >$ [][]\T1/ptm/m/n/10 Get-Cam-er-a-Trans-form[][] () const
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[]\T1/ptm/m/n/10 virtual bool [][]Get-Cam-eraIm-age[][] (std::vector$\OML/cmm/m
+/it/10 <$ \T1/ptm/m/n/10 uint8_-t $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &mem-ory,
+
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 86--87
+\T1/ptm/m/n/10 int width, int height, const RaveTransform$\OML/cmm/m/it/10 <$ \
+T1/ptm/m/n/10 float $\OML/cmm/m/it/10 >$ \T1/ptm/m/n/10 &t, const
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[][]\T1/ptm/m/n/10 Sen-sor-Base::CameraIntrinsics[][] &in-trin-sics) OPENRAVE_-
+DUMMY_-
+ []
+
+[300] [301]
+Underfull \hbox (badness 3460) in paragraph at lines 152--152
+[]\T1/ptm/m/n/10 the mem-ory where the im-age will be stored at, has to store
+ []
+
+[302] [303]) (./classOpenRAVE_1_1XMLReadable.tex
+<classOpenRAVE_1_1XMLReadable__inherit__graph.pdf, id=7066, 106.3975pt x 88.33p
+t>
+File: classOpenRAVE_1_1XMLReadable__inherit__graph.pdf Graphic file (type pdf)
+ <use classOpenRAVE_1_1XMLReadable__inherit__graph.pdf>) [304 <./classOpenRAVE_
+1_1XMLReadable__inherit__graph.pdf>] (./customreader.cpp-example.tex
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 34--34
+[]        \T1/pcr/m/n/8 PIDXMLReader(boost::shared_ptr<XMLData> piddata, const 
+AttributesList& at[] 
+ []
+
+
+Overfull \hbox (10.20023pt too wide) in paragraph at lines 39--39
+[]            \T1/pcr/m/n/8 RAVELOG_INFO("the attributes piddata is created wit
+h are:\n");[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 40--40
+[]            \T1/pcr/m/n/8 for(AttributesList::const_iterator itatt = atts.beg
+in(); itatt != att[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 42--42
+[]                \T1/pcr/m/n/8 RAVELOG_INFO("%s=%s\n",itatt->first.c_str(),ita
+tt->second.c_str()[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 50--50
+[]        \T1/pcr/m/n/8 virtual ProcessElement startElement(const std::string& 
+name, const Attrib[] 
+ []
+
+
+Overfull \hbox (34.20024pt too wide) in paragraph at lines 53--53
+[]            \T1/pcr/m/n/8 return (name == "pgains" || name=="igains") ? PE_Su
+pport : PE_Pass;[] 
+ []
+
+[305
+
+]
+Overfull \hbox (39.00024pt too wide) in paragraph at lines 62--62
+[]                \T1/pcr/m/n/8 _piddata->pgains = vector<dReal>((istream_itera
+tor<dReal>(_ss)),[] 
+ []
+
+
+Overfull \hbox (39.00024pt too wide) in paragraph at lines 66--66
+[]                \T1/pcr/m/n/8 _piddata->igains = vector<dReal>((istream_itera
+tor<dReal>(_ss)),[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 85--85
+[]    \T1/pcr/m/n/8 static BaseXMLReaderPtr CreateXMLReader(InterfaceBasePtr pt
+r, const Attribute[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 88--88
+[]        \T1/pcr/m/n/8 // ptr is the robot interface that this reader is being
+ created for[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 89--89
+[]        \T1/pcr/m/n/8 return BaseXMLReaderPtr(new PIDXMLReader(boost::shared_
+ptr<XMLData>(),att[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 99--99
+[]    \T1/pcr/m/n/8 virtual bool Init(RobotBasePtr robot, const std::vector<int
+>& dofindices, int[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 107--107
+[]        \T1/pcr/m/n/8 boost::shared_ptr<XMLData> piddata = boost::dynamic_poi
+nter_cast<XMLData>[] 
+ []
+
+
+Overfull \hbox (19.80023pt too wide) in paragraph at lines 111--111
+[]            \T1/pcr/m/n/8 ss << "piddata from custom XML reader is" << endl <
+< "pgains: ";[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 112--112
+[]            \T1/pcr/m/n/8 for(vector<dReal>::iterator it = piddata->pgains.be
+gin(); it != pidda[] 
+ []
+
+[306]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 116--116
+[]            \T1/pcr/m/n/8 for(vector<dReal>::iterator it = piddata->igains.be
+gin(); it != pidda[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 136--136
+[]    \T1/pcr/m/n/8 virtual bool SetDesired(const std::vector<dReal>& values, T
+ransformConstPtr t[] 
+ []
+
+
+Overfull \hbox (39.00024pt too wide) in paragraph at lines 163--163
+[]\T1/pcr/m/n/8 InterfaceBasePtr CreateInterfaceValidated(InterfaceType type, c
+onst std::string&[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 167--167
+[]        \T1/pcr/m/n/8 s_RegisteredReader = RaveRegisterXMLReader(PT_Controlle
+r,"piddata",Custom[] 
+ []
+
+[307]) (./FindOpenRAVE.cmake-example.tex
+Overfull \hbox (24.60023pt too wide) in paragraph at lines 8--8
+[]\T1/pcr/m/n/8 # - Find Open Robotics Automation Virtual Enviornment (OpenRAVE
+) Installation[] 
+ []
+
+
+Overfull \hbox (39.00024pt too wide) in paragraph at lines 11--11
+[]\T1/pcr/m/n/8 # OpenRAVE provides an environment for testing, developing, and
+ deploying motion[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 13--13
+[]\T1/pcr/m/n/8 # in real-world robotics applications. The main focus is on sim
+ulation and analys[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 15--15
+[]\T1/pcr/m/n/8 # geometric information related to motion planning. OpenRAVE's 
+stand-alone nature[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 17--17
+[]\T1/pcr/m/n/8 # integrated into existing robotics systems. An important targe
+t application is i[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 20--20
+[]\T1/pcr/m/n/8 #==============================================================
+==================[] 
+ []
+
+
+Overfull \hbox (10.20023pt too wide) in paragraph at lines 28--28
+[]\T1/pcr/m/n/8 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICUL
+AR PURPOSE.[] 
+ []
+
+
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 30--30
+[]\T1/pcr/m/n/8 #==============================================================
+===============[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 33--33
+[]\T1/pcr/m/n/8 #==============================================================
+==================[] 
+ []
+
+[308]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 41--41
+[]    \T1/pcr/m/n/8 get_filename_component(OpenRAVE_VERSION_STRING "[HKEY_LOCAL
+_MACHINE\\SOFTWARE[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 43--43
+[]    \T1/pcr/m/n/8 message(STATUS "OpenRAVE ${OpenRAVE_VERSION_STRING} found i
+n registry")[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 45--45
+[]      \T1/pcr/m/n/8 get_filename_component(_OpenRAVE_PATH "[HKEY_LOCAL_MACHIN
+E\\SOFTWARE\\OpenR[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 53--53
+[]  \T1/pcr/m/n/8 find_program(_OpenRAVE_CONFIG_EXECUTABLE NAMES ${_OpenRAVE_CO
+NFIG_NAME} DOC "op[] 
+ []
+
+
+Overfull \hbox (39.00024pt too wide) in paragraph at lines 56--56
+[]    \T1/pcr/m/n/8 get_filename_component(_OpenRAVE_PATH "${_OpenRAVE_CONFIG_E
+XECUTABLE}" PATH)[] 
+ []
+
+) (./ikfastloader.cpp-example.tex [309]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 48--48
+[]    \T1/pcr/m/n/8 EnvironmentBasePtr penv = RaveCreateEnvironment(); // creat
+e the main environ[] 
+ []
+
+
+Overfull \hbox (10.20023pt too wide) in paragraph at lines 65--65
+[]        \T1/pcr/m/n/8 ssin << "LoadIKFastSolver " << probot->GetName() << " "
+ << iktype;[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 69--69
+[]        \T1/pcr/m/n/8 probot->SetActiveManipulator(probot->GetManipulators().
+at(0)->GetName());[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 79--79
+[]        \T1/pcr/m/n/8 if( !probot->GetActiveManipulator()->FindIKSolution(IkP
+arameterization(pr[] 
+ []
+
+
+Overfull \hbox (48.60025pt too wide) in paragraph at lines 80--80
+[]      \T1/pcr/m/n/8 obot->GetActiveManipulator()->GetEndEffectorTransform()),
+vsolution,true) ) {[] 
+ []
+
+[310]) (./opencvsaving.cpp-example.tex
+<cppexample_opencvsaving.jpg, id=7105, 803.0pt x 623.32875pt>
+File: cppexample_opencvsaving.jpg Graphic file (type jpg)
+
+<use cppexample_opencvsaving.jpg> [311 <./cppexample_opencvsaving.jpg>]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 43--43
+[]    \T1/pcr/m/n/8 // finally you call the viewer's infinite loop (this is why
+ you need a separa[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 55--55
+[]        \T1/pcr/m/n/8 pdata = boost::static_pointer_cast<SensorBase::CameraSe
+nsorData>(pcamera-[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 57--57
+[]        \T1/pcr/m/n/8 geom = *boost::static_pointer_cast<SensorBase::CameraGe
+omData>(pcamera->G[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 59--59
+[]        \T1/pcr/m/n/8 img = cvCreateImage(cvSize(geom.width,geom.height),IPL_
+DEPTH_8U,3);[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 74--74
+[]    \T1/pcr/m/n/8 EnvironmentBasePtr penv = RaveCreateEnvironment(); // creat
+e the main environ[] 
+ []
+
+[312]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 92--92
+[]    \T1/pcr/m/n/8 for( std::vector<SensorBasePtr>::iterator itsensor = allsen
+sors.begin(); itse[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 97--97
+[]            \T1/pcr/m/n/8 vcameras.push_back(boost::shared_ptr<OpenRAVECamera
+>(new OpenRAVECame[] 
+ []
+
+
+Overfull \hbox (39.00024pt too wide) in paragraph at lines 104--104
+[]            \T1/pcr/m/n/8 vcameras[icamera]->pcamera->GetSensorData(vcameras[
+icamera]->pdata);[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 107--107
+[]                \T1/pcr/m/n/8 uint8_t* src = &vcameras[icamera]->pdata->vimag
+edata.at(0);[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 108--108
+[]                \T1/pcr/m/n/8 for(int i=0; i < vcameras[icamera]->geom.height
+; i++, imageData +[] 
+ []
+
+
+Overfull \hbox (58.20026pt too wide) in paragraph at lines 109--109
+[]      \T1/pcr/m/n/8 = vcameras[icamera]->img->widthStep, src += 3*vcameras[ic
+amera]->geom.width) {[] 
+ []
+
+
+Overfull \hbox (0.60022pt too wide) in paragraph at lines 110--110
+[]                    \T1/pcr/m/n/8 for(int j=0; j<vcameras[icamera]->geom.widt
+h; j++) {[] 
+ []
+
+
+Overfull \hbox (24.60023pt too wide) in paragraph at lines 116--116
+[]                \T1/pcr/m/n/8 string filename = str(boost::format("camera%d.j
+pg")%icamera);[] 
+ []
+
+
+Overfull \hbox (24.60023pt too wide) in paragraph at lines 117--117
+[]                \T1/pcr/m/n/8 RAVELOG_INFO(str(boost::format("saving image %s
+")%filename));[] 
+ []
+
+) (./orcollision.cpp-example.tex [313]
+Overfull \hbox (77.40027pt too wide) in paragraph at lines 10--10
+[]    \T1/pcr/m/n/8 orcollision [--list] [--checker checker_name] [--joints #va
+lues [values]] body_model[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 42--42
+[]    \T1/pcr/m/n/8 RAVELOG_INFO("orcollision [--list] [--checker checker_name]
+ [--joints #values[] 
+ []
+
+
+Overfull \hbox (39.00024pt too wide) in paragraph at lines 53--53
+[]    \T1/pcr/m/n/8 for(std::map<InterfaceType, std::vector<std::string> >::ite
+rator itinterface[] 
+ []
+
+
+Overfull \hbox (63.00026pt too wide) in paragraph at lines 54--54
+[]      \T1/pcr/m/n/8 = interfacenames.begin(); itinterface != interfacenames.e
+nd(); ++itinterface) {[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 55--55
+[]        \T1/pcr/m/n/8 ss << RaveGetInterfaceName(itinterface->first) << "(" <
+< itinterface->sec[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 57--57
+[]        \T1/pcr/m/n/8 for(vector<string>::iterator it = itinterface->second.b
+egin(); it != itin[] 
+ []
+
+[314]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 73--73
+[]    \T1/pcr/m/n/8 EnvironmentBasePtr penv = RaveCreateEnvironment(); // creat
+e the main environ[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 80--80
+[]        \T1/pcr/m/n/8 if((strcmp(argv[i], "-h") == 0)||(strcmp(argv[i], "-?")
+ == 0)||(strcmp(ar[] 
+ []
+
+
+Overfull \hbox (72.60027pt too wide) in paragraph at lines 81--81
+[]      \T1/pcr/m/n/8 gv[i], "/?") == 0)||(strcmp(argv[i], "--help") == 0)||(st
+rcmp(argv[i], "-help") =[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 88--88
+[]            \T1/pcr/m/n/8 CollisionCheckerBasePtr pchecker = RaveCreateCollis
+ionChecker(penv,ar[] 
+ []
+
+
+Overfull \hbox (10.20023pt too wide) in paragraph at lines 91--91
+[]                \T1/pcr/m/n/8 RAVELOG_ERROR("failed to create checker %s\n", 
+argv[i+1]);[] 
+ []
+
+[315]
+Overfull \hbox (34.20024pt too wide) in paragraph at lines 139--139
+[]    \T1/pcr/m/n/8 for(int i = 0; i < (int)vsetvalues.size() && i < (int)value
+s.size(); ++i) {[] 
+ []
+
+
+Overfull \hbox (0.60022pt too wide) in paragraph at lines 151--151
+[]           \T1/pcr/m/n/8 << (!!report->plink1 ? report->plink1->GetName() : "
+") << ":"[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 152--152
+[]           \T1/pcr/m/n/8 << (!!report->plink2 ? report->plink2->GetName() : "
+") << " at "[] 
+ []
+
+
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 157--157
+[]               \T1/pcr/m/n/8 << c.pos.x << ", " << c.pos.y << ", " << c.pos.z
+ << "), norm=("[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 158--158
+[]               \T1/pcr/m/n/8 << c.norm.x << ", " << c.norm.y << ", " << c.nor
+m.z << ")" << endl[] 
+ []
+
+) (./orconveyormovement.cpp-example.tex [316]
+<cppexample_orconveyormovement.jpg, id=7132, 505.89pt x 391.4625pt>
+File: cppexample_orconveyormovement.jpg Graphic file (type jpg)
+
+<use cppexample_orconveyormovement.jpg> [317 <./cppexample_orconveyormovement.j
+pg>]
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 41--41
+[]        \T1/pcr/m/n/8 dReal appearanceprobability;     // probably of appeara
+nce in 1 second[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 51--51
+[]    \T1/pcr/m/n/8 ConveyorBeltModule(EnvironmentBasePtr penv, std::istream& i
+s) : ModuleBase(pe[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 55--55
+[]        \T1/pcr/m/n/8 RegisterCommand("registerbody",boost::bind(&ConveyorBel
+tModule::RegisterB[] 
+ []
+
+
+Overfull \hbox (5.40022pt too wide) in paragraph at lines 56--56
+[]      \T1/pcr/m/n/8 ody,this,_1,_2),"registers a body to be put into the envi
+ronment");[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 81--81
+[]        \T1/pcr/m/n/8 for(list<RegisteredBody>::iterator it = _listregistered
+.begin(); it != _l[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 84--84
+[]            \T1/pcr/m/n/8 dReal appearanceprobability = 1-pow(1-it->appearanc
+eprobability,fElap[] 
+ []
+
+
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 89--89
+[]                \T1/pcr/m/n/8 KinBodyPtr pbody = GetEnv()->ReadKinBodyXMLFile
+(it->filename);[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 94--94
+[]                    \T1/pcr/m/n/8 t.rot = geometry::quatFromAxisAngle<dReal>(
+Vector(0,0,1),vsam[] 
+ []
+
+[318]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 96--96
+[]                    \T1/pcr/m/n/8 t.trans = start + Vector(vsample.at(2)-0.5,
+vsample.at(3)-0.5,[] 
+ []
+
+
+Overfull \hbox (24.60023pt too wide) in paragraph at lines 99--99
+[]                    \T1/pcr/m/n/8 if( !GetEnv()->CheckCollision(KinBodyConstP
+tr(pbody)) ) {[] 
+ []
+
+
+Overfull \hbox (24.60023pt too wide) in paragraph at lines 132--132
+[]    \T1/pcr/m/n/8 static InterfaceBasePtr create(EnvironmentBasePtr penv, std
+::istream& is)[] 
+ []
+
+[319]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 154--154
+[]    \T1/pcr/m/n/8 boost::shared_ptr<void> handle = RaveRegisterInterface(PT_M
+odule,"conveyorbel[] 
+ []
+
+
+Overfull \hbox (58.20026pt too wide) in paragraph at lines 155--155
+[]      \T1/pcr/m/n/8 t",OPENRAVE_MODULE_HASH,OPENRAVE_ENVIRONMENT_HASH,Conveyo
+rBeltModule::create);[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 161--161
+[]    \T1/pcr/m/n/8 boost::thread thviewer(boost::bind(SetViewer,penv,viewernam
+e)); // create the[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 165--165
+[]    \T1/pcr/m/n/8 // create the conveyor module and add a couple of bodies fo
+r simulation[] 
+ []
+
+) (./orikfilter.cpp-example.tex [320]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 51--51
+[]\T1/pcr/m/n/8 IkFilterReturn MyTimeoutFilter(std::vector<dReal>&, RobotBase::
+ManipulatorPtr, co[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 79--79
+[]    \T1/pcr/m/n/8 ssin << "LoadIKFastSolver " << probot->GetName() << " " << 
+(int)IKP_Transform[] 
+ []
+
+[321]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 94--94
+[]            \T1/pcr/m/n/8 EnvironmentMutex::scoped_lock lock(penv->GetMutex()
+); // lock environ[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 101--101
+[]                \T1/pcr/m/n/8 v[i] = vlower[i] + (vupper[i]-vlower[i])*RaveRa
+ndomFloat();[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 104--104
+[]            \T1/pcr/m/n/8 bool bincollision = !penv->CheckCollision(probot) &
+& !probot->CheckSe[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 108--108
+[]            \T1/pcr/m/n/8 UserDataPtr filterhandle = pmanip->GetIkSolver()->R
+egisterCustomFilte[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 110--110
+[]            \T1/pcr/m/n/8 bool bsuccess = pmanip->FindIKSolution(pmanip->GetI
+kParameterization([] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 112--112
+[]            \T1/pcr/m/n/8 RAVELOG_INFO("in collision: %d, real success %d, ti
+me passed: %d\n",b[] 
+ []
+
+) (./orloadviewer.cpp-example.tex [322]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 49--49
+[]    \T1/pcr/m/n/8 // finally you call the viewer's infinite loop (this is why
+ you need a separa[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 65--65
+[]        \T1/pcr/m/n/8 if((strcmp(argv[i], "-h") == 0)||(strcmp(argv[i], "-?")
+ == 0)||(strcmp(ar[] 
+ []
+
+
+Overfull \hbox (72.60027pt too wide) in paragraph at lines 66--66
+[]      \T1/pcr/m/n/8 gv[i], "/?") == 0)||(strcmp(argv[i], "--help") == 0)||(st
+rcmp(argv[i], "-help") =[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 68--68
+[]            \T1/pcr/m/n/8 RAVELOG_INFO("orloadviewer [--num n] [--scene filen
+ame] viewername\n"[] 
+ []
+
+[323]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 88--88
+[]    \T1/pcr/m/n/8 EnvironmentBasePtr penv = RaveCreateEnvironment(); // creat
+e the main environ[] 
+ []
+
+) (./ormulticontrol.cpp-example.tex
+<cppexample_ormulticontrol.jpg, id=7163, 428.60126pt x 407.5225pt>
+File: cppexample_ormulticontrol.jpg Graphic file (type jpg)
+
+<use cppexample_ormulticontrol.jpg> [324 <./cppexample_ormulticontrol.jpg>]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 54--54
+[]    \T1/pcr/m/n/8 boost::thread thviewer(boost::bind(SetViewer,penv,viewernam
+e)); // create the[] 
+ []
+
+[325]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 73--73
+[]        \T1/pcr/m/n/8 EnvironmentMutex::scoped_lock lock(penv->GetMutex()); /
+/ lock environment[] 
+ []
+
+
+Overfull \hbox (0.60022pt too wide) in paragraph at lines 81--81
+[]        \T1/pcr/m/n/8 probot->SetController(multi,dofindices,1); // control e
+verything[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 82--82
+[]        \T1/pcr/m/n/8 // set the velocity controller on all joints that have 
+'wheel' in their d[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 84--84
+[]        \T1/pcr/m/n/8 for(std::vector<KinBody::JointPtr>::const_iterator itjo
+int = probot->GetJ[] 
+ []
+
+
+Overfull \hbox (5.40022pt too wide) in paragraph at lines 85--85
+[]      \T1/pcr/m/n/8 oints().begin(); itjoint != probot->GetJoints().end(); ++
+itjoint) {[] 
+ []
+
+
+Overfull \hbox (0.60022pt too wide) in paragraph at lines 88--88
+[]                    \T1/pcr/m/n/8 wheelindices.push_back((*itjoint)->GetDOFIn
+dex()+i);[] 
+ []
+
+
+Overfull \hbox (5.40022pt too wide) in paragraph at lines 104--104
+[]            \T1/pcr/m/n/8 armcontroller = RaveCreateController(penv,"idealcon
+troller");[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 108--108
+[]            \T1/pcr/m/n/8 RAVELOG_WARN("robot needs to have wheels and arm fo
+r demo to work\n")[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 115--115
+[]            \T1/pcr/m/n/8 EnvironmentMutex::scoped_lock lock(penv->GetMutex()
+); // lock environ[] 
+ []
+
+
+Overfull \hbox (5.40022pt too wide) in paragraph at lines 119--119
+[]                \T1/pcr/m/n/8 // set a trajectory on the arm and velocity on 
+the wheels[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 122--122
+[]                \T1/pcr/m/n/8 ConfigurationSpecification spec = probot->GetAc
+tiveConfigurationS[] 
+ []
+
+[326]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 131--131
+[]                    \T1/pcr/m/n/8 q.at(RaveRandomInt()%restindices.size()) +=
+ RaveRandomFloat()[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 137--137
+[]                    \T1/pcr/m/n/8 RobotBase::RobotStateSaver saver(probot); /
+/ add a state save[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 140--140
+[]                    \T1/pcr/m/n/8 if( probot->CheckSelfCollision() ) { // don
+'t check env colli[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 142--142
+[]                        \T1/pcr/m/n/8 continue; // robot in collision at fina
+l point, so reject[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 150--150
+[]                \T1/pcr/m/n/8 planningutils::RetimeActiveDOFTrajectory(traj,p
+robot,true);[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 165--165
+[]        \T1/pcr/m/n/8 // unlock the environment and wait for the arm controll
+er to finish (whee[] 
+ []
+
+) (./orplanning__ik.cpp-example.tex [327]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 43--43
+[]    \T1/pcr/m/n/8 boost::thread thviewer(boost::bind(SetViewer,penv,viewernam
+e)); // create the[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 55--55
+[]        \T1/pcr/m/n/8 if( probot->GetManipulators()[i]->GetName().find("arm")
+ != string::npos )[] 
+ []
+
+[328]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 68--68
+[]    \T1/pcr/m/n/8 ssin << "LoadIKFastSolver " << probot->GetName() << " " << 
+(int)IKP_Transform[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 78--78
+[]    \T1/pcr/m/n/8 ModuleBasePtr pbasemanip = RaveCreateModule(penv,"basemanip
+ulation"); // crea[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 84--84
+[]            \T1/pcr/m/n/8 EnvironmentMutex::scoped_lock lock(penv->GetMutex()
+); // lock environ[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 87--87
+[]            \T1/pcr/m/n/8 // find a new manipulator position and feed that in
+to the planner. If[] 
+ []
+
+
+Overfull \hbox (19.80023pt too wide) in paragraph at lines 90--90
+[]            \T1/pcr/m/n/8 t.trans += Vector(RaveRandomFloat()-0.5f,RaveRandom
+Float()-0.5f,[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 92--92
+[]            \T1/pcr/m/n/8 t.rot = quatMultiply(t.rot,quatFromAxisAngle(Vector
+(RaveRandomFloat()[] 
+ []
+
+) (./orplanning__module.cpp-example.tex [329]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 43--43
+[]    \T1/pcr/m/n/8 boost::thread thviewer(boost::bind(SetViewer,penv,viewernam
+e)); // create the[] 
+ []
+
+[330]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 62--62
+[]    \T1/pcr/m/n/8 ModuleBasePtr pbasemanip = RaveCreateModule(penv,"basemanip
+ulation"); // crea[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 68--68
+[]            \T1/pcr/m/n/8 EnvironmentMutex::scoped_lock lock(penv->GetMutex()
+); // lock environ[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 73--73
+[]                \T1/pcr/m/n/8 RobotBase::RobotStateSaver saver(probot); // sa
+ve the state[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 76--76
+[]                        \T1/pcr/m/n/8 v[i] = vlower[i] + (vupper[i]-vlower[i]
+)*RaveRandomFloat([] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 80--80
+[]                    \T1/pcr/m/n/8 if( !penv->CheckCollision(probot) && !probo
+t->CheckSelfCollis[] 
+ []
+
+) (./orplanning__planner.cpp-example.tex [331]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 45--45
+[]    \T1/pcr/m/n/8 boost::thread thviewer(boost::bind(SetViewer,penv,viewernam
+e)); // create the[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 57--57
+[]        \T1/pcr/m/n/8 if( pmanip->GetArmIndices().size() < probot->GetManipul
+ators()[i]->GetArm[] 
+ []
+
+[332]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 62--62
+[]    \T1/pcr/m/n/8 RAVELOG_INFO(str(boost::format("planning with manipulator %
+s\n")%pmanip->GetN[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 71--71
+[]    \T1/pcr/m/n/8 PlannerBase::PlannerParametersPtr params(new PlannerBase::P
+lannerParameters()[] 
+ []
+
+
+Overfull \hbox (39.00024pt too wide) in paragraph at lines 74--74
+[]    \T1/pcr/m/n/8 params->SetRobotActiveJoints(probot); // set planning confi
+guration space to[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 81--81
+[]            \T1/pcr/m/n/8 EnvironmentMutex::scoped_lock lock(penv->GetMutex()
+); // lock environ[] 
+ []
+
+
+Overfull \hbox (15.00023pt too wide) in paragraph at lines 86--86
+[]                \T1/pcr/m/n/8 RobotBase::RobotStateSaver saver(probot); // sa
+ve the state[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 89--89
+[]                        \T1/pcr/m/n/8 params->vgoalconfig[i] = vlower[i] + (v
+upper[i]-vlower[i][] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 93--93
+[]                    \T1/pcr/m/n/8 if( !penv->CheckCollision(probot) && !probo
+t->CheckSelfCollis[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 116--116
+[]                \T1/pcr/m/n/8 RobotBase::RobotStateSaver saver(probot); // sa
+ve the state of th[] 
+ []
+
+[333]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 120--120
+[]                \T1/pcr/m/n/8 for(dReal ftime = 0; ftime <= ptraj->GetDuratio
+n(); ftime += 0.01[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 122--122
+[]                    \T1/pcr/m/n/8 ptraj->Sample(vtrajdata,ftime,probot->GetAc
+tiveConfigurationS[] 
+ []
+
+
+Overfull \hbox (34.20024pt too wide) in paragraph at lines 125--125
+[]                    \T1/pcr/m/n/8 vpoints.push_back(pmanip->GetEndEffectorTra
+nsform().trans);[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 127--127
+[]                \T1/pcr/m/n/8 pgraph = penv->drawlinestrip(&vpoints[0].x,vpoi
+nts.size(),sizeof([] 
+ []
+
+) (./orpythonbinding.cpp-example.tex [334]
+Overfull \hbox (111.00029pt too wide) in paragraph at lines 25--25
+[]   \T1/pcr/m/n/8 module = orpythonbinding.RegisterSimulationFunction(RaveGetE
+nvironmentId(env),mysimfunction)[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 66--66
+[]    \T1/pcr/m/n/8 PythonBindingModule(EnvironmentBasePtr penv, std::istream&)
+ : ModuleBase(penv[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 75--75
+[]        \T1/pcr/m/n/8 boost::shared_ptr<FunctionUserData> p = boost::dynamic_
+pointer_cast<Funct[] 
+ []
+
+[335]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 84--84
+[]                \T1/pcr/m/n/8 RAVELOG_WARN("unknown exception in python callb
+ack, please regist[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 100--100
+[]\T1/pcr/m/n/8 InterfaceBasePtr PythonBindingCreateInterface(EnvironmentBasePt
+r penv, std::istre[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 106--106
+[]\T1/pcr/m/n/8 InterfaceBasePtr RegisterSimulationFunction(int environmentid, 
+boost::python::obj[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 109--109
+[]    \T1/pcr/m/n/8 ModuleBasePtr module = RaveCreateModule(RaveGetEnvironment(
+environmentid), "P[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 112--112
+[]        \T1/pcr/m/n/8 boost::shared_ptr<FunctionUserData> p = boost::dynamic_
+pointer_cast<Funct[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 124--124
+[]        \T1/pcr/m/n/8 g_PythonBindingInterfaceHandle = RaveRegisterInterface(
+PT_Module, "Python[] 
+ []
+
+
+Overfull \hbox (72.60027pt too wide) in paragraph at lines 125--125
+[]      \T1/pcr/m/n/8 Binding", OPENRAVE_MODULE_HASH,OPENRAVE_ENVIRONMENT_HASH,
+ PythonBindingCreateInte[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 132--132
+[]    \T1/pcr/m/n/8 boost::python::def("Init", Init, boost::python::args("globa
+lstate"), "initial[] 
+ []
+
+
+Overfull \hbox (39.00024pt too wide) in paragraph at lines 134--134
+[]    \T1/pcr/m/n/8 boost::python::def("RegisterSimulationFunction", RegisterSi
+mulationFunction,[] 
+ []
+
+) (./orshowsensors.cpp-example.tex [336]
+<showsensors_camera.jpg, id=7220, 1054.94125pt x 424.58624pt>
+File: showsensors_camera.jpg Graphic file (type jpg)
+
+<use showsensors_camera.jpg>
+Overfull \hbox (224.05511pt too wide) in paragraph at lines 11--12
+ [] 
+ []
+
+<showsensors_laser.jpg, id=7221, 803.0pt x 219.82124pt>
+File: showsensors_laser.jpg Graphic file (type jpg)
+
+<use showsensors_laser.jpg>
+Overfull \hbox (224.05511pt too wide) in paragraph at lines 18--19
+ [] 
+ []
+
+[337 <./showsensors_camera.jpg>]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 51--51
+[]    \T1/pcr/m/n/8 // finally you call the viewer's infinite loop (this is why
+ you need a separa[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 60--60
+[]    \T1/pcr/m/n/8 EnvironmentBasePtr penv = RaveCreateEnvironment(); // creat
+e the main environ[] 
+ []
+
+[338 <./showsensors_laser.jpg>]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 70--70
+[]            \T1/pcr/m/n/8 sensors[isensor]->Configure(isensor == ienablesenso
+r ? SensorBase::CC[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 72--72
+[]            \T1/pcr/m/n/8 sensors[isensor]->Configure(isensor == ienablesenso
+r ? SensorBase::CC[] 
+ []
+
+) (./ortrajectory.cpp-example.tex
+<cppexample_ortrajectory.jpg, id=7233, 401.5pt x 277.035pt>
+File: cppexample_ortrajectory.jpg Graphic file (type jpg)
+
+<use cppexample_ortrajectory.jpg> [339 <./cppexample_ortrajectory.jpg>]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 33--33
+[]        \T1/pcr/m/n/8 RobotBase::RobotStateSaver saver(probot); // add a stat
+e saver so robot i[] 
+ []
+
+[340]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 83--83
+[]    \T1/pcr/m/n/8 boost::thread thviewer(boost::bind(SetViewer,penv,viewernam
+e)); // create the[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 95--95
+[]            \T1/pcr/m/n/8 EnvironmentMutex::scoped_lock lock(penv->GetMutex()
+); // lock environ[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 102--102
+[]            \T1/pcr/m/n/8 q[RaveRandomInt()%probot->GetDOF()] += RaveRandomFl
+oat()-0.5; // move[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 107--107
+[]                \T1/pcr/m/n/8 RobotBase::RobotStateSaver saver(probot); // ad
+d a state saver so[] 
+ []
+
+
+Overfull \hbox (24.60023pt too wide) in paragraph at lines 111--111
+[]                    \T1/pcr/m/n/8 continue; // robot in collision at final po
+int, so reject[] 
+ []
+
+
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 118--118
+[]            \T1/pcr/m/n/8 // setting through the robot is also possible: prob
+ot->SetMotion(traj[] 
+ []
+
+) (./plugincpp.cpp-example.tex [341]
+Overfull \hbox (43.80025pt too wide) in paragraph at lines 27--27
+[]        \T1/pcr/m/n/8 RegisterCommand("numbodies",boost::bind(&MyModule::NumB
+odies,this,_1,_2),[] 
+ []
+
+
+Overfull \hbox (39.00024pt too wide) in paragraph at lines 29--29
+[]        \T1/pcr/m/n/8 RegisterCommand("load",boost::bind(&MyModule::Load, thi
+s,_1,_2),"loads a[] 
+ []
+
+
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 57--57
+[]        \T1/pcr/m/n/8 bool bSuccess = GetEnv()->Load(filename.c_str());     /
+/ load the file[] 
+ []
+
+[342]
+Overfull \hbox (39.00024pt too wide) in paragraph at lines 62--62
+[]\T1/pcr/m/n/8 InterfaceBasePtr CreateInterfaceValidated(InterfaceType type, c
+onst std::string&[] 
+ []
+
+)
+No file refman.ind.
+[343] (./refman.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 12885 strings out of 493848
+ 320624 string characters out of 1152822
+ 262429 words of memory out of 3000000
+ 13144 multiletter control sequences out of 15000+50000
+ 46903 words of font info for 62 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 38i,13n,58p,1512b,563s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{ortrajectory_8cpp-example} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{orplanning__module_8cpp-example} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{orplanning__planner_8cpp-example} has been referenc
+ed but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{orpythonbinding_8cpp-example} has been referenced b
+ut does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{orikfilter_8cpp-example} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{ikfastloader_8cpp-example} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_
+a49306adaab0c755befa56ed92085f2ae} has been referenced but does not exist, repl
+aced by a fixed one
+
+pdfTeX warning (dest): name{orconveyormovement_8cpp-example} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{ormulticontrol_8cpp-example} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{orcollision_8cpp-example} has been referenced but d
+oes not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{orplanning__ik_8cpp-example} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{plugincpp_8cpp-example} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{customreader_8cpp-example} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__viewer} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__spacesampler} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__sensorsystem} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__sensor} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__robot} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__module} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__planner} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__physicsengine} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__kinbody} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__iksolver} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__controller} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{arch__collisionchecker} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{installation__macosx} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{installation__windows} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{installation__linux} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cpp-gen-md5_8cpp_cpp-gen-md5} has been referenced b
+ut does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{openrave__config} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cpp__examples} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{writing__plugins} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{interface__concepts} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{architecture__concepts} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{p__basic__usage} has been referenced but does not e
+xist, replaced by a fixed one
+
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+mi9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/u
+rw/courier/ucrb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/courier/ucrr8a.
+pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texm
+f-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/typ
+e1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on refman.pdf (354 pages, 3848058 bytes).
+PDF statistics:
+ 7830 PDF objects out of 8907 (max. 8388607)
+ 2564 named destinations out of 2984 (max. 500000)
+ 2738 words of extra memory for PDF output out of 10000 (max. 10000000)
+

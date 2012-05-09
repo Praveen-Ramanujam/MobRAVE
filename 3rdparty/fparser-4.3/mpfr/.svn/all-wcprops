@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/fparser-4.3/mpfr
+END
+GmpInt.cc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/fparser-4.3/mpfr/GmpInt.cc
+END
+MpfrFloat.hh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/fparser-4.3/mpfr/MpfrFloat.hh
+END
+GmpInt.hh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/fparser-4.3/mpfr/GmpInt.hh
+END
+MpfrFloat.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/fparser-4.3/mpfr/MpfrFloat.cc
+END

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::Force6DSensorData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorData" prot="public" virt="non-virtual">SensorData</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData_1a81e5356103da3b181dd80b231b066d73" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector force</definition>
+        <argsstring></argsstring>
+        <name>force</name>
+        <briefdescription>
+<para>Force in X Y Z, in newtons. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="126" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData_1ad8a04b9a1eecb049b4665906cf72b2bf" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector torque</definition>
+        <argsstring></argsstring>
+        <name>torque</name>
+        <briefdescription>
+<para>Torque in X Y Z, in newtonmeters. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="127" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="123" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="123" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores force data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1145">
+        <label>Force6DSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData"/>
+        <childnode refid="1146" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1146">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1149">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1147">
+        <label>Force6DSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData"/>
+        <childnode refid="1148" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1150" relation="usage">
+          <edgelabel>force</edgelabel>
+          <edgelabel>torque</edgelabel>
+        </childnode>
+      </node>
+      <node id="1148">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+        <childnode refid="1149" relation="usage">
+          <edgelabel>__trans</edgelabel>
+        </childnode>
+      </node>
+      <node id="1150">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="121" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="120" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a0503a26959ec94efdab737ce47842afe" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::Force6DSensorData</scope><name>__stamp</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a5786ccc78c0aae6ca580507121b3c24a" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::Force6DSensorData</scope><name>__trans</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData_1a81e5356103da3b181dd80b231b066d73" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::Force6DSensorData</scope><name>force</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::Force6DSensorData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a27324341bb2e28fa2be2cfd0b7f0e985" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::Force6DSensorData</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData_1ad8a04b9a1eecb049b4665906cf72b2bf" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::Force6DSensorData</scope><name>torque</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a2ce106fe3cd9771a5b0770339c411829" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::Force6DSensorData</scope><name>~SensorData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

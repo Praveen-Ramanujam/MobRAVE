@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1PlannerBase" kind="class" prot="public">
+    <compoundname>OpenRAVE::PlannerBase</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1InterfaceBase" prot="public" virt="non-virtual">InterfaceBase</basecompoundref>
+    <includes refid="planner_8h" local="no">planner.h</includes>
+    <innerclass refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" prot="public">OpenRAVE::PlannerBase::PlannerParameters</innerclass>
+    <innerclass refid="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress" prot="public">OpenRAVE::PlannerBase::PlannerProgress</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1a770b978b724bcdb0bff18de35c8c62d5" prot="public" static="no">
+        <type>std::list&lt; std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt;</type>
+        <definition>typedef std::list&lt; std::vector&lt;dReal&gt; &gt; ConfigurationList</definition>
+        <argsstring></argsstring>
+        <name>ConfigurationList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="48" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1a5b660e564b471d714462742a939dbd40" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1PlannerBase_1a770b978b724bcdb0bff18de35c8c62d5" kindref="member">PlannerBase::ConfigurationList</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt; PlannerBase::ConfigurationList &gt; ConfigurationListPtr</definition>
+        <argsstring></argsstring>
+        <name>ConfigurationListPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="49" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1ae5d382cbf153b353e329ddf5620e05db" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerBase::PlannerParameters</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;PlannerBase::PlannerParameters&gt; PlannerParametersPtr</definition>
+        <argsstring></argsstring>
+        <name>PlannerParametersPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="275" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1ab566be29bf1d40d8631782886bb45bb0" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerBase::PlannerParameters</ref> const  &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;PlannerBase::PlannerParameters const&gt; PlannerParametersConstPtr</definition>
+        <argsstring></argsstring>
+        <name>PlannerParametersConstPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="276" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1a65a20c3007e065de99a3f21bb177013d" prot="public" static="no">
+        <type>boost::weak_ptr&lt; <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerBase::PlannerParameters</ref> &gt;</type>
+        <definition>typedef boost::weak_ptr&lt;PlannerBase::PlannerParameters&gt; PlannerParametersWeakPtr</definition>
+        <argsstring></argsstring>
+        <name>PlannerParametersWeakPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="277" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1af66cf367615e6c51bab4473f4fcf1018" prot="public" static="no">
+        <type>boost::function&lt; <ref refid="namespaceOpenRAVE_1a16104fe58cdf1075c47eb709e58ba853" kindref="member">PlannerAction</ref>(const <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress" kindref="compound">PlannerProgress</ref> &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;PlannerAction(const PlannerProgress&amp;)&gt; PlanCallbackFn</definition>
+        <argsstring></argsstring>
+        <name>PlanCallbackFn</name>
+        <briefdescription>
+<para>Callback function during planner execute. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planner progress information </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="335" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1a16fa67c70ff631c256e8706aae6c9518" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="namespaceOpenRAVE_1aae4d9d8b0adcdbb33c9ca59ea5794a3d" kindref="member">UserDataWeakPtr</ref> &gt;</type>
+        <definition>std::list&lt;UserDataWeakPtr&gt; __listRegisteredCallbacks</definition>
+        <argsstring></argsstring>
+        <name>__listRegisteredCallbacks</name>
+        <briefdescription>
+<para>internally managed callbacks </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="375" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1PlannerBase_1a7ec01a7c5511ff1cf228bad0a44529a2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class CustomPlannerCallbackData</definition>
+        <argsstring></argsstring>
+        <name>CustomPlannerCallbackData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="377" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a80c4abd085691449113f2d5b7e59b599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PlannerBase</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>PlannerBase</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a1395c7634c62ae3f5ff5134a53ca73ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~PlannerBase</definition>
+        <argsstring>()</argsstring>
+        <name>~PlannerBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="288" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="288" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a109c37d3de7ee99f93c740a2df0e5e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool InitPlan</definition>
+        <argsstring>(RobotBasePtr robot, PlannerParametersConstPtr params)=0</argsstring>
+        <name>InitPlan</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>robot</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1PlannerBase_1ab566be29bf1d40d8631782886bb45bb0" kindref="member">PlannerParametersConstPtr</ref></type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Setup scene, robot, and properties of the plan, and reset all internal structures. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>robot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>main robot to be used for planning </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameters of the planner, any class derived from <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerParameters</ref> can be passed. The planner should copy these parameters for future instead of storing the pointer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1ac1d85f92b0e42d911c1cab6db2c90b61" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool InitPlan</definition>
+        <argsstring>(RobotBasePtr robot, std::istream &amp;isParameters)</argsstring>
+        <name>InitPlan</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>robot</declname>
+        </param>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>isParameters</declname>
+        </param>
+        <briefdescription>
+<para>Setup scene, robot, and properties of the plan, and reset all structures with pparams. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>robot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>main robot to be used for planning </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isParameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The serialized form of the parameters. By default, this exists to allow third parties to pass information to planners without excplicitly knowning the format/internal structures used </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if plan is initialized successfully and initial conditions are satisfied. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a7ce22311b1f81ec6b9bacdf457d4631a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200e" kindref="member">PlannerStatus</ref></type>
+        <definition>virtual PlannerStatus PlanPath</definition>
+        <argsstring>(TrajectoryBasePtr ptraj)=0</argsstring>
+        <name>PlanPath</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref></type>
+          <declname>ptraj</declname>
+        </param>
+        <briefdescription>
+<para>Executes the main planner trying to solve for the goal condition. </para>        </briefdescription>
+        <detaileddescription>
+<para>Fill ptraj with the trajectory of the planned path that the robot needs to execute <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptraj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output trajectory the robot has to follow in order to successfully complete the plan. If this planner is a path optimizer, the trajectory can be used as an input for generating a smoother path. The trajectory is for the configuration degrees of freedom defined by the planner parameters. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the status that the planner returned in. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a9ec338cf4116a2bf8b874cde2aa28967" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200e" kindref="member">PlannerStatus</ref></type>
+        <definition>virtual PlannerStatus PlanPath</definition>
+        <argsstring>(TrajectoryBasePtr ptraj, boost::shared_ptr&lt; std::ostream &gt; pOutStream) RAVE_DEPRECATED</argsstring>
+        <name>PlanPath</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref></type>
+          <declname>ptraj</declname>
+        </param>
+        <param>
+          <type>boost::shared_ptr&lt; std::ostream &gt;</type>
+          <declname>pOutStream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000038"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/03) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="321" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="321" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a2d4fa4877d4f75fc207f1e8243b647dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1ab566be29bf1d40d8631782886bb45bb0" kindref="member">PlannerParametersConstPtr</ref></type>
+        <definition>virtual PlannerParametersConstPtr GetParameters</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetParameters</name>
+        <briefdescription>
+<para>return the internal parameters of the planner </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a7b72116e4770d98f2a78297246a679e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref></type>
+        <definition>virtual UserDataPtr RegisterPlanCallback</definition>
+        <argsstring>(const PlanCallbackFn &amp;callbackfn)</argsstring>
+        <name>RegisterPlanCallback</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1PlannerBase_1af66cf367615e6c51bab4473f4fcf1018" kindref="member">PlanCallbackFn</ref> &amp;</type>
+          <declname>callbackfn</declname>
+        </param>
+        <briefdescription>
+<para>register a function that is called periodically during the plan loop. </para>        </briefdescription>
+        <detaileddescription>
+<para>Allows the calling process to control the behavior of the planner from a high-level perspective </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="341"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InterfaceType</type>
+        <definition>static InterfaceType GetInterfaceTypeStatic</definition>
+        <argsstring>()</argsstring>
+        <name>GetInterfaceTypeStatic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the static interface type this class points to (used for safe casting) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="292" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="292" bodyend="294"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a272abaf3ac5ee4114397daaed491a558" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1ab39121477d2dd841859e79f112b52a0b" kindref="member">PlannerBasePtr</ref></type>
+        <definition>PlannerBasePtr shared_planner</definition>
+        <argsstring>()</argsstring>
+        <name>shared_planner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="344" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="344" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a46df470cfb1df5a02340b7c70a0094ae" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a2974ad0e9218ea646e192f2317495834" kindref="member">PlannerBaseConstPtr</ref></type>
+        <definition>PlannerBaseConstPtr shared_planner_const</definition>
+        <argsstring>() const </argsstring>
+        <name>shared_planner_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="347" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="347" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a0e418a8cb5f9392ed0db1f1f9ec9d8ce" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200e" kindref="member">PlannerStatus</ref></type>
+        <definition>virtual PlannerStatus _ProcessPostPlanners</definition>
+        <argsstring>(RobotBasePtr probot, TrajectoryBasePtr ptraj)</argsstring>
+        <name>_ProcessPostPlanners</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>probot</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref></type>
+          <declname>ptraj</declname>
+        </param>
+        <briefdescription>
+<para>Calls a planner to optimizes the trajectory path. </para>        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerParameters</ref> structure passed into the optimization planner is constructed with the same freespace constraints as this planner. This function should always be called in PlanPath to post-process the trajectory. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>probot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the robot this trajectory is meant for, also uses the robot for checking collisions. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ptraj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial trajectory to be smoothed is inputted. If optimization path succeeds, final trajectory output is set in this variable. The trajectory is for the configuration degrees of freedom defined by the planner parameters. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a58137cba05f6609f7055eb493448cee1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool _OptimizePath</definition>
+        <argsstring>(RobotBasePtr probot, TrajectoryBasePtr ptraj) RAVE_DEPRECATED</argsstring>
+        <name>_OptimizePath</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>probot</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref></type>
+          <declname>ptraj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="361" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="361" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1a4b980a3cc0e8fc7abd2d0afe472ef695" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a16104fe58cdf1075c47eb709e58ba853" kindref="member">PlannerAction</ref></type>
+        <definition>virtual PlannerAction _CallCallbacks</definition>
+        <argsstring>(const PlannerProgress &amp;progress)</argsstring>
+        <name>_CallCallbacks</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress" kindref="compound">PlannerProgress</ref> &amp;</type>
+          <declname>progress</declname>
+        </param>
+        <briefdescription>
+<para>Calls the registered callbacks in order and returns immediately when an action other than PA_None is returned. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>planner progress information </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="368"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1af386ad7515f485242895df543029d333" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* GetHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetHash</name>
+        <reimplements refid="classOpenRAVE_1_1InterfaceBase_1abfb0be978f0f9899582785d67c4b3d40">GetHash</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="371" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="371" bodyend="373"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><bold>[interface]</bold> Planner interface that generates trajectories for target objects to follow through the environment. <bold>If not specified, method is not multi-thread safe.</bold> See <ref refid="arch__planner" kindref="compound">Planner Concepts</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1614">
+        <label>PlannerBase</label>
+        <link refid="classOpenRAVE_1_1PlannerBase"/>
+        <childnode refid="1615" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1615">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1616">
+        <label>PlannerBase</label>
+        <link refid="classOpenRAVE_1_1PlannerBase"/>
+        <childnode refid="1617" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1622" relation="usage">
+          <edgelabel>__listRegisteredCallbacks</edgelabel>
+        </childnode>
+      </node>
+      <node id="1618">
+        <label>string</label>
+        <childnode refid="1619" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1620">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1618" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1619">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1622">
+        <label>list&lt; UserDataWeakPtr &gt;</label>
+      </node>
+      <node id="1621">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1618" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1617">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1618" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1620" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1621" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="46" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="45" bodyend="378"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>__description</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a16fa67c70ff631c256e8706aae6c9518" prot="private" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>__listRegisteredCallbacks</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a4b980a3cc0e8fc7abd2d0afe472ef695" prot="protected" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>_CallCallbacks</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a58137cba05f6609f7055eb493448cee1" prot="protected" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>_OptimizePath</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a0e418a8cb5f9392ed0db1f1f9ec9d8ce" prot="protected" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>_ProcessPostPlanners</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>Clone</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a770b978b724bcdb0bff18de35c8c62d5" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>ConfigurationList</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a5b660e564b471d714462742a939dbd40" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>ConfigurationListPtr</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1af386ad7515f485242895df543029d333" prot="private" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetHash</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a2d4fa4877d4f75fc207f1e8243b647dc" prot="public" virt="pure-virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetParameters</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a109c37d3de7ee99f93c740a2df0e5e34" prot="public" virt="pure-virtual"><scope>OpenRAVE::PlannerBase</scope><name>InitPlan</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1ac1d85f92b0e42d911c1cab6db2c90b61" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>InitPlan</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1af66cf367615e6c51bab4473f4fcf1018" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>PlanCallbackFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a80c4abd085691449113f2d5b7e59b599" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>PlannerBase</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1ab566be29bf1d40d8631782886bb45bb0" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>PlannerParametersConstPtr</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1ae5d382cbf153b353e329ddf5620e05db" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>PlannerParametersPtr</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a65a20c3007e065de99a3f21bb177013d" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>PlannerParametersWeakPtr</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a7ce22311b1f81ec6b9bacdf457d4631a" prot="public" virt="pure-virtual"><scope>OpenRAVE::PlannerBase</scope><name>PlanPath</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a9ec338cf4116a2bf8b874cde2aa28967" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>PlanPath</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>RegisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a7b72116e4770d98f2a78297246a679e8" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>RegisterPlanCallback</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>SetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a272abaf3ac5ee4114397daaed491a558" prot="protected" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>shared_planner</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a46df470cfb1df5a02340b7c70a0094ae" prot="protected" virt="non-virtual"><scope>OpenRAVE::PlannerBase</scope><name>shared_planner_const</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>~InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1a1395c7634c62ae3f5ff5134a53ca73ff" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase</scope><name>~PlannerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

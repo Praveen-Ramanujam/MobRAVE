@@ -1,0 +1,918 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1geometry_1_1RaveVector" kind="class" prot="public">
+    <compoundname>OpenRAVE::geometry::RaveVector</compoundname>
+    <includes refid="geometry_8h" local="no">geometry.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a9a4f74af87a76a4c3dcb729cb0e68f8d" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="114" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a1cb2b5ea04251d543e49356ef54eb853" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="114" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1RaveVector_1aa37b7ae12b900daed71297a80053aacf" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="114" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a1f674fe143a2d9ef4de90e3ccb8a0373" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="114" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a2ab77152178ff02741a6a09591050e04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RaveVector</definition>
+        <argsstring>()</argsstring>
+        <name>RaveVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="116" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="116" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1af4764f7b84d059579c66b49853bef53f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RaveVector</definition>
+        <argsstring>(T x, T y, T z)</argsstring>
+        <name>RaveVector</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="119" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="119" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a3f5e066616ac370da466e81839526e25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RaveVector</definition>
+        <argsstring>(T x, T y, T z, T w)</argsstring>
+        <name>RaveVector</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="121" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="121" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a8b7d09d302585f8ba8b4ffc5c2b9f1d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>RaveVector</definition>
+        <argsstring>(const RaveVector&lt; U &gt; &amp;vec)</argsstring>
+        <name>RaveVector</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="123" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="123" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1afd7d78f59fbf96aeeba3ccea06b070f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>RaveVector</definition>
+        <argsstring>(const U *pf)</argsstring>
+        <name>RaveVector</name>
+        <param>
+          <type>const U *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+<para>note, it only copes 3 values! </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="127" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="127" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a8b36789e9ecc47ad57fc55d85015651d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T operator[]</definition>
+        <argsstring>(int i) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="131" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a0534e977fc9fee424b3ef94f27a9ed61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; operator[]</definition>
+        <argsstring>(int i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="134" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a4e20322854ce5d78776cdaf1a87aacd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>operator T *</definition>
+        <argsstring>()</argsstring>
+        <name>operator T *</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="139" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1af015545c1c88375a1fff0fd898f0d34e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>operator const T *</definition>
+        <argsstring>() const </argsstring>
+        <name>operator const T *</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="142" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1af254fbe25bdb8ced05ecbce6d49e4cb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; operator=</definition>
+        <argsstring>(const RaveVector&lt; U &gt; &amp;r)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="145" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1aebd0ceb2abd975ab86e93daa01ab7779" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T dot</definition>
+        <argsstring>(const RaveVector&lt; U &gt; &amp;v) const </argsstring>
+        <name>dot</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="150" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1ab98c3b577384bb6150758e03dae47bc1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T dot3</definition>
+        <argsstring>(const RaveVector&lt; U &gt; &amp;v) const </argsstring>
+        <name>dot3</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="153" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a7e6f41f7947539719a7721316d50c23f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; normalize</definition>
+        <argsstring>()</argsstring>
+        <name>normalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="156" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a163ea5fde6ad74443036ce3f40056184" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; normalize4</definition>
+        <argsstring>()</argsstring>
+        <name>normalize4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="159" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="159" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1ab106728f86e55650e15d636d903da9b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; normalize3</definition>
+        <argsstring>()</argsstring>
+        <name>normalize3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="169" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="169" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1ad6daafe577ebd41ed92b3402affdf559" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lengthsqr2</definition>
+        <argsstring>() const </argsstring>
+        <name>lengthsqr2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="179" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="179" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a1b1f2dda52bdd69e97dcc14f8c757fc5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lengthsqr3</definition>
+        <argsstring>() const </argsstring>
+        <name>lengthsqr3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="182" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a7578aad46d3c7072b89d4ea396898ae1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T lengthsqr4</definition>
+        <argsstring>() const </argsstring>
+        <name>lengthsqr4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="185" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="185" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a99e130b35f9000513aaa0990118b2283" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Set3</definition>
+        <argsstring>(const T *pvals)</argsstring>
+        <name>Set3</name>
+        <param>
+          <type>const T *</type>
+          <declname>pvals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="189" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="189" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a9bf0a84068036ee8ed9f6bbf4d93c0a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Set3</definition>
+        <argsstring>(T val1, T val2, T val3)</argsstring>
+        <name>Set3</name>
+        <param>
+          <type>T</type>
+          <declname>val1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>val2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>val3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="192" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a8518bceb029f0e4969dec2b8e6489e39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Set4</definition>
+        <argsstring>(const T *pvals)</argsstring>
+        <name>Set4</name>
+        <param>
+          <type>const T *</type>
+          <declname>pvals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="195" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="195" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1acb20274ccb6d5d8b3a076316dd1c0ec3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Set4</definition>
+        <argsstring>(T val1, T val2, T val3, T val4)</argsstring>
+        <name>Set4</name>
+        <param>
+          <type>T</type>
+          <declname>val1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>val2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>val3</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>val4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="198" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="198" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1aaa077ecf3366c176cf3f108dfe56434b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; cross</definition>
+        <argsstring>(const RaveVector&lt; T &gt; &amp;v) const </argsstring>
+        <name>cross</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>3 dim cross product, w is not touched </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="202" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="202" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a39a4b55c671ffbfeeef2bf2b8929c1f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; Cross</definition>
+        <argsstring>(const RaveVector&lt; T &gt; &amp;v) RAVE_DEPRECATED</argsstring>
+        <name>Cross</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="210" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="210" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a2a627e5b622311d9f9aa9d3818874daf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; Cross</definition>
+        <argsstring>(const RaveVector&lt; T &gt; &amp;u, const RaveVector&lt; T &gt; &amp;v) RAVE_DEPRECATED</argsstring>
+        <name>Cross</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="214" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="213" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a549dc79f3273e26edad707f92e02f13e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; operator-</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="223" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="223" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1addbb856cd6694f5d2c7e13e9bbf37936" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; operator+</definition>
+        <argsstring>(const RaveVector&lt; U &gt; &amp;r) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="226" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="226" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a3f50282462675c35c19d76652a3c3fad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; operator-</definition>
+        <argsstring>(const RaveVector&lt; U &gt; &amp;r) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="229" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="229" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1abb40b96cec56f5c9742a43c90a9eaff6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; operator*</definition>
+        <argsstring>(const RaveVector&lt; U &gt; &amp;r) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="232" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="232" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a02411d3e963093f0a547b782e6caef4e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; operator*</definition>
+        <argsstring>(T k) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>T</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="235" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="235" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1ae39984f67828b1450b494b9a0deac349" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; operator+=</definition>
+        <argsstring>(const RaveVector&lt; U &gt; &amp;r)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="239" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="239" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1abf9d9e1c6bdf441053451ebf7a98b1c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; operator-=</definition>
+        <argsstring>(const RaveVector&lt; U &gt; &amp;r)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="242" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="242" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a385d92133d8ae381b13265501cc26d5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; operator*=</definition>
+        <argsstring>(const RaveVector&lt; U &gt; &amp;r)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="245" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="245" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a6314698d2a16114bba0dbc6d3cad311e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; operator*=</definition>
+        <argsstring>(const T k)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const T</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="249" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="249" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1aefafa1fa867453597c7795ec327167be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; operator/=</definition>
+        <argsstring>(const T _k)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>const T</type>
+          <declname>_k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="252" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="252" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveVector_1ad293e3fe3c67f1817ae79697cf4851fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; operator^</definition>
+        <argsstring>(const RaveVector&lt; U &gt; &amp;v) const </argsstring>
+        <name>operator^</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>cross product operator </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="263" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="263" bodyend="269"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a9b5744e0283dda591db9ecadcbd19934" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>friend <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt;</type>
+        <definition>RaveVector&lt;U&gt; operator*</definition>
+        <argsstring>(float f, const RaveVector&lt; U &gt; &amp;v)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>float</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="256"/>
+      </memberdef>
+      <memberdef kind="friend" id="classOpenRAVE_1_1geometry_1_1RaveVector_1abc2f5e3ce60dd920156d4554956b7949" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>friend <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt;</type>
+        <definition>RaveVector&lt;U&gt; operator*</definition>
+        <argsstring>(double f, const RaveVector&lt; U &gt; &amp;v)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>double</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="257"/>
+      </memberdef>
+      <memberdef kind="friend" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a171fc2a744d7a01091273b962662f3e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;O, const RaveVector&lt; U &gt; &amp;v)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="259" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="662" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="friend" id="classOpenRAVE_1_1geometry_1_1RaveVector_1a3c16d74f83023fec69d8d2ffcdc35d65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>friend std::istream &amp;</type>
+        <definition>std::istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;I, RaveVector&lt; U &gt; &amp;v)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>I</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; U &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="260" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="668" bodyend="671"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Vector class containing 4 dimensions. </para>    </briefdescription>
+    <detaileddescription>
+<para>It is better to use this for a 3 dim vector because it is 16byte aligned and SIMD instructions can be used </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1705">
+        <label>T</label>
+      </node>
+      <node id="1704">
+        <label>RaveVector&lt; T &gt;</label>
+        <link refid="classOpenRAVE_1_1geometry_1_1RaveVector"/>
+        <childnode refid="1705" relation="usage">
+          <edgelabel>w</edgelabel>
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="112" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="111" bodyend="270"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1aaa077ecf3366c176cf3f108dfe56434b" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>cross</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a39a4b55c671ffbfeeef2bf2b8929c1f1" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>Cross</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a2a627e5b622311d9f9aa9d3818874daf" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>Cross</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1aebd0ceb2abd975ab86e93daa01ab7779" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>dot</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1ab98c3b577384bb6150758e03dae47bc1" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>dot3</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1ad6daafe577ebd41ed92b3402affdf559" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>lengthsqr2</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a1b1f2dda52bdd69e97dcc14f8c757fc5" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>lengthsqr3</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a7578aad46d3c7072b89d4ea396898ae1" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>lengthsqr4</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a7e6f41f7947539719a7721316d50c23f" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>normalize</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1ab106728f86e55650e15d636d903da9b8" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>normalize3</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a163ea5fde6ad74443036ce3f40056184" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>normalize4</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1af015545c1c88375a1fff0fd898f0d34e" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator const T *</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a4e20322854ce5d78776cdaf1a87aacd9" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator T *</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1abb40b96cec56f5c9742a43c90a9eaff6" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator*</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a02411d3e963093f0a547b782e6caef4e" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator*</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a9b5744e0283dda591db9ecadcbd19934" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator*</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1abc2f5e3ce60dd920156d4554956b7949" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator*</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a385d92133d8ae381b13265501cc26d5b" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator*=</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a6314698d2a16114bba0dbc6d3cad311e" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator*=</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1addbb856cd6694f5d2c7e13e9bbf37936" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator+</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1ae39984f67828b1450b494b9a0deac349" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator+=</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a549dc79f3273e26edad707f92e02f13e" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator-</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a3f50282462675c35c19d76652a3c3fad" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator-</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1abf9d9e1c6bdf441053451ebf7a98b1c4" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator-=</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1aefafa1fa867453597c7795ec327167be" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator/=</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a171fc2a744d7a01091273b962662f3e2" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1af254fbe25bdb8ced05ecbce6d49e4cb8" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator=</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a3c16d74f83023fec69d8d2ffcdc35d65" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a8b36789e9ecc47ad57fc55d85015651d" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator[]</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a0534e977fc9fee424b3ef94f27a9ed61" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator[]</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1ad293e3fe3c67f1817ae79697cf4851fc" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>operator^</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a2ab77152178ff02741a6a09591050e04" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>RaveVector</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1af4764f7b84d059579c66b49853bef53f" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>RaveVector</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a3f5e066616ac370da466e81839526e25" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>RaveVector</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a8b7d09d302585f8ba8b4ffc5c2b9f1d0" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>RaveVector</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1afd7d78f59fbf96aeeba3ccea06b070f9" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>RaveVector</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a99e130b35f9000513aaa0990118b2283" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>Set3</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a9bf0a84068036ee8ed9f6bbf4d93c0a2" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>Set3</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a8518bceb029f0e4969dec2b8e6489e39" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>Set4</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1acb20274ccb6d5d8b3a076316dd1c0ec3" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>Set4</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a1f674fe143a2d9ef4de90e3ccb8a0373" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>w</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a9a4f74af87a76a4c3dcb729cb0e68f8d" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>x</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1a1cb2b5ea04251d543e49356ef54eb853" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>y</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveVector_1aa37b7ae12b900daed71297a80053aacf" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveVector</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

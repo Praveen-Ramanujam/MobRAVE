@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping
+END
+RobotGoInitial.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/RobotGoInitial.m
+END
+PrunePoints.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/PrunePoints.m
+END
+FindTarget.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/FindTarget.m
+END
+cereal_visibility.mat
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/cereal_visibility.mat
+END
+addopenravepaths_visibilitygrasping.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/addopenravepaths_visibilitygrasping.m
+END
+showcameraimage.m
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/showcameraimage.m
+END
+GetLargestFreeConvexPolygon.m
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/GetLargestFreeConvexPolygon.m
+END
+SetupPA10Scene.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/SetupPA10Scene.m
+END
+RobotMoveJointValues.m
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/RobotMoveJointValues.m
+END
+pa10_cereal.mat
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/pa10_cereal.mat
+END
+RotationMatrixFromQuat.m
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/RotationMatrixFromQuat.m
+END
+QuatFromRotationMatrix.m
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/QuatFromRotationMatrix.m
+END
+StartTrajectory.m
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/StartTrajectory.m
+END
+SetupProblems.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/SetupProblems.m
+END
+RotationMatrixFromAxisAngle.m
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/RotationMatrixFromAxisAngle.m
+END
+GeneratePA10Data.m
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/GeneratePA10Data.m
+END
+ImageRegionProps.m
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/ImageRegionProps.m
+END
+InsertRandomObjects.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/InsertRandomObjects.m
+END
+WaitForRobot.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/WaitForRobot.m
+END
+runsimdemo.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/visibilitygrasping/runsimdemo.m
+END

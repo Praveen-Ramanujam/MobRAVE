@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classstd_1_1fstream" kind="class" prot="public">
+    <compoundname>std::fstream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::basic_fstream&lt; char &gt;</basecompoundref>
+    <briefdescription>
+<para>STL class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1156">
+        <label>basic_fstream&lt; char &gt;</label>
+        <childnode refid="1157" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1158">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="1159" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1157">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="1158" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1161" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1155">
+        <label>fstream</label>
+        <childnode refid="1156" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1160">
+        <label>ios_base</label>
+      </node>
+      <node id="1161">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="1159" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1159">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="1160" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1163">
+        <label>basic_fstream&lt; char &gt;</label>
+        <childnode refid="1164" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1165">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="1166" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1164">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="1165" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1168" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1162">
+        <label>fstream</label>
+        <childnode refid="1163" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1167">
+        <label>ios_base</label>
+      </node>
+      <node id="1168">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="1166" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1166">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="1167" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="[STL]" line="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

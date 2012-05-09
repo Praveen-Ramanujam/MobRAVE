@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1ControllerBase" kind="class" prot="public">
+    <compoundname>OpenRAVE::ControllerBase</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1InterfaceBase" prot="public" virt="non-virtual">InterfaceBase</basecompoundref>
+    <derivedcompoundref refid="classCustomController" prot="public" virt="non-virtual">CustomController</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1MultiController" prot="public" virt="non-virtual">MultiController</derivedcompoundref>
+    <includes refid="controller_8h" local="no">controller.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1af051c65cd5e6c845eba3c83a22ca0116" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ControllerBase</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>ControllerBase</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="31" bodyfile="/home/pra3cob/openrave/include/openrave/controller.h" bodystart="31" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1aa248527e7bc5f73db1fddfd87673d65d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~ControllerBase</definition>
+        <argsstring>()</argsstring>
+        <name>~ControllerBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="33" bodyfile="/home/pra3cob/openrave/include/openrave/controller.h" bodystart="33" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1ae61f45e499ec45a2b70ae3a1af53101b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Init</definition>
+        <argsstring>(RobotBasePtr robot, const std::string &amp;args) RAVE_DEPRECATED</argsstring>
+        <name>Init</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>robot</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the controller. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>robot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the robot that uses the controller </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>extra arguments that the controller takes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true on successful initialization </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="45" bodyfile="/home/pra3cob/openrave/include/openrave/controller.h" bodystart="45" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1a27ba60fa2a3a9f63a64b127369482d9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Init</definition>
+        <argsstring>(RobotBasePtr robot, const std::vector&lt; int &gt; &amp;dofindices, int nControlTransformation)=0</argsstring>
+        <name>Init</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1ad5666862ecbce5aee42019ec18687268">Init</reimplementedby>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>robot</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>dofindices</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nControlTransformation</declname>
+        </param>
+        <briefdescription>
+<para>initializes the controller and specifies the controlled dof </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>robot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the robot that uses the controller </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dofindices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the indices that controller will have exclusive access to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nControlTransformation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classOpenRAVE_1_1ControllerBase_1af577c7692eed532e6ed26db3dca5ef47" kindref="member">IsControlTransformation</ref> </para></simplesect>
+<simplesect kind="return"><para>true on successful initialization </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1a4dad85cda4f74030d3d50e0ae37f7d68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const std::vector&lt; int &gt; &amp;</type>
+        <definition>virtual const std::vector&lt;int&gt;&amp; GetControlDOFIndices</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetControlDOFIndices</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1ac832f4b57548e744cabdaae217278bcb">GetControlDOFIndices</reimplementedby>
+        <reimplementedby refid="classCustomController_1ac832f4b57548e744cabdaae217278bcb">GetControlDOFIndices</reimplementedby>
+        <briefdescription>
+<para>returns the dof indices controlled </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1af577c7692eed532e6ed26db3dca5ef47" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int IsControlTransformation</definition>
+        <argsstring>() const =0</argsstring>
+        <name>IsControlTransformation</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1a6c462684c3045b5750621c92b0da6caa">IsControlTransformation</reimplementedby>
+        <reimplementedby refid="classCustomController_1a6c462684c3045b5750621c92b0da6caa">IsControlTransformation</reimplementedby>
+        <briefdescription>
+<para>returns non-zero value if base affine transformation is controlled. </para>        </briefdescription>
+        <detaileddescription>
+<para>Only one controller can modify translation and orientation per robot. For now, the two cannot be divided. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1a096f5c8d99a8100089ee11b7fc8bda3f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+        <definition>virtual RobotBasePtr GetRobot</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetRobot</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1a8d4e8b42f55281a47dd90d525f19e9c4">GetRobot</reimplementedby>
+        <reimplementedby refid="classCustomController_1a8d4e8b42f55281a47dd90d525f19e9c4">GetRobot</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1aa495f583f5f0b3b3c412f730fdf8d715" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Reset</definition>
+        <argsstring>(int options)=0</argsstring>
+        <name>Reset</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1a9989f0173dfbf913acbb058988e73afa">Reset</reimplementedby>
+        <reimplementedby refid="classCustomController_1a9989f0173dfbf913acbb058988e73afa">Reset</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+<para>Resets the current controller trajectories and any other state associated with the robot. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- specific options that can be used to control what to reset </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1accd34e8fe0dfb473777ab4668bf7a5d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SetDesired</definition>
+        <argsstring>(const std::vector&lt; dReal &gt; &amp;values, TransformConstPtr trans=TransformConstPtr())=0</argsstring>
+        <name>SetDesired</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1a6cb246f2c19bc075c38f34e0ccd89014">SetDesired</reimplementedby>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a6d8be5f641c37cf8096b9bc60c49d763" kindref="member">TransformConstPtr</ref></type>
+          <declname>trans</declname>
+          <defval><ref refid="namespaceOpenRAVE_1a6d8be5f641c37cf8096b9bc60c49d763" kindref="member">TransformConstPtr</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>go to a specific position in configuration space. <bold>[multi-thread safe]</bold> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the final configuration in the control dofs </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the transformation of the base. If not specified will use the current robot transformation. Ignored if controller does not use it </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if position operation successful. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1aaab0e601177272e3bedb63f0ff5ebf32" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SetPath</definition>
+        <argsstring>(TrajectoryBaseConstPtr ptraj)=0</argsstring>
+        <name>SetPath</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1af1e3ef64d2cae76132b269abc057af31">SetPath</reimplementedby>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ae4a194e7d8dcb23b1acad4ff9f84ad49" kindref="member">TrajectoryBaseConstPtr</ref></type>
+          <declname>ptraj</declname>
+        </param>
+        <briefdescription>
+<para>Follow a path in configuration space, adds to the queue of trajectories already in execution. <bold>[multi-thread safe]</bold> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptraj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the trajectory </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if trajectory operation successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1a43163cebf021667f69b0c6b2d357c2fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SimulationStep</definition>
+        <argsstring>(dReal fTimeElapsed)=0</argsstring>
+        <name>SimulationStep</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1a8e0171e39bae4dfe1590c0c844cf2b6c">SimulationStep</reimplementedby>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>fTimeElapsed</declname>
+        </param>
+        <briefdescription>
+<para>Simulate one step forward for controllers running in the simulation environment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fTimeElapsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- time elapsed in simulation environment since last frame </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1a2a9a4df35568126aca5e305ca35d1d31" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IsDone</definition>
+        <argsstring>()=0</argsstring>
+        <name>IsDone</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1a223430ff4833c832a9689262eeb6a509">IsDone</reimplementedby>
+        <reimplementedby refid="classCustomController_1a223430ff4833c832a9689262eeb6a509">IsDone</reimplementedby>
+        <briefdescription>
+<para>Return true when goal reached. </para>        </briefdescription>
+        <detaileddescription>
+<para>If a trajectory was set, return only when trajectory is done. If SetDesired was called, return only when robot is is at the desired location. If SendCommand sent, returns true when the command was completed by the hand. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1a80ec605da12db741e7c3e518af07e6d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>virtual dReal GetTime</definition>
+        <argsstring>() const OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>GetTime</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1aeeadca62100efc2104208ddac5603bef">GetTime</reimplementedby>
+        <reimplementedby refid="classCustomController_1aeeadca62100efc2104208ddac5603bef">GetTime</reimplementedby>
+        <briefdescription>
+<para>return the time along the current command </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1aa7df84105fae386c84139ce5c5b7f1f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetVelocity</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;vel) const OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>GetVelocity</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1a760d2da71c596f9e967ef85b842ff758">GetVelocity</reimplementedby>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vel</declname>
+        </param>
+        <briefdescription>
+<para>get velocity of the controlled DOFs </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] - current velocity of robot from the dof </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1a5850b39ddc68841ef2961c2eb7bf7b8f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetTorque</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;torque) const OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>GetTorque</name>
+        <reimplementedby refid="classOpenRAVE_1_1MultiController_1aa9cb5e097c6ecb5d0b157f9b7c581085">GetTorque</reimplementedby>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>torque</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get torque/current/strain values <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>torque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] - returns the current torque/current/strain exerted by each of the dofs from outside forces. The feedforward and friction terms should be subtracted out already </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="111"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InterfaceType</type>
+        <definition>static InterfaceType GetInterfaceTypeStatic</definition>
+        <argsstring>()</argsstring>
+        <name>GetInterfaceTypeStatic</name>
+        <briefdescription>
+<para>return the static interface type this class points to (used for safe casting) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="37" bodyfile="/home/pra3cob/openrave/include/openrave/controller.h" bodystart="37" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1ControllerBase_1af386ad7515f485242895df543029d333" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* GetHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetHash</name>
+        <reimplements refid="classOpenRAVE_1_1InterfaceBase_1abfb0be978f0f9899582785d67c4b3d40">GetHash</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="125" bodyfile="/home/pra3cob/openrave/include/openrave/controller.h" bodystart="125" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><bold>[interface]</bold> Abstract base class to encapsulate a local controller. <bold>If not specified, method is not multi-thread safe.</bold> See <ref refid="arch__controller" kindref="compound">Controller Concepts</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1063">
+        <label>ControllerBase</label>
+        <link refid="classOpenRAVE_1_1ControllerBase"/>
+        <childnode refid="1064" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1064">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+      <node id="1065">
+        <label>CustomController</label>
+        <link refid="classCustomController"/>
+        <childnode refid="1063" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1066">
+        <label>MultiController</label>
+        <link refid="classOpenRAVE_1_1MultiController"/>
+        <childnode refid="1063" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1067">
+        <label>ControllerBase</label>
+        <link refid="classOpenRAVE_1_1ControllerBase"/>
+        <childnode refid="1068" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1069">
+        <label>string</label>
+        <childnode refid="1070" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1071">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1069" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1072">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1069" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1068">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1069" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1071" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1072" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/controller.h" line="29" bodyfile="/home/pra3cob/openrave/include/openrave/controller.h" bodystart="28" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>__description</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>Clone</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1af051c65cd5e6c845eba3c83a22ca0116" prot="public" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>ControllerBase</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1a4dad85cda4f74030d3d50e0ae37f7d68" prot="public" virt="pure-virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetControlDOFIndices</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1af386ad7515f485242895df543029d333" prot="private" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetHash</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1a096f5c8d99a8100089ee11b7fc8bda3f" prot="public" virt="pure-virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetRobot</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1a80ec605da12db741e7c3e518af07e6d5" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetTime</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1a5850b39ddc68841ef2961c2eb7bf7b8f" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetTorque</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1aa7df84105fae386c84139ce5c5b7f1f1" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetVelocity</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1ae61f45e499ec45a2b70ae3a1af53101b" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>Init</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1a27ba60fa2a3a9f63a64b127369482d9a" prot="public" virt="pure-virtual"><scope>OpenRAVE::ControllerBase</scope><name>Init</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1af577c7692eed532e6ed26db3dca5ef47" prot="public" virt="pure-virtual"><scope>OpenRAVE::ControllerBase</scope><name>IsControlTransformation</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1a2a9a4df35568126aca5e305ca35d1d31" prot="public" virt="pure-virtual"><scope>OpenRAVE::ControllerBase</scope><name>IsDone</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>OpenRAVE::ControllerBase</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>RegisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1aa495f583f5f0b3b3c412f730fdf8d715" prot="public" virt="pure-virtual"><scope>OpenRAVE::ControllerBase</scope><name>Reset</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>SetDescription</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1accd34e8fe0dfb473777ab4668bf7a5d9" prot="public" virt="pure-virtual"><scope>OpenRAVE::ControllerBase</scope><name>SetDesired</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1aaab0e601177272e3bedb63f0ff5ebf32" prot="public" virt="pure-virtual"><scope>OpenRAVE::ControllerBase</scope><name>SetPath</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1a43163cebf021667f69b0c6b2d357c2fa" prot="public" virt="pure-virtual"><scope>OpenRAVE::ControllerBase</scope><name>SimulationStep</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1aa248527e7bc5f73db1fddfd87673d65d" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>~ControllerBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>OpenRAVE::ControllerBase</scope><name>~InterfaceBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

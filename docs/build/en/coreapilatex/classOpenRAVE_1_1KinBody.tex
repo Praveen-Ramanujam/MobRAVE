@@ -1,0 +1,1277 @@
+\hypertarget{classOpenRAVE_1_1KinBody}{
+\subsection{KinBody Class Reference}
+\label{classOpenRAVE_1_1KinBody}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} A kinematic body of links and joints. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__kinbody}{Kinematics Body Concepts}.  
+
+
+
+
+Inheritance diagram for KinBody:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{classOpenRAVE_1_1KinBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for KinBody:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classOpenRAVE_1_1KinBody__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1KinBody_1_1BodyState}{BodyState}
+\begin{DoxyCompactList}\small\item\em Stores the state of the current body that is published in a thread safe way from the environment without requiring locking the environment. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint}{Joint}
+\begin{DoxyCompactList}\small\item\em Information about a joint that controls the relationship between two links. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver}{KinBodyStateSaver}
+\begin{DoxyCompactList}\small\item\em Helper class to save and restore the entire kinbody state. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1KinBody_1_1Link}{Link}
+\begin{DoxyCompactList}\small\item\em A rigid body holding all its collision and rendering data. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1KinBody_1_1ManageData}{ManageData}
+\begin{DoxyCompactList}\small\item\em Access point of the sensor system that manages the body. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238f}{KinBodyProperty} \{ \par
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa785fd1ee72bf56f00622d147f18ba985}{Prop\_\-Joints} = 0x1, 
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa4814d65685cdcf1a1acd4b0c8379e9a0}{Prop\_\-JointLimits} = 0x2$|$Prop\_\-Joints
+, \hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fac45ebedd04034c45de4da8c2786fad9e}{Prop\_\-JointProperties} = 0x8$|$Prop\_\-Joints, 
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa98f236c1d5da89a2ed36445af493324e}{Prop\_\-Links} = 0x10, 
+\par
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa47f8210384e3bcc38a5c2c8d3f295c46}{Prop\_\-Name} = 0x20, 
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fabe5d066e02460667e0f9b81dfe55dca3}{Prop\_\-LinkDraw} = 0x40, 
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa980bc1b487ae69ae27b35d1efe3ec671}{Prop\_\-LinkGeometry} = 0x80$|$Prop\_\-Links, 
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa9e6648eaadfe2e4b55dae772f95b461b}{Prop\_\-JointMimic} = 0x100$|$Prop\_\-Joints, 
+\par
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa843c5aa5238d6b2bd4d437a579c3124f}{Prop\_\-JointAccelerationVelocityLimits} = 0x200$|$Prop\_\-Joints, 
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa457e7598a9b59f4b89fd8c85ecc8b912}{Prop\_\-LinkStatic} = 0x400$|$Prop\_\-Links, 
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fad651ee47d87fae146c4cefa49b908c18}{Prop\_\-RobotManipulators} =  0x00010000
+, \hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238faac5baec80229e6eeae7c7ef46d6579a7}{Prop\_\-RobotSensors} =  0x00020000
+, \par
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa666cc0b7129b93c1a57d55d91681e0f6}{Prop\_\-RobotSensorPlacement} =  0x00040000
+, \hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa0952514ee1fd4ebb86990df968573e7a}{Prop\_\-RobotActiveDOFs} =  0x00080000, 
+\hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa2792bbad36399a273b763b4539fdd497}{Prop\_\-RobotManipulatorTool} =  0x00100000
+ \}
+\begin{DoxyCompactList}\small\item\em A set of properties for the kinbody. These properties are used to describe a set of variables used in \hyperlink{classOpenRAVE_1_1KinBody}{KinBody}. \item\end{DoxyCompactList}\item 
+enum \hyperlink{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388}{SaveParameters} \{ \par
+\hyperlink{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388ab33f258d52d1a0adc2f8b75878e3ace2}{Save\_\-LinkTransformation} = 0x00000001, 
+\hyperlink{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388a48bd135704be05e76e3a30e2d80209b7}{Save\_\-LinkEnable} = 0x00000002, 
+\hyperlink{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388ac7cea6ccd82414804a32fef90681985e}{Save\_\-LinkVelocities} = 0x00000004, 
+\hyperlink{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388a9e85e6d610af529b7587518caccccf4a}{Save\_\-ActiveDOF} = 0x00010000, 
+\par
+\hyperlink{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388abfdea67aabc497c0ecd461a332cf17e1}{Save\_\-ActiveManipulator} = 0x00020000, 
+\hyperlink{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388aa8b99f22784feffbd182ad71f8eb8a6f}{Save\_\-GrabbedBodies} = 0x00040000
+ \}
+\begin{DoxyCompactList}\small\item\em Parameters passed into the state savers to control what information gets saved. \item\end{DoxyCompactList}\item 
+enum \hyperlink{classOpenRAVE_1_1KinBody_ace43b2d7d920eeb2eb69299a4784b040}{AdjacentOptions} \{ \hyperlink{classOpenRAVE_1_1KinBody_ace43b2d7d920eeb2eb69299a4784b040a9d927f87563a4c4eb69c2391905bc015}{AO\_\-Enabled} =  1, 
+\hyperlink{classOpenRAVE_1_1KinBody_ace43b2d7d920eeb2eb69299a4784b040a471e53775c7eb63178de3a28ed33d64f}{AO\_\-ActiveDOFs} =  2
+ \}
+\begin{DoxyCompactList}\small\item\em specifies the type of adjacent link information to receive \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_ae67a1ee5e11749340bfbca5bd6749424}{InitFromFile} (const std::string \&filename, const AttributesList \&atts=AttributesList()) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_a3f81f529c6959894555ad8841a134431}{InitFromData} (const std::string \&data, const AttributesList \&atts=AttributesList()) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_a6ca8a1abee1479424de9c296da9cdd34}{InitFromBoxes} (const std::vector$<$ \hyperlink{classOpenRAVE_1_1geometry_1_1aabb}{AABB} $>$ \&boxes, bool draw)
+\begin{DoxyCompactList}\small\item\em Create a kinbody with one link composed of an array of aligned bounding boxes. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_a904bbbd6da53247d7f8e3ce1c3bac5b8}{InitFromBoxes} (const std::vector$<$ \hyperlink{classOpenRAVE_1_1geometry_1_1obb}{OBB} $>$ \&boxes, bool draw)
+\begin{DoxyCompactList}\small\item\em Create a kinbody with one link composed of an array of oriented bounding boxes. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_afe077907e74b0a8c7bdb53abc6a67fb1}{InitFromSpheres} (const std::vector$<$ Vector $>$ \&spheres, bool draw)
+\begin{DoxyCompactList}\small\item\em Create a kinbody with one link composed of an array of spheres. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_a9fbe9cf06cf411d8e93431552bdd4ebf}{InitFromTrimesh} (const \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{Link::TRIMESH} \&trimesh, bool draw)
+\begin{DoxyCompactList}\small\item\em Create a kinbody with one link composed of a triangle mesh surface. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classOpenRAVE_1_1KinBody_ab0b57544b54f5b7d766a3fee473667a5}{InitFromGeometries} (std::list$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES}{KinBody::Link::GEOMPROPERTIES} $>$ \&geometries, bool draw)
+\begin{DoxyCompactList}\small\item\em Create a kinbody with one link composed of a list of geometries. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a3cc720dbc55fa8e07a0f85343d3bb136}{
+virtual const std::string \& \hyperlink{classOpenRAVE_1_1KinBody_a3cc720dbc55fa8e07a0f85343d3bb136}{GetName} () const }
+\label{classOpenRAVE_1_1KinBody_a3cc720dbc55fa8e07a0f85343d3bb136}
+
+\begin{DoxyCompactList}\small\item\em Unique name of the robot. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a847d2f81d14b0005954aeb0d817a2187}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a847d2f81d14b0005954aeb0d817a2187}{SetName} (const std::string \&name)}
+\label{classOpenRAVE_1_1KinBody_a847d2f81d14b0005954aeb0d817a2187}
+
+\begin{DoxyCompactList}\small\item\em Set the name of the robot, notifies the environment and checks for uniqueness. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a7c60c9dfe8ef533913967e60f3d7db8f}{SubtractDOFValues} (std::vector$<$ dReal $>$ \&values1, const std::vector$<$ dReal $>$ \&values2) const 
+\begin{DoxyCompactList}\small\item\em Computes the configuration difference values1-\/values2 and stores it in values1. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a4b35aa1ab1b6538d151f7f6cb254c5fe}{SubtractJointValues} (std::vector$<$ dReal $>$ \&q1, const std::vector$<$ dReal $>$ \&q2) const \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a4057204a0e2c01a59ea9011fb5bba922}{SetDOFTorques} (const std::vector$<$ dReal $>$ \&torques, bool add)
+\begin{DoxyCompactList}\small\item\em Adds a torque to every joint. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_aba8aaffd5d9bb4c604eb29a0250bd525}{SetJointTorques} (const std::vector$<$ dReal $>$ \&torques, bool add) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a32ba11c03aabb873b3e503c8e5b93e53}{
+virtual const std::vector$<$ LinkPtr $>$ \& \hyperlink{classOpenRAVE_1_1KinBody_a32ba11c03aabb873b3e503c8e5b93e53}{GetLinks} () const }
+\label{classOpenRAVE_1_1KinBody_a32ba11c03aabb873b3e503c8e5b93e53}
+
+\begin{DoxyCompactList}\small\item\em Returns all the rigid links of the body. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a9953fafff72cdb7abf421255bbe2fa12}{
+virtual LinkPtr \hyperlink{classOpenRAVE_1_1KinBody_a9953fafff72cdb7abf421255bbe2fa12}{GetLink} (const std::string \&name) const }
+\label{classOpenRAVE_1_1KinBody_a9953fafff72cdb7abf421255bbe2fa12}
+
+\begin{DoxyCompactList}\small\item\em return a pointer to the link with the given name \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ab51d371d29d7947197b90d8e915de00f}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_ab51d371d29d7947197b90d8e915de00f}{SimulationStep} (dReal fElapsedTime)}
+\label{classOpenRAVE_1_1KinBody_ab51d371d29d7947197b90d8e915de00f}
+
+\begin{DoxyCompactList}\small\item\em Updates the bounding box and any other parameters that could have changed by a simulation step. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ad8ee6440e3b5598037f585444639d341}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_ad8ee6440e3b5598037f585444639d341}{GetLinkTransformations} (std::vector$<$ Transform $>$ \&transforms) const }
+\label{classOpenRAVE_1_1KinBody_ad8ee6440e3b5598037f585444639d341}
+
+\begin{DoxyCompactList}\small\item\em get the transformations of all the links at once \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a57e27364677e4ade3f7bf0865e7313df}{GetBodyTransformations} (std::vector$<$ Transform $>$ \&transforms) const \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a2206c7317f62f083c3f57868ba82bfee}{
+virtual Transform \hyperlink{classOpenRAVE_1_1KinBody_a2206c7317f62f083c3f57868ba82bfee}{GetTransform} () const }
+\label{classOpenRAVE_1_1KinBody_a2206c7317f62f083c3f57868ba82bfee}
+
+\begin{DoxyCompactList}\small\item\em queries the transfromation of the first link of the body \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_ac739ab6c3a2a0d486cc0d280bb2b74db}{SetVelocity} (const Vector \&linearvel, const Vector \&angularvel)
+\begin{DoxyCompactList}\small\item\em Set the velocity of the base link, rest of links are set to a consistent velocity so entire robot moves correctly. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_aff61afba85f45d8c7262c5391b271cb1}{SetDOFVelocities} (const std::vector$<$ dReal $>$ \&vDOFVelocities, const Vector \&linearvel, const Vector \&angularvel, bool checklimits=false)
+\begin{DoxyCompactList}\small\item\em Sets the velocity of the base link and each of the joints. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a0718b6336d442f3e2320f7b17d84d516}{SetDOFVelocities} (const std::vector$<$ dReal $>$ \&vDOFVelocities, bool checklimits=false)
+\begin{DoxyCompactList}\small\item\em Sets the velocity of the joints. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ab3b39cad05596c9fd0bd37de058239f4}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_ab3b39cad05596c9fd0bd37de058239f4}{GetLinkVelocities} (std::vector$<$ std::pair$<$ Vector, Vector $>$ $>$ \&velocities) const }
+\label{classOpenRAVE_1_1KinBody_ab3b39cad05596c9fd0bd37de058239f4}
+
+\begin{DoxyCompactList}\small\item\em Returns the linear and angular velocities for each link. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a92abef33e0bc4eca1756178c31e18645}{SetTransform} (const Transform \&transform)
+\begin{DoxyCompactList}\small\item\em set the transform of the first link (the rest of the links are computed based on the joint values). \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a19007e9a11f60fac50720cd38a4d6ede}{
+virtual \hyperlink{classOpenRAVE_1_1geometry_1_1aabb}{AABB} \hyperlink{classOpenRAVE_1_1KinBody_a19007e9a11f60fac50720cd38a4d6ede}{ComputeAABB} () const }
+\label{classOpenRAVE_1_1KinBody_a19007e9a11f60fac50720cd38a4d6ede}
+
+\begin{DoxyCompactList}\small\item\em Return an axis-\/aligned bounding box of the entire object in the world coordinate system. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_adfe385b3300ee3f399e9a71837409054}{
+virtual Vector \hyperlink{classOpenRAVE_1_1KinBody_adfe385b3300ee3f399e9a71837409054}{GetCenterOfMass} () const }
+\label{classOpenRAVE_1_1KinBody_adfe385b3300ee3f399e9a71837409054}
+
+\begin{DoxyCompactList}\small\item\em Return the center of mass of entire robot in the world coordinate system. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a93204280b89842474930316675ce9f07}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a93204280b89842474930316675ce9f07}{Enable} (bool enable)}
+\label{classOpenRAVE_1_1KinBody_a93204280b89842474930316675ce9f07}
+
+\begin{DoxyCompactList}\small\item\em Enables or disables the bodies. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_af0009d4f176dc8f0d02c5dd3b96226f1}{EnableLink} (LinkPtr plink, bool bEnable) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_ab093c91e2859f12d929fe8665e67a8e8}{IsEnabled} () const 
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a30ca49e63e7794762a374f53585d3b8e}{SetDOFValues} (const std::vector$<$ dReal $>$ \&values, bool checklimits=false)
+\begin{DoxyCompactList}\small\item\em Sets the joint values of the robot. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_ad75a7828a47c91e1c572c111a6779fcd}{SetDOFValues} (const std::vector$<$ dReal $>$ \&values, const Transform \&transform, bool checklimits=false)
+\begin{DoxyCompactList}\small\item\em Sets the joint values and transformation of the body. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ad005f2eda60cafaec07e183e9fbfe77d}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_ad005f2eda60cafaec07e183e9fbfe77d}{SetLinkTransformations} (const std::vector$<$ Transform $>$ \&transforms)}
+\label{classOpenRAVE_1_1KinBody_ad005f2eda60cafaec07e183e9fbfe77d}
+
+\begin{DoxyCompactList}\small\item\em sets the transformations of all the links at once \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a0cbd54ab25b8c1f3466092b54180d266}{SetBodyTransformations} (const std::vector$<$ Transform $>$ \&transforms) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a6b7837855cf483cc6a87553a3dcc16ec}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a6b7837855cf483cc6a87553a3dcc16ec}{SetLinkVelocities} (const std::vector$<$ std::pair$<$ Vector, Vector $>$ $>$ \&velocities)}
+\label{classOpenRAVE_1_1KinBody_a6b7837855cf483cc6a87553a3dcc16ec}
+
+\begin{DoxyCompactList}\small\item\em sets the link velocities \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a7fd6178241c4b8c8bb8a9d9b5f92f8cc}{CalculateJacobian} (int linkindex, const Vector \&offset, boost::multi\_\-array$<$ dReal, 2 $>$ \&vjacobian) const 
+\begin{DoxyCompactList}\small\item\em Computes the translation jacobian with respect to a world position. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a4223d26feefc25a2d8b7e0abdb30e551}{CalculateRotationJacobian} (int linkindex, const Vector \&quat, boost::multi\_\-array$<$ dReal, 2 $>$ \&vjacobian) const 
+\begin{DoxyCompactList}\small\item\em Computes the rotational jacobian as a quaternion with respect to an initial rotation. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a48eef419ccc30bfcdd82febedd6f54b7}{CalculateAngularVelocityJacobian} (int linkindex, boost::multi\_\-array$<$ dReal, 2 $>$ \&vjacobian) const 
+\begin{DoxyCompactList}\small\item\em Computes the angular velocity jacobian of a specified link about the axes of world coordinates. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a3d555222cf7b02d592a0a31cef5d479d}{
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_a3d555222cf7b02d592a0a31cef5d479d}{CheckSelfCollision} (CollisionReportPtr report=CollisionReportPtr()) const }
+\label{classOpenRAVE_1_1KinBody_a3d555222cf7b02d592a0a31cef5d479d}
+
+\begin{DoxyCompactList}\small\item\em Check if body is self colliding. Links that are joined together are ignored. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_a1e6636e58d5b763c37a529f752c5012d}{IsAttached} (KinBodyConstPtr body) const 
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a2f50259e5dc09090474e2099dbd81cac}{GetAttached} (std::set$<$ KinBodyPtr $>$ \&setAttached) const 
+\begin{DoxyCompactList}\small\item\em Recursively get all attached bodies of this body, including this body. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a38fa8d57d2eefc36568411a129c741d3}{
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_a38fa8d57d2eefc36568411a129c741d3}{IsRobot} () const }
+\label{classOpenRAVE_1_1KinBody_a38fa8d57d2eefc36568411a129c741d3}
+
+\begin{DoxyCompactList}\small\item\em Return true if this body is derived from \hyperlink{classOpenRAVE_1_1RobotBase}{RobotBase}. \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{classOpenRAVE_1_1KinBody_a51f880cf26774cd34ab9634bd518b955}{GetEnvironmentId} () const 
+\begin{DoxyCompactList}\small\item\em return a unique id of the body used in the environment. \item\end{DoxyCompactList}\item 
+virtual int8\_\-t \hyperlink{classOpenRAVE_1_1KinBody_ae63c68d8042f54cfb86ef6b52827cb69}{DoesAffect} (int jointindex, int linkindex) const 
+\begin{DoxyCompactList}\small\item\em Returns a nonzero value if the joint effects the link transformation. \item\end{DoxyCompactList}\item 
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1KinBody_afb0f7064845ec4978785c8973be539ee}{GetViewerData} () const 
+\item 
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1KinBody_ab57d127f75d79fb8bb00524894de8453}{GetGuiData} () const \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+virtual const std::set$<$ int $>$ \& \hyperlink{classOpenRAVE_1_1KinBody_a0dfdf7668c68c2860a27983804e90c8b}{GetNonAdjacentLinks} (int adjacentoptions=0) const 
+\begin{DoxyCompactList}\small\item\em return all possible link pairs that could get in collision. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_afe1545b1bf9bfd1f76ce88e53e0914e7}{
+virtual const std::set$<$ int $>$ \& \hyperlink{classOpenRAVE_1_1KinBody_afe1545b1bf9bfd1f76ce88e53e0914e7}{GetAdjacentLinks} () const }
+\label{classOpenRAVE_1_1KinBody_afe1545b1bf9bfd1f76ce88e53e0914e7}
+
+\begin{DoxyCompactList}\small\item\em return all possible link pairs whose collisions are ignored. \item\end{DoxyCompactList}\item 
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1KinBody_abeee587581232f14ea57e9f05b740779}{GetPhysicsData} () const 
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a4ae94c3cbd134d68a476d4362d2a250f}{
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1KinBody_a4ae94c3cbd134d68a476d4362d2a250f}{GetCollisionData} () const }
+\label{classOpenRAVE_1_1KinBody_a4ae94c3cbd134d68a476d4362d2a250f}
+
+\begin{DoxyCompactList}\small\item\em SetCollisionData. \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{classOpenRAVE_1_1KinBody_aac16fee68aa354fa24e6de5b8f79b78d}{GetUpdateStamp} () const 
+\begin{DoxyCompactList}\small\item\em Return a unique id for every transformation state change of any link. Used to check if robot state has changed. \item\end{DoxyCompactList}\item 
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1KinBody_a4f3de0f5a2b97c622ae9e4ea774cf30d}{RegisterChangeCallback} (int properties, const boost::function$<$ void()$>$ \&callback)
+\begin{DoxyCompactList}\small\item\em Register a callback with the interface. \item\end{DoxyCompactList}\item 
+virtual const std::string \& \hyperlink{classOpenRAVE_1_1KinBody_a911ecdc66e68c59e2be7eeec162b238a}{GetKinematicsGeometryHash} () const 
+\begin{DoxyCompactList}\small\item\em A md5 hash unique to the particular kinematic and geometric structure of a \hyperlink{classOpenRAVE_1_1KinBody}{KinBody}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_ad1f632c1fc4e293b7fd1482c732dd7d2}{SetJointVelocities} (const std::vector$<$ dReal $>$ \&pJointVelocities) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a7685100461fe38707668dc3495e05a49}{GetVelocity} (Vector \&linearvel, Vector \&angularvel) const \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a869f9a89146a89d8248f392c9610b7b7}{SetZeroConfiguration} ()
+\begin{DoxyCompactList}\small\item\em Sets the joint offsets so that the current configuration becomes the new zero state of the robot. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Basic Information}\par
+{\em \label{_amgrp87cabb0c5e5abac7a37df3f21bf09d17}
+ Methods for accessing basic information about joints }\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classOpenRAVE_1_1KinBody_a44fbec2fd26a45cada889c5c0f0751c8}{GetDOF} () const 
+\begin{DoxyCompactList}\small\item\em Number controllable degrees of freedom of the body. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_aa07f040a19a9fe7b80254915b1cce26b}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_aa07f040a19a9fe7b80254915b1cce26b}{GetDOFValues} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1KinBody_aa07f040a19a9fe7b80254915b1cce26b}
+
+\begin{DoxyCompactList}\small\item\em Returns all the joint values as organized by the DOF indices. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_af77a7f1b7f83bbd441c8e488c2f57e94}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_af77a7f1b7f83bbd441c8e488c2f57e94}{GetDOFVelocities} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1KinBody_af77a7f1b7f83bbd441c8e488c2f57e94}
+
+\begin{DoxyCompactList}\small\item\em Returns all the joint velocities as organized by the DOF indices. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a3eb84ab4c44c1589ca8ff5ffaf14ddc3}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a3eb84ab4c44c1589ca8ff5ffaf14ddc3}{GetDOFLimits} (std::vector$<$ dReal $>$ \&lowerlimit, std::vector$<$ dReal $>$ \&upperlimit) const }
+\label{classOpenRAVE_1_1KinBody_a3eb84ab4c44c1589ca8ff5ffaf14ddc3}
+
+\begin{DoxyCompactList}\small\item\em Returns all the joint limits as organized by the DOF indices. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a62447722990a87e074023da86ce5bb74}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a62447722990a87e074023da86ce5bb74}{GetDOFVelocityLimits} (std::vector$<$ dReal $>$ \&lowerlimit, std::vector$<$ dReal $>$ \&upperlimit) const }
+\label{classOpenRAVE_1_1KinBody_a62447722990a87e074023da86ce5bb74}
+
+\begin{DoxyCompactList}\small\item\em Returns all the joint velocity limits as organized by the DOF indices. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a235492faf314ece039e652cb7493ef32}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a235492faf314ece039e652cb7493ef32}{GetDOFVelocityLimits} (std::vector$<$ dReal $>$ \&maxvelocities) const }
+\label{classOpenRAVE_1_1KinBody_a235492faf314ece039e652cb7493ef32}
+
+\begin{DoxyCompactList}\small\item\em Returns the max velocity for each DOF. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ad463b766576c1691d2937c43d53ec61b}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_ad463b766576c1691d2937c43d53ec61b}{GetDOFAccelerationLimits} (std::vector$<$ dReal $>$ \&maxaccelerations) const }
+\label{classOpenRAVE_1_1KinBody_ad463b766576c1691d2937c43d53ec61b}
+
+\begin{DoxyCompactList}\small\item\em Returns the max acceleration for each DOF. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a1e9ec62d458f7c3b1ea298fa0499b25e}{GetDOFMaxVel} (std::vector$<$ dReal $>$ \&v) const \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a6fe001f451547229641f352a57cac7c0}{
+virtual void {\bfseries GetDOFMaxAccel} (std::vector$<$ dReal $>$ \&v) const \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}}
+\label{classOpenRAVE_1_1KinBody_a6fe001f451547229641f352a57cac7c0}
+
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a30e259c711d606c9d38591da2c169ca8}{
+virtual void {\bfseries GetDOFMaxTorque} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1KinBody_a30e259c711d606c9d38591da2c169ca8}
+
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a8179efee098a3632e86cd3e278e89781}{
+virtual void {\bfseries GetDOFResolutions} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1KinBody_a8179efee098a3632e86cd3e278e89781}
+
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a6568e67c28b56bea234bcbdf78172ee6}{
+virtual void {\bfseries GetDOFWeights} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1KinBody_a6568e67c28b56bea234bcbdf78172ee6}
+
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a01fcab06f416b2ac3bac1385e09ff9bf}{
+const std::vector$<$ JointPtr $>$ \& \hyperlink{classOpenRAVE_1_1KinBody_a01fcab06f416b2ac3bac1385e09ff9bf}{GetJoints} () const }
+\label{classOpenRAVE_1_1KinBody_a01fcab06f416b2ac3bac1385e09ff9bf}
+
+\begin{DoxyCompactList}\small\item\em Returns the joints making up the controllable degrees of freedom of the body. \item\end{DoxyCompactList}\item 
+const std::vector$<$ JointPtr $>$ \& \hyperlink{classOpenRAVE_1_1KinBody_ab7ece8b3b39a3c9dcc61899dc8dc783e}{GetPassiveJoints} () const 
+\begin{DoxyCompactList}\small\item\em Returns the passive joints, order does not matter. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a2fc883be19068452aa218bf252c244b1}{GetRigidlyAttachedLinks} (int linkindex, std::vector$<$ LinkPtr $>$ \&vattachedlinks) const \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+virtual const std::vector$<$ JointPtr $>$ \& \hyperlink{classOpenRAVE_1_1KinBody_a23704d633d23272f467ea0a2ca5a5223}{GetDependencyOrderedJoints} () const 
+\begin{DoxyCompactList}\small\item\em Returns the joints in hierarchical order starting at the base link. \item\end{DoxyCompactList}\item 
+virtual const std::vector$<$ std::vector$<$ std::pair$<$ LinkPtr, JointPtr $>$ $>$ $>$ \& \hyperlink{classOpenRAVE_1_1KinBody_a6eb3b9da2ed2b9b8eec770f018bbeb19}{GetClosedLoops} () const 
+\begin{DoxyCompactList}\small\item\em Return the set of unique closed loops of the kinematics hierarchy. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_a81d58139430e2200f75c1bbba99c6a74}{GetChain} (int linkindex1, int linkindex2, std::vector$<$ JointPtr $>$ \&vjoints) const 
+\begin{DoxyCompactList}\small\item\em Computes the minimal chain of joints that are between two links in the order of linkindex1 to linkindex2. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ac6b65af9a7369ff0141880abf1576c33}{
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_ac6b65af9a7369ff0141880abf1576c33}{GetChain} (int linkindex1, int linkindex2, std::vector$<$ LinkPtr $>$ \&vlinks) const }
+\label{classOpenRAVE_1_1KinBody_ac6b65af9a7369ff0141880abf1576c33}
+
+\begin{DoxyCompactList}\small\item\em similar to GetChain(int,int,std::vector$<$JointPtr$>$\&) except returns the links along the path. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_a0367d00b79b29dae5c647b169432b2a9}{IsDOFInChain} (int linkindex1, int linkindex2, int dofindex) const 
+\begin{DoxyCompactList}\small\item\em Returns true if the dof index affects the relative transformation between the two links. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a65ecee02fe64e7adf7609aa5375f0bcd}{
+virtual int \hyperlink{classOpenRAVE_1_1KinBody_a65ecee02fe64e7adf7609aa5375f0bcd}{GetJointIndex} (const std::string \&name) const }
+\label{classOpenRAVE_1_1KinBody_a65ecee02fe64e7adf7609aa5375f0bcd}
+
+\begin{DoxyCompactList}\small\item\em Return the index of the joint with the given name, else -\/1. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ae299b01185a923df10e1fc9fe0fc58be}{
+virtual JointPtr \hyperlink{classOpenRAVE_1_1KinBody_ae299b01185a923df10e1fc9fe0fc58be}{GetJoint} (const std::string \&name) const }
+\label{classOpenRAVE_1_1KinBody_ae299b01185a923df10e1fc9fe0fc58be}
+
+\begin{DoxyCompactList}\small\item\em Return a pointer to the joint with the given name. Search in the regular and passive joints. \item\end{DoxyCompactList}\item 
+virtual JointPtr \hyperlink{classOpenRAVE_1_1KinBody_ab386b6dd306aca447113b8892c0fc265}{GetJointFromDOFIndex} (int dofindex) const 
+\begin{DoxyCompactList}\small\item\em Returns the joint that covers the degree of freedom index. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Configuration Specification API}\par
+{\em \label{_amgrp2139ca0333f454b48b4bee2383d4b688}
+ Functions dealing with configuration specifications }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a4e917473a7d475324af43320f83796fc}{
+virtual const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \& \hyperlink{classOpenRAVE_1_1KinBody_a4e917473a7d475324af43320f83796fc}{GetConfigurationSpecification} () const }
+\label{classOpenRAVE_1_1KinBody_a4e917473a7d475324af43320f83796fc}
+
+\begin{DoxyCompactList}\small\item\em return the configuration specification of the joint values and transform \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \hyperlink{classOpenRAVE_1_1KinBody_af7fef3f4f3e970937d82cac5b2e25dc6}{GetConfigurationSpecificationIndices} (const std::vector$<$ int $>$ \&indices) const 
+\begin{DoxyCompactList}\small\item\em return the configuration specification of the specified joint indices. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_ad5dc4cc6b247465c2522c31a9169cfd0}{SetConfigurationValues} (std::vector$<$ dReal $>$::const\_\-iterator itvalues, bool checklimits=false)
+\begin{DoxyCompactList}\small\item\em sets joint values and transform of the body using configuration values as specified by \hyperlink{classOpenRAVE_1_1KinBody_a4e917473a7d475324af43320f83796fc}{GetConfigurationSpecification()} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a9d2332ddf65fc655aa7ebaa39223ee66}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a9d2332ddf65fc655aa7ebaa39223ee66}{GetConfigurationValues} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1KinBody_a9d2332ddf65fc655aa7ebaa39223ee66}
+
+\begin{DoxyCompactList}\small\item\em returns the configuration values as specified by \hyperlink{classOpenRAVE_1_1KinBody_a4e917473a7d475324af43320f83796fc}{GetConfigurationSpecification()} \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1KinBody_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1KinBody_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em return the static interface type this class points to (used for safe casting) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a2f6882391018a6ec4f9a49b217703578}{
+\hyperlink{classOpenRAVE_1_1KinBody_a2f6882391018a6ec4f9a49b217703578}{KinBody} (InterfaceType type, EnvironmentBasePtr penv)}
+\label{classOpenRAVE_1_1KinBody_a2f6882391018a6ec4f9a49b217703578}
+
+\begin{DoxyCompactList}\small\item\em constructors declared protected so that user always goes through environment to create bodies \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_aa282fd034535ec4b05f90f9cd32bd1c9}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_aa282fd034535ec4b05f90f9cd32bd1c9}{SetPhysicsData} (UserDataPtr pdata)}
+\label{classOpenRAVE_1_1KinBody_aa282fd034535ec4b05f90f9cd32bd1c9}
+
+\begin{DoxyCompactList}\small\item\em custom data managed by the current active physics engine, should be set only by \hyperlink{classOpenRAVE_1_1PhysicsEngineBase}{PhysicsEngineBase} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ad85bc7dc70d07b123c41b7bcad79ca34}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_ad85bc7dc70d07b123c41b7bcad79ca34}{SetCollisionData} (UserDataPtr pdata)}
+\label{classOpenRAVE_1_1KinBody_ad85bc7dc70d07b123c41b7bcad79ca34}
+
+\begin{DoxyCompactList}\small\item\em custom data managed by the current active collision checker, should be set only by \hyperlink{classOpenRAVE_1_1CollisionCheckerBase}{CollisionCheckerBase} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_aa8a85e0f120e9cbc588a8f3a555758cb}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_aa8a85e0f120e9cbc588a8f3a555758cb}{SetViewerData} (UserDataPtr pdata)}
+\label{classOpenRAVE_1_1KinBody_aa8a85e0f120e9cbc588a8f3a555758cb}
+
+\begin{DoxyCompactList}\small\item\em custom data managed by the current active viewer, should be set only by \hyperlink{classOpenRAVE_1_1ViewerBase}{ViewerBase} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a3a10edb8cb573ac97bfed0e05dc2a29a}{\_\-ComputeInternalInformation} ()
+\begin{DoxyCompactList}\small\item\em Final post-\/processing stage before a kinematics body can be used. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a218a09068212db7bb35c7d4ce792e309}{\_\-ParametersChanged} (int parameters)
+\begin{DoxyCompactList}\small\item\em Called to notify the body that certain groups of parameters have been changed. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ad9ec7f6d7732afcf3696924265ea1a8b}{
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_ad9ec7f6d7732afcf3696924265ea1a8b}{\_\-IsAttached} (KinBodyConstPtr body, std::set$<$ KinBodyConstPtr $>$ \&setChecked) const }
+\label{classOpenRAVE_1_1KinBody_ad9ec7f6d7732afcf3696924265ea1a8b}
+
+\begin{DoxyCompactList}\small\item\em Return true if two bodies should be considered as one during collision (ie one is grabbing the other). \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a1a340c6aa418a10fcf9847474376b1ba}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_a1a340c6aa418a10fcf9847474376b1ba}{\_\-AttachBody} (KinBodyPtr body)}
+\label{classOpenRAVE_1_1KinBody_a1a340c6aa418a10fcf9847474376b1ba}
+
+\begin{DoxyCompactList}\small\item\em adds an attached body \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_a718b569da1eb4373e83434f09b839705}{\_\-RemoveAttachedBody} (KinBodyPtr body)
+\begin{DoxyCompactList}\small\item\em removes an attached body \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ad9a295abdbcfb51c7b9edee54eb805a3}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_ad9a295abdbcfb51c7b9edee54eb805a3}{\_\-ResetInternalCollisionCache} ()}
+\label{classOpenRAVE_1_1KinBody_ad9a295abdbcfb51c7b9edee54eb805a3}
+
+\begin{DoxyCompactList}\small\item\em resets cached information dependent on the collision checker (usually called when the collision checker is switched or some big mode is set. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ac739f547d1fd8fc0d58d98b8dfb22083}{
+virtual boost::shared\_\-ptr$<$ FunctionParserBase$<$ dReal $>$ $>$ \hyperlink{classOpenRAVE_1_1KinBody_ac739f547d1fd8fc0d58d98b8dfb22083}{\_\-CreateFunctionParser} ()}
+\label{classOpenRAVE_1_1KinBody_ac739f547d1fd8fc0d58d98b8dfb22083}
+
+\begin{DoxyCompactList}\small\item\em creates the function parser connected to this body's joint values \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_aaf2ed934b37cbbd236fdd1b01a5f5005}{
+std::string \hyperlink{classOpenRAVE_1_1KinBody_aaf2ed934b37cbbd236fdd1b01a5f5005}{\_\-name}}
+\label{classOpenRAVE_1_1KinBody_aaf2ed934b37cbbd236fdd1b01a5f5005}
+
+\begin{DoxyCompactList}\small\item\em name of body \item\end{DoxyCompactList}\item 
+std::vector$<$ JointPtr $>$ \hyperlink{classOpenRAVE_1_1KinBody_a8eb8f9943c05cd08afba576dba39871a}{\_\-vecjoints}
+\item 
+std::vector$<$ JointPtr $>$ \hyperlink{classOpenRAVE_1_1KinBody_a57a836d771622beb63fd79d96445d7c3}{\_\-vTopologicallySortedJoints}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ac4536665c649aeb43699f45c7774446f}{
+std::vector$<$ JointPtr $>$ \hyperlink{classOpenRAVE_1_1KinBody_ac4536665c649aeb43699f45c7774446f}{\_\-vTopologicallySortedJointsAll}}
+\label{classOpenRAVE_1_1KinBody_ac4536665c649aeb43699f45c7774446f}
+
+\begin{DoxyCompactList}\small\item\em Similar to \_\-vDependencyOrderedJoints except includes \_\-vecjoints and \_\-vPassiveJoints. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_aa731820a61e6c11c59a75e7dfffecd90}{
+std::vector$<$ int $>$ \hyperlink{classOpenRAVE_1_1KinBody_aa731820a61e6c11c59a75e7dfffecd90}{\_\-vTopologicallySortedJointIndicesAll}}
+\label{classOpenRAVE_1_1KinBody_aa731820a61e6c11c59a75e7dfffecd90}
+
+\begin{DoxyCompactList}\small\item\em the joint indices of the joints in \_\-vTopologicallySortedJointsAll. Passive joint indices have \_\-vecjoints.size() added to them. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ae7d1b91b54b1ab04baee502a4dc26567}{
+std::vector$<$ JointPtr $>$ \hyperlink{classOpenRAVE_1_1KinBody_ae7d1b91b54b1ab04baee502a4dc26567}{\_\-vDOFOrderedJoints}}
+\label{classOpenRAVE_1_1KinBody_ae7d1b91b54b1ab04baee502a4dc26567}
+
+\begin{DoxyCompactList}\small\item\em all joints of the body ordered on how they are arranged within the degrees of freedom \item\end{DoxyCompactList}\item 
+std::vector$<$ LinkPtr $>$ \hyperlink{classOpenRAVE_1_1KinBody_a02bf557ce0bba8374b863ce9f20de255}{\_\-veclinks}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ac520bd29ce01d4f20bc6a297630dbf10}{
+std::vector$<$ int $>$ \hyperlink{classOpenRAVE_1_1KinBody_ac520bd29ce01d4f20bc6a297630dbf10}{\_\-vDOFIndices}}
+\label{classOpenRAVE_1_1KinBody_ac520bd29ce01d4f20bc6a297630dbf10}
+
+\begin{DoxyCompactList}\small\item\em cached start joint indices, indexed by dof indices \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_ad4fcd86b85624e749100cd60c0a9fccf}{
+std::vector$<$ std::pair$<$ int16\_\-t, int16\_\-t $>$ $>$ \hyperlink{classOpenRAVE_1_1KinBody_ad4fcd86b85624e749100cd60c0a9fccf}{\_\-vAllPairsShortestPaths}}
+\label{classOpenRAVE_1_1KinBody_ad4fcd86b85624e749100cd60c0a9fccf}
+
+\begin{DoxyCompactList}\small\item\em all-\/pairs shortest paths through the link hierarchy. The first value describes the parent link index, and the second value is an index into \_\-vecjoints or \_\-vPassiveJoints. If the second value is greater or equal to \_\-vecjoints.size() then it indexes into \_\-vPassiveJoints. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a5a4ac058401dd5f4ec5da0e7c1f719e2}{
+std::vector$<$ int8\_\-t $>$ \hyperlink{classOpenRAVE_1_1KinBody_a5a4ac058401dd5f4ec5da0e7c1f719e2}{\_\-vJointsAffectingLinks}}
+\label{classOpenRAVE_1_1KinBody_a5a4ac058401dd5f4ec5da0e7c1f719e2}
+
+\begin{DoxyCompactList}\small\item\em joint x link: (jointindex$\ast$\_\-veclinks.size()+linkindex). entry is non-\/zero if the joint affects the link in the forward kinematics. If negative, the partial derivative of ds/dtheta should be negated. \item\end{DoxyCompactList}\item 
+std::vector$<$ std::vector$<$ std::pair$<$ LinkPtr, JointPtr $>$ $>$ $>$ \hyperlink{classOpenRAVE_1_1KinBody_a0c06bbb41fb3ba4098d486fd90699140}{\_\-vClosedLoops}
+\item 
+std::vector$<$ std::vector$<$ std::pair$<$ int16\_\-t, int16\_\-t $>$ $>$ $>$ \hyperlink{classOpenRAVE_1_1KinBody_a00df6713c1a66e68f273ae2b8aa0c5f4}{\_\-vClosedLoopIndices}
+\item 
+std::vector$<$ JointPtr $>$ \hyperlink{classOpenRAVE_1_1KinBody_aa70fe0334abb18115dcb5437f5425430}{\_\-vPassiveJoints}
+\item 
+std::set$<$ int $>$ \hyperlink{classOpenRAVE_1_1KinBody_ad20d6407270731a61d3a2877745edd29}{\_\-setAdjacentLinks}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_aa4e6b1729935f161cd886466ff81e820}{
+std::vector$<$ std::pair$<$ std::string, std::string $>$ $>$ \hyperlink{classOpenRAVE_1_1KinBody_aa4e6b1729935f161cd886466ff81e820}{\_\-vForcedAdjacentLinks}}
+\label{classOpenRAVE_1_1KinBody_aa4e6b1729935f161cd886466ff81e820}
+
+\begin{DoxyCompactList}\small\item\em internally stores forced adjacent links \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a7a467aa8c7f51627331d7f2dc8e71fd3}{
+std::list$<$ KinBodyWeakPtr $>$ \hyperlink{classOpenRAVE_1_1KinBody_a7a467aa8c7f51627331d7f2dc8e71fd3}{\_\-listAttachedBodies}}
+\label{classOpenRAVE_1_1KinBody_a7a467aa8c7f51627331d7f2dc8e71fd3}
+
+\begin{DoxyCompactList}\small\item\em list of bodies that are directly attached to this body (can have duplicates) \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a6d824e60d7bac02b97a9643d6d555af9}{
+std::list$<$ UserDataWeakPtr $>$ \hyperlink{classOpenRAVE_1_1KinBody_a6d824e60d7bac02b97a9643d6d555af9}{\_\-listRegisteredCallbacks}}
+\label{classOpenRAVE_1_1KinBody_a6d824e60d7bac02b97a9643d6d555af9}
+
+\begin{DoxyCompactList}\small\item\em callbacks to call when particular properties of the body change. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a1e6a02a45812548a34f578af0c8a301e}{
+boost::array$<$ std::set$<$ int $>$, 4 $>$ \hyperlink{classOpenRAVE_1_1KinBody_a1e6a02a45812548a34f578af0c8a301e}{\_\-setNonAdjacentLinks}}
+\label{classOpenRAVE_1_1KinBody_a1e6a02a45812548a34f578af0c8a301e}
+
+\begin{DoxyCompactList}\small\item\em contains cached versions of the non-\/adjacent links depending on values in AdjacentOptions. Declared as mutable since data is cached. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a5b371595d16c6e862f4f675f03dffba4}{
+int \hyperlink{classOpenRAVE_1_1KinBody_a5b371595d16c6e862f4f675f03dffba4}{\_\-nNonAdjacentLinkCache}}
+\label{classOpenRAVE_1_1KinBody_a5b371595d16c6e862f4f675f03dffba4}
+
+\begin{DoxyCompactList}\small\item\em specifies what information is currently valid in the AdjacentOptions. Declared as mutable since data is cached. If 0x80000000 (ie $<$ 0), then everything needs to be recomputed including \_\-setNonAdjacentLinks\mbox{[}0\mbox{]}. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a9945fd1c6a580218fe969ee3bf77097f}{
+std::vector$<$ Transform $>$ \hyperlink{classOpenRAVE_1_1KinBody_a9945fd1c6a580218fe969ee3bf77097f}{\_\-vInitialLinkTransformations}}
+\label{classOpenRAVE_1_1KinBody_a9945fd1c6a580218fe969ee3bf77097f}
+
+\begin{DoxyCompactList}\small\item\em the initial transformations of each link specifying at least one pose where the robot is collision free \item\end{DoxyCompactList}\item 
+int \hyperlink{classOpenRAVE_1_1KinBody_a0386692fd7704da6e79775fa09a4b685}{\_\-environmentid}
+\item 
+int \hyperlink{classOpenRAVE_1_1KinBody_abce08eaa134f87c6d13f4d23749a61b9}{\_\-nUpdateStampId}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_a7e9098feb28e312721a58a360989ec20}{
+int \hyperlink{classOpenRAVE_1_1KinBody_a7e9098feb28e312721a58a360989ec20}{\_\-nParametersChanged}}
+\label{classOpenRAVE_1_1KinBody_a7e9098feb28e312721a58a360989ec20}
+
+\begin{DoxyCompactList}\small\item\em set of parameters that changed and need callbacks \item\end{DoxyCompactList}\item 
+UserDataPtr \hyperlink{classOpenRAVE_1_1KinBody_aff45addfa1926549479a9786a92d6246}{\_\-pViewerData}
+\item 
+UserDataPtr \hyperlink{classOpenRAVE_1_1KinBody_a3f8a2e40760cf2ee75f604c0f18b27ec}{\_\-pPhysicsData}
+\item 
+UserDataPtr \hyperlink{classOpenRAVE_1_1KinBody_a0a17ef574c66277ef313e5e56d6b9bbc}{\_\-pCollisionData}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_aca4c77d19ed947e26826284b9c8b5d56}{
+uint32\_\-t \hyperlink{classOpenRAVE_1_1KinBody_aca4c77d19ed947e26826284b9c8b5d56}{\_\-nHierarchyComputed}}
+\label{classOpenRAVE_1_1KinBody_aca4c77d19ed947e26826284b9c8b5d56}
+
+\begin{DoxyCompactList}\small\item\em true if the joint heirarchy and other cached information is computed \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} A kinematic body of links and joints. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__kinbody}{Kinematics Body Concepts}. 
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classOpenRAVE_1_1KinBody_ace43b2d7d920eeb2eb69299a4784b040}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!AdjacentOptions@{AdjacentOptions}}
+\index{AdjacentOptions@{AdjacentOptions}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{AdjacentOptions}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf AdjacentOptions}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ace43b2d7d920eeb2eb69299a4784b040}
+
+
+specifies the type of adjacent link information to receive 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{AO\_\-Enabled@{AO\_\-Enabled}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!AO\_\-Enabled@{AO\_\-Enabled}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_ace43b2d7d920eeb2eb69299a4784b040a9d927f87563a4c4eb69c2391905bc015}{
+AO\_\-Enabled}
+\label{classOpenRAVE_1_1KinBody_ace43b2d7d920eeb2eb69299a4784b040a9d927f87563a4c4eb69c2391905bc015}
+}]return only enabled link pairs \index{AO\_\-ActiveDOFs@{AO\_\-ActiveDOFs}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!AO\_\-ActiveDOFs@{AO\_\-ActiveDOFs}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_ace43b2d7d920eeb2eb69299a4784b040a471e53775c7eb63178de3a28ed33d64f}{
+AO\_\-ActiveDOFs}
+\label{classOpenRAVE_1_1KinBody_ace43b2d7d920eeb2eb69299a4784b040a471e53775c7eb63178de3a28ed33d64f}
+}]return only link pairs that have an active in its path \end{description}
+\end{Desc}
+
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238f}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!KinBodyProperty@{KinBodyProperty}}
+\index{KinBodyProperty@{KinBodyProperty}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{KinBodyProperty}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf KinBodyProperty}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238f}
+
+
+A set of properties for the kinbody. These properties are used to describe a set of variables used in \hyperlink{classOpenRAVE_1_1KinBody}{KinBody}. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{Prop\_\-Joints@{Prop\_\-Joints}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-Joints@{Prop\_\-Joints}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa785fd1ee72bf56f00622d147f18ba985}{
+Prop\_\-Joints}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa785fd1ee72bf56f00622d147f18ba985}
+}]all properties of all joints \index{Prop\_\-JointLimits@{Prop\_\-JointLimits}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-JointLimits@{Prop\_\-JointLimits}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa4814d65685cdcf1a1acd4b0c8379e9a0}{
+Prop\_\-JointLimits}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa4814d65685cdcf1a1acd4b0c8379e9a0}
+}]regular limits \index{Prop\_\-JointProperties@{Prop\_\-JointProperties}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-JointProperties@{Prop\_\-JointProperties}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fac45ebedd04034c45de4da8c2786fad9e}{
+Prop\_\-JointProperties}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fac45ebedd04034c45de4da8c2786fad9e}
+}]max velocity, max acceleration, resolution, max torque \index{Prop\_\-Links@{Prop\_\-Links}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-Links@{Prop\_\-Links}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa98f236c1d5da89a2ed36445af493324e}{
+Prop\_\-Links}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa98f236c1d5da89a2ed36445af493324e}
+}]all properties of all links \index{Prop\_\-Name@{Prop\_\-Name}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-Name@{Prop\_\-Name}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa47f8210384e3bcc38a5c2c8d3f295c46}{
+Prop\_\-Name}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa47f8210384e3bcc38a5c2c8d3f295c46}
+}]name changed \index{Prop\_\-LinkDraw@{Prop\_\-LinkDraw}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-LinkDraw@{Prop\_\-LinkDraw}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fabe5d066e02460667e0f9b81dfe55dca3}{
+Prop\_\-LinkDraw}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fabe5d066e02460667e0f9b81dfe55dca3}
+}]toggle link geometries rendering \index{Prop\_\-LinkGeometry@{Prop\_\-LinkGeometry}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-LinkGeometry@{Prop\_\-LinkGeometry}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa980bc1b487ae69ae27b35d1efe3ec671}{
+Prop\_\-LinkGeometry}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa980bc1b487ae69ae27b35d1efe3ec671}
+}]the geometry of the link changed \index{Prop\_\-JointMimic@{Prop\_\-JointMimic}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-JointMimic@{Prop\_\-JointMimic}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa9e6648eaadfe2e4b55dae772f95b461b}{
+Prop\_\-JointMimic}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa9e6648eaadfe2e4b55dae772f95b461b}
+}]joint mimic equations \index{Prop\_\-JointAccelerationVelocityLimits@{Prop\_\-JointAccelerationVelocityLimits}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-JointAccelerationVelocityLimits@{Prop\_\-JointAccelerationVelocityLimits}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa843c5aa5238d6b2bd4d437a579c3124f}{
+Prop\_\-JointAccelerationVelocityLimits}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa843c5aa5238d6b2bd4d437a579c3124f}
+}]velocity + acceleration \index{Prop\_\-LinkStatic@{Prop\_\-LinkStatic}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-LinkStatic@{Prop\_\-LinkStatic}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa457e7598a9b59f4b89fd8c85ecc8b912}{
+Prop\_\-LinkStatic}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa457e7598a9b59f4b89fd8c85ecc8b912}
+}]static property of link changed \index{Prop\_\-RobotManipulators@{Prop\_\-RobotManipulators}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-RobotManipulators@{Prop\_\-RobotManipulators}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fad651ee47d87fae146c4cefa49b908c18}{
+Prop\_\-RobotManipulators}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fad651ee47d87fae146c4cefa49b908c18}
+}]\mbox{[}robot only\mbox{]} all properties of all manipulators \index{Prop\_\-RobotSensors@{Prop\_\-RobotSensors}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-RobotSensors@{Prop\_\-RobotSensors}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238faac5baec80229e6eeae7c7ef46d6579a7}{
+Prop\_\-RobotSensors}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238faac5baec80229e6eeae7c7ef46d6579a7}
+}]\mbox{[}robot only\mbox{]} all properties of all sensors \index{Prop\_\-RobotSensorPlacement@{Prop\_\-RobotSensorPlacement}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-RobotSensorPlacement@{Prop\_\-RobotSensorPlacement}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa666cc0b7129b93c1a57d55d91681e0f6}{
+Prop\_\-RobotSensorPlacement}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa666cc0b7129b93c1a57d55d91681e0f6}
+}]\mbox{[}robot only\mbox{]} relative sensor placement of sensors \index{Prop\_\-RobotActiveDOFs@{Prop\_\-RobotActiveDOFs}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-RobotActiveDOFs@{Prop\_\-RobotActiveDOFs}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa0952514ee1fd4ebb86990df968573e7a}{
+Prop\_\-RobotActiveDOFs}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa0952514ee1fd4ebb86990df968573e7a}
+}]\mbox{[}robot only\mbox{]} active dofs changed \index{Prop\_\-RobotManipulatorTool@{Prop\_\-RobotManipulatorTool}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Prop\_\-RobotManipulatorTool@{Prop\_\-RobotManipulatorTool}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa2792bbad36399a273b763b4539fdd497}{
+Prop\_\-RobotManipulatorTool}
+\label{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238fa2792bbad36399a273b763b4539fdd497}
+}]\mbox{[}robot only\mbox{]} the tool coordinate system changed \end{description}
+\end{Desc}
+
+\hypertarget{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SaveParameters@{SaveParameters}}
+\index{SaveParameters@{SaveParameters}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SaveParameters}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf SaveParameters}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388}
+
+
+Parameters passed into the state savers to control what information gets saved. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{Save\_\-LinkTransformation@{Save\_\-LinkTransformation}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Save\_\-LinkTransformation@{Save\_\-LinkTransformation}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388ab33f258d52d1a0adc2f8b75878e3ace2}{
+Save\_\-LinkTransformation}
+\label{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388ab33f258d52d1a0adc2f8b75878e3ace2}
+}]\mbox{[}default\mbox{]} save link transformations \index{Save\_\-LinkEnable@{Save\_\-LinkEnable}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Save\_\-LinkEnable@{Save\_\-LinkEnable}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388a48bd135704be05e76e3a30e2d80209b7}{
+Save\_\-LinkEnable}
+\label{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388a48bd135704be05e76e3a30e2d80209b7}
+}]\mbox{[}default\mbox{]} save link enable states \index{Save\_\-LinkVelocities@{Save\_\-LinkVelocities}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Save\_\-LinkVelocities@{Save\_\-LinkVelocities}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388ac7cea6ccd82414804a32fef90681985e}{
+Save\_\-LinkVelocities}
+\label{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388ac7cea6ccd82414804a32fef90681985e}
+}]save the link velocities \index{Save\_\-ActiveDOF@{Save\_\-ActiveDOF}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Save\_\-ActiveDOF@{Save\_\-ActiveDOF}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388a9e85e6d610af529b7587518caccccf4a}{
+Save\_\-ActiveDOF}
+\label{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388a9e85e6d610af529b7587518caccccf4a}
+}]\mbox{[}robot only\mbox{]}, saves and restores the current active degrees of freedom \index{Save\_\-ActiveManipulator@{Save\_\-ActiveManipulator}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Save\_\-ActiveManipulator@{Save\_\-ActiveManipulator}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388abfdea67aabc497c0ecd461a332cf17e1}{
+Save\_\-ActiveManipulator}
+\label{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388abfdea67aabc497c0ecd461a332cf17e1}
+}]\mbox{[}robot only\mbox{]}, saves the active manipulator \index{Save\_\-GrabbedBodies@{Save\_\-GrabbedBodies}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!Save\_\-GrabbedBodies@{Save\_\-GrabbedBodies}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388aa8b99f22784feffbd182ad71f8eb8a6f}{
+Save\_\-GrabbedBodies}
+\label{classOpenRAVE_1_1KinBody_ac26237c033a41ea5d14733a01e1dd388aa8b99f22784feffbd182ad71f8eb8a6f}
+}]\mbox{[}robot only\mbox{]}, saves the grabbed state of the bodies. This does not affect the configuraiton of those bodies. \end{description}
+\end{Desc}
+
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1KinBody_a3a10edb8cb573ac97bfed0e05dc2a29a}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-ComputeInternalInformation@{\_\-ComputeInternalInformation}}
+\index{\_\-ComputeInternalInformation@{\_\-ComputeInternalInformation}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-ComputeInternalInformation}]{\setlength{\rightskip}{0pt plus 5cm}virtual void \_\-ComputeInternalInformation ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a3a10edb8cb573ac97bfed0e05dc2a29a}
+
+
+Final post-\/processing stage before a kinematics body can be used. 
+
+This method is called after the body is finished being initialized with data and before being added to the environment. Also builds the hashes. Builds the internal hierarchy and kinematic body hash.
+
+Avoids making specific calls on the collision checker (like CheckCollision) or physics engine (like simulating velocities/torques) since this information can change depending on the attached plugin. 
+
+Reimplemented in \hyperlink{classOpenRAVE_1_1RobotBase_a3a10edb8cb573ac97bfed0e05dc2a29a}{RobotBase}.
+
+\hypertarget{classOpenRAVE_1_1KinBody_a218a09068212db7bb35c7d4ce792e309}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-ParametersChanged@{\_\-ParametersChanged}}
+\index{\_\-ParametersChanged@{\_\-ParametersChanged}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-ParametersChanged}]{\setlength{\rightskip}{0pt plus 5cm}virtual void \_\-ParametersChanged (int {\em parameters})\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a218a09068212db7bb35c7d4ce792e309}
+
+
+Called to notify the body that certain groups of parameters have been changed. 
+
+This function in calls every registers calledback that is tracking the changes. It also recomputes the hashes if geometry changed. 
+
+Reimplemented in \hyperlink{classOpenRAVE_1_1RobotBase_a218a09068212db7bb35c7d4ce792e309}{RobotBase}.
+
+\hypertarget{classOpenRAVE_1_1KinBody_a718b569da1eb4373e83434f09b839705}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-RemoveAttachedBody@{\_\-RemoveAttachedBody}}
+\index{\_\-RemoveAttachedBody@{\_\-RemoveAttachedBody}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-RemoveAttachedBody}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool \_\-RemoveAttachedBody (KinBodyPtr {\em body})\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a718b569da1eb4373e83434f09b839705}
+
+
+removes an attached body 
+
+\begin{DoxyReturn}{Returns}
+true if body was successfully found and removed 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1KinBody_a48eef419ccc30bfcdd82febedd6f54b7}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!CalculateAngularVelocityJacobian@{CalculateAngularVelocityJacobian}}
+\index{CalculateAngularVelocityJacobian@{CalculateAngularVelocityJacobian}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{CalculateAngularVelocityJacobian}]{\setlength{\rightskip}{0pt plus 5cm}virtual void CalculateAngularVelocityJacobian (int {\em linkindex}, \/  boost::multi\_\-array$<$ dReal, 2 $>$ \& {\em vjacobian}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a48eef419ccc30bfcdd82febedd6f54b7}
+
+
+Computes the angular velocity jacobian of a specified link about the axes of world coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em linkindex}]of the link that the rotation is attached to \item[{\em vjacobian}]3xDOF matrix \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a7fd6178241c4b8c8bb8a9d9b5f92f8cc}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!CalculateJacobian@{CalculateJacobian}}
+\index{CalculateJacobian@{CalculateJacobian}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{CalculateJacobian}]{\setlength{\rightskip}{0pt plus 5cm}virtual void CalculateJacobian (int {\em linkindex}, \/  const Vector \& {\em offset}, \/  boost::multi\_\-array$<$ dReal, 2 $>$ \& {\em vjacobian}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a7fd6178241c4b8c8bb8a9d9b5f92f8cc}
+
+
+Computes the translation jacobian with respect to a world position. 
+
+Gets the jacobian with respect to a link by computing the partial differentials for all joints that in the path from the root node to \hyperlink{classOpenRAVE_1_1KinBody_a32ba11c03aabb873b3e503c8e5b93e53}{GetLinks()}\mbox{[}index\mbox{]} (doesn't touch the rest of the values) 
+\begin{DoxyParams}{Parameters}
+\item[{\em linkindex}]of the link that the rotation is attached to \item[{\em position}]position in world space where to compute derivatives from. \item[{\em vjacobian}]3xDOF matrix \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a4223d26feefc25a2d8b7e0abdb30e551}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!CalculateRotationJacobian@{CalculateRotationJacobian}}
+\index{CalculateRotationJacobian@{CalculateRotationJacobian}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{CalculateRotationJacobian}]{\setlength{\rightskip}{0pt plus 5cm}virtual void CalculateRotationJacobian (int {\em linkindex}, \/  const Vector \& {\em quat}, \/  boost::multi\_\-array$<$ dReal, 2 $>$ \& {\em vjacobian}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a4223d26feefc25a2d8b7e0abdb30e551}
+
+
+Computes the rotational jacobian as a quaternion with respect to an initial rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em linkindex}]of the link that the rotation is attached to \item[{\em qInitialRot}]the rotation in world space whose derivative to take from. \item[{\em vjacobian}]4xDOF matrix \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_ae63c68d8042f54cfb86ef6b52827cb69}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!DoesAffect@{DoesAffect}}
+\index{DoesAffect@{DoesAffect}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{DoesAffect}]{\setlength{\rightskip}{0pt plus 5cm}virtual int8\_\-t DoesAffect (int {\em jointindex}, \/  int {\em linkindex}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ae63c68d8042f54cfb86ef6b52827cb69}
+
+
+Returns a nonzero value if the joint effects the link transformation. 
+
+In closed loops, all joints on all paths to the root link are counted as affecting the link. If a mimic joint affects the link, then all the joints used in the mimic joint's computation affect the link. If negative, the partial derivative of the Jacobian should be negated. 
+\begin{DoxyParams}{Parameters}
+\item[{\em jointindex}]index of the joint \item[{\em linkindex}]index of the link \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_af0009d4f176dc8f0d02c5dd3b96226f1}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!EnableLink@{EnableLink}}
+\index{EnableLink@{EnableLink}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{EnableLink}]{\setlength{\rightskip}{0pt plus 5cm}virtual void EnableLink (LinkPtr {\em plink}, \/  bool {\em bEnable})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_af0009d4f176dc8f0d02c5dd3b96226f1}
+\hypertarget{classOpenRAVE_1_1KinBody_a2f50259e5dc09090474e2099dbd81cac}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetAttached@{GetAttached}}
+\index{GetAttached@{GetAttached}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetAttached}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetAttached (std::set$<$ KinBodyPtr $>$ \& {\em setAttached}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a2f50259e5dc09090474e2099dbd81cac}
+
+
+Recursively get all attached bodies of this body, including this body. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em setAttached}]fills with the attached bodies. If any bodies are already in setAttached, then ignores recursing on their attached bodies. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a57e27364677e4ade3f7bf0865e7313df}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetBodyTransformations@{GetBodyTransformations}}
+\index{GetBodyTransformations@{GetBodyTransformations}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetBodyTransformations}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetBodyTransformations (std::vector$<$ Transform $>$ \& {\em transforms}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a57e27364677e4ade3f7bf0865e7313df}
+\hypertarget{classOpenRAVE_1_1KinBody_a81d58139430e2200f75c1bbba99c6a74}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetChain@{GetChain}}
+\index{GetChain@{GetChain}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetChain}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool GetChain (int {\em linkindex1}, \/  int {\em linkindex2}, \/  std::vector$<$ JointPtr $>$ \& {\em vjoints}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a81d58139430e2200f75c1bbba99c6a74}
+
+
+Computes the minimal chain of joints that are between two links in the order of linkindex1 to linkindex2. 
+
+Passive joints are also used in the computation of the chain and can be returned. Note that a passive joint has a joint index and dof index of -\/1. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em linkindex1}]the link index to start the search \item[\mbox{$\leftarrow$} {\em linkindex2}]the link index where the search ends \item[\mbox{$\rightarrow$} {\em vjoints}]the joints to fill that describe the chain \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the two links are connected (vjoints will be filled), false if the links are separate 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1KinBody_a6eb3b9da2ed2b9b8eec770f018bbeb19}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetClosedLoops@{GetClosedLoops}}
+\index{GetClosedLoops@{GetClosedLoops}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetClosedLoops}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::vector$<$ std::vector$<$ std::pair$<$LinkPtr, JointPtr$>$ $>$ $>$\& GetClosedLoops () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a6eb3b9da2ed2b9b8eec770f018bbeb19}
+
+
+Return the set of unique closed loops of the kinematics hierarchy. 
+
+Each loop is a set of link indices and joint indices. For example, a loop of link indices: \mbox{[}l\_\-0,l\_\-1,l\_\-2\mbox{]} will consist of three joints connecting l\_\-0 to l\_\-1, l\_\-1 to l\_\-2, and l\_\-2 to l\_\-0. The first element in the pair is the link l\_\-X, the second element in the joint connecting l\_\-X to l\_\-(X+1). \hypertarget{classOpenRAVE_1_1KinBody_af7fef3f4f3e970937d82cac5b2e25dc6}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetConfigurationSpecificationIndices@{GetConfigurationSpecificationIndices}}
+\index{GetConfigurationSpecificationIndices@{GetConfigurationSpecificationIndices}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetConfigurationSpecificationIndices}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf ConfigurationSpecification} GetConfigurationSpecificationIndices (const std::vector$<$ int $>$ \& {\em indices}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_af7fef3f4f3e970937d82cac5b2e25dc6}
+
+
+return the configuration specification of the specified joint indices. 
+
+Note that the return type is by-\/value, so should not be used in iteration \hypertarget{classOpenRAVE_1_1KinBody_a23704d633d23272f467ea0a2ca5a5223}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetDependencyOrderedJoints@{GetDependencyOrderedJoints}}
+\index{GetDependencyOrderedJoints@{GetDependencyOrderedJoints}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetDependencyOrderedJoints}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::vector$<$JointPtr$>$\& GetDependencyOrderedJoints () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a23704d633d23272f467ea0a2ca5a5223}
+
+
+Returns the joints in hierarchical order starting at the base link. 
+
+In the case of closed loops, the joints are returned in the order closest to the root. All the joints affecting a particular joint's transformation will always come before the joint in the list. \hypertarget{classOpenRAVE_1_1KinBody_a44fbec2fd26a45cada889c5c0f0751c8}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetDOF@{GetDOF}}
+\index{GetDOF@{GetDOF}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetDOF}]{\setlength{\rightskip}{0pt plus 5cm}virtual int GetDOF () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a44fbec2fd26a45cada889c5c0f0751c8}
+
+
+Number controllable degrees of freedom of the body. 
+
+Only uses \_\-vecjoints and last joint for computation, so can work before \_\-ComputeInternalInformation is called. \hypertarget{classOpenRAVE_1_1KinBody_a1e9ec62d458f7c3b1ea298fa0499b25e}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetDOFMaxVel@{GetDOFMaxVel}}
+\index{GetDOFMaxVel@{GetDOFMaxVel}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetDOFMaxVel}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetDOFMaxVel (std::vector$<$ dReal $>$ \& {\em v}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a1e9ec62d458f7c3b1ea298fa0499b25e}
+\hypertarget{classOpenRAVE_1_1KinBody_a51f880cf26774cd34ab9634bd518b955}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetEnvironmentId@{GetEnvironmentId}}
+\index{GetEnvironmentId@{GetEnvironmentId}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetEnvironmentId}]{\setlength{\rightskip}{0pt plus 5cm}virtual int GetEnvironmentId () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a51f880cf26774cd34ab9634bd518b955}
+
+
+return a unique id of the body used in the environment. 
+
+If object is not added to the environment, this will return 0. So checking if \hyperlink{classOpenRAVE_1_1KinBody_a51f880cf26774cd34ab9634bd518b955}{GetEnvironmentId()} is 0 is a good way to check if object is present in the environment. This id will not be copied when cloning in order to respect another environment's ids. \hypertarget{classOpenRAVE_1_1KinBody_ab57d127f75d79fb8bb00524894de8453}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetGuiData@{GetGuiData}}
+\index{GetGuiData@{GetGuiData}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetGuiData}]{\setlength{\rightskip}{0pt plus 5cm}virtual UserDataPtr GetGuiData () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ab57d127f75d79fb8bb00524894de8453}
+\hypertarget{classOpenRAVE_1_1KinBody_ab386b6dd306aca447113b8892c0fc265}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetJointFromDOFIndex@{GetJointFromDOFIndex}}
+\index{GetJointFromDOFIndex@{GetJointFromDOFIndex}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetJointFromDOFIndex}]{\setlength{\rightskip}{0pt plus 5cm}virtual JointPtr GetJointFromDOFIndex (int {\em dofindex}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ab386b6dd306aca447113b8892c0fc265}
+
+
+Returns the joint that covers the degree of freedom index. 
+
+Note that the mapping of joint structures is not the same as the values in GetJointValues since each joint can have more than one degree of freedom. \hypertarget{classOpenRAVE_1_1KinBody_a911ecdc66e68c59e2be7eeec162b238a}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetKinematicsGeometryHash@{GetKinematicsGeometryHash}}
+\index{GetKinematicsGeometryHash@{GetKinematicsGeometryHash}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetKinematicsGeometryHash}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::string\& GetKinematicsGeometryHash () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a911ecdc66e68c59e2be7eeec162b238a}
+
+
+A md5 hash unique to the particular kinematic and geometric structure of a \hyperlink{classOpenRAVE_1_1KinBody}{KinBody}. 
+
+This 32 byte string can be used to check if two bodies have the same kinematic structure and can be used to index into tables when looking for body-\/specific models. \hyperlink{namespaceOpenRAVE}{OpenRAVE} stores all such models in the OPENRAVE\_\-HOME directory (usually $\sim$/.openrave), indexed by the particular robot/body hashes. \begin{DoxyReturn}{Returns}
+md5 hash string of kinematics/geometry 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1KinBody_a0dfdf7668c68c2860a27983804e90c8b}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetNonAdjacentLinks@{GetNonAdjacentLinks}}
+\index{GetNonAdjacentLinks@{GetNonAdjacentLinks}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetNonAdjacentLinks}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::set$<$int$>$\& GetNonAdjacentLinks (int {\em adjacentoptions} = {\ttfamily 0}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a0dfdf7668c68c2860a27983804e90c8b}
+
+
+return all possible link pairs that could get in collision. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em adjacentoptions}]a bitmask of \hyperlink{classOpenRAVE_1_1KinBody_ace43b2d7d920eeb2eb69299a4784b040}{AdjacentOptions} values \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_ab7ece8b3b39a3c9dcc61899dc8dc783e}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetPassiveJoints@{GetPassiveJoints}}
+\index{GetPassiveJoints@{GetPassiveJoints}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetPassiveJoints}]{\setlength{\rightskip}{0pt plus 5cm}const std::vector$<$JointPtr$>$\& GetPassiveJoints () const}\hfill}
+\label{classOpenRAVE_1_1KinBody_ab7ece8b3b39a3c9dcc61899dc8dc783e}
+
+
+Returns the passive joints, order does not matter. 
+
+A passive joint is not directly controlled by the body's degrees of freedom so it has no joint index and no dof index. Passive joints allows mimic joints to be hidden from the users. However, there are cases when passive joints are not mimic; for example, suspension mechanism on vehicles. \hypertarget{classOpenRAVE_1_1KinBody_abeee587581232f14ea57e9f05b740779}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetPhysicsData@{GetPhysicsData}}
+\index{GetPhysicsData@{GetPhysicsData}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetPhysicsData}]{\setlength{\rightskip}{0pt plus 5cm}virtual UserDataPtr GetPhysicsData () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_abeee587581232f14ea57e9f05b740779}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_aa282fd034535ec4b05f90f9cd32bd1c9}{SetPhysicsData} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_a2fc883be19068452aa218bf252c244b1}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetRigidlyAttachedLinks@{GetRigidlyAttachedLinks}}
+\index{GetRigidlyAttachedLinks@{GetRigidlyAttachedLinks}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetRigidlyAttachedLinks}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetRigidlyAttachedLinks (int {\em linkindex}, \/  std::vector$<$ LinkPtr $>$ \& {\em vattachedlinks}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a2fc883be19068452aa218bf252c244b1}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a1452271a9a62d59785c04764543f94d7}{Link::GetRigidlyAttachedLinks} (10/12/12) 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_aac16fee68aa354fa24e6de5b8f79b78d}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetUpdateStamp@{GetUpdateStamp}}
+\index{GetUpdateStamp@{GetUpdateStamp}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetUpdateStamp}]{\setlength{\rightskip}{0pt plus 5cm}virtual int GetUpdateStamp () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_aac16fee68aa354fa24e6de5b8f79b78d}
+
+
+Return a unique id for every transformation state change of any link. Used to check if robot state has changed. 
+
+The stamp is used by the collision checkers, physics engines, or any other item that needs to keep track of any changes of the \hyperlink{classOpenRAVE_1_1KinBody}{KinBody} as it moves. Currently stamps monotonically increment for every transformation/joint angle change. \hypertarget{classOpenRAVE_1_1KinBody_a7685100461fe38707668dc3495e05a49}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetVelocity@{GetVelocity}}
+\index{GetVelocity@{GetVelocity}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetVelocity}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetVelocity (Vector \& {\em linearvel}, \/  Vector \& {\em angularvel}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a7685100461fe38707668dc3495e05a49}
+\hypertarget{classOpenRAVE_1_1KinBody_afb0f7064845ec4978785c8973be539ee}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!GetViewerData@{GetViewerData}}
+\index{GetViewerData@{GetViewerData}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{GetViewerData}]{\setlength{\rightskip}{0pt plus 5cm}virtual UserDataPtr GetViewerData () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_afb0f7064845ec4978785c8973be539ee}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_aa8a85e0f120e9cbc588a8f3a555758cb}{SetViewerData} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_a904bbbd6da53247d7f8e3ce1c3bac5b8}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!InitFromBoxes@{InitFromBoxes}}
+\index{InitFromBoxes@{InitFromBoxes}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{InitFromBoxes}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InitFromBoxes (const std::vector$<$ {\bf OBB} $>$ \& {\em boxes}, \/  bool {\em draw})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a904bbbd6da53247d7f8e3ce1c3bac5b8}
+
+
+Create a kinbody with one link composed of an array of oriented bounding boxes. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em boxes}]the array of oriented bounding boxes that will comprise of the body \item[{\em draw}]if true, the boxes will be rendered in the scene \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a6ca8a1abee1479424de9c296da9cdd34}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!InitFromBoxes@{InitFromBoxes}}
+\index{InitFromBoxes@{InitFromBoxes}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{InitFromBoxes}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InitFromBoxes (const std::vector$<$ {\bf AABB} $>$ \& {\em boxes}, \/  bool {\em draw})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a6ca8a1abee1479424de9c296da9cdd34}
+
+
+Create a kinbody with one link composed of an array of aligned bounding boxes. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em boxes}]the array of aligned bounding boxes that will comprise of the body \item[{\em draw}]if true, the boxes will be rendered in the scene \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a3f81f529c6959894555ad8841a134431}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!InitFromData@{InitFromData}}
+\index{InitFromData@{InitFromData}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{InitFromData}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InitFromData (const std::string \& {\em data}, \/  const AttributesList \& {\em atts} = {\ttfamily AttributesList()})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a3f81f529c6959894555ad8841a134431}
+\begin{DoxySeeAlso}{See also}
+EnvironmentBase::ReadKinBodyXMLData 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \hyperlink{classOpenRAVE_1_1RobotBase_a3f81f529c6959894555ad8841a134431}{RobotBase}.
+
+\hypertarget{classOpenRAVE_1_1KinBody_ae67a1ee5e11749340bfbca5bd6749424}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!InitFromFile@{InitFromFile}}
+\index{InitFromFile@{InitFromFile}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{InitFromFile}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InitFromFile (const std::string \& {\em filename}, \/  const AttributesList \& {\em atts} = {\ttfamily AttributesList()})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ae67a1ee5e11749340bfbca5bd6749424}
+\begin{DoxySeeAlso}{See also}
+EnvironmentBase::ReadKinBodyXMLFile 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \hyperlink{classOpenRAVE_1_1RobotBase_ae67a1ee5e11749340bfbca5bd6749424}{RobotBase}.
+
+\hypertarget{classOpenRAVE_1_1KinBody_ab0b57544b54f5b7d766a3fee473667a5}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!InitFromGeometries@{InitFromGeometries}}
+\index{InitFromGeometries@{InitFromGeometries}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{InitFromGeometries}]{\setlength{\rightskip}{0pt plus 5cm}bool InitFromGeometries (std::list$<$ {\bf KinBody::Link::GEOMPROPERTIES} $>$ \& {\em geometries}, \/  bool {\em draw})}\hfill}
+\label{classOpenRAVE_1_1KinBody_ab0b57544b54f5b7d766a3fee473667a5}
+
+
+Create a kinbody with one link composed of a list of geometries. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em geometries}]In order to save memory, the geometries in this list are transferred to the link. After function completes, the size should be 0. \item[{\em draw}]if true, will be rendered in the scene \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_afe077907e74b0a8c7bdb53abc6a67fb1}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!InitFromSpheres@{InitFromSpheres}}
+\index{InitFromSpheres@{InitFromSpheres}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{InitFromSpheres}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InitFromSpheres (const std::vector$<$ Vector $>$ \& {\em spheres}, \/  bool {\em draw})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_afe077907e74b0a8c7bdb53abc6a67fb1}
+
+
+Create a kinbody with one link composed of an array of spheres. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em spheres}]the XYZ position of the spheres with the W coordinate representing the individual radius \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a9fbe9cf06cf411d8e93431552bdd4ebf}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!InitFromTrimesh@{InitFromTrimesh}}
+\index{InitFromTrimesh@{InitFromTrimesh}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{InitFromTrimesh}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InitFromTrimesh (const {\bf Link::TRIMESH} \& {\em trimesh}, \/  bool {\em draw})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a9fbe9cf06cf411d8e93431552bdd4ebf}
+
+
+Create a kinbody with one link composed of a triangle mesh surface. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em trimesh}]the triangle mesh \item[{\em draw}]if true, will be rendered in the scene \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a1e6636e58d5b763c37a529f752c5012d}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!IsAttached@{IsAttached}}
+\index{IsAttached@{IsAttached}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{IsAttached}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsAttached (KinBodyConstPtr {\em body}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a1e6636e58d5b763c37a529f752c5012d}
+\begin{DoxyReturn}{Returns}
+true if two bodies should be considered as one during collision (ie one is grabbing the other) 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1KinBody_a0367d00b79b29dae5c647b169432b2a9}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!IsDOFInChain@{IsDOFInChain}}
+\index{IsDOFInChain@{IsDOFInChain}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{IsDOFInChain}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsDOFInChain (int {\em linkindex1}, \/  int {\em linkindex2}, \/  int {\em dofindex}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a0367d00b79b29dae5c647b169432b2a9}
+
+
+Returns true if the dof index affects the relative transformation between the two links. 
+
+The internal implementation uses \hyperlink{classOpenRAVE_1_1KinBody_ae63c68d8042f54cfb86ef6b52827cb69}{KinBody::DoesAffect}, therefore mimic indices are correctly handled. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em linkindex1}]the link index to start the search \item[\mbox{$\leftarrow$} {\em linkindex2}]the link index where the search ends \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_ab093c91e2859f12d929fe8665e67a8e8}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!IsEnabled@{IsEnabled}}
+\index{IsEnabled@{IsEnabled}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{IsEnabled}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsEnabled () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ab093c91e2859f12d929fe8665e67a8e8}
+\begin{DoxyReturn}{Returns}
+true if any link of the \hyperlink{classOpenRAVE_1_1KinBody}{KinBody} is enabled 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1KinBody_a4f3de0f5a2b97c622ae9e4ea774cf30d}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!RegisterChangeCallback@{RegisterChangeCallback}}
+\index{RegisterChangeCallback@{RegisterChangeCallback}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{RegisterChangeCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual UserDataPtr RegisterChangeCallback (int {\em properties}, \/  const boost::function$<$ void()$>$ \& {\em callback})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a4f3de0f5a2b97c622ae9e4ea774cf30d}
+
+
+Register a callback with the interface. 
+
+Everytime a static property of the interface changes, all registered callbacks are called to update the users of the changes. Note that the callbacks will block the thread that made the parameter change. 
+\begin{DoxyParams}{Parameters}
+\item[{\em callback}]\item[{\em properties}]a mask of the \hyperlink{classOpenRAVE_1_1KinBody_a973dd96959f97246c92245c42bce238f}{KinBodyProperty} values that the callback should be called for when they change \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a0cbd54ab25b8c1f3466092b54180d266}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetBodyTransformations@{SetBodyTransformations}}
+\index{SetBodyTransformations@{SetBodyTransformations}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetBodyTransformations}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetBodyTransformations (const std::vector$<$ Transform $>$ \& {\em transforms})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a0cbd54ab25b8c1f3466092b54180d266}
+\hypertarget{classOpenRAVE_1_1KinBody_ad5dc4cc6b247465c2522c31a9169cfd0}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetConfigurationValues@{SetConfigurationValues}}
+\index{SetConfigurationValues@{SetConfigurationValues}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetConfigurationValues}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetConfigurationValues (std::vector$<$ dReal $>$::const\_\-iterator {\em itvalues}, \/  bool {\em checklimits} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ad5dc4cc6b247465c2522c31a9169cfd0}
+
+
+sets joint values and transform of the body using configuration values as specified by \hyperlink{classOpenRAVE_1_1KinBody_a4e917473a7d475324af43320f83796fc}{GetConfigurationSpecification()} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em itvalues}]the iterator to the vector containing the dof values. Must have \hyperlink{classOpenRAVE_1_1KinBody_a4e917473a7d475324af43320f83796fc}{GetConfigurationSpecification()}.\hyperlink{classOpenRAVE_1_1KinBody_a44fbec2fd26a45cada889c5c0f0751c8}{GetDOF()} values! \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a4057204a0e2c01a59ea9011fb5bba922}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetDOFTorques@{SetDOFTorques}}
+\index{SetDOFTorques@{SetDOFTorques}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetDOFTorques}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetDOFTorques (const std::vector$<$ dReal $>$ \& {\em torques}, \/  bool {\em add})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a4057204a0e2c01a59ea9011fb5bba922}
+
+
+Adds a torque to every joint. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bAdd}]if true, adds to previous torques, otherwise resets the torques on all bodies and starts from 0 \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_ad75a7828a47c91e1c572c111a6779fcd}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetDOFValues@{SetDOFValues}}
+\index{SetDOFValues@{SetDOFValues}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetDOFValues}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetDOFValues (const std::vector$<$ dReal $>$ \& {\em values}, \/  const Transform \& {\em transform}, \/  bool {\em checklimits} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ad75a7828a47c91e1c572c111a6779fcd}
+
+
+Sets the joint values and transformation of the body. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em values}]the values to set the joint angles (ordered by the dof indices) \item[{\em transform}]represents the transformation of the first body.  checklimits if true, will excplicitly check the joint limits before setting the values. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a30ca49e63e7794762a374f53585d3b8e}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetDOFValues@{SetDOFValues}}
+\index{SetDOFValues@{SetDOFValues}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetDOFValues}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetDOFValues (const std::vector$<$ dReal $>$ \& {\em values}, \/  bool {\em checklimits} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a30ca49e63e7794762a374f53585d3b8e}
+
+
+Sets the joint values of the robot. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em values}]the values to set the joint angles (ordered by the dof indices)  checklimits if true, will excplicitly check the joint limits before setting the values. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a0718b6336d442f3e2320f7b17d84d516}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetDOFVelocities@{SetDOFVelocities}}
+\index{SetDOFVelocities@{SetDOFVelocities}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetDOFVelocities}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetDOFVelocities (const std::vector$<$ dReal $>$ \& {\em vDOFVelocities}, \/  bool {\em checklimits} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a0718b6336d442f3e2320f7b17d84d516}
+
+
+Sets the velocity of the joints. 
+
+Copies the current velocity of the base link and calls SetDOFVelocities(linearvel,angularvel,vDOFVelocities) 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em vDOFVelocity}]-\/ velocities of each of the degrees of freeom  checklimits if true, will excplicitly check the joint velocity limits before setting the values. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_aff61afba85f45d8c7262c5391b271cb1}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetDOFVelocities@{SetDOFVelocities}}
+\index{SetDOFVelocities@{SetDOFVelocities}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetDOFVelocities}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetDOFVelocities (const std::vector$<$ dReal $>$ \& {\em vDOFVelocities}, \/  const Vector \& {\em linearvel}, \/  const Vector \& {\em angularvel}, \/  bool {\em checklimits} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_aff61afba85f45d8c7262c5391b271cb1}
+
+
+Sets the velocity of the base link and each of the joints. 
+
+Computes internally what the correponding velocities of each of the links should be in order to achieve consistent results with the joint velocities. Sends the velocities to the physics engine. Velocities correspond to the link's coordinate system origin. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em linearvel}]linear velocity of base link \item[\mbox{$\leftarrow$} {\em angularvel}]angular velocity rotation\_\-axis$\ast$theta\_\-dot \item[\mbox{$\leftarrow$} {\em vDOFVelocities}]-\/ velocities of each of the degrees of freeom \item[{\em checklimits}]if true, will excplicitly check the joint velocity limits before setting the values. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_aba8aaffd5d9bb4c604eb29a0250bd525}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetJointTorques@{SetJointTorques}}
+\index{SetJointTorques@{SetJointTorques}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetJointTorques}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetJointTorques (const std::vector$<$ dReal $>$ \& {\em torques}, \/  bool {\em add})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_aba8aaffd5d9bb4c604eb29a0250bd525}
+\hypertarget{classOpenRAVE_1_1KinBody_ad1f632c1fc4e293b7fd1482c732dd7d2}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetJointVelocities@{SetJointVelocities}}
+\index{SetJointVelocities@{SetJointVelocities}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetJointVelocities}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetJointVelocities (const std::vector$<$ dReal $>$ \& {\em pJointVelocities})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ad1f632c1fc4e293b7fd1482c732dd7d2}
+\hypertarget{classOpenRAVE_1_1KinBody_a92abef33e0bc4eca1756178c31e18645}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetTransform@{SetTransform}}
+\index{SetTransform@{SetTransform}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetTransform}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetTransform (const Transform \& {\em transform})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a92abef33e0bc4eca1756178c31e18645}
+
+
+set the transform of the first link (the rest of the links are computed based on the joint values). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transform}]affine transformation \end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classOpenRAVE_1_1RobotBase_ad19fd054ec0bb506ca08d1a7deaa005d}{RobotBase}.
+
+\hypertarget{classOpenRAVE_1_1KinBody_ac739ab6c3a2a0d486cc0d280bb2b74db}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetVelocity@{SetVelocity}}
+\index{SetVelocity@{SetVelocity}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetVelocity}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetVelocity (const Vector \& {\em linearvel}, \/  const Vector \& {\em angularvel})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ac739ab6c3a2a0d486cc0d280bb2b74db}
+
+
+Set the velocity of the base link, rest of links are set to a consistent velocity so entire robot moves correctly. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em linearvel}]linear velocity \item[{\em angularvel}]is the rotation axis $\ast$ angular speed \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_a869f9a89146a89d8248f392c9610b7b7}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SetZeroConfiguration@{SetZeroConfiguration}}
+\index{SetZeroConfiguration@{SetZeroConfiguration}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SetZeroConfiguration}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetZeroConfiguration ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a869f9a89146a89d8248f392c9610b7b7}
+
+
+Sets the joint offsets so that the current configuration becomes the new zero state of the robot. 
+
+When this function returns, the returned DOF values should be all zero for controllable joints. Mimic equations will use the new offsetted values when computing their joints. This is primarily used for calibrating a robot's zero position \hypertarget{classOpenRAVE_1_1KinBody_a7c60c9dfe8ef533913967e60f3d7db8f}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SubtractDOFValues@{SubtractDOFValues}}
+\index{SubtractDOFValues@{SubtractDOFValues}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SubtractDOFValues}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SubtractDOFValues (std::vector$<$ dReal $>$ \& {\em values1}, \/  const std::vector$<$ dReal $>$ \& {\em values2}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a7c60c9dfe8ef533913967e60f3d7db8f}
+
+
+Computes the configuration difference values1-\/values2 and stores it in values1. 
+
+Takes into account joint limits and wrapping of circular joints. \hypertarget{classOpenRAVE_1_1KinBody_a4b35aa1ab1b6538d151f7f6cb254c5fe}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!SubtractJointValues@{SubtractJointValues}}
+\index{SubtractJointValues@{SubtractJointValues}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{SubtractJointValues}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SubtractJointValues (std::vector$<$ dReal $>$ \& {\em q1}, \/  const std::vector$<$ dReal $>$ \& {\em q2}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a4b35aa1ab1b6538d151f7f6cb254c5fe}
+
+
+\subsubsection{Member Data Documentation}
+\hypertarget{classOpenRAVE_1_1KinBody_a0386692fd7704da6e79775fa09a4b685}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-environmentid@{\_\-environmentid}}
+\index{\_\-environmentid@{\_\-environmentid}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-environmentid}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \_\-environmentid}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a0386692fd7704da6e79775fa09a4b685}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_a51f880cf26774cd34ab9634bd518b955}{GetEnvironmentId} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_abce08eaa134f87c6d13f4d23749a61b9}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-nUpdateStampId@{\_\-nUpdateStampId}}
+\index{\_\-nUpdateStampId@{\_\-nUpdateStampId}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-nUpdateStampId}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \_\-nUpdateStampId}\hspace{0.3cm}{\ttfamily  \mbox{[}mutable, protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_abce08eaa134f87c6d13f4d23749a61b9}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_aac16fee68aa354fa24e6de5b8f79b78d}{GetUpdateStamp} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_a0a17ef574c66277ef313e5e56d6b9bbc}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-pCollisionData@{\_\-pCollisionData}}
+\index{\_\-pCollisionData@{\_\-pCollisionData}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-pCollisionData}]{\setlength{\rightskip}{0pt plus 5cm}UserDataPtr {\bf \_\-pCollisionData}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a0a17ef574c66277ef313e5e56d6b9bbc}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_ad85bc7dc70d07b123c41b7bcad79ca34}{SetCollisionData} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_a3f8a2e40760cf2ee75f604c0f18b27ec}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-pPhysicsData@{\_\-pPhysicsData}}
+\index{\_\-pPhysicsData@{\_\-pPhysicsData}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-pPhysicsData}]{\setlength{\rightskip}{0pt plus 5cm}UserDataPtr {\bf \_\-pPhysicsData}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a3f8a2e40760cf2ee75f604c0f18b27ec}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_aa282fd034535ec4b05f90f9cd32bd1c9}{SetPhysicsData} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_aff45addfa1926549479a9786a92d6246}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-pViewerData@{\_\-pViewerData}}
+\index{\_\-pViewerData@{\_\-pViewerData}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-pViewerData}]{\setlength{\rightskip}{0pt plus 5cm}UserDataPtr {\bf \_\-pViewerData}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_aff45addfa1926549479a9786a92d6246}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_aa8a85e0f120e9cbc588a8f3a555758cb}{SetViewerData} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_ad20d6407270731a61d3a2877745edd29}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-setAdjacentLinks@{\_\-setAdjacentLinks}}
+\index{\_\-setAdjacentLinks@{\_\-setAdjacentLinks}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-setAdjacentLinks}]{\setlength{\rightskip}{0pt plus 5cm}std::set$<$int$>$ {\bf \_\-setAdjacentLinks}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_ad20d6407270731a61d3a2877745edd29}
+a set of which links are connected to which if link i and j are connected then i$|$(j$<$$<$16) will be in the set where i$<$j. \hypertarget{classOpenRAVE_1_1KinBody_a00df6713c1a66e68f273ae2b8aa0c5f4}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-vClosedLoopIndices@{\_\-vClosedLoopIndices}}
+\index{\_\-vClosedLoopIndices@{\_\-vClosedLoopIndices}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-vClosedLoopIndices}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ std::vector$<$ std::pair$<$int16\_\-t,int16\_\-t$>$ $>$ $>$ {\bf \_\-vClosedLoopIndices}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a00df6713c1a66e68f273ae2b8aa0c5f4}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_a6eb3b9da2ed2b9b8eec770f018bbeb19}{GetClosedLoops} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_a0c06bbb41fb3ba4098d486fd90699140}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-vClosedLoops@{\_\-vClosedLoops}}
+\index{\_\-vClosedLoops@{\_\-vClosedLoops}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-vClosedLoops}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ std::vector$<$ std::pair$<$LinkPtr,JointPtr$>$ $>$ $>$ {\bf \_\-vClosedLoops}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a0c06bbb41fb3ba4098d486fd90699140}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_a6eb3b9da2ed2b9b8eec770f018bbeb19}{GetClosedLoops} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_a8eb8f9943c05cd08afba576dba39871a}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-vecjoints@{\_\-vecjoints}}
+\index{\_\-vecjoints@{\_\-vecjoints}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-vecjoints}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$JointPtr$>$ {\bf \_\-vecjoints}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a8eb8f9943c05cd08afba576dba39871a}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_a01fcab06f416b2ac3bac1385e09ff9bf}{GetJoints} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_a02bf557ce0bba8374b863ce9f20de255}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-veclinks@{\_\-veclinks}}
+\index{\_\-veclinks@{\_\-veclinks}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-veclinks}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$LinkPtr$>$ {\bf \_\-veclinks}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a02bf557ce0bba8374b863ce9f20de255}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_a32ba11c03aabb873b3e503c8e5b93e53}{GetLinks} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_aa70fe0334abb18115dcb5437f5425430}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-vPassiveJoints@{\_\-vPassiveJoints}}
+\index{\_\-vPassiveJoints@{\_\-vPassiveJoints}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-vPassiveJoints}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$JointPtr$>$ {\bf \_\-vPassiveJoints}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_aa70fe0334abb18115dcb5437f5425430}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_ab7ece8b3b39a3c9dcc61899dc8dc783e}{GetPassiveJoints()} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_a57a836d771622beb63fd79d96445d7c3}{
+\index{OpenRAVE::KinBody@{OpenRAVE::KinBody}!\_\-vTopologicallySortedJoints@{\_\-vTopologicallySortedJoints}}
+\index{\_\-vTopologicallySortedJoints@{\_\-vTopologicallySortedJoints}!OpenRAVE::KinBody@{OpenRAVE::KinBody}}
+\paragraph[{\_\-vTopologicallySortedJoints}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$JointPtr$>$ {\bf \_\-vTopologicallySortedJoints}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_a57a836d771622beb63fd79d96445d7c3}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_a23704d633d23272f467ea0a2ca5a5223}{GetDependencyOrderedJoints} 
+\end{DoxySeeAlso}

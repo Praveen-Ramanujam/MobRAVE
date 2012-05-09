@@ -1,0 +1,183 @@
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES}{
+\subsection{GEOMPROPERTIES Class Reference}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES}\index{OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}}
+}
+
+
+Collaboration diagram for GEOMPROPERTIES:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a49306adaab0c755befa56ed92085f2ae}{GeomType} 
+\begin{DoxyCompactList}\small\item\em The type of geometry primitive. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_aaf48415e05caa5f9a9c3fa88cb8ed8a9}{
+const Transform \& \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_aaf48415e05caa5f9a9c3fa88cb8ed8a9}{GetTransform} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_aaf48415e05caa5f9a9c3fa88cb8ed8a9}
+
+\begin{DoxyCompactList}\small\item\em Local transformation of the geom primitive with respect to the link's coordinate system. \item\end{DoxyCompactList}\item 
+const std::string \& \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a4474cb22f6457503715435d2f3e34496}{GetRenderFilename} () const 
+\begin{DoxyCompactList}\small\item\em render resource file, should be transformed by \_\-t before rendering \item\end{DoxyCompactList}\item 
+const \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{TRIMESH} \& \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a387688dd5bde34a4dd34be211886a8d1}{GetCollisionMesh} () const 
+\begin{DoxyCompactList}\small\item\em collision data of the specific object in its local coordinate system. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a17d17302d5a602a234230b12323618f9}{
+virtual \hyperlink{classOpenRAVE_1_1geometry_1_1aabb}{AABB} \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a17d17302d5a602a234230b12323618f9}{ComputeAABB} (const Transform \&trans) const }
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a17d17302d5a602a234230b12323618f9}
+
+\begin{DoxyCompactList}\small\item\em returns an axis aligned bounding box given that the geometry is transformed by trans \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a3e5d551673c42bb134bf843946a0403b}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a3e5d551673c42bb134bf843946a0403b}{SetCollisionMesh} (const \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{TRIMESH} \&mesh)}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a3e5d551673c42bb134bf843946a0403b}
+
+\begin{DoxyCompactList}\small\item\em sets a new collision mesh and notifies every registered callback about it \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_aca7864afdc94867792c10f09e53735e6}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_aca7864afdc94867792c10f09e53735e6}{SetDraw} (bool bDraw)}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_aca7864afdc94867792c10f09e53735e6}
+
+\begin{DoxyCompactList}\small\item\em sets a drawing and notifies every registered callback about it \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a6b8232d86a71abe734ff516888b3d2f0}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a6b8232d86a71abe734ff516888b3d2f0}{SetTransparency} (float f)}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a6b8232d86a71abe734ff516888b3d2f0}
+
+\begin{DoxyCompactList}\small\item\em set transparency level (0 is opaque) \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ace7920853d82ecfa046fc6195104a529}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ace7920853d82ecfa046fc6195104a529}{SetDiffuseColor} (const RaveVector$<$ float $>$ \&color)}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ace7920853d82ecfa046fc6195104a529}
+
+\begin{DoxyCompactList}\small\item\em override diffuse color of geometry material \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ad1572d41cb6d899e83ce4ba952ae93d4}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ad1572d41cb6d899e83ce4ba952ae93d4}{SetAmbientColor} (const RaveVector$<$ float $>$ \&color)}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ad1572d41cb6d899e83ce4ba952ae93d4}
+
+\begin{DoxyCompactList}\small\item\em override ambient color of geometry material \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a80c6877ca0a3b0f5104b00ccfbc7b591}{ValidateContactNormal} (const Vector \&position, Vector \&normal) const 
+\begin{DoxyCompactList}\small\item\em validates the contact normal on the surface of the geometry and makes sure the normal faces \char`\"{}outside\char`\"{} of the shape. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_aa558a74c9ca66b0b53f772e6a6893c0f}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_aa558a74c9ca66b0b53f772e6a6893c0f}{SetRenderFilename} (const std::string \&renderfilename)}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_aa558a74c9ca66b0b53f772e6a6893c0f}
+
+\begin{DoxyCompactList}\small\item\em sets a new render filename for the geometry. This does not change the collision \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a77e9273e5d79606152b85b4863f3b6b4}{InitCollisionMesh} (float fTessellation=1)
+\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_adcfc5692c983a70c6021762566cdc7e0}{
+Transform \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_adcfc5692c983a70c6021762566cdc7e0}{\_\-t}}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_adcfc5692c983a70c6021762566cdc7e0}
+
+\begin{DoxyCompactList}\small\item\em see \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_aaf48415e05caa5f9a9c3fa88cb8ed8a9}{GetTransform} \item\end{DoxyCompactList}\item 
+Vector \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ab53daa871a8650d27546b395400354e2}{vGeomData}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a625ee04b635d18df5da9cbf040362a32}{
+RaveVector$<$ float $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a625ee04b635d18df5da9cbf040362a32}{ambientColor}}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a625ee04b635d18df5da9cbf040362a32}
+
+\begin{DoxyCompactList}\small\item\em hints for how to color the meshes \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a77688c4f07cf7aef096e1ca3fe962dc4}{
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{TRIMESH} \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a77688c4f07cf7aef096e1ca3fe962dc4}{collisionmesh}}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a77688c4f07cf7aef096e1ca3fe962dc4}
+
+\begin{DoxyCompactList}\small\item\em see \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a387688dd5bde34a4dd34be211886a8d1}{GetCollisionMesh} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a45d36ea9e7f9e1f1bead94f06ab1fad4}{
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a49306adaab0c755befa56ed92085f2ae}{GeomType} \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a45d36ea9e7f9e1f1bead94f06ab1fad4}{\_\-type}}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a45d36ea9e7f9e1f1bead94f06ab1fad4}
+
+\begin{DoxyCompactList}\small\item\em the type of geometry primitive \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a13d02d4b3303b3acce44af4330fb5fde}{\_\-renderfilename}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a0fbaf8a5fc118f2b82607c21e98c0a74}{
+Vector \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a0fbaf8a5fc118f2b82607c21e98c0a74}{vRenderScale}}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a0fbaf8a5fc118f2b82607c21e98c0a74}
+
+\begin{DoxyCompactList}\small\item\em render scale of the object (x,y,z) \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a7e9bda892b07417274d200ecf6a19743}{
+float \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a7e9bda892b07417274d200ecf6a19743}{ftransparency}}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a7e9bda892b07417274d200ecf6a19743}
+
+\begin{DoxyCompactList}\small\item\em value from 0-\/1 for the transparency of the rendered object, 0 is opaque \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a570497cb0feb2ef7ab31b3a899f2251d}{
+bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a570497cb0feb2ef7ab31b3a899f2251d}{\_\-bDraw}}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a570497cb0feb2ef7ab31b3a899f2251d}
+
+\begin{DoxyCompactList}\small\item\em if true, object is drawn as part of the 3d model (default is true) \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ae91866aa8217eccdfc515df0474872fe}{
+bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ae91866aa8217eccdfc515df0474872fe}{\_\-bModifiable}}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ae91866aa8217eccdfc515df0474872fe}
+
+\begin{DoxyCompactList}\small\item\em if true, object geometry can be dynamically modified (default is true) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Describes the properties of a basic geometric primitive. Contains everything associated with a physical body along with a seprate (optional) render file. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a387688dd5bde34a4dd34be211886a8d1}{
+\index{OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}!GetCollisionMesh@{GetCollisionMesh}}
+\index{GetCollisionMesh@{GetCollisionMesh}!OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}}
+\paragraph[{GetCollisionMesh}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf TRIMESH}\& GetCollisionMesh () const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a387688dd5bde34a4dd34be211886a8d1}
+
+
+collision data of the specific object in its local coordinate system. 
+
+Should be transformed by \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_aaf48415e05caa5f9a9c3fa88cb8ed8a9}{GEOMPROPERTIES::GetTransform()} before rendering. For spheres and cylinders, an appropriate discretization value is chosen. \hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a4474cb22f6457503715435d2f3e34496}{
+\index{OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}!GetRenderFilename@{GetRenderFilename}}
+\index{GetRenderFilename@{GetRenderFilename}!OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}}
+\paragraph[{GetRenderFilename}]{\setlength{\rightskip}{0pt plus 5cm}const std::string\& GetRenderFilename () const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a4474cb22f6457503715435d2f3e34496}
+
+
+render resource file, should be transformed by \_\-t before rendering 
+
+If the value is \char`\"{}\_\-\_\-norenderif\_\-\_\-:x\char`\"{}, then the viewer should not render the object if it supports $\ast$.x files where\char`\"{}x\char`\"{} is the file extension. \hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a77e9273e5d79606152b85b4863f3b6b4}{
+\index{OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}!InitCollisionMesh@{InitCollisionMesh}}
+\index{InitCollisionMesh@{InitCollisionMesh}!OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}}
+\paragraph[{InitCollisionMesh}]{\setlength{\rightskip}{0pt plus 5cm}bool InitCollisionMesh (float {\em fTessellation} = {\ttfamily 1})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a77e9273e5d79606152b85b4863f3b6b4}
+triangulates the geometry object and initializes collisionmesh. GeomTrimesh types must already be triangulated 
+\begin{DoxyParams}{Parameters}
+\item[{\em fTessellation}]to control how fine the triangles need to be. 1.0f is the default value \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a80c6877ca0a3b0f5104b00ccfbc7b591}{
+\index{OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}!ValidateContactNormal@{ValidateContactNormal}}
+\index{ValidateContactNormal@{ValidateContactNormal}!OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}}
+\paragraph[{ValidateContactNormal}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ValidateContactNormal (const Vector \& {\em position}, \/  Vector \& {\em normal}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a80c6877ca0a3b0f5104b00ccfbc7b591}
+
+
+validates the contact normal on the surface of the geometry and makes sure the normal faces \char`\"{}outside\char`\"{} of the shape. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em position}]the position of the contact point specified in the link's coordinate system \item[{\em normal}]the unit normal of the contact point specified in the link's coordinate system \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the normal is changed to face outside of the shape 
+\end{DoxyReturn}
+
+
+\subsubsection{Member Data Documentation}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a13d02d4b3303b3acce44af4330fb5fde}{
+\index{OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}!\_\-renderfilename@{\_\-renderfilename}}
+\index{\_\-renderfilename@{\_\-renderfilename}!OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}}
+\paragraph[{\_\-renderfilename}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf \_\-renderfilename}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a13d02d4b3303b3acce44af4330fb5fde}
+\begin{DoxySeeAlso}{See also}
+ref \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_a4474cb22f6457503715435d2f3e34496}{GetRenderFilename} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ab53daa871a8650d27546b395400354e2}{
+\index{OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}!vGeomData@{vGeomData}}
+\index{vGeomData@{vGeomData}!OpenRAVE::KinBody::Link::GEOMPROPERTIES@{OpenRAVE::KinBody::Link::GEOMPROPERTIES}}
+\paragraph[{vGeomData}]{\setlength{\rightskip}{0pt plus 5cm}Vector {\bf vGeomData}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_ab53daa871a8650d27546b395400354e2}
+for boxes, first 3 values are extents for sphere it is radius for cylinder, first 2 values are radius and height for trimesh, none 

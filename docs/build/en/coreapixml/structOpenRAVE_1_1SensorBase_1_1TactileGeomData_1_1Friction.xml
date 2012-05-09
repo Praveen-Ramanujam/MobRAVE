@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction" kind="struct" prot="public">
+    <compoundname>OpenRAVE::SensorBase::TactileGeomData::Friction</compoundname>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction_1a29fb8f4ad7a8bdfbe4e3948c0a32fbb9" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal sigma_0</definition>
+        <argsstring></argsstring>
+        <name>sigma_0</name>
+        <briefdescription>
+<para>the stiffness coefficient of the contacting surfaces </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="293" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction_1a8c17ee5f79ef8425657e59d742e8e125" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal sigma_1</definition>
+        <argsstring></argsstring>
+        <name>sigma_1</name>
+        <briefdescription>
+<para>the friction damping coefficient. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="294" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction_1ad2a6883fb3ecdcb7f04dddd5fa23048f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal mu_s</definition>
+        <argsstring></argsstring>
+        <name>mu_s</name>
+        <briefdescription>
+<para>static friction coefficient </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="295" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction_1a0ce7c7568d43ae948cd84b283b404cbf" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal mu_d</definition>
+        <argsstring></argsstring>
+        <name>mu_d</name>
+        <briefdescription>
+<para>dynamic friction coefficient </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="296" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LuGre friction model? </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="292" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="291" bodyend="297"/>
+    <listofallmembers>
+      <member refid="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction_1a0ce7c7568d43ae948cd84b283b404cbf" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::TactileGeomData::Friction</scope><name>mu_d</name></member>
+      <member refid="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction_1ad2a6883fb3ecdcb7f04dddd5fa23048f" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::TactileGeomData::Friction</scope><name>mu_s</name></member>
+      <member refid="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction_1a29fb8f4ad7a8bdfbe4e3948c0a32fbb9" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::TactileGeomData::Friction</scope><name>sigma_0</name></member>
+      <member refid="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction_1a8c17ee5f79ef8425657e59d742e8e125" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::TactileGeomData::Friction</scope><name>sigma_1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

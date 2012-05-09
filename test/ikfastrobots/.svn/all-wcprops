@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/ikfastrobots
+END
+fail1.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/ikfastrobots/fail1.robot.xml
+END
+fail2.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/ikfastrobots/fail2.robot.xml
+END

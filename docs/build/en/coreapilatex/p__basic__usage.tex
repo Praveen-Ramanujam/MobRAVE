@@ -1,0 +1,16 @@
+To check out the plugins loaded type \begin{DoxyVerb}
+openrave --listplugins
+\end{DoxyVerb}
+
+
+To load a simple robot into the scene type: \begin{DoxyVerb}
+openrave robots/puma.robot.xml
+\end{DoxyVerb}
+
+
+If a plugin declares a ProblemInsance named {\bfseries MyProblem}, then to launch the problem at startup type \begin{DoxyVerb}
+openrave robots/puma.robot.xml -problem MyProblem 'myarguments'
+\end{DoxyVerb}
+
+
+The \href{http://openrave.org/en/main/command_line_tools.html#openrave-py}{\tt openrave.py} program is similar to {\ttfamily openrave}, but supports much more functionality. In fact, {\ttfamily openrave} potentially calls into \href{http://openrave.org/en/main/command_line_tools.html#openrave-py}{\tt openrave.py} for commands it cannot support. 

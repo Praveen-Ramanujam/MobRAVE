@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::OdometrySensorData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorData" prot="public" virt="non-virtual">SensorData</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1a8f2914bb40240947a032e59e34e22176" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform pose</definition>
+        <argsstring></argsstring>
+        <name>pose</name>
+        <briefdescription>
+<para>measured pose </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="152" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1a8754d54e97089127c0a172c045aa1a08" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector linear_velocity</definition>
+        <argsstring></argsstring>
+        <name>linear_velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="153" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1ae8613d4f99e7dfc62e3c0e59492019ef" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector angular_velocity</definition>
+        <argsstring></argsstring>
+        <name>angular_velocity</name>
+        <briefdescription>
+<para>measured velocity </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="153" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1a31ce3f9136d6982a724ec36ef330f43e" prot="public" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 36 &gt;</type>
+        <definition>boost::array&lt;dReal,36&gt; pose_covariance</definition>
+        <argsstring></argsstring>
+        <name>pose_covariance</name>
+        <briefdescription>
+<para>Row major of 6x6 matrix about linear x, y, z axes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="154" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1acd0be57994abcabd2a851a9adc4c6933" prot="public" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 36 &gt;</type>
+        <definition>boost::array&lt;dReal,36&gt; velocity_covariance</definition>
+        <argsstring></argsstring>
+        <name>velocity_covariance</name>
+        <briefdescription>
+<para>Row major of 6x6 matrix about rotational x, y, z axes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="155" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="149" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="149" bodyend="151"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>odometry data storing full 6D pose and velocity </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1533">
+        <label>OdometrySensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData"/>
+        <childnode refid="1534" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1534">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1537">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1535">
+        <label>OdometrySensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData"/>
+        <childnode refid="1536" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1537" relation="usage">
+          <edgelabel>pose</edgelabel>
+        </childnode>
+        <childnode refid="1538" relation="usage">
+          <edgelabel>linear_velocity</edgelabel>
+          <edgelabel>angular_velocity</edgelabel>
+        </childnode>
+      </node>
+      <node id="1536">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+        <childnode refid="1537" relation="usage">
+          <edgelabel>__trans</edgelabel>
+        </childnode>
+      </node>
+      <node id="1538">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="147" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="146" bodyend="156"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a0503a26959ec94efdab737ce47842afe" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::OdometrySensorData</scope><name>__stamp</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a5786ccc78c0aae6ca580507121b3c24a" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::OdometrySensorData</scope><name>__trans</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1ae8613d4f99e7dfc62e3c0e59492019ef" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::OdometrySensorData</scope><name>angular_velocity</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::OdometrySensorData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1a8754d54e97089127c0a172c045aa1a08" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::OdometrySensorData</scope><name>linear_velocity</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1a8f2914bb40240947a032e59e34e22176" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::OdometrySensorData</scope><name>pose</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1a31ce3f9136d6982a724ec36ef330f43e" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::OdometrySensorData</scope><name>pose_covariance</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a27324341bb2e28fa2be2cfd0b7f0e985" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::OdometrySensorData</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1acd0be57994abcabd2a851a9adc4c6933" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::OdometrySensorData</scope><name>velocity_covariance</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a2ce106fe3cd9771a5b0770339c411829" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::OdometrySensorData</scope><name>~SensorData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

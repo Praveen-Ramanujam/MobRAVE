@@ -1,0 +1,54 @@
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData}{
+\subsection{OdometrySensorData Class Reference}
+\label{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData}\index{OpenRAVE::SensorBase::OdometrySensorData@{OpenRAVE::SensorBase::OdometrySensorData}}
+}
+
+
+odometry data storing full 6D pose and velocity  
+
+
+
+
+Inheritance diagram for OdometrySensorData:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for OdometrySensorData:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_a8f2914bb40240947a032e59e34e22176}{
+Transform \hyperlink{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_a8f2914bb40240947a032e59e34e22176}{pose}}
+\label{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_a8f2914bb40240947a032e59e34e22176}
+
+\begin{DoxyCompactList}\small\item\em measured pose \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_ae8613d4f99e7dfc62e3c0e59492019ef}{
+Vector \hyperlink{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_ae8613d4f99e7dfc62e3c0e59492019ef}{angular\_\-velocity}}
+\label{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_ae8613d4f99e7dfc62e3c0e59492019ef}
+
+\begin{DoxyCompactList}\small\item\em measured velocity \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_a31ce3f9136d6982a724ec36ef330f43e}{
+boost::array$<$ dReal, 36 $>$ \hyperlink{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_a31ce3f9136d6982a724ec36ef330f43e}{pose\_\-covariance}}
+\label{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_a31ce3f9136d6982a724ec36ef330f43e}
+
+\begin{DoxyCompactList}\small\item\em Row major of 6x6 matrix about linear x, y, z axes. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_acd0be57994abcabd2a851a9adc4c6933}{
+boost::array$<$ dReal, 36 $>$ \hyperlink{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_acd0be57994abcabd2a851a9adc4c6933}{velocity\_\-covariance}}
+\label{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_acd0be57994abcabd2a851a9adc4c6933}
+
+\begin{DoxyCompactList}\small\item\em Row major of 6x6 matrix about rotational x, y, z axes. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+odometry data storing full 6D pose and velocity 

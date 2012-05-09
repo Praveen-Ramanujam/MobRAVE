@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: 基本設計概念の紹介 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="index.html">Open Robotics Automation Virtual Environment</a>
+  </div>
+</div>
+<div class="contents">
+
+
+<h1><a class="anchor" id="architecture_concepts">基本設計概念の紹介 </a></h1><h2><a class="anchor" id="fundamental_structure">
+基盤構造</a></h2>
+<div align="center">
+<img src="openrave_architecture_jp.png" alt="openrave_architecture_jp.png"/>
+</div>
+<p>OpenRAVEは上図で示す４つの主要な構成要素に分けられています．</p>
+<ul>
+<li><b>コア</b> コアは主に<a class="el" href="group__interfaces.html">Base Interface Classes</a>のセットで構成されています．これらのクラスはプラグインが互いに情報を得る方法を定義しています．コアは実際の環境とOpenRAVEのシミュレーション環境とを接続する橋渡しの役割をし，ゲートウェイとしてOpenRAVEで提供されてた全ての機能にその情報を提供します．OpenRAVE全体の状態としてコアは，読み出されたプラグイン，複数の独立した環境，そしてログを管理します．一方，環境クラスは干渉検知器，ビューワ，物理エンジン，運動学などの全てのインターフェースを１つのまとまったロボット世界の状態にまとめています．</li>
+</ul>
+<ul>
+<li><b>プラグイン</b> OpenRAVEはプラグインを基盤とした構造で設計されています．プラグインは環境クラスのなかに動的に読み出される<a class="el" href="group__interfaces.html">Base Interface Classes</a>の実装を提供します．プラグインはOpenRAVEの機能拡張の為に他のロボットライブラリとリンクすることができ，またOpenRAVEのサービスを他のロボットシステムに提供することも可能です．プラグインはOpenRAVEに，それがどのような機能を提供しているかという情報を集めることと，インターフェースを生成することのできる機能を外部に提供する必要があります．起動時にOpenRAVEは<a href="../main/environment_variables.html">OPENRAVE_PLUGINS</a>の環境変数を渡し，全ての共用オブジェクトを読み出します．<br/>
+<ul>
+<li>プラグインのビルドとコンパイルのチュートリアルは<a class="el" href="writing__plugins.html">Writing Plugins and Interfaces</a>を参照してください．</li>
+<li>インターフェースの詳細は<a class="el" href="interface__concepts.html">Base Interface Concepts</a>を参照してください．</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><b>スクリプト</b> OpenRAVEは<a href="http://openrave.org/ja/main/tutorials/openravepy_beginning.html#openravepy-beginning">Python</a>と<a href="http://openrave.org/wiki/index.php/OctaveMATLAB">Octave/Matlab</a>の為のスクリプト開発環境を提供します．Pythonではコアと直接通信を行い，メモリ内で呼び出しを行うことで非常に高速に実行することができます．一方，Octave/Matlabでは，プラグインによってOpenRAVEのコア上で提供されているテキストサーバで，TCP/IPを通して命令を送ります．スクリプトを使うことにより，いちいちOpenRAVEの再起動をしなくても環境の変化をすぐに反映することが可能です．これにより新しいアルゴリズムを試験することは容易になるでしょう．Pythonのスクリプト開発環境は非常に強力です．多くのOpenRAVEの実行例やデモはこれによって提供されています．事実，ユーザーはスクリプト言語をC++ APIの置き換えとしてではなく，全システムの統合的な部分として扱うべきです．</li>
+</ul>
+<ul>
+<li><b>データベース</b> 編集中</li>
+</ul>
+<p>全ての基本的なプランナーと問題のインターフェースはどんなロボット構造にでも適用可能である必要があります．他のプランニングパッケージと比較してOpenRAVEの大きな強みの１つは，非常に少ない変更でどんなロボットにもそのアルゴリズムを適用できるということです．最近，データベースの構造に凸形状分解，把持セット，逆運動学解析解，運動学的到達範囲などが導入されました．もしロボットが定義されたなら，全てのこれらの機能は実行できなければなりません．</p>
+<p>全ての<a class="el" href="classOpenRAVE_1_1InterfaceBase.html">インターフェース</a>は<b>help</b>命令で，それが提供する命令の詳細と何を実行するかを調べることが可能です．</p>
+<h2><a class="anchor" id="arch_environment">
+環境の概念</a></h2>
+<p>全てのOpenRAVEのサービスはその環境を通じて提供されます．例えば，'BiRRT'と呼ばれるプランナーインターフェースへの要求はRaveCreatePlanner()を通じて行われます．環境は以下をサポートします．</p>
+<ul>
+<li>プラグインの管理と通信</li>
+<li><a class="el" href="classOpenRAVE_1_1EnvironmentBase.html#env_collision_checking">幾何学的干渉検知</a></li>
+<li><a class="el" href="classOpenRAVE_1_1EnvironmentBase.html#env_loading">物体と場面の読み出し</a></li>
+<li><a class="el" href="classOpenRAVE_1_1EnvironmentBase.html#env_objects">managing objects and triangulation</a></li>
+<li><a class="el" href="classOpenRAVE_1_1EnvironmentBase.html#env_plotting">図やグラフのの描画</a></li>
+</ul>
+<p>環境内の物体が読み書きされるときはいつでも，ユーザーはGetMutex()コマンドで<b>ロック</b>しなければなりません．これはユーザーが作業している間，他のプロセスから環境が変更されることを防止します．なぜなら環境は再帰的な相互排除を使っているからです．それは同じスレッド内で必要なだけロックをかけることが可能です．さらにユーザーが相互排除をロックしたかどうかに依らず，ロックを要求する全ての環境関数に常に相互排除はロックされることを保証しています．（これは環境関数のみに適用され，インターフェース関数には適用されません）</p>
+<h3><a class="anchor" id="arch_locking">
+Locking</a></h3>
+<p>Because OpenRAVE is a highly multi-threaded environment, the environment state like bodies and loaded interfaces could be simultaneously accessed. In order to safely write or read the state, a user has to lock the environment, which prevents any other process from modifying the environment while the user is working. By using recursive locks, it allows a lock to be locked as many times as needed within the same thread, greatly reducing the lock management when a state changing function calls another state changing function. This safety measure helps users by always guaranteeing the environment is locked when calling global level environment functions like creating new bodies or loading scenes, regardless if the user has locked it. However, directly accessing the bodies and robots is dangerous without having the environment lock acquired.</p>
+<h3><a class="anchor" id="arch_simulation">
+Simulation Thread</a></h3>
+<p>Every environment has an internal time and a simulation thread directly attached to a physics engine. The thread is always running in the background and periodically steps the simulation time by a small delta for the physics engine and on all the simulation-enabled interfaces. By default, the thread is always running and can always potentially modify the environment state; therefore, users always need to explicitly lock the environment whenever playing with the internal state like modifying bodies by setting joint values or link transformations. If not careful, the controller or physics engine will overwrite them. By default, the simulation thread just sets the object positions depending on their controller inputs, but a physics engine can be attached to integrate velocities, accelerations, forces, and torques.</p>
+<p>The simulation thread can feel like a nuisance at first, but its division of robot control into control input computation and execution greatly helps users only concentrate on feeding commands to the robot without worrying about the simulation loop. It also allows a world update to happen in one one discrete time step.</p>
+<h3><a class="anchor" id="arch_cloning">
+Cloning</a></h3>
+<p>One of the strengths of OpenRAVE is in allowing multiple <a class="el" href="classOpenRAVE_1_1EnvironmentBase.html">environments</a> work simultaneously in the same process. Environment cloning allows OpenRAVE to become truly parallel by managing multiple environments and running simultaneous planners on top of them.</p>
+<p>One of the strengths of <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> is in allowing multiple environments to work simul- taneously in the same process. Environment cloning allows <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> to become truly parallel by managing multiple environments and running simultaneous planners on top of them. Because there is no shared state across the clone and the original environment, it is not possible to use an interface created from one environment in another For example, if a planner is created in one environment, it should be used only by objects in that environment. It is not possible to set a planner to plan for objects belonging to a different environment. This is because a planner will lock the environment and expect the objects it controls to be exclusively under its control.</p>
+<p>Creating a clone is simple, in C++ just type:</p>
+<div class="fragment"><pre class="fragment"><a class="code" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> pNewEnvironment = GetEnv()-&gt;CloneSelf(<a class="code" href="namespaceOpenRAVE.html#a16bea31a72c441a002538eac01a118f2a0c49bf8f6cc2b8f1731b1aa8326c5e63" title="clone all the bodies/robots of the environment, exclude attached interfaces like...">Clone_Bodies</a>)
+</pre></div><p>to create a clone that copies all the existing bodies (with attachments and grabbed bodies) and their current states. Basically the clone can perform any operations that would have been done with the original enviornment.</p>
+<p>Because the environment state is very complex, the cloning process can control how much of it gets transferred to the new clone. For example, all existing bodies and robots can be cloned, their attached controllers can be cloned, the attached viewer can be cloned, the collision checker state can be cloned, and the simulation state can be cloned. Basically the clone should be able to perform any operations that can be done with the original environment without any modification in the input parameters.</p>
+<p>When cloning real robots, one extremely important feature that <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> cloning offers is the ability to maintain a real-time view of the world that sensors continuously update with new information. When a planner is instantiated, it should make a copy of the environment that it can exclusively control without interfering with the updating operations. Furthermore, the real-world environment possibly has robot controllers connected to real robots, having a clone gives the ability to set simulation controllers guarantees robot safety while planning; commands from a cloned environment would not accidentally send commands to the real robot.</p>
+<h3><a class="anchor" id="arch_validating_plugins">
+Validating Plugins</a></h3>
+<p>Every plugin needs to export several functions to notify the core what interfaces it has and to instantiate the interfaces. When a plugin is first loaded, it is validated by the environment and its interface information is queried so the core can register the names.</p>
+<p>There are many mechanisms in the validation process to prevent old plugins to be loaded by the core. <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> is updated frequently and all user plugins are not necessarily recompiled when the <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> API changes. Therefore, we will encounter many cases when a plugin exports the correct functions, but does not implement the correct API. Using interfaces from plugins compiled with a mismatching The API can lead to unexpected crashes that are very difficult to debug, so it is absolutely necessary to detect this condition. One possible solution is to add version numbers to the API to enforce checking before an interface is returned from the plugin to the environment, but this method is brittle. It forces to keep track of a version number for every interface along with a global version number. Furthermore, every developer has to remember to increment the version when something even small changes, which can be easily forgotten and lead to serious errors later on.</p>
+<p>We solve interface validation by computing a unique hash of the interface functions and members by running each interface through a C++ lexer, gathering the tokens that affect the C++ code structure, and then creating a 128bit unique MD5 hash. We create a hash for each interface definition and the environment. The hashes are hard coded into the C++ header files and can be queried by two methods: a static function returning the hash of the program calling the function, and a virtual function returning the hash the interface was compiled with. An interface is only valid if its virtual hash is equivalent to the static hash of the core environment. For a plugin to be loaded correctly, first the environment hashes have to match. If they do, then the individual interfaces checked and only matching interfaces are returned to the core, and from there dispatched to other plugins. Such consistency checks ensure that stale plugins will never be loaded.</p>
+<h3><a class="anchor" id="arch_cloning_parallel">
+Parallel Execution</a></h3>
+<p>Being able to execute a planner in multiple threads is important for applications that require speed and solution quality Because there is always a trade-off between solution quality and time of computation, some applications like industrial robots require the quickest and smoothest past to their destinations. Fortunately, environment cloning allows planners to create an independent environment for every thread they create, which enables them to call kinematics and collision functions in each respective thread without worrying about data corruption. Growing an RRT tree in a multi-threaded environment just requires one copy of the kd-tree structure to be maintained. The query operations mostly work with Euclidean distance on the configuration space, so are really fast. Furthermore, adding a new point takes O(log) time, so it shouldn’t be a bottleneck in the search process compared to collision checking. Finally, environment locking allows threads to gain exclusive access to the environment. The rule of thumb is that any interface belonging or added to the environment requires an environment lock before any of its methods can be called.</p>
+<h2><a class="anchor" id="arch_dualnature">
+2重のシミュレーション/制御機能</a></h2>
+<p>OpenRAVEはシミュレーション，制御，もしくはその両方に対して同時に使うことができます．以下にいくつかの覚えておくべきことを記載します．</p>
+<ul>
+<li>OpenRAVEは物理エンジンを搭載し，関節にトルクを設定し，リンクに力を働かせることによってシミュレーターとして使うことができます．</li>
+</ul>
+<ul>
+<li>物理エンジンは関節の値やリンクの変換などの内部状態をダイレクトに反映します．</li>
+</ul>
+<ul>
+<li>コントローラはトルク/速度/位置のセットを物理エンジンに毎時間ステップに設定できます．もしシミュレーションの設定がTrueならば（デフォルト），物理シミュレーションの時間ステップは内部の"openrave thread"によって連続的に呼び出されます．</li>
+</ul>
+<ul>
+<li>デフォルトの物理エンジンはopenraveの状態に作用しません，また速度もしくは動力学をシミュレートしません．</li>
+</ul>
+<ul>
+<li>デフォルトのコントローラは位置と時間のみを設定できます．</li>
+</ul>
+<p>このためユーザーは，関節の値やリンクの変換などの内部状態をセットするときにはいつでも，環境相互排除をロックする必要があります．さもなければ，コントローラーもしくは物理エンジンはそれらを上書きしてしまいます．</p>
+<p>全てのboostエラー，nullポインタアクセスはopenrave_exceptionを投げます．これによって人々が行っているエラーをチェックするコードの量を大幅に減らすことができます．例えば，Cのコードにはよくこのパターンがあります．</p>
+<div class="fragment"><pre class="fragment"><span class="keywordtype">bool</span> somefun(<a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> pbody)
+{
+    <span class="keywordflow">if</span>( !pbody )
+        <span class="keywordflow">return</span> <span class="keyword">false</span>;
+    pbody-&gt;GetTransform();
+    ...
+}
+</pre></div><p>もしくは，</p>
+<div class="fragment"><pre class="fragment"><span class="keywordtype">bool</span> somefun(<a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> pbody)
+{
+    assert( !!pbody );
+    pbody-&gt;GetTransform();
+    ...
+}
+</pre></div><p>もしこれらがチェックされなければ，コードはセグメンテーション違反となるでしょう．しかしながら，これらのチェックはコードを乱雑にするだけです．openraveでは，安全にエラー免れることができます．例えば，</p>
+<div class="fragment"><pre class="fragment"><span class="keywordtype">bool</span> somefun(<a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> pbody)
+{
+    pbody-&gt;GetTransform();
+    ...
+}
+</pre></div><p>エラーを処理するためには以下のようにします．</p>
+<div class="fragment"><pre class="fragment"><span class="keywordflow">try</span> {
+    ...
+    somefun(pbody)
+    ...
+}
+<span class="keywordflow">catch</span>(<span class="keyword">const</span> openrave_exception&amp; ex) {
+    <a class="code" href="openrave_8h.html#a9bbbf668aa39f398c341e946ab8a43f5">RAVELOG_WARN</a>(<span class="stringliteral">&quot;exception caught: %s\n&quot;</span>,ex.what());
+    <span class="keywordflow">if</span>( ex.GetCode() == <a class="code" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262cac10e4c55e82ea2bbb5b2028a4bf4e3cb">ORE_EnvironmentNotLocked</a> ) {
+        <a class="code" href="openrave_8h.html#a9bbbf668aa39f398c341e946ab8a43f5">RAVELOG_WARN</a>(<span class="stringliteral">&quot;user forgot to lock environment!\n&quot;</span>);
+    }
+    ...
+}
+</pre></div><p>openravepyを使っている場合は，そのような処理されないC++エラーはpythonの例外処理に投げられ，安全にキャッチされてプロセスは進行します．</p>
+<h2><a class="anchor" id="arch_body_hashes">
+Hashes for Body Structure</a></h2>
+<p>A new concept that came out of <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> is the idea of creating unique hashes of a body’s structure. Every body has an online state that includes:</p>
+<ul>
+<li>names of the body, its links, its joints,</li>
+<li>link transformations, velocities, and accelerations in the world,</li>
+<li>and attached bodies.</li>
+</ul>
+<p>All other information is independent of the environment and can be categorized into the kinematics, geometry, and dynamics of the body. Furthermore, robots have categories for attached sensors and manipulators. The planning knowledge-base stores all cached information about a body and a robot, so it needs an consistent way of indexing this information. Indexing by robot names is not reliable because it is very difficult to remind a user to change the name every time the body structure is changed. Therefore, <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> provides functionality to serialize the different categories of a body and create a 128-bit MD5 hash. Each of the models in the planning knowledge-base relies on different categories of the robot. For example:</p>
+<ul>
+<li>inverse kinematics generation only uses the kinematics of a sub-chain of the robot defined by the manipulator and the grasp coordinate system,</li>
+<li>kinematic reachability cares about the robot geometry of the manipulator because it implicitly stores self-collision results,</li>
+<li>inverse reachability further uses the links connecting the base robot link to the base manipulator link,</li>
+<li>grasping cares about the geometry of the target body and the kinematics and geometry of the gripper,</li>
+<li>convex decompositions only care about the link geometry, and</li>
+<li>inverse dynamics cares only about the dynamics properties of each link and the kinematics.</li>
+</ul>
+<p>There are several challenges to developing a consistent index across all operating systems and compilers since floating point errors could creep in when normalizing floating-point values. However, the idea of such an index could greatly help in developing a worldwide robot database that anyone can use.</p>
+<h2><a class="anchor" id="supported_formats">
+Resource File Formats</a></h2>
+<p><a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> defines its own <a href="http://openrave.org/wiki/index.php/Format:XML">OpenRAVE XML</a> format that allows instantiation of any <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> interface and quick builing of robots and and kinematics structures. The rigid body geometries resources can be specified in virtually any 3D file format. For example:</p>
+<ul>
+<li>iv, vrml, wrl, stl, blend, 3ds, ase, obj, ply, dxf, lwo, lxo, ac, ms3d, x, mesh.xml, irrmesh, irr, nff, off, raw</li>
+</ul>
+<p>These files can be used inside the &lt;geom&gt; tags, or can be read directly into any of the environment ReadRobotX and ReadKinBodyX methods to create a single world body.</p>
+<p><a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> also supports the <a href="http://www.collada.org">COLLADA</a> international standard on 3D geometry and modeling. COLLADA is augmented with these <a href="http://openrave.programmingvision.com/wiki/index.php/Format:COLLADA">OpenRAVE robot-specific extensions</a>.</p>
+<p><a href="../main/robots_overview.html#file-formats">More information here.</a> </p>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:06 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

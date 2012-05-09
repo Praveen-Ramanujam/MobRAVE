@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/379/trunk/nxt
+END
+ipsock.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/338/trunk/nxt/ipsock.py
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/186/trunk/nxt/error.py
+END
+brick.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/343/trunk/nxt/brick.py
+END
+lightblueglue.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/207/trunk/nxt/lightblueglue.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/346/trunk/nxt/__init__.py
+END
+telegram.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/329/trunk/nxt/telegram.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/237/trunk/nxt/utils.py
+END
+motor.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/332/trunk/nxt/motor.py
+END
+locator.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/357/trunk/nxt/locator.py
+END
+fantomsock.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/378/trunk/nxt/fantomsock.py
+END
+bluesock.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/332/trunk/nxt/bluesock.py
+END
+usbsock.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/372/trunk/nxt/usbsock.py
+END
+direct.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/335/trunk/nxt/direct.py
+END
+motcont.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/330/trunk/nxt/motcont.py
+END
+system.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/334/trunk/nxt/system.py
+END

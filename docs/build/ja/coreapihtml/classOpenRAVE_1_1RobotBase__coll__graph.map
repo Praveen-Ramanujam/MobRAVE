@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" href="$classOpenRAVE_1_1KinBody.html" title="[interface] A kinematic body of links and joints. If not specified, method is not..." alt="" coords="2163,523,2232,552"/>
+<area shape="rect" href="$classOpenRAVE_1_1InterfaceBase.html" title="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface..." alt="" coords="1165,771,1267,800"/>
+<area shape="rect" title="STL class." alt="" coords="197,605,251,635"/>
+<area shape="rect" href="$classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html" title="A group referencing the values of one body in the environment." alt="" coords="605,283,661,312"/>
+<area shape="rect" title="STL class." alt="" coords="7,605,145,635"/>
+<area shape="rect" href="$classOpenRAVE_1_1ConfigurationSpecification.html" title="A configuration specification references values in the environment that then define..." alt="" coords="1588,91,1759,120"/>
+<area shape="rect" href="$classOpenRAVE_1_1RobotBase_1_1Grabbed.html" title="The information of a currently grabbed body." alt="" coords="1639,1064,1708,1093"/>
+</map>

@@ -1,0 +1,230 @@
+\hypertarget{classOpenRAVE_1_1ViewerBase}{
+\subsection{ViewerBase Class Reference}
+\label{classOpenRAVE_1_1ViewerBase}\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} Base class for the graphics and gui engine that renders the environment and provides visual sensor information. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__viewer}{Viewer Concepts}.  
+
+
+
+
+Inheritance diagram for ViewerBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{classOpenRAVE_1_1ViewerBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ViewerBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{classOpenRAVE_1_1ViewerBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::function$<$ bool(KinBody::LinkPtr plink, RaveVector$<$ float $>$, RaveVector$<$ float $>$)$>$ \hyperlink{classOpenRAVE_1_1ViewerBase_aab6d9553843a6d593ee530045d7fff9f}{ItemSelectionCallbackFn}
+\begin{DoxyCompactList}\small\item\em callback function for item selection \item\end{DoxyCompactList}\item 
+typedef boost::function$<$ void(const uint8\_\-t $\ast$, int, int, int) \hyperlink{classOpenRAVE_1_1ViewerBase_a33dae9848e343e6740ad259e09e92607}{ViewerImageCallbackFn} )
+\begin{DoxyCompactList}\small\item\em callback function for item selection callback(imagememory,width,height,pixeldepth) \item\end{DoxyCompactList}\item 
+typedef \hyperlink{classOpenRAVE_1_1ViewerBase_aab6d9553843a6d593ee530045d7fff9f}{ItemSelectionCallbackFn} ViewerCallbackFn \hyperlink{classOpenRAVE_1_1ViewerBase_ab0582044ee7b7222de5e7406ad64f93a}{RAVE\_\-DEPRECATED}
+\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classOpenRAVE_1_1ViewerBase_ada75ea5cccc17a8cf81b638117139c1c}{main} (bool bShow=true)=0
+\begin{DoxyCompactList}\small\item\em goes into the main loop \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ViewerBase_ab8fc69e4de743e14207ea400de2f3824}{
+virtual void \hyperlink{classOpenRAVE_1_1ViewerBase_ab8fc69e4de743e14207ea400de2f3824}{quitmainloop} ()=0}
+\label{classOpenRAVE_1_1ViewerBase_ab8fc69e4de743e14207ea400de2f3824}
+
+\begin{DoxyCompactList}\small\item\em destroys the main loop \item\end{DoxyCompactList}\item 
+virtual boost::shared\_\-ptr$<$ void $>$ \hyperlink{classOpenRAVE_1_1ViewerBase_a22844e2b6584a0673cc82cfd7e2fa01d}{RegisterItemSelectionCallback} (const \hyperlink{classOpenRAVE_1_1ViewerBase_aab6d9553843a6d593ee530045d7fff9f}{ItemSelectionCallbackFn} \&fncallback) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em registers a function with the viewer that gets called everytime mouse button is clicked \item\end{DoxyCompactList}\item 
+virtual boost::shared\_\-ptr$<$ void $>$ \hyperlink{classOpenRAVE_1_1ViewerBase_ad23099fd4b95a0b7587ec4efe5454043}{RegisterViewerImageCallback} (const \hyperlink{classOpenRAVE_1_1ViewerBase_a33dae9848e343e6740ad259e09e92607}{ViewerImageCallbackFn} \&fncallback) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em registers a function with the viewer that gets called for every new image rendered. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ViewerBase_a3807c4e1bbec9f2d0e9f71cadb7efdd1}{
+virtual void \hyperlink{classOpenRAVE_1_1ViewerBase_a3807c4e1bbec9f2d0e9f71cadb7efdd1}{SetEnvironmentSync} (bool bUpdate) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION}
+\label{classOpenRAVE_1_1ViewerBase_a3807c4e1bbec9f2d0e9f71cadb7efdd1}
+
+\begin{DoxyCompactList}\small\item\em controls whether the viewer synchronizes with the newest environment automatically \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1ViewerBase_a252e5291c15eb4d6956ee5c824a4c56d}{EnvironmentSync} () OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em forces synchronization with the environment, returns when the environment is fully synchronized. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1ViewerBase_a93a7763493f3da4687ca55db4a32b05e}{ViewerSetSize} (int w, int h) \hyperlink{classOpenRAVE_1_1ViewerBase_ab0582044ee7b7222de5e7406ad64f93a}{RAVE\_\-DEPRECATED}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1ViewerBase_a00e98066bc03fa4d2b287d2a6a2d2b4c}{ViewerMove} (int x, int y) \hyperlink{classOpenRAVE_1_1ViewerBase_ab0582044ee7b7222de5e7406ad64f93a}{RAVE\_\-DEPRECATED}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1ViewerBase_adfc56134be2ef5b157c9a0b55d5d4e13}{ViewerSetTitle} (const std::string \&ptitle) \hyperlink{classOpenRAVE_1_1ViewerBase_ab0582044ee7b7222de5e7406ad64f93a}{RAVE\_\-DEPRECATED}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1ViewerBase_a8ba08e058dbbaf19090cc79cd22055f6}{UpdateCameraTransform} () \hyperlink{classOpenRAVE_1_1ViewerBase_ab0582044ee7b7222de5e7406ad64f93a}{RAVE\_\-DEPRECATED} OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\item 
+virtual boost::shared\_\-ptr$<$ void $>$ \hyperlink{classOpenRAVE_1_1ViewerBase_a87bb8fc16f70e17fc3955a734a5a9cc5}{RegisterCallback} (int properties, const \hyperlink{classOpenRAVE_1_1ViewerBase_aab6d9553843a6d593ee530045d7fff9f}{ItemSelectionCallbackFn} \&fncallback) \hyperlink{classOpenRAVE_1_1ViewerBase_ab0582044ee7b7222de5e7406ad64f93a}{RAVE\_\-DEPRECATED}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ViewerBase_a4b6920a362f58dfd5113a5163266780d}{LoadModel} (const std::string \&pfilename) \hyperlink{classOpenRAVE_1_1ViewerBase_ab0582044ee7b7222de5e7406ad64f93a}{RAVE\_\-DEPRECATED} OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf }\par
+{\em \label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ }\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1ViewerBase_ae426230d17214ba9e81e7ca30a1437e6}{SetCamera} (const RaveTransform$<$ float $>$ \&trans, float focalDistance=0) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em Set the camera transformation. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ViewerBase_ac63f4828ecf7cfd87feb7f67be71bb04}{
+virtual RaveTransform$<$ float $>$ \hyperlink{classOpenRAVE_1_1ViewerBase_ac63f4828ecf7cfd87feb7f67be71bb04}{GetCameraTransform} () const OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION}
+\label{classOpenRAVE_1_1ViewerBase_ac63f4828ecf7cfd87feb7f67be71bb04}
+
+\begin{DoxyCompactList}\small\item\em Return the current camera transform that the viewer is rendering the environment at. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ViewerBase_aa280b50e2cd6e717b03a83245546e467}{
+virtual \hyperlink{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics}{geometry::RaveCameraIntrinsics}$<$ float $>$ \hyperlink{classOpenRAVE_1_1ViewerBase_aa280b50e2cd6e717b03a83245546e467}{GetCameraIntrinsics} () const OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION}
+\label{classOpenRAVE_1_1ViewerBase_aa280b50e2cd6e717b03a83245546e467}
+
+\begin{DoxyCompactList}\small\item\em Return the closest camera intrinsics that the viewer is rendering the environment at. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ViewerBase_ad149822b9f25bf1adf3d76e78379cca5}{GetCameraImage} (std::vector$<$ uint8\_\-t $>$ \&memory, int width, int height, const RaveTransform$<$ float $>$ \&t, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics}{SensorBase::CameraIntrinsics} \&intrinsics) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em Renders a 24bit RGB image of dimensions width and height from the current scene. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1ViewerBase_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1ViewerBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1ViewerBase_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em return the static interface type this class points to (used for safe casting) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} Base class for the graphics and gui engine that renders the environment and provides visual sensor information. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__viewer}{Viewer Concepts}. 
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classOpenRAVE_1_1ViewerBase_aab6d9553843a6d593ee530045d7fff9f}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!ItemSelectionCallbackFn@{ItemSelectionCallbackFn}}
+\index{ItemSelectionCallbackFn@{ItemSelectionCallbackFn}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{ItemSelectionCallbackFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$bool (KinBody::LinkPtr plink,RaveVector$<$float$>$,RaveVector$<$float$>$)$>$ {\bf ItemSelectionCallbackFn}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_aab6d9553843a6d593ee530045d7fff9f}
+
+
+callback function for item selection 
+
+If the function returns true, then the object will be selected. Otherwise, the object remains unselected. callback(target link,offset,direction) \hypertarget{classOpenRAVE_1_1ViewerBase_ab0582044ee7b7222de5e7406ad64f93a}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}}
+\index{RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{RAVE\_\-DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf ItemSelectionCallbackFn} ViewerCallbackFn {\bf RAVE\_\-DEPRECATED}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_ab0582044ee7b7222de5e7406ad64f93a}
+\hypertarget{classOpenRAVE_1_1ViewerBase_a33dae9848e343e6740ad259e09e92607}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!ViewerImageCallbackFn@{ViewerImageCallbackFn}}
+\index{ViewerImageCallbackFn@{ViewerImageCallbackFn}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{ViewerImageCallbackFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$void (const uint8\_\-t$\ast$,int,int,int) {\bf ViewerImageCallbackFn})}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_a33dae9848e343e6740ad259e09e92607}
+
+
+callback function for item selection callback(imagememory,width,height,pixeldepth) 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em imagememory}]width x height x pixeldepth RGB image \end{DoxyParams}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1ViewerBase_a252e5291c15eb4d6956ee5c824a4c56d}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!EnvironmentSync@{EnvironmentSync}}
+\index{EnvironmentSync@{EnvironmentSync}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{EnvironmentSync}]{\setlength{\rightskip}{0pt plus 5cm}virtual void EnvironmentSync ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_a252e5291c15eb4d6956ee5c824a4c56d}
+
+
+forces synchronization with the environment, returns when the environment is fully synchronized. 
+
+Note that this method might not work if environment is locked in current thread \hypertarget{classOpenRAVE_1_1ViewerBase_ad149822b9f25bf1adf3d76e78379cca5}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!GetCameraImage@{GetCameraImage}}
+\index{GetCameraImage@{GetCameraImage}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{GetCameraImage}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool GetCameraImage (std::vector$<$ uint8\_\-t $>$ \& {\em memory}, \/  int {\em width}, \/  int {\em height}, \/  const RaveTransform$<$ float $>$ \& {\em t}, \/  const {\bf SensorBase::CameraIntrinsics} \& {\em intrinsics})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_ad149822b9f25bf1adf3d76e78379cca5}
+
+
+Renders a 24bit RGB image of dimensions width and height from the current scene. 
+
+The camera is meant to show the underlying \hyperlink{namespaceOpenRAVE}{OpenRAVE} world as a robot would see it, so all graphs rendered with the plotX and drawX functions are hidden by default. Some viewers support the SetFiguresInCamera command to allow graphs to be also displayed. 
+\begin{DoxyParams}{Parameters}
+\item[{\em memory}]the memory where the image will be stored at, has to store 3$\ast$width$\ast$height \item[{\em width}]width of the image, if 0 the width of the viewer is used \item[{\em height}]height of the image, if 0 the width of the viewer is used \item[{\em t}]the rotation and translation of the camera. Note that +z is treated as the camera direction axis! So all points in front of the camera have a positive dot product with its +z direction. \item[{\em intrinsics}]the intrinsic parameters of the camera defining FOV, distortion, principal point, and focal length. The focal length is used to define the near plane for culling. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1ViewerBase_a4b6920a362f58dfd5113a5163266780d}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!LoadModel@{LoadModel}}
+\index{LoadModel@{LoadModel}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{LoadModel}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool LoadModel (const std::string \& {\em pfilename})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_a4b6920a362f58dfd5113a5163266780d}
+\hypertarget{classOpenRAVE_1_1ViewerBase_ada75ea5cccc17a8cf81b638117139c1c}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!main@{main}}
+\index{main@{main}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{main}]{\setlength{\rightskip}{0pt plus 5cm}virtual int main (bool {\em bShow} = {\ttfamily true})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_ada75ea5cccc17a8cf81b638117139c1c}
+
+
+goes into the main loop 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bShow}]if true will show the window \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1ViewerBase_a87bb8fc16f70e17fc3955a734a5a9cc5}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!RegisterCallback@{RegisterCallback}}
+\index{RegisterCallback@{RegisterCallback}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{RegisterCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual boost::shared\_\-ptr$<$void$>$ RegisterCallback (int {\em properties}, \/  const {\bf ItemSelectionCallbackFn} \& {\em fncallback})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_a87bb8fc16f70e17fc3955a734a5a9cc5}
+\hypertarget{classOpenRAVE_1_1ViewerBase_a22844e2b6584a0673cc82cfd7e2fa01d}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!RegisterItemSelectionCallback@{RegisterItemSelectionCallback}}
+\index{RegisterItemSelectionCallback@{RegisterItemSelectionCallback}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{RegisterItemSelectionCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual boost::shared\_\-ptr$<$void$>$ RegisterItemSelectionCallback (const {\bf ItemSelectionCallbackFn} \& {\em fncallback})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_a22844e2b6584a0673cc82cfd7e2fa01d}
+
+
+registers a function with the viewer that gets called everytime mouse button is clicked 
+
+\begin{DoxyReturn}{Returns}
+a handle to the callback. If this handle is deleted, the callback will be unregistered. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1ViewerBase_ad23099fd4b95a0b7587ec4efe5454043}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!RegisterViewerImageCallback@{RegisterViewerImageCallback}}
+\index{RegisterViewerImageCallback@{RegisterViewerImageCallback}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{RegisterViewerImageCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual boost::shared\_\-ptr$<$void$>$ RegisterViewerImageCallback (const {\bf ViewerImageCallbackFn} \& {\em fncallback})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_ad23099fd4b95a0b7587ec4efe5454043}
+
+
+registers a function with the viewer that gets called for every new image rendered. 
+
+\begin{DoxyReturn}{Returns}
+a handle to the callback. If this handle is deleted, the callback will be unregistered. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1ViewerBase_ae426230d17214ba9e81e7ca30a1437e6}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!SetCamera@{SetCamera}}
+\index{SetCamera@{SetCamera}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{SetCamera}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetCamera (const RaveTransform$<$ float $>$ \& {\em trans}, \/  float {\em focalDistance} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_ae426230d17214ba9e81e7ca30a1437e6}
+
+
+Set the camera transformation. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em trans}]new camera transformation in the world coordinate system \item[{\em focalDistance}]The new focal distance of the camera (higher values is higher zoom). If 0, then the previous focal distance is preserved. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1ViewerBase_a8ba08e058dbbaf19090cc79cd22055f6}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!UpdateCameraTransform@{UpdateCameraTransform}}
+\index{UpdateCameraTransform@{UpdateCameraTransform}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{UpdateCameraTransform}]{\setlength{\rightskip}{0pt plus 5cm}virtual void UpdateCameraTransform ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_a8ba08e058dbbaf19090cc79cd22055f6}
+\hypertarget{classOpenRAVE_1_1ViewerBase_a00e98066bc03fa4d2b287d2a6a2d2b4c}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!ViewerMove@{ViewerMove}}
+\index{ViewerMove@{ViewerMove}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{ViewerMove}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ViewerMove (int {\em x}, \/  int {\em y})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_a00e98066bc03fa4d2b287d2a6a2d2b4c}
+\hypertarget{classOpenRAVE_1_1ViewerBase_a93a7763493f3da4687ca55db4a32b05e}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!ViewerSetSize@{ViewerSetSize}}
+\index{ViewerSetSize@{ViewerSetSize}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{ViewerSetSize}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ViewerSetSize (int {\em w}, \/  int {\em h})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_a93a7763493f3da4687ca55db4a32b05e}
+\hypertarget{classOpenRAVE_1_1ViewerBase_adfc56134be2ef5b157c9a0b55d5d4e13}{
+\index{OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}!ViewerSetTitle@{ViewerSetTitle}}
+\index{ViewerSetTitle@{ViewerSetTitle}!OpenRAVE::ViewerBase@{OpenRAVE::ViewerBase}}
+\paragraph[{ViewerSetTitle}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ViewerSetTitle (const std::string \& {\em ptitle})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ViewerBase_adfc56134be2ef5b157c9a0b55d5d4e13}

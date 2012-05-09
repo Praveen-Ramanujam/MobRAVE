@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers
+END
+ikfastsolvers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ikfastsolvers.cpp
+END
+ik_pr2_leftarm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_pr2_leftarm.cpp
+END
+ikbase.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ikbase.h
+END
+ik_schunk_lwa3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_schunk_lwa3.cpp
+END
+plugindefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/plugindefs.h
+END
+ikfastproblem.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ikfastproblem.h
+END
+ik_pr2_head.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_pr2_head.cpp
+END
+ik_pr2_rightarm_torso.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_pr2_rightarm_torso.cpp
+END
+ik_katana5d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_katana5d.cpp
+END
+ik_katana5d_trans.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_katana5d_trans.cpp
+END
+ik_pr2_rightarm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_pr2_rightarm.cpp
+END
+ik_pa10.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_pa10.cpp
+END
+ik_puma.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_puma.cpp
+END
+ik_pr2_leftarm_torso.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_pr2_leftarm_torso.cpp
+END
+ik_barrettwam.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_barrettwam.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/CMakeLists.txt
+END
+ik_pr2_head_torso.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/ikfastsolvers/ik_pr2_head_torso.cpp
+END

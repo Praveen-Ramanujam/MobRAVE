@@ -1,0 +1,937 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: クラス GEOMPROPERTIES 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="classOpenRAVE_1_1KinBody.html">KinBody</a>::<a class="el" href="classOpenRAVE_1_1KinBody_1_1Link.html">Link</a>::<a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html">GEOMPROPERTIES</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス GEOMPROPERTIES</h1><!-- doxytag: class="OpenRAVE::KinBody::Link::GEOMPROPERTIES" -->
+<p><code>#include &lt;<a class="el" href="kinbody_8h_source.html">kinbody.h</a>&gt;</code></p>
+<div class="dynheader">
+GEOMPROPERTIESのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES__coll__graph.png" border="0" usemap="#GEOMPROPERTIES_coll__map" alt="Collaboration graph"/></div>
+<map name="GEOMPROPERTIES_coll__map" id="GEOMPROPERTIES_coll__map">
+<area shape="rect" href="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH.html" title="User data for trimesh geometries. Vertices are defined in counter&#45;clockwise order..." alt="" coords="79,197,159,227"/><area shape="rect" title="STL class." alt="" coords="540,197,593,227"/><area shape="rect" title="STL class." alt="" coords="497,101,636,131"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2ae">GeomType</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2aeabbb1cd9a9cd706f9bd3c9210aea7507c">GeomNone</a> =  0, 
+<a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2aea5ddc3adce6221252478bda994356a120">GeomBox</a> =  1, 
+<a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2aea034d1a18050243ffe6714d47ac2a42fb">GeomSphere</a> =  2, 
+<a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2aeaebd51cb8baf642610317260d2546e158">GeomCylinder</a> =  3, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2aea99f8c6e7d641cfec75bf1b3245b0db41">GeomTrimesh</a> =  4
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The type of geometry primitive. </p>
+ <a href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2ae">[詳細]</a><br/></td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a32ac068d1cd4dc5669acce4f9d200140">GEOMPROPERTIES</a> (boost::shared_ptr&lt; <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link.html">Link</a> &gt; parent)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a53928e131c2ce5093660f32f22936449">~GEOMPROPERTIES</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#aaf48415e05caa5f9a9c3fa88cb8ed8a9">GetTransform</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Local transformation of the geom primitive with respect to the link's coordinate system.  <a href="#aaf48415e05caa5f9a9c3fa88cb8ed8a9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2ae">GeomType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#aa812cc367013278a634a0a7b1f0f34a1">GetType</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a6b1be2b1bd5f5fbdda5eedb57ba92ef3">GetRenderScale</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a4474cb22f6457503715435d2f3e34496">GetRenderFilename</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">render resource file, should be transformed by _t before rendering  <a href="#a4474cb22f6457503715435d2f3e34496"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#aa8e0e0527868c29f262f7dd22bbcf3c8">GetTransparency</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#af1f175e9d1351405042d6edda89b2d06">IsDraw</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a2e8af4ed75eb51faef1883bcc4d0e740">IsModifiable</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#ac44b9ad6bf948943042866c309df031f">GetSphereRadius</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a9160efe55ca6988b0a575527c28fb5fd">GetCylinderRadius</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a3d1dde0f2ea1f364cea880ec2e85583f">GetCylinderHeight</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a6cce1feffcf129f1402c7f5154168250">GetBoxExtents</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const RaveVector&lt; float &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#ac565d90aed277e0cf419d89de6a52be8">GetDiffuseColor</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const RaveVector&lt; float &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#af02a0d3f21f80fd194a08352ff2b5ac7">GetAmbientColor</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH.html">TRIMESH</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a387688dd5bde34a4dd34be211886a8d1">GetCollisionMesh</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">collision data of the specific object in its local coordinate system.  <a href="#a387688dd5bde34a4dd34be211886a8d1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1geometry_1_1aabb.html">AABB</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a17d17302d5a602a234230b12323618f9">ComputeAABB</a> (const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;trans) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns an axis aligned bounding box given that the geometry is transformed by trans  <a href="#a17d17302d5a602a234230b12323618f9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#ac3d3423a3fae6eb66bc8e0ff6fc23e3e">serialize</a> (std::ostream &amp;o, int options) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a3e5d551673c42bb134bf843946a0403b">SetCollisionMesh</a> (const <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH.html">TRIMESH</a> &amp;mesh)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets a new collision mesh and notifies every registered callback about it  <a href="#a3e5d551673c42bb134bf843946a0403b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#aca7864afdc94867792c10f09e53735e6">SetDraw</a> (bool bDraw)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets a drawing and notifies every registered callback about it  <a href="#aca7864afdc94867792c10f09e53735e6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a6b8232d86a71abe734ff516888b3d2f0">SetTransparency</a> (float f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">set transparency level (0 is opaque)  <a href="#a6b8232d86a71abe734ff516888b3d2f0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#ace7920853d82ecfa046fc6195104a529">SetDiffuseColor</a> (const RaveVector&lt; float &gt; &amp;color)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">override diffuse color of geometry material  <a href="#ace7920853d82ecfa046fc6195104a529"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#ad1572d41cb6d899e83ce4ba952ae93d4">SetAmbientColor</a> (const RaveVector&lt; float &gt; &amp;color)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">override ambient color of geometry material  <a href="#ad1572d41cb6d899e83ce4ba952ae93d4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a80c6877ca0a3b0f5104b00ccfbc7b591">ValidateContactNormal</a> (const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;position, <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;normal) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">validates the contact normal on the surface of the geometry and makes sure the normal faces "outside" of the shape.  <a href="#a80c6877ca0a3b0f5104b00ccfbc7b591"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#aa558a74c9ca66b0b53f772e6a6893c0f">SetRenderFilename</a> (const std::string &amp;renderfilename)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets a new render filename for the geometry. This does not change the collision  <a href="#aa558a74c9ca66b0b53f772e6a6893c0f"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Protected メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a77e9273e5d79606152b85b4863f3b6b4">InitCollisionMesh</a> (float fTessellation=1)</td></tr>
+<tr><td colspan="2"><h2>Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::weak_ptr&lt; <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link.html">Link</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a977fd0705030a465c7557df422869f35">_parent</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#adcfc5692c983a70c6021762566cdc7e0">_t</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">see <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#aaf48415e05caa5f9a9c3fa88cb8ed8a9">GetTransform</a>  <a href="#adcfc5692c983a70c6021762566cdc7e0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#ab53daa871a8650d27546b395400354e2">vGeomData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RaveVector&lt; float &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#ab67f218bd2f19ff31750799e67cf47c4">diffuseColor</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RaveVector&lt; float &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a625ee04b635d18df5da9cbf040362a32">ambientColor</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">hints for how to color the meshes  <a href="#a625ee04b635d18df5da9cbf040362a32"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH.html">TRIMESH</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a77688c4f07cf7aef096e1ca3fe962dc4">collisionmesh</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">see <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a387688dd5bde34a4dd34be211886a8d1">GetCollisionMesh</a>  <a href="#a77688c4f07cf7aef096e1ca3fe962dc4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2ae">GeomType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a45d36ea9e7f9e1f1bead94f06ab1fad4">_type</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the type of geometry primitive  <a href="#a45d36ea9e7f9e1f1bead94f06ab1fad4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a13d02d4b3303b3acce44af4330fb5fde">_renderfilename</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a0fbaf8a5fc118f2b82607c21e98c0a74">vRenderScale</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">render scale of the object (x,y,z)  <a href="#a0fbaf8a5fc118f2b82607c21e98c0a74"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a7e9bda892b07417274d200ecf6a19743">ftransparency</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">value from 0-1 for the transparency of the rendered object, 0 is opaque  <a href="#a7e9bda892b07417274d200ecf6a19743"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a570497cb0feb2ef7ab31b3a899f2251d">_bDraw</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">if true, object is drawn as part of the 3d model (default is true)  <a href="#a570497cb0feb2ef7ab31b3a899f2251d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#ae91866aa8217eccdfc515df0474872fe">_bModifiable</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">if true, object geometry can be dynamically modified (default is true)  <a href="#ae91866aa8217eccdfc515df0474872fe"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>Describes the properties of a basic geometric primitive. Contains everything associated with a physical body along with a seprate (optional) render file. </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00088">88</a> 行で定義されています。</p>
+<hr/><h2>列挙型</h2>
+<a class="anchor" id="a49306adaab0c755befa56ed92085f2ae"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GeomType" ref="a49306adaab0c755befa56ed92085f2ae" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2ae">GeomType</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The type of geometry primitive. </p>
+<dl><dt><b>列挙型の値: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a49306adaab0c755befa56ed92085f2aeabbb1cd9a9cd706f9bd3c9210aea7507c"></a><!-- doxytag: member="GeomNone" ref="a49306adaab0c755befa56ed92085f2aeabbb1cd9a9cd706f9bd3c9210aea7507c" args="" -->GeomNone</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a49306adaab0c755befa56ed92085f2aea5ddc3adce6221252478bda994356a120"></a><!-- doxytag: member="GeomBox" ref="a49306adaab0c755befa56ed92085f2aea5ddc3adce6221252478bda994356a120" args="" -->GeomBox</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a49306adaab0c755befa56ed92085f2aea034d1a18050243ffe6714d47ac2a42fb"></a><!-- doxytag: member="GeomSphere" ref="a49306adaab0c755befa56ed92085f2aea034d1a18050243ffe6714d47ac2a42fb" args="" -->GeomSphere</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a49306adaab0c755befa56ed92085f2aeaebd51cb8baf642610317260d2546e158"></a><!-- doxytag: member="GeomCylinder" ref="a49306adaab0c755befa56ed92085f2aeaebd51cb8baf642610317260d2546e158" args="" -->GeomCylinder</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a49306adaab0c755befa56ed92085f2aea99f8c6e7d641cfec75bf1b3245b0db41"></a><!-- doxytag: member="GeomTrimesh" ref="a49306adaab0c755befa56ed92085f2aea99f8c6e7d641cfec75bf1b3245b0db41" args="" -->GeomTrimesh</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00092">92</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a32ac068d1cd4dc5669acce4f9d200140"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GEOMPROPERTIES" ref="a32ac068d1cd4dc5669acce4f9d200140" args="(boost::shared_ptr&lt; Link &gt; parent)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html">GEOMPROPERTIES</a> </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link.html">Link</a> &gt;&nbsp;</td>
+          <td class="paramname"> <em>parent</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a53928e131c2ce5093660f32f22936449"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::~GEOMPROPERTIES" ref="a53928e131c2ce5093660f32f22936449" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html">GEOMPROPERTIES</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00101">101</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a17d17302d5a602a234230b12323618f9"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::ComputeAABB" ref="a17d17302d5a602a234230b12323618f9" args="(const Transform &amp;trans) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1geometry_1_1aabb.html">AABB</a> ComputeAABB </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>trans</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>returns an axis aligned bounding box given that the geometry is transformed by trans </p>
+
+</div>
+</div>
+<a class="anchor" id="af02a0d3f21f80fd194a08352ff2b5ac7"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetAmbientColor" ref="af02a0d3f21f80fd194a08352ff2b5ac7" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RaveVector&lt;float&gt;&amp; GetAmbientColor </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00146">146</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6cce1feffcf129f1402c7f5154168250"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetBoxExtents" ref="a6cce1feffcf129f1402c7f5154168250" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetBoxExtents </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00140">140</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a387688dd5bde34a4dd34be211886a8d1"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetCollisionMesh" ref="a387688dd5bde34a4dd34be211886a8d1" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH.html">TRIMESH</a>&amp; GetCollisionMesh </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>collision data of the specific object in its local coordinate system. </p>
+<p>Should be transformed by <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#aaf48415e05caa5f9a9c3fa88cb8ed8a9">GEOMPROPERTIES::GetTransform()</a> before rendering. For spheres and cylinders, an appropriate discretization value is chosen. </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00154">154</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d1dde0f2ea1f364cea880ec2e85583f"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetCylinderHeight" ref="a3d1dde0f2ea1f364cea880ec2e85583f" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> GetCylinderHeight </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00137">137</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9160efe55ca6988b0a575527c28fb5fd"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetCylinderRadius" ref="a9160efe55ca6988b0a575527c28fb5fd" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> GetCylinderRadius </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00134">134</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac565d90aed277e0cf419d89de6a52be8"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetDiffuseColor" ref="ac565d90aed277e0cf419d89de6a52be8" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RaveVector&lt;float&gt;&amp; GetDiffuseColor </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00143">143</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4474cb22f6457503715435d2f3e34496"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetRenderFilename" ref="a4474cb22f6457503715435d2f3e34496" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; GetRenderFilename </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>render resource file, should be transformed by _t before rendering </p>
+<p>If the value is "__norenderif__:x", then the viewer should not render the object if it supports *.x files where"x" is the file extension. </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00118">118</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b1be2b1bd5f5fbdda5eedb57ba92ef3"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetRenderScale" ref="a6b1be2b1bd5f5fbdda5eedb57ba92ef3" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a>&amp; GetRenderScale </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00111">111</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac44b9ad6bf948943042866c309df031f"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetSphereRadius" ref="ac44b9ad6bf948943042866c309df031f" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> GetSphereRadius </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00131">131</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf48415e05caa5f9a9c3fa88cb8ed8a9"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetTransform" ref="aaf48415e05caa5f9a9c3fa88cb8ed8a9" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a>&amp; GetTransform </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Local transformation of the geom primitive with respect to the link's coordinate system. </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00105">105</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8e0e0527868c29f262f7dd22bbcf3c8"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetTransparency" ref="aa8e0e0527868c29f262f7dd22bbcf3c8" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GetTransparency </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00121">121</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa812cc367013278a634a0a7b1f0f34a1"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::GetType" ref="aa812cc367013278a634a0a7b1f0f34a1" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2ae">GeomType</a> GetType </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00108">108</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a77e9273e5d79606152b85b4863f3b6b4"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::InitCollisionMesh" ref="a77e9273e5d79606152b85b4863f3b6b4" args="(float fTessellation=1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InitCollisionMesh </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fTessellation</em> = <code>1</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>triangulates the geometry object and initializes collisionmesh. GeomTrimesh types must already be triangulated </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>fTessellation</em>&nbsp;</td><td>to control how fine the triangles need to be. 1.0f is the default value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af1f175e9d1351405042d6edda89b2d06"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::IsDraw" ref="af1f175e9d1351405042d6edda89b2d06" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsDraw </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00124">124</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e8af4ed75eb51faef1883bcc4d0e740"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::IsModifiable" ref="a2e8af4ed75eb51faef1883bcc4d0e740" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsModifiable </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00127">127</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3d3423a3fae6eb66bc8e0ff6fc23e3e"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::serialize" ref="ac3d3423a3fae6eb66bc8e0ff6fc23e3e" args="(std::ostream &amp;o, int options) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void serialize </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>options</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad1572d41cb6d899e83ce4ba952ae93d4"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::SetAmbientColor" ref="ad1572d41cb6d899e83ce4ba952ae93d4" args="(const RaveVector&lt; float &gt; &amp;color)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetAmbientColor </td>
+          <td>(</td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>color</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>override ambient color of geometry material </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e5d551673c42bb134bf843946a0403b"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::SetCollisionMesh" ref="a3e5d551673c42bb134bf843946a0403b" args="(const TRIMESH &amp;mesh)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetCollisionMesh </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH.html">TRIMESH</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>mesh</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets a new collision mesh and notifies every registered callback about it </p>
+
+</div>
+</div>
+<a class="anchor" id="ace7920853d82ecfa046fc6195104a529"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::SetDiffuseColor" ref="ace7920853d82ecfa046fc6195104a529" args="(const RaveVector&lt; float &gt; &amp;color)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetDiffuseColor </td>
+          <td>(</td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>color</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>override diffuse color of geometry material </p>
+
+</div>
+</div>
+<a class="anchor" id="aca7864afdc94867792c10f09e53735e6"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::SetDraw" ref="aca7864afdc94867792c10f09e53735e6" args="(bool bDraw)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetDraw </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>bDraw</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets a drawing and notifies every registered callback about it </p>
+
+</div>
+</div>
+<a class="anchor" id="aa558a74c9ca66b0b53f772e6a6893c0f"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::SetRenderFilename" ref="aa558a74c9ca66b0b53f772e6a6893c0f" args="(const std::string &amp;renderfilename)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetRenderFilename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>renderfilename</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets a new render filename for the geometry. This does not change the collision </p>
+
+</div>
+</div>
+<a class="anchor" id="a6b8232d86a71abe734ff516888b3d2f0"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::SetTransparency" ref="a6b8232d86a71abe734ff516888b3d2f0" args="(float f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetTransparency </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>f</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set transparency level (0 is opaque) </p>
+
+</div>
+</div>
+<a class="anchor" id="a80c6877ca0a3b0f5104b00ccfbc7b591"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::ValidateContactNormal" ref="a80c6877ca0a3b0f5104b00ccfbc7b591" args="(const Vector &amp;position, Vector &amp;normal) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ValidateContactNormal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>normal</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>validates the contact normal on the surface of the geometry and makes sure the normal faces "outside" of the shape. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>position</em>&nbsp;</td><td>the position of the contact point specified in the link's coordinate system </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>normal</em>&nbsp;</td><td>the unit normal of the contact point specified in the link's coordinate system </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if the normal is changed to face outside of the shape </dd></dl>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="a570497cb0feb2ef7ab31b3a899f2251d"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::_bDraw" ref="a570497cb0feb2ef7ab31b3a899f2251d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a570497cb0feb2ef7ab31b3a899f2251d">_bDraw</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>if true, object is drawn as part of the 3d model (default is true) </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00201">201</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae91866aa8217eccdfc515df0474872fe"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::_bModifiable" ref="ae91866aa8217eccdfc515df0474872fe" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#ae91866aa8217eccdfc515df0474872fe">_bModifiable</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>if true, object geometry can be dynamically modified (default is true) </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00202">202</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a977fd0705030a465c7557df422869f35"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::_parent" ref="a977fd0705030a465c7557df422869f35" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::weak_ptr&lt;<a class="el" href="classOpenRAVE_1_1KinBody_1_1Link.html">Link</a>&gt; <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a977fd0705030a465c7557df422869f35">_parent</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00188">188</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a13d02d4b3303b3acce44af4330fb5fde"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::_renderfilename" ref="a13d02d4b3303b3acce44af4330fb5fde" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a13d02d4b3303b3acce44af4330fb5fde">_renderfilename</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="see"><dt><b>参照:</b></dt><dd>ref <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a4474cb22f6457503715435d2f3e34496" title="render resource file, should be transformed by _t before rendering">GetRenderFilename</a> </dd></dl>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00197">197</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="adcfc5692c983a70c6021762566cdc7e0"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::_t" ref="adcfc5692c983a70c6021762566cdc7e0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#adcfc5692c983a70c6021762566cdc7e0">_t</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>see <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#aaf48415e05caa5f9a9c3fa88cb8ed8a9">GetTransform</a> </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00189">189</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a45d36ea9e7f9e1f1bead94f06ab1fad4"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::_type" ref="a45d36ea9e7f9e1f1bead94f06ab1fad4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a49306adaab0c755befa56ed92085f2ae">GeomType</a> <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a45d36ea9e7f9e1f1bead94f06ab1fad4">_type</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the type of geometry primitive </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00196">196</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a625ee04b635d18df5da9cbf040362a32"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::ambientColor" ref="a625ee04b635d18df5da9cbf040362a32" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RaveVector&lt;float&gt; <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a625ee04b635d18df5da9cbf040362a32">ambientColor</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>hints for how to color the meshes </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00194">194</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a77688c4f07cf7aef096e1ca3fe962dc4"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::collisionmesh" ref="a77688c4f07cf7aef096e1ca3fe962dc4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH.html">TRIMESH</a> <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a77688c4f07cf7aef096e1ca3fe962dc4">collisionmesh</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>see <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a387688dd5bde34a4dd34be211886a8d1">GetCollisionMesh</a> </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00195">195</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab67f218bd2f19ff31750799e67cf47c4"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::diffuseColor" ref="ab67f218bd2f19ff31750799e67cf47c4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RaveVector&lt;float&gt; <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#ab67f218bd2f19ff31750799e67cf47c4">diffuseColor</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00194">194</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e9bda892b07417274d200ecf6a19743"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::ftransparency" ref="a7e9bda892b07417274d200ecf6a19743" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a7e9bda892b07417274d200ecf6a19743">ftransparency</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>value from 0-1 for the transparency of the rendered object, 0 is opaque </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00199">199</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab53daa871a8650d27546b395400354e2"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::vGeomData" ref="ab53daa871a8650d27546b395400354e2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#ab53daa871a8650d27546b395400354e2">vGeomData</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>for boxes, first 3 values are extents for sphere it is radius for cylinder, first 2 values are radius and height for trimesh, none </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00190">190</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fbaf8a5fc118f2b82607c21e98c0a74"></a><!-- doxytag: member="OpenRAVE::KinBody::Link::GEOMPROPERTIES::vRenderScale" ref="a0fbaf8a5fc118f2b82607c21e98c0a74" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a> <a class="el" href="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES.html#a0fbaf8a5fc118f2b82607c21e98c0a74">vRenderScale</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>render scale of the object (x,y,z) </p>
+
+<p> <a class="el" href="kinbody_8h_source.html">kinbody.h</a> の <a class="el" href="kinbody_8h_source.html#l00198">198</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>include/openrave/<a class="el" href="kinbody_8h_source.html">kinbody.h (r2848/r2804)</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:11 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

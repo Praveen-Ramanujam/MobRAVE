@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="openrave-core_8h" kind="file">
+    <compoundname>openrave-core.h</compoundname>
+    <includes refid="openrave_8h" local="no">openrave/openrave.h</includes>
+    <includedby refid="ikfastloader_8cpp" local="no">src/cppexamples/ikfastloader.cpp</includedby>
+    <includedby refid="opencvsaving_8cpp" local="no">src/cppexamples/opencvsaving.cpp</includedby>
+    <includedby refid="orcollision_8cpp" local="no">src/cppexamples/orcollision.cpp</includedby>
+    <includedby refid="orconveyormovement_8cpp" local="no">src/cppexamples/orconveyormovement.cpp</includedby>
+    <includedby refid="orikfilter_8cpp" local="no">src/cppexamples/orikfilter.cpp</includedby>
+    <includedby refid="orloadviewer_8cpp" local="no">src/cppexamples/orloadviewer.cpp</includedby>
+    <includedby refid="ormulticontrol_8cpp" local="no">src/cppexamples/ormulticontrol.cpp</includedby>
+    <includedby refid="orplanning__ik_8cpp" local="no">src/cppexamples/orplanning_ik.cpp</includedby>
+    <includedby refid="orplanning__module_8cpp" local="no">src/cppexamples/orplanning_module.cpp</includedby>
+    <includedby refid="orplanning__planner_8cpp" local="no">src/cppexamples/orplanning_planner.cpp</includedby>
+    <includedby refid="orshowsensors_8cpp" local="no">src/cppexamples/orshowsensors.cpp</includedby>
+    <includedby refid="ortrajectory_8cpp" local="no">src/cppexamples/ortrajectory.cpp</includedby>
+    <includedby refid="oryoubotcontrol_8cpp" local="no">src/cppexamples/oryoubotcontrol.cpp</includedby>
+    <incdepgraph>
+      <node id="3353">
+        <label>list</label>
+      </node>
+      <node id="3365">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="3390">
+        <label>openrave/robot.h</label>
+        <link refid="robot_8h"/>
+      </node>
+      <node id="3347">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3397">
+        <label>openrave/environment.h</label>
+        <link refid="environment_8h"/>
+      </node>
+      <node id="3382">
+        <label>openrave/plugininfo.h</label>
+        <link refid="plugininfo_8h"/>
+      </node>
+      <node id="3384">
+        <label>openrave/spacesampler.h</label>
+        <link refid="spacesampler_8h"/>
+      </node>
+      <node id="3357">
+        <label>iomanip</label>
+      </node>
+      <node id="3361">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="3377">
+        <label>limits</label>
+      </node>
+      <node id="3380">
+        <label>openrave/mathextra.h</label>
+        <link refid="mathextra_8h"/>
+        <childnode refid="3379" relation="include">
+        </childnode>
+        <childnode refid="3375" relation="include">
+        </childnode>
+        <childnode refid="3381" relation="include">
+        </childnode>
+      </node>
+      <node id="3363">
+        <label>boost/tuple/tuple.hpp</label>
+      </node>
+      <node id="3367">
+        <label>boost/thread/recursive_mutex.hpp</label>
+      </node>
+      <node id="3372">
+        <label>openrave/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="3350">
+        <label>stdint.h</label>
+      </node>
+      <node id="3344">
+        <label>src/libopenrave-core/openrave-core.h</label>
+        <link refid="openrave-core.h"/>
+        <childnode refid="3345" relation="include">
+        </childnode>
+      </node>
+      <node id="3369">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="3373">
+        <label>openrave/interfacehashes.h</label>
+        <link refid="interfacehashes_8h"/>
+      </node>
+      <node id="3375">
+        <label>cmath</label>
+      </node>
+      <node id="3379">
+        <label>cassert</label>
+      </node>
+      <node id="3368">
+        <label>boost/static_assert.hpp</label>
+      </node>
+      <node id="3366">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="3351">
+        <label>string</label>
+      </node>
+      <node id="3362">
+        <label>boost/weak_ptr.hpp</label>
+      </node>
+      <node id="3354">
+        <label>map</label>
+      </node>
+      <node id="3356">
+        <label>exception</label>
+      </node>
+      <node id="3358">
+        <label>fstream</label>
+      </node>
+      <node id="3388">
+        <label>openrave/collisionchecker.h</label>
+        <link refid="collisionchecker_8h"/>
+      </node>
+      <node id="3360">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="3393">
+        <label>openrave/controller.h</label>
+        <link refid="controller_8h"/>
+      </node>
+      <node id="3392">
+        <label>openrave/planner.h</label>
+        <link refid="planner_8h"/>
+      </node>
+      <node id="3345">
+        <label>openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="3346" relation="include">
+        </childnode>
+        <childnode refid="3347" relation="include">
+        </childnode>
+        <childnode refid="3348" relation="include">
+        </childnode>
+        <childnode refid="3349" relation="include">
+        </childnode>
+        <childnode refid="3350" relation="include">
+        </childnode>
+        <childnode refid="3351" relation="include">
+        </childnode>
+        <childnode refid="3352" relation="include">
+        </childnode>
+        <childnode refid="3353" relation="include">
+        </childnode>
+        <childnode refid="3354" relation="include">
+        </childnode>
+        <childnode refid="3355" relation="include">
+        </childnode>
+        <childnode refid="3356" relation="include">
+        </childnode>
+        <childnode refid="3357" relation="include">
+        </childnode>
+        <childnode refid="3358" relation="include">
+        </childnode>
+        <childnode refid="3359" relation="include">
+        </childnode>
+        <childnode refid="3360" relation="include">
+        </childnode>
+        <childnode refid="3361" relation="include">
+        </childnode>
+        <childnode refid="3362" relation="include">
+        </childnode>
+        <childnode refid="3363" relation="include">
+        </childnode>
+        <childnode refid="3364" relation="include">
+        </childnode>
+        <childnode refid="3365" relation="include">
+        </childnode>
+        <childnode refid="3366" relation="include">
+        </childnode>
+        <childnode refid="3367" relation="include">
+        </childnode>
+        <childnode refid="3368" relation="include">
+        </childnode>
+        <childnode refid="3369" relation="include">
+        </childnode>
+        <childnode refid="3370" relation="include">
+        </childnode>
+        <childnode refid="3371" relation="include">
+        </childnode>
+        <childnode refid="3372" relation="include">
+        </childnode>
+        <childnode refid="3373" relation="include">
+        </childnode>
+        <childnode refid="3374" relation="include">
+        </childnode>
+        <childnode refid="3380" relation="include">
+        </childnode>
+        <childnode refid="3382" relation="include">
+        </childnode>
+        <childnode refid="3383" relation="include">
+        </childnode>
+        <childnode refid="3384" relation="include">
+        </childnode>
+        <childnode refid="3385" relation="include">
+        </childnode>
+        <childnode refid="3386" relation="include">
+        </childnode>
+        <childnode refid="3387" relation="include">
+        </childnode>
+        <childnode refid="3388" relation="include">
+        </childnode>
+        <childnode refid="3389" relation="include">
+        </childnode>
+        <childnode refid="3390" relation="include">
+        </childnode>
+        <childnode refid="3391" relation="include">
+        </childnode>
+        <childnode refid="3392" relation="include">
+        </childnode>
+        <childnode refid="3393" relation="include">
+        </childnode>
+        <childnode refid="3394" relation="include">
+        </childnode>
+        <childnode refid="3395" relation="include">
+        </childnode>
+        <childnode refid="3396" relation="include">
+        </childnode>
+        <childnode refid="3397" relation="include">
+        </childnode>
+      </node>
+      <node id="3346">
+        <label>cstdio</label>
+      </node>
+      <node id="3396">
+        <label>openrave/viewer.h</label>
+        <link refid="viewer_8h"/>
+      </node>
+      <node id="3352">
+        <label>vector</label>
+      </node>
+      <node id="3385">
+        <label>openrave/kinbody.h</label>
+        <link refid="kinbody_8h"/>
+      </node>
+      <node id="3378">
+        <label>utility</label>
+      </node>
+      <node id="3359">
+        <label>sstream</label>
+      </node>
+      <node id="3395">
+        <label>openrave/sensorsystem.h</label>
+        <link refid="sensorsystem_8h"/>
+      </node>
+      <node id="3394">
+        <label>openrave/physicsengine.h</label>
+        <link refid="physicsengine_8h"/>
+      </node>
+      <node id="3364">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="3374">
+        <label>openrave/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="3375" relation="include">
+        </childnode>
+        <childnode refid="3376" relation="include">
+        </childnode>
+        <childnode refid="3377" relation="include">
+        </childnode>
+        <childnode refid="3378" relation="include">
+        </childnode>
+        <childnode refid="3348" relation="include">
+        </childnode>
+        <childnode refid="3349" relation="include">
+        </childnode>
+        <childnode refid="3379" relation="include">
+        </childnode>
+      </node>
+      <node id="3349">
+        <label>cstdlib</label>
+      </node>
+      <node id="3376">
+        <label>iostream</label>
+      </node>
+      <node id="3386">
+        <label>openrave/trajectory.h</label>
+        <link refid="trajectory_8h"/>
+      </node>
+      <node id="3381">
+        <label>climits</label>
+      </node>
+      <node id="3383">
+        <label>openrave/interface.h</label>
+        <link refid="interface_8h"/>
+      </node>
+      <node id="3391">
+        <label>openrave/iksolver.h</label>
+        <link refid="iksolver_8h"/>
+      </node>
+      <node id="3370">
+        <label>boost/array.hpp</label>
+      </node>
+      <node id="3387">
+        <label>openrave/module.h</label>
+        <link refid="module_8h"/>
+      </node>
+      <node id="3355">
+        <label>set</label>
+      </node>
+      <node id="3371">
+        <label>boost/multi_array.hpp</label>
+      </node>
+      <node id="3348">
+        <label>cstring</label>
+      </node>
+      <node id="3389">
+        <label>openrave/sensor.h</label>
+        <link refid="sensor_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3399">
+        <label>src/cppexamples/ikfastloader.cpp</label>
+        <link refid="ikfastloader_8cpp"/>
+      </node>
+      <node id="3409">
+        <label>src/cppexamples/orshowsensors.cpp</label>
+        <link refid="orshowsensors_8cpp"/>
+      </node>
+      <node id="3398">
+        <label>src/libopenrave-core/openrave-core.h</label>
+        <link refid="openrave-core.h"/>
+        <childnode refid="3399" relation="include">
+        </childnode>
+        <childnode refid="3400" relation="include">
+        </childnode>
+        <childnode refid="3401" relation="include">
+        </childnode>
+        <childnode refid="3402" relation="include">
+        </childnode>
+        <childnode refid="3403" relation="include">
+        </childnode>
+        <childnode refid="3404" relation="include">
+        </childnode>
+        <childnode refid="3405" relation="include">
+        </childnode>
+        <childnode refid="3406" relation="include">
+        </childnode>
+        <childnode refid="3407" relation="include">
+        </childnode>
+        <childnode refid="3408" relation="include">
+        </childnode>
+        <childnode refid="3409" relation="include">
+        </childnode>
+        <childnode refid="3410" relation="include">
+        </childnode>
+        <childnode refid="3411" relation="include">
+        </childnode>
+      </node>
+      <node id="3411">
+        <label>src/cppexamples/oryoubotcontrol.cpp</label>
+        <link refid="oryoubotcontrol_8cpp"/>
+      </node>
+      <node id="3403">
+        <label>src/cppexamples/orikfilter.cpp</label>
+        <link refid="orikfilter_8cpp"/>
+      </node>
+      <node id="3407">
+        <label>src/cppexamples/orplanning_module.cpp</label>
+        <link refid="orplanning__module_8cpp"/>
+      </node>
+      <node id="3406">
+        <label>src/cppexamples/orplanning_ik.cpp</label>
+        <link refid="orplanning__ik_8cpp"/>
+      </node>
+      <node id="3400">
+        <label>src/cppexamples/opencvsaving.cpp</label>
+        <link refid="opencvsaving_8cpp"/>
+      </node>
+      <node id="3405">
+        <label>src/cppexamples/ormulticontrol.cpp</label>
+        <link refid="ormulticontrol_8cpp"/>
+      </node>
+      <node id="3402">
+        <label>src/cppexamples/orconveyormovement.cpp</label>
+        <link refid="orconveyormovement_8cpp"/>
+      </node>
+      <node id="3410">
+        <label>src/cppexamples/ortrajectory.cpp</label>
+        <link refid="ortrajectory_8cpp"/>
+      </node>
+      <node id="3401">
+        <label>src/cppexamples/orcollision.cpp</label>
+        <link refid="orcollision_8cpp"/>
+      </node>
+      <node id="3404">
+        <label>src/cppexamples/orloadviewer.cpp</label>
+        <link refid="orloadviewer_8cpp"/>
+      </node>
+      <node id="3408">
+        <label>src/cppexamples/orplanning_planner.cpp</label>
+        <link refid="orplanning__planner_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceOpenRAVE">OpenRAVE</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="openrave-core_8h_1a2aec1f303b146eb281a3fb71c043ac8b" prot="public" static="no">
+        <name>OPENRAVE_CORE_API</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave-core/openrave-core.h" line="32" bodyfile="/home/pra3cob/openrave/src/libopenrave-core/openrave-core.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="openrave-core_8h_1a8ea7d942d29ca141c671e463d9bd9073" prot="public" static="no">
+        <name>OPENRAVE_CORE_LOCAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave-core/openrave-core.h" line="33" bodyfile="/home/pra3cob/openrave/src/libopenrave-core/openrave-core.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2006-2011<sp/>Rosen<sp/>Diankov<sp/>(rosen.diankov@gmail.com)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenRAVE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OpenRAVE<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>OPENRAVE_CORE_H</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_CORE_H</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>OpenRAVE<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="openrave_8h" kindref="compound" tooltip="Defines the public headers that every plugin must include in order to use openrave...">openrave/openrave.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(OPENRAVE_CORE_DLL)</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>OPENRAVE_CORE_DLL_EXPORTS</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>OPENRAVE_CORE_API<sp/>OPENRAVE_HELPER_DLL_EXPORT</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>OPENRAVE_CORE_API<sp/>OPENRAVE_HELPER_DLL_IMPORT</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>OPENRAVE_CORE_LOCAL<sp/>OPENRAVE_HELPER_DLL_LOCAL</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="32" refid="openrave-core_8h_1a2aec1f303b146eb281a3fb71c043ac8b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>OPENRAVE_CORE_API</highlight></codeline>
+<codeline lineno="33" refid="openrave-core_8h_1a8ea7d942d29ca141c671e463d9bd9073" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>OPENRAVE_CORE_LOCAL</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenRAVE</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><ref refid="openrave-core_8h_1a2aec1f303b146eb281a3fb71c043ac8b" kindref="member">OPENRAVE_CORE_API</ref><sp/><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/><ref refid="namespaceOpenRAVE_1aec9c3dd6a1f2908a1eb84ca59243e00a" kindref="member">RaveCreateEnvironment</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><ref refid="openrave-core_8h_1a2aec1f303b146eb281a3fb71c043ac8b" kindref="member">OPENRAVE_CORE_API</ref><sp/><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/><ref refid="namespaceOpenRAVE_1ae3bd9d884ea7720a63d49b6212d13f42" kindref="member">CreateEnvironment</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bLoadAllPlugins=</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>OpenRAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/src/libopenrave-core/openrave-core.h"/>
+  </compounddef>
+</doxygen>

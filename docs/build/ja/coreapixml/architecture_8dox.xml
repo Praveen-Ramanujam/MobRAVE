@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="architecture_8dox" kind="file">
+    <compoundname>architecture.dox</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="architecture_8dox_1a4be64eab0b347f5993372a1a40e21901" prot="public" static="no" mutable="no">
+        <type>section arch_controller_working Working with Controllers Because any module can be setting a trajectory on the</type>
+        <definition>section arch_controller_working Working with Controllers Because any module can be setting a trajectory on the controller</definition>
+        <argsstring></argsstring>
+        <name>controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/docs/architecture.dox" line="588" bodyfile="/home/pra3cob/openrave/docs/architecture.dox" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="architecture_8dox_1a65cae5f1c02a83509f42ed29d55e9374" prot="public" static="no" mutable="no">
+        <type>section arch_controller_working Working with Controllers Because any module can be setting a trajectory on the it is good practice to assume the robot is always being actively servoed to some position Once the environment is</type>
+        <definition>section arch_controller_working Working with Controllers Because any module can be setting a trajectory on the it is good practice to assume the robot is always being actively servoed to some position Once the environment is unlocked</definition>
+        <argsstring></argsstring>
+        <name>unlocked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/docs/architecture.dox" line="589" bodyfile="/home/pra3cob/openrave/docs/architecture.dox" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="architecture_8dox_1ab86705200bca3627937cad06a4940d61" prot="public" static="no" mutable="no">
+        <type>section arch_controller_working Working with Controllers Because any module can be setting a trajectory on the it is good practice to assume the robot is always being actively servoed to some position Once the environment is the <ref refid="architecture_8dox_1a4be64eab0b347f5993372a1a40e21901" kindref="member">controller</ref> will overwrite the robot values with the real values</type>
+        <definition>section arch_controller_working Working with Controllers Because any module can be setting a trajectory on the it is good practice to assume the robot is always being actively servoed to some position Once the environment is the controller will overwrite the robot values with the real values Therefore</definition>
+        <argsstring></argsstring>
+        <name>Therefore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/docs/architecture.dox" line="590" bodyfile="/home/pra3cob/openrave/docs/architecture.dox" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="586"><highlight class="normal">\section<sp/>arch_controller_working<sp/>Working<sp/>with<sp/>Controllers</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"></highlight></codeline>
+<codeline lineno="588"><highlight class="normal">Because<sp/>any<sp/>module<sp/>can<sp/>be<sp/>setting<sp/>a<sp/>trajectory<sp/>on<sp/>the<sp/><ref refid="architecture_8dox_1a4be64eab0b347f5993372a1a40e21901" kindref="member">controller</ref>,<sp/>it<sp/>is<sp/>good<sp/>practice<sp/>to<sp/>assume<sp/>the</highlight></codeline>
+<codeline lineno="589"><highlight class="normal">robot<sp/>is<sp/>always<sp/>being<sp/>actively<sp/>servoed<sp/>to<sp/>some<sp/>position.<sp/>Once<sp/>the<sp/>environment<sp/>is<sp/><ref refid="architecture_8dox_1a65cae5f1c02a83509f42ed29d55e9374" kindref="member">unlocked</ref>,<sp/>the</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><ref refid="architecture_8dox_1a4be64eab0b347f5993372a1a40e21901" kindref="member">controller</ref><sp/>will<sp/>overwrite<sp/>the<sp/>robot<sp/>values<sp/>with<sp/>the<sp/>real<sp/>values.<sp/><ref refid="architecture_8dox_1ab86705200bca3627937cad06a4940d61" kindref="member">Therefore</ref>,<sp/>it<sp/>is<sp/>not<sp/>recommend<sp/>to</highlight></codeline>
+<codeline lineno="591"><highlight class="normal">assume<sp/>that<sp/>the<sp/>robot<sp/>values<sp/>stay<sp/>the<sp/>same<sp/>once<sp/>the<sp/>environment<sp/>is<sp/>re-locked.</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/docs/architecture.dox"/>
+  </compounddef>
+</doxygen>

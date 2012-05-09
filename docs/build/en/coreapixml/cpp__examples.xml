@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="cpp__examples" kind="page">
+    <compoundname>cpp_examples</compoundname>
+    <title>C++ Examples</title>
+    <detaileddescription>
+<sect1 id="cpp__examples_1cpp_examples_build">
+<title>Building</title>
+<para>All C++ examples are stored in <computeroutput>$OPENRAVE_INSTALL/share/openrave/cppexamples</computeroutput>. Use the <computeroutput>CMakeLists.txt</computeroutput> file to build the examples by: <verbatim>
+cd `openrave-config --prefix`/share/openrave/cppexamples
+mkdir build
+cd build
+cmake ..
+make
+</verbatim></para><sect2 id="cpp__examples_1Detecting">
+<title>OpenRAVE Installations</title>
+<para><itemizedlist>
+<listitem><para><ref refid="FindOpenRAVE.cmake-example" kindref="compound">FindOpenRAVE::cmake</ref> - include this in cmake projects for automatic detection of <ref refid="namespaceOpenRAVE" kindref="compound">OpenRAVE</ref>.</para></listitem></itemizedlist>
+</para></sect2>
+</sect1>
+<sect1 id="cpp__examples_1cpp_examples_plugins">
+<title>Examples Plugins</title>
+<para><itemizedlist>
+<listitem><para><ref refid="customreader.cpp-example" kindref="compound">customreader::cpp</ref></para></listitem><listitem><para><ref refid="plugincpp.cpp-example" kindref="compound">plugincpp::cpp</ref></para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="cpp__examples_1cpp_examples_programs">
+<title>Examples loading the OpenRAVE core:</title>
+<para><itemizedlist>
+<listitem><para><ref refid="ikfastloader.cpp-example" kindref="compound">ikfastloader::cpp</ref></para></listitem><listitem><para><ref refid="orcollision.cpp-example" kindref="compound">orcollision::cpp</ref></para></listitem><listitem><para><ref refid="orconveyormovement.cpp-example" kindref="compound">orconveyormovement::cpp</ref></para></listitem><listitem><para><ref refid="orikfilter.cpp-example" kindref="compound">orikfilter::cpp</ref></para></listitem><listitem><para><ref refid="orloadviewer.cpp-example" kindref="compound">orloadviewer::cpp</ref></para></listitem><listitem><para><ref refid="orshowsensors.cpp-example" kindref="compound">orshowsensors::cpp</ref></para></listitem><listitem><para><ref refid="ormulticontrol.cpp-example" kindref="compound">ormulticontrol::cpp</ref></para></listitem><listitem><para><ref refid="orplanning__ik.cpp-example" kindref="compound">orplanning_ik::cpp</ref></para></listitem><listitem><para><ref refid="orplanning__planner.cpp-example" kindref="compound">orplanning_planner::cpp</ref></para></listitem><listitem><para><ref refid="orplanning__module.cpp-example" kindref="compound">orplanning_module::cpp</ref></para></listitem><listitem><para><ref refid="orpythonbinding.cpp-example" kindref="compound">orpythonbinding::cpp</ref></para></listitem><listitem><para><ref refid="ortrajectory.cpp-example" kindref="compound">ortrajectory::cpp</ref></para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="cpp__examples_1cpp_examples_otherlib">
+<title>Linking with Other Libraries</title>
+<para><itemizedlist>
+<listitem><para><ref refid="opencvsaving.cpp-example" kindref="compound">opencvsaving::cpp</ref> </para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

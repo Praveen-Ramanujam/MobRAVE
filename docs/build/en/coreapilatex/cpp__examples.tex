@@ -1,0 +1,37 @@
+\hypertarget{cpp__examples_cpp_examples_build}{}\subsection{Building}\label{cpp__examples_cpp_examples_build}
+All C++ examples are stored in {\ttfamily \$OPENRAVE\_\-INSTALL/share/openrave/cppexamples}. Use the {\ttfamily CMakeLists.txt} file to build the examples by: \begin{DoxyVerb}
+cd `openrave-config --prefix`/share/openrave/cppexamples
+mkdir build
+cd build
+cmake ..
+make
+\end{DoxyVerb}
+\hypertarget{cpp__examples_Detecting}{}\subsubsection{OpenRAVE Installations}\label{cpp__examples_Detecting}
+
+\begin{DoxyItemize}
+\item \hyperlink{FindOpenRAVE.cmake-example}{FindOpenRAVE::cmake} -\/ include this in cmake projects for automatic detection of \hyperlink{namespaceOpenRAVE}{OpenRAVE}.
+\end{DoxyItemize}\hypertarget{cpp__examples_cpp_examples_plugins}{}\subsection{Examples Plugins}\label{cpp__examples_cpp_examples_plugins}
+
+\begin{DoxyItemize}
+\item \hyperlink{customreader.cpp-example}{customreader::cpp}
+\item \hyperlink{plugincpp.cpp-example}{plugincpp::cpp}
+\end{DoxyItemize}\hypertarget{cpp__examples_cpp_examples_programs}{}\subsection{Examples loading the OpenRAVE core:}\label{cpp__examples_cpp_examples_programs}
+
+\begin{DoxyItemize}
+\item \hyperlink{ikfastloader.cpp-example}{ikfastloader::cpp}
+\item \hyperlink{orcollision.cpp-example}{orcollision::cpp}
+\item \hyperlink{orconveyormovement.cpp-example}{orconveyormovement::cpp}
+\item \hyperlink{orikfilter.cpp-example}{orikfilter::cpp}
+\item \hyperlink{orloadviewer.cpp-example}{orloadviewer::cpp}
+\item \hyperlink{orshowsensors.cpp-example}{orshowsensors::cpp}
+\item \hyperlink{ormulticontrol.cpp-example}{ormulticontrol::cpp}
+\item \hyperlink{orplanning__ik.cpp-example}{orplanning\_\-ik::cpp}
+\item \hyperlink{orplanning__planner.cpp-example}{orplanning\_\-planner::cpp}
+\item \hyperlink{orplanning__module.cpp-example}{orplanning\_\-module::cpp}
+\item \hyperlink{orpythonbinding.cpp-example}{orpythonbinding::cpp}
+\item \hyperlink{ortrajectory.cpp-example}{ortrajectory::cpp}
+\end{DoxyItemize}\hypertarget{cpp__examples_cpp_examples_otherlib}{}\subsection{Linking with Other Libraries}\label{cpp__examples_cpp_examples_otherlib}
+
+\begin{DoxyItemize}
+\item \hyperlink{opencvsaving.cpp-example}{opencvsaving::cpp} 
+\end{DoxyItemize}

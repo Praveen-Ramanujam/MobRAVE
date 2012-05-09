@@ -1,0 +1,1163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1IkParameterization" kind="class" prot="public">
+    <compoundname>OpenRAVE::IkParameterization</compoundname>
+    <includes refid="openrave_8h" local="no">openrave.h</includes>
+      <sectiondef kind="user-defined">
+      <description><para><anchor id="_1amgrpd41d8cd98f00b204e9800998ecf8427e"/> </para></description>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a7526eb60609136e3393811ad4a28ca40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetTransform</definition>
+        <argsstring>(const Transform &amp;t) RAVE_DEPRECATED</argsstring>
+        <name>SetTransform</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000029"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/02/15) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1161" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1161" bodyend="1163"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a107e6a77c110e1b271d9f867926f6db0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetRotation</definition>
+        <argsstring>(const Vector &amp;quaternion) RAVE_DEPRECATED</argsstring>
+        <name>SetRotation</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>quaternion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1164" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1164" bodyend="1166"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1aeca10a7f04da8a3c6b426f803034bf41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetTranslation</definition>
+        <argsstring>(const Vector &amp;trans) RAVE_DEPRECATED</argsstring>
+        <name>SetTranslation</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1167" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1167" bodyend="1169"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ab1cc946ea19248e65b169a5edbe5fa63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetDirection</definition>
+        <argsstring>(const Vector &amp;dir) RAVE_DEPRECATED</argsstring>
+        <name>SetDirection</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1170" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1170" bodyend="1172"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a0b85989f63a9f64ba8c941544fafab7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetRay</definition>
+        <argsstring>(const RAY &amp;ray) RAVE_DEPRECATED</argsstring>
+        <name>SetRay</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound">RAY</ref> &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1173" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1173" bodyend="1175"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a5447454893a8a8331dca9e8837e4c9cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetLookat</definition>
+        <argsstring>(const Vector &amp;trans) RAVE_DEPRECATED</argsstring>
+        <name>SetLookat</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1176" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1176" bodyend="1178"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1af76a0a3232c7a4c61ffc5170f97d18ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetTranslationDirection</definition>
+        <argsstring>(const RAY &amp;ray) RAVE_DEPRECATED</argsstring>
+        <name>SetTranslationDirection</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound">RAY</ref> &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1179" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1179" bodyend="1181"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a09552506726523be1387a844c376c5bb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+        <definition>const Transform&amp; GetTransform</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1182" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1182" bodyend="1184"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a7e18da6eab083580388d28aefba2fe7a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetRotation</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1185" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1185" bodyend="1187"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a6c5f9ddebada439823175de9b2515acf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetTranslation</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetTranslation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1188" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1188" bodyend="1190"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a6fb6e3d1335826739d60d48f96a1319e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetDirection</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1191" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1191" bodyend="1193"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1af9cf79180036602f638d20ed15ac7e73" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetLookat</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetLookat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1194" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1194" bodyend="1196"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ae8329dfb8b49dbbfebcc6dbf09995bef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound">RAY</ref></type>
+        <definition>const RAY GetRay</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetRay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1197" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1197" bodyend="1199"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a87a32022021e7acf7e869ae34616337d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound">RAY</ref></type>
+        <definition>const RAY GetTranslationDirection</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetTranslationDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1200" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1200" bodyend="1202"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classOpenRAVE_1_1IkParameterization_1a63fa0d3744e7eebf98b264ad1242bfad" prot="public" static="no">
+        <type><ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type</type>
+        <definition>typedef IkParameterizationType Type RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000028"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/12) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1030" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1030" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1a423b412c885cbc945c9beaee8b675fe1" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_None</type>
+        <definition>const IkParameterizationType Type_None RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> IKP_None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1031" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1031" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1a13f2915ccabdf10aa470c49669f5a10a" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_Transform6D</type>
+        <definition>const IkParameterizationType Type_Transform6D RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> IKP_Transform6D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1032" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1032" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1ae720bdcb0182a7fcd33c120ae1780147" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_Rotation3D</type>
+        <definition>const IkParameterizationType Type_Rotation3D RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer>IKP_Rotation3D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1033" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1033" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1a971098d5b971c3d6fab450628e22b44b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_Translation3D</type>
+        <definition>const IkParameterizationType Type_Translation3D RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer>IKP_Translation3D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1034" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1034" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1a6700d28e218494d0bf6b4c5507eef3df" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_Direction3D</type>
+        <definition>const IkParameterizationType Type_Direction3D RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> IKP_Direction3D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1035" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1035" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1a8c6fcc6a08bf812e7a037bbf316ac9f5" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_Ray4D</type>
+        <definition>const IkParameterizationType Type_Ray4D RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> IKP_Ray4D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1036" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1036" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1a2ccda1f777b2ab6c02a39f90a457766b" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_Lookat3D</type>
+        <definition>const IkParameterizationType Type_Lookat3D RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> IKP_Lookat3D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1037" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1037" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1a2b5ac87271423be465a724af21fd8ebd" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_TranslationDirection5D</type>
+        <definition>const IkParameterizationType Type_TranslationDirection5D RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> IKP_TranslationDirection5D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1038" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1038" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1ac08cf9908c13faf1a9afa6017daea3cb" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_TranslationXY2D</type>
+        <definition>const IkParameterizationType Type_TranslationXY2D RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> IKP_TranslationXY2D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1039" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1039" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1a4aedbee16779212b3cd9fa2a00c292a5" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_TranslationXYOrientation3D</type>
+        <definition>const IkParameterizationType Type_TranslationXYOrientation3D RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> IKP_TranslationXYOrientation3D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1040" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1040" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1adee344290f7d19ab4c9b1f357ead87d4" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_TranslationLocalGlobal6D</type>
+        <definition>const IkParameterizationType Type_TranslationLocalGlobal6D RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> IKP_TranslationLocalGlobal6D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1041" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1af84cc5373e059d642e04eff4880e9c4e" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref> Type_NumberOfParameterizations</type>
+        <definition>const IkParameterizationType Type_NumberOfParameterizations RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> IKP_NumberOfParameterizations</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1042" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1042" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1a81044c60007505a03a8cb8c6e9754fa3" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform _transform</definition>
+        <argsstring></argsstring>
+        <name>_transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1439" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkParameterization_1a157d1d383fc3c763780da24d52bb5870" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref></type>
+        <definition>IkParameterizationType _type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1440" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1440" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a329ed7d01e46778b70d9c709e3318a52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IkParameterization</definition>
+        <argsstring>()</argsstring>
+        <name>IkParameterization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1044" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1044" bodyend="1045"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ab994a253edd28a41888587bd321cbc57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IkParameterization</definition>
+        <argsstring>(const Transform &amp;t)</argsstring>
+        <name>IkParameterization</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>sets a 6D transform parameterization </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1047" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1047" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a64665dcd48df2d9d27a121e9f850afa9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IkParameterization</definition>
+        <argsstring>(const RAY &amp;r)</argsstring>
+        <name>IkParameterization</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound">RAY</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>sets a ray parameterization </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1051" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1051" bodyend="1053"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a94da438fe0e35f8c244d753cc815594c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IkParameterization</definition>
+        <argsstring>(const Transform &amp;t, IkParameterizationType type)</argsstring>
+        <name>IkParameterization</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>set a custom parameterization using a transform as the source of the data. Not all types are supported with this method. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1055" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1055" bodyend="1065"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ad45c935f79db7a84f920ac78cb14c8d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref></type>
+        <definition>IkParameterizationType GetType</definition>
+        <argsstring>() const </argsstring>
+        <name>GetType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1067" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1067" bodyend="1069"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a69b3595c7be61cf3144332c58267f0b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; GetName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1070" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1820" bodyend="1827"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ac938a6c271285a5468b805a3243e20e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetDOF</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDOF</name>
+        <briefdescription>
+<para>Returns the minimum degree of freedoms required for the IK type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1077" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1077" bodyend="1079"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ac914934393fca4ffa7cc103ac9068ece" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetNumberOfValues</definition>
+        <argsstring>() const </argsstring>
+        <name>GetNumberOfValues</name>
+        <briefdescription>
+<para>Returns the number of values used to represent the parameterization ( &gt;= dof ). The number of values serialized is this number plus 1 for the iktype. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1086" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1086" bodyend="1088"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a0ec3118069977eebb68a61f5966146f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetTransform6D</definition>
+        <argsstring>(const Transform &amp;t)</argsstring>
+        <name>SetTransform6D</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1090" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1090" bodyend="1092"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a03781ddd35d63d859a387d28db2bedf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetRotation3D</definition>
+        <argsstring>(const Vector &amp;quaternion)</argsstring>
+        <name>SetRotation3D</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>quaternion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1093" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1093" bodyend="1095"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a25ddbe2fc5db5250b54d9f9d1169f21b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetTranslation3D</definition>
+        <argsstring>(const Vector &amp;trans)</argsstring>
+        <name>SetTranslation3D</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1096" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1096" bodyend="1098"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a7ac4fa8318df772b477ef589164b721a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetDirection3D</definition>
+        <argsstring>(const Vector &amp;dir)</argsstring>
+        <name>SetDirection3D</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1099" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1099" bodyend="1101"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ad12e02bd808ccbac29bc7572c44e103e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetRay4D</definition>
+        <argsstring>(const RAY &amp;ray)</argsstring>
+        <name>SetRay4D</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound">RAY</ref> &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1102" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1102" bodyend="1104"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a093c25024d128db072a0d6a60b85812c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetLookat3D</definition>
+        <argsstring>(const Vector &amp;trans)</argsstring>
+        <name>SetLookat3D</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1105" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1105" bodyend="1107"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a935c8c5f94115fb874a0bb425515344e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetLookat3D</definition>
+        <argsstring>(const RAY &amp;ray)</argsstring>
+        <name>SetLookat3D</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound">RAY</ref> &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <briefdescription>
+<para>the ray direction is not used for IK, however it is needed in order to compute the error </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1109" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1109" bodyend="1111"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a71b9c930c10b762432346b00ab5ec9c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetTranslationDirection5D</definition>
+        <argsstring>(const RAY &amp;ray)</argsstring>
+        <name>SetTranslationDirection5D</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound">RAY</ref> &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1112" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1112" bodyend="1114"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a09ba343487264fd8b56a6db983f1f601" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetTranslationXY2D</definition>
+        <argsstring>(const Vector &amp;trans)</argsstring>
+        <name>SetTranslationXY2D</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1115" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1115" bodyend="1117"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a267a51621bbf2dc920fa2c5b3b345c53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetTranslationXYOrientation3D</definition>
+        <argsstring>(const Vector &amp;trans)</argsstring>
+        <name>SetTranslationXYOrientation3D</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1118" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1118" bodyend="1120"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ae6dc1416509fd7044c5c8444cb94b7d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetTranslationLocalGlobal6D</definition>
+        <argsstring>(const Vector &amp;localtrans, const Vector &amp;trans)</argsstring>
+        <name>SetTranslationLocalGlobal6D</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>localtrans</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1121" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1121" bodyend="1123"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1aaeeb892fc06951b35559a535c379729d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+        <definition>const Transform&amp; GetTransform6D</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTransform6D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1125" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1125" bodyend="1127"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1aeb96b077bcd4d37b46a3b07467a020c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetRotation3D</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRotation3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1128" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1128" bodyend="1130"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ad500888055d46211491d6c1ca86260fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetTranslation3D</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTranslation3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1131" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1131" bodyend="1133"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a59a61d5e202e10fe4dfe61aa8c0a6aac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetDirection3D</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDirection3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1134" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1134" bodyend="1136"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a84f91a79fcdfc891d616c99cdd136529" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound">RAY</ref></type>
+        <definition>const RAY GetRay4D</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRay4D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1137" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1137" bodyend="1139"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a385b47df91447b80429d4d85526d292f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetLookat3D</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLookat3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1140" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1140" bodyend="1142"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a5e1c7898ce63662267d2d15a135a3b40" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetLookat3DDirection</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLookat3DDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1143" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1143" bodyend="1145"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ac74ff1ac2cbc55b259d2e2cd564b9139" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound">RAY</ref></type>
+        <definition>const RAY GetTranslationDirection5D</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTranslationDirection5D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1146" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1146" bodyend="1148"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a2806e15bd61ecdbd9aadfb0a58c9d52e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetTranslationXY2D</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTranslationXY2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1149" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1149" bodyend="1151"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ae04de3d274c7d9006c5b145ee5c19015" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetTranslationXYOrientation3D</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTranslationXYOrientation3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1152" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1152" bodyend="1154"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a8ce7e26e09a9ee89f3180038d96dd352" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>, <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt;</type>
+        <definition>std::pair&lt;Vector,Vector&gt; GetTranslationLocalGlobal6D</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTranslationLocalGlobal6D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1155" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1155" bodyend="1157"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a4bfb30431b8a3d0e0b3e138ad1e826c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal ComputeDistanceSqr</definition>
+        <argsstring>(const IkParameterization &amp;ikparam) const </argsstring>
+        <name>ComputeDistanceSqr</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>ikparam</declname>
+        </param>
+        <briefdescription>
+<para>Computes the distance squared between two IK parmaeterizations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1208" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1207" bodyend="1277"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1ab349673fdd07cae6247793bb3961f7e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetValues</definition>
+        <argsstring>(std::vector&lt; dReal &gt;::iterator itvalues) const </argsstring>
+        <name>GetValues</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::iterator</type>
+          <declname>itvalues</declname>
+        </param>
+        <briefdescription>
+<para>fills the iterator with the serialized values of the ikparameterization. </para>        </briefdescription>
+        <detaileddescription>
+<para>the container the iterator points to needs to have <ref refid="classOpenRAVE_1_1IkParameterization_1aba838fc410e5033a481e33d594ac72bd" kindref="member">GetNumberOfValues()</ref> available. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1283" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1282" bodyend="1351"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a42cd2297d86211c05de797d6b47076a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Set</definition>
+        <argsstring>(std::vector&lt; dReal &gt;::const_iterator itvalues, IkParameterizationType iktype)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::const_iterator</type>
+          <declname>itvalues</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref></type>
+          <declname>iktype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1354" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1353" bodyend="1430"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a4bd290d9263727845b76174c40ff070c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref></type>
+        <definition>ConfigurationSpecification GetConfigurationSpecification</definition>
+        <argsstring>() const </argsstring>
+        <name>GetConfigurationSpecification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1434" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1433" bodyend="1436"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a14e61929c0affee6b5ebd14889aff297" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int GetDOF</definition>
+        <argsstring>(IkParameterizationType type)</argsstring>
+        <name>GetDOF</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Returns the minimum degree of freedoms required for the IK type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1073" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1073" bodyend="1075"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1aba838fc410e5033a481e33d594ac72bd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int GetNumberOfValues</definition>
+        <argsstring>(IkParameterizationType type)</argsstring>
+        <name>GetNumberOfValues</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Returns the number of values used to represent the parameterization ( &gt;= dof ). The number of values serialized is this number plus 1 for the iktype. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1082" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1082" bodyend="1084"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkParameterization_1a2fcf986571f272008b879fba7d49e208" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref></type>
+        <definition>ConfigurationSpecification GetConfigurationSpecification</definition>
+        <argsstring>(IkParameterizationType iktype)</argsstring>
+        <name>GetConfigurationSpecification</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref></type>
+          <declname>iktype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1432" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="819" bodyend="828"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1IkParameterization_1a227bac3df3f2cff449721ce47abd5e14" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref></type>
+        <definition>IkParameterization operator*</definition>
+        <argsstring>(const Transform &amp;t, const IkParameterization &amp;ikparam)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>ikparam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1442" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1447" bodyend="1490"/>
+      </memberdef>
+      <memberdef kind="friend" id="classOpenRAVE_1_1IkParameterization_1a4f4cb8291adf0107bfe9f370bc3241c8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend OPENRAVE_API std::ostream &amp;</type>
+        <definition>OPENRAVE_API std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;O, const IkParameterization &amp;ikparam)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>ikparam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1443" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="830" bodyend="881"/>
+      </memberdef>
+      <memberdef kind="friend" id="classOpenRAVE_1_1IkParameterization_1a3cdbdc16e6c7f18ba5244bc57b9c29e5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend OPENRAVE_API std::istream &amp;</type>
+        <definition>OPENRAVE_API std::istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;I, IkParameterization &amp;ikparam)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>I</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>ikparam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1444" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="883" bodyend="903"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parameterization of basic primitives for querying inverse-kinematics solutions. </para>    </briefdescription>
+    <detaileddescription>
+<para>Holds the parameterization of a geometric primitive useful for autonomous manipulation scenarios like: 6D pose, 3D translation, 3D rotation, 3D look at direction, and ray look at direction. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1206">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1205">
+        <label>IkParameterization</label>
+        <link refid="classOpenRAVE_1_1IkParameterization"/>
+        <childnode refid="1206" relation="usage">
+          <edgelabel>_transform</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1027" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1026" bodyend="1445"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a81044c60007505a03a8cb8c6e9754fa3" prot="protected" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>_transform</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a157d1d383fc3c763780da24d52bb5870" prot="protected" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>_type</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a4bfb30431b8a3d0e0b3e138ad1e826c8" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>ComputeDistanceSqr</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a2fcf986571f272008b879fba7d49e208" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetConfigurationSpecification</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a4bd290d9263727845b76174c40ff070c" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetConfigurationSpecification</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a6fb6e3d1335826739d60d48f96a1319e" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetDirection</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a59a61d5e202e10fe4dfe61aa8c0a6aac" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetDirection3D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a14e61929c0affee6b5ebd14889aff297" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetDOF</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ac938a6c271285a5468b805a3243e20e6" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetDOF</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1af9cf79180036602f638d20ed15ac7e73" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetLookat</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a385b47df91447b80429d4d85526d292f" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetLookat3D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a5e1c7898ce63662267d2d15a135a3b40" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetLookat3DDirection</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a69b3595c7be61cf3144332c58267f0b8" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetName</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1aba838fc410e5033a481e33d594ac72bd" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetNumberOfValues</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ac914934393fca4ffa7cc103ac9068ece" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetNumberOfValues</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ae8329dfb8b49dbbfebcc6dbf09995bef" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetRay</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a84f91a79fcdfc891d616c99cdd136529" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetRay4D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a7e18da6eab083580388d28aefba2fe7a" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetRotation</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1aeb96b077bcd4d37b46a3b07467a020c3" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetRotation3D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a09552506726523be1387a844c376c5bb" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetTransform</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1aaeeb892fc06951b35559a535c379729d" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetTransform6D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a6c5f9ddebada439823175de9b2515acf" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetTranslation</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ad500888055d46211491d6c1ca86260fe" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetTranslation3D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a87a32022021e7acf7e869ae34616337d" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetTranslationDirection</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ac74ff1ac2cbc55b259d2e2cd564b9139" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetTranslationDirection5D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a8ce7e26e09a9ee89f3180038d96dd352" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetTranslationLocalGlobal6D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a2806e15bd61ecdbd9aadfb0a58c9d52e" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetTranslationXY2D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ae04de3d274c7d9006c5b145ee5c19015" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetTranslationXYOrientation3D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ad45c935f79db7a84f920ac78cb14c8d2" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ab349673fdd07cae6247793bb3961f7e4" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>GetValues</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a329ed7d01e46778b70d9c709e3318a52" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>IkParameterization</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ab994a253edd28a41888587bd321cbc57" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>IkParameterization</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a64665dcd48df2d9d27a121e9f850afa9" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>IkParameterization</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a94da438fe0e35f8c244d753cc815594c" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>IkParameterization</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a227bac3df3f2cff449721ce47abd5e14" prot="protected" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>operator*</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a4f4cb8291adf0107bfe9f370bc3241c8" prot="protected" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a3cdbdc16e6c7f18ba5244bc57b9c29e5" prot="protected" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a63fa0d3744e7eebf98b264ad1242bfad" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a423b412c885cbc945c9beaee8b675fe1" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a13f2915ccabdf10aa470c49669f5a10a" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ae720bdcb0182a7fcd33c120ae1780147" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a971098d5b971c3d6fab450628e22b44b" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a6700d28e218494d0bf6b4c5507eef3df" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a8c6fcc6a08bf812e7a037bbf316ac9f5" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a2ccda1f777b2ab6c02a39f90a457766b" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a2b5ac87271423be465a724af21fd8ebd" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ac08cf9908c13faf1a9afa6017daea3cb" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a4aedbee16779212b3cd9fa2a00c292a5" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1adee344290f7d19ab4c9b1f357ead87d4" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1af84cc5373e059d642e04eff4880e9c4e" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a42cd2297d86211c05de797d6b47076a3" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>Set</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ab1cc946ea19248e65b169a5edbe5fa63" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetDirection</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a7ac4fa8318df772b477ef589164b721a" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetDirection3D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a5447454893a8a8331dca9e8837e4c9cd" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetLookat</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a093c25024d128db072a0d6a60b85812c" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetLookat3D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a935c8c5f94115fb874a0bb425515344e" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetLookat3D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a0b85989f63a9f64ba8c941544fafab7e" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetRay</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ad12e02bd808ccbac29bc7572c44e103e" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetRay4D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a107e6a77c110e1b271d9f867926f6db0" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetRotation</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a03781ddd35d63d859a387d28db2bedf9" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetRotation3D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a7526eb60609136e3393811ad4a28ca40" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetTransform</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a0ec3118069977eebb68a61f5966146f2" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetTransform6D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1aeca10a7f04da8a3c6b426f803034bf41" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetTranslation</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a25ddbe2fc5db5250b54d9f9d1169f21b" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetTranslation3D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1af76a0a3232c7a4c61ffc5170f97d18ee" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetTranslationDirection</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a71b9c930c10b762432346b00ab5ec9c1" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetTranslationDirection5D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1ae6dc1416509fd7044c5c8444cb94b7d0" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetTranslationLocalGlobal6D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a09ba343487264fd8b56a6db983f1f601" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetTranslationXY2D</name></member>
+      <member refid="classOpenRAVE_1_1IkParameterization_1a267a51621bbf2dc920fa2c5b3b345c53" prot="public" virt="non-virtual"><scope>OpenRAVE::IkParameterization</scope><name>SetTranslationXYOrientation3D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

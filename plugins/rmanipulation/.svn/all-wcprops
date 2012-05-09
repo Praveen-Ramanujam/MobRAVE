@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rmanipulation
+END
+commonmanipulation.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rmanipulation/commonmanipulation.h
+END
+rmanipulation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rmanipulation/rmanipulation.cpp
+END
+taskmanipulation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rmanipulation/taskmanipulation.cpp
+END
+plugindefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rmanipulation/plugindefs.h
+END
+plannerparameters.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rmanipulation/plannerparameters.h
+END
+visualfeedback.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rmanipulation/visualfeedback.cpp
+END
+basemanipulation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rmanipulation/basemanipulation.cpp
+END
+taskcaging.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rmanipulation/taskcaging.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rmanipulation/CMakeLists.txt
+END

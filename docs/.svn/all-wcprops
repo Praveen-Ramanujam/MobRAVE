@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs
+END
+xml2rst.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/xml2rst.xsl
+END
+build_doxygen.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/build_doxygen.py
+END
+Doxyfile.en
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/Doxyfile.en
+END
+update_sphinx.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/update_sphinx.sh
+END
+svn-version-filter.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/svn-version-filter.sh
+END
+Doxyfile.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/Doxyfile.html
+END
+build_interfaces.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/build_interfaces.py
+END
+build_openravepy_internal.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/build_openravepy_internal.py
+END
+doxygen-tabs.css
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/doxygen-tabs.css
+END
+sendtoserver.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/sendtoserver.sh
+END
+build_images.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/build_images.sh
+END
+build_ikdatabase.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/build_ikdatabase.py
+END
+Doxyfile.latex
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/Doxyfile.latex
+END
+install.dox
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/install.dox
+END
+build_sphinx.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/build_sphinx.sh
+END
+xml2rst.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/xml2rst.py
+END
+doxygen.css
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/doxygen.css
+END
+doxygen-header.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/doxygen-header.html
+END
+build.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/build.sh
+END
+mainpage.dox
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/mainpage.dox
+END
+architecture.dox
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/architecture.dox
+END
+conf.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/conf.py
+END
+Doxyfile.ja
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/Doxyfile.ja
+END
+xml2rst.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/xml2rst.html
+END

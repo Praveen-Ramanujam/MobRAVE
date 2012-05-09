@@ -1,0 +1,98 @@
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData}{
+\subsection{ActuatorSensorData Class Reference}
+\label{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData}\index{OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}}
+}
+
+
+An actuator for modeling motors and other mechanisms that produce torque/force. The actuator has only one degree of freedom.  
+
+
+
+
+Inheritance diagram for ActuatorSensorData:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ActuatorSensorData:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3c}{ActuatorState} \{ \par
+\hyperlink{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca9db5ef562213f8bec88be67e1e2d7d10}{AS\_\-Undefined} = 0, 
+\hyperlink{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca94f00fffd972fc0bc603b3ea47101254}{AS\_\-Idle} = 1, 
+\hyperlink{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca32ea9206752f7b87d3bd9fbd85cb08f3}{AS\_\-Moving} = 2, 
+\hyperlink{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3cad320e5c2ae66e3c49f5a1771a29effd6}{AS\_\-Stalled} = 3, 
+\par
+\hyperlink{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca083b3c14ce5e0fc3cc25f3f9f284c319}{AS\_\-Braked} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em the state of the actuator \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_a63e8fdafcf41e40ff6d9d7289bd1c305}{
+dReal \hyperlink{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_a63e8fdafcf41e40ff6d9d7289bd1c305}{measuredcurrent}}
+\label{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_a63e8fdafcf41e40ff6d9d7289bd1c305}
+
+\begin{DoxyCompactList}\small\item\em measured current from the actuator \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_a02579f8c545c868b31b89bf00c194f53}{
+dReal \hyperlink{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_a02579f8c545c868b31b89bf00c194f53}{measuredtemperature}}
+\label{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_a02579f8c545c868b31b89bf00c194f53}
+
+\begin{DoxyCompactList}\small\item\em measured temperature from the actuator \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_ad9a9a10b35c10cc05a1a5acd2bb7882b}{
+dReal \hyperlink{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_ad9a9a10b35c10cc05a1a5acd2bb7882b}{appliedcurrent}}
+\label{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_ad9a9a10b35c10cc05a1a5acd2bb7882b}
+
+\begin{DoxyCompactList}\small\item\em current sent to the actuator \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+An actuator for modeling motors and other mechanisms that produce torque/force. The actuator has only one degree of freedom. 
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3c}{
+\index{OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}!ActuatorState@{ActuatorState}}
+\index{ActuatorState@{ActuatorState}!OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}}
+\paragraph[{ActuatorState}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ActuatorState}}\hfill}
+\label{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3c}
+
+
+the state of the actuator 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{AS\_\-Undefined@{AS\_\-Undefined}!OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}}\index{OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}!AS\_\-Undefined@{AS\_\-Undefined}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca9db5ef562213f8bec88be67e1e2d7d10}{
+AS\_\-Undefined}
+\label{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca9db5ef562213f8bec88be67e1e2d7d10}
+}]returned when no state is defined \index{AS\_\-Idle@{AS\_\-Idle}!OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}}\index{OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}!AS\_\-Idle@{AS\_\-Idle}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca94f00fffd972fc0bc603b3ea47101254}{
+AS\_\-Idle}
+\label{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca94f00fffd972fc0bc603b3ea47101254}
+}]this actuator is idle \index{AS\_\-Moving@{AS\_\-Moving}!OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}}\index{OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}!AS\_\-Moving@{AS\_\-Moving}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca32ea9206752f7b87d3bd9fbd85cb08f3}{
+AS\_\-Moving}
+\label{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca32ea9206752f7b87d3bd9fbd85cb08f3}
+}]this actuator is in motion from previous commands \index{AS\_\-Stalled@{AS\_\-Stalled}!OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}}\index{OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}!AS\_\-Stalled@{AS\_\-Stalled}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3cad320e5c2ae66e3c49f5a1771a29effd6}{
+AS\_\-Stalled}
+\label{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3cad320e5c2ae66e3c49f5a1771a29effd6}
+}]the actuator is stalled, needs to be unstalled by sending a ready signal \index{AS\_\-Braked@{AS\_\-Braked}!OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}}\index{OpenRAVE::SensorBase::ActuatorSensorData@{OpenRAVE::SensorBase::ActuatorSensorData}!AS\_\-Braked@{AS\_\-Braked}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca083b3c14ce5e0fc3cc25f3f9f284c319}{
+AS\_\-Braked}
+\label{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_aff7db6eb3c126e9c2c2c116ed181fa3ca083b3c14ce5e0fc3cc25f3f9f284c319}
+}]the actuator is braked \end{description}
+\end{Desc}
+

@@ -1,0 +1,975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: クラス ConfigurationSpecification 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス ConfigurationSpecification</h1><!-- doxytag: class="OpenRAVE::ConfigurationSpecification" -->
+<p>A configuration specification references values in the environment that then define a configuration-space which can be searched for.  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="openrave_8h_source.html">openrave.h</a>&gt;</code></p>
+<div class="dynheader">
+ConfigurationSpecificationのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1ConfigurationSpecification__coll__graph.png" border="0" usemap="#ConfigurationSpecification_coll__map" alt="Collaboration graph"/></div>
+<map name="ConfigurationSpecification_coll__map" id="ConfigurationSpecification_coll__map">
+<area shape="rect" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html" title="A group referencing the values of one body in the environment." alt="" coords="63,200,119,229"/><area shape="rect" title="STL class." alt="" coords="64,85,117,115"/><area shape="rect" title="STL class." alt="" coords="21,5,160,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="classOpenRAVE_1_1ConfigurationSpecification-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>構成</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A group referencing the values of one body in the environment.  <a href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Reader.html">Reader</a></td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a2604e7d09eac46b2cd1aa71bde874c96">~ConfigurationSpecification</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ac938a6c271285a5468b805a3243e20e6">GetDOF</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return the dimension of the configuraiton space (degrees of freedom)  <a href="#ac938a6c271285a5468b805a3243e20e6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#afa8720abaf6972d6dac22a8cd1a67225">IsValid</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">check if the groups form a continguous space  <a href="#afa8720abaf6972d6dac22a8cd1a67225"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a960ebd93cb8c58ceab0eb48b047faa98">operator==</a> (const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;r) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ab88bf03e1e56cb6f0ed1d48bb3ea60c0">operator!=</a> (const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;r) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a> &gt;<br class="typebreak"/>
+::const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a00dca7273ad0d271e131ecc1119683c2">FindCompatibleGroup</a> (const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a> &amp;g, bool exactmatch=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">finds the most compatible group to the given group  <a href="#a00dca7273ad0d271e131ecc1119683c2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a> &gt;<br class="typebreak"/>
+::const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a87b31e59fa16769e474a12ba0a9f8e08">FindTimeDerivativeGroup</a> (const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a> &amp;g, bool exactmatch=false) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the most compatible group that represents the time-derivative data of the group.  <a href="#a87b31e59fa16769e474a12ba0a9f8e08"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a09106b9e4924dea94502089f75b20d89">AddVelocityGroups</a> (bool adddeltatime)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">adds a velocity group for every position group.  <a href="#a09106b9e4924dea94502089f75b20d89"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a6be51f9b2c8e8199ad72e978b6e6c4da">ConvertToVelocitySpecification</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">converts all the groups to the corresponding velocity groups and returns the specification  <a href="#a6be51f9b2c8e8199ad72e978b6e6c4da"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a047529d130cdde5c5fb9e17798a97a6c">GetTimeDerivativeSpecification</a> (int timederivative) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns a new specification of just particular time-derivative groups.  <a href="#a047529d130cdde5c5fb9e17798a97a6c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a54f613faeb77f06c9942d09833274962">ResetGroupOffsets</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">set the offsets of each group in order to get a contiguous configuration space  <a href="#a54f613faeb77f06c9942d09833274962"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a5624a2dfc350dfe608dc26d86b7e7c08">AddDeltaTime</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">adds the deltatime tag to the end if one doesn't exist and returns the index into the configuration space  <a href="#a5624a2dfc350dfe608dc26d86b7e7c08"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#abe95cfefe50156e8f37edca80cb87154">ExtractTransform</a> (<a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;t, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator itdata, <a class="el" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">extracts an affine transform given the start of a configuration space point  <a href="#abe95cfefe50156e8f37edca80cb87154"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a74cb255b5496f80fa38cbde4cfb853e4">ExtractIkParameterization</a> (<a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;ikparam, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator itdata, int timederivative=0) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">extracts an ikparameterization given the start of a configuration space point  <a href="#a74cb255b5496f80fa38cbde4cfb853e4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ac58749acb6422259c079fdb0b62a6d59">ExtractAffineValues</a> (std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator itvalues, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator itdata, <a class="el" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody, int affinedofs, int timederivative=0) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">extracts the affine values  <a href="#ac58749acb6422259c079fdb0b62a6d59"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a982a9ba9c94e0c983df1824b2464ddef">ExtractJointValues</a> (std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator itvalues, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator itdata, <a class="el" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody, const std::vector&lt; int &gt; &amp;indices, int timederivative=0) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">extracts a body's joint values given the start of a configuration space point  <a href="#a982a9ba9c94e0c983df1824b2464ddef"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ad8c580ee81ec1c23acc74af42a5422de">ExtractDeltaTime</a> (<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &amp;deltatime, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator itdata) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">extracts the delta time from the configuration if one exists  <a href="#ad8c580ee81ec1c23acc74af42a5422de"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ab4da99dc9ebd9975a68a3d87abb1f236">InsertJointValues</a> (std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator itdata, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator itvalues, <a class="el" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody, const std::vector&lt; int &gt; &amp;indices, int timederivative=0) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">inserts a set of joint values into a configuration space point  <a href="#ab4da99dc9ebd9975a68a3d87abb1f236"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#ab65b63518528950d146752020602107d">InsertDeltaTime</a> (std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator itdata, <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> deltatime)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets the deltatime field of the data if one exists  <a href="#ab65b63518528950d146752020602107d"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a42b91113c92f1a813682f355d51b43df">ConvertGroupData</a> (std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator ittargetdata, size_t targetstride, const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a> &amp;gtarget, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator itsourcedata, size_t sourcestride, const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a> &amp;gsource, size_t numpoints, <a class="el" href="namespaceOpenRAVE.html#aae90d424b7f3d69b2f382c5e30d1ae57">EnvironmentBaseConstPtr</a> penv)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">given two compatible groups, convers data represented in the source group to data represented in the target group  <a href="#a42b91113c92f1a813682f355d51b43df"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a10788f496736608c276546db6127792a">ConvertData</a> (std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator ittargetdata, const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;targetspec, std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator itsourcedata, const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;sourcespec, size_t numpoints, <a class="el" href="namespaceOpenRAVE.html#aae90d424b7f3d69b2f382c5e30d1ae57">EnvironmentBaseConstPtr</a> penv, bool filluninitialized=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts from one specification to another.  <a href="#a10788f496736608c276546db6127792a"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Public 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a63d9b7e5c662b5da5584f0d927368812">_vgroups</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>A configuration specification references values in the environment that then define a configuration-space which can be searched for. </p>
+<p>It is composed of several groups targetting values for individual bodies. It is serialized into XML. The XML syntax is as follows:</p>
+<div class="fragment"><pre class="fragment">   &lt;configuration&gt;
+     &lt;group name=<span class="stringliteral">&quot;string&quot;</span> offset=<span class="stringliteral">&quot;#OFF1&quot;</span> dof=<span class="stringliteral">&quot;#D1&quot;</span> interpolation=<span class="stringliteral">&quot;string&quot;</span>/&gt;
+     &lt;group name=<span class="stringliteral">&quot;string&quot;</span> offset=<span class="stringliteral">&quot;#OFF2&quot;</span> dof=<span class="stringliteral">&quot;#D2&quot;</span> interpolation=<span class="stringliteral">&quot;string&quot;</span>/&gt;
+   &lt;/configuration&gt;
+</pre></div> <dl><dt><b>例: </b></dt><dd>
+<p><a class="el" href="ormulticontrol_8cpp-example.html#_a18">ormulticontrol.cpp</a>.</p>
+</dd>
+</dl>
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00810">810</a> 行で定義されています。</p>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a2604e7d09eac46b2cd1aa71bde874c96"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::~ConfigurationSpecification" ref="a2604e7d09eac46b2cd1aa71bde874c96" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00872">872</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a5624a2dfc350dfe608dc26d86b7e7c08"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::AddDeltaTime" ref="a5624a2dfc350dfe608dc26d86b7e7c08" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AddDeltaTime </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>adds the deltatime tag to the end if one doesn't exist and returns the index into the configuration space </p>
+<dl><dt><b>例: </b></dt><dd><a class="el" href="ormulticontrol_8cpp-example.html#a19">ormulticontrol.cpp</a>.</dd>
+</dl>
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01376">1376</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a09106b9e4924dea94502089f75b20d89"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::AddVelocityGroups" ref="a09106b9e4924dea94502089f75b20d89" args="(bool adddeltatime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AddVelocityGroups </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>adddeltatime</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>adds a velocity group for every position group. </p>
+<p>If velocities groups already exist, they are checked for and/or modified. Note that the configuration space might be re-ordered as a result of this function call. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>adddeltatime</em>&nbsp;</td><td>If true will add the 'deltatime' tag, which is necessary for trajectory sampling </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01248">1248</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a10788f496736608c276546db6127792a"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::ConvertData" ref="a10788f496736608c276546db6127792a" args="(std::vector&lt; dReal &gt;::iterator ittargetdata, const ConfigurationSpecification &amp;targetspec, std::vector&lt; dReal &gt;::const_iterator itsourcedata, const ConfigurationSpecification &amp;sourcespec, size_t numpoints, EnvironmentBaseConstPtr penv, bool filluninitialized=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConvertData </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator&nbsp;</td>
+          <td class="paramname"> <em>ittargetdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>targetspec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator&nbsp;</td>
+          <td class="paramname"> <em>itsourcedata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>sourcespec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>numpoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#aae90d424b7f3d69b2f382c5e30d1ae57">EnvironmentBaseConstPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>penv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>filluninitialized</em> = <code>true</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Converts from one specification to another. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ittargetdata</em>&nbsp;</td><td>iterator pointing to start of target group data that should be overwritten </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>targetspec</em>&nbsp;</td><td>the target configuration specification </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>itsourcedata</em>&nbsp;</td><td>iterator pointing to start of source group data that should be read </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sourcespec</em>&nbsp;</td><td>the source configuration specification </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>numpoints</em>&nbsp;</td><td>the number of points to convert. The target and source strides are gtarget.dof and gsource.dof </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>penv</em>&nbsp;</td><td>[optional] The environment which might be needed to fill in unknown data. Assumes environment is locked. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>filluninitialized</em>&nbsp;</td><td>If there exists target groups that cannot be initialized, then will set default values to them. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01874">1874</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a42b91113c92f1a813682f355d51b43df"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::ConvertGroupData" ref="a42b91113c92f1a813682f355d51b43df" args="(std::vector&lt; dReal &gt;::iterator ittargetdata, size_t targetstride, const Group &amp;gtarget, std::vector&lt; dReal &gt;::const_iterator itsourcedata, size_t sourcestride, const Group &amp;gsource, size_t numpoints, EnvironmentBaseConstPtr penv)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConvertGroupData </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator&nbsp;</td>
+          <td class="paramname"> <em>ittargetdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>targetstride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>gtarget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator&nbsp;</td>
+          <td class="paramname"> <em>itsourcedata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>sourcestride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>gsource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>numpoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#aae90d424b7f3d69b2f382c5e30d1ae57">EnvironmentBaseConstPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>penv</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>given two compatible groups, convers data represented in the source group to data represented in the target group </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ittargetdata</em>&nbsp;</td><td>iterator pointing to start of target group data that should be overwritten </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>targetstride</em>&nbsp;</td><td>the number of elements that to go from the next target point. Necessary if numpoints &gt; 1. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>gtarget</em>&nbsp;</td><td>the target configuration group </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>itsourcedata</em>&nbsp;</td><td>iterator pointing to start of source group data that should be read </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sourcestride</em>&nbsp;</td><td>the number of elements that to go from the next source point. Necessary if numpoints &gt; 1. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>gsource</em>&nbsp;</td><td>the source configuration group </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>numpoints</em>&nbsp;</td><td>the number of points to convert. The target and source strides are gtarget.dof and gsource.dof </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>penv</em>&nbsp;</td><td>[optional] The environment which might be needed to fill in unknown data. Assumes environment is locked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>例外:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="classOpenRAVE_1_1openrave__exception.html" title="Exception that all OpenRAVE internal methods throw; the error codes are held in OpenRAVEErrorCode...">openrave_exception</a></em>&nbsp;</td><td>throw f groups are incompatible </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01621">1621</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6be51f9b2c8e8199ad72e978b6e6c4da"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::ConvertToVelocitySpecification" ref="a6be51f9b2c8e8199ad72e978b6e6c4da" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> ConvertToVelocitySpecification </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>converts all the groups to the corresponding velocity groups and returns the specification </p>
+<p>The velocity configuration space will have a one-to-one correspondence with the </p>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01315">1315</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac58749acb6422259c079fdb0b62a6d59"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::ExtractAffineValues" ref="ac58749acb6422259c079fdb0b62a6d59" args="(std::vector&lt; dReal &gt;::iterator itvalues, std::vector&lt; dReal &gt;::const_iterator itdata, KinBodyConstPtr pbody, int affinedofs, int timederivative=0) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ExtractAffineValues </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator&nbsp;</td>
+          <td class="paramname"> <em>itvalues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator&nbsp;</td>
+          <td class="paramname"> <em>itdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>pbody</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>affinedofs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>timederivative</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>extracts the affine values </p>
+<p>Looks for 'affine_X' groups. If pbody is not initialized, will choose the first affine_X found. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>inout]</em>&nbsp;</td><td>itvalues iterator to vector that holds the default values and will be overwritten with the new values. must be initialized </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>itdata</em>&nbsp;</td><td>data in the format of this configuration specification. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>affinedofs</em>&nbsp;</td><td>the format of the affine dofs requested </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>timederivative</em>&nbsp;</td><td>the time derivative of the data to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if at least one group was found for extracting </dd></dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01438">1438</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8c580ee81ec1c23acc74af42a5422de"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::ExtractDeltaTime" ref="ad8c580ee81ec1c23acc74af42a5422de" args="(dReal &amp;deltatime, std::vector&lt; dReal &gt;::const_iterator itdata) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ExtractDeltaTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>deltatime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator&nbsp;</td>
+          <td class="paramname"> <em>itdata</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>extracts the delta time from the configuration if one exists </p>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01515">1515</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a74cb255b5496f80fa38cbde4cfb853e4"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::ExtractIkParameterization" ref="a74cb255b5496f80fa38cbde4cfb853e4" args="(IkParameterization &amp;ikparam, std::vector&lt; dReal &gt;::const_iterator itdata, int timederivative=0) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ExtractIkParameterization </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ikparam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator&nbsp;</td>
+          <td class="paramname"> <em>itdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>timederivative</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>extracts an ikparameterization given the start of a configuration space point </p>
+<p>Looks for 'ikparam' groups. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>inout]</em>&nbsp;</td><td>ikparam filled with ikparameterization (if found) </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>itdata</em>&nbsp;</td><td>data in the format of this configuration specification </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if at least one group was found for extracting </dd></dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01414">1414</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a982a9ba9c94e0c983df1824b2464ddef"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::ExtractJointValues" ref="a982a9ba9c94e0c983df1824b2464ddef" args="(std::vector&lt; dReal &gt;::iterator itvalues, std::vector&lt; dReal &gt;::const_iterator itdata, KinBodyConstPtr pbody, const std::vector&lt; int &gt; &amp;indices, int timederivative=0) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ExtractJointValues </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator&nbsp;</td>
+          <td class="paramname"> <em>itvalues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator&nbsp;</td>
+          <td class="paramname"> <em>itdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>pbody</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>timederivative</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>extracts a body's joint values given the start of a configuration space point </p>
+<p>Looks for 'joint_X' groups. If pbody is not initialized, will choose the first joint_X found. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>inout]</em>&nbsp;</td><td>itvalues iterator to vector that holds the default values and will be overwritten with the new values. must be initialized </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>itdata</em>&nbsp;</td><td>data in the format of this configuration specification. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>indices</em>&nbsp;</td><td>the set of DOF indices of the body to extract and write into itvalues. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>timederivative</em>&nbsp;</td><td>the time derivative of the data to extract </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if at least one group was found for extracting </dd></dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01478">1478</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="abe95cfefe50156e8f37edca80cb87154"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::ExtractTransform" ref="abe95cfefe50156e8f37edca80cb87154" args="(Transform &amp;t, std::vector&lt; dReal &gt;::const_iterator itdata, KinBodyConstPtr pbody) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ExtractTransform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator&nbsp;</td>
+          <td class="paramname"> <em>itdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>pbody</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>extracts an affine transform given the start of a configuration space point </p>
+<p>Looks for 'affine_transform' groups. If pbody is not initialized, will choose the first affine_transform found. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>inout]</em>&nbsp;</td><td>t the transform holding the default values, which will be overwritten with the new values. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>itdata</em>&nbsp;</td><td>data in the format of this configuration specification. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if at least one group was found for extracting </dd></dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01393">1393</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a00dca7273ad0d271e131ecc1119683c2"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::FindCompatibleGroup" ref="a00dca7273ad0d271e131ecc1119683c2" args="(const Group &amp;g, bool exactmatch=false) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">ConfigurationSpecification::Group</a> &gt;::const_iterator FindCompatibleGroup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>exactmatch</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>finds the most compatible group to the given group </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>the group to query, only the <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html#a9b45b3e13bd9167aab02e17e08916231" title="semantic information on what part of the environment the group refers to.">Group::name</a> and <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html#a03745287ca42590ead4a18807041fc66" title="The number of values in this group.">Group::dof</a> values are used </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>exactmatch</em>&nbsp;</td><td>if true, will only return groups whose name exactly matches with g.name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>an iterator part of _vgroups that represents the most compatible group. If no group is found, will return _vgroups.end() </dd></dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01179">1179</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a87b31e59fa16769e474a12ba0a9f8e08"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::FindTimeDerivativeGroup" ref="a87b31e59fa16769e474a12ba0a9f8e08" args="(const Group &amp;g, bool exactmatch=false) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">ConfigurationSpecification::Group</a> &gt;::const_iterator FindTimeDerivativeGroup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>exactmatch</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the most compatible group that represents the time-derivative data of the group. </p>
+<p>For example given a 'joint_values' group, this will return the closest 'joint_velocities' group. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>g</em>&nbsp;</td><td>the group to query, only the <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html#a9b45b3e13bd9167aab02e17e08916231" title="semantic information on what part of the environment the group refers to.">Group::name</a> and <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html#a03745287ca42590ead4a18807041fc66" title="The number of values in this group.">Group::dof</a> values are used </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>exactmatch</em>&nbsp;</td><td>if true, will only return groups whose name exactly matches with g.name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>an iterator part of _vgroups that represents the most compatible group. If no group is found, will return _vgroups.end() </dd></dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01223">1223</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac938a6c271285a5468b805a3243e20e6"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::GetDOF" ref="ac938a6c271285a5468b805a3243e20e6" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GetDOF </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return the dimension of the configuraiton space (degrees of freedom) </p>
+<dl><dt><b>例: </b></dt><dd><a class="el" href="ormulticontrol_8cpp-example.html#a20">ormulticontrol.cpp</a>.</dd>
+</dl>
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01112">1112</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a047529d130cdde5c5fb9e17798a97a6c"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::GetTimeDerivativeSpecification" ref="a047529d130cdde5c5fb9e17798a97a6c" args="(int timederivative) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> GetTimeDerivativeSpecification </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>timederivative</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>returns a new specification of just particular time-derivative groups. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>timederivative</em>&nbsp;</td><td>the time derivative to query groups from. 0 is positions/joint values, 1 is velocities, 2 is accelerations, etc </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01333">1333</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab65b63518528950d146752020602107d"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::InsertDeltaTime" ref="ab65b63518528950d146752020602107d" args="(std::vector&lt; dReal &gt;::iterator itdata, dReal deltatime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InsertDeltaTime </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator&nbsp;</td>
+          <td class="paramname"> <em>itdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td>
+          <td class="paramname"> <em>deltatime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets the deltatime field of the data if one exists </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>inout]</em>&nbsp;</td><td>itdata data in the format of this configuration specification. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>deltatime</em>&nbsp;</td><td>the delta time of the time stamp (from previous point) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if at least one group was found for inserting </dd></dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01563">1563</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4da99dc9ebd9975a68a3d87abb1f236"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::InsertJointValues" ref="ab4da99dc9ebd9975a68a3d87abb1f236" args="(std::vector&lt; dReal &gt;::iterator itdata, std::vector&lt; dReal &gt;::const_iterator itvalues, KinBodyConstPtr pbody, const std::vector&lt; int &gt; &amp;indices, int timederivative=0) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InsertJointValues </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::iterator&nbsp;</td>
+          <td class="paramname"> <em>itdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;::const_iterator&nbsp;</td>
+          <td class="paramname"> <em>itvalues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>pbody</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>timederivative</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>inserts a set of joint values into a configuration space point </p>
+<p>Looks for 'joint_X' groups. If pbody is not initialized, will use the first joint_X found. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>inout]</em>&nbsp;</td><td>itdata data in the format of this configuration specification. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>itvalues</em>&nbsp;</td><td>iterator to joint values to write </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>indices</em>&nbsp;</td><td>the set of DOF indices that itvalues represents. </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>timederivative</em>&nbsp;</td><td>the time derivative of the data to insert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if at least one group was found for inserting </dd></dl>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01526">1526</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="afa8720abaf6972d6dac22a8cd1a67225"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::IsValid" ref="afa8720abaf6972d6dac22a8cd1a67225" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsValid </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>check if the groups form a continguous space </p>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01121">1121</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab88bf03e1e56cb6f0ed1d48bb3ea60c0"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::operator!=" ref="ab88bf03e1e56cb6f0ed1d48bb3ea60c0" args="(const ConfigurationSpecification &amp;r) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>r</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01174">1174</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a960ebd93cb8c58ceab0eb48b047faa98"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::operator==" ref="a960ebd93cb8c58ceab0eb48b047faa98" args="(const ConfigurationSpecification &amp;r) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>r</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01151">1151</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a54f613faeb77f06c9942d09833274962"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::ResetGroupOffsets" ref="a54f613faeb77f06c9942d09833274962" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResetGroupOffsets </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>set the offsets of each group in order to get a contiguous configuration space </p>
+
+<p> <a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp</a> の <a class="el" href="libopenrave_8cpp_source.html#l01367">1367</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="a63d9b7e5c662b5da5584f0d927368812"></a><!-- doxytag: member="OpenRAVE::ConfigurationSpecification::_vgroups" ref="a63d9b7e5c662b5da5584f0d927368812" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a>&gt; <a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html#a63d9b7e5c662b5da5584f0d927368812">_vgroups</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l01012">1012</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>include/openrave/<a class="el" href="openrave_8h_source.html">openrave.h (r2848/r2811)</a></li>
+<li>src/libopenrave/<a class="el" href="libopenrave_8cpp_source.html">libopenrave.cpp (r2848/r2805)</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:12 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

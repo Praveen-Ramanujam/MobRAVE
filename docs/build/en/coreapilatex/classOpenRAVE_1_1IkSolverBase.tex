@@ -1,0 +1,210 @@
+\hypertarget{classOpenRAVE_1_1IkSolverBase}{
+\subsection{IkSolverBase Class Reference}
+\label{classOpenRAVE_1_1IkSolverBase}\index{OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} Base class for all Inverse Kinematic solvers. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__iksolver}{Inverse Kinematics Solver Concepts}.  
+
+
+
+
+Inheritance diagram for IkSolverBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{classOpenRAVE_1_1IkSolverBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IkSolverBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{classOpenRAVE_1_1IkSolverBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::function$<$ \hyperlink{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9}{IkFilterReturn}(std::vector$<$ dReal $>$ \&, RobotBase::ManipulatorPtr, const \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \&)$>$ \hyperlink{classOpenRAVE_1_1IkSolverBase_a2f7085e3e716d58bbbc95fa53926313e}{IkFilterCallbackFn}
+\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1IkSolverBase_afdba95c2515eb1d2a7d375c24f8dcb41}{Init} (RobotBase::ManipulatorPtr pmanip)=0
+\item 
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1IkSolverBase_a9ac28a8ef0d2511ea4a7e89e81ad013d}{RegisterCustomFilter} (int priority, const \hyperlink{classOpenRAVE_1_1IkSolverBase_a2f7085e3e716d58bbbc95fa53926313e}{IkFilterCallbackFn} \&filterfn)
+\begin{DoxyCompactList}\small\item\em Sets an ik solution filter that is called for every ik solution. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1IkSolverBase_adda44b94bfdbdee2cc57341d6fdef299}{SetCustomFilter} (const \hyperlink{classOpenRAVE_1_1IkSolverBase_a2f7085e3e716d58bbbc95fa53926313e}{IkFilterCallbackFn} \&filterfn) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+virtual int \hyperlink{classOpenRAVE_1_1IkSolverBase_a1d5067536e60e18e86fb94429e4d289f}{GetNumFreeParameters} () const =0
+\begin{DoxyCompactList}\small\item\em Number of free parameters defining the null solution space. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1IkSolverBase_a37c664c2f07d523edfa463d06a1654c6}{GetFreeParameters} (std::vector$<$ dReal $>$ \&vFreeParameters) const =0
+\begin{DoxyCompactList}\small\item\em gets the free parameters from the current robot configuration \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1IkSolverBase_a283c44d6bd1ab0023aa8079f2f22db0a}{Solve} (const \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \&param, const std::vector$<$ dReal $>$ \&q0, int filteroptions, boost::shared\_\-ptr$<$ std::vector$<$ dReal $>$ $>$ solution)=0
+\begin{DoxyCompactList}\small\item\em Return a joint configuration for the given end effector transform. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1IkSolverBase_ae0819c42f7769a51d4ff0179c0de1d4b}{Solve} (const \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \&param, int filteroptions, std::vector$<$ std::vector$<$ dReal $>$ $>$ \&solutions)=0
+\begin{DoxyCompactList}\small\item\em Return all joint configurations for the given end effector transform. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1IkSolverBase_a6fbb4a98f8ca339a41d7c746f397a664}{Solve} (const \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \&param, const std::vector$<$ dReal $>$ \&q0, const std::vector$<$ dReal $>$ \&vFreeParameters, int filteroptions, boost::shared\_\-ptr$<$ std::vector$<$ dReal $>$ $>$ solution)=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1IkSolverBase_a4f2dd26ce9c4f52cc27f09545faa159b}{Solve} (const \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \&param, const std::vector$<$ dReal $>$ \&vFreeParameters, int filteroptions, std::vector$<$ std::vector$<$ dReal $>$ $>$ \&solutions)=0
+\begin{DoxyCompactList}\small\item\em Return all joint configurations for the given end effector transform. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1IkSolverBase_a4c62d8c5ff1843c169edf6520a05aab0}{
+virtual bool \hyperlink{classOpenRAVE_1_1IkSolverBase_a4c62d8c5ff1843c169edf6520a05aab0}{Supports} (\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2e}{IkParameterizationType} iktype) const OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION}
+\label{classOpenRAVE_1_1IkSolverBase_a4c62d8c5ff1843c169edf6520a05aab0}
+
+\begin{DoxyCompactList}\small\item\em returns true if the solver supports a particular ik parameterization as input. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1IkSolverBase_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1IkSolverBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1IkSolverBase_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em return the static interface type this class points to (used for safe casting) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1IkSolverBase_a5da49b954a8094d7d1a7525ff293496c}{
+virtual \hyperlink{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9}{IkFilterReturn} \hyperlink{classOpenRAVE_1_1IkSolverBase_a5da49b954a8094d7d1a7525ff293496c}{\_\-CallFilters} (std::vector$<$ dReal $>$ \&solution, RobotBase::ManipulatorPtr manipulator, const \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \&param)}
+\label{classOpenRAVE_1_1IkSolverBase_a5da49b954a8094d7d1a7525ff293496c}
+
+\begin{DoxyCompactList}\small\item\em calls the registered filters in their priority order and returns the value of the last called filter. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} Base class for all Inverse Kinematic solvers. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__iksolver}{Inverse Kinematics Solver Concepts}. 
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classOpenRAVE_1_1IkSolverBase_a2f7085e3e716d58bbbc95fa53926313e}{
+\index{OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}!IkFilterCallbackFn@{IkFilterCallbackFn}}
+\index{IkFilterCallbackFn@{IkFilterCallbackFn}!OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}}
+\paragraph[{IkFilterCallbackFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<${\bf IkFilterReturn}(std::vector$<$dReal$>$\&, RobotBase::ManipulatorPtr, const {\bf IkParameterization}\&)$>$ {\bf IkFilterCallbackFn}}\hfill}
+\label{classOpenRAVE_1_1IkSolverBase_a2f7085e3e716d58bbbc95fa53926313e}
+Inverse kinematics filter callback function.
+
+The filter is of the form {\ttfamily return = filterfn(solution, manipulator, param)}. The solution is guaranteed to be set on the robot's joint values before this function is called. If modifying the robot state, should restore it before this function returns.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em solution}]The current solution of the manipulator. Can be modified by this function, but note that it will not go through previous checks again. \item[{\em manipulator}]The current manipulator that the ik is being solved for. \item[{\em param}]The paramterization that IK was called with. This is in the manipulator base link's coordinate system (which is not necessarily the world coordinate system). \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9}{IkFilterReturn} controlling the behavior of the ik search process. 
+\end{DoxyReturn}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1IkSolverBase_a37c664c2f07d523edfa463d06a1654c6}{
+\index{OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}!GetFreeParameters@{GetFreeParameters}}
+\index{GetFreeParameters@{GetFreeParameters}!OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}}
+\paragraph[{GetFreeParameters}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool GetFreeParameters (std::vector$<$ dReal $>$ \& {\em vFreeParameters}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1IkSolverBase_a37c664c2f07d523edfa463d06a1654c6}
+
+
+gets the free parameters from the current robot configuration 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em vFreeParameters}]is filled with \hyperlink{classOpenRAVE_1_1IkSolverBase_a1d5067536e60e18e86fb94429e4d289f}{GetNumFreeParameters()} parameters in \mbox{[}0,1\mbox{]} range \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if succeeded 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1IkSolverBase_a1d5067536e60e18e86fb94429e4d289f}{
+\index{OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}!GetNumFreeParameters@{GetNumFreeParameters}}
+\index{GetNumFreeParameters@{GetNumFreeParameters}!OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}}
+\paragraph[{GetNumFreeParameters}]{\setlength{\rightskip}{0pt plus 5cm}virtual int GetNumFreeParameters () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1IkSolverBase_a1d5067536e60e18e86fb94429e4d289f}
+
+
+Number of free parameters defining the null solution space. 
+
+Each parameter is always in the range of \mbox{[}0,1\mbox{]}. \hypertarget{classOpenRAVE_1_1IkSolverBase_afdba95c2515eb1d2a7d375c24f8dcb41}{
+\index{OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}!Init@{Init}}
+\index{Init@{Init}!OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}}
+\paragraph[{Init}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Init (RobotBase::ManipulatorPtr {\em pmanip})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1IkSolverBase_afdba95c2515eb1d2a7d375c24f8dcb41}
+brief Sets the \hyperlink{classOpenRAVE_1_1IkSolverBase}{IkSolverBase} attached to a specific robot and sets \hyperlink{classOpenRAVE_1_1IkSolverBase}{IkSolverBase} specific options.
+
+For example, some ik solvers might have different ways of computing optimal solutions. 
+\begin{DoxyParams}{Parameters}
+\item[{\em pmanip}]The manipulator the IK solver is attached to \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1IkSolverBase_a9ac28a8ef0d2511ea4a7e89e81ad013d}{
+\index{OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}!RegisterCustomFilter@{RegisterCustomFilter}}
+\index{RegisterCustomFilter@{RegisterCustomFilter}!OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}}
+\paragraph[{RegisterCustomFilter}]{\setlength{\rightskip}{0pt plus 5cm}virtual UserDataPtr RegisterCustomFilter (int {\em priority}, \/  const {\bf IkFilterCallbackFn} \& {\em filterfn})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1IkSolverBase_a9ac28a8ef0d2511ea4a7e89e81ad013d}
+
+
+Sets an ik solution filter that is called for every ik solution. 
+
+Multiple filters can be set at once, each filter will be called according to its priority; higher values get called first. The default implementation of \hyperlink{classOpenRAVE_1_1IkSolverBase}{IkSolverBase} manages the filters internally. Users implementing their own \hyperlink{classOpenRAVE_1_1IkSolverBase}{IkSolverBase} should call \hyperlink{classOpenRAVE_1_1IkSolverBase_a5da49b954a8094d7d1a7525ff293496c}{\_\-CallFilters} to run the internally managed filters. 
+\begin{DoxyParams}{Parameters}
+\item[{\em filterfn}]-\/ an optional filter function to be called, see \hyperlink{classOpenRAVE_1_1IkSolverBase_a2f7085e3e716d58bbbc95fa53926313e}{IkFilterCallbackFn}. \item[{\em priority}]-\/ The priority of the filter that controls the order in which filters get called. Higher priority filters get called first. If not certain what to set, use 0. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a managed handle to the filter. If this handle is released, then the fitler will be removed. Release operation is {\bfseries \mbox{[}multi-\/thread safe\mbox{]}}. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1IkSolverBase_adda44b94bfdbdee2cc57341d6fdef299}{
+\index{OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}!SetCustomFilter@{SetCustomFilter}}
+\index{SetCustomFilter@{SetCustomFilter}!OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}}
+\paragraph[{SetCustomFilter}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetCustomFilter (const {\bf IkFilterCallbackFn} \& {\em filterfn})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1IkSolverBase_adda44b94bfdbdee2cc57341d6fdef299}
+\hypertarget{classOpenRAVE_1_1IkSolverBase_a4f2dd26ce9c4f52cc27f09545faa159b}{
+\index{OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}!Solve@{Solve}}
+\index{Solve@{Solve}!OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}}
+\paragraph[{Solve}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Solve (const {\bf IkParameterization} \& {\em param}, \/  const std::vector$<$ dReal $>$ \& {\em vFreeParameters}, \/  int {\em filteroptions}, \/  std::vector$<$ std::vector$<$ dReal $>$ $>$ \& {\em solutions})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1IkSolverBase_a4f2dd26ce9c4f52cc27f09545faa159b}
+
+
+Return all joint configurations for the given end effector transform. 
+
+Can specify the free parameters in \mbox{[}0,1\mbox{]} range. If NULL, the regular equivalent Solve is called 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em param}]the pose the end effector has to achieve. Note that the end effector pose takes into account the grasp coordinate frame for the \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator}{RobotBase::Manipulator} \item[\mbox{$\leftarrow$} {\em vFreeParameters}]The free parameters of the null space of the IK solutions. Always in range of \mbox{[}0,1\mbox{]} \item[\mbox{$\leftarrow$} {\em filteroptions}]A bitmask of \hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdc}{IkFilterOptions} values controlling what is checked for each ik solution. \item[\mbox{$\rightarrow$} {\em solutions}]All solutions within a reasonable discretization level of the free parameters. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true at least one solution is found 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1IkSolverBase_a6fbb4a98f8ca339a41d7c746f397a664}{
+\index{OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}!Solve@{Solve}}
+\index{Solve@{Solve}!OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}}
+\paragraph[{Solve}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Solve (const {\bf IkParameterization} \& {\em param}, \/  const std::vector$<$ dReal $>$ \& {\em q0}, \/  const std::vector$<$ dReal $>$ \& {\em vFreeParameters}, \/  int {\em filteroptions}, \/  boost::shared\_\-ptr$<$ std::vector$<$ dReal $>$ $>$ {\em solution})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1IkSolverBase_a6fbb4a98f8ca339a41d7c746f397a664}
+Return a joint configuration for the given end effector transform.
+
+Can specify the free parameters in \mbox{[}0,1\mbox{]} range. If NULL, the regular equivalent Solve is called 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em param}]the pose the end effector has to achieve. Note that the end effector pose takes into account the grasp coordinate frame for the \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator}{RobotBase::Manipulator} \item[\mbox{$\leftarrow$} {\em q0}]Return a solution nearest to the given configuration q0 in terms of the joint distance. If q0 is empty, returns the first solution found \item[\mbox{$\leftarrow$} {\em vFreeParameters}]The free parameters of the null space of the IK solutions. Always in range of \mbox{[}0,1\mbox{]} \item[\mbox{$\leftarrow$} {\em filteroptions}]A bitmask of \hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdc}{IkFilterOptions} values controlling what is checked for each ik solution. \item[\mbox{$\rightarrow$} {\em solution}]Holds the IK solution, must be of size RobotBase::Manipulator::\_\-vecarmjoints \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if solution is found 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1IkSolverBase_ae0819c42f7769a51d4ff0179c0de1d4b}{
+\index{OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}!Solve@{Solve}}
+\index{Solve@{Solve}!OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}}
+\paragraph[{Solve}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Solve (const {\bf IkParameterization} \& {\em param}, \/  int {\em filteroptions}, \/  std::vector$<$ std::vector$<$ dReal $>$ $>$ \& {\em solutions})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1IkSolverBase_ae0819c42f7769a51d4ff0179c0de1d4b}
+
+
+Return all joint configurations for the given end effector transform. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em param}]the pose the end effector has to achieve. Note that the end effector pose takes into account the grasp coordinate frame for the \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator}{RobotBase::Manipulator} \item[\mbox{$\leftarrow$} {\em filteroptions}]A bitmask of \hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdc}{IkFilterOptions} values controlling what is checked for each ik solution. \item[\mbox{$\rightarrow$} {\em solutions}]All solutions within a reasonable discretization level of the free parameters. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if at least one solution is found 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1IkSolverBase_a283c44d6bd1ab0023aa8079f2f22db0a}{
+\index{OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}!Solve@{Solve}}
+\index{Solve@{Solve}!OpenRAVE::IkSolverBase@{OpenRAVE::IkSolverBase}}
+\paragraph[{Solve}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Solve (const {\bf IkParameterization} \& {\em param}, \/  const std::vector$<$ dReal $>$ \& {\em q0}, \/  int {\em filteroptions}, \/  boost::shared\_\-ptr$<$ std::vector$<$ dReal $>$ $>$ {\em solution})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1IkSolverBase_a283c44d6bd1ab0023aa8079f2f22db0a}
+
+
+Return a joint configuration for the given end effector transform. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em param}]the pose the end effector has to achieve. Note that the end effector pose takes into account the grasp coordinate frame for the \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator}{RobotBase::Manipulator} \item[\mbox{$\leftarrow$} {\em q0}]Return a solution nearest to the given configuration q0 in terms of the joint distance. If q0 is NULL, returns the first solution found \item[\mbox{$\leftarrow$} {\em filteroptions}]A bitmask of \hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdc}{IkFilterOptions} values controlling what is checked for each ik solution. \item[\mbox{$\rightarrow$} {\em solution}]\mbox{[}optional\mbox{]} Holds the IK solution \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if solution is found 
+\end{DoxyReturn}

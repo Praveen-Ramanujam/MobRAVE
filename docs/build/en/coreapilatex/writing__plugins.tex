@@ -1,0 +1,179 @@
+\hypertarget{writing__plugins_writing_plugins_contents}{}\subsection{Contents}\label{writing__plugins_writing_plugins_contents}
+
+\begin{DoxyItemize}
+\item \hyperlink{writing__plugins_writing_plugins_example}{Making a Simple Interface}
+\item \hyperlink{writing__plugins_writing_plugins_build}{Building the Plugin}
+\item \hyperlink{writing__plugins_writing_plugins_usage}{Using the Plugin}
+\item \hyperlink{writing__plugins_writing_plugins_doc}{Documenting Interfaces}
+\item \hyperlink{writing__plugins_writing_plugins_loading}{Loading Plugins}
+\end{DoxyItemize}
+
+Every plugin needs to export several functions as defined in \hyperlink{group__plugin__exports}{Plugin Export Functions} to notify OpenRAVE what interfaces it has. When a plugin is first loaded, it is validated by the environment and its \hyperlink{group__plugin__exports_gafc96682ac1d9ff550d6f95d1837f3dc6}{OpenRAVEGetPluginAttributes} function will be called in order so the OpenRAVE core can register the names of its provided interfaces. Plugins themselves can query functionality offer by other plugins through the environment's interface querying functions.\hypertarget{writing__plugins_writing_plugins_example}{}\subsection{Making a Simple Interface}\label{writing__plugins_writing_plugins_example}
+Example \hyperlink{plugincpp.cpp-example}{plugincpp.cpp} creates a OpenRAVE::ProblemInstance interface named {\bfseries MyProblem} and have it offer two commands: {\bfseries numbodies} and {\bfseries load}.
+
+
+
+The first \#include the compiler sees has to be openrave/openraveh. Then for the main C++ file, we include openrave/pluginh for several helper functions.
+
+
+\begin{DoxyCodeInclude}
+
+#include <openrave/openrave.h>
+#include <openrave/plugin.h>
+#include <boost/bind.hpp>
+
+using namespace std;
+using namespace OpenRAVE;
+
+class MyModule : public ModuleBase
+{
+
+\end{DoxyCodeInclude}
+
+
+Now register the two commands of the problem. {\ttfamily boost::bind} is necessary for specifying member functions as callbacks.
+
+
+\begin{DoxyCodeInclude}
+
+\end{DoxyCodeInclude}
+
+
+Provide the implementations for the member functions: 
+\begin{DoxyCodeInclude}
+
+\end{DoxyCodeInclude}
+
+
+It is recommend to plugin authors to include openrave/pluginh in their main C++ file, this will provide implementations for the export functions and ask the user to provide a new set of functions \hyperlink{group__plugin__exports_ga468c900067e08689383b3f8da642141f}{CreateInterfaceValidated} and \hyperlink{group__plugin__exports_gaf90c03438b94cc76e7b8a54d445ec106}{GetPluginAttributesValidated}.
+
+Providing {\bfseries MyProblem} would look like:
+
+
+\begin{DoxyCodeInclude}
+
+\end{DoxyCodeInclude}
+
+
+In order to tell OpenRAVE what is provided, have to define:
+
+
+\begin{DoxyCodeInclude}
+
+\end{DoxyCodeInclude}
+\hypertarget{writing__plugins_writing_plugins_build}{}\subsection{Building the Plugin}\label{writing__plugins_writing_plugins_build}
+\hypertarget{writing__plugins_writing_plugins_cmake}{}\subsubsection{Using CMake (Linux and Windows)}\label{writing__plugins_writing_plugins_cmake}
+The main build system of OpenRAVE is cmake, and \hyperlink{FindOpenRAVE.cmake-example}{FindOpenRAVE.cmake} can be used to find the OpenRAVE installation. An example of the {\ttfamily CMakeLists.txt} file for compiling a plugin using \hyperlink{FindOpenRAVE.cmake-example}{FindOpenRAVE.cmake} is:
+
+\begin{DoxyVerb}
+cmake_minimum_required (VERSION 2.6)
+project (plugincpp)
+find_package(OpenRAVE REQUIRED)
+include_directories(${OpenRAVE_INCLUDE_DIRS})
+link_directories(${OpenRAVE_LIBRARY_DIRS})
+add_library(plugincpp SHARED plugincpp.cpp)
+set_target_properties(plugincpp PROPERTIES COMPILE_FLAGS "${OpenRAVE_CXX_FLAGS}" LINK_FLAGS "${OpenRAVE_LINK_FLAGS}")
+target_link_libraries(plugincpp ${OpenRAVE_LIBRARIES})
+\end{DoxyVerb}
+\hypertarget{writing__plugins_writing_plugins_linux}{}\subsubsection{Other Build Systems}\label{writing__plugins_writing_plugins_linux}
+If not using CMake, then here's how the development files are organized:
+
+{\bfseries Linux Users}
+
+Depending on where openrave was installed, a \hyperlink{openrave__config}{openrave-\/config} should have been created in the {\ttfamily \$OPENRAVE\_\-INSTALL/bin} directory. It is possible to call {\ttfamily openrave-\/config -\/-\/cflags} to get the correct paths and flags to include in gcc to link with {\ttfamily libopenrave.so}.\hypertarget{writing__plugins_writing_plugins_usage}{}\subsection{Using the Plugin}\label{writing__plugins_writing_plugins_usage}
+There are several ways to load the generated plugin.
+
+
+\begin{DoxyItemize}
+\item The most simplest method is to add its installation directory to \{OPENRAVE\_\-PLUGINS\}. OpenRAVE will automatically load it up at start up. You can confirm this is the case using: \begin{DoxyVerb}
+openrave --listplugins
+\end{DoxyVerb}
+
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item A more explicit way is to load it from the command line using any one of the following methods: \begin{DoxyVerb}
+openrave --loadplugin $SOMEPATH/libplugincpp
+openrave --loadplugin $SOMEPATH/libplugincpp.so
+openrave --loadplugin ./libplugincpp.so
+\end{DoxyVerb}
+ where {\ttfamily \$SOMEPATH} is the absolute/relative path of the shared object.
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Another way is to load it from the C++/Python/APIs:\par
+ {\bfseries C++} 
+\begin{DoxyCode}
+RaveLoadPlugin(env,"plugincpp");
+\end{DoxyCode}
+ {\bfseries Python} \begin{DoxyVerb}
+RaveLoadPlugin('plugincpp')
+\end{DoxyVerb}
+ {\bfseries Octave} \begin{DoxyVerb}
+orEnvLoadPlugin('plugincpp');
+\end{DoxyVerb}
+
+\end{DoxyItemize}
+
+Once the plugin is loaded, we can create the interface and call its commands to load an environment and return the number of bodies:
+
+{\bfseries C++} 
+\begin{DoxyCode}
+ProblemInstancePtr prob = RaveCreateProblem(env,"MyProblem");
+env->AddModule(prob,"");
+stringstream sinput, sout;
+// input the load command
+sinput << "load data/lab1.env.xml";
+if( !prob->SendCommand(sout,sinput) ) {
+    RAVELOG_WARN("command failed!\n");
+}
+else {
+    sinput.str(""); // have to reset the stream from the previous command
+    sinput << "numbodies"; // input the numbodies command
+    prob->SendCommand(sout,sinput);
+    int numbodies;
+    sout >> numbodies;
+    RAVELOG_INFO("number of bodies are: %d\n",numbodies);
+}
+\end{DoxyCode}
+
+
+{\bfseries Python} \begin{DoxyVerb}
+prob = RaveCreateProblem(env,'MyProblem')
+env.AddModule(prob,args='')
+cmdout = prob.SendCommand('load data/lab1.env.xml')
+if cmdout is None:
+    raveLogWarn('command failed!')
+else:
+    cmdout = prob.SendCommand('numbodies')
+    print 'number of bodies are: ',cmdout
+\end{DoxyVerb}
+
+
+{\bfseries Octave} (only simple commands possible) \begin{DoxyVerb}
+prob = orEnvCreateProblem('MyProblem');
+orProblemSendCommand('load data/lab1.env.xml',prob);
+numbodies = orProblemSendCommand('numbodies',prob);
+disp(['number of bodies are: ' num2str(numbodies)])
+\end{DoxyVerb}
+\hypertarget{writing__plugins_writing_plugins_doc}{}\subsection{Documenting Interfaces}\label{writing__plugins_writing_plugins_doc}
+The format of all interface documentation is the widely adopted standard \href{http://docutils.sourceforge.net/rst.html}{\tt reStructuredText}. The description of an interface and all information about its usage should be provided by two places:
+
+
+\begin{DoxyItemize}
+\item \hyperlink{classOpenRAVE_1_1InterfaceBase_a1b571821be060055bf6f2474e12fa5a3}{OpenRAVE::InterfaceBase::GetDescription()} -\/ Returns the full documentation of the interface description. If opening new sections, do not to use '-\/'.
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item \hyperlink{classOpenRAVE_1_1InterfaceBase_a840776899a1d3677582fc6ef87be6ef2}{OpenRAVE::InterfaceBase::RegisterCommand()} -\/ Help string in every command registered. If opening new sections, do not to use '-\/', '=', and '$\sim$'.
+\end{DoxyItemize}
+
+These descriptions are automatically parsed using Sphinx and put on the web.
+
+The reason why doxygen and other commenting tools are not adopted for plugin documentation is because the \hyperlink{group__interfaces}{Base Interface Classes} are the only binding between plugins. Even if the header file or provided functions of a particular plugin were provided, other plugins would not be able to use them if not offered through the OpenRAVE's channels.\hypertarget{writing__plugins_writing_plugins_loading}{}\subsection{Loading Plugins}\label{writing__plugins_writing_plugins_loading}
+Many mechanisms have been put in place to prevent mismatching/old plugins to be loaded by the core. Using interfaces from stale plugins can lead to unexpected crashes that are very difficult to debug. It is possible to automatically come up with a unique hash of the interface functions and members by running each interface through a C++ lexer and then creating a 128bit unique md5 hash. In order to protect plugins compiled with a different version, OpenRAVE creates a md5 hash from each interface class definition using \hyperlink{cpp-gen-md5_8cpp_cpp-gen-md5}{cpp-\/gen-\/md5} and stores them in openrave/interfacehashesh.
+
+The interface hash can be retrieved using \hyperlink{namespaceOpenRAVE_a58037fbef85e1f0c8695edd7e2537172}{OpenRAVE::RaveGetInterfaceHash}. For an interface to be loaded successfully, the plugin has to check that the hash the core is using matches the hash compiled with the plugin. These types of checks ensure that stale plugins will never be loaded; helper functions are offered in openrave/pluginh, which all plugin authors should use. 

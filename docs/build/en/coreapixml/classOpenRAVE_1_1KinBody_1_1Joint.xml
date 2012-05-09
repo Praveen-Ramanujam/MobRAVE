@@ -1,0 +1,1851 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1KinBody_1_1Joint" kind="class" prot="public">
+    <compoundname>OpenRAVE::KinBody::Joint</compoundname>
+    <includes refid="kinbody_8h" local="no">kinbody.h</includes>
+    <innerclass refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC" prot="protected">OpenRAVE::KinBody::Joint::MIMIC</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Private Joint Variables</header>
+      <description><para><anchor id="_1amgrpdf205565aa5c00d215be5ac31f870630"/> Sensitive variables that should not be modified. </para></description>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1ad923b60c6f66a287a7d99f6e6746837d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dofindex</definition>
+        <argsstring></argsstring>
+        <name>dofindex</name>
+        <briefdescription>
+<para>the degree of freedom index in the body&apos;s DOF array, does not index in <ref refid="classOpenRAVE_1_1KinBody_1a8eb8f9943c05cd08afba576dba39871a" kindref="member">KinBody::_vecjoints</ref>! </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="727" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1afe9105494cabb0de1ab670a7b82ae17c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int jointindex</definition>
+        <argsstring></argsstring>
+        <name>jointindex</name>
+        <briefdescription>
+<para>the joint index into <ref refid="classOpenRAVE_1_1KinBody_1a8eb8f9943c05cd08afba576dba39871a" kindref="member">KinBody::_vecjoints</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="728" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a28aca821f6a28398d7bff6a76317a1a5" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9" kindref="member">JointType</ref></type>
+        <definition>JointType _type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="729" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1ac1decc9c0f0d050301b27d1e2c2c6aed" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _bActive</definition>
+        <argsstring></argsstring>
+        <name>_bActive</name>
+        <briefdescription>
+<para>if true, should belong to the DOF of the body, unless it is a mimic joint (_ComputeInternalInformation decides this) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="730" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1aa50d67efd7f5e7f94781c4ddafc907ff" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1af9b7d1a6c8cb513416c8e667f3c25418" kindref="member">KinBodyWeakPtr</ref></type>
+        <definition>KinBodyWeakPtr _parent</definition>
+        <argsstring></argsstring>
+        <name>_parent</name>
+        <briefdescription>
+<para>body that joint belong to </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="732" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a0fa04b42b980aa45bb17ff2dc2431f5f" prot="private" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref>, 2 &gt;</type>
+        <definition>boost::array&lt;LinkPtr,2&gt; _attachedbodies</definition>
+        <argsstring></argsstring>
+        <name>_attachedbodies</name>
+        <briefdescription>
+<para>attached bodies. The link in [0] is computed first in the hierarchy before the other body. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="733" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a4eb771220365b4b37ed2d42a781fe87f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform _tRight</definition>
+        <argsstring></argsstring>
+        <name>_tRight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="734" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a09ec21a272426d35e161f49529220660" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform _tLeft</definition>
+        <argsstring></argsstring>
+        <name>_tLeft</name>
+        <briefdescription>
+<para>transforms used to get body[1]&apos;s transformation with respect to body[0]&apos;s: Tbody1 = Tbody0 * tLeft * JointOffsetLeft * JointRotation * JointOffsetRight * tRight </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="734" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1af99bd230a66ac0067eb7ec755580b735" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform _tRightNoOffset</definition>
+        <argsstring></argsstring>
+        <name>_tRightNoOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="735" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1ae375672111730f3923efca8a45225f96" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform _tLeftNoOffset</definition>
+        <argsstring></argsstring>
+        <name>_tLeftNoOffset</name>
+        <briefdescription>
+<para>same as _tLeft and _tRight except it doesn&apos;t not include the offset </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="735" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1aa7dd4c4e6a56ef48acaae54f29ed9977" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform _tinvRight</definition>
+        <argsstring></argsstring>
+        <name>_tinvRight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="736" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a943fdb80e9494d5e5976b13bd6443166" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform _tinvLeft</definition>
+        <argsstring></argsstring>
+        <name>_tinvLeft</name>
+        <briefdescription>
+<para>the inverse transformations of tRight and tLeft </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="736" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1abad3421b2e33fe336fbc26c62ecac3c8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _bInitialized</definition>
+        <argsstring></argsstring>
+        <name>_bInitialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="737" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="737" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Internal Hierarchy Methods</header>
+      <description><para><anchor id="_1amgrp5fadc9ff450b069c20a2f9cda9fee3f7"/> </para></description>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1ac77a611b4552ee4a91058884361e1eed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+        <definition>virtual LinkPtr GetHierarchyParentLink</definition>
+        <argsstring>() const </argsstring>
+        <name>GetHierarchyParentLink</name>
+        <briefdescription>
+<para>Return the parent link which the joint measures its angle off from (either <ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1a126f8d06fb55483d1f0261b29a94b36f" kindref="member">GetFirstAttached()</ref> or <ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1aaa3a0e7678b93650b52300aa1f0fdb5a" kindref="member">GetSecondAttached()</ref>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="587"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a99195cfe4f294630abece8e97727941b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+        <definition>virtual LinkPtr GetHierarchyChildLink</definition>
+        <argsstring>() const </argsstring>
+        <name>GetHierarchyChildLink</name>
+        <briefdescription>
+<para>Return the child link whose transformation is computed by this joint&apos;s values (either <ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1a126f8d06fb55483d1f0261b29a94b36f" kindref="member">GetFirstAttached()</ref> or <ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1aaa3a0e7678b93650b52300aa1f0fdb5a" kindref="member">GetSecondAttached()</ref>). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="589"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a44ecb796397334c930f7e4dbb26a9f83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>virtual Vector GetInternalHierarchyAnchor</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetInternalHierarchyAnchor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000024"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/1/27) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="591"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a2561b37d0b0c8d411d8beec026bb465e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>virtual Vector GetInternalHierarchyAxis</definition>
+        <argsstring>(int axis=0) const </argsstring>
+        <name>GetInternalHierarchyAxis</name>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>The axis of the joint in local coordinates. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="593"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a58faa57053a1da7655220459c93aa941" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>virtual Transform GetInternalHierarchyLeftTransform</definition>
+        <argsstring>() const </argsstring>
+        <name>GetInternalHierarchyLeftTransform</name>
+        <briefdescription>
+<para>Left multiply transform given the base body. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="595"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1aa648aa524fbd4802a93711d1cfff76b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>virtual Transform GetInternalHierarchyRightTransform</definition>
+        <argsstring>() const </argsstring>
+        <name>GetInternalHierarchyRightTransform</name>
+        <briefdescription>
+<para>Right multiply transform given the base body. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="597"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Mimic Joint Properties</header>
+      <description><para><anchor id="_1amgrp1f53e0c18272c66ca8f8cfdf88a1931d"/> A mimic joint&apos;s angles are automatically determined from other joints based on a general purpose formula. A user does not have control of the the mimic joint values, even if they appear in the DOF list. </para></description>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a5dc0e9a767787813d561165fbaf5a1ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetMimicJointIndex</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetMimicJointIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000025"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/1/1) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="606"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a23d3a787036ec4661af61c5c0f0a60b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>const std::vector&lt;dReal&gt; GetMimicCoeffs</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetMimicCoeffs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000026"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/1/1) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="608"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1ac8d727c6f970d30c4cdea02ce2a153bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsMimic</definition>
+        <argsstring>(int axis=-1) const </argsstring>
+        <name>IsMimic</name>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Returns true if a particular axis of the joint is mimiced. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the axis to query. When -1 returns true if any of the axes have mimic joints </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="613"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a8bc8323e310011f33ac609500db780c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GetMimicEquation</definition>
+        <argsstring>(int axis=0, int type=0, const std::string &amp;format=&quot;&quot;) const </argsstring>
+        <name>GetMimicEquation</name>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>format</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>If the joint is mimic, returns the equation to compute its value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the axis index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>0 for position, 1 for velocity, 2 for acceleration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the format the equations are returned in. If empty or &quot;fparser&quot;, equation in fparser format. Also supports: &quot;mathml&quot;.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+MathML:</para><para>Set &apos;format&apos; to &quot;mathml&quot;. The joint variables are specified with &lt;csymbol&gt;. If a targetted joint has more than one degree of freedom, then axis is suffixed with _%d. If &apos;type&apos; is 1 or 2, the partial derivatives are outputted as consecutive &lt;math&gt;&lt;/math&gt; tags in the same order as <ref refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1a8200045292ac48810750b8fe7ff145fb" kindref="member">MIMIC::_vdofformat</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="625"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1acd2c27958f0bbd536ee752b237cbb514" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetMimicDOFIndices</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;vmimicdofs, int axis=0) const </argsstring>
+        <name>GetMimicDOFIndices</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>vmimicdofs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Returns the set of DOF indices that the computation of a joint axis depends on. Order is arbitrary. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the mimic joint uses the values of other mimic joints, then the dependent DOFs of that joint are also copied over. Therefore, the dof indices returned can be more than the actual variables used in the equation. <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classOpenRAVE_1_1openrave__exception" kindref="compound">openrave_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the axis is not mimic. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a0e31c5be31c4145afa786e0c0d6a46ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetMimicEquations</definition>
+        <argsstring>(int axis, const std::string &amp;poseq, const std::string &amp;veleq, const std::string &amp;acceleq=&quot;&quot;)</argsstring>
+        <name>SetMimicEquations</name>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>poseq</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>veleq</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>acceleq</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Sets the mimic properties of the joint. </para>        </briefdescription>
+        <detaileddescription>
+<para>The equations can use the joint names directly in the equation, which represent the position of the joint. Any non-mimic joint part of <ref refid="classOpenRAVE_1_1KinBody_1a01fcab06f416b2ac3bac1385e09ff9bf" kindref="member">KinBody::GetJoints()</ref> can be used in the computation of the values. If a joint has more than one degree of freedom, then suffix it &apos;_&apos; and the axis index. For example universaljoint_0 * 10 + sin(universaljoint_1).</para><para>See <ulink url="http://warp.povusers.org/FunctionParser/fparser.html">http://warp.povusers.org/FunctionParser/fparser.html</ulink> for a full description of the equation formats.</para><para>The velocity and acceleration equations are specified in terms of partial derivatives, which means one expression needs to be specified per degree of freedom of used. In order to separate the expressions use &quot;|name ...&quot;. The name should immediately follow &apos;|&apos;. For example:</para><para>|universaljoint_0 10 |universaljoint_1 10*cos(universaljoint_1)</para><para>If there is only one variable used in the position equation, then the equation can be specified directly without using &quot;{}&quot;.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the axis to set the properties for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">poseq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Equation for joint&apos;s position. If it is empty, the mimic properties are turned off for this joint. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">veleq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First-order partial derivatives of poseq with respect to all used DOFs. Only the variables used in poseq are allowed to be used. If poseq is not empty, this is required. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">acceleq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second-order partial derivatives of poseq with respect to all used DOFs. Only the variables used in poseq are allowed to be used. Optional. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classOpenRAVE_1_1openrave__exception" kindref="compound">openrave_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the mimic equation is invalid in any way. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="654"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9" prot="public" static="no">
+        <name>JointType</name>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9abb73e1981867fd497856663fdfab44ca" prot="public">
+          <name>JointNone</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9abfa2d54ade1cb55d74c401962692d088" prot="public">
+          <name>JointHinge</name>
+          <initializer> 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9abe219cdbebc89b13679b107d2ca383e8" prot="public">
+          <name>JointRevolute</name>
+          <initializer> 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a1dcb4039e2775a5869b2ff71eac7116e" prot="public">
+          <name>JointSlider</name>
+          <initializer> 0x11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a57ca0c18de6537ced2ba1a7ccab12549" prot="public">
+          <name>JointPrismatic</name>
+          <initializer> 0x11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a381c1d59b62ea32834e3133e12e3e294" prot="public">
+          <name>JointRR</name>
+          <initializer> 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9aa1aceefeaced5a49e5b398f86848aa62" prot="public">
+          <name>JointRP</name>
+          <initializer> 0x12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9af69caac5a7ffe55f1fc3c80655a6f135" prot="public">
+          <name>JointPR</name>
+          <initializer> 0x22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a3458d02215179afb6e49ec52b048bd6b" prot="public">
+          <name>JointPP</name>
+          <initializer> 0x32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a8389caca350cf877bc35ed3b71b01271" prot="public">
+          <name>JointSpecialBit</name>
+          <initializer> 0x80000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a3b7bc3564f9f7eb2451840338e99de65" prot="public">
+          <name>JointUniversal</name>
+          <initializer> 0x80000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a9d1aa802c3fd09d149ef8196d17e8a70" prot="public">
+          <name>JointHinge2</name>
+          <initializer> 0x80000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9acd26b6c77fff5881c5b9deba9e4a2af4" prot="public">
+          <name>JointSpherical</name>
+          <initializer> 0x80000003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of joint movement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Non-special joints that are combinations of revolution and prismatic joints. The first 4 bits specify the joint DOF, the next bits specify whether the joint is revolute (0) or prismatic (1). There can be also special joint types that are valid if the JointSpecialBit is set.</para><para>For multi-dof joints, the order is transform(parentlink) * transform(axis0) * transform(axis1) ... </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="398" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="398" bodyend="412"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a8f7ce3595b2687565a7fb5d26c4dbef9" prot="protected" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>, 3 &gt;</type>
+        <definition>boost::array&lt;Vector,3&gt; _vaxes</definition>
+        <argsstring></argsstring>
+        <name>_vaxes</name>
+        <briefdescription>
+<para>axes in body[0]&apos;s or environment coordinate system used to define joint movement </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="658" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a64804ea505aa46e8a50d81d31cdb927d" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector vanchor</definition>
+        <argsstring></argsstring>
+        <name>vanchor</name>
+        <briefdescription>
+<para>anchor of the joint, this is only used to construct the internal left/right matrices </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="659" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="659" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a88c3376752ab869b6ba7ec779e280a3c" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal fResolution</definition>
+        <argsstring></argsstring>
+        <name>fResolution</name>
+        <briefdescription>
+<para>interpolation resolution </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="660" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="660" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a0803c685cc31b774b49fccebba1345e5" prot="protected" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 3 &gt;</type>
+        <definition>boost::array&lt;dReal,3&gt; _vmaxvel</definition>
+        <argsstring></argsstring>
+        <name>_vmaxvel</name>
+        <briefdescription>
+<para>the soft maximum velocity (rad/s) to move the joint when planning </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="661" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a529df46fcfc8448dc4fefbb3ea96ac32" prot="protected" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 3 &gt;</type>
+        <definition>boost::array&lt;dReal,3&gt; fHardMaxVel</definition>
+        <argsstring></argsstring>
+        <name>fHardMaxVel</name>
+        <briefdescription>
+<para>the hard maximum velocity, robot cannot exceed this velocity. used for verification checking </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="662" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a0cf3254c3e7a7e58427bf27d31757126" prot="protected" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 3 &gt;</type>
+        <definition>boost::array&lt;dReal,3&gt; _vmaxaccel</definition>
+        <argsstring></argsstring>
+        <name>_vmaxaccel</name>
+        <briefdescription>
+<para>the maximum acceleration (rad/s^2) of the joint </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="663" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a9653640e1b079a0ea7d9b2dc54743b6f" prot="protected" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 3 &gt;</type>
+        <definition>boost::array&lt;dReal,3&gt; _vmaxtorque</definition>
+        <argsstring></argsstring>
+        <name>_vmaxtorque</name>
+        <briefdescription>
+<para>maximum torque (N.m, kg m^2/s^2) that can be applied to the joint </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="664" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a54b3b5826708888da547faeb1869895a" prot="protected" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 3 &gt;</type>
+        <definition>boost::array&lt;dReal,3&gt; _vweights</definition>
+        <argsstring></argsstring>
+        <name>_vweights</name>
+        <briefdescription>
+<para>the weights of the joint for computing distance metrics. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="665" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a463725ce817eef88b032307e46c97ed6" prot="protected" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 3 &gt;</type>
+        <definition>boost::array&lt;dReal,3&gt; _voffsets</definition>
+        <argsstring></argsstring>
+        <name>_voffsets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1abd56b44048f3db84586c90a0c3a76ed3" kindref="member">GetOffset</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="666" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1a37d5de3008b216f30222cf3c42d0a42f" prot="protected" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 3 &gt;</type>
+        <definition>boost::array&lt;dReal,3&gt; _vlowerlimit</definition>
+        <argsstring></argsstring>
+        <name>_vlowerlimit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="667" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1ae9fd2b8d21b33d02a24eb85440d7f4df" prot="protected" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 3 &gt;</type>
+        <definition>boost::array&lt;dReal,3&gt; _vupperlimit</definition>
+        <argsstring></argsstring>
+        <name>_vupperlimit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>joint limits </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="667" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1af78763e010f75c80880d13539d899694" prot="protected" static="no" mutable="no">
+        <type>boost::array&lt; boost::shared_ptr&lt; <ref refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC" kindref="compound">MIMIC</ref> &gt;, 3 &gt;</type>
+        <definition>boost::array&lt; boost::shared_ptr&lt;MIMIC&gt;,3&gt; _vmimic</definition>
+        <argsstring></argsstring>
+        <name>_vmimic</name>
+        <briefdescription>
+<para>the mimic properties of each of the joint axes. It is theoretically possible for a multi-dof joint to have one axes mimiced and the others free. When cloning, is it ok to copy this and assume it is constant? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="697" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1aaf2ed934b37cbbd236fdd1b01a5f5005" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1a8b9389d7613c0942dded4c6af39d7ab1" kindref="member">GetName</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="721" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Joint_1ac5270bc79693dd87a40cb49428f311ea" prot="protected" static="no" mutable="no">
+        <type>boost::array&lt; bool, 3 &gt;</type>
+        <definition>boost::array&lt;bool,3&gt; _bIsCircular</definition>
+        <argsstring></argsstring>
+        <name>_bIsCircular</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1a7adf99ae40bca7e94d926e3b56321fdb" kindref="member">IsCircular</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="722" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1KinBody_1_1Joint_1a05156daee84eb0b5dd4b0802dae57fa6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class KinBody</definition>
+        <argsstring></argsstring>
+        <name>KinBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="754" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="754" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1ad83b252054d455df3326733005c8affa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Joint</definition>
+        <argsstring>(KinBodyPtr parent)</argsstring>
+        <name>Joint</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a957e1244b568a12cd191dd93c613a3c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~Joint</definition>
+        <argsstring>()</argsstring>
+        <name>~Joint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a8b9389d7613c0942dded4c6af39d7ab1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; GetName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetName</name>
+        <briefdescription>
+<para>The unique name of the joint. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="418" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="418" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a91a843f1a9bf04be6eef06a48c26ac02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal GetMaxVel</definition>
+        <argsstring>(int iaxis=0) const </argsstring>
+        <name>GetMaxVel</name>
+        <param>
+          <type>int</type>
+          <declname>iaxis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="422" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="422" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a6a583bf7e591ef4d7bb91d63d7d32dd4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal GetMaxAccel</definition>
+        <argsstring>(int iaxis=0) const </argsstring>
+        <name>GetMaxAccel</name>
+        <param>
+          <type>int</type>
+          <declname>iaxis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="425" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="425" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a9761b474d0ab58e81fed1e3b40e98eca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal GetMaxTorque</definition>
+        <argsstring>(int iaxis=0) const </argsstring>
+        <name>GetMaxTorque</name>
+        <param>
+          <type>int</type>
+          <declname>iaxis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="428" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="428" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1aa008d1863733a137b9a417d8e5277bb0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetDOFIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDOFIndex</name>
+        <briefdescription>
+<para>Get the degree of freedom index in the body&apos;s DOF array. </para>        </briefdescription>
+        <detaileddescription>
+<para>This does not index in <ref refid="classOpenRAVE_1_1KinBody_1a01fcab06f416b2ac3bac1385e09ff9bf" kindref="member">KinBody::GetJoints()</ref> directly! In other words, <ref refid="classOpenRAVE_1_1KinBody_1aa07f040a19a9fe7b80254915b1cce26b" kindref="member">KinBody::GetDOFValues()</ref>[<ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1aa008d1863733a137b9a417d8e5277bb0" kindref="member">GetDOFIndex()</ref>] == <ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1a04a882646ae62c1d8b2416bd525a18dc" kindref="member">GetValues()</ref>[0] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="435" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="435" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1abacd0a7209e404b812bb3ca71a494d0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetJointIndex</definition>
+        <argsstring>() const </argsstring>
+        <name>GetJointIndex</name>
+        <briefdescription>
+<para>Get the joint index into <ref refid="classOpenRAVE_1_1KinBody_1a01fcab06f416b2ac3bac1385e09ff9bf" kindref="member">KinBody::GetJoints</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="440" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="440" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1aef334d32f92d94b51d66c428cbad2c08" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+        <definition>KinBodyPtr GetParent</definition>
+        <argsstring>() const </argsstring>
+        <name>GetParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="444" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="444" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a126f8d06fb55483d1f0261b29a94b36f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+        <definition>LinkPtr GetFirstAttached</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFirstAttached</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="448" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="448" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1aaa3a0e7678b93650b52300aa1f0fdb5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+        <definition>LinkPtr GetSecondAttached</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSecondAttached</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="451" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="451" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a153b287bb3dab25288e3b790b5a37c9a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9" kindref="member">JointType</ref></type>
+        <definition>JointType GetType</definition>
+        <argsstring>() const </argsstring>
+        <name>GetType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="455" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="455" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a488fee47ef2f64285df38276b3902879" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal GetResolution</definition>
+        <argsstring>() const </argsstring>
+        <name>GetResolution</name>
+        <briefdescription>
+<para>The discretization of the joint used when line-collision checking. </para>        </briefdescription>
+        <detaileddescription>
+<para>The resolutions are set as large as possible such that the joint will not go through obstacles of determined size. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="462" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="462" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a57b2f497d973d47c5d429dfcd2010b62" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetResolution</definition>
+        <argsstring>(dReal resolution)</argsstring>
+        <name>SetResolution</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>resolution</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a44fbec2fd26a45cada889c5c0f0751c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int GetDOF</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDOF</name>
+        <briefdescription>
+<para>The degrees of freedom of the joint. Each joint supports a max of 3 degrees of freedom. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="468"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a7adf99ae40bca7e94d926e3b56321fdb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool IsCircular</definition>
+        <argsstring>(int iaxis) const </argsstring>
+        <name>IsCircular</name>
+        <param>
+          <type>int</type>
+          <declname>iaxis</declname>
+        </param>
+        <briefdescription>
+<para>Return true if joint axis has an identification at some of its lower and upper limits. </para>        </briefdescription>
+        <detaileddescription>
+<para>An identification of the lower and upper limits means that once the joint reaches its upper limits, it is also at its lower limit. The most common identification on revolute joints at -pi and pi. &apos;circularity&apos; means the joint does not stop at limits. Although currently not developed, it could be possible to support identification for joints that are not revolute. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="476" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="476" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a477d385f39817d9116efac236d56b54f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool IsRevolute</definition>
+        <argsstring>(int iaxis) const </argsstring>
+        <name>IsRevolute</name>
+        <param>
+          <type>int</type>
+          <declname>iaxis</declname>
+        </param>
+        <briefdescription>
+<para>returns true if the axis describes a rotation around an axis. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iaxis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the axis of the joint to return the results for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a869db68ce6e40c67cc4c5f0f36d1a950" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool IsPrismatic</definition>
+        <argsstring>(int iaxis) const </argsstring>
+        <name>IsPrismatic</name>
+        <param>
+          <type>int</type>
+          <declname>iaxis</declname>
+        </param>
+        <briefdescription>
+<para>returns true if the axis describes a translation around an axis. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iaxis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the axis of the joint to return the results for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="488"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1af52f395f0894e5c0a59548fcde7c353b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool IsStatic</definition>
+        <argsstring>() const </argsstring>
+        <name>IsStatic</name>
+        <briefdescription>
+<para>Return true if joint can be treated as a static binding (ie all limits are 0). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a04a882646ae62c1d8b2416bd525a18dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetValues</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;values, bool bAppend=false) const </argsstring>
+        <name>GetValues</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bAppend</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Return all the joint values with the correct offsets applied. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bAppend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true will append to the end of the vector instead of erasing it </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>degrees of freedom of the joint (even if pValues is NULL) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="497"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1ae53c171bf98bb3b7bc5ab0fbd94bd90e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>virtual dReal GetValue</definition>
+        <argsstring>(int axis) const </argsstring>
+        <name>GetValue</name>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+<para>Return the value of the specified joint axis only. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="500"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1acf2184aef9396b8b098871e1a040ff77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetVelocities</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;values, bool bAppend=false) const </argsstring>
+        <name>GetVelocities</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bAppend</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Gets the joint velocities. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bAppend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true will append to the end of the vector instead of erasing it </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the degrees of freedom of the joint (even if pValues is NULL) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="506"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a163d3455185c5ea511f74c790056b5ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AddTorque</definition>
+        <argsstring>(const std::vector&lt; dReal &gt; &amp;torques)</argsstring>
+        <name>AddTorque</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>torques</declname>
+        </param>
+        <briefdescription>
+<para>Add effort (force or torque) to the joint. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="509"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1ab2179b392d53650660c9ab35c16bc4fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>virtual Vector GetAnchor</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAnchor</name>
+        <briefdescription>
+<para>The anchor of the joint in global coordinates. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="512"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a35d06683756fe53bb8bc0809b7be21cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>virtual Vector GetAxis</definition>
+        <argsstring>(int axis=0) const </argsstring>
+        <name>GetAxis</name>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>The axis of the joint in global coordinates. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the axis to get </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="517"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a9cbbcd5d35fb3830b35c33f244570566" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetLimits</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;vLowerLimit, std::vector&lt; dReal &gt; &amp;vUpperLimit, bool bAppend=false) const </argsstring>
+        <name>GetLimits</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vLowerLimit</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vUpperLimit</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bAppend</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Returns the limits of the joint. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">vLowerLimit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the lower limits </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">vUpperLimit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the upper limits </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bAppend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true will append to the end of the vector instead of erasing it </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="525"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a90d56cf93256fd2c4087cd3bac140e66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetLimits</definition>
+        <argsstring>(const std::vector&lt; dReal &gt; &amp;lower, const std::vector&lt; dReal &gt; &amp;upper)</argsstring>
+        <name>SetLimits</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1a9cbbcd5d35fb3830b35c33f244570566" kindref="member">GetLimits</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a7f0e2be49eea7d168eab550af4f0ec97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetJointLimits</definition>
+        <argsstring>(const std::vector&lt; dReal &gt; &amp;lower, const std::vector&lt; dReal &gt; &amp;upper) RAVE_DEPRECATED</argsstring>
+        <name>SetJointLimits</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000022"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/1/1) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="531" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="531" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1acb05f676c90a3c2f07586b09e8ff07c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetVelocityLimits</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;vmax, bool bAppend=false) const </argsstring>
+        <name>GetVelocityLimits</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vmax</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bAppend</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Returns the max velocities of the joint. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max velocity </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bAppend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true will append to the end of the vector instead of erasing it </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="540"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a8d5323975a5c2625acb7903c794a1830" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetVelocityLimits</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;vlower, std::vector&lt; dReal &gt; &amp;vupper, bool bAppend=false) const </argsstring>
+        <name>GetVelocityLimits</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vlower</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vupper</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bAppend</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a9792a14881ff4bbcc058415fce2100d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetVelocityLimits</definition>
+        <argsstring>(const std::vector&lt; dReal &gt; &amp;vmax)</argsstring>
+        <name>SetVelocityLimits</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vmax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1acb05f676c90a3c2f07586b09e8ff07c4" kindref="member">GetVelocityLimits</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a1234a540b764968374f7454bda61b6e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetAccelerationLimits</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;vmax, bool bAppend=false) const </argsstring>
+        <name>GetAccelerationLimits</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vmax</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bAppend</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Returns the max accelerations of the joint. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max acceleration </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bAppend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true will append to the end of the vector instead of erasing it </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="552"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a66a3b9657e5dfc13903c47664445fb93" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetAccelerationLimits</definition>
+        <argsstring>(const std::vector&lt; dReal &gt; &amp;vmax)</argsstring>
+        <name>SetAccelerationLimits</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vmax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1a1234a540b764968374f7454bda61b6e0" kindref="member">GetAccelerationLimits</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="555"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1aa305a00e9865044b4f6c2ec81d00d6d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>virtual dReal GetWeight</definition>
+        <argsstring>(int axis=0) const </argsstring>
+        <name>GetWeight</name>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>The weight associated with a joint&apos;s axis for computing a distance in the robot configuration space. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="558"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a7b884c5900625a5d49951afaf67fcc27" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetWeights</definition>
+        <argsstring>(const std::vector&lt; dReal &gt; &amp;weights)</argsstring>
+        <name>SetWeights</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1aa305a00e9865044b4f6c2ec81d00d6d9" kindref="member">GetWeight</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="560"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a9dede60d3c61a885dc1b98fe86e85727" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal GetWrapOffset</definition>
+        <argsstring>(int iaxis=0) const </argsstring>
+        <name>GetWrapOffset</name>
+        <param>
+          <type>int</type>
+          <declname>iaxis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Return internal offset parameter that determines the branch the angle centers on. </para>        </briefdescription>
+        <detaileddescription>
+<para>Wrap offsets are needed for rotation joints since the range is limited to 2*pi. This allows the wrap offset to be set so the joint can function in [-pi+offset,pi+offset].. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iaxis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the axis to get the offset from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="567" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="567" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1abd56b44048f3db84586c90a0c3a76ed3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal GetOffset</definition>
+        <argsstring>(int iaxis=0) const RAVE_DEPRECATED</argsstring>
+        <name>GetOffset</name>
+        <param>
+          <type>int</type>
+          <declname>iaxis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="571" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="571" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a717d10686a55fc7c870effe21a3fcb3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetWrapOffset</definition>
+        <argsstring>(dReal offset, int iaxis=0)</argsstring>
+        <name>SetWrapOffset</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iaxis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classOpenRAVE_1_1KinBody_1_1Joint_1a9dede60d3c61a885dc1b98fe86e85727" kindref="member">GetWrapOffset</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="576"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1ad33ede63ec196d7af2a3d5ea4e2e5c60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetOffset</definition>
+        <argsstring>(dReal offset, int iaxis=0) RAVE_DEPRECATED</argsstring>
+        <name>SetOffset</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iaxis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000023"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/1/16) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="578" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="578" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1ac3d3423a3fae6eb66bc8e0ff6fc23e3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void serialize</definition>
+        <argsstring>(std::ostream &amp;o, int options) const </argsstring>
+        <name>serialize</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="582"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1aa78a272e319f192cece4bb8662a64cc2" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void _ComputePartialVelocities</definition>
+        <argsstring>(std::vector&lt; std::pair&lt; int, dReal &gt; &gt; &amp;vpartials, int iaxis, std::map&lt; std::pair&lt; MIMIC::DOFFormat, int &gt;, dReal &gt; &amp;mapcachedpartials) const </argsstring>
+        <name>_ComputePartialVelocities</name>
+        <param>
+          <type>std::vector&lt; std::pair&lt; int, <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt; &amp;</type>
+          <declname>vpartials</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iaxis</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::pair&lt; <ref refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat" kindref="compound">MIMIC::DOFFormat</ref>, int &gt;, <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>mapcachedpartials</declname>
+        </param>
+        <briefdescription>
+<para>computes the partial velocities with respect to all dependent DOFs specified by <ref refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1a88385fe7c2cecd8d6e625252f60a8f1f" kindref="member">MIMIC::_vmimicdofs</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the joint is not mimic, then just returns its own index <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">vpartials</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of dofindex/velocity_partial pairs. The final velocity is computed by taking the dot product. The dofindices do not repeat. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">iaxis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the axis </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">vcachedpartials</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set of cached partials for each degree of freedom </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="706"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Joint_1a44e669248f1eb1fe09308bf98bd2d292" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void _ComputeInternalInformation</definition>
+        <argsstring>(LinkPtr plink0, LinkPtr plink1, const Vector &amp;vanchor, const std::vector&lt; Vector &gt; &amp;vaxes, const std::vector&lt; dReal &gt; &amp;vcurrentvalues)</argsstring>
+        <name>_ComputeInternalInformation</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+          <declname>plink0</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+          <declname>plink1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>vanchor</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt; &amp;</type>
+          <declname>vaxes</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vcurrentvalues</declname>
+        </param>
+        <briefdescription>
+<para>Compute internal transformations and specify the attached links of the joint. </para>        </briefdescription>
+        <detaileddescription>
+<para>Called after the joint protected parameters {vAxes, vanchor, and _voffsets} have been initialized. vAxes and vanchor should be in the frame of plink0. Compute the left and right multiplications of the joint transformation and cleans up the attached bodies. After function completes, the following parameters are initialized: _tRight, _tLeft, _tinvRight, _tinvLeft, _attachedbodies. _attachedbodies does not necessarily contain the links in the same order as they were input. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plink0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first attaching link, all axes and anchors are defined in its coordinate system </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plink1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second attaching link </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vanchor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the anchor of the rotation axes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vaxes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the axes in plink0&apos;s coordinate system of the joints </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vinitialvalues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current values of the robot used to set the 0 offset of the robot </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="719"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Information about a joint that controls the relationship between two links. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1359">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1361">
+        <label>string</label>
+        <childnode refid="1362" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1360">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+      <node id="1362">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1358">
+        <label>Joint</label>
+        <link refid="classOpenRAVE_1_1KinBody_1_1Joint"/>
+        <childnode refid="1359" relation="usage">
+          <edgelabel>_tLeftNoOffset</edgelabel>
+          <edgelabel>_tRightNoOffset</edgelabel>
+          <edgelabel>_tLeft</edgelabel>
+          <edgelabel>_tinvRight</edgelabel>
+          <edgelabel>_tinvLeft</edgelabel>
+          <edgelabel>_tRight</edgelabel>
+        </childnode>
+        <childnode refid="1360" relation="usage">
+          <edgelabel>vanchor</edgelabel>
+        </childnode>
+        <childnode refid="1361" relation="usage">
+          <edgelabel>_name</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="388" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="387" bodyend="755"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a0fa04b42b980aa45bb17ff2dc2431f5f" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_attachedbodies</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ac1decc9c0f0d050301b27d1e2c2c6aed" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_bActive</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1abad3421b2e33fe336fbc26c62ecac3c8" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_bInitialized</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ac5270bc79693dd87a40cb49428f311ea" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_bIsCircular</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a44e669248f1eb1fe09308bf98bd2d292" prot="protected" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_ComputeInternalInformation</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1aa78a272e319f192cece4bb8662a64cc2" prot="protected" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_ComputePartialVelocities</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1aaf2ed934b37cbbd236fdd1b01a5f5005" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_name</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1aa50d67efd7f5e7f94781c4ddafc907ff" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_parent</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a943fdb80e9494d5e5976b13bd6443166" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_tinvLeft</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1aa7dd4c4e6a56ef48acaae54f29ed9977" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_tinvRight</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a09ec21a272426d35e161f49529220660" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_tLeft</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ae375672111730f3923efca8a45225f96" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_tLeftNoOffset</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a4eb771220365b4b37ed2d42a781fe87f" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_tRight</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af99bd230a66ac0067eb7ec755580b735" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_tRightNoOffset</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a28aca821f6a28398d7bff6a76317a1a5" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_type</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a8f7ce3595b2687565a7fb5d26c4dbef9" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_vaxes</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a37d5de3008b216f30222cf3c42d0a42f" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_vlowerlimit</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a0cf3254c3e7a7e58427bf27d31757126" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_vmaxaccel</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a9653640e1b079a0ea7d9b2dc54743b6f" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_vmaxtorque</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a0803c685cc31b774b49fccebba1345e5" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_vmaxvel</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af78763e010f75c80880d13539d899694" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_vmimic</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a463725ce817eef88b032307e46c97ed6" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_voffsets</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ae9fd2b8d21b33d02a24eb85440d7f4df" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_vupperlimit</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a54b3b5826708888da547faeb1869895a" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>_vweights</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a163d3455185c5ea511f74c790056b5ff" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>AddTorque</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ad923b60c6f66a287a7d99f6e6746837d" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>dofindex</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a529df46fcfc8448dc4fefbb3ea96ac32" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>fHardMaxVel</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a88c3376752ab869b6ba7ec779e280a3c" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>fResolution</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a1234a540b764968374f7454bda61b6e0" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetAccelerationLimits</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ab2179b392d53650660c9ab35c16bc4fb" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetAnchor</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a35d06683756fe53bb8bc0809b7be21cb" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetAxis</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a44fbec2fd26a45cada889c5c0f0751c8" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetDOF</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1aa008d1863733a137b9a417d8e5277bb0" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetDOFIndex</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a126f8d06fb55483d1f0261b29a94b36f" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetFirstAttached</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a99195cfe4f294630abece8e97727941b" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetHierarchyChildLink</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ac77a611b4552ee4a91058884361e1eed" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetHierarchyParentLink</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a44ecb796397334c930f7e4dbb26a9f83" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetInternalHierarchyAnchor</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a2561b37d0b0c8d411d8beec026bb465e" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetInternalHierarchyAxis</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a58faa57053a1da7655220459c93aa941" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetInternalHierarchyLeftTransform</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1aa648aa524fbd4802a93711d1cfff76b6" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetInternalHierarchyRightTransform</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1abacd0a7209e404b812bb3ca71a494d0a" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetJointIndex</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a9cbbcd5d35fb3830b35c33f244570566" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetLimits</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a6a583bf7e591ef4d7bb91d63d7d32dd4" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetMaxAccel</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a9761b474d0ab58e81fed1e3b40e98eca" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetMaxTorque</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a91a843f1a9bf04be6eef06a48c26ac02" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetMaxVel</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a23d3a787036ec4661af61c5c0f0a60b2" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetMimicCoeffs</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1acd2c27958f0bbd536ee752b237cbb514" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetMimicDOFIndices</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a8bc8323e310011f33ac609500db780c3" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetMimicEquation</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a5dc0e9a767787813d561165fbaf5a1ea" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetMimicJointIndex</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a8b9389d7613c0942dded4c6af39d7ab1" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetName</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1abd56b44048f3db84586c90a0c3a76ed3" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetOffset</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1aef334d32f92d94b51d66c428cbad2c08" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetParent</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a488fee47ef2f64285df38276b3902879" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetResolution</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1aaa3a0e7678b93650b52300aa1f0fdb5a" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetSecondAttached</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a153b287bb3dab25288e3b790b5a37c9a" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ae53c171bf98bb3b7bc5ab0fbd94bd90e" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetValue</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a04a882646ae62c1d8b2416bd525a18dc" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetValues</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1acf2184aef9396b8b098871e1a040ff77" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetVelocities</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1acb05f676c90a3c2f07586b09e8ff07c4" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetVelocityLimits</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a8d5323975a5c2625acb7903c794a1830" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetVelocityLimits</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1aa305a00e9865044b4f6c2ec81d00d6d9" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetWeight</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a9dede60d3c61a885dc1b98fe86e85727" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>GetWrapOffset</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a7adf99ae40bca7e94d926e3b56321fdb" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>IsCircular</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ac8d727c6f970d30c4cdea02ce2a153bc" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>IsMimic</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a869db68ce6e40c67cc4c5f0f36d1a950" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>IsPrismatic</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a477d385f39817d9116efac236d56b54f" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>IsRevolute</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af52f395f0894e5c0a59548fcde7c353b" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>IsStatic</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ad83b252054d455df3326733005c8affa" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>Joint</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9abfa2d54ade1cb55d74c401962692d088" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointHinge</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a9d1aa802c3fd09d149ef8196d17e8a70" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointHinge2</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1afe9105494cabb0de1ab670a7b82ae17c" prot="private" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>jointindex</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9abb73e1981867fd497856663fdfab44ca" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointNone</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a3458d02215179afb6e49ec52b048bd6b" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointPP</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9af69caac5a7ffe55f1fc3c80655a6f135" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointPR</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a57ca0c18de6537ced2ba1a7ccab12549" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointPrismatic</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9abe219cdbebc89b13679b107d2ca383e8" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointRevolute</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9aa1aceefeaced5a49e5b398f86848aa62" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointRP</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a381c1d59b62ea32834e3133e12e3e294" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointRR</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a1dcb4039e2775a5869b2ff71eac7116e" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointSlider</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a8389caca350cf877bc35ed3b71b01271" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointSpecialBit</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9acd26b6c77fff5881c5b9deba9e4a2af4" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointSpherical</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointType</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1af92f943e3dc4a7d1fb537fa481094fa9a3b7bc3564f9f7eb2451840338e99de65" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>JointUniversal</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ac3d3423a3fae6eb66bc8e0ff6fc23e3e" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a66a3b9657e5dfc13903c47664445fb93" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>SetAccelerationLimits</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a7f0e2be49eea7d168eab550af4f0ec97" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>SetJointLimits</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a90d56cf93256fd2c4087cd3bac140e66" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>SetLimits</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a0e31c5be31c4145afa786e0c0d6a46ae" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>SetMimicEquations</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1ad33ede63ec196d7af2a3d5ea4e2e5c60" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>SetOffset</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a57b2f497d973d47c5d429dfcd2010b62" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>SetResolution</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a9792a14881ff4bbcc058415fce2100d5" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>SetVelocityLimits</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a7b884c5900625a5d49951afaf67fcc27" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>SetWeights</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a717d10686a55fc7c870effe21a3fcb3d" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>SetWrapOffset</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a64804ea505aa46e8a50d81d31cdb927d" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>vanchor</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Joint_1a957e1244b568a12cd191dd93c613a3c9" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Joint</scope><name>~Joint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

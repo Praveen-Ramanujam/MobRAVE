@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1Force6DGeomData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::Force6DGeomData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry" prot="public" virt="non-virtual">SensorGeometry</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1Force6DGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="262" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="262" bodyend="264"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1142">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1141">
+        <label>Force6DGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1Force6DGeomData"/>
+        <childnode refid="1142" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1144">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1143">
+        <label>Force6DGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1Force6DGeomData"/>
+        <childnode refid="1144" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="260" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="259" bodyend="265"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1Force6DGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::Force6DGeomData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a2448e133d651783f1acfe3f944ba4dc3" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::Force6DGeomData</scope><name>~SensorGeometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

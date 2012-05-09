@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="arch__sensor" kind="page">
+    <compoundname>arch_sensor</compoundname>
+    <title>Sensor Concepts</title>
+    <detaileddescription>
+<para><bold>Reference:</bold> <ref refid="classOpenRAVE_1_1SensorBase" kindref="compound">OpenRAVE::SensorBase</ref></para><para>A sensor measures physical properties from the environment and converts them to data. Each sensor is associated with a particular position in space, has a geometry with properties defining the type of sensor, and can be queried for sensor data. Available sensor types are specified by <ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref>.</para><para>By default, all the sensors start with power off, meaning that the sensor does not gather data. The power can be turned on by using <ref refid="classOpenRAVE_1_1SensorBase_1ae02c7c4987dd11f5fb7657e18c7c8318" kindref="member">OpenRAVE::SensorBase::Configure</ref> and sending the SensorBase::CC_PowerOn command. All programs should manually turn sensor power on before using the sensors.</para><para>The sensor has two different rendering options:.</para><para><itemizedlist>
+<listitem><para><bold>Geometry Rendering</bold> - Renders a small icon that represents where the laser is placed in the environment, the icon&apos;s image should only be dependent on the geometry parameters of the sensor, and not the actual sensor data. Geometry rendering should be turned on by default. To configure this, use the SensorBase::CC_RenderDataX commands.</para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><bold>Data Rendering</bold> - Data rendering shows the measured sensor data coming out of the GetSensorData(). Usually the data can be very heavy, especially when a sensor&apos;s update rate is high, so data rendering is turned off by default. If the power is off, data should not be rendered. To configure this, use the SensorBase::CC_RenderGeometryX commands.</para></listitem></itemizedlist>
+</para><para>Check out the <ulink url="../main/plugins.html#basesensors">basesensors</ulink> plugin for an example of how to implement a basic laser range and camera sensors. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

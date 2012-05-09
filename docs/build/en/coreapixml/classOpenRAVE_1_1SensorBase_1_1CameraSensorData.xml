@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1CameraSensorData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::CameraSensorData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorData" prot="public" virt="non-virtual">SensorData</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1CameraSensorData_1a00f4421e1924fc771160fd04e5cf7b17" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; vimagedata</definition>
+        <argsstring></argsstring>
+        <name>vimagedata</name>
+        <briefdescription>
+<para>rgb image data, if camera only outputs in grayscale, fill each channel with the same value </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="104" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1CameraSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="101" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1CameraSensorData_1a27324341bb2e28fa2be2cfd0b7f0e985" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool serialize</definition>
+        <argsstring>(std::ostream &amp;O) const </argsstring>
+        <name>serialize</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a27324341bb2e28fa2be2cfd0b7f0e985">serialize</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>O</declname>
+        </param>
+        <briefdescription>
+<para>Serialize the sensor data to stream in XML format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="105" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2126" bodyend="2130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="988">
+        <label>CameraSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData"/>
+        <childnode refid="989" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="989">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="990">
+        <label>CameraSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData"/>
+        <childnode refid="991" relation="public-inheritance">
+        </childnode>
+        <childnode refid="993" relation="usage">
+          <edgelabel>vimagedata</edgelabel>
+        </childnode>
+      </node>
+      <node id="992">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="991">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+        <childnode refid="992" relation="usage">
+          <edgelabel>__trans</edgelabel>
+        </childnode>
+      </node>
+      <node id="993">
+        <label>vector&lt; uint8_t &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="99" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="98" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a0503a26959ec94efdab737ce47842afe" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::CameraSensorData</scope><name>__stamp</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a5786ccc78c0aae6ca580507121b3c24a" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::CameraSensorData</scope><name>__trans</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::CameraSensorData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData_1a27324341bb2e28fa2be2cfd0b7f0e985" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::CameraSensorData</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData_1a00f4421e1924fc771160fd04e5cf7b17" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::CameraSensorData</scope><name>vimagedata</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a2ce106fe3cd9771a5b0770339c411829" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::CameraSensorData</scope><name>~SensorData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

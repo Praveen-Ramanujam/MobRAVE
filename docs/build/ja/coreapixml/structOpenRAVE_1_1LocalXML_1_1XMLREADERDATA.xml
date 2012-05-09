@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="structOpenRAVE_1_1LocalXML_1_1XMLREADERDATA" kind="struct" prot="public">
+    <compoundname>OpenRAVE::LocalXML::XMLREADERDATA</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOpenRAVE_1_1LocalXML_1_1XMLREADERDATA_1a4f526a49d49cf3706a0575aabd21dd71" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a5465be4feef36a211b06feebdc5e3b42" kindref="member">BaseXMLReaderPtr</ref></type>
+        <definition>BaseXMLReaderPtr _preader</definition>
+        <argsstring></argsstring>
+        <name>_preader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2270" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1LocalXML_1_1XMLREADERDATA_1abb6520f28dc1b9bbf6bc027ddd6de337" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a5465be4feef36a211b06feebdc5e3b42" kindref="member">BaseXMLReaderPtr</ref></type>
+        <definition>BaseXMLReaderPtr _pdummy</definition>
+        <argsstring></argsstring>
+        <name>_pdummy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2270" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1LocalXML_1_1XMLREADERDATA_1a228b749326371a299846b6e074976699" prot="public" static="no" mutable="no">
+        <type>xmlParserCtxtPtr</type>
+        <definition>xmlParserCtxtPtr _ctxt</definition>
+        <argsstring></argsstring>
+        <name>_ctxt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2271" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2271" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structOpenRAVE_1_1LocalXML_1_1XMLREADERDATA_1a1edffa39d2413647340c8fcbbc6d767e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>XMLREADERDATA</definition>
+        <argsstring>(BaseXMLReaderPtr preader, xmlParserCtxtPtr ctxt)</argsstring>
+        <name>XMLREADERDATA</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5465be4feef36a211b06feebdc5e3b42" kindref="member">BaseXMLReaderPtr</ref></type>
+          <declname>preader</declname>
+        </param>
+        <param>
+          <type>xmlParserCtxtPtr</type>
+          <declname>ctxt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2268" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2268" bodyend="2269"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="2267" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2266" bodyend="2272"/>
+    <listofallmembers>
+      <member refid="structOpenRAVE_1_1LocalXML_1_1XMLREADERDATA_1a228b749326371a299846b6e074976699" prot="public" virt="non-virtual"><scope>OpenRAVE::LocalXML::XMLREADERDATA</scope><name>_ctxt</name></member>
+      <member refid="structOpenRAVE_1_1LocalXML_1_1XMLREADERDATA_1abb6520f28dc1b9bbf6bc027ddd6de337" prot="public" virt="non-virtual"><scope>OpenRAVE::LocalXML::XMLREADERDATA</scope><name>_pdummy</name></member>
+      <member refid="structOpenRAVE_1_1LocalXML_1_1XMLREADERDATA_1a4f526a49d49cf3706a0575aabd21dd71" prot="public" virt="non-virtual"><scope>OpenRAVE::LocalXML::XMLREADERDATA</scope><name>_preader</name></member>
+      <member refid="structOpenRAVE_1_1LocalXML_1_1XMLREADERDATA_1a1edffa39d2413647340c8fcbbc6d767e" prot="public" virt="non-virtual"><scope>OpenRAVE::LocalXML::XMLREADERDATA</scope><name>XMLREADERDATA</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

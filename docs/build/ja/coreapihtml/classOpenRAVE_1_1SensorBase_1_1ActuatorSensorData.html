@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: クラス ActuatorSensorData 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="classOpenRAVE_1_1SensorBase.html">SensorBase</a>::<a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html">ActuatorSensorData</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス ActuatorSensorData</h1><!-- doxytag: class="OpenRAVE::SensorBase::ActuatorSensorData" --><!-- doxytag: inherits="OpenRAVE::SensorBase::SensorData" -->
+<p>An actuator for modeling motors and other mechanisms that produce torque/force. The actuator has only one degree of freedom.  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="sensor_8h_source.html">sensor.h</a>&gt;</code></p>
+<div class="dynheader">
+ActuatorSensorDataに対する継承グラフ</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__inherit__graph.png" border="0" usemap="#ActuatorSensorData_inherit__map" alt="Inheritance graph"/></div>
+<map name="ActuatorSensorData_inherit__map" id="ActuatorSensorData_inherit__map">
+<area shape="rect" href="classOpenRAVE_1_1SensorBase_1_1SensorData.html" title="used to pass sensor data around" alt="" coords="31,5,119,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+ActuatorSensorDataのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData__coll__graph.png" border="0" usemap="#ActuatorSensorData_coll__map" alt="Collaboration graph"/></div>
+<map name="ActuatorSensorData_coll__map" id="ActuatorSensorData_coll__map">
+<area shape="rect" href="classOpenRAVE_1_1SensorBase_1_1SensorData.html" title="used to pass sensor data around" alt="" coords="44,101,132,131"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#aff7db6eb3c126e9c2c2c116ed181fa3c">ActuatorState</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#aff7db6eb3c126e9c2c2c116ed181fa3ca9db5ef562213f8bec88be67e1e2d7d10">AS_Undefined</a> = 0, 
+<a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#aff7db6eb3c126e9c2c2c116ed181fa3ca94f00fffd972fc0bc603b3ea47101254">AS_Idle</a> = 1, 
+<a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#aff7db6eb3c126e9c2c2c116ed181fa3ca32ea9206752f7b87d3bd9fbd85cb08f3">AS_Moving</a> = 2, 
+<a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#aff7db6eb3c126e9c2c2c116ed181fa3cad320e5c2ae66e3c49f5a1771a29effd6">AS_Stalled</a> = 3, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#aff7db6eb3c126e9c2c2c116ed181fa3ca083b3c14ce5e0fc3cc25f3f9f284c319">AS_Braked</a> = 4
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>the state of the actuator </p>
+ <a href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#aff7db6eb3c126e9c2c2c116ed181fa3c">[詳細]</a><br/></td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#a9c29c979519f2725378d98f25918563a">ActuatorSensorData</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#a73d4e01a2ea086a5e37ef209abd23526">GetType</a> ()</td></tr>
+<tr><td colspan="2"><h2>Public 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#aff7db6eb3c126e9c2c2c116ed181fa3c">ActuatorState</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#a7b138acf2fe7916ac29f367701714636">state</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#a63e8fdafcf41e40ff6d9d7289bd1c305">measuredcurrent</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">measured current from the actuator  <a href="#a63e8fdafcf41e40ff6d9d7289bd1c305"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#a02579f8c545c868b31b89bf00c194f53">measuredtemperature</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">measured temperature from the actuator  <a href="#a02579f8c545c868b31b89bf00c194f53"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#ad9a9a10b35c10cc05a1a5acd2bb7882b">appliedcurrent</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">current sent to the actuator  <a href="#ad9a9a10b35c10cc05a1a5acd2bb7882b"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>An actuator for modeling motors and other mechanisms that produce torque/force. The actuator has only one degree of freedom. </p>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00170">170</a> 行で定義されています。</p>
+<hr/><h2>列挙型</h2>
+<a class="anchor" id="aff7db6eb3c126e9c2c2c116ed181fa3c"></a><!-- doxytag: member="OpenRAVE::SensorBase::ActuatorSensorData::ActuatorState" ref="aff7db6eb3c126e9c2c2c116ed181fa3c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#aff7db6eb3c126e9c2c2c116ed181fa3c">ActuatorState</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the state of the actuator </p>
+<dl><dt><b>列挙型の値: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="aff7db6eb3c126e9c2c2c116ed181fa3ca9db5ef562213f8bec88be67e1e2d7d10"></a><!-- doxytag: member="AS_Undefined" ref="aff7db6eb3c126e9c2c2c116ed181fa3ca9db5ef562213f8bec88be67e1e2d7d10" args="" -->AS_Undefined</em>&nbsp;</td><td>
+<p>returned when no state is defined </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aff7db6eb3c126e9c2c2c116ed181fa3ca94f00fffd972fc0bc603b3ea47101254"></a><!-- doxytag: member="AS_Idle" ref="aff7db6eb3c126e9c2c2c116ed181fa3ca94f00fffd972fc0bc603b3ea47101254" args="" -->AS_Idle</em>&nbsp;</td><td>
+<p>this actuator is idle </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aff7db6eb3c126e9c2c2c116ed181fa3ca32ea9206752f7b87d3bd9fbd85cb08f3"></a><!-- doxytag: member="AS_Moving" ref="aff7db6eb3c126e9c2c2c116ed181fa3ca32ea9206752f7b87d3bd9fbd85cb08f3" args="" -->AS_Moving</em>&nbsp;</td><td>
+<p>this actuator is in motion from previous commands </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aff7db6eb3c126e9c2c2c116ed181fa3cad320e5c2ae66e3c49f5a1771a29effd6"></a><!-- doxytag: member="AS_Stalled" ref="aff7db6eb3c126e9c2c2c116ed181fa3cad320e5c2ae66e3c49f5a1771a29effd6" args="" -->AS_Stalled</em>&nbsp;</td><td>
+<p>the actuator is stalled, needs to be unstalled by sending a ready signal </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aff7db6eb3c126e9c2c2c116ed181fa3ca083b3c14ce5e0fc3cc25f3f9f284c319"></a><!-- doxytag: member="AS_Braked" ref="aff7db6eb3c126e9c2c2c116ed181fa3ca083b3c14ce5e0fc3cc25f3f9f284c319" args="" -->AS_Braked</em>&nbsp;</td><td>
+<p>the actuator is braked </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00174">174</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a9c29c979519f2725378d98f25918563a"></a><!-- doxytag: member="OpenRAVE::SensorBase::ActuatorSensorData::ActuatorSensorData" ref="a9c29c979519f2725378d98f25918563a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html">ActuatorSensorData</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00182">182</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a73d4e01a2ea086a5e37ef209abd23526"></a><!-- doxytag: member="OpenRAVE::SensorBase::ActuatorSensorData::GetType" ref="a73d4e01a2ea086a5e37ef209abd23526" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a> GetType </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorData.html#a3cf408517e49fe46f25b023c690c2ea0">SensorData</a>を実装しています。</p>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00184">184</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="ad9a9a10b35c10cc05a1a5acd2bb7882b"></a><!-- doxytag: member="OpenRAVE::SensorBase::ActuatorSensorData::appliedcurrent" ref="ad9a9a10b35c10cc05a1a5acd2bb7882b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> <a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#ad9a9a10b35c10cc05a1a5acd2bb7882b">appliedcurrent</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>current sent to the actuator </p>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00191">191</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a63e8fdafcf41e40ff6d9d7289bd1c305"></a><!-- doxytag: member="OpenRAVE::SensorBase::ActuatorSensorData::measuredcurrent" ref="a63e8fdafcf41e40ff6d9d7289bd1c305" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> <a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#a63e8fdafcf41e40ff6d9d7289bd1c305">measuredcurrent</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>measured current from the actuator </p>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00189">189</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a02579f8c545c868b31b89bf00c194f53"></a><!-- doxytag: member="OpenRAVE::SensorBase::ActuatorSensorData::measuredtemperature" ref="a02579f8c545c868b31b89bf00c194f53" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> <a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#a02579f8c545c868b31b89bf00c194f53">measuredtemperature</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>measured temperature from the actuator </p>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00190">190</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b138acf2fe7916ac29f367701714636"></a><!-- doxytag: member="OpenRAVE::SensorBase::ActuatorSensorData::state" ref="a7b138acf2fe7916ac29f367701714636" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#aff7db6eb3c126e9c2c2c116ed181fa3c">ActuatorState</a> <a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#a7b138acf2fe7916ac29f367701714636">state</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00188">188</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>include/openrave/<a class="el" href="sensor_8h_source.html">sensor.h (r2848/r2761)</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:14 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

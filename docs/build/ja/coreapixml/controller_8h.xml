@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="controller_8h" kind="file">
+    <compoundname>controller.h</compoundname>
+    <includedby refid="openrave_8h" local="no">include/openrave/openrave.h</includedby>
+    <invincdepgraph>
+      <node id="1846">
+        <label>src/cppexamples/ikfastloader.cpp</label>
+        <link refid="ikfastloader_8cpp"/>
+      </node>
+      <node id="1855">
+        <label>src/cppexamples/orshowsensors.cpp</label>
+        <link refid="orshowsensors_8cpp"/>
+      </node>
+      <node id="1838">
+        <label>src/cppexamples/orpythonbinding.cpp</label>
+        <link refid="orpythonbinding_8cpp"/>
+      </node>
+      <node id="1845">
+        <label>src/libopenrave-core/openrave-core.h</label>
+        <link refid="openrave-core_8h"/>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
+        </childnode>
+        <childnode refid="1843" relation="include">
+        </childnode>
+      </node>
+      <node id="1843">
+        <label>src/cppexamples/oryoubotcontrol.cpp</label>
+        <link refid="oryoubotcontrol_8cpp"/>
+      </node>
+      <node id="1850">
+        <label>src/cppexamples/orikfilter.cpp</label>
+        <link refid="orikfilter_8cpp"/>
+      </node>
+      <node id="1853">
+        <label>src/cppexamples/orplanning_module.cpp</label>
+        <link refid="orplanning__module_8cpp"/>
+      </node>
+      <node id="1844">
+        <label>include/openrave/plugin.h</label>
+        <link refid="plugin_8h"/>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1839" relation="include">
+        </childnode>
+      </node>
+      <node id="1852">
+        <label>src/cppexamples/orplanning_ik.cpp</label>
+        <link refid="orplanning__ik_8cpp"/>
+      </node>
+      <node id="1856">
+        <label>src/libopenrave/libopenrave.cpp</label>
+        <link refid="libopenrave_8cpp"/>
+        <childnode refid="1856" relation="include">
+        </childnode>
+      </node>
+      <node id="1835">
+        <label>include/openrave/controller.h</label>
+        <link refid="controller.h"/>
+        <childnode refid="1836" relation="include">
+        </childnode>
+      </node>
+      <node id="1836">
+        <label>include/openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1840" relation="include">
+        </childnode>
+        <childnode refid="1844" relation="include">
+        </childnode>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1856" relation="include">
+        </childnode>
+      </node>
+      <node id="1837">
+        <label>src/cppexamples/customreader.cpp</label>
+        <link refid="customreader_8cpp"/>
+      </node>
+      <node id="1847">
+        <label>src/cppexamples/opencvsaving.cpp</label>
+        <link refid="opencvsaving_8cpp"/>
+      </node>
+      <node id="1841">
+        <label>src/cppexamples/ormulticontrol.cpp</label>
+        <link refid="ormulticontrol_8cpp"/>
+      </node>
+      <node id="1840">
+        <label>include/openrave/planningutils.h</label>
+        <link refid="planningutils_8h"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
+        </childnode>
+        <childnode refid="1843" relation="include">
+        </childnode>
+      </node>
+      <node id="1849">
+        <label>src/cppexamples/orconveyormovement.cpp</label>
+        <link refid="orconveyormovement_8cpp"/>
+      </node>
+      <node id="1842">
+        <label>src/cppexamples/ortrajectory.cpp</label>
+        <link refid="ortrajectory_8cpp"/>
+      </node>
+      <node id="1848">
+        <label>src/cppexamples/orcollision.cpp</label>
+        <link refid="orcollision_8cpp"/>
+      </node>
+      <node id="1851">
+        <label>src/cppexamples/orloadviewer.cpp</label>
+        <link refid="orloadviewer_8cpp"/>
+      </node>
+      <node id="1839">
+        <label>src/cppexamples/plugincpp.cpp</label>
+        <link refid="plugincpp_8cpp"/>
+      </node>
+      <node id="1854">
+        <label>src/cppexamples/orplanning_planner.cpp</label>
+        <link refid="orplanning__planner_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenRAVE_1_1ControllerBase" prot="public">OpenRAVE::ControllerBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1MultiController" prot="public">OpenRAVE::MultiController</innerclass>
+    <innernamespace refid="namespaceOpenRAVE">OpenRAVE</innernamespace>
+    <briefdescription>
+<para>Controller related definitions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2006-2011<sp/>Rosen<sp/>Diankov<sp/>&lt;rosen.diankov@gmail.com&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenRAVE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OpenRAVE<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="preprocessor">#ifndef<sp/>OPENRAVE_CONTROLLER_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_CONTROLLER_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenRAVE<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classOpenRAVE_1_1ControllerBase" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1ControllerBase" kindref="compound" tooltip="[interface] Abstract base class to encapsulate a local controller. If not specified...">ControllerBase</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="classOpenRAVE_1_1ControllerBase_1af051c65cd5e6c845eba3c83a22ca0116" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1ControllerBase_1af051c65cd5e6c845eba3c83a22ca0116" kindref="member">ControllerBase</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)<sp/>:<sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref>(PT_Controller,<sp/>penv)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33" refid="classOpenRAVE_1_1ControllerBase_1aa248527e7bc5f73db1fddfd87673d65d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ControllerBase_1aa248527e7bc5f73db1fddfd87673d65d" kindref="member">~ControllerBase</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classOpenRAVE_1_1ControllerBase_1affeafe65e7c4094f282d273dedbf069b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>InterfaceType<sp/><ref refid="classOpenRAVE_1_1ControllerBase_1affeafe65e7c4094f282d273dedbf069b" kindref="member" tooltip="return the static interface type this class points to (used for safe casting)">GetInterfaceTypeStatic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PT_Controller;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classOpenRAVE_1_1ControllerBase_1ae61f45e499ec45a2b70ae3a1af53101b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ControllerBase_1ae61f45e499ec45a2b70ae3a1af53101b" kindref="member" tooltip="Initializes the controller.">Init</ref>(<ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>robot,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>args)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!robot<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>dofindices;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>robot-&gt;GetDOF();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dofindices.push_back(i);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="orpythonbinding_8cpp_1a7f8934a0c50d70a317cb981bc9f49af8" kindref="member">Init</ref>(robot,dofindices,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="orpythonbinding_8cpp_1a7f8934a0c50d70a317cb981bc9f49af8" kindref="member">Init</ref>(<ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>robot,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;&amp;<sp/>dofindices,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nControlTransformation)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;&amp;<sp/>GetControlDOFIndices()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>IsControlTransformation()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>GetRobot()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>options)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetDesired(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;<sp/>values,<sp/><ref refid="namespaceOpenRAVE_1a6d8be5f641c37cf8096b9bc60c49d763" kindref="member">TransformConstPtr</ref><sp/>trans=<ref refid="namespaceOpenRAVE_1a6d8be5f641c37cf8096b9bc60c49d763" kindref="member">TransformConstPtr</ref>())<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetPath(<ref refid="namespaceOpenRAVE_1ae4a194e7d8dcb23b1acad4ff9f84ad49" kindref="member">TrajectoryBaseConstPtr</ref><sp/>ptraj)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SimulationStep(<ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>fTimeElapsed)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsDone()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>GetTime()<sp/>const<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetVelocity(std::vector&lt;<ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>&gt;&amp;<sp/>vel)<sp/>const<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetTorque(std::vector&lt;<ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>&gt;&amp;<sp/>torque)<sp/>const<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Specifies<sp/>the<sp/>controlled<sp/>degrees<sp/>of<sp/>freedom<sp/>used<sp/>to<sp/>control<sp/>the<sp/>robot<sp/>through<sp/>torque<sp/>In<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>general<sp/>sense,<sp/>it<sp/>is<sp/>not<sp/>always<sp/>the<sp/>case<sp/>that<sp/>there&apos;s<sp/>a<sp/>one-to-one<sp/>mapping<sp/>between<sp/>a<sp/>robot&apos;s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>joints<sp/>and<sp/>the<sp/>motors<sp/>used<sp/>to<sp/>control<sp/>the<sp/>robot.<sp/>A<sp/>good<sp/>example<sp/>of<sp/>this<sp/>is<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>differential-drive<sp/>robot.<sp/>If<sp/>developers<sp/>need<sp/>such<sp/>a<sp/>robot,<sp/>they<sp/>should<sp/>derive<sp/>from<sp/>RobotBase</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>and<sp/>override<sp/>these<sp/>methods.<sp/>The<sp/>function<sp/>that<sp/>maps<sp/>control<sp/>torques<sp/>to<sp/>actual<sp/>movements<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>robot<sp/>should<sp/>be<sp/>put<sp/>in<sp/>SimulationStep.<sp/><sp/>As<sp/>default,<sp/>the<sp/>control<sp/>degrees<sp/>of<sp/>freedom<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tied<sp/>directly<sp/>to<sp/>the<sp/>active<sp/>degrees<sp/>of<sp/>freedom;<sp/>the<sp/>max<sp/>torques<sp/>for<sp/>affine<sp/>dofs<sp/>are<sp/>0<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this<sp/>case.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>virtual<sp/>void<sp/>GetControlMaxTorques(std::vector&lt;dReal&gt;&amp;<sp/>vmaxtorque)<sp/>const;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>virtual<sp/>void<sp/>SetControlTorques(const<sp/>std::vector&lt;dReal&gt;&amp;<sp/>pTorques);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">private:</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>GetHash()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="interfacehashes_8h_1a26245f6f05773734d7f5921ac8340787" kindref="member">OPENRAVE_CONTROLLER_HASH</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="classOpenRAVE_1_1MultiController" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1MultiController" kindref="compound" tooltip="controller that manage multiple controllers, allows users to easily set multiple...">MultiController</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ControllerBase" kindref="compound" tooltip="[interface] Abstract base class to encapsulate a local controller. If not specified...">ControllerBase</ref></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1MultiController" kindref="compound" tooltip="controller that manage multiple controllers, allows users to easily set multiple...">MultiController</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classOpenRAVE_1_1MultiController" kindref="compound" tooltip="controller that manage multiple controllers, allows users to easily set multiple...">MultiController</ref>();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="orpythonbinding_8cpp_1a7f8934a0c50d70a317cb981bc9f49af8" kindref="member">Init</ref>(<ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>robot,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;&amp;<sp/>dofindices,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nControlTransformation);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;&amp;<sp/>GetControlDOFIndices()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>IsControlTransformation()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>GetRobot()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>AttachController(<ref refid="namespaceOpenRAVE_1a93f3c54acfadfefe33b745f7df0c81cf" kindref="member">ControllerBasePtr</ref><sp/><ref refid="architecture_8dox_1a4be64eab0b347f5993372a1a40e21901" kindref="member">controller</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;&amp;<sp/>dofindices,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nControlTransformation);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RemoveController(<ref refid="namespaceOpenRAVE_1a93f3c54acfadfefe33b745f7df0c81cf" kindref="member">ControllerBasePtr</ref><sp/>controller);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a93f3c54acfadfefe33b745f7df0c81cf" kindref="member">ControllerBasePtr</ref><sp/>GetController(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dof)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>options);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetDesired(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;<sp/>values,<sp/><ref refid="namespaceOpenRAVE_1a6d8be5f641c37cf8096b9bc60c49d763" kindref="member">TransformConstPtr</ref><sp/>trans=<ref refid="namespaceOpenRAVE_1a6d8be5f641c37cf8096b9bc60c49d763" kindref="member">TransformConstPtr</ref>());</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetPath(<ref refid="namespaceOpenRAVE_1ae4a194e7d8dcb23b1acad4ff9f84ad49" kindref="member">TrajectoryBaseConstPtr</ref><sp/>ptraj);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SimulationStep(<ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>fTimeElapsed);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsDone();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>GetTime()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetVelocity(std::vector&lt;dReal&gt;&amp;<sp/>vel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetTorque(std::vector&lt;dReal&gt;&amp;<sp/>torque)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="178" refid="classOpenRAVE_1_1MultiController_1a96b8c6244de5c544065e0611b566cb84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>_probot;</highlight></codeline>
+<codeline lineno="179" refid="classOpenRAVE_1_1MultiController_1a9aa9f2e5fea98be176927cd10e3d9b55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>_dofindices,<sp/>_dofreverseindices;</highlight></codeline>
+<codeline lineno="180" refid="classOpenRAVE_1_1MultiController_1a1e82d77ea3eec0ff00ec78f1e825bad5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_nControlTransformation;</highlight></codeline>
+<codeline lineno="181" refid="classOpenRAVE_1_1MultiController_1ae909ce72e4a1946873b0e4379393a2d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;ControllerBasePtr&gt;<sp/>_listcontrollers;</highlight></codeline>
+<codeline lineno="182" refid="classOpenRAVE_1_1MultiController_1a1db0a68fc450ce5b0bc845844caf4355" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;ControllerBasePtr&gt;<sp/>_vcontrollersbydofs;</highlight></codeline>
+<codeline lineno="183" refid="classOpenRAVE_1_1MultiController_1a1bc422fb6c0a6d3f80caf14f64dfb3a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a93f3c54acfadfefe33b745f7df0c81cf" kindref="member">ControllerBasePtr</ref><sp/>_ptransformcontroller;</highlight></codeline>
+<codeline lineno="184" refid="classOpenRAVE_1_1MultiController_1aad38f47a7dbda5ff04a45d0ab24a4083" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref><sp/>_ptraj;</highlight></codeline>
+<codeline lineno="185" refid="classOpenRAVE_1_1MultiController_1abf18812ae19b048af3f11234e0bf605c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>boost::mutex<sp/>_mutex;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="namespaceOpenRAVE_1ab691b4b86694b0711ca726899d248488" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;MultiController&gt;<sp/><ref refid="namespaceOpenRAVE_1ab691b4b86694b0711ca726899d248488" kindref="member">MultiControllerPtr</ref>;</highlight></codeline>
+<codeline lineno="189" refid="namespaceOpenRAVE_1a64828af1938859dd708d67aed2c126f2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;MultiController<sp/>const&gt;<sp/><ref refid="namespaceOpenRAVE_1a64828af1938859dd708d67aed2c126f2" kindref="member">MultiControllerConstPtr</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>OpenRAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/include/openrave/controller.h"/>
+  </compounddef>
+</doxygen>

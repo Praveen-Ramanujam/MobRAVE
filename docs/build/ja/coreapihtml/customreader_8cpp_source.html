@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: src/cppexamples/customreader.cpp (r2848/r2565) ソースファイル 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<h1>src/cppexamples/customreader.cpp (r2848/r2565)</h1><a href="customreader_8cpp.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;<a class="code" href="openrave_8h.html" title="Defines the public headers that every plugin must include in order to use openrave...">openrave/openrave.h</a>&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;<a class="code" href="plugin_8h.html" title="Provides helper functions for creating plugins. Defines all the necessary functions...">openrave/plugin.h</a>&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="keyword">using namespace </span>std;
+<a name="l00012"></a>00012 <span class="keyword">using namespace </span>OpenRAVE;
+<a name="l00013"></a>00013 
+<a name="l00014"></a><a class="code" href="classCustomController.html">00014</a> <span class="keyword">class </span><a class="code" href="classCustomController.html">CustomController</a> : <span class="keyword">public</span> <a class="code" href="classOpenRAVE_1_1ControllerBase.html" title="[interface] Abstract base class to encapsulate a local controller. If not specified...">ControllerBase</a>
+<a name="l00015"></a>00015 {
+<a name="l00016"></a>00016 <span class="keyword">public</span>:
+<a name="l00017"></a><a class="code" href="classCustomController_1_1XMLData.html">00017</a>     <span class="keyword">class </span><a class="code" href="classCustomController_1_1XMLData.html">XMLData</a> : <span class="keyword">public</span> <a class="code" href="classOpenRAVE_1_1XMLReadable.html" title="base class for readable interfaces">XMLReadable</a>
+<a name="l00018"></a>00018     {
+<a name="l00019"></a>00019 <span class="keyword">public</span>:
+<a name="l00020"></a><a class="code" href="classCustomController_1_1XMLData.html#ad0c42ed855b1d6b919697af878fc80f2">00020</a>         <a class="code" href="classCustomController_1_1XMLData.html#ad0c42ed855b1d6b919697af878fc80f2">XMLData</a>() : <a class="code" href="classOpenRAVE_1_1XMLReadable.html" title="base class for readable interfaces">XMLReadable</a>(<span class="stringliteral">&quot;piddata&quot;</span>) {
+<a name="l00021"></a>00021         }
+<a name="l00022"></a><a class="code" href="classCustomController_1_1XMLData.html#a1db9f35556ba9d020ee4f18c5d8bbfc6">00022</a>         vector&lt;dReal&gt; <a class="code" href="classCustomController_1_1XMLData.html#a1db9f35556ba9d020ee4f18c5d8bbfc6">pgains</a>,<a class="code" href="classCustomController_1_1XMLData.html#a19787d61469aa7dc0f39c199ae809a0f">igains</a>;
+<a name="l00023"></a>00023     };
+<a name="l00024"></a>00024 
+<a name="l00025"></a><a class="code" href="classCustomController_1_1PIDXMLReader.html">00025</a>     <span class="keyword">class </span><a class="code" href="classCustomController_1_1PIDXMLReader.html">PIDXMLReader</a> : <span class="keyword">public</span> <a class="code" href="classOpenRAVE_1_1BaseXMLReader.html">BaseXMLReader</a>
+<a name="l00026"></a>00026     {
+<a name="l00027"></a>00027 <span class="keyword">public</span>:
+<a name="l00028"></a><a class="code" href="classCustomController_1_1PIDXMLReader.html#af465460c8243442a0b497f681eeb0243">00028</a>         <a class="code" href="classCustomController_1_1PIDXMLReader.html#af465460c8243442a0b497f681eeb0243">PIDXMLReader</a>(boost::shared_ptr&lt;XMLData&gt; piddata, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts) {
+<a name="l00029"></a>00029             <a class="code" href="classCustomController_1_1PIDXMLReader.html#ad1498147455332c7663359faced0138d">_piddata</a> = piddata;
+<a name="l00030"></a>00030             <span class="keywordflow">if</span>( !<a class="code" href="classCustomController_1_1PIDXMLReader.html#ad1498147455332c7663359faced0138d">_piddata</a> )
+<a name="l00031"></a>00031                 <a class="code" href="classCustomController_1_1PIDXMLReader.html#ad1498147455332c7663359faced0138d">_piddata</a>.reset(<span class="keyword">new</span> <a class="code" href="classCustomController_1_1XMLData.html">XMLData</a>());
+<a name="l00032"></a>00032             <a class="code" href="openrave_8h.html#a334922a6794604207afe36b4feda230e">RAVELOG_INFO</a>(<span class="stringliteral">&quot;the attributes piddata is created with are:\n&quot;</span>);
+<a name="l00033"></a>00033             <span class="keywordflow">for</span>(AttributesList::const_iterator itatt = atts.begin(); itatt != atts.end(); ++itatt)
+<a name="l00034"></a>00034                 <a class="code" href="openrave_8h.html#a334922a6794604207afe36b4feda230e">RAVELOG_INFO</a>(<span class="stringliteral">&quot;%s=%s\n&quot;</span>,itatt-&gt;first.c_str(),itatt-&gt;second.c_str());
+<a name="l00035"></a>00035         }
+<a name="l00036"></a>00036 
+<a name="l00037"></a><a class="code" href="classCustomController_1_1PIDXMLReader.html#a96a8303765bddf9742cbc422f8a9c2d6">00037</a>         <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a4518fd20d196b853bb157999524b6fde">XMLReadablePtr</a> <a class="code" href="classCustomController_1_1PIDXMLReader.html#a96a8303765bddf9742cbc422f8a9c2d6">GetReadable</a>() {
+<a name="l00038"></a>00038             <span class="keywordflow">return</span> <a class="code" href="classCustomController_1_1PIDXMLReader.html#ad1498147455332c7663359faced0138d">_piddata</a>;
+<a name="l00039"></a>00039         }
+<a name="l00040"></a>00040 
+<a name="l00041"></a><a class="code" href="classCustomController_1_1PIDXMLReader.html#aeef176e516fa467c3a1ea9c210f96d48">00041</a>         <span class="keyword">virtual</span> <a class="code" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9">ProcessElement</a> <a class="code" href="classCustomController_1_1PIDXMLReader.html#aeef176e516fa467c3a1ea9c210f96d48">startElement</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts) {
+<a name="l00042"></a>00042             <a class="code" href="classCustomController_1_1PIDXMLReader.html#a03f1dbc12ea62359d119e3a489d1b55e">_ss</a>.str(<span class="stringliteral">&quot;&quot;</span>);
+<a name="l00043"></a>00043             <span class="keywordflow">return</span> (name == <span class="stringliteral">&quot;pgains&quot;</span> || name==<span class="stringliteral">&quot;igains&quot;</span>) ? <a class="code" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9a5123a3d32d744694919844d9675ede67" title="current tag will be processed by this class">PE_Support</a> : <a class="code" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9a55670b1a206d4da09ef69e3690ee7bba" title="current tag was not supported, so pass onto another class">PE_Pass</a>;
+<a name="l00044"></a>00044         }
+<a name="l00045"></a>00045 
+<a name="l00046"></a><a class="code" href="classCustomController_1_1PIDXMLReader.html#afc6f1ff707e6fd690100c89e3cd4c291">00046</a>         <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCustomController_1_1PIDXMLReader.html#afc6f1ff707e6fd690100c89e3cd4c291">endElement</a>(<span class="keyword">const</span> std::string&amp; name)
+<a name="l00047"></a>00047         {
+<a name="l00048"></a>00048             <span class="keywordflow">if</span>( name == <span class="stringliteral">&quot;piddata&quot;</span> )
+<a name="l00049"></a>00049                 <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00050"></a>00050             <span class="keywordflow">else</span> <span class="keywordflow">if</span>( name == <span class="stringliteral">&quot;pgains&quot;</span> )
+<a name="l00051"></a>00051                 <span class="comment">// read all the float values into a vector</span>
+<a name="l00052"></a>00052                 <a class="code" href="classCustomController_1_1PIDXMLReader.html#ad1498147455332c7663359faced0138d">_piddata</a>-&gt;pgains = vector&lt;dReal&gt;((istream_iterator&lt;dReal&gt;(<a class="code" href="classCustomController_1_1PIDXMLReader.html#a03f1dbc12ea62359d119e3a489d1b55e">_ss</a>)), istream_iterator&lt;dReal&gt;());
+<a name="l00053"></a>00053             <span class="keywordflow">else</span> <span class="keywordflow">if</span>( name == <span class="stringliteral">&quot;igains&quot;</span> )
+<a name="l00054"></a>00054                 <span class="comment">// read all the float values into a vector</span>
+<a name="l00055"></a>00055                 <a class="code" href="classCustomController_1_1PIDXMLReader.html#ad1498147455332c7663359faced0138d">_piddata</a>-&gt;igains = vector&lt;dReal&gt;((istream_iterator&lt;dReal&gt;(<a class="code" href="classCustomController_1_1PIDXMLReader.html#a03f1dbc12ea62359d119e3a489d1b55e">_ss</a>)), istream_iterator&lt;dReal&gt;());
+<a name="l00056"></a>00056             <span class="keywordflow">else</span>
+<a name="l00057"></a>00057                 <a class="code" href="openrave_8h.html#a4299f3db31dd3149dc36eeffbb6a65db">RAVELOG_ERROR</a>(<span class="stringliteral">&quot;unknown field %s\n&quot;</span>, name.c_str());
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059             <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00060"></a>00060         }
+<a name="l00061"></a>00061 
+<a name="l00062"></a><a class="code" href="classCustomController_1_1PIDXMLReader.html#a91544148bc143140fe0474224180233d">00062</a>         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCustomController_1_1PIDXMLReader.html#a91544148bc143140fe0474224180233d">characters</a>(<span class="keyword">const</span> std::string&amp; ch)
+<a name="l00063"></a>00063         {
+<a name="l00064"></a>00064             <a class="code" href="classCustomController_1_1PIDXMLReader.html#a03f1dbc12ea62359d119e3a489d1b55e">_ss</a>.clear();
+<a name="l00065"></a>00065             <a class="code" href="classCustomController_1_1PIDXMLReader.html#a03f1dbc12ea62359d119e3a489d1b55e">_ss</a> &lt;&lt; ch;
+<a name="l00066"></a>00066         }
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068 <span class="keyword">protected</span>:
+<a name="l00069"></a><a class="code" href="classCustomController_1_1PIDXMLReader.html#ad1498147455332c7663359faced0138d">00069</a>         boost::shared_ptr&lt;XMLData&gt; <a class="code" href="classCustomController_1_1PIDXMLReader.html#ad1498147455332c7663359faced0138d">_piddata</a>;
+<a name="l00070"></a><a class="code" href="classCustomController_1_1PIDXMLReader.html#a03f1dbc12ea62359d119e3a489d1b55e">00070</a>         stringstream <a class="code" href="classCustomController_1_1PIDXMLReader.html#a03f1dbc12ea62359d119e3a489d1b55e">_ss</a>;
+<a name="l00071"></a>00071     };
+<a name="l00072"></a>00072 
+<a name="l00073"></a><a class="code" href="classCustomController.html#a0d2fa65f6bac8e7680204629c5c0a9f5">00073</a>     <span class="keyword">static</span> <a class="code" href="namespaceOpenRAVE.html#a5465be4feef36a211b06feebdc5e3b42">BaseXMLReaderPtr</a> <a class="code" href="classCustomController.html#a0d2fa65f6bac8e7680204629c5c0a9f5">CreateXMLReader</a>(<a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> ptr, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts)
+<a name="l00074"></a>00074     {
+<a name="l00075"></a>00075         <span class="comment">// ptr is the robot interface that this reader is being created for</span>
+<a name="l00076"></a>00076         <span class="keywordflow">return</span> <a class="code" href="namespaceOpenRAVE.html#a5465be4feef36a211b06feebdc5e3b42">BaseXMLReaderPtr</a>(<span class="keyword">new</span> <a class="code" href="classCustomController_1_1PIDXMLReader.html">PIDXMLReader</a>(boost::shared_ptr&lt;XMLData&gt;(),atts));
+<a name="l00077"></a>00077     }
+<a name="l00078"></a>00078 
+<a name="l00079"></a><a class="code" href="classCustomController.html#a9678a5ee0a6d56aa8b830050996f5aa3">00079</a>     <a class="code" href="classCustomController.html#a9678a5ee0a6d56aa8b830050996f5aa3">CustomController</a>(<a class="code" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> penv) : <a class="code" href="classOpenRAVE_1_1ControllerBase.html" title="[interface] Abstract base class to encapsulate a local controller. If not specified...">ControllerBase</a>(penv)
+<a name="l00080"></a>00080     {
+<a name="l00081"></a>00081     }
+<a name="l00082"></a><a class="code" href="classCustomController.html#af1d119cf4241b5f73f066bcee947502f">00082</a>     <span class="keyword">virtual</span> <a class="code" href="classCustomController.html#af1d119cf4241b5f73f066bcee947502f">~CustomController</a>() {
+<a name="l00083"></a>00083     }
+<a name="l00084"></a>00084 
+<a name="l00085"></a><a class="code" href="classCustomController.html#ad5666862ecbce5aee42019ec18687268">00085</a>     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCustomController.html#ad5666862ecbce5aee42019ec18687268">Init</a>(<a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> robot, <span class="keyword">const</span> std::vector&lt;int&gt;&amp; dofindices, <span class="keywordtype">int</span> nControlTransformation)
+<a name="l00086"></a>00086     {
+<a name="l00087"></a>00087         <a class="code" href="classCustomController.html#a96b8c6244de5c544065e0611b566cb84">_probot</a> = robot;
+<a name="l00088"></a>00088         <a class="code" href="classCustomController.html#a2f9e8f5dab3e9126375a9e479d087224">_dofindices</a> = dofindices;
+<a name="l00089"></a>00089         <a class="code" href="classCustomController.html#a1e82d77ea3eec0ff00ec78f1e825bad5">_nControlTransformation</a> = nControlTransformation;
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091         <span class="comment">// read the gains from the XML</span>
+<a name="l00092"></a>00092         boost::shared_ptr&lt;XMLData&gt; piddata = boost::dynamic_pointer_cast&lt;<a class="code" href="classCustomController_1_1XMLData.html">XMLData</a>&gt;(<a class="code" href="classOpenRAVE_1_1InterfaceBase.html#a948f97af111d83fad6ff054f88aaa214">GetReadableInterface</a>(<span class="stringliteral">&quot;piddata&quot;</span>));
+<a name="l00093"></a>00093         <span class="keywordflow">if</span>( !!piddata ) {
+<a name="l00094"></a>00094             stringstream ss;
+<a name="l00095"></a>00095             ss &lt;&lt; <span class="stringliteral">&quot;piddata from custom XML reader is&quot;</span> &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;pgains: &quot;</span>;
+<a name="l00096"></a>00096             <span class="keywordflow">for</span>(vector&lt;dReal&gt;::iterator it = piddata-&gt;pgains.begin(); it != piddata-&gt;pgains.end(); ++it)
+<a name="l00097"></a>00097                 ss &lt;&lt; *it &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;
+<a name="l00098"></a>00098             ss &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;igains: &quot;</span>;
+<a name="l00099"></a>00099             <span class="keywordflow">for</span>(vector&lt;dReal&gt;::iterator it = piddata-&gt;igains.begin(); it != piddata-&gt;igains.end(); ++it)
+<a name="l00100"></a>00100                 ss &lt;&lt; *it &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;
+<a name="l00101"></a>00101             ss &lt;&lt; endl;
+<a name="l00102"></a>00102             <a class="code" href="openrave_8h.html#a545110e670ac69c5fbfe44dc874f08c5">RAVELOG_INFOA</a>(ss.str());
+<a name="l00103"></a>00103         }
+<a name="l00104"></a>00104         <span class="keywordflow">else</span>
+<a name="l00105"></a>00105             <a class="code" href="openrave_8h.html#a9bbbf668aa39f398c341e946ab8a43f5">RAVELOG_WARN</a>(<span class="stringliteral">&quot;failed to find piddata\n&quot;</span>);
+<a name="l00106"></a>00106         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00107"></a>00107     }
+<a name="l00108"></a>00108 
+<a name="l00109"></a><a class="code" href="classCustomController.html#ac832f4b57548e744cabdaae217278bcb">00109</a>     <span class="keyword">virtual</span> <span class="keyword">const</span> std::vector&lt;int&gt;&amp; <a class="code" href="classCustomController.html#ac832f4b57548e744cabdaae217278bcb" title="returns the dof indices controlled">GetControlDOFIndices</a>()<span class="keyword"> const </span>{
+<a name="l00110"></a>00110         <span class="keywordflow">return</span> <a class="code" href="classCustomController.html#a2f9e8f5dab3e9126375a9e479d087224">_dofindices</a>;
+<a name="l00111"></a>00111     }
+<a name="l00112"></a><a class="code" href="classCustomController.html#a6c462684c3045b5750621c92b0da6caa">00112</a>     <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classCustomController.html#a6c462684c3045b5750621c92b0da6caa" title="returns non-zero value if base affine transformation is controlled.">IsControlTransformation</a>()<span class="keyword"> const </span>{
+<a name="l00113"></a>00113         <span class="keywordflow">return</span> <a class="code" href="classCustomController.html#a1e82d77ea3eec0ff00ec78f1e825bad5">_nControlTransformation</a>;
+<a name="l00114"></a>00114     }
+<a name="l00115"></a>00115 
+<a name="l00116"></a><a class="code" href="classCustomController.html#a9989f0173dfbf913acbb058988e73afa">00116</a>     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCustomController.html#a9989f0173dfbf913acbb058988e73afa" title="Resets the current controller trajectories and any other state associated with the...">Reset</a>(<span class="keywordtype">int</span> options) {
+<a name="l00117"></a>00117     }
+<a name="l00118"></a><a class="code" href="classCustomController.html#af1af273cd9e5e2acfbc7be600a9b6ca7">00118</a>     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCustomController.html#af1af273cd9e5e2acfbc7be600a9b6ca7">SetDesired</a>(<span class="keyword">const</span> std::vector&lt;dReal&gt;&amp; values, <a class="code" href="namespaceOpenRAVE.html#a6d8be5f641c37cf8096b9bc60c49d763">TransformConstPtr</a> trans) {
+<a name="l00119"></a>00119         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00120"></a>00120     }
+<a name="l00121"></a><a class="code" href="classCustomController.html#af1e3ef64d2cae76132b269abc057af31">00121</a>     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCustomController.html#af1e3ef64d2cae76132b269abc057af31">SetPath</a>(<a class="code" href="namespaceOpenRAVE.html#ae4a194e7d8dcb23b1acad4ff9f84ad49">TrajectoryBaseConstPtr</a> ptraj) {
+<a name="l00122"></a>00122         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00123"></a>00123     }
+<a name="l00124"></a><a class="code" href="classCustomController.html#a8e0171e39bae4dfe1590c0c844cf2b6c">00124</a>     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCustomController.html#a8e0171e39bae4dfe1590c0c844cf2b6c">SimulationStep</a>(<a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> fTimeElapsed) {
+<a name="l00125"></a>00125     }
+<a name="l00126"></a><a class="code" href="classCustomController.html#a223430ff4833c832a9689262eeb6a509">00126</a>     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCustomController.html#a223430ff4833c832a9689262eeb6a509" title="Return true when goal reached.">IsDone</a>() {
+<a name="l00127"></a>00127         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00128"></a>00128     }
+<a name="l00129"></a><a class="code" href="classCustomController.html#aeeadca62100efc2104208ddac5603bef">00129</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> <a class="code" href="classCustomController.html#aeeadca62100efc2104208ddac5603bef" title="return the time along the current command">GetTime</a>()<span class="keyword"> const </span>{
+<a name="l00130"></a>00130         <span class="keywordflow">return</span> 0;
+<a name="l00131"></a>00131     }
+<a name="l00132"></a><a class="code" href="classCustomController.html#a8d4e8b42f55281a47dd90d525f19e9c4">00132</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> <a class="code" href="classCustomController.html#a8d4e8b42f55281a47dd90d525f19e9c4">GetRobot</a>()<span class="keyword"> const </span>{
+<a name="l00133"></a>00133         <span class="keywordflow">return</span> <a class="code" href="classCustomController.html#a96b8c6244de5c544065e0611b566cb84">_probot</a>;
+<a name="l00134"></a>00134     }
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 <span class="keyword">protected</span>:
+<a name="l00137"></a><a class="code" href="classCustomController.html#a96b8c6244de5c544065e0611b566cb84">00137</a>     <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> <a class="code" href="classCustomController.html#a96b8c6244de5c544065e0611b566cb84">_probot</a>;
+<a name="l00138"></a><a class="code" href="classCustomController.html#a2f9e8f5dab3e9126375a9e479d087224">00138</a>     std::vector&lt;int&gt; <a class="code" href="classCustomController.html#a2f9e8f5dab3e9126375a9e479d087224">_dofindices</a>;
+<a name="l00139"></a><a class="code" href="classCustomController.html#a1e82d77ea3eec0ff00ec78f1e825bad5">00139</a>     <span class="keywordtype">int</span> <a class="code" href="classCustomController.html#a1e82d77ea3eec0ff00ec78f1e825bad5">_nControlTransformation</a>;
+<a name="l00140"></a>00140 };
+<a name="l00141"></a>00141 
+<a name="l00142"></a><a class="code" href="customreader_8cpp.html#a11090cdb34e81fe01c3c2a24b425def1">00142</a> <span class="keyword">static</span> boost::shared_ptr&lt;void&gt; <a class="code" href="customreader_8cpp.html#a11090cdb34e81fe01c3c2a24b425def1">s_RegisteredReader</a>;
+<a name="l00143"></a>00143 
+<a name="l00144"></a><a class="code" href="customreader_8cpp.html#a821cda75126120c6e71819ba8e35cabf">00144</a> <a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> <a class="code" href="customreader_8cpp.html#a821cda75126120c6e71819ba8e35cabf">CreateInterfaceValidated</a>(InterfaceType type, <span class="keyword">const</span> std::string&amp; interfacename, std::istream&amp; sinput, <a class="code" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> penv)
+<a name="l00145"></a>00145 {
+<a name="l00146"></a>00146     <span class="keywordflow">if</span>( !<a class="code" href="customreader_8cpp.html#a11090cdb34e81fe01c3c2a24b425def1">s_RegisteredReader</a> ) {
+<a name="l00148"></a>00148         <a class="code" href="customreader_8cpp.html#a11090cdb34e81fe01c3c2a24b425def1">s_RegisteredReader</a> = <a class="code" href="namespaceOpenRAVE.html#a9ad0884135aded97f58a39cd75e80bbf" title="Registers a custom xml reader for a particular interface.">RaveRegisterXMLReader</a>(PT_Controller,<span class="stringliteral">&quot;piddata&quot;</span>,<a class="code" href="classCustomController.html#a0d2fa65f6bac8e7680204629c5c0a9f5">CustomController::CreateXMLReader</a>);
+<a name="l00149"></a>00149     }
+<a name="l00150"></a>00150     <span class="keywordflow">switch</span>(type) {
+<a name="l00151"></a>00151     <span class="keywordflow">case</span> PT_Controller:
+<a name="l00152"></a>00152         <span class="keywordflow">if</span>( interfacename == <span class="stringliteral">&quot;customcontroller&quot;</span>)
+<a name="l00153"></a>00153             <span class="keywordflow">return</span> <a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a>(<span class="keyword">new</span> <a class="code" href="classCustomController.html">CustomController</a>(penv));
+<a name="l00154"></a>00154         <span class="keywordflow">break</span>;
+<a name="l00155"></a>00155     <span class="keywordflow">default</span>:
+<a name="l00156"></a>00156         <span class="keywordflow">break</span>;
+<a name="l00157"></a>00157     }
+<a name="l00158"></a>00158     <span class="keywordflow">return</span> <a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a>();
+<a name="l00159"></a>00159 }
+<a name="l00160"></a>00160 
+<a name="l00161"></a><a class="code" href="group__plugin__exports.html#gaf90c03438b94cc76e7b8a54d445ec106">00161</a> <span class="keywordtype">void</span> <a class="code" href="group__plugin__exports.html#gaf90c03438b94cc76e7b8a54d445ec106" title="[helper] Validated function callback for returning a plugin&amp;#39;s information. No...">GetPluginAttributesValidated</a>(<a class="code" href="classOpenRAVE_1_1PLUGININFO.html" title="Holds all the OpenRAVE-specific information provided by a plugin.">PLUGININFO</a>&amp; info)
+<a name="l00162"></a>00162 {
+<a name="l00163"></a>00163     info.<a class="code" href="classOpenRAVE_1_1PLUGININFO.html#a2d74b2b8311c0e6ed7e4afb33a98efa0" title="offered interfaces">interfacenames</a>[PT_Controller].push_back(<span class="stringliteral">&quot;CustomController&quot;</span>);
+<a name="l00164"></a>00164 }
+<a name="l00165"></a>00165 
+<a name="l00166"></a><a class="code" href="group__plugin__exports.html#gad6773d91dae37d0ba9de59d2a05277e4">00166</a> <a class="code" href="plugin_8h.html#a6e162d18ddceb72d1e66482b37fef5eb">OPENRAVE_PLUGIN_API</a> <span class="keywordtype">void</span> <a class="code" href="group__plugin__exports.html#gad6773d91dae37d0ba9de59d2a05277e4" title="[export] Stub function to be defined by plugin that includes rave/plugin.h.">DestroyPlugin</a>()
+<a name="l00167"></a>00167 {
+<a name="l00168"></a>00168     <a class="code" href="customreader_8cpp.html#a11090cdb34e81fe01c3c2a24b425def1">s_RegisteredReader</a>.reset(); <span class="comment">// unregister the reader</span>
+<a name="l00169"></a>00169 }
+</pre></div></div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:42:53 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

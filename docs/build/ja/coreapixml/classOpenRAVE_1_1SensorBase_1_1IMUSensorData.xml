@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1IMUSensorData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::IMUSensorData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorData" prot="public" virt="non-virtual">SensorData</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1adcc1400504c6a7e1ebe11f8b3509dc98" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+<para>quaternion </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="137" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1ae8613d4f99e7dfc62e3c0e59492019ef" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector angular_velocity</definition>
+        <argsstring></argsstring>
+        <name>angular_velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="138" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1a55bc0ef84f3715119b67143ecc619b2c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector linear_acceleration</definition>
+        <argsstring></argsstring>
+        <name>linear_acceleration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="139" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1ac92fd04e82ac5cc44f033b3659c5182d" prot="public" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 9 &gt;</type>
+        <definition>boost::array&lt;dReal,9&gt; rotation_covariance</definition>
+        <argsstring></argsstring>
+        <name>rotation_covariance</name>
+        <briefdescription>
+<para>Row major about x, y, z axes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="140" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1af4e4754ff773f46a8d84914bdb58b9da" prot="public" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 9 &gt;</type>
+        <definition>boost::array&lt;dReal,9&gt; angular_velocity_covariance</definition>
+        <argsstring></argsstring>
+        <name>angular_velocity_covariance</name>
+        <briefdescription>
+<para>Row major about x, y, z axes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="141" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1a1c562fb548b2c60ca77b610ca43f0244" prot="public" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 9 &gt;</type>
+        <definition>boost::array&lt;dReal,9&gt; linear_acceleration_covariance</definition>
+        <argsstring></argsstring>
+        <name>linear_acceleration_covariance</name>
+        <briefdescription>
+<para>Row major x, y z axes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="142" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="134" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="134" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores IMU data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1220">
+        <label>IMUSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData"/>
+        <childnode refid="1221" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1221">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1224">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1222">
+        <label>IMUSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData"/>
+        <childnode refid="1223" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1225" relation="usage">
+          <edgelabel>rotation</edgelabel>
+          <edgelabel>angular_velocity</edgelabel>
+          <edgelabel>linear_acceleration</edgelabel>
+        </childnode>
+      </node>
+      <node id="1223">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+        <childnode refid="1224" relation="usage">
+          <edgelabel>__trans</edgelabel>
+        </childnode>
+      </node>
+      <node id="1225">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="132" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="131" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a0503a26959ec94efdab737ce47842afe" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::IMUSensorData</scope><name>__stamp</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a5786ccc78c0aae6ca580507121b3c24a" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::IMUSensorData</scope><name>__trans</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1ae8613d4f99e7dfc62e3c0e59492019ef" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::IMUSensorData</scope><name>angular_velocity</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1af4e4754ff773f46a8d84914bdb58b9da" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::IMUSensorData</scope><name>angular_velocity_covariance</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::IMUSensorData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1a55bc0ef84f3715119b67143ecc619b2c" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::IMUSensorData</scope><name>linear_acceleration</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1a1c562fb548b2c60ca77b610ca43f0244" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::IMUSensorData</scope><name>linear_acceleration_covariance</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1adcc1400504c6a7e1ebe11f8b3509dc98" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::IMUSensorData</scope><name>rotation</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1ac92fd04e82ac5cc44f033b3659c5182d" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::IMUSensorData</scope><name>rotation_covariance</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a27324341bb2e28fa2be2cfd0b7f0e985" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::IMUSensorData</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a2ce106fe3cd9771a5b0770339c411829" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::IMUSensorData</scope><name>~SensorData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

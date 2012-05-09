@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1IkSolverBase" kind="class" prot="public">
+    <compoundname>OpenRAVE::IkSolverBase</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1InterfaceBase" prot="public" virt="non-virtual">InterfaceBase</basecompoundref>
+    <includes refid="iksolver_8h" local="no">iksolver.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classOpenRAVE_1_1IkSolverBase_1a2f7085e3e716d58bbbc95fa53926313e" prot="public" static="no">
+        <type>boost::function&lt; <ref refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9" kindref="member">IkFilterReturn</ref>(std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;, <ref refid="classOpenRAVE_1_1RobotBase_1ab276a11f11a647b5b79ea316fd23651d" kindref="member">RobotBase::ManipulatorPtr</ref>, const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;IkFilterReturn(std::vector&lt;dReal&gt;&amp;, RobotBase::ManipulatorPtr, const IkParameterization&amp;)&gt; IkFilterCallbackFn</definition>
+        <argsstring></argsstring>
+        <name>IkFilterCallbackFn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inverse kinematics filter callback function.</para><para>The filter is of the form <computeroutput>return = filterfn(solution, manipulator, param)</computeroutput>. The solution is guaranteed to be set on the robot&apos;s joint values before this function is called. If modifying the robot state, should restore it before this function returns.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>solution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current solution of the manipulator. Can be modified by this function, but note that it will not go through previous checks again. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>manipulator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current manipulator that the ik is being solved for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The paramterization that IK was called with. This is in the manipulator base link&apos;s coordinate system (which is not necessarily the world coordinate system). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9" kindref="member">IkFilterReturn</ref> controlling the behavior of the ik search process. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="60" bodyfile="/home/pra3cob/openrave/include/openrave/iksolver.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1IkSolverBase_1a7f809e9a708286d4edd117e09af87dda" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="namespaceOpenRAVE_1aae4d9d8b0adcdbb33c9ca59ea5794a3d" kindref="member">UserDataWeakPtr</ref> &gt;</type>
+        <definition>std::list&lt;UserDataWeakPtr&gt; __listRegisteredFilters</definition>
+        <argsstring></argsstring>
+        <name>__listRegisteredFilters</name>
+        <briefdescription>
+<para>internally managed filters </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="175" bodyfile="/home/pra3cob/openrave/include/openrave/iksolver.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1IkSolverBase_1a344622b1ea75cf1514222c05f65e1f5b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class CustomIkSolverFilterData</definition>
+        <argsstring></argsstring>
+        <name>CustomIkSolverFilterData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="177" bodyfile="/home/pra3cob/openrave/include/openrave/iksolver.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a47629e704171b37677f3837d87dfa286" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IkSolverBase</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>IkSolverBase</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="62" bodyfile="/home/pra3cob/openrave/include/openrave/iksolver.h" bodystart="62" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a7534ba77dd8f452a48eaaa0e01beedf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~IkSolverBase</definition>
+        <argsstring>()</argsstring>
+        <name>~IkSolverBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="64" bodyfile="/home/pra3cob/openrave/include/openrave/iksolver.h" bodystart="64" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1afdba95c2515eb1d2a7d375c24f8dcb41" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Init</definition>
+        <argsstring>(RobotBase::ManipulatorPtr pmanip)=0</argsstring>
+        <name>Init</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1RobotBase_1ab276a11f11a647b5b79ea316fd23651d" kindref="member">RobotBase::ManipulatorPtr</ref></type>
+          <declname>pmanip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brief Sets the <ref refid="classOpenRAVE_1_1IkSolverBase" kindref="compound">IkSolverBase</ref> attached to a specific robot and sets <ref refid="classOpenRAVE_1_1IkSolverBase" kindref="compound">IkSolverBase</ref> specific options.</para><para>For example, some ik solvers might have different ways of computing optimal solutions. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pmanip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The manipulator the IK solver is attached to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a8ac8c036d8c933365b2b2be240c1a246" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classOpenRAVE_1_1RobotBase_1ab276a11f11a647b5b79ea316fd23651d" kindref="member">RobotBase::ManipulatorPtr</ref></type>
+        <definition>virtual RobotBase::ManipulatorPtr GetManipulator</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetManipulator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a9ac28a8ef0d2511ea4a7e89e81ad013d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref></type>
+        <definition>virtual UserDataPtr RegisterCustomFilter</definition>
+        <argsstring>(int priority, const IkFilterCallbackFn &amp;filterfn)</argsstring>
+        <name>RegisterCustomFilter</name>
+        <param>
+          <type>int</type>
+          <declname>priority</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkSolverBase_1a2f7085e3e716d58bbbc95fa53926313e" kindref="member">IkFilterCallbackFn</ref> &amp;</type>
+          <declname>filterfn</declname>
+        </param>
+        <briefdescription>
+<para>Sets an ik solution filter that is called for every ik solution. </para>        </briefdescription>
+        <detaileddescription>
+<para>Multiple filters can be set at once, each filter will be called according to its priority; higher values get called first. The default implementation of <ref refid="classOpenRAVE_1_1IkSolverBase" kindref="compound">IkSolverBase</ref> manages the filters internally. Users implementing their own <ref refid="classOpenRAVE_1_1IkSolverBase" kindref="compound">IkSolverBase</ref> should call <ref refid="classOpenRAVE_1_1IkSolverBase_1a5da49b954a8094d7d1a7525ff293496c" kindref="member">_CallFilters</ref> to run the internally managed filters. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filterfn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an optional filter function to be called, see <ref refid="classOpenRAVE_1_1IkSolverBase_1a2f7085e3e716d58bbbc95fa53926313e" kindref="member">IkFilterCallbackFn</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- The priority of the filter that controls the order in which filters get called. Higher priority filters get called first. If not certain what to set, use 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a managed handle to the filter. If this handle is released, then the fitler will be removed. Release operation is <bold>[multi-thread safe]</bold>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1adda44b94bfdbdee2cc57341d6fdef299" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetCustomFilter</definition>
+        <argsstring>(const IkFilterCallbackFn &amp;filterfn) RAVE_DEPRECATED</argsstring>
+        <name>SetCustomFilter</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkSolverBase_1a2f7085e3e716d58bbbc95fa53926313e" kindref="member">IkFilterCallbackFn</ref> &amp;</type>
+          <declname>filterfn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000008"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/09/21) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="91" bodyfile="/home/pra3cob/openrave/include/openrave/iksolver.h" bodystart="90" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a1d5067536e60e18e86fb94429e4d289f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int GetNumFreeParameters</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetNumFreeParameters</name>
+        <briefdescription>
+<para>Number of free parameters defining the null solution space. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each parameter is always in the range of [0,1]. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a37c664c2f07d523edfa463d06a1654c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool GetFreeParameters</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;vFreeParameters) const =0</argsstring>
+        <name>GetFreeParameters</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vFreeParameters</declname>
+        </param>
+        <briefdescription>
+<para>gets the free parameters from the current robot configuration </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">vFreeParameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is filled with <ref refid="classOpenRAVE_1_1IkSolverBase_1a1d5067536e60e18e86fb94429e4d289f" kindref="member">GetNumFreeParameters()</ref> parameters in [0,1] range </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if succeeded </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a283c44d6bd1ab0023aa8079f2f22db0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Solve</definition>
+        <argsstring>(const IkParameterization &amp;param, const std::vector&lt; dReal &gt; &amp;q0, int filteroptions, boost::shared_ptr&lt; std::vector&lt; dReal &gt; &gt; solution)=0</argsstring>
+        <name>Solve</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>q0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filteroptions</declname>
+        </param>
+        <param>
+          <type>boost::shared_ptr&lt; std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt;</type>
+          <declname>solution</declname>
+        </param>
+        <briefdescription>
+<para>Return a joint configuration for the given end effector transform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pose the end effector has to achieve. Note that the end effector pose takes into account the grasp coordinate frame for the <ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator" kindref="compound">RobotBase::Manipulator</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">q0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Return a solution nearest to the given configuration q0 in terms of the joint distance. If q0 is NULL, returns the first solution found </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">filteroptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bitmask of <ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdc" kindref="member">IkFilterOptions</ref> values controlling what is checked for each ik solution. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">solution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[optional] Holds the IK solution </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if solution is found </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1ae0819c42f7769a51d4ff0179c0de1d4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Solve</definition>
+        <argsstring>(const IkParameterization &amp;param, int filteroptions, std::vector&lt; std::vector&lt; dReal &gt; &gt; &amp;solutions)=0</argsstring>
+        <name>Solve</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filteroptions</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt; &amp;</type>
+          <declname>solutions</declname>
+        </param>
+        <briefdescription>
+<para>Return all joint configurations for the given end effector transform. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pose the end effector has to achieve. Note that the end effector pose takes into account the grasp coordinate frame for the <ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator" kindref="compound">RobotBase::Manipulator</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">filteroptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bitmask of <ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdc" kindref="member">IkFilterOptions</ref> values controlling what is checked for each ik solution. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">solutions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>All solutions within a reasonable discretization level of the free parameters. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if at least one solution is found </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a6fbb4a98f8ca339a41d7c746f397a664" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Solve</definition>
+        <argsstring>(const IkParameterization &amp;param, const std::vector&lt; dReal &gt; &amp;q0, const std::vector&lt; dReal &gt; &amp;vFreeParameters, int filteroptions, boost::shared_ptr&lt; std::vector&lt; dReal &gt; &gt; solution)=0</argsstring>
+        <name>Solve</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>q0</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vFreeParameters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filteroptions</declname>
+        </param>
+        <param>
+          <type>boost::shared_ptr&lt; std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt;</type>
+          <declname>solution</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a joint configuration for the given end effector transform.</para><para>Can specify the free parameters in [0,1] range. If NULL, the regular equivalent Solve is called <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pose the end effector has to achieve. Note that the end effector pose takes into account the grasp coordinate frame for the <ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator" kindref="compound">RobotBase::Manipulator</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">q0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Return a solution nearest to the given configuration q0 in terms of the joint distance. If q0 is empty, returns the first solution found </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vFreeParameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The free parameters of the null space of the IK solutions. Always in range of [0,1] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">filteroptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bitmask of <ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdc" kindref="member">IkFilterOptions</ref> values controlling what is checked for each ik solution. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">solution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Holds the IK solution, must be of size RobotBase::Manipulator::_vecarmjoints </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if solution is found </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a4f2dd26ce9c4f52cc27f09545faa159b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Solve</definition>
+        <argsstring>(const IkParameterization &amp;param, const std::vector&lt; dReal &gt; &amp;vFreeParameters, int filteroptions, std::vector&lt; std::vector&lt; dReal &gt; &gt; &amp;solutions)=0</argsstring>
+        <name>Solve</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vFreeParameters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>filteroptions</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt; &amp;</type>
+          <declname>solutions</declname>
+        </param>
+        <briefdescription>
+<para>Return all joint configurations for the given end effector transform. </para>        </briefdescription>
+        <detaileddescription>
+<para>Can specify the free parameters in [0,1] range. If NULL, the regular equivalent Solve is called <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">param</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pose the end effector has to achieve. Note that the end effector pose takes into account the grasp coordinate frame for the <ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator" kindref="compound">RobotBase::Manipulator</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vFreeParameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The free parameters of the null space of the IK solutions. Always in range of [0,1] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">filteroptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bitmask of <ref refid="namespaceOpenRAVE_1a89401ff7c557d6d1ede96b550fb22bdc" kindref="member">IkFilterOptions</ref> values controlling what is checked for each ik solution. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">solutions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>All solutions within a reasonable discretization level of the free parameters. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true at least one solution is found </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a4c62d8c5ff1843c169edf6520a05aab0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Supports</definition>
+        <argsstring>(IkParameterizationType iktype) const OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>Supports</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref></type>
+          <declname>iktype</declname>
+        </param>
+        <briefdescription>
+<para>returns true if the solver supports a particular ik parameterization as input. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="157"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InterfaceType</type>
+        <definition>static InterfaceType GetInterfaceTypeStatic</definition>
+        <argsstring>()</argsstring>
+        <name>GetInterfaceTypeStatic</name>
+        <briefdescription>
+<para>return the static interface type this class points to (used for safe casting) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="68" bodyfile="/home/pra3cob/openrave/include/openrave/iksolver.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1addc7cbf7dfc3118af9b49f4c40617c03" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1adc64503b74e38e98eedcbc031b3e37ff" kindref="member">IkSolverBasePtr</ref></type>
+        <definition>IkSolverBasePtr shared_iksolver</definition>
+        <argsstring>()</argsstring>
+        <name>shared_iksolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="160" bodyfile="/home/pra3cob/openrave/include/openrave/iksolver.h" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a3de2a1ea7a2df0d529882c0d4bf227b9" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1af393079e8e983a2de33101499192f6d0" kindref="member">IkSolverBaseConstPtr</ref></type>
+        <definition>IkSolverBaseConstPtr shared_iksolver_const</definition>
+        <argsstring>() const </argsstring>
+        <name>shared_iksolver_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="163" bodyfile="/home/pra3cob/openrave/include/openrave/iksolver.h" bodystart="163" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1a5da49b954a8094d7d1a7525ff293496c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a7a8cf38163621e225d83b4b3a8ff62e9" kindref="member">IkFilterReturn</ref></type>
+        <definition>virtual IkFilterReturn _CallFilters</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;solution, RobotBase::ManipulatorPtr manipulator, const IkParameterization &amp;param)</argsstring>
+        <name>_CallFilters</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>solution</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1RobotBase_1ab276a11f11a647b5b79ea316fd23651d" kindref="member">RobotBase::ManipulatorPtr</ref></type>
+          <declname>manipulator</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>calls the registered filters in their priority order and returns the value of the last called filter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="168"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1IkSolverBase_1af386ad7515f485242895df543029d333" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* GetHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetHash</name>
+        <reimplements refid="classOpenRAVE_1_1InterfaceBase_1abfb0be978f0f9899582785d67c4b3d40">GetHash</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="171" bodyfile="/home/pra3cob/openrave/include/openrave/iksolver.h" bodystart="171" bodyend="173"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><bold>[interface]</bold> Base class for all Inverse Kinematic solvers. <bold>If not specified, method is not multi-thread safe.</bold> See <ref refid="arch__iksolver" kindref="compound">Inverse Kinematics Solver Concepts</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1207">
+        <label>IkSolverBase</label>
+        <link refid="classOpenRAVE_1_1IkSolverBase"/>
+        <childnode refid="1208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1208">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1211">
+        <label>string</label>
+        <childnode refid="1212" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1209">
+        <label>IkSolverBase</label>
+        <link refid="classOpenRAVE_1_1IkSolverBase"/>
+        <childnode refid="1210" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1215" relation="usage">
+          <edgelabel>__listRegisteredFilters</edgelabel>
+        </childnode>
+      </node>
+      <node id="1213">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1211" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1212">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1215">
+        <label>list&lt; UserDataWeakPtr &gt;</label>
+      </node>
+      <node id="1214">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1211" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1210">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1211" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1213" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1214" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/iksolver.h" line="47" bodyfile="/home/pra3cob/openrave/include/openrave/iksolver.h" bodystart="46" bodyend="178"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>__description</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a7f809e9a708286d4edd117e09af87dda" prot="private" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>__listRegisteredFilters</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a5da49b954a8094d7d1a7525ff293496c" prot="protected" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>_CallFilters</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>Clone</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a37c664c2f07d523edfa463d06a1654c6" prot="public" virt="pure-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetFreeParameters</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1af386ad7515f485242895df543029d333" prot="private" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetHash</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a8ac8c036d8c933365b2b2be240c1a246" prot="public" virt="pure-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetManipulator</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a1d5067536e60e18e86fb94429e4d289f" prot="public" virt="pure-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetNumFreeParameters</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a2f7085e3e716d58bbbc95fa53926313e" prot="public" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>IkFilterCallbackFn</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a47629e704171b37677f3837d87dfa286" prot="public" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>IkSolverBase</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1afdba95c2515eb1d2a7d375c24f8dcb41" prot="public" virt="pure-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>Init</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>RegisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a9ac28a8ef0d2511ea4a7e89e81ad013d" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>RegisterCustomFilter</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1adda44b94bfdbdee2cc57341d6fdef299" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>SetCustomFilter</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>SetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1addc7cbf7dfc3118af9b49f4c40617c03" prot="protected" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>shared_iksolver</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a3de2a1ea7a2df0d529882c0d4bf227b9" prot="protected" virt="non-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>shared_iksolver_const</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a283c44d6bd1ab0023aa8079f2f22db0a" prot="public" virt="pure-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>Solve</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1ae0819c42f7769a51d4ff0179c0de1d4b" prot="public" virt="pure-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>Solve</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a6fbb4a98f8ca339a41d7c746f397a664" prot="public" virt="pure-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>Solve</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a4f2dd26ce9c4f52cc27f09545faa159b" prot="public" virt="pure-virtual"><scope>OpenRAVE::IkSolverBase</scope><name>Solve</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a4c62d8c5ff1843c169edf6520a05aab0" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>Supports</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1IkSolverBase_1a7534ba77dd8f452a48eaaa0e01beedf2" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>~IkSolverBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>OpenRAVE::IkSolverBase</scope><name>~InterfaceBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

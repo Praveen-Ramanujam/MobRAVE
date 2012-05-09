@@ -1,0 +1,749 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1PhysicsEngineBase" kind="class" prot="public">
+    <compoundname>OpenRAVE::PhysicsEngineBase</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1InterfaceBase" prot="public" virt="non-virtual">InterfaceBase</basecompoundref>
+    <includes refid="physicsengine_8h" local="no">physicsengine.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a6032a2abb15a34515b994585c9e7f791" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysicsEngineBase</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>PhysicsEngineBase</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="37" bodyfile="/home/pra3cob/openrave/include/openrave/physicsengine.h" bodystart="37" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a972e350f0489a339e526e419e3331a63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~PhysicsEngineBase</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysicsEngineBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="39" bodyfile="/home/pra3cob/openrave/include/openrave/physicsengine.h" bodystart="39" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a1a564c7b9b8e445067840544e1899454" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SetPhysicsOptions</definition>
+        <argsstring>(int physicsoptions)=0</argsstring>
+        <name>SetPhysicsOptions</name>
+        <param>
+          <type>int</type>
+          <declname>physicsoptions</declname>
+        </param>
+        <briefdescription>
+<para>Set basic physics engine using the PhysicsEngineOptions enum. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a5e750db16ae12f0f265b56f3f9bed654" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int GetPhysicsOptions</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetPhysicsOptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a7cc87335dc1afb1ab99e53b7a4a70ac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SetPhysicsOptions</definition>
+        <argsstring>(std::ostream &amp;sout, std::istream &amp;sinput) RAVE_DEPRECATED=0</argsstring>
+        <name>SetPhysicsOptions</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>sout</declname>
+        </param>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>sinput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000036"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(10/11/18) use SendCommand instead </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a253ffd76b6c58523ff7813a7e777cce0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool InitEnvironment</definition>
+        <argsstring>()=0</argsstring>
+        <name>InitEnvironment</name>
+        <briefdescription>
+<para>called when environment sets this physics engine, engine assumes responsibility for <ref refid="classOpenRAVE_1_1KinBody_1a3f8a2e40760cf2ee75f604c0f18b27ec" kindref="member">KinBody::_pPhysicsData</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1addd261b357621ad88f262f311792efb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void DestroyEnvironment</definition>
+        <argsstring>()=0</argsstring>
+        <name>DestroyEnvironment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>called when environment switches to a different physics engine has to clear/deallocate any memory associated with <ref refid="classOpenRAVE_1_1KinBody_1a3f8a2e40760cf2ee75f604c0f18b27ec" kindref="member">KinBody::_pPhysicsData</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a7daf60b368b32643ad95691260b5246a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool InitKinBody</definition>
+        <argsstring>(KinBodyPtr body)=0</argsstring>
+        <name>InitKinBody</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>notified when a new body has been initialized in the environment </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a22f75fdf00f98694da099efeb13bff41" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SetLinkVelocity</definition>
+        <argsstring>(KinBody::LinkPtr link, const Vector &amp;linearvel, const Vector &amp;angularvel)=0</argsstring>
+        <name>SetLinkVelocity</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">KinBody::LinkPtr</ref></type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>linearvel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>angularvel</declname>
+        </param>
+        <briefdescription>
+<para>Force the body velocity of a link, velocities correspond to the link&apos;s coordinate system origin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">link</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>link to set velocities. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">linearvel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linear velocity of base link </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">angularvel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>angular velocity rotation_axis*theta_dot </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1af03adc7bf75eb75c954ae0396df1f193" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SetLinkVelocities</definition>
+        <argsstring>(KinBodyPtr body, const std::vector&lt; std::pair&lt; Vector, Vector &gt; &gt; &amp;velocities)=0</argsstring>
+        <name>SetLinkVelocities</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>, <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt; &gt; &amp;</type>
+          <declname>velocities</declname>
+        </param>
+        <briefdescription>
+<para>Sets the velocities for each link, velocities correspond to the link&apos;s coordinate system origin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the body to query velocities from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">velocities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sets the linear and angular (axis * angular_speed) velocities for each link </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a696a55b63521ab0e08b9b203d2b3bcdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool GetLinkVelocity</definition>
+        <argsstring>(KinBody::LinkConstPtr link, Vector &amp;linearvel, Vector &amp;angularvel)=0</argsstring>
+        <name>GetLinkVelocity</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref></type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>linearvel</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>angularvel</declname>
+        </param>
+        <briefdescription>
+<para>Gets the velocity of a link, velocities correspond to the link&apos;s coordinate system origin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">linearvel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- linear velocity of base link </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">angularvel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- angular velocity rotation_axis*theta_dot </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a4ab5cdca35ec2cc52158345188d370e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool GetLinkVelocities</definition>
+        <argsstring>(KinBodyConstPtr body, std::vector&lt; std::pair&lt; Vector, Vector &gt; &gt; &amp;velocities)=0</argsstring>
+        <name>GetLinkVelocities</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref></type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::pair&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>, <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt; &gt; &amp;</type>
+          <declname>velocities</declname>
+        </param>
+        <briefdescription>
+<para>Sets the velocities for each link, velocities correspond to the link&apos;s coordinate system origin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">velocities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the linear and angular (axis * angular_speed) velocities for each link. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1aac5b2aa6d0506ac155b01c4a981970e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SetBodyForce</definition>
+        <argsstring>(KinBody::LinkPtr link, const Vector &amp;force, const Vector &amp;position, bool bAdd) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetBodyForce</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">KinBody::LinkPtr</ref></type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bAdd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add a force at a particular position in a link <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the direction and magnitude of the force </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in the world where the force is getting applied </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bAdd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, force is added to previous forces, otherwise it is set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a88e1824a57094ca3795b76147fa89430" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SetBodyTorque</definition>
+        <argsstring>(KinBody::LinkPtr link, const Vector &amp;torque, bool bAdd) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetBodyTorque</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">KinBody::LinkPtr</ref></type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>torque</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bAdd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>adds torque to a body (absolute coords) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>link</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the link to add a torque to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>torque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>torque vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bAdd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, torque is added to previous torques, otherwise it is set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1ac967d28c3b1f7df4280dc32b25bc9227" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool AddJointTorque</definition>
+        <argsstring>(KinBody::JointPtr pjoint, const std::vector&lt; dReal &gt; &amp;pTorques) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>AddJointTorque</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1KinBody_1ad3fc7b64912fd0b7343faaefbc96b3ef" kindref="member">KinBody::JointPtr</ref></type>
+          <declname>pjoint</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>pTorques</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>adds torque to a joint <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pjoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the joint the torque is added to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pTorques</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the torques added to the joint. Pointer because the joint dof can be greater than 1. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1ac1814e555930327871aa74a002eb11ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool GetLinkForceTorque</definition>
+        <argsstring>(KinBody::LinkConstPtr link, Vector &amp;force, Vector &amp;torque) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>GetLinkForceTorque</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref></type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>torque</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">link</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a constant pointer to a link </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current force on the COM of the link </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">torque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current torque on the COM of the link </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1abf9cb070312280c553bfb29079ecb5ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetGravity</definition>
+        <argsstring>(const Vector &amp;gravity) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetGravity</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>gravity</declname>
+        </param>
+        <briefdescription>
+<para>set the gravity direction </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">joint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current accumulated force on the COM of the link </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">torque</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current accumulated torque on the COM of the link </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a7d8b7532f682819f2ff6b020a2ef5f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>virtual Vector GetGravity</definition>
+        <argsstring>() OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>GetGravity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1ad060957d4850f20600b9d99732912fef" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SimulateStep</definition>
+        <argsstring>(dReal fTimeElapsed)=0</argsstring>
+        <name>SimulateStep</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>fTimeElapsed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dynamically simulate system for fTimeElapsed seconds add torques to the joints of the body. Torques disappear after one timestep of simulation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a1a58013a452eea3921fb0ddcfb263813" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool GetBodyVelocity</definition>
+        <argsstring>(KinBodyConstPtr body, std::vector&lt; Vector &gt; &amp;vLinearVelocities, std::vector&lt; Vector &gt; &amp;vAngularVelocities) RAVE_DEPRECATED</argsstring>
+        <name>GetBodyVelocity</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref></type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt; &amp;</type>
+          <declname>vLinearVelocities</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt; &amp;</type>
+          <declname>vAngularVelocities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000037"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(10/11/18) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="123" bodyfile="/home/pra3cob/openrave/include/openrave/physicsengine.h" bodystart="123" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1aee5b9e006d1108c65095eceee9f79275" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SetBodyVelocity</definition>
+        <argsstring>(KinBodyPtr body, const std::vector&lt; Vector &gt; &amp;vLinearVelocities, const std::vector&lt; Vector &gt; &amp;vAngularVelocities) RAVE_DEPRECATED</argsstring>
+        <name>SetBodyVelocity</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt; &amp;</type>
+          <declname>vLinearVelocities</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt; &amp;</type>
+          <declname>vAngularVelocities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="137" bodyfile="/home/pra3cob/openrave/include/openrave/physicsengine.h" bodystart="137" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InterfaceType</type>
+        <definition>static InterfaceType GetInterfaceTypeStatic</definition>
+        <argsstring>()</argsstring>
+        <name>GetInterfaceTypeStatic</name>
+        <briefdescription>
+<para>return the static interface type this class points to (used for safe casting) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="43" bodyfile="/home/pra3cob/openrave/include/openrave/physicsengine.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1a551bd26292b436651d2ade9eb0ceecae" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetPhysicsData</definition>
+        <argsstring>(KinBodyPtr body, UserDataPtr data)</argsstring>
+        <name>SetPhysicsData</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="148" bodyfile="/home/pra3cob/openrave/include/openrave/physicsengine.h" bodystart="148" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PhysicsEngineBase_1af386ad7515f485242895df543029d333" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* GetHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetHash</name>
+        <reimplements refid="classOpenRAVE_1_1InterfaceBase_1abfb0be978f0f9899582785d67c4b3d40">GetHash</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="153" bodyfile="/home/pra3cob/openrave/include/openrave/physicsengine.h" bodystart="153" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><bold>[interface]</bold> The physics engine interfaces supporting simulations and dynamics. See <ref refid="arch__physicsengine" kindref="compound">Physics Engine Concepts</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1593">
+        <label>PhysicsEngineBase</label>
+        <link refid="classOpenRAVE_1_1PhysicsEngineBase"/>
+        <childnode refid="1594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1594">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1595">
+        <label>PhysicsEngineBase</label>
+        <link refid="classOpenRAVE_1_1PhysicsEngineBase"/>
+        <childnode refid="1596" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1597">
+        <label>string</label>
+        <childnode refid="1598" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1599">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1597" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1598">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1600">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1597" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1596">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1597" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1599" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1600" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h" line="35" bodyfile="/home/pra3cob/openrave/include/openrave/physicsengine.h" bodystart="34" bodyend="156"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>__description</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1ac967d28c3b1f7df4280dc32b25bc9227" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>AddJointTorque</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>Clone</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1addd261b357621ad88f262f311792efb6" prot="public" virt="pure-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>DestroyEnvironment</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a1a58013a452eea3921fb0ddcfb263813" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetBodyVelocity</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a7d8b7532f682819f2ff6b020a2ef5f32" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetGravity</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1af386ad7515f485242895df543029d333" prot="private" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetHash</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1ac1814e555930327871aa74a002eb11ec" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetLinkForceTorque</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a4ab5cdca35ec2cc52158345188d370e2" prot="public" virt="pure-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetLinkVelocities</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a696a55b63521ab0e08b9b203d2b3bcdb" prot="public" virt="pure-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetLinkVelocity</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a5e750db16ae12f0f265b56f3f9bed654" prot="public" virt="pure-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetPhysicsOptions</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a253ffd76b6c58523ff7813a7e777cce0" prot="public" virt="pure-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>InitEnvironment</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a7daf60b368b32643ad95691260b5246a" prot="public" virt="pure-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>InitKinBody</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a6032a2abb15a34515b994585c9e7f791" prot="public" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>PhysicsEngineBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>RegisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1aac5b2aa6d0506ac155b01c4a981970e6" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetBodyForce</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a88e1824a57094ca3795b76147fa89430" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetBodyTorque</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1aee5b9e006d1108c65095eceee9f79275" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetBodyVelocity</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetDescription</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1abf9cb070312280c553bfb29079ecb5ed" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetGravity</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1af03adc7bf75eb75c954ae0396df1f193" prot="public" virt="pure-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetLinkVelocities</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a22f75fdf00f98694da099efeb13bff41" prot="public" virt="pure-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetLinkVelocity</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a551bd26292b436651d2ade9eb0ceecae" prot="protected" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetPhysicsData</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a1a564c7b9b8e445067840544e1899454" prot="public" virt="pure-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetPhysicsOptions</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a7cc87335dc1afb1ab99e53b7a4a70ac7" prot="public" virt="pure-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetPhysicsOptions</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1ad060957d4850f20600b9d99732912fef" prot="public" virt="pure-virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>SimulateStep</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>~InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1PhysicsEngineBase_1a972e350f0489a339e526e419e3331a63" prot="public" virt="virtual"><scope>OpenRAVE::PhysicsEngineBase</scope><name>~PhysicsEngineBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

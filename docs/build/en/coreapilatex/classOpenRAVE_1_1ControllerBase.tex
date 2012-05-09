@@ -1,0 +1,239 @@
+\hypertarget{classOpenRAVE_1_1ControllerBase}{
+\subsection{ControllerBase Class Reference}
+\label{classOpenRAVE_1_1ControllerBase}\index{OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} Abstract base class to encapsulate a local controller. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__controller}{Controller Concepts}.  
+
+
+
+
+Inheritance diagram for ControllerBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classOpenRAVE_1_1ControllerBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ControllerBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classOpenRAVE_1_1ControllerBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ControllerBase_ae61f45e499ec45a2b70ae3a1af53101b}{Init} (RobotBasePtr robot, const std::string \&args) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\begin{DoxyCompactList}\small\item\em Initializes the controller. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ControllerBase_a27ba60fa2a3a9f63a64b127369482d9a}{Init} (RobotBasePtr robot, const std::vector$<$ int $>$ \&dofindices, int nControlTransformation)=0
+\begin{DoxyCompactList}\small\item\em initializes the controller and specifies the controlled dof \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ControllerBase_a4dad85cda4f74030d3d50e0ae37f7d68}{
+virtual const std::vector$<$ int $>$ \& \hyperlink{classOpenRAVE_1_1ControllerBase_a4dad85cda4f74030d3d50e0ae37f7d68}{GetControlDOFIndices} () const =0}
+\label{classOpenRAVE_1_1ControllerBase_a4dad85cda4f74030d3d50e0ae37f7d68}
+
+\begin{DoxyCompactList}\small\item\em returns the dof indices controlled \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{classOpenRAVE_1_1ControllerBase_af577c7692eed532e6ed26db3dca5ef47}{IsControlTransformation} () const =0
+\begin{DoxyCompactList}\small\item\em returns non-\/zero value if base affine transformation is controlled. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1ControllerBase_aa495f583f5f0b3b3c412f730fdf8d715}{Reset} (int options)=0
+\begin{DoxyCompactList}\small\item\em Resets the current controller trajectories and any other state associated with the robot. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ControllerBase_accd34e8fe0dfb473777ab4668bf7a5d9}{SetDesired} (const std::vector$<$ dReal $>$ \&values, TransformConstPtr trans=TransformConstPtr())=0
+\begin{DoxyCompactList}\small\item\em go to a specific position in configuration space. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ControllerBase_aaab0e601177272e3bedb63f0ff5ebf32}{SetPath} (TrajectoryBaseConstPtr ptraj)=0
+\begin{DoxyCompactList}\small\item\em Follow a path in configuration space, adds to the queue of trajectories already in execution. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1ControllerBase_a43163cebf021667f69b0c6b2d357c2fa}{SimulationStep} (dReal fTimeElapsed)=0
+\begin{DoxyCompactList}\small\item\em Simulate one step forward for controllers running in the simulation environment. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ControllerBase_a2a9a4df35568126aca5e305ca35d1d31}{IsDone} ()=0
+\begin{DoxyCompactList}\small\item\em Return true when goal reached. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ControllerBase_a80ec605da12db741e7c3e518af07e6d5}{
+virtual dReal \hyperlink{classOpenRAVE_1_1ControllerBase_a80ec605da12db741e7c3e518af07e6d5}{GetTime} () const OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION}
+\label{classOpenRAVE_1_1ControllerBase_a80ec605da12db741e7c3e518af07e6d5}
+
+\begin{DoxyCompactList}\small\item\em return the time along the current command \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1ControllerBase_aa7df84105fae386c84139ce5c5b7f1f1}{GetVelocity} (std::vector$<$ dReal $>$ \&vel) const OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em get velocity of the controlled DOFs \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1ControllerBase_a5850b39ddc68841ef2961c2eb7bf7b8f}{GetTorque} (std::vector$<$ dReal $>$ \&torque) const OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1ControllerBase_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1ControllerBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1ControllerBase_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em return the static interface type this class points to (used for safe casting) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} Abstract base class to encapsulate a local controller. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__controller}{Controller Concepts}. \begin{Desc}
+\item[Examples: ]\par
+
+
+\hyperlink{customreader_8cpp-example}{customreader.cpp}.
+
+\end{Desc}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1ControllerBase_a5850b39ddc68841ef2961c2eb7bf7b8f}{
+\index{OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}!GetTorque@{GetTorque}}
+\index{GetTorque@{GetTorque}!OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}}
+\paragraph[{GetTorque}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetTorque (std::vector$<$ dReal $>$ \& {\em torque}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ControllerBase_a5850b39ddc68841ef2961c2eb7bf7b8f}
+get torque/current/strain values 
+\begin{DoxyParams}{Parameters}
+\item[{\em torque}]\mbox{[}out\mbox{]} -\/ returns the current torque/current/strain exerted by each of the dofs from outside forces. The feedforward and friction terms should be subtracted out already \end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classOpenRAVE_1_1MultiController_aa9cb5e097c6ecb5d0b157f9b7c581085}{MultiController}.
+
+\hypertarget{classOpenRAVE_1_1ControllerBase_aa7df84105fae386c84139ce5c5b7f1f1}{
+\index{OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}!GetVelocity@{GetVelocity}}
+\index{GetVelocity@{GetVelocity}!OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}}
+\paragraph[{GetVelocity}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetVelocity (std::vector$<$ dReal $>$ \& {\em vel}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ControllerBase_aa7df84105fae386c84139ce5c5b7f1f1}
+
+
+get velocity of the controlled DOFs 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em vel}]\mbox{[}out\mbox{]} -\/ current velocity of robot from the dof \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1ControllerBase_a27ba60fa2a3a9f63a64b127369482d9a}{
+\index{OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}!Init@{Init}}
+\index{Init@{Init}!OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}}
+\paragraph[{Init}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Init (RobotBasePtr {\em robot}, \/  const std::vector$<$ int $>$ \& {\em dofindices}, \/  int {\em nControlTransformation})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ControllerBase_a27ba60fa2a3a9f63a64b127369482d9a}
+
+
+initializes the controller and specifies the controlled dof 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em robot}]the robot that uses the controller \item[{\em dofindices}]the indices that controller will have exclusive access to \item[{\em nControlTransformation}]\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1ControllerBase_af577c7692eed532e6ed26db3dca5ef47}{IsControlTransformation} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+true on successful initialization 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classOpenRAVE_1_1MultiController_ad5666862ecbce5aee42019ec18687268}{MultiController}.
+
+\hypertarget{classOpenRAVE_1_1ControllerBase_ae61f45e499ec45a2b70ae3a1af53101b}{
+\index{OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}!Init@{Init}}
+\index{Init@{Init}!OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}}
+\paragraph[{Init}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Init (RobotBasePtr {\em robot}, \/  const std::string \& {\em args})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ControllerBase_ae61f45e499ec45a2b70ae3a1af53101b}
+
+
+Initializes the controller. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em robot}]the robot that uses the controller \item[{\em args}]extra arguments that the controller takes. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on successful initialization 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Examples: ]\par
+\hyperlink{customreader_8cpp-example}{customreader.cpp}.\end{Desc}
+\hypertarget{classOpenRAVE_1_1ControllerBase_af577c7692eed532e6ed26db3dca5ef47}{
+\index{OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}!IsControlTransformation@{IsControlTransformation}}
+\index{IsControlTransformation@{IsControlTransformation}!OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}}
+\paragraph[{IsControlTransformation}]{\setlength{\rightskip}{0pt plus 5cm}virtual int IsControlTransformation () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ControllerBase_af577c7692eed532e6ed26db3dca5ef47}
+
+
+returns non-\/zero value if base affine transformation is controlled. 
+
+Only one controller can modify translation and orientation per robot. For now, the two cannot be divided. \begin{Desc}
+\item[Examples: ]\par
+\hyperlink{customreader_8cpp-example}{customreader.cpp}.\end{Desc}
+\hypertarget{classOpenRAVE_1_1ControllerBase_a2a9a4df35568126aca5e305ca35d1d31}{
+\index{OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}!IsDone@{IsDone}}
+\index{IsDone@{IsDone}!OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}}
+\paragraph[{IsDone}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsDone ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ControllerBase_a2a9a4df35568126aca5e305ca35d1d31}
+
+
+Return true when goal reached. 
+
+If a trajectory was set, return only when trajectory is done. If SetDesired was called, return only when robot is is at the desired location. If SendCommand sent, returns true when the command was completed by the hand. 
+
+Implemented in \hyperlink{classOpenRAVE_1_1MultiController_a223430ff4833c832a9689262eeb6a509}{MultiController}.
+
+\begin{Desc}
+\item[Examples: ]\par
+\hyperlink{customreader_8cpp-example}{customreader.cpp}.\end{Desc}
+\hypertarget{classOpenRAVE_1_1ControllerBase_aa495f583f5f0b3b3c412f730fdf8d715}{
+\index{OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}!Reset@{Reset}}
+\index{Reset@{Reset}!OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}}
+\paragraph[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Reset (int {\em options})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ControllerBase_aa495f583f5f0b3b3c412f730fdf8d715}
+
+
+Resets the current controller trajectories and any other state associated with the robot. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em options}]-\/ specific options that can be used to control what to reset \end{DoxyParams}
+\begin{Desc}
+\item[Examples: ]\par
+\hyperlink{customreader_8cpp-example}{customreader.cpp}.\end{Desc}
+\hypertarget{classOpenRAVE_1_1ControllerBase_accd34e8fe0dfb473777ab4668bf7a5d9}{
+\index{OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}!SetDesired@{SetDesired}}
+\index{SetDesired@{SetDesired}!OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}}
+\paragraph[{SetDesired}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetDesired (const std::vector$<$ dReal $>$ \& {\em values}, \/  TransformConstPtr {\em trans} = {\ttfamily TransformConstPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ControllerBase_accd34e8fe0dfb473777ab4668bf7a5d9}
+
+
+go to a specific position in configuration space. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em values}]the final configuration in the control dofs \item[{\em trans}]the transformation of the base. If not specified will use the current robot transformation. Ignored if controller does not use it \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if position operation successful. 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Examples: ]\par
+\hyperlink{customreader_8cpp-example}{customreader.cpp}.\end{Desc}
+\hypertarget{classOpenRAVE_1_1ControllerBase_aaab0e601177272e3bedb63f0ff5ebf32}{
+\index{OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}!SetPath@{SetPath}}
+\index{SetPath@{SetPath}!OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}}
+\paragraph[{SetPath}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetPath (TrajectoryBaseConstPtr {\em ptraj})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ControllerBase_aaab0e601177272e3bedb63f0ff5ebf32}
+
+
+Follow a path in configuration space, adds to the queue of trajectories already in execution. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ptraj}]-\/ the trajectory \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if trajectory operation successful 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Examples: ]\par
+\hyperlink{customreader_8cpp-example}{customreader.cpp}.\end{Desc}
+\hypertarget{classOpenRAVE_1_1ControllerBase_a43163cebf021667f69b0c6b2d357c2fa}{
+\index{OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}!SimulationStep@{SimulationStep}}
+\index{SimulationStep@{SimulationStep}!OpenRAVE::ControllerBase@{OpenRAVE::ControllerBase}}
+\paragraph[{SimulationStep}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SimulationStep (dReal {\em fTimeElapsed})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ControllerBase_a43163cebf021667f69b0c6b2d357c2fa}
+
+
+Simulate one step forward for controllers running in the simulation environment. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fTimeElapsed}]-\/ time elapsed in simulation environment since last frame \end{DoxyParams}
+\begin{Desc}
+\item[Examples: ]\par
+\hyperlink{customreader_8cpp-example}{customreader.cpp}.\end{Desc}

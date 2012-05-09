@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" href="$classOpenRAVE_1_1BaseXMLReader.html" title="BaseXMLReader" alt="" coords="5,112,125,141"/>
+<area shape="rect" href="$classCustomController_1_1PIDXMLReader.html" title="PIDXMLReader" alt="" coords="187,5,296,35"/>
+<area shape="rect" href="$classOpenRAVE_1_1ConfigurationSpecification_1_1Reader.html" title="Reader" alt="" coords="211,59,272,88"/>
+<area shape="rect" href="$classOpenRAVE_1_1DummyXMLReader.html" title="reads until the tag ends" alt="" coords="175,112,308,141"/>
+<area shape="rect" href="$classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html" title="Describes a common and serializable interface for planning parameters." alt="" coords="176,219,307,248"/>
+<area shape="rect" href="$classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader.html" title="SimpleXMLReader" alt="" coords="177,165,305,195"/>
+<area shape="rect" href="$classOpenRAVE_1_1XMLReadable.html" title="base class for readable interfaces" alt="" coords="15,272,116,301"/>
+<area shape="rect" href="$classCustomController_1_1XMLData.html" title="XMLData" alt="" coords="204,272,279,301"/>
+<area shape="rect" href="$classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData.html" title="XMLData" alt="" coords="204,325,279,355"/>
+</map>

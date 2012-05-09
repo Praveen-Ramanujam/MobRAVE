@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy" kind="struct" prot="public">
+    <compoundname>OpenRAVE::KinBody::Joint::MIMIC::DOFHierarchy</compoundname>
+    <includes refid="kinbody_8h" local="no">kinbody.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy_1a1c91a1ef39b5ab20fcc5ce582e9993dd" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t dofindex</definition>
+        <argsstring></argsstring>
+        <name>dofindex</name>
+        <briefdescription>
+<para>&gt;=0 dof index </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="686" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy_1a221046988b157f86fb2620d80cb61cdc" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dofformatindex</definition>
+        <argsstring></argsstring>
+        <name>dofformatindex</name>
+        <briefdescription>
+<para>index into _vdofformat to follow the computation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="687" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy_1abff2fab791b9e2410dcd8382c3112fcc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const DOFHierarchy &amp;r) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy" kindref="compound">DOFHierarchy</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="688" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="688" bodyend="690"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="685" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="684" bodyend="691"/>
+    <listofallmembers>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy_1a221046988b157f86fb2620d80cb61cdc" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC::DOFHierarchy</scope><name>dofformatindex</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy_1a1c91a1ef39b5ab20fcc5ce582e9993dd" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC::DOFHierarchy</scope><name>dofindex</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy_1abff2fab791b9e2410dcd8382c3112fcc" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC::DOFHierarchy</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

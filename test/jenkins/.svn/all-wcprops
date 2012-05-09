@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/jenkins
+END
+ikfast_config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/jenkins/ikfast_config.xml
+END
+build.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/jenkins/build.sh
+END

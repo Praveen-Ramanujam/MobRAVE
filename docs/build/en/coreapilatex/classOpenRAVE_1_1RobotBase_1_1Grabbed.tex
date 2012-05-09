@@ -1,0 +1,36 @@
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Grabbed}{
+\subsection{Grabbed Class Reference}
+\label{classOpenRAVE_1_1RobotBase_1_1Grabbed}\index{OpenRAVE::RobotBase::Grabbed@{OpenRAVE::RobotBase::Grabbed}}
+}
+
+
+The information of a currently grabbed body.  
+
+
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Grabbed_a8b4ce70056acd56ee57c2907fba4f0a7}{
+KinBodyWeakPtr \hyperlink{classOpenRAVE_1_1RobotBase_1_1Grabbed_a8b4ce70056acd56ee57c2907fba4f0a7}{pbody}}
+\label{classOpenRAVE_1_1RobotBase_1_1Grabbed_a8b4ce70056acd56ee57c2907fba4f0a7}
+
+\begin{DoxyCompactList}\small\item\em the grabbed body \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Grabbed_a76161751334f832eef6c40dc13da705f}{
+LinkPtr \hyperlink{classOpenRAVE_1_1RobotBase_1_1Grabbed_a76161751334f832eef6c40dc13da705f}{plinkrobot}}
+\label{classOpenRAVE_1_1RobotBase_1_1Grabbed_a76161751334f832eef6c40dc13da705f}
+
+\begin{DoxyCompactList}\small\item\em robot link that is grabbing the body \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Grabbed_a5c367c3a637ef9778667fb00efdfaad7}{
+std::vector$<$ LinkConstPtr $>$ \hyperlink{classOpenRAVE_1_1RobotBase_1_1Grabbed_a5c367c3a637ef9778667fb00efdfaad7}{vNonCollidingLinks}}
+\label{classOpenRAVE_1_1RobotBase_1_1Grabbed_a5c367c3a637ef9778667fb00efdfaad7}
+
+\begin{DoxyCompactList}\small\item\em robot links that already collide with the body \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Grabbed_a4603d447a8a0a8105a15f198626977ef}{
+Transform \hyperlink{classOpenRAVE_1_1RobotBase_1_1Grabbed_a4603d447a8a0a8105a15f198626977ef}{troot}}
+\label{classOpenRAVE_1_1RobotBase_1_1Grabbed_a4603d447a8a0a8105a15f198626977ef}
+
+\begin{DoxyCompactList}\small\item\em root transform (of first link of body) relative to plinkrobot's transform. In other words, pbody-\/$>$\hyperlink{classOpenRAVE_1_1KinBody_a2206c7317f62f083c3f57868ba82bfee}{GetTransform()} == plinkrobot-\/$>$\hyperlink{classOpenRAVE_1_1KinBody_a2206c7317f62f083c3f57868ba82bfee}{GetTransform()}$\ast$troot \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+The information of a currently grabbed body. 

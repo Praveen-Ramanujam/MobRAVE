@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation
+END
+RobotGoInitial.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/RobotGoInitial.m
+END
+manushand_graspcontactset.txt
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/manushand_graspcontactset.txt
+END
+MakeBarrettHandTables.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/MakeBarrettHandTables.m
+END
+RobotCreateBarrettHand.m
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/RobotCreateBarrettHand.m
+END
+wamscene_graspcontactset1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/wamscene_graspcontactset1.txt
+END
+wamscene_graspcontactset2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/wamscene_graspcontactset2.txt
+END
+wamscene_graspcontactset3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/wamscene_graspcontactset3.txt
+END
+wamscene_graspcontactset4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/wamscene_graspcontactset4.txt
+END
+RobotCreateBarrettWAM.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/RobotCreateBarrettWAM.m
+END
+PruneGraspSet.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/PruneGraspSet.m
+END
+SimpleConstrainedPlanner.m
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/SimpleConstrainedPlanner.m
+END
+GenerateGraspSet.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/GenerateGraspSet.m
+END
+RobotMoveHand.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/RobotMoveHand.m
+END
+MakeManusHandTables.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/MakeManusHandTables.m
+END
+RobotCreateManusHand.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/RobotCreateManusHand.m
+END
+manushand_graspset.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/manushand_graspset.txt
+END
+rundoormanipulation.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/rundoormanipulation.m
+END
+RobotCreatePerMMA.m
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/RobotCreatePerMMA.m
+END
+addopenravepaths_door.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/addopenravepaths_door.m
+END
+TaskConstrainedPlanner.m
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/TaskConstrainedPlanner.m
+END
+RobotCreateManus.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/RobotCreateManus.m
+END
+wamscene_graspset1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/wamscene_graspset1.txt
+END
+wamscene_graspset2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/wamscene_graspset2.txt
+END
+wamscene_graspset3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/wamscene_graspset3.txt
+END
+RandomizedRelaxedPlanner.m
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/RandomizedRelaxedPlanner.m
+END
+WaitForRobot.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/WaitForRobot.m
+END
+wamscene_graspset4.txt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/wamscene_graspset4.txt
+END
+SetupManusScene.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/SetupManusScene.m
+END
+SetupWAMScene.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/doormanipulation/SetupWAMScene.m
+END

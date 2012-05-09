@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/textserver
+END
+textserver.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/textserver/textserver.h
+END
+plugindefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/textserver/plugindefs.h
+END
+textserver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/textserver/textserver.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/textserver/CMakeLists.txt
+END

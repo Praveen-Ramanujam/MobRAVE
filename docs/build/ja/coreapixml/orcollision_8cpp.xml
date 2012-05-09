@@ -1,0 +1,518 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="orcollision_8cpp" kind="file">
+    <compoundname>orcollision.cpp</compoundname>
+    <includes refid="openrave-core_8h" local="no">openrave-core.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">sstream</includes>
+    <incdepgraph>
+      <node id="2608">
+        <label>list</label>
+      </node>
+      <node id="2620">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="2645">
+        <label>openrave/robot.h</label>
+        <link refid="robot_8h"/>
+      </node>
+      <node id="2602">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2652">
+        <label>openrave/environment.h</label>
+        <link refid="environment_8h"/>
+      </node>
+      <node id="2637">
+        <label>openrave/plugininfo.h</label>
+        <link refid="plugininfo_8h"/>
+      </node>
+      <node id="2639">
+        <label>openrave/spacesampler.h</label>
+        <link refid="spacesampler_8h"/>
+      </node>
+      <node id="2612">
+        <label>iomanip</label>
+      </node>
+      <node id="2616">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="2632">
+        <label>limits</label>
+      </node>
+      <node id="2635">
+        <label>openrave/mathextra.h</label>
+        <link refid="mathextra_8h"/>
+        <childnode refid="2634" relation="include">
+        </childnode>
+        <childnode refid="2630" relation="include">
+        </childnode>
+        <childnode refid="2636" relation="include">
+        </childnode>
+      </node>
+      <node id="2618">
+        <label>boost/tuple/tuple.hpp</label>
+      </node>
+      <node id="2622">
+        <label>boost/thread/recursive_mutex.hpp</label>
+      </node>
+      <node id="2627">
+        <label>openrave/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="2605">
+        <label>stdint.h</label>
+      </node>
+      <node id="2599">
+        <label>openrave-core.h</label>
+        <link refid="openrave-core_8h"/>
+        <childnode refid="2600" relation="include">
+        </childnode>
+      </node>
+      <node id="2624">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="2628">
+        <label>openrave/interfacehashes.h</label>
+        <link refid="interfacehashes_8h"/>
+      </node>
+      <node id="2630">
+        <label>cmath</label>
+      </node>
+      <node id="2634">
+        <label>cassert</label>
+      </node>
+      <node id="2623">
+        <label>boost/static_assert.hpp</label>
+      </node>
+      <node id="2621">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="2606">
+        <label>string</label>
+      </node>
+      <node id="2617">
+        <label>boost/weak_ptr.hpp</label>
+      </node>
+      <node id="2609">
+        <label>map</label>
+      </node>
+      <node id="2611">
+        <label>exception</label>
+      </node>
+      <node id="2613">
+        <label>fstream</label>
+      </node>
+      <node id="2643">
+        <label>openrave/collisionchecker.h</label>
+        <link refid="collisionchecker_8h"/>
+      </node>
+      <node id="2615">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="2648">
+        <label>openrave/controller.h</label>
+        <link refid="controller_8h"/>
+      </node>
+      <node id="2647">
+        <label>openrave/planner.h</label>
+        <link refid="planner_8h"/>
+      </node>
+      <node id="2600">
+        <label>openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="2601" relation="include">
+        </childnode>
+        <childnode refid="2602" relation="include">
+        </childnode>
+        <childnode refid="2603" relation="include">
+        </childnode>
+        <childnode refid="2604" relation="include">
+        </childnode>
+        <childnode refid="2605" relation="include">
+        </childnode>
+        <childnode refid="2606" relation="include">
+        </childnode>
+        <childnode refid="2607" relation="include">
+        </childnode>
+        <childnode refid="2608" relation="include">
+        </childnode>
+        <childnode refid="2609" relation="include">
+        </childnode>
+        <childnode refid="2610" relation="include">
+        </childnode>
+        <childnode refid="2611" relation="include">
+        </childnode>
+        <childnode refid="2612" relation="include">
+        </childnode>
+        <childnode refid="2613" relation="include">
+        </childnode>
+        <childnode refid="2614" relation="include">
+        </childnode>
+        <childnode refid="2615" relation="include">
+        </childnode>
+        <childnode refid="2616" relation="include">
+        </childnode>
+        <childnode refid="2617" relation="include">
+        </childnode>
+        <childnode refid="2618" relation="include">
+        </childnode>
+        <childnode refid="2619" relation="include">
+        </childnode>
+        <childnode refid="2620" relation="include">
+        </childnode>
+        <childnode refid="2621" relation="include">
+        </childnode>
+        <childnode refid="2622" relation="include">
+        </childnode>
+        <childnode refid="2623" relation="include">
+        </childnode>
+        <childnode refid="2624" relation="include">
+        </childnode>
+        <childnode refid="2625" relation="include">
+        </childnode>
+        <childnode refid="2626" relation="include">
+        </childnode>
+        <childnode refid="2627" relation="include">
+        </childnode>
+        <childnode refid="2628" relation="include">
+        </childnode>
+        <childnode refid="2629" relation="include">
+        </childnode>
+        <childnode refid="2635" relation="include">
+        </childnode>
+        <childnode refid="2637" relation="include">
+        </childnode>
+        <childnode refid="2638" relation="include">
+        </childnode>
+        <childnode refid="2639" relation="include">
+        </childnode>
+        <childnode refid="2640" relation="include">
+        </childnode>
+        <childnode refid="2641" relation="include">
+        </childnode>
+        <childnode refid="2642" relation="include">
+        </childnode>
+        <childnode refid="2643" relation="include">
+        </childnode>
+        <childnode refid="2644" relation="include">
+        </childnode>
+        <childnode refid="2645" relation="include">
+        </childnode>
+        <childnode refid="2646" relation="include">
+        </childnode>
+        <childnode refid="2647" relation="include">
+        </childnode>
+        <childnode refid="2648" relation="include">
+        </childnode>
+        <childnode refid="2649" relation="include">
+        </childnode>
+        <childnode refid="2650" relation="include">
+        </childnode>
+        <childnode refid="2651" relation="include">
+        </childnode>
+        <childnode refid="2652" relation="include">
+        </childnode>
+      </node>
+      <node id="2601">
+        <label>cstdio</label>
+      </node>
+      <node id="2651">
+        <label>openrave/viewer.h</label>
+        <link refid="viewer_8h"/>
+      </node>
+      <node id="2607">
+        <label>vector</label>
+      </node>
+      <node id="2640">
+        <label>openrave/kinbody.h</label>
+        <link refid="kinbody_8h"/>
+      </node>
+      <node id="2633">
+        <label>utility</label>
+      </node>
+      <node id="2614">
+        <label>sstream</label>
+      </node>
+      <node id="2650">
+        <label>openrave/sensorsystem.h</label>
+        <link refid="sensorsystem_8h"/>
+      </node>
+      <node id="2649">
+        <label>openrave/physicsengine.h</label>
+        <link refid="physicsengine_8h"/>
+      </node>
+      <node id="2619">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="2629">
+        <label>openrave/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="2630" relation="include">
+        </childnode>
+        <childnode refid="2631" relation="include">
+        </childnode>
+        <childnode refid="2632" relation="include">
+        </childnode>
+        <childnode refid="2633" relation="include">
+        </childnode>
+        <childnode refid="2603" relation="include">
+        </childnode>
+        <childnode refid="2604" relation="include">
+        </childnode>
+        <childnode refid="2634" relation="include">
+        </childnode>
+      </node>
+      <node id="2604">
+        <label>cstdlib</label>
+      </node>
+      <node id="2631">
+        <label>iostream</label>
+      </node>
+      <node id="2598">
+        <label>src/cppexamples/orcollision.cpp</label>
+        <link refid="orcollision.cpp"/>
+        <childnode refid="2599" relation="include">
+        </childnode>
+        <childnode refid="2607" relation="include">
+        </childnode>
+        <childnode refid="2603" relation="include">
+        </childnode>
+        <childnode refid="2614" relation="include">
+        </childnode>
+      </node>
+      <node id="2641">
+        <label>openrave/trajectory.h</label>
+        <link refid="trajectory_8h"/>
+      </node>
+      <node id="2636">
+        <label>climits</label>
+      </node>
+      <node id="2638">
+        <label>openrave/interface.h</label>
+        <link refid="interface_8h"/>
+      </node>
+      <node id="2646">
+        <label>openrave/iksolver.h</label>
+        <link refid="iksolver_8h"/>
+      </node>
+      <node id="2625">
+        <label>boost/array.hpp</label>
+      </node>
+      <node id="2642">
+        <label>openrave/module.h</label>
+        <link refid="module_8h"/>
+      </node>
+      <node id="2610">
+        <label>set</label>
+      </node>
+      <node id="2626">
+        <label>boost/multi_array.hpp</label>
+      </node>
+      <node id="2603">
+        <label>cstring</label>
+      </node>
+      <node id="2644">
+        <label>openrave/sensor.h</label>
+        <link refid="sensor_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="orcollision_8cpp_1ae11683d4f44426c27f006bdb1e7db95f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printhelp</definition>
+        <argsstring>()</argsstring>
+        <name>printhelp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orcollision.cpp" line="33" bodyfile="/home/pra3cob/openrave/src/cppexamples/orcollision.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="orcollision_8cpp_1a702f2b41e8e709a82d6efe9b0627e63e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printinterfaces</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>printinterfaces</name>
+        <param>
+          <type>EnvironmentBasePtr</type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orcollision.cpp" line="38" bodyfile="/home/pra3cob/openrave/src/cppexamples/orcollision.cpp" bodystart="37" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="orcollision_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orcollision.cpp" line="54" bodyfile="/home/pra3cob/openrave/src/cppexamples/orcollision.cpp" bodystart="53" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="23"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="openrave-core_8h" kindref="compound">openrave-core.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">OpenRAVE;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="orcollision_8cpp_1ae11683d4f44426c27f006bdb1e7db95f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="orcollision_8cpp_1ae11683d4f44426c27f006bdb1e7db95f" kindref="member">printhelp</ref>()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(</highlight><highlight class="stringliteral">&quot;orcollision<sp/>[--list]<sp/>[--checker<sp/>checker_name]<sp/>[--joints<sp/>#values<sp/>[values]]<sp/>body_model\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="orcollision_8cpp_1a702f2b41e8e709a82d6efe9b0627e63e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="orcollision_8cpp_1a702f2b41e8e709a82d6efe9b0627e63e" kindref="member">printinterfaces</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;InterfaceType,<sp/>std::vector&lt;std::string&gt;<sp/>&gt;<sp/>interfacenames;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a27b3193df26a41f8373e44b2a8bf5521" kindref="member" tooltip="Get a list of all the loaded interfaces.">RaveGetLoadedInterfaces</ref>(interfacenames);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>ss;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Loadable<sp/>interfaces:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::map&lt;InterfaceType,<sp/>std::vector&lt;std::string&gt;<sp/>&gt;::iterator<sp/>itinterface<sp/>=<sp/>interfacenames.begin();<sp/>itinterface<sp/>!=<sp/>interfacenames.end();<sp/>++itinterface)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/><ref refid="namespaceOpenRAVE_1a057d105393f37c597a34f0875ab247c6" kindref="member">RaveGetInterfaceName</ref>(itinterface-&gt;first)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>itinterface-&gt;second.size()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;):&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(vector&lt;string&gt;::iterator<sp/>it<sp/>=<sp/>itinterface-&gt;second.begin();<sp/>it<sp/>!=<sp/>itinterface-&gt;second.end();<sp/>++it)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>*it<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(ss.str());</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="orcollision_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ikfastloader_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>argv)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>argc<sp/>&lt;<sp/>2<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="orcollision_8cpp_1ae11683d4f44426c27f006bdb1e7db95f" kindref="member">printhelp</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;<sp/></highlight><highlight class="comment">//<sp/>no<sp/>robots<sp/>to<sp/>load</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ab89ccf2331c4ee81662f687cedaa1781" kindref="member" tooltip="Explicitly initializes the global OpenRAVE state (optional).">RaveInitialize</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>start<sp/>openrave<sp/>core</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv<sp/>=<sp/><ref refid="namespaceOpenRAVE_1aec9c3dd6a1f2908a1eb84ca59243e00a" kindref="member">RaveCreateEnvironment</ref>();<sp/></highlight><highlight class="comment">//<sp/>create<sp/>the<sp/>main<sp/>environment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;dReal&gt;<sp/>vsetvalues;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>parse<sp/>the<sp/>command<sp/>line<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(i<sp/>&lt;<sp/>argc)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((strcmp(argv[i],<sp/></highlight><highlight class="stringliteral">&quot;-h&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)||(strcmp(argv[i],<sp/></highlight><highlight class="stringliteral">&quot;-?&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)||(strcmp(argv[i],<sp/></highlight><highlight class="stringliteral">&quot;/?&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)||(strcmp(argv[i],<sp/></highlight><highlight class="stringliteral">&quot;--help&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)||(strcmp(argv[i],<sp/></highlight><highlight class="stringliteral">&quot;-help&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0))<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="orcollision_8cpp_1ae11683d4f44426c27f006bdb1e7db95f" kindref="member">printhelp</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>strcmp(argv[i],<sp/></highlight><highlight class="stringliteral">&quot;--checker&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>requested<sp/>collision<sp/>checker</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ae3e7611a64b7d4204203d69014f45fe8" kindref="member">CollisionCheckerBasePtr</ref><sp/>pchecker<sp/>=<sp/><ref refid="namespaceOpenRAVE_1adad7199c542d5330699204473c9eadcc" kindref="member">RaveCreateCollisionChecker</ref>(penv,argv[i+1]);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!pchecker<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a4299f3db31dd3149dc36eeffbb6a65db" kindref="member">RAVELOG_ERROR</ref>(</highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>create<sp/>checker<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>argv[i+1]);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-3;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>penv-&gt;SetCollisionChecker(pchecker);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>+=<sp/>2;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>strcmp(argv[i],<sp/></highlight><highlight class="stringliteral">&quot;--list&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="orcollision_8cpp_1a702f2b41e8e709a82d6efe9b0627e63e" kindref="member">printinterfaces</ref>(penv);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>strcmp(argv[i],<sp/></highlight><highlight class="stringliteral">&quot;--joints&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsetvalues.resize(atoi(argv[i+1]));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>(int)vsetvalues.size();<sp/>++j)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsetvalues[j]<sp/>=<sp/>atoi(argv[i+j+2]);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>+=<sp/>2+vsetvalues.size();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>i<sp/>&gt;=<sp/>argc<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a4299f3db31dd3149dc36eeffbb6a65db" kindref="member">RAVELOG_ERROR</ref>(</highlight><highlight class="stringliteral">&quot;not<sp/>enough<sp/>parameters\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="orcollision_8cpp_1ae11683d4f44426c27f006bdb1e7db95f" kindref="member">printhelp</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>the<sp/>scene</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!penv-&gt;Load(argv[i])<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>lock<sp/>the<sp/>environment<sp/>to<sp/>prevent<sp/>thigns<sp/>from<sp/>changes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>EnvironmentMutex::scoped_lock<sp/>lock(penv-&gt;GetMutex());</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;KinBodyPtr&gt;<sp/>vbodies;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;GetBodies(vbodies);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>the<sp/>first<sp/>body</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>vbodies.size()<sp/>==<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a4299f3db31dd3149dc36eeffbb6a65db" kindref="member">RAVELOG_ERROR</ref>(</highlight><highlight class="stringliteral">&quot;no<sp/>bodies<sp/>loaded\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-3;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody<sp/>=<sp/>vbodies.at(0);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;dReal&gt;<sp/>values;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>pbody-&gt;GetDOFValues(values);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>new<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(int)vsetvalues.size()<sp/>&amp;&amp;<sp/>i<sp/>&lt;<sp/>(int)values.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>values[i]<sp/>=<sp/>vsetvalues[i];</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>pbody-&gt;SetDOFValues(values,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>contactpoints<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1CollisionReport" kindref="compound" tooltip="Holds information about a particular collision that occured.">CollisionReport</ref>());</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;GetCollisionChecker()-&gt;SetCollisionOptions(<ref refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77a9bc2191e9e7b6bfc5fa1807812c45c6c" kindref="member" tooltip="Return the contact points of the collision in the CollisionReport. Note that this...">CO_Contacts</ref>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>pbody-&gt;CheckSelfCollision(report)<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contactpoints<sp/>=<sp/>(int)report-&gt;contacts.size();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringstream<sp/>ss;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;body<sp/>in<sp/>self-collision<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>(!!report-&gt;plink1<sp/>?<sp/>report-&gt;plink1-&gt;GetName()<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>(!!report-&gt;plink2<sp/>?<sp/>report-&gt;plink2-&gt;GetName()<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>at<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>contactpoints<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;contacts&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>contactpoints;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT" kindref="compound">CollisionReport::CONTACT</ref>&amp;<sp/>c<sp/>=<sp/>report-&gt;contacts[i];</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;contact&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>pos=(&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>c.<ref refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ae19a907bc741ffa358691997cd93774b" kindref="member" tooltip="where the contact occured">pos</ref>.x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>c.<ref refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ae19a907bc741ffa358691997cd93774b" kindref="member" tooltip="where the contact occured">pos</ref>.y<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>c.<ref refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ae19a907bc741ffa358691997cd93774b" kindref="member" tooltip="where the contact occured">pos</ref>.z<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;),<sp/>norm=(&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>c.<ref refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ab75019187f78449b47afc5a9d3dddfa9" kindref="member" tooltip="the normals of the faces">norm</ref>.x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>c.<ref refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ab75019187f78449b47afc5a9d3dddfa9" kindref="member" tooltip="the normals of the faces">norm</ref>.y<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>c.<ref refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ab75019187f78449b47afc5a9d3dddfa9" kindref="member" tooltip="the normals of the faces">norm</ref>.z<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a545110e670ac69c5fbfe44dc874f08c5" kindref="member">RAVELOG_INFOA</ref>(ss.str());</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(</highlight><highlight class="stringliteral">&quot;body<sp/>not<sp/>in<sp/>collision\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>the<sp/>transformations<sp/>of<sp/>all<sp/>the<sp/>links</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Transform&gt;<sp/>vlinktransforms;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>pbody-&gt;GetLinkTransformations(vlinktransforms);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>penv-&gt;Destroy();<sp/></highlight><highlight class="comment">//<sp/>destroy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>contactpoints;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/src/cppexamples/orcollision.cpp"/>
+  </compounddef>
+</doxygen>

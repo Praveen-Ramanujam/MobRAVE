@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/logging
+END
+loggingmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/logging/loggingmodule.h
+END
+plugindefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/logging/plugindefs.h
+END
+logging.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/logging/logging.cpp
+END
+viewerrecorder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/logging/viewerrecorder.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/logging/CMakeLists.txt
+END

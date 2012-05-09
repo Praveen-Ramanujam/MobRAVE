@@ -1,0 +1,269 @@
+\hypertarget{classOpenRAVE_1_1SensorBase}{
+\subsection{SensorBase Class Reference}
+\label{classOpenRAVE_1_1SensorBase}\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} A sensor measures physical properties from the environment. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__sensor}{Sensor Concepts}.  
+
+
+
+
+Inheritance diagram for SensorBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{classOpenRAVE_1_1SensorBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for SensorBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{classOpenRAVE_1_1SensorBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData}{ActuatorSensorData}
+\begin{DoxyCompactList}\small\item\em An actuator for modeling motors and other mechanisms that produce torque/force. The actuator has only one degree of freedom. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1SensorBase_1_1Force6DSensorData}{Force6DSensorData}
+\begin{DoxyCompactList}\small\item\em Stores force data. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1SensorBase_1_1IMUSensorData}{IMUSensorData}
+\begin{DoxyCompactList}\small\item\em Stores IMU data. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData}{JointEncoderSensorData}
+\begin{DoxyCompactList}\small\item\em Stores joint angles and EE position. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1SensorBase_1_1OdometrySensorData}{OdometrySensorData}
+\begin{DoxyCompactList}\small\item\em odometry data storing full 6D pose and velocity \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1SensorBase_1_1SensorData}{SensorData}
+\begin{DoxyCompactList}\small\item\em used to pass sensor data around \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1SensorBase_1_1SensorGeometry}{SensorGeometry}
+\begin{DoxyCompactList}\small\item\em permanent properties of the sensors \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1SensorBase_1_1TactileSensorData}{TactileSensorData}
+\begin{DoxyCompactList}\small\item\em tactle data \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbc}{ConfigureCommand} \{ \par
+\hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcaa12aa3389243d888c0211e5e84a2bec3}{CC\_\-PowerOn} = 0x10, 
+\hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcabe79d3489e53b22662cb01e3fd5a2aa4}{CC\_\-PowerOff} = 0x11, 
+\hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcadf063ee2e225c3f6714361882241089f}{CC\_\-PowerCheck} = 0x12, 
+\hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcaaf7af7837769edb49e4b9366044b8ebc}{CC\_\-RenderDataOn} = 0x20, 
+\par
+\hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbca6b764a7cba110931b6035302dd83b574}{CC\_\-RenderDataOff} = 0x21, 
+\hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcadc438b5d23e19d70df1e4425302e26d0}{CC\_\-RenderDataCheck} = 0x23, 
+\hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbca6041933887566ae587fb1babcfa3794d}{CC\_\-RenderGeometryOn} = 0x30, 
+\hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcac80f84e0b1dab127526e2c7517f9fd16}{CC\_\-RenderGeometryOff} = 0x31, 
+\par
+\hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbca0f1f04ef2d988fc5e5bc061c6eba352e}{CC\_\-RenderGeometryCheck} = 0x32
+ \}
+\begin{DoxyCompactList}\small\item\em A set of commands used for run-\/time sensor configuration. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classOpenRAVE_1_1SensorBase_ae02c7c4987dd11f5fb7657e18c7c8318}{Configure} (\hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbc}{ConfigureCommand} command, bool blocking=false)=0
+\begin{DoxyCompactList}\small\item\em Configures properties of the sensor like power. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1SensorBase_afa04259a5131e4b12c964d7c66d7c89a}{SimulationStep} (dReal fTimeElapsed) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em Simulate one step forward for sensors. \item\end{DoxyCompactList}\item 
+virtual SensorGeometryPtr \hyperlink{classOpenRAVE_1_1SensorBase_a080408b00865d76ab0890ae98207d980}{GetSensorGeometry} (SensorType type=ST\_\-Invalid)=0
+\begin{DoxyCompactList}\small\item\em Returns the sensor geometry. This method is thread safe. \item\end{DoxyCompactList}\item 
+virtual SensorDataPtr \hyperlink{classOpenRAVE_1_1SensorBase_ae4531cd4b3e1de9708d9fc2cce769eff}{CreateSensorData} (SensorType type=ST\_\-Invalid)=0
+\begin{DoxyCompactList}\small\item\em Creates the sensor data to be specifically used by this class. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1SensorBase_ad7b2e5f8884dd4897de003828e8e8146}{GetSensorData} (SensorDataPtr psensordata)=0
+\begin{DoxyCompactList}\small\item\em Copy the most recent published data of the sensor given the type. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_a3d9771c99399198411c3715160d7d415}{
+virtual bool \hyperlink{classOpenRAVE_1_1SensorBase_a3d9771c99399198411c3715160d7d415}{Supports} (SensorType type)=0}
+\label{classOpenRAVE_1_1SensorBase_a3d9771c99399198411c3715160d7d415}
+
+\begin{DoxyCompactList}\small\item\em returns true if sensor supports a particular sensor type \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1SensorBase_a2b064fc102932710baf4ada2799d7236}{SetTransform} (const Transform \&trans)=0
+\begin{DoxyCompactList}\small\item\em Set the transform of a sensor (global coordinate system). \item\end{DoxyCompactList}\item 
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1SensorBase_ab17d44ea62751790d35594754f7069e5}{RegisterDataCallback} (SensorType type, const boost::function$<$ void(SensorDataConstPtr)$>$ \&callback) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em Register a callback whenever new sensor data comes in. \item\end{DoxyCompactList}\item 
+virtual const std::string \& \hyperlink{classOpenRAVE_1_1SensorBase_a3cc720dbc55fa8e07a0f85343d3bb136}{GetName} () const 
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1SensorBase_a90092f801b2f4091b5509d6ea1307ce9}{Init} (const std::string \&) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1SensorBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1SensorBase_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em return the static interface type this class points to (used for safe casting) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_aaf2ed934b37cbbd236fdd1b01a5f5005}{
+std::string \hyperlink{classOpenRAVE_1_1SensorBase_aaf2ed934b37cbbd236fdd1b01a5f5005}{\_\-name}}
+\label{classOpenRAVE_1_1SensorBase_aaf2ed934b37cbbd236fdd1b01a5f5005}
+
+\begin{DoxyCompactList}\small\item\em name of the sensor \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} A sensor measures physical properties from the environment. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__sensor}{Sensor Concepts}. 
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbc}{
+\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!ConfigureCommand@{ConfigureCommand}}
+\index{ConfigureCommand@{ConfigureCommand}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}
+\paragraph[{ConfigureCommand}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ConfigureCommand}}\hfill}
+\label{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbc}
+
+
+A set of commands used for run-\/time sensor configuration. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{CC\_\-PowerOn@{CC\_\-PowerOn}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!CC\_\-PowerOn@{CC\_\-PowerOn}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcaa12aa3389243d888c0211e5e84a2bec3}{
+CC\_\-PowerOn}
+\label{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcaa12aa3389243d888c0211e5e84a2bec3}
+}]turns the sensor on, starts gathering data and using processor cycles. If the power is already on, servers as a reset. (off by default) \index{CC\_\-PowerOff@{CC\_\-PowerOff}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!CC\_\-PowerOff@{CC\_\-PowerOff}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcabe79d3489e53b22662cb01e3fd5a2aa4}{
+CC\_\-PowerOff}
+\label{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcabe79d3489e53b22662cb01e3fd5a2aa4}
+}]turns the sensor off, stops gathering data (off by default). \index{CC\_\-PowerCheck@{CC\_\-PowerCheck}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!CC\_\-PowerCheck@{CC\_\-PowerCheck}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcadf063ee2e225c3f6714361882241089f}{
+CC\_\-PowerCheck}
+\label{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcadf063ee2e225c3f6714361882241089f}
+}]returns whether power is on \index{CC\_\-RenderDataOn@{CC\_\-RenderDataOn}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!CC\_\-RenderDataOn@{CC\_\-RenderDataOn}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcaaf7af7837769edb49e4b9366044b8ebc}{
+CC\_\-RenderDataOn}
+\label{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcaaf7af7837769edb49e4b9366044b8ebc}
+}]turns on any rendering of the sensor data (off by default) \index{CC\_\-RenderDataOff@{CC\_\-RenderDataOff}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!CC\_\-RenderDataOff@{CC\_\-RenderDataOff}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbca6b764a7cba110931b6035302dd83b574}{
+CC\_\-RenderDataOff}
+\label{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbca6b764a7cba110931b6035302dd83b574}
+}]turns off any rendering of the sensor data (off by default) \index{CC\_\-RenderDataCheck@{CC\_\-RenderDataCheck}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!CC\_\-RenderDataCheck@{CC\_\-RenderDataCheck}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcadc438b5d23e19d70df1e4425302e26d0}{
+CC\_\-RenderDataCheck}
+\label{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcadc438b5d23e19d70df1e4425302e26d0}
+}]returns whether data rendering is on \index{CC\_\-RenderGeometryOn@{CC\_\-RenderGeometryOn}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!CC\_\-RenderGeometryOn@{CC\_\-RenderGeometryOn}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbca6041933887566ae587fb1babcfa3794d}{
+CC\_\-RenderGeometryOn}
+\label{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbca6041933887566ae587fb1babcfa3794d}
+}]turns on any rendering of the sensor geometry (on by default) \index{CC\_\-RenderGeometryOff@{CC\_\-RenderGeometryOff}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!CC\_\-RenderGeometryOff@{CC\_\-RenderGeometryOff}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcac80f84e0b1dab127526e2c7517f9fd16}{
+CC\_\-RenderGeometryOff}
+\label{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbcac80f84e0b1dab127526e2c7517f9fd16}
+}]turns off any rendering of the sensor geometry (on by default) \index{CC\_\-RenderGeometryCheck@{CC\_\-RenderGeometryCheck}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!CC\_\-RenderGeometryCheck@{CC\_\-RenderGeometryCheck}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbca0f1f04ef2d988fc5e5bc061c6eba352e}{
+CC\_\-RenderGeometryCheck}
+\label{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbca0f1f04ef2d988fc5e5bc061c6eba352e}
+}]returns whether geometry rendering is on \end{description}
+\end{Desc}
+
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1SensorBase_ae02c7c4987dd11f5fb7657e18c7c8318}{
+\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!Configure@{Configure}}
+\index{Configure@{Configure}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}
+\paragraph[{Configure}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Configure ({\bf ConfigureCommand} {\em command}, \/  bool {\em blocking} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SensorBase_ae02c7c4987dd11f5fb7657e18c7c8318}
+
+
+Configures properties of the sensor like power. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]\hyperlink{classOpenRAVE_1_1SensorBase_a48dea54d66d3cd48fda033d19cad7dbc}{ConfigureCommand} \item[{\em blocking}]If set to true, makes sure the configuration ends before this function returns.(might cause problems if environment is locked). \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]if command doesn't succeed \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1SensorBase_ae4531cd4b3e1de9708d9fc2cce769eff}{
+\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!CreateSensorData@{CreateSensorData}}
+\index{CreateSensorData@{CreateSensorData}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}
+\paragraph[{CreateSensorData}]{\setlength{\rightskip}{0pt plus 5cm}virtual SensorDataPtr CreateSensorData (SensorType {\em type} = {\ttfamily ST\_\-Invalid})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SensorBase_ae4531cd4b3e1de9708d9fc2cce769eff}
+
+
+Creates the sensor data to be specifically used by this class. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]the requested sensor type to create. A sensor can support many types. If type is ST\_\-Invalid, then returns a data structure of the type most representative of this sensor. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new \hyperlink{classOpenRAVE_1_1SensorBase_1_1SensorData}{SensorData} class 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1SensorBase_a3cc720dbc55fa8e07a0f85343d3bb136}{
+\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!GetName@{GetName}}
+\index{GetName@{GetName}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}
+\paragraph[{GetName}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::string\& GetName () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SensorBase_a3cc720dbc55fa8e07a0f85343d3bb136}
+\begin{DoxyReturn}{Returns}
+the name of the sensor 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1SensorBase_ad7b2e5f8884dd4897de003828e8e8146}{
+\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!GetSensorData@{GetSensorData}}
+\index{GetSensorData@{GetSensorData}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}
+\paragraph[{GetSensorData}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool GetSensorData (SensorDataPtr {\em psensordata})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SensorBase_ad7b2e5f8884dd4897de003828e8e8146}
+
+
+Copy the most recent published data of the sensor given the type. 
+
+Once GetSensorData returns, the caller has full unrestricted access to the data. This method is thread safe. 
+\begin{DoxyParams}{Parameters}
+\item[{\em psensordata}]A pointer to \hyperlink{classOpenRAVE_1_1SensorBase_1_1SensorData}{SensorData} returned from CreateSensorData, the plugin will use psensordata-\/$>$GetType() in order to return the correctly supported type. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1SensorBase_a080408b00865d76ab0890ae98207d980}{
+\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!GetSensorGeometry@{GetSensorGeometry}}
+\index{GetSensorGeometry@{GetSensorGeometry}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}
+\paragraph[{GetSensorGeometry}]{\setlength{\rightskip}{0pt plus 5cm}virtual SensorGeometryPtr GetSensorGeometry (SensorType {\em type} = {\ttfamily ST\_\-Invalid})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SensorBase_a080408b00865d76ab0890ae98207d980}
+
+
+Returns the sensor geometry. This method is thread safe. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]the requested sensor type to create. A sensor can support many types. If type is ST\_\-Invalid, then returns a data structure \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sensor geometry pointer, use delete to destroy it 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1SensorBase_a90092f801b2f4091b5509d6ea1307ce9}{
+\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!Init@{Init}}
+\index{Init@{Init}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}
+\paragraph[{Init}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Init (const std::string \&)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SensorBase_a90092f801b2f4091b5509d6ea1307ce9}
+\hypertarget{classOpenRAVE_1_1SensorBase_ab17d44ea62751790d35594754f7069e5}{
+\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!RegisterDataCallback@{RegisterDataCallback}}
+\index{RegisterDataCallback@{RegisterDataCallback}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}
+\paragraph[{RegisterDataCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual UserDataPtr RegisterDataCallback (SensorType {\em type}, \/  const boost::function$<$ void(SensorDataConstPtr)$>$ \& {\em callback})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SensorBase_ab17d44ea62751790d35594754f7069e5}
+
+
+Register a callback whenever new sensor data comes in. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]the sensor type to register for \item[{\em callback}]the user function to call, note that this might block the thread generating/receiving sensor data \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1SensorBase_a2b064fc102932710baf4ada2799d7236}{
+\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!SetTransform@{SetTransform}}
+\index{SetTransform@{SetTransform}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}
+\paragraph[{SetTransform}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetTransform (const Transform \& {\em trans})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SensorBase_a2b064fc102932710baf4ada2799d7236}
+
+
+Set the transform of a sensor (global coordinate system). 
+
+Sensors attached to the robot have their transforms automatically set every time the robot is moved 
+\begin{DoxyParams}{Parameters}
+\item[{\em trans}]-\/ The transform defining the frame of the sensor. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1SensorBase_afa04259a5131e4b12c964d7c66d7c89a}{
+\index{OpenRAVE::SensorBase@{OpenRAVE::SensorBase}!SimulationStep@{SimulationStep}}
+\index{SimulationStep@{SimulationStep}!OpenRAVE::SensorBase@{OpenRAVE::SensorBase}}
+\paragraph[{SimulationStep}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SimulationStep (dReal {\em fTimeElapsed})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SensorBase_afa04259a5131e4b12c964d7c66d7c89a}
+
+
+Simulate one step forward for sensors. 
+
+Only valid if this sensor is simulation based. A sensor hooked up to a real device can ignore this call 

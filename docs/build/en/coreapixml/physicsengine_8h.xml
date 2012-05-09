@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="physicsengine_8h" kind="file">
+    <compoundname>physicsengine.h</compoundname>
+    <includedby refid="openrave_8h" local="no">include/openrave/openrave.h</includedby>
+    <invincdepgraph>
+      <node id="2114">
+        <label>src/cppexamples/ikfastloader.cpp</label>
+        <link refid="ikfastloader_8cpp"/>
+      </node>
+      <node id="2123">
+        <label>src/cppexamples/orshowsensors.cpp</label>
+        <link refid="orshowsensors_8cpp"/>
+      </node>
+      <node id="2106">
+        <label>src/cppexamples/orpythonbinding.cpp</label>
+        <link refid="orpythonbinding_8cpp"/>
+      </node>
+      <node id="2113">
+        <label>src/libopenrave-core/openrave-core.h</label>
+        <link refid="openrave-core_8h"/>
+        <childnode refid="2114" relation="include">
+        </childnode>
+        <childnode refid="2115" relation="include">
+        </childnode>
+        <childnode refid="2116" relation="include">
+        </childnode>
+        <childnode refid="2117" relation="include">
+        </childnode>
+        <childnode refid="2118" relation="include">
+        </childnode>
+        <childnode refid="2119" relation="include">
+        </childnode>
+        <childnode refid="2109" relation="include">
+        </childnode>
+        <childnode refid="2120" relation="include">
+        </childnode>
+        <childnode refid="2121" relation="include">
+        </childnode>
+        <childnode refid="2122" relation="include">
+        </childnode>
+        <childnode refid="2123" relation="include">
+        </childnode>
+        <childnode refid="2110" relation="include">
+        </childnode>
+        <childnode refid="2111" relation="include">
+        </childnode>
+      </node>
+      <node id="2111">
+        <label>src/cppexamples/oryoubotcontrol.cpp</label>
+        <link refid="oryoubotcontrol_8cpp"/>
+      </node>
+      <node id="2118">
+        <label>src/cppexamples/orikfilter.cpp</label>
+        <link refid="orikfilter_8cpp"/>
+      </node>
+      <node id="2121">
+        <label>src/cppexamples/orplanning_module.cpp</label>
+        <link refid="orplanning__module_8cpp"/>
+      </node>
+      <node id="2112">
+        <label>include/openrave/plugin.h</label>
+        <link refid="plugin_8h"/>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2107" relation="include">
+        </childnode>
+      </node>
+      <node id="2120">
+        <label>src/cppexamples/orplanning_ik.cpp</label>
+        <link refid="orplanning__ik_8cpp"/>
+      </node>
+      <node id="2124">
+        <label>src/libopenrave/libopenrave.cpp</label>
+        <link refid="libopenrave_8cpp"/>
+        <childnode refid="2124" relation="include">
+        </childnode>
+      </node>
+      <node id="2104">
+        <label>include/openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="2105" relation="include">
+        </childnode>
+        <childnode refid="2106" relation="include">
+        </childnode>
+        <childnode refid="2107" relation="include">
+        </childnode>
+        <childnode refid="2108" relation="include">
+        </childnode>
+        <childnode refid="2112" relation="include">
+        </childnode>
+        <childnode refid="2113" relation="include">
+        </childnode>
+        <childnode refid="2124" relation="include">
+        </childnode>
+      </node>
+      <node id="2105">
+        <label>src/cppexamples/customreader.cpp</label>
+        <link refid="customreader_8cpp"/>
+      </node>
+      <node id="2115">
+        <label>src/cppexamples/opencvsaving.cpp</label>
+        <link refid="opencvsaving_8cpp"/>
+      </node>
+      <node id="2109">
+        <label>src/cppexamples/ormulticontrol.cpp</label>
+        <link refid="ormulticontrol_8cpp"/>
+      </node>
+      <node id="2108">
+        <label>include/openrave/planningutils.h</label>
+        <link refid="planningutils_8h"/>
+        <childnode refid="2109" relation="include">
+        </childnode>
+        <childnode refid="2110" relation="include">
+        </childnode>
+        <childnode refid="2111" relation="include">
+        </childnode>
+      </node>
+      <node id="2117">
+        <label>src/cppexamples/orconveyormovement.cpp</label>
+        <link refid="orconveyormovement_8cpp"/>
+      </node>
+      <node id="2103">
+        <label>include/openrave/physicsengine.h</label>
+        <link refid="physicsengine.h"/>
+        <childnode refid="2104" relation="include">
+        </childnode>
+      </node>
+      <node id="2110">
+        <label>src/cppexamples/ortrajectory.cpp</label>
+        <link refid="ortrajectory_8cpp"/>
+      </node>
+      <node id="2116">
+        <label>src/cppexamples/orcollision.cpp</label>
+        <link refid="orcollision_8cpp"/>
+      </node>
+      <node id="2119">
+        <label>src/cppexamples/orloadviewer.cpp</label>
+        <link refid="orloadviewer_8cpp"/>
+      </node>
+      <node id="2107">
+        <label>src/cppexamples/plugincpp.cpp</label>
+        <link refid="plugincpp_8cpp"/>
+      </node>
+      <node id="2122">
+        <label>src/cppexamples/orplanning_planner.cpp</label>
+        <link refid="orplanning__planner_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenRAVE_1_1PhysicsEngineBase" prot="public">OpenRAVE::PhysicsEngineBase</innerclass>
+    <innernamespace refid="namespaceOpenRAVE">OpenRAVE</innernamespace>
+    <briefdescription>
+<para>Physics engine related definitions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2006-2010<sp/>Rosen<sp/>Diankov<sp/>(rosen.diankov@gmail.com)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenRAVE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OpenRAVE<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="preprocessor">#ifndef<sp/>OPENRAVE_PHYSICSENGINE_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_PHYSICSENGINE_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenRAVE<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="namespaceOpenRAVE_1a5ab12d9ae992912f730cfefda6c97042" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a5ab12d9ae992912f730cfefda6c97042" kindref="member" tooltip="basic options for physics engine">PhysicsEngineOptions</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="namespaceOpenRAVE_1a5ab12d9ae992912f730cfefda6c97042ac6a259c2e3176f579d27d30003166e17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a5ab12d9ae992912f730cfefda6c97042ac6a259c2e3176f579d27d30003166e17" kindref="member" tooltip="if set, physics engine will use contact forces from self-collisions">PEO_SelfCollisions</ref><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classOpenRAVE_1_1PhysicsEngineBase" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1PhysicsEngineBase" kindref="compound" tooltip="[interface] The physics engine interfaces supporting simulations and dynamics. See...">PhysicsEngineBase</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37" refid="classOpenRAVE_1_1PhysicsEngineBase_1a6032a2abb15a34515b994585c9e7f791" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1PhysicsEngineBase_1a6032a2abb15a34515b994585c9e7f791" kindref="member">PhysicsEngineBase</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)<sp/>:<sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref>(PT_PhysicsEngine,<sp/>penv)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39" refid="classOpenRAVE_1_1PhysicsEngineBase_1a972e350f0489a339e526e419e3331a63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PhysicsEngineBase_1a972e350f0489a339e526e419e3331a63" kindref="member">~PhysicsEngineBase</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classOpenRAVE_1_1PhysicsEngineBase_1affeafe65e7c4094f282d273dedbf069b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>InterfaceType<sp/><ref refid="classOpenRAVE_1_1PhysicsEngineBase_1affeafe65e7c4094f282d273dedbf069b" kindref="member" tooltip="return the static interface type this class points to (used for safe casting)">GetInterfaceTypeStatic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PT_PhysicsEngine;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetPhysicsOptions(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>physicsoptions)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetPhysicsOptions()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetPhysicsOptions(std::ostream&amp;<sp/>sout,<sp/>std::istream&amp;<sp/>sinput)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>InitEnvironment()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DestroyEnvironment()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>InitKinBody(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>body)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetLinkVelocity(<ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">KinBody::LinkPtr</ref><sp/>link,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&amp;<sp/>linearvel,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&amp;<sp/>angularvel)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetLinkVelocities(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>body,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::pair&lt;Vector,Vector&gt;<sp/>&gt;&amp;<sp/>velocities)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetLinkVelocity(<ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref><sp/>link,<sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&amp;<sp/>linearvel,<sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&amp;<sp/>angularvel)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetLinkVelocities(<ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref><sp/>body,<sp/>std::vector&lt;std::pair&lt;Vector,Vector&gt;<sp/>&gt;&amp;<sp/>velocities)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetBodyForce(<ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">KinBody::LinkPtr</ref><sp/>link,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&amp;<sp/>force,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bAdd)<sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetBodyTorque(<ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">KinBody::LinkPtr</ref><sp/>link,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&amp;<sp/>torque,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bAdd)<sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>AddJointTorque(<ref refid="classOpenRAVE_1_1KinBody_1ad3fc7b64912fd0b7343faaefbc96b3ef" kindref="member">KinBody::JointPtr</ref><sp/>pjoint,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;<sp/>pTorques)<sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetLinkForceTorque(<ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref><sp/>link,<sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&amp;<sp/>force,<sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&amp;<sp/>torque)<sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//virtual<sp/>bool<sp/>GetJointForceTorque(KinBody::JointConstPtr<sp/>joint,<sp/>KinBody::LinkConstPtr<sp/>link,<sp/>Vector&amp;<sp/>force,<sp/>Vector&amp;<sp/>torque)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetGravity(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&amp;<sp/>gravity)<sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref><sp/>GetGravity()<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SimulateStep(<ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>fTimeElapsed)=0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classOpenRAVE_1_1PhysicsEngineBase_1a1a58013a452eea3921fb0ddcfb263813" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetBodyVelocity(<ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref><sp/>body,<sp/>std::vector&lt;<ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&gt;&amp;<sp/>vLinearVelocities,<sp/>std::vector&lt;<ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>&gt;&amp;<sp/>vAngularVelocities)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Vector,Vector&gt;<sp/>&gt;<sp/>velocities;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!GetLinkVelocities(body,<sp/>velocities)<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vLinearVelocities.resize(velocities.size());</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vAngularVelocities.resize(velocities.size());</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>velocities.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vLinearVelocities[i]<sp/>=<sp/>velocities[i].first;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vAngularVelocities[i]<sp/>=<sp/>velocities[i].second;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classOpenRAVE_1_1PhysicsEngineBase_1aee5b9e006d1108c65095eceee9f79275" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PhysicsEngineBase_1aee5b9e006d1108c65095eceee9f79275" kindref="member">SetBodyVelocity</ref>(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>body,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector&gt;&amp;<sp/>vLinearVelocities,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Vector&gt;&amp;<sp/>vAngularVelocities)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_ASSERT(vLinearVelocities.size()==vAngularVelocities.size());</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;Vector,Vector&gt;<sp/>&gt;<sp/>velocities(vLinearVelocities.size());</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>velocities.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocities[i].first<sp/>=<sp/>vLinearVelocities[i];</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocities[i].second<sp/>=<sp/>vAngularVelocities[i];</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SetLinkVelocities(body,velocities);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="148" refid="classOpenRAVE_1_1PhysicsEngineBase_1a551bd26292b436651d2ade9eb0ceecae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PhysicsEngineBase_1a551bd26292b436651d2ade9eb0ceecae" kindref="member">SetPhysicsData</ref>(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>body,<sp/><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref><sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>body-&gt;SetPhysicsData(data);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>GetHash()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="interfacehashes_8h_1ae2be082728ff47d13153c9bd002b8212" kindref="member">OPENRAVE_PHYSICSENGINE_HASH</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>OpenRAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/include/openrave/physicsengine.h"/>
+  </compounddef>
+</doxygen>

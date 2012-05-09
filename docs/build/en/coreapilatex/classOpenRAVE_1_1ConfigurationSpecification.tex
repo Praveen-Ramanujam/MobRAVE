@@ -1,0 +1,273 @@
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification}{
+\subsection{ConfigurationSpecification Class Reference}
+\label{classOpenRAVE_1_1ConfigurationSpecification}\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+}
+
+
+A configuration specification references values in the environment that then define a configuration-\/space which can be searched for.  
+
+
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group}{Group}
+\begin{DoxyCompactList}\small\item\em A group referencing the values of one body in the environment. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a44fbec2fd26a45cada889c5c0f0751c8}{
+virtual int \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a44fbec2fd26a45cada889c5c0f0751c8}{GetDOF} () const }
+\label{classOpenRAVE_1_1ConfigurationSpecification_a44fbec2fd26a45cada889c5c0f0751c8}
+
+\begin{DoxyCompactList}\small\item\em return the dimension of the configuraiton space (degrees of freedom) \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a1d57f75f79e9178bdd17e38a23720d56}{
+virtual bool \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a1d57f75f79e9178bdd17e38a23720d56}{IsValid} () const }
+\label{classOpenRAVE_1_1ConfigurationSpecification_a1d57f75f79e9178bdd17e38a23720d56}
+
+\begin{DoxyCompactList}\small\item\em check if the groups form a continguous space \item\end{DoxyCompactList}\item 
+virtual std::vector$<$ \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group}{Group} $>$::const\_\-iterator \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a188304abf23d571f0f340adfdd28e3f0}{FindCompatibleGroup} (const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group}{Group} \&g, bool exactmatch=false) const 
+\begin{DoxyCompactList}\small\item\em finds the most compatible group to the given group \item\end{DoxyCompactList}\item 
+virtual std::vector$<$ \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group}{Group} $>$::const\_\-iterator \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_abbad5fc78067a778c4f95cf170b03c80}{FindTimeDerivativeGroup} (const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group}{Group} \&g, bool exactmatch=false) const 
+\begin{DoxyCompactList}\small\item\em Return the most compatible group that represents the time-\/derivative data of the group. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a87498a23beea02e83fd8ddc062898cb3}{AddVelocityGroups} (bool adddeltatime)
+\begin{DoxyCompactList}\small\item\em adds a velocity group for every position group. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a1f02e17eb90a72326f6a479c7747c9c8}{ConvertToVelocitySpecification} () const 
+\begin{DoxyCompactList}\small\item\em converts all the groups to the corresponding velocity groups and returns the specification \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a74cafdbc27d652fd09ab0c51edfb71c2}{GetTimeDerivativeSpecification} (int timederivative) const 
+\begin{DoxyCompactList}\small\item\em returns a new specification of just particular time-\/derivative groups. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a0a1d4389aa95904a153f0236f7deaccf}{
+virtual void \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a0a1d4389aa95904a153f0236f7deaccf}{ResetGroupOffsets} ()}
+\label{classOpenRAVE_1_1ConfigurationSpecification_a0a1d4389aa95904a153f0236f7deaccf}
+
+\begin{DoxyCompactList}\small\item\em set the offsets of each group in order to get a contiguous configuration space \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a4997560805c0054dccdc9c9efa571a32}{
+virtual int \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a4997560805c0054dccdc9c9efa571a32}{AddDeltaTime} ()}
+\label{classOpenRAVE_1_1ConfigurationSpecification_a4997560805c0054dccdc9c9efa571a32}
+
+\begin{DoxyCompactList}\small\item\em adds the deltatime tag to the end if one doesn't exist and returns the index into the configuration space \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a49774ecb66f1a96880369215a33d079b}{ExtractTransform} (Transform \&t, std::vector$<$ dReal $>$::const\_\-iterator itdata, KinBodyConstPtr pbody) const 
+\begin{DoxyCompactList}\small\item\em extracts an affine transform given the start of a configuration space point \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_aba9ff3f41a4bb1b06bf0691a0141ca78}{ExtractIkParameterization} (\hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \&ikparam, std::vector$<$ dReal $>$::const\_\-iterator itdata, int timederivative=0) const 
+\begin{DoxyCompactList}\small\item\em extracts an ikparameterization given the start of a configuration space point \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a572098999c73392e7f0020e6729def4c}{ExtractAffineValues} (std::vector$<$ dReal $>$::iterator itvalues, std::vector$<$ dReal $>$::const\_\-iterator itdata, KinBodyConstPtr pbody, int affinedofs, int timederivative=0) const 
+\begin{DoxyCompactList}\small\item\em extracts the affine values \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_ac04681582ab6d866a55da90e9913bfc2}{ExtractJointValues} (std::vector$<$ dReal $>$::iterator itvalues, std::vector$<$ dReal $>$::const\_\-iterator itdata, KinBodyConstPtr pbody, const std::vector$<$ int $>$ \&indices, int timederivative=0) const 
+\begin{DoxyCompactList}\small\item\em extracts a body's joint values given the start of a configuration space point \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_aa694d87f503fe4593f8b60e3bf8175b5}{
+virtual bool \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_aa694d87f503fe4593f8b60e3bf8175b5}{ExtractDeltaTime} (dReal \&deltatime, std::vector$<$ dReal $>$::const\_\-iterator itdata) const }
+\label{classOpenRAVE_1_1ConfigurationSpecification_aa694d87f503fe4593f8b60e3bf8175b5}
+
+\begin{DoxyCompactList}\small\item\em extracts the delta time from the configuration if one exists \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a9c074a4751be2ad6464d90a58bc316fd}{InsertJointValues} (std::vector$<$ dReal $>$::iterator itdata, std::vector$<$ dReal $>$::const\_\-iterator itvalues, KinBodyConstPtr pbody, const std::vector$<$ int $>$ \&indices, int timederivative=0) const 
+\begin{DoxyCompactList}\small\item\em inserts a set of joint values into a configuration space point \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_acc28b13daf14ef9cba5a7baedea7eb46}{InsertDeltaTime} (std::vector$<$ dReal $>$::iterator itdata, dReal deltatime)
+\begin{DoxyCompactList}\small\item\em sets the deltatime field of the data if one exists \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_af710011f622dd73b9c7f6d5d1dc9f470}{ConvertGroupData} (std::vector$<$ dReal $>$::iterator ittargetdata, size\_\-t targetstride, const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group}{Group} \&gtarget, std::vector$<$ dReal $>$::const\_\-iterator itsourcedata, size\_\-t sourcestride, const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group}{Group} \&gsource, size\_\-t numpoints, EnvironmentBaseConstPtr penv)
+\begin{DoxyCompactList}\small\item\em given two compatible groups, convers data represented in the source group to data represented in the target group \item\end{DoxyCompactList}\item 
+static void \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_a8f23d5a16201d23649d91061988091ea}{ConvertData} (std::vector$<$ dReal $>$::iterator ittargetdata, const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \&targetspec, std::vector$<$ dReal $>$::const\_\-iterator itsourcedata, const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \&sourcespec, size\_\-t numpoints, EnvironmentBaseConstPtr penv, bool filluninitialized=true)
+\begin{DoxyCompactList}\small\item\em Converts from one specification to another. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+A configuration specification references values in the environment that then define a configuration-\/space which can be searched for. It is composed of several groups targetting values for individual bodies. It is serialized into XML. The XML syntax is as follows:
+
+
+\begin{DoxyCode}
+   <configuration>
+     <group name="string" offset="#OFF1" dof="#D1" interpolation="string"/>
+     <group name="string" offset="#OFF2" dof="#D2" interpolation="string"/>
+   </configuration>
+\end{DoxyCode}
+ \begin{Desc}
+\item[Examples: ]\par
+
+
+\hyperlink{ormulticontrol_8cpp-example}{ormulticontrol.cpp}.
+
+\end{Desc}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a87498a23beea02e83fd8ddc062898cb3}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!AddVelocityGroups@{AddVelocityGroups}}
+\index{AddVelocityGroups@{AddVelocityGroups}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{AddVelocityGroups}]{\setlength{\rightskip}{0pt plus 5cm}virtual void AddVelocityGroups (bool {\em adddeltatime})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_a87498a23beea02e83fd8ddc062898cb3}
+
+
+adds a velocity group for every position group. 
+
+If velocities groups already exist, they are checked for and/or modified. Note that the configuration space might be re-\/ordered as a result of this function call. 
+\begin{DoxyParams}{Parameters}
+\item[{\em adddeltatime}]If true will add the 'deltatime' tag, which is necessary for trajectory sampling \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a8f23d5a16201d23649d91061988091ea}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!ConvertData@{ConvertData}}
+\index{ConvertData@{ConvertData}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{ConvertData}]{\setlength{\rightskip}{0pt plus 5cm}static void ConvertData (std::vector$<$ dReal $>$::iterator {\em ittargetdata}, \/  const {\bf ConfigurationSpecification} \& {\em targetspec}, \/  std::vector$<$ dReal $>$::const\_\-iterator {\em itsourcedata}, \/  const {\bf ConfigurationSpecification} \& {\em sourcespec}, \/  size\_\-t {\em numpoints}, \/  EnvironmentBaseConstPtr {\em penv}, \/  bool {\em filluninitialized} = {\ttfamily true})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_a8f23d5a16201d23649d91061988091ea}
+
+
+Converts from one specification to another. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ittargetdata}]iterator pointing to start of target group data that should be overwritten \item[{\em targetspec}]the target configuration specification \item[{\em itsourcedata}]iterator pointing to start of source group data that should be read \item[{\em sourcespec}]the source configuration specification \item[{\em numpoints}]the number of points to convert. The target and source strides are gtarget.dof and gsource.dof \item[{\em penv}]\mbox{[}optional\mbox{]} The environment which might be needed to fill in unknown data. Assumes environment is locked. \item[{\em filluninitialized}]If there exists target groups that cannot be initialized, then will set default values to them. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_af710011f622dd73b9c7f6d5d1dc9f470}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!ConvertGroupData@{ConvertGroupData}}
+\index{ConvertGroupData@{ConvertGroupData}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{ConvertGroupData}]{\setlength{\rightskip}{0pt plus 5cm}static void ConvertGroupData (std::vector$<$ dReal $>$::iterator {\em ittargetdata}, \/  size\_\-t {\em targetstride}, \/  const {\bf Group} \& {\em gtarget}, \/  std::vector$<$ dReal $>$::const\_\-iterator {\em itsourcedata}, \/  size\_\-t {\em sourcestride}, \/  const {\bf Group} \& {\em gsource}, \/  size\_\-t {\em numpoints}, \/  EnvironmentBaseConstPtr {\em penv})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_af710011f622dd73b9c7f6d5d1dc9f470}
+
+
+given two compatible groups, convers data represented in the source group to data represented in the target group 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ittargetdata}]iterator pointing to start of target group data that should be overwritten \item[{\em targetstride}]the number of elements that to go from the next target point. Necessary if numpoints $>$ 1. \item[{\em gtarget}]the target configuration group \item[{\em itsourcedata}]iterator pointing to start of source group data that should be read \item[{\em sourcestride}]the number of elements that to go from the next source point. Necessary if numpoints $>$ 1. \item[{\em gsource}]the source configuration group \item[{\em numpoints}]the number of points to convert. The target and source strides are gtarget.dof and gsource.dof \item[{\em penv}]\mbox{[}optional\mbox{]} The environment which might be needed to fill in unknown data. Assumes environment is locked. \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]throw f groups are incompatible \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a1f02e17eb90a72326f6a479c7747c9c8}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!ConvertToVelocitySpecification@{ConvertToVelocitySpecification}}
+\index{ConvertToVelocitySpecification@{ConvertToVelocitySpecification}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{ConvertToVelocitySpecification}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf ConfigurationSpecification} ConvertToVelocitySpecification () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_a1f02e17eb90a72326f6a479c7747c9c8}
+
+
+converts all the groups to the corresponding velocity groups and returns the specification 
+
+The velocity configuration space will have a one-\/to-\/one correspondence with the \hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a572098999c73392e7f0020e6729def4c}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!ExtractAffineValues@{ExtractAffineValues}}
+\index{ExtractAffineValues@{ExtractAffineValues}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{ExtractAffineValues}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ExtractAffineValues (std::vector$<$ dReal $>$::iterator {\em itvalues}, \/  std::vector$<$ dReal $>$::const\_\-iterator {\em itdata}, \/  KinBodyConstPtr {\em pbody}, \/  int {\em affinedofs}, \/  int {\em timederivative} = {\ttfamily 0}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_a572098999c73392e7f0020e6729def4c}
+
+
+extracts the affine values 
+
+Looks for 'affine\_\-X' groups. If pbody is not initialized, will choose the first affine\_\-X found. 
+\begin{DoxyParams}{Parameters}
+\item[{\em inout\mbox{]}}]itvalues iterator to vector that holds the default values and will be overwritten with the new values. must be initialized \item[\mbox{$\leftarrow$} {\em itdata}]data in the format of this configuration specification. \item[\mbox{$\leftarrow$} {\em affinedofs}]the format of the affine dofs requested \item[\mbox{$\leftarrow$} {\em timederivative}]the time derivative of the data to extract \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if at least one group was found for extracting 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_aba9ff3f41a4bb1b06bf0691a0141ca78}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!ExtractIkParameterization@{ExtractIkParameterization}}
+\index{ExtractIkParameterization@{ExtractIkParameterization}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{ExtractIkParameterization}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ExtractIkParameterization ({\bf IkParameterization} \& {\em ikparam}, \/  std::vector$<$ dReal $>$::const\_\-iterator {\em itdata}, \/  int {\em timederivative} = {\ttfamily 0}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_aba9ff3f41a4bb1b06bf0691a0141ca78}
+
+
+extracts an ikparameterization given the start of a configuration space point 
+
+Looks for 'ikparam' groups. 
+\begin{DoxyParams}{Parameters}
+\item[{\em inout\mbox{]}}]ikparam filled with ikparameterization (if found) \item[\mbox{$\leftarrow$} {\em itdata}]data in the format of this configuration specification \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if at least one group was found for extracting 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_ac04681582ab6d866a55da90e9913bfc2}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!ExtractJointValues@{ExtractJointValues}}
+\index{ExtractJointValues@{ExtractJointValues}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{ExtractJointValues}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ExtractJointValues (std::vector$<$ dReal $>$::iterator {\em itvalues}, \/  std::vector$<$ dReal $>$::const\_\-iterator {\em itdata}, \/  KinBodyConstPtr {\em pbody}, \/  const std::vector$<$ int $>$ \& {\em indices}, \/  int {\em timederivative} = {\ttfamily 0}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_ac04681582ab6d866a55da90e9913bfc2}
+
+
+extracts a body's joint values given the start of a configuration space point 
+
+Looks for 'joint\_\-X' groups. If pbody is not initialized, will choose the first joint\_\-X found. 
+\begin{DoxyParams}{Parameters}
+\item[{\em inout\mbox{]}}]itvalues iterator to vector that holds the default values and will be overwritten with the new values. must be initialized \item[\mbox{$\leftarrow$} {\em itdata}]data in the format of this configuration specification. \item[\mbox{$\leftarrow$} {\em indices}]the set of DOF indices of the body to extract and write into itvalues. \item[\mbox{$\leftarrow$} {\em timederivative}]the time derivative of the data to extract \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if at least one group was found for extracting 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a49774ecb66f1a96880369215a33d079b}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!ExtractTransform@{ExtractTransform}}
+\index{ExtractTransform@{ExtractTransform}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{ExtractTransform}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ExtractTransform (Transform \& {\em t}, \/  std::vector$<$ dReal $>$::const\_\-iterator {\em itdata}, \/  KinBodyConstPtr {\em pbody}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_a49774ecb66f1a96880369215a33d079b}
+
+
+extracts an affine transform given the start of a configuration space point 
+
+Looks for 'affine\_\-transform' groups. If pbody is not initialized, will choose the first affine\_\-transform found. 
+\begin{DoxyParams}{Parameters}
+\item[{\em inout\mbox{]}}]t the transform holding the default values, which will be overwritten with the new values. \item[\mbox{$\leftarrow$} {\em itdata}]data in the format of this configuration specification. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if at least one group was found for extracting 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a188304abf23d571f0f340adfdd28e3f0}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!FindCompatibleGroup@{FindCompatibleGroup}}
+\index{FindCompatibleGroup@{FindCompatibleGroup}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{FindCompatibleGroup}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::vector$<${\bf Group}$>$::const\_\-iterator FindCompatibleGroup (const {\bf Group} \& {\em g}, \/  bool {\em exactmatch} = {\ttfamily false}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_a188304abf23d571f0f340adfdd28e3f0}
+
+
+finds the most compatible group to the given group 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em g}]the group to query, only the \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_a9b45b3e13bd9167aab02e17e08916231}{Group::name} and \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_a03745287ca42590ead4a18807041fc66}{Group::dof} values are used \item[{\em exactmatch}]if true, will only return groups whose name exactly matches with g.name \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an iterator part of \_\-vgroups that represents the most compatible group. If no group is found, will return \_\-vgroups.end() 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_abbad5fc78067a778c4f95cf170b03c80}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!FindTimeDerivativeGroup@{FindTimeDerivativeGroup}}
+\index{FindTimeDerivativeGroup@{FindTimeDerivativeGroup}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{FindTimeDerivativeGroup}]{\setlength{\rightskip}{0pt plus 5cm}virtual std::vector$<${\bf Group}$>$::const\_\-iterator FindTimeDerivativeGroup (const {\bf Group} \& {\em g}, \/  bool {\em exactmatch} = {\ttfamily false}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_abbad5fc78067a778c4f95cf170b03c80}
+
+
+Return the most compatible group that represents the time-\/derivative data of the group. 
+
+For example given a 'joint\_\-values' group, this will return the closest 'joint\_\-velocities' group. 
+\begin{DoxyParams}{Parameters}
+\item[{\em g}]the group to query, only the \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_a9b45b3e13bd9167aab02e17e08916231}{Group::name} and \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_a03745287ca42590ead4a18807041fc66}{Group::dof} values are used \item[{\em exactmatch}]if true, will only return groups whose name exactly matches with g.name \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an iterator part of \_\-vgroups that represents the most compatible group. If no group is found, will return \_\-vgroups.end() 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a74cafdbc27d652fd09ab0c51edfb71c2}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!GetTimeDerivativeSpecification@{GetTimeDerivativeSpecification}}
+\index{GetTimeDerivativeSpecification@{GetTimeDerivativeSpecification}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{GetTimeDerivativeSpecification}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf ConfigurationSpecification} GetTimeDerivativeSpecification (int {\em timederivative}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_a74cafdbc27d652fd09ab0c51edfb71c2}
+
+
+returns a new specification of just particular time-\/derivative groups. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em timederivative}]the time derivative to query groups from. 0 is positions/joint values, 1 is velocities, 2 is accelerations, etc \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_acc28b13daf14ef9cba5a7baedea7eb46}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!InsertDeltaTime@{InsertDeltaTime}}
+\index{InsertDeltaTime@{InsertDeltaTime}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{InsertDeltaTime}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InsertDeltaTime (std::vector$<$ dReal $>$::iterator {\em itdata}, \/  dReal {\em deltatime})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_acc28b13daf14ef9cba5a7baedea7eb46}
+
+
+sets the deltatime field of the data if one exists 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em inout\mbox{]}}]itdata data in the format of this configuration specification. \item[\mbox{$\leftarrow$} {\em deltatime}]the delta time of the time stamp (from previous point) \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if at least one group was found for inserting 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_a9c074a4751be2ad6464d90a58bc316fd}{
+\index{OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}!InsertJointValues@{InsertJointValues}}
+\index{InsertJointValues@{InsertJointValues}!OpenRAVE::ConfigurationSpecification@{OpenRAVE::ConfigurationSpecification}}
+\paragraph[{InsertJointValues}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InsertJointValues (std::vector$<$ dReal $>$::iterator {\em itdata}, \/  std::vector$<$ dReal $>$::const\_\-iterator {\em itvalues}, \/  KinBodyConstPtr {\em pbody}, \/  const std::vector$<$ int $>$ \& {\em indices}, \/  int {\em timederivative} = {\ttfamily 0}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_a9c074a4751be2ad6464d90a58bc316fd}
+
+
+inserts a set of joint values into a configuration space point 
+
+Looks for 'joint\_\-X' groups. If pbody is not initialized, will use the first joint\_\-X found. 
+\begin{DoxyParams}{Parameters}
+\item[{\em inout\mbox{]}}]itdata data in the format of this configuration specification. \item[\mbox{$\leftarrow$} {\em itvalues}]iterator to joint values to write \item[\mbox{$\leftarrow$} {\em indices}]the set of DOF indices that itvalues represents. \item[\mbox{$\leftarrow$} {\em timederivative}]the time derivative of the data to insert \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if at least one group was found for inserting 
+\end{DoxyReturn}

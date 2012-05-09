@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Open Robotics Automation Virtual Environment</title>
+    <detaileddescription>
+<para>Version: 0.5.0</para><para>This document covers the core OpenRAVE concepts, the C++ API, C++ examples, and C++ usage of the plugins offered in the base installation.</para><para>Visit the <ulink url="../main/index.html"><bold>official documentation page</bold></ulink> for information on all other OpenRAVE features.</para><sect1 id="index_1main_started">
+<title>Getting Started</title>
+<para><itemizedlist>
+<listitem><para><ref refid="installation" kindref="compound">Building and Installing</ref></para></listitem><listitem><para><ref refid="p__basic__usage" kindref="compound">Basic Usage and Loading Environments</ref></para></listitem><listitem><para><ulink url="../main/environment_variables.html">Environment Variables</ulink></para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="index_1main_architecture">
+<title>Architecture</title>
+<para><itemizedlist>
+<listitem><para><ref refid="architecture__concepts" kindref="compound">Introduction to the OpenRAVE Architecture</ref></para></listitem><listitem><para><ref refid="interface__concepts" kindref="compound">Base Interface Concepts</ref></para></listitem><listitem><para><ref refid="writing__plugins" kindref="compound">Writing Plugins and Interfaces</ref></para></listitem><listitem><para><ref refid="arch__controller_1arch_controller_writing" kindref="member">Writing and Using Controllers</ref></para></listitem><listitem><para><ref refid="architecture__concepts_1arch_cloning" kindref="member">Cloning</ref></para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="index_1main_reference">
+<title>Reference</title>
+<para><itemizedlist>
+<listitem><para><ref refid="group__interfaces" kindref="compound">Base Interface Classes</ref></para></listitem><listitem><para><ref refid="executables" kindref="compound">Executable Programs</ref></para></listitem><listitem><para><ref refid="group__geometric__primitives" kindref="compound">Geometric Primitives</ref></para></listitem><listitem><para><ref refid="group__affine__math" kindref="compound">Affine Math</ref></para></listitem><listitem><para><ref refid="cpp__examples" kindref="compound">C++ Examples</ref></para></listitem></itemizedlist>
+</para><para>Documentation in Other Languages: <ulink url="../../ja/coreapihtml/index.html">日本語</ulink> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

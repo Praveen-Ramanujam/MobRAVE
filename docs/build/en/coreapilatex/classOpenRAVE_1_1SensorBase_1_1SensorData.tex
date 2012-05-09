@@ -1,0 +1,43 @@
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1SensorData}{
+\subsection{SensorData Class Reference}
+\label{classOpenRAVE_1_1SensorBase_1_1SensorData}\index{OpenRAVE::SensorBase::SensorData@{OpenRAVE::SensorBase::SensorData}}
+}
+
+
+used to pass sensor data around  
+
+
+
+
+Inheritance diagram for SensorData:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classOpenRAVE_1_1SensorBase_1_1SensorData__inherit__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1SensorData_a2084222cd1b9f555406d306d65680d7b}{
+virtual bool \hyperlink{classOpenRAVE_1_1SensorBase_1_1SensorData_a2084222cd1b9f555406d306d65680d7b}{serialize} (std::ostream \&O) const }
+\label{classOpenRAVE_1_1SensorBase_1_1SensorData_a2084222cd1b9f555406d306d65680d7b}
+
+\begin{DoxyCompactList}\small\item\em Serialize the sensor data to stream in XML format. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1SensorData_a0503a26959ec94efdab737ce47842afe}{
+uint64\_\-t \hyperlink{classOpenRAVE_1_1SensorBase_1_1SensorData_a0503a26959ec94efdab737ce47842afe}{\_\-\_\-stamp}}
+\label{classOpenRAVE_1_1SensorBase_1_1SensorData_a0503a26959ec94efdab737ce47842afe}
+
+\begin{DoxyCompactList}\small\item\em time stamp of the sensor data in microseconds. If 0, then the data is uninitialized! (floating-\/point precision is bad here). This can be either simulation or real time depending on the sensor. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SensorBase_1_1SensorData_a5786ccc78c0aae6ca580507121b3c24a}{
+Transform \hyperlink{classOpenRAVE_1_1SensorBase_1_1SensorData_a5786ccc78c0aae6ca580507121b3c24a}{\_\-\_\-trans}}
+\label{classOpenRAVE_1_1SensorBase_1_1SensorData_a5786ccc78c0aae6ca580507121b3c24a}
+
+\begin{DoxyCompactList}\small\item\em the coordinate system the sensor was when the measurement was taken, this is taken directly from SensorBase::GetTransform \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+used to pass sensor data around 

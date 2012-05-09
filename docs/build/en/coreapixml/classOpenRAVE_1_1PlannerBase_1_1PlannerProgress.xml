@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress" kind="class" prot="public">
+    <compoundname>OpenRAVE::PlannerBase::PlannerProgress</compoundname>
+    <includes refid="planner_8h" local="no">planner.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress_1a9ce23b64f9b145970f0bb242d4a7b18d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _iteration</definition>
+        <argsstring></argsstring>
+        <name>_iteration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="284" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress_1a42b0409c9a8c14d5d1d82551e0195eae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PlannerProgress</definition>
+        <argsstring>()</argsstring>
+        <name>PlannerProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="283"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Planner progress information passed to each callback function. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="281" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="280" bodyend="285"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress_1a9ce23b64f9b145970f0bb242d4a7b18d" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerProgress</scope><name>_iteration</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress_1a42b0409c9a8c14d5d1d82551e0195eae" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerProgress</scope><name>PlannerProgress</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

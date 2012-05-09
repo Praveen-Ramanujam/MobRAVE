@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1LaserGeomData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::LaserGeomData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry" prot="public" virt="non-virtual">SensorGeometry</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1a8ba38e36b97cace736d293cb26678efe" prot="public" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 2 &gt;</type>
+        <definition>boost::array&lt;dReal,2&gt; min_angle</definition>
+        <argsstring></argsstring>
+        <name>min_angle</name>
+        <briefdescription>
+<para>Start for the laser scan [rad]. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="214" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1a8d1c118b28921b11a11e2dfd1e4980a0" prot="public" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 2 &gt;</type>
+        <definition>boost::array&lt;dReal,2&gt; max_angle</definition>
+        <argsstring></argsstring>
+        <name>max_angle</name>
+        <briefdescription>
+<para>End angles for the laser scan [rad]. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="215" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1ac377d60344640fa759e90d8831249309" prot="public" static="no" mutable="no">
+        <type>boost::array&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>, 2 &gt;</type>
+        <definition>boost::array&lt;dReal,2&gt; resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <briefdescription>
+<para>Angular resolutions for each axis of rotation [rad]. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="216" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1af9407650af8e4b9e2083fa96c01cb296" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal min_range</definition>
+        <argsstring></argsstring>
+        <name>min_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="217" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1aae1c1dcf4bc34f32ec57d5fcff9ebb22" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal max_range</definition>
+        <argsstring></argsstring>
+        <name>max_range</name>
+        <briefdescription>
+<para>Maximum range [m]. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="217" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1a8df100530cf14c7a992ea6ec815903ad" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal time_increment</definition>
+        <argsstring></argsstring>
+        <name>time_increment</name>
+        <briefdescription>
+<para>time between individual measurements [seconds] </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="218" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1a03e9bfc1677e745291073fb54ccc1888" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal time_scan</definition>
+        <argsstring></argsstring>
+        <name>time_scan</name>
+        <briefdescription>
+<para>time between scans [seconds] </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="219" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1ac7e2a694232937ee22cc1e8d54a1aced" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LaserGeomData</definition>
+        <argsstring>()</argsstring>
+        <name>LaserGeomData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="208" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="208" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="211" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="211" bodyend="213"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1407">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1406">
+        <label>LaserGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData"/>
+        <childnode refid="1407" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1409">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1408">
+        <label>LaserGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData"/>
+        <childnode refid="1409" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="206" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="205" bodyend="220"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::LaserGeomData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1ac7e2a694232937ee22cc1e8d54a1aced" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserGeomData</scope><name>LaserGeomData</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1a8d1c118b28921b11a11e2dfd1e4980a0" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserGeomData</scope><name>max_angle</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1aae1c1dcf4bc34f32ec57d5fcff9ebb22" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserGeomData</scope><name>max_range</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1a8ba38e36b97cace736d293cb26678efe" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserGeomData</scope><name>min_angle</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1af9407650af8e4b9e2083fa96c01cb296" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserGeomData</scope><name>min_range</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1ac377d60344640fa759e90d8831249309" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserGeomData</scope><name>resolution</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1a8df100530cf14c7a992ea6ec815903ad" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserGeomData</scope><name>time_increment</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1a03e9bfc1677e745291073fb54ccc1888" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::LaserGeomData</scope><name>time_scan</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a2448e133d651783f1acfe3f944ba4dc3" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::LaserGeomData</scope><name>~SensorGeometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

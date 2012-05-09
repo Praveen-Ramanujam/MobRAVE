@@ -1,0 +1,73 @@
+This is my specification and reference for the input files accepted by sketchgen.py.
+See the existing ones for examples.
+
+Import of enumerations (a good idea)
+from enum import *
+Dictionary masquerading as a database
+specs = {
+Device Address on the I2C bus
+    Usually 0x02
+    'addr': 0x02,
+Identification 'ident': {
+    'version': 'V1.0',
+    'maker': 'LEGO',
+    'type': 'Sonar'},
+    default is 'V0.1'; 'sktchgen'; 'Arduino'
+Initial memory contents 'memory': <list of 256 8-bit ints>,
+Memory content generators 'generators': {
+    If omitted, no memory address values will be generated.
+    Name '42loop': {
+        Start address 'addr': 0x42,
+            required
+        Length 'length': 1,
+            default is 1
+        Contents 'contents':
+            default is sequence of entire range of int
+            Static value ('static',
+                Integer value 0x76),
+            Sequential ('seq', 
+                Min, Max, Offset (0, 50, 0),
+                    optional, default is the full range of the register
+                    supply either nothing or all three values
+            From Iterable Object ('list', [5, 6, 8, 3]),
+                ints or chars/strings
+            Arduino expression (preferably non-blocking) ('expr', 'Serial.read()')
+        },
+    Tick delay
+        In ms, default is 300
+        Enum TICKDELAY: 100,
+    Notes
+        If addresses are not written to, they will remain whatever value was last
+        assigned to them until overwritten or a mode handler encounters a MEMRESET.
+        Addresses must be zeroed manually by a separate generator using
+        'contents': ('static', 0),
+    },
+Modes 'modes': {
+    If omitted, all generators will be enabled by default.
+    Control Byte 0x41: {
+        Length 'length': 1,
+        Values (number or "other") 'values': {0x02: [
+            Enable/disable individual content generators
+                Name ['42loop', <True/False>],
+            Enable/disable all content generators
+                Enum [ALLGENS, <True/False>],
+            Enable/disable group
+                Enum [GROUP, <name>, <True/False>],
+            Reset memory to default
+                Enum [MEMRESET],
+            Run arduino code
+                Enum [CODE, <multiline string>],
+            ],},
+        },
+    },
+Optional arduino code chunks 'code': {
+    These will be included in certain places of the code.
+    Strings must end with a newline
+    setup() 'setup': <multiline string>,
+        run once at start of program, inside setup() function
+    includes/defines 'header': <multiline string>,
+        run once at start of program, outside of any functions
+    variable filling loop 'loop': <multiline string>
+        run inside of the variable loop. subject to TICKDELAY.
+    },
+}

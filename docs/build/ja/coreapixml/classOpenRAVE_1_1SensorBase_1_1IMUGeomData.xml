@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1IMUGeomData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::IMUGeomData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry" prot="public" virt="non-virtual">SensorGeometry</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1IMUGeomData_1ac2594c1079b2cd06e2af2684546f6677" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal time_measurement</definition>
+        <argsstring></argsstring>
+        <name>time_measurement</name>
+        <briefdescription>
+<para>time between measurements </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="272" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1IMUGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="269" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="269" bodyend="271"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1217">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1216">
+        <label>IMUGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1IMUGeomData"/>
+        <childnode refid="1217" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1219">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1218">
+        <label>IMUGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1IMUGeomData"/>
+        <childnode refid="1219" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="267" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="266" bodyend="273"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1IMUGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::IMUGeomData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1IMUGeomData_1ac2594c1079b2cd06e2af2684546f6677" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::IMUGeomData</scope><name>time_measurement</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a2448e133d651783f1acfe3f944ba4dc3" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::IMUGeomData</scope><name>~SensorGeometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

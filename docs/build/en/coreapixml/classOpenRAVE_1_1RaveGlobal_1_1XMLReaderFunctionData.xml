@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData" kind="class" prot="public">
+    <compoundname>OpenRAVE::RaveGlobal::XMLReaderFunctionData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1UserData" prot="public" virt="non-virtual">UserData</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1abfd6e813e61ba985b3f4272dd5d852e3" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1adec9e4596e96321e8bf28523753f5d2c" kindref="member">CreateXMLReaderFn</ref></type>
+        <definition>CreateXMLReaderFn _oldfn</definition>
+        <argsstring></argsstring>
+        <name>_oldfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="478" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1ac321d12cd995ea02f624cb2c4c81e351" prot="protected" static="no" mutable="no">
+        <type>boost::weak_ptr&lt; <ref refid="classOpenRAVE_1_1RaveGlobal" kindref="compound">RaveGlobal</ref> &gt;</type>
+        <definition>boost::weak_ptr&lt;RaveGlobal&gt; _global</definition>
+        <argsstring></argsstring>
+        <name>_global</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="479" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1ae662bc46efa44e85747d0d15e0ee56c5" prot="protected" static="no" mutable="no">
+        <type>InterfaceType</type>
+        <definition>InterfaceType _type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="480" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1a0578402d60f9ef13b1d0b9210ddfad92" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _xmltag</definition>
+        <argsstring></argsstring>
+        <name>_xmltag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="481" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1a941511baf202b95699d1defefab4a3af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>XMLReaderFunctionData</definition>
+        <argsstring>(InterfaceType type, const std::string &amp;xmltag, const CreateXMLReaderFn &amp;fn, boost::shared_ptr&lt; RaveGlobal &gt; global)</argsstring>
+        <name>XMLReaderFunctionData</name>
+        <param>
+          <type>InterfaceType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>xmltag</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1adec9e4596e96321e8bf28523753f5d2c" kindref="member">CreateXMLReaderFn</ref> &amp;</type>
+          <declname>fn</declname>
+        </param>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1RaveGlobal" kindref="compound">RaveGlobal</ref> &gt;</type>
+          <declname>global</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="464" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="463" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1a9930871bf0bc1b002548d69abd846cf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~XMLReaderFunctionData</definition>
+        <argsstring>()</argsstring>
+        <name>~XMLReaderFunctionData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="470" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="469" bodyend="476"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2092">
+        <label>XMLReaderFunctionData</label>
+        <link refid="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData"/>
+        <childnode refid="2093" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2093">
+        <label>UserData</label>
+        <link refid="classOpenRAVE_1_1UserData"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2096">
+        <label>string</label>
+        <childnode refid="2097" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2094">
+        <label>XMLReaderFunctionData</label>
+        <link refid="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData"/>
+        <childnode refid="2095" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2096" relation="usage">
+          <edgelabel>_xmltag</edgelabel>
+        </childnode>
+      </node>
+      <node id="2095">
+        <label>UserData</label>
+        <link refid="classOpenRAVE_1_1UserData"/>
+      </node>
+      <node id="2097">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="461" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="460" bodyend="482"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1ac321d12cd995ea02f624cb2c4c81e351" prot="protected" virt="non-virtual"><scope>OpenRAVE::RaveGlobal::XMLReaderFunctionData</scope><name>_global</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1abfd6e813e61ba985b3f4272dd5d852e3" prot="protected" virt="non-virtual"><scope>OpenRAVE::RaveGlobal::XMLReaderFunctionData</scope><name>_oldfn</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1ae662bc46efa44e85747d0d15e0ee56c5" prot="protected" virt="non-virtual"><scope>OpenRAVE::RaveGlobal::XMLReaderFunctionData</scope><name>_type</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1a0578402d60f9ef13b1d0b9210ddfad92" prot="protected" virt="non-virtual"><scope>OpenRAVE::RaveGlobal::XMLReaderFunctionData</scope><name>_xmltag</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1a941511baf202b95699d1defefab4a3af" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal::XMLReaderFunctionData</scope><name>XMLReaderFunctionData</name></member>
+      <member refid="classOpenRAVE_1_1UserData_1aaaa5baf9761b9e8f4c120b58d379ab12" prot="public" virt="virtual"><scope>OpenRAVE::RaveGlobal::XMLReaderFunctionData</scope><name>~UserData</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData_1a9930871bf0bc1b002548d69abd846cf2" prot="public" virt="virtual"><scope>OpenRAVE::RaveGlobal::XMLReaderFunctionData</scope><name>~XMLReaderFunctionData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

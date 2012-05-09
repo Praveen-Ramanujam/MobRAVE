@@ -1,0 +1,1139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1ViewerBase" kind="class" prot="public">
+    <compoundname>OpenRAVE::ViewerBase</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1InterfaceBase" prot="public" virt="non-virtual">InterfaceBase</basecompoundref>
+    <includes refid="viewer_8h" local="no">viewer.h</includes>
+      <sectiondef kind="user-defined">
+      <description><para><anchor id="_1amgrpd41d8cd98f00b204e9800998ecf8427e"/> </para></description>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ae426230d17214ba9e81e7ca30a1437e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetCamera</definition>
+        <argsstring>(const RaveTransform&lt; float &gt; &amp;trans, float focalDistance=0) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetCamera</name>
+        <param>
+          <type>const RaveTransform&lt; float &gt; &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>focalDistance</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Set the camera transformation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>trans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new camera transformation in the world coordinate system </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>focalDistance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new focal distance of the camera (higher values is higher zoom). If 0, then the previous focal distance is preserved. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ac63f4828ecf7cfd87feb7f67be71bb04" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>RaveTransform&lt; float &gt;</type>
+        <definition>virtual RaveTransform&lt;float&gt; GetCameraTransform</definition>
+        <argsstring>() const OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>GetCameraTransform</name>
+        <briefdescription>
+<para>Return the current camera transform that the viewer is rendering the environment at. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1aa280b50e2cd6e717b03a83245546e467" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics" kindref="compound">geometry::RaveCameraIntrinsics</ref>&lt; float &gt;</type>
+        <definition>virtual geometry::RaveCameraIntrinsics&lt;float&gt; GetCameraIntrinsics</definition>
+        <argsstring>() const OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>GetCameraIntrinsics</name>
+        <briefdescription>
+<para>Return the closest camera intrinsics that the viewer is rendering the environment at. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ad149822b9f25bf1adf3d76e78379cca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool GetCameraImage</definition>
+        <argsstring>(std::vector&lt; uint8_t &gt; &amp;memory, int width, int height, const RaveTransform&lt; float &gt; &amp;t, const SensorBase::CameraIntrinsics &amp;intrinsics) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>GetCameraImage</name>
+        <param>
+          <type>std::vector&lt; uint8_t &gt; &amp;</type>
+          <declname>memory</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const RaveTransform&lt; float &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics" kindref="compound">SensorBase::CameraIntrinsics</ref> &amp;</type>
+          <declname>intrinsics</declname>
+        </param>
+        <briefdescription>
+<para>Renders a 24bit RGB image of dimensions width and height from the current scene. </para>        </briefdescription>
+        <detaileddescription>
+<para>The camera is meant to show the underlying <ref refid="namespaceOpenRAVE" kindref="compound">OpenRAVE</ref> world as a robot would see it, so all graphs rendered with the plotX and drawX functions are hidden by default. Some viewers support the SetFiguresInCamera command to allow graphs to be also displayed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>memory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the memory where the image will be stored at, has to store 3*width*height </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width of the image, if 0 the width of the viewer is used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>height of the image, if 0 the width of the viewer is used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the rotation and translation of the camera. Note that +z is treated as the camera direction axis! So all points in front of the camera have a positive dot product with its +z direction. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>intrinsics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the intrinsic parameters of the camera defining FOV, distortion, principal point, and focal length. The focal length is used to define the near plane for culling. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="101"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOpenRAVE_1_1ViewerBase_1ad5d8dc37aba1d6a686f461d48d29727a" prot="public" static="no">
+        <name>ViewerEvents</name>
+        <enumvalue id="classOpenRAVE_1_1ViewerBase_1ad5d8dc37aba1d6a686f461d48d29727aaba3d470046d1fbaa4e3c883403fc9940" prot="public">
+          <name>VE_ItemSelection</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="55" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1ViewerBase_1aab6d9553843a6d593ee530045d7fff9f" prot="public" static="no">
+        <type>boost::function&lt; bool(<ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">KinBody::LinkPtr</ref> plink, RaveVector&lt; float &gt;, RaveVector&lt; float &gt;)&gt;</type>
+        <definition>typedef boost::function&lt;bool (KinBody::LinkPtr plink,RaveVector&lt;float&gt;,RaveVector&lt;float&gt;)&gt; ItemSelectionCallbackFn</definition>
+        <argsstring></argsstring>
+        <name>ItemSelectionCallbackFn</name>
+        <briefdescription>
+<para>callback function for item selection </para>        </briefdescription>
+        <detaileddescription>
+<para>If the function returns true, then the object will be selected. Otherwise, the object remains unselected. callback(target link,offset,direction) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="112" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1ViewerBase_1a33dae9848e343e6740ad259e09e92607" prot="public" static="no">
+        <type>boost::function&lt; void(const uint8_t *, int, int, int)</type>
+        <definition>typedef boost::function&lt;void (const uint8_t*,int,int,int) ViewerImageCallbackFn)</definition>
+        <argsstring>)</argsstring>
+        <name>ViewerImageCallbackFn</name>
+        <briefdescription>
+<para>callback function for item selection callback(imagememory,width,height,pixeldepth) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>imagememory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width x height x pixeldepth RGB image </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="123" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1ViewerBase_1ab0582044ee7b7222de5e7406ad64f93a" prot="public" static="no">
+        <type><ref refid="classOpenRAVE_1_1ViewerBase_1aab6d9553843a6d593ee530045d7fff9f" kindref="member">ItemSelectionCallbackFn</ref> ViewerCallbackFn</type>
+        <definition>typedef ItemSelectionCallbackFn ViewerCallbackFn RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000074"><xreftitle>非推奨</xreftitle><xrefdescription><para>(11/06/10) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="164" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1ViewerBase_1ac9591ef8e174b06e6021c7ecb216c7c2" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="classOpenRAVE_1_1ViewerBase_1ad5d8dc37aba1d6a686f461d48d29727a" kindref="member">OpenRAVE::ViewerBase::ViewerEvents</ref></type>
+        <definition>enum OpenRAVE::ViewerBase::ViewerEvents  RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a4791e23f1e8900e29e1b5158d266400a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ViewerBase</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>ViewerBase</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="59" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="59" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1acaaab7fd961a857cc0dc41abd8750d7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~ViewerBase</definition>
+        <argsstring>()</argsstring>
+        <name>~ViewerBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="61" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="61" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ada75ea5cccc17a8cf81b638117139c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int main</definition>
+        <argsstring>(bool bShow=true)=0</argsstring>
+        <name>main</name>
+        <param>
+          <type>bool</type>
+          <declname>bShow</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>goes into the main loop </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bShow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true will show the window </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ab8fc69e4de743e14207ea400de2f3824" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void quitmainloop</definition>
+        <argsstring>()=0</argsstring>
+        <name>quitmainloop</name>
+        <briefdescription>
+<para>destroys the main loop </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a50aaed4618b2b23eaed8f22b280caa72" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Reset</definition>
+        <argsstring>() OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ad7e2a3f748b9d369d13c4591a89a659d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetBkgndColor</definition>
+        <argsstring>(const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetBkgndColor</name>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a22844e2b6584a0673cc82cfd7e2fa01d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>boost::shared_ptr&lt; void &gt;</type>
+        <definition>virtual boost::shared_ptr&lt;void&gt; RegisterItemSelectionCallback</definition>
+        <argsstring>(const ItemSelectionCallbackFn &amp;fncallback) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>RegisterItemSelectionCallback</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ViewerBase_1aab6d9553843a6d593ee530045d7fff9f" kindref="member">ItemSelectionCallbackFn</ref> &amp;</type>
+          <declname>fncallback</declname>
+        </param>
+        <briefdescription>
+<para>registers a function with the viewer that gets called everytime mouse button is clicked </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a handle to the callback. If this handle is deleted, the callback will be unregistered. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ad23099fd4b95a0b7587ec4efe5454043" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>boost::shared_ptr&lt; void &gt;</type>
+        <definition>virtual boost::shared_ptr&lt;void&gt; RegisterViewerImageCallback</definition>
+        <argsstring>(const ViewerImageCallbackFn &amp;fncallback) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>RegisterViewerImageCallback</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ViewerBase_1a33dae9848e343e6740ad259e09e92607" kindref="member">ViewerImageCallbackFn</ref> &amp;</type>
+          <declname>fncallback</declname>
+        </param>
+        <briefdescription>
+<para>registers a function with the viewer that gets called for every new image rendered. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a handle to the callback. If this handle is deleted, the callback will be unregistered. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a3807c4e1bbec9f2d0e9f71cadb7efdd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetEnvironmentSync</definition>
+        <argsstring>(bool bUpdate) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetEnvironmentSync</name>
+        <param>
+          <type>bool</type>
+          <declname>bUpdate</declname>
+        </param>
+        <briefdescription>
+<para>controls whether the viewer synchronizes with the newest environment automatically </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a252e5291c15eb4d6956ee5c824a4c56d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void EnvironmentSync</definition>
+        <argsstring>() OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>EnvironmentSync</name>
+        <briefdescription>
+<para>forces synchronization with the environment, returns when the environment is fully synchronized. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that this method might not work if environment is locked in current thread </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a4d6091b23c3c415fd662d4974957b072" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetSize</definition>
+        <argsstring>(int w, int h) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetSize</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a93a7763493f3da4687ca55db4a32b05e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void ViewerSetSize</definition>
+        <argsstring>(int w, int h) RAVE_DEPRECATED</argsstring>
+        <name>ViewerSetSize</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000070"><xreftitle>非推奨</xreftitle><xrefdescription><para>(11/06/13) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="141" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a548e4f89261156f972a2a463cffab365" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Move</definition>
+        <argsstring>(int x, int y) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>Move</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a00e98066bc03fa4d2b287d2a6a2d2b4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void ViewerMove</definition>
+        <argsstring>(int x, int y) RAVE_DEPRECATED</argsstring>
+        <name>ViewerMove</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000071"><xreftitle>非推奨</xreftitle><xrefdescription><para>(11/06/13) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="148" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="148" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1aefe54c55090e1487ba372243e0da6e4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetName</definition>
+        <argsstring>(const std::string &amp;name) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1adfc56134be2ef5b157c9a0b55d5d4e13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void ViewerSetTitle</definition>
+        <argsstring>(const std::string &amp;ptitle) RAVE_DEPRECATED</argsstring>
+        <name>ViewerSetTitle</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ptitle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000072"><xreftitle>非推奨</xreftitle><xrefdescription><para>(11/06/13) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="155" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ace14ad2fd8a6c9de2477bfcfb66d84cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; GetName</definition>
+        <argsstring>() const OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a8ba08e058dbbaf19090cc79cd22055f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void UpdateCameraTransform</definition>
+        <argsstring>() RAVE_DEPRECATED OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>UpdateCameraTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000073"><xreftitle>非推奨</xreftitle><xrefdescription><para>(11/06/10) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a87bb8fc16f70e17fc3955a734a5a9cc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>boost::shared_ptr&lt; void &gt;</type>
+        <definition>virtual boost::shared_ptr&lt;void&gt; RegisterCallback</definition>
+        <argsstring>(int properties, const ItemSelectionCallbackFn &amp;fncallback) RAVE_DEPRECATED</argsstring>
+        <name>RegisterCallback</name>
+        <param>
+          <type>int</type>
+          <declname>properties</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ViewerBase_1aab6d9553843a6d593ee530045d7fff9f" kindref="member">ItemSelectionCallbackFn</ref> &amp;</type>
+          <declname>fncallback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000075"><xreftitle>非推奨</xreftitle><xrefdescription><para>(11/06/10) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="167" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a4b6920a362f58dfd5113a5163266780d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool LoadModel</definition>
+        <argsstring>(const std::string &amp;pfilename) RAVE_DEPRECATED OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>LoadModel</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pfilename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000076"><xreftitle>非推奨</xreftitle><xrefdescription><para>(11/03/02) Any type of model should be added through the openrave environment instead of viewer directly. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="172"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InterfaceType</type>
+        <definition>static InterfaceType GetInterfaceTypeStatic</definition>
+        <argsstring>()</argsstring>
+        <name>GetInterfaceTypeStatic</name>
+        <briefdescription>
+<para>return the static interface type this class points to (used for safe casting) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="65" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="65" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ab89b5888abf5a74bd6571a47cf83b7cd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetViewerData</definition>
+        <argsstring>(KinBodyPtr body, UserDataPtr data)</argsstring>
+        <name>SetViewerData</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="175" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="175" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ae9d5173833570ef0af490242cf87aabf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref></type>
+        <definition>virtual GraphHandlePtr plot3</definition>
+        <argsstring>(const float *ppoints, int numPoints, int stride, float fPointSize, const RaveVector&lt; float &gt; &amp;color, int drawstyle=0) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>plot3</name>
+        <param>
+          <type>const float *</type>
+          <declname>ppoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numPoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fPointSize</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>drawstyle</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a9ab9d7fee44e672f4fb7c01491520a51" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref></type>
+        <definition>virtual GraphHandlePtr plot3</definition>
+        <argsstring>(const float *ppoints, int numPoints, int stride, float fPointSize, const float *colors, int drawstyle=0, bool bhasalpha=false) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>plot3</name>
+        <param>
+          <type>const float *</type>
+          <declname>ppoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numPoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fPointSize</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>colors</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>drawstyle</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bhasalpha</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ad6c4f2147642166ff9978d2364d561f0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref></type>
+        <definition>virtual GraphHandlePtr drawlinestrip</definition>
+        <argsstring>(const float *ppoints, int numPoints, int stride, float fwidth, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>drawlinestrip</name>
+        <param>
+          <type>const float *</type>
+          <declname>ppoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numPoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fwidth</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a89917d0d227ef17ae86be8312159e689" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref></type>
+        <definition>virtual GraphHandlePtr drawlinestrip</definition>
+        <argsstring>(const float *ppoints, int numPoints, int stride, float fwidth, const float *colors) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>drawlinestrip</name>
+        <param>
+          <type>const float *</type>
+          <declname>ppoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numPoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fwidth</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>colors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a3021be834c6cf039ea736ded93666763" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref></type>
+        <definition>virtual GraphHandlePtr drawlinelist</definition>
+        <argsstring>(const float *ppoints, int numPoints, int stride, float fwidth, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>drawlinelist</name>
+        <param>
+          <type>const float *</type>
+          <declname>ppoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numPoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fwidth</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a849d5032f57ca31b3ef3b8150c804ce3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref></type>
+        <definition>virtual GraphHandlePtr drawlinelist</definition>
+        <argsstring>(const float *ppoints, int numPoints, int stride, float fwidth, const float *colors) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>drawlinelist</name>
+        <param>
+          <type>const float *</type>
+          <declname>ppoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numPoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fwidth</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>colors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a82e9a740092b00ca6db56e613bf703b3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref></type>
+        <definition>virtual GraphHandlePtr drawarrow</definition>
+        <argsstring>(const RaveVector&lt; float &gt; &amp;p1, const RaveVector&lt; float &gt; &amp;p2, float fwidth, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>drawarrow</name>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fwidth</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1ab31ba8d06861efe4e21c28bd312eb242" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref></type>
+        <definition>virtual GraphHandlePtr drawbox</definition>
+        <argsstring>(const RaveVector&lt; float &gt; &amp;vpos, const RaveVector&lt; float &gt; &amp;vextents) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>drawbox</name>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>vpos</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>vextents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a22f2bb37771f5e0f772a7c102c944cbb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref></type>
+        <definition>virtual GraphHandlePtr drawplane</definition>
+        <argsstring>(const RaveTransform&lt; float &gt; &amp;tplane, const RaveVector&lt; float &gt; &amp;vextents, const boost::multi_array&lt; float, 3 &gt; &amp;vtexture) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>drawplane</name>
+        <param>
+          <type>const RaveTransform&lt; float &gt; &amp;</type>
+          <declname>tplane</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>vextents</declname>
+        </param>
+        <param>
+          <type>const boost::multi_array&lt; float, 3 &gt; &amp;</type>
+          <declname>vtexture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1acbbb5716b51f6588f7396ad847c1ed5c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref></type>
+        <definition>virtual GraphHandlePtr drawtrimesh</definition>
+        <argsstring>(const float *ppoints, int stride, const int *pIndices, int numTriangles, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>drawtrimesh</name>
+        <param>
+          <type>const float *</type>
+          <declname>ppoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>pIndices</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numTriangles</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a37378978bd107d362cec82ac9972c3cc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref></type>
+        <definition>virtual GraphHandlePtr drawtrimesh</definition>
+        <argsstring>(const float *ppoints, int stride, const int *pIndices, int numTriangles, const boost::multi_array&lt; float, 2 &gt; &amp;colors) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>drawtrimesh</name>
+        <param>
+          <type>const float *</type>
+          <declname>ppoints</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>pIndices</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numTriangles</declname>
+        </param>
+        <param>
+          <type>const boost::multi_array&lt; float, 2 &gt; &amp;</type>
+          <declname>colors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a4bedf8fe190553ca2e13881b58faebf4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1af0d19499c5ac95f5e1ac60b29187d7c4" kindref="member">ViewerBasePtr</ref></type>
+        <definition>ViewerBasePtr shared_viewer</definition>
+        <argsstring>()</argsstring>
+        <name>shared_viewer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="196" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="196" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1a9f2f2a97b74fe4a12b5df509ececc31d" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1aa8352f0d31944978b6a5cebf018b4596" kindref="member">ViewerBaseConstPtr</ref></type>
+        <definition>ViewerBaseConstPtr shared_viewer_const</definition>
+        <argsstring>() const </argsstring>
+        <name>shared_viewer_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="199" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="199" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1ViewerBase_1af386ad7515f485242895df543029d333" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* GetHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetHash</name>
+        <reimplements refid="classOpenRAVE_1_1InterfaceBase_1abfb0be978f0f9899582785d67c4b3d40">GetHash</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="204" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="204" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><bold>[interface]</bold> Base class for the graphics and gui engine that renders the environment and provides visual sensor information. <bold>If not specified, method is not multi-thread safe.</bold> See <ref refid="arch__viewer" kindref="compound">Viewer Concepts</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1968">
+        <label>ViewerBase</label>
+        <link refid="classOpenRAVE_1_1ViewerBase"/>
+        <childnode refid="1969" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1969">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1970">
+        <label>ViewerBase</label>
+        <link refid="classOpenRAVE_1_1ViewerBase"/>
+        <childnode refid="1971" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1972">
+        <label>string</label>
+        <childnode refid="1973" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1974">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1972" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1973">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1975">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1972" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1971">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1972" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1974" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1975" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="52" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="51" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>__description</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>Clone</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a82e9a740092b00ca6db56e613bf703b3" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>drawarrow</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ab31ba8d06861efe4e21c28bd312eb242" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>drawbox</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a3021be834c6cf039ea736ded93666763" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>drawlinelist</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a849d5032f57ca31b3ef3b8150c804ce3" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>drawlinelist</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ad6c4f2147642166ff9978d2364d561f0" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>drawlinestrip</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a89917d0d227ef17ae86be8312159e689" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>drawlinestrip</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a22f2bb37771f5e0f772a7c102c944cbb" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>drawplane</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1acbbb5716b51f6588f7396ad847c1ed5c" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>drawtrimesh</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a37378978bd107d362cec82ac9972c3cc" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>drawtrimesh</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a252e5291c15eb4d6956ee5c824a4c56d" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>EnvironmentSync</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ad149822b9f25bf1adf3d76e78379cca5" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetCameraImage</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1aa280b50e2cd6e717b03a83245546e467" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetCameraIntrinsics</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ac63f4828ecf7cfd87feb7f67be71bb04" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetCameraTransform</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1af386ad7515f485242895df543029d333" prot="private" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetHash</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ace14ad2fd8a6c9de2477bfcfb66d84cc" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1aab6d9553843a6d593ee530045d7fff9f" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>ItemSelectionCallbackFn</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a4b6920a362f58dfd5113a5163266780d" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>LoadModel</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ada75ea5cccc17a8cf81b638117139c1c" prot="public" virt="pure-virtual"><scope>OpenRAVE::ViewerBase</scope><name>main</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a548e4f89261156f972a2a463cffab365" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>Move</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ae9d5173833570ef0af490242cf87aabf" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>plot3</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a9ab9d7fee44e672f4fb7c01491520a51" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>plot3</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ab8fc69e4de743e14207ea400de2f3824" prot="public" virt="pure-virtual"><scope>OpenRAVE::ViewerBase</scope><name>quitmainloop</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ab0582044ee7b7222de5e7406ad64f93a" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ac9591ef8e174b06e6021c7ecb216c7c2" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a87bb8fc16f70e17fc3955a734a5a9cc5" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>RegisterCallback</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>RegisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a22844e2b6584a0673cc82cfd7e2fa01d" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>RegisterItemSelectionCallback</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ad23099fd4b95a0b7587ec4efe5454043" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>RegisterViewerImageCallback</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a50aaed4618b2b23eaed8f22b280caa72" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>Reset</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ad7e2a3f748b9d369d13c4591a89a659d" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>SetBkgndColor</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ae426230d17214ba9e81e7ca30a1437e6" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>SetCamera</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>SetDescription</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a3807c4e1bbec9f2d0e9f71cadb7efdd1" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>SetEnvironmentSync</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1aefe54c55090e1487ba372243e0da6e4a" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>SetName</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a4d6091b23c3c415fd662d4974957b072" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>SetSize</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ab89b5888abf5a74bd6571a47cf83b7cd" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>SetViewerData</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a4bedf8fe190553ca2e13881b58faebf4" prot="protected" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>shared_viewer</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a9f2f2a97b74fe4a12b5df509ececc31d" prot="protected" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>shared_viewer_const</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a8ba08e058dbbaf19090cc79cd22055f6" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>UpdateCameraTransform</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ad5d8dc37aba1d6a686f461d48d29727aaba3d470046d1fbaa4e3c883403fc9940" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>VE_ItemSelection</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a4791e23f1e8900e29e1b5158d266400a" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>ViewerBase</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1ad5d8dc37aba1d6a686f461d48d29727a" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>ViewerEvents</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a33dae9848e343e6740ad259e09e92607" prot="public" virt="non-virtual"><scope>OpenRAVE::ViewerBase</scope><name>ViewerImageCallbackFn</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a00e98066bc03fa4d2b287d2a6a2d2b4c" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>ViewerMove</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1a93a7763493f3da4687ca55db4a32b05e" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>ViewerSetSize</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1adfc56134be2ef5b157c9a0b55d5d4e13" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>ViewerSetTitle</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>~InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1ViewerBase_1acaaab7fd961a857cc0dc41abd8750d7c" prot="public" virt="virtual"><scope>OpenRAVE::ViewerBase</scope><name>~ViewerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

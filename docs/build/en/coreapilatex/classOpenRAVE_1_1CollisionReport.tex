@@ -1,0 +1,57 @@
+\hypertarget{classOpenRAVE_1_1CollisionReport}{
+\subsection{CollisionReport Class Reference}
+\label{classOpenRAVE_1_1CollisionReport}\index{OpenRAVE::CollisionReport@{OpenRAVE::CollisionReport}}
+}
+
+
+Holds information about a particular collision that occured.  
+
+
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1CollisionReport_a849fa981f121eb25a67e4e14392840ba}{
+int \hyperlink{classOpenRAVE_1_1CollisionReport_a849fa981f121eb25a67e4e14392840ba}{options}}
+\label{classOpenRAVE_1_1CollisionReport_a849fa981f121eb25a67e4e14392840ba}
+
+\begin{DoxyCompactList}\small\item\em the options that the \hyperlink{classOpenRAVE_1_1CollisionReport}{CollisionReport} was called with \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionReport_a66034fcc62ac4142477872950ef70663}{
+KinBody::LinkConstPtr \hyperlink{classOpenRAVE_1_1CollisionReport_a66034fcc62ac4142477872950ef70663}{plink2}}
+\label{classOpenRAVE_1_1CollisionReport_a66034fcc62ac4142477872950ef70663}
+
+\begin{DoxyCompactList}\small\item\em the colliding links if a collision involves a bodies. Collisions do not always occur with 2 bodies like ray collisions, so these fields can be empty. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionReport_a2d4acb52d99b57b5b524aaa557ab91eb}{
+int \hyperlink{classOpenRAVE_1_1CollisionReport_a2d4acb52d99b57b5b524aaa557ab91eb}{numCols}}
+\label{classOpenRAVE_1_1CollisionReport_a2d4acb52d99b57b5b524aaa557ab91eb}
+
+\begin{DoxyCompactList}\small\item\em this is the number of objects that collide with the object of interest \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionReport_a4d32ef985c209aaaca9a4e61c9855e0b}{
+std::vector$<$ KinBody::LinkConstPtr $>$ \hyperlink{classOpenRAVE_1_1CollisionReport_a4d32ef985c209aaaca9a4e61c9855e0b}{vLinkColliding}}
+\label{classOpenRAVE_1_1CollisionReport_a4d32ef985c209aaaca9a4e61c9855e0b}
+
+\begin{DoxyCompactList}\small\item\em objects colliding with this object \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionReport_a39ecee22e3be662c17e9c9d28215dd66}{
+dReal \hyperlink{classOpenRAVE_1_1CollisionReport_a39ecee22e3be662c17e9c9d28215dd66}{minDistance}}
+\label{classOpenRAVE_1_1CollisionReport_a39ecee22e3be662c17e9c9d28215dd66}
+
+\begin{DoxyCompactList}\small\item\em minimum distance from last query, filled if CO\_\-Distance option is set \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionReport_a04fc6ba3cfd80183ace93d10661cf32f}{
+int \hyperlink{classOpenRAVE_1_1CollisionReport_a04fc6ba3cfd80183ace93d10661cf32f}{numWithinTol}}
+\label{classOpenRAVE_1_1CollisionReport_a04fc6ba3cfd80183ace93d10661cf32f}
+
+\begin{DoxyCompactList}\small\item\em number of objects within tolerance of this object, filled if CO\_\-UseTolerance option is set \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionReport_afd310727fc8474b0057786fadf2088df}{
+std::vector$<$ CONTACT $>$ \hyperlink{classOpenRAVE_1_1CollisionReport_afd310727fc8474b0057786fadf2088df}{contacts}}
+\label{classOpenRAVE_1_1CollisionReport_afd310727fc8474b0057786fadf2088df}
+
+\begin{DoxyCompactList}\small\item\em the convention is that the normal will be \char`\"{}out\char`\"{} of plink1's surface. Filled if CO\_\-UseContacts option is set. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Holds information about a particular collision that occured. \begin{Desc}
+\item[Examples: ]\par
+
+
+\hyperlink{orcollision_8cpp-example}{orcollision.cpp}.
+
+\end{Desc}

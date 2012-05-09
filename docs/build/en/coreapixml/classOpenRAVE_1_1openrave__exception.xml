@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1openrave__exception" kind="class" prot="public">
+    <compoundname>OpenRAVE::openrave_exception</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">exception</basecompoundref>
+    <includes refid="openrave_8h" local="no">openrave.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1openrave__exception_1ab7a9ff00752bcc6d5e02e679a51ec772" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _s</definition>
+        <argsstring></argsstring>
+        <name>_s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="187" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1openrave__exception_1a503e868b9e844bbe842d1613d11308da" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1adf2fa050995e80f643f8eddc14d7262c" kindref="member">OpenRAVEErrorCode</ref></type>
+        <definition>OpenRAVEErrorCode _error</definition>
+        <argsstring></argsstring>
+        <name>_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="188" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1openrave__exception_1af971ce1b15b1dcd21823d99f4e339721" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>openrave_exception</definition>
+        <argsstring>()</argsstring>
+        <name>openrave_exception</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="154" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="154" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1openrave__exception_1abf1e13447726cf7034884409baa70a41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>openrave_exception</definition>
+        <argsstring>(const std::string &amp;s, OpenRAVEErrorCode error=ORE_Failed)</argsstring>
+        <name>openrave_exception</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1adf2fa050995e80f643f8eddc14d7262c" kindref="member">OpenRAVEErrorCode</ref></type>
+          <declname>error</declname>
+          <defval>ORE_Failed</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="156" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="156" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1openrave__exception_1af5b8ee071243f953a49943c97f680137" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~openrave_exception</definition>
+        <argsstring>()</argsstring>
+        <name>~openrave_exception</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="175" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="175" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1openrave__exception_1a884ed65c628acf8ac1c79150a704bfef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char const *</type>
+        <definition>char const* what</definition>
+        <argsstring>() const </argsstring>
+        <name>what</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="177" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1openrave__exception_1a4752bb1bf3e6f79dc5f9a77069a27332" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; message</definition>
+        <argsstring>() const </argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="180" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="180" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1openrave__exception_1af6493fe19cf81cbd376815b62e7f6c67" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1adf2fa050995e80f643f8eddc14d7262c" kindref="member">OpenRAVEErrorCode</ref></type>
+        <definition>OpenRAVEErrorCode GetCode</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="183" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="183" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Exception that all <ref refid="namespaceOpenRAVE" kindref="compound">OpenRAVE</ref> internal methods throw; the error codes are held in <ref refid="namespaceOpenRAVE_1adf2fa050995e80f643f8eddc14d7262c" kindref="member">OpenRAVEErrorCode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1549">
+        <label>openrave_exception</label>
+        <link refid="classOpenRAVE_1_1openrave__exception"/>
+        <childnode refid="1550" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1550">
+        <label>exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1551">
+        <label>openrave_exception</label>
+        <link refid="classOpenRAVE_1_1openrave__exception"/>
+        <childnode refid="1552" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1553" relation="usage">
+          <edgelabel>_s</edgelabel>
+        </childnode>
+      </node>
+      <node id="1553">
+        <label>string</label>
+        <childnode refid="1554" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1552">
+        <label>exception</label>
+      </node>
+      <node id="1554">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="152" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="151" bodyend="189"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1openrave__exception_1a503e868b9e844bbe842d1613d11308da" prot="private" virt="non-virtual"><scope>OpenRAVE::openrave_exception</scope><name>_error</name></member>
+      <member refid="classOpenRAVE_1_1openrave__exception_1ab7a9ff00752bcc6d5e02e679a51ec772" prot="private" virt="non-virtual"><scope>OpenRAVE::openrave_exception</scope><name>_s</name></member>
+      <member refid="classOpenRAVE_1_1openrave__exception_1af6493fe19cf81cbd376815b62e7f6c67" prot="public" virt="non-virtual"><scope>OpenRAVE::openrave_exception</scope><name>GetCode</name></member>
+      <member refid="classOpenRAVE_1_1openrave__exception_1a4752bb1bf3e6f79dc5f9a77069a27332" prot="public" virt="non-virtual"><scope>OpenRAVE::openrave_exception</scope><name>message</name></member>
+      <member refid="classOpenRAVE_1_1openrave__exception_1af971ce1b15b1dcd21823d99f4e339721" prot="public" virt="non-virtual"><scope>OpenRAVE::openrave_exception</scope><name>openrave_exception</name></member>
+      <member refid="classOpenRAVE_1_1openrave__exception_1abf1e13447726cf7034884409baa70a41" prot="public" virt="non-virtual"><scope>OpenRAVE::openrave_exception</scope><name>openrave_exception</name></member>
+      <member refid="classOpenRAVE_1_1openrave__exception_1a884ed65c628acf8ac1c79150a704bfef" prot="public" virt="non-virtual"><scope>OpenRAVE::openrave_exception</scope><name>what</name></member>
+      <member refid="classOpenRAVE_1_1openrave__exception_1af5b8ee071243f953a49943c97f680137" prot="public" virt="virtual"><scope>OpenRAVE::openrave_exception</scope><name>~openrave_exception</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

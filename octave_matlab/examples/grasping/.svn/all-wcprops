@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping
+END
+MakeBarrettHandTable.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/MakeBarrettHandTable.m
+END
+MakeHRP2JSKHandTable.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/MakeHRP2JSKHandTable.m
+END
+RobotCreateHand.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/RobotCreateHand.m
+END
+RunGrasps.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/RunGrasps.m
+END
+GetBoxApproachDirections.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/GetBoxApproachDirections.m
+END
+DrawContacts.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/DrawContacts.m
+END
+isoctave.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/isoctave.m
+END
+RunGrasp.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/RunGrasp.m
+END
+MakeGraspTable.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/MakeGraspTable.m
+END
+addopenravepaths_grasping.m
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/addopenravepaths_grasping.m
+END
+AnalyzeGrasp3Dlp.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/AnalyzeGrasp3Dlp.m
+END
+rodrigues.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/grasping/rodrigues.m
+END

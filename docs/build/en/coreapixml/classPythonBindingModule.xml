@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classPythonBindingModule" kind="class" prot="public">
+    <compoundname>PythonBindingModule</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1ModuleBase" prot="public" virt="non-virtual">ModuleBase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPythonBindingModule_1a1824493f29358a9dfd262f916cbb9626" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PythonBindingModule</definition>
+        <argsstring>(EnvironmentBasePtr penv, std::istream &amp;)</argsstring>
+        <name>PythonBindingModule</name>
+        <param>
+          <type>EnvironmentBasePtr</type>
+          <declname>penv</declname>
+        </param>
+        <param>
+          <type>std::istream &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="60" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classPythonBindingModule_1ab852a7862fb930a8a4f644191859d0fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~PythonBindingModule</definition>
+        <argsstring>()</argsstring>
+        <name>~PythonBindingModule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="63" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classPythonBindingModule_1a7b480d96bbf53f0a0d0800deec13fff1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SimulationStep</definition>
+        <argsstring>(dReal fElapsedTime)</argsstring>
+        <name>SimulationStep</name>
+        <param>
+          <type>dReal</type>
+          <declname>fElapsedTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="67" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="67" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1660">
+        <label>ModuleBase</label>
+        <link refid="classOpenRAVE_1_1ModuleBase"/>
+        <childnode refid="1661" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1661">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+      <node id="1659">
+        <label>PythonBindingModule</label>
+        <link refid="classPythonBindingModule"/>
+        <childnode refid="1660" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1665">
+        <label>string</label>
+        <childnode refid="1666" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1667">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1665" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1666">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1668">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1665" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1663">
+        <label>ModuleBase</label>
+        <link refid="classOpenRAVE_1_1ModuleBase"/>
+        <childnode refid="1664" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1664">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1665" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1667" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1668" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+      <node id="1662">
+        <label>PythonBindingModule</label>
+        <link refid="classPythonBindingModule"/>
+        <childnode refid="1663" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="58" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="57" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>PythonBindingModule</scope><name>__description</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>Clone</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a941c8e8d2c5aa963d76aef113f19d835" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>Destroy</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>PythonBindingModule</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>PythonBindingModule</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>PythonBindingModule</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>PythonBindingModule</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>PythonBindingModule</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>PythonBindingModule</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>PythonBindingModule</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>PythonBindingModule</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>PythonBindingModule</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a9272536a00bca7f32ec0e4a7e131ac23" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>main</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a5a91427df2d07efa80c64f34f54539eb" prot="public" virt="non-virtual"><scope>PythonBindingModule</scope><name>ModuleBase</name></member>
+      <member refid="classPythonBindingModule_1a1824493f29358a9dfd262f916cbb9626" prot="public" virt="non-virtual"><scope>PythonBindingModule</scope><name>PythonBindingModule</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>PythonBindingModule</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>PythonBindingModule</scope><name>RegisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a4c4ba0ffe635d14b93794268bd8e5995" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>Reset</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>SetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>SetUserData</name></member>
+      <member refid="classPythonBindingModule_1a7b480d96bbf53f0a0d0800deec13fff1" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>SimulationStep</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a7b480d96bbf53f0a0d0800deec13fff1" prot="public" virt="virtual" ambiguityscope="OpenRAVE::ModuleBase::"><scope>PythonBindingModule</scope><name>SimulationStep</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>PythonBindingModule</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>~InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1aef8e9e0635e2fe7835cbc5e5d386c7d6" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>~ModuleBase</name></member>
+      <member refid="classPythonBindingModule_1ab852a7862fb930a8a4f644191859d0fc" prot="public" virt="virtual"><scope>PythonBindingModule</scope><name>~PythonBindingModule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

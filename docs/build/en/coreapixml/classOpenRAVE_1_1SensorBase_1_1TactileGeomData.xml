@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1TactileGeomData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::TactileGeomData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry" prot="public" virt="non-virtual">SensorGeometry</basecompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+    <innerclass refid="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction" prot="public">OpenRAVE::SensorBase::TactileGeomData::Friction</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1TactileGeomData_1a291b28de8847b9b16ba6d502de78c60a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt;</type>
+        <definition>std::vector&lt;Vector&gt; positions</definition>
+        <argsstring></argsstring>
+        <name>positions</name>
+        <briefdescription>
+<para>3D positions of all the elements in the sensor frame </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="298" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1TactileGeomData_1aab497dede053d1338c001d75ced9689f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal thickness</definition>
+        <argsstring></argsstring>
+        <name>thickness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the thickness of the tactile sensors (used for determining contact and computing force) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="299" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1TactileGeomData_1a09eb78124b05ccd451a7b53cc36d5ee0" prot="public" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction" kindref="compound">Friction</ref> &gt;</type>
+        <definition>std::map&lt;std::string, Friction&gt; _mapfriction</definition>
+        <argsstring></argsstring>
+        <name>_mapfriction</name>
+        <briefdescription>
+<para>dReal normal_force_stiffness, normal_force_damping; ///&lt; simple model for determining contact force from depressed distance... necessary? </para>        </briefdescription>
+        <detaileddescription>
+<para>friction coefficients references by target objects </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="301" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1TactileGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()</argsstring>
+        <name>GetType</name>
+        <reimplements refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a3cf408517e49fe46f25b023c690c2ea0">GetType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="286" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="286" bodyend="288"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1903">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1902">
+        <label>TactileGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1TactileGeomData"/>
+        <childnode refid="1903" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1910">
+        <label>vector&lt; Vector &gt;</label>
+        <childnode refid="1911" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1906">
+        <label>map&lt; std::string, Friction &gt;</label>
+        <childnode refid="1907" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="1909" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1905">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1909">
+        <label>Friction</label>
+        <link refid="structOpenRAVE_1_1SensorBase_1_1TactileGeomData_1_1Friction"/>
+      </node>
+      <node id="1907">
+        <label>string</label>
+        <childnode refid="1908" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1908">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1911">
+        <label>RaveVector</label>
+      </node>
+      <node id="1904">
+        <label>TactileGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1TactileGeomData"/>
+        <childnode refid="1905" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1906" relation="usage">
+          <edgelabel>_mapfriction</edgelabel>
+        </childnode>
+        <childnode refid="1910" relation="usage">
+          <edgelabel>positions</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="284" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="283" bodyend="302"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1TactileGeomData_1a09eb78124b05ccd451a7b53cc36d5ee0" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::TactileGeomData</scope><name>_mapfriction</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1TactileGeomData_1a73d4e01a2ea086a5e37ef209abd23526" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::TactileGeomData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1TactileGeomData_1a291b28de8847b9b16ba6d502de78c60a" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::TactileGeomData</scope><name>positions</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1TactileGeomData_1aab497dede053d1338c001d75ced9689f" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::TactileGeomData</scope><name>thickness</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a2448e133d651783f1acfe3f944ba4dc3" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::TactileGeomData</scope><name>~SensorGeometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

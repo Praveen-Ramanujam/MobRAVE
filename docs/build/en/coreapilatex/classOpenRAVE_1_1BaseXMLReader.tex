@@ -1,0 +1,114 @@
+\hypertarget{classOpenRAVE_1_1BaseXMLReader}{
+\subsection{BaseXMLReader Class Reference}
+\label{classOpenRAVE_1_1BaseXMLReader}\index{OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}}
+}
+
+
+Inheritance diagram for BaseXMLReader:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classOpenRAVE_1_1BaseXMLReader__inherit__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9}{ProcessElement} \{ \hyperlink{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9a55670b1a206d4da09ef69e3690ee7bba}{PE\_\-Pass} = 0, 
+\hyperlink{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9a5123a3d32d744694919844d9675ede67}{PE\_\-Support} = 1, 
+\hyperlink{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9a14953fbbe151fd55cd76395cdccc4af6}{PE\_\-Ignore} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual XMLReadablePtr \hyperlink{classOpenRAVE_1_1BaseXMLReader_a96a8303765bddf9742cbc422f8a9c2d6}{GetReadable} ()
+\item 
+virtual \hyperlink{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9}{ProcessElement} \hyperlink{classOpenRAVE_1_1BaseXMLReader_a96b3e3b4503108964001ad58ab724ac3}{startElement} (const std::string \&name, const AttributesList \&atts)=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1BaseXMLReader_a3b5c1a1dc1e0965a9e27f139b18db4d9}{endElement} (const std::string \&name)=0
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1BaseXMLReader_a0b124434353fd2e48d951c2053e63408}{characters} (const std::string \&ch)=0
+\end{DoxyCompactItemize}
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1BaseXMLReader_a895aefe990ffe9af66bb5cd4e37d3579}{
+std::string \hyperlink{classOpenRAVE_1_1BaseXMLReader_a895aefe990ffe9af66bb5cd4e37d3579}{\_\-filename}}
+\label{classOpenRAVE_1_1BaseXMLReader_a895aefe990ffe9af66bb5cd4e37d3579}
+
+\begin{DoxyCompactList}\small\item\em XML filename/resource used for this class (can be empty). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+base class for all xml readers. XMLReaders are used to process data from xml files. Custom readers can be registered through \hyperlink{classOpenRAVE_1_1EnvironmentBase}{EnvironmentBase}. By default it can record all data that is encountered inside the xml reader \begin{Desc}
+\item[Examples: ]\par
+
+
+\hyperlink{customreader_8cpp-example}{customreader.cpp}.
+
+\end{Desc}
+
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9}{
+\index{OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}!ProcessElement@{ProcessElement}}
+\index{ProcessElement@{ProcessElement}!OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}}
+\paragraph[{ProcessElement}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ProcessElement}}\hfill}
+\label{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{PE\_\-Pass@{PE\_\-Pass}!OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}}\index{OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}!PE\_\-Pass@{PE\_\-Pass}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9a55670b1a206d4da09ef69e3690ee7bba}{
+PE\_\-Pass}
+\label{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9a55670b1a206d4da09ef69e3690ee7bba}
+}]current tag was not supported, so pass onto another class \index{PE\_\-Support@{PE\_\-Support}!OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}}\index{OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}!PE\_\-Support@{PE\_\-Support}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9a5123a3d32d744694919844d9675ede67}{
+PE\_\-Support}
+\label{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9a5123a3d32d744694919844d9675ede67}
+}]current tag will be processed by this class \index{PE\_\-Ignore@{PE\_\-Ignore}!OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}}\index{OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}!PE\_\-Ignore@{PE\_\-Ignore}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9a14953fbbe151fd55cd76395cdccc4af6}{
+PE\_\-Ignore}
+\label{classOpenRAVE_1_1BaseXMLReader_a5f6b74d2490bcfd578227b002ec9c5d9a14953fbbe151fd55cd76395cdccc4af6}
+}]current tag and all its children should be ignored \end{description}
+\end{Desc}
+
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1BaseXMLReader_a0b124434353fd2e48d951c2053e63408}{
+\index{OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}!characters@{characters}}
+\index{characters@{characters}!OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}}
+\paragraph[{characters}]{\setlength{\rightskip}{0pt plus 5cm}virtual void characters (const std::string \& {\em ch})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1BaseXMLReader_a0b124434353fd2e48d951c2053e63408}
+gets called for all data in between tags. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ch}]a string to the data \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1BaseXMLReader_a3b5c1a1dc1e0965a9e27f139b18db4d9}{
+\index{OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}!endElement@{endElement}}
+\index{endElement@{endElement}!OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}}
+\paragraph[{endElement}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool endElement (const std::string \& {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1BaseXMLReader_a3b5c1a1dc1e0965a9e27f139b18db4d9}
+Gets called at the end of each \char`\"{}$<$/type$>$\char`\"{} expression. In this case, name is \char`\"{}type\char`\"{} 
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]of the tag, will be always lower case \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if XMLReader has finished parsing (one condition is that name==\_\-fieldname) , otherwise false 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1BaseXMLReader_a96a8303765bddf9742cbc422f8a9c2d6}{
+\index{OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}!GetReadable@{GetReadable}}
+\index{GetReadable@{GetReadable}!OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}}
+\paragraph[{GetReadable}]{\setlength{\rightskip}{0pt plus 5cm}virtual XMLReadablePtr GetReadable ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1BaseXMLReader_a96a8303765bddf9742cbc422f8a9c2d6}
+a readable interface that stores the information processsed for the current tag This pointer is used to the \hyperlink{classOpenRAVE_1_1InterfaceBase}{InterfaceBase} class registered readers \hypertarget{classOpenRAVE_1_1BaseXMLReader_a96b3e3b4503108964001ad58ab724ac3}{
+\index{OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}!startElement@{startElement}}
+\index{startElement@{startElement}!OpenRAVE::BaseXMLReader@{OpenRAVE::BaseXMLReader}}
+\paragraph[{startElement}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf ProcessElement} startElement (const std::string \& {\em name}, \/  const AttributesList \& {\em atts})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1BaseXMLReader_a96b3e3b4503108964001ad58ab724ac3}
+Gets called in the beginning of each \char`\"{}$<$type$>$\char`\"{} expression. In this case, name is \char`\"{}type\char`\"{} 
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]of the tag, will be always lower case \item[{\em atts}]string of attributes where the first std::string is the attribute name and second is the value \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if tag is accepted and this class will process it, otherwise false 
+\end{DoxyReturn}

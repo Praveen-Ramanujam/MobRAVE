@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver" kind="class" prot="public">
+    <compoundname>OpenRAVE::RobotBase::RobotStateSaver</compoundname>
+    <includes refid="robot_8h" local="no">robot.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a96b8c6244de5c544065e0611b566cb84" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+        <definition>RobotBasePtr _probot</definition>
+        <argsstring></argsstring>
+        <name>_probot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="340" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a598a73664d251b083056cc30ec69f639" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; vactivedofs</definition>
+        <argsstring></argsstring>
+        <name>vactivedofs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="341" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a45c7dc6b312b2ff0f573b583e2fa3cf2" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int affinedofs</definition>
+        <argsstring></argsstring>
+        <name>affinedofs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="342" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a3feb2ef5d1d7a5c2be6d72bb43aa30c5" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector rotationaxis</definition>
+        <argsstring></argsstring>
+        <name>rotationaxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="343" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a817adb4414a659de88921b804c4e3072" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nActiveManip</definition>
+        <argsstring></argsstring>
+        <name>nActiveManip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="344" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a05dfd2aea199106122f1491d7cbd70eb" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenRAVE_1_1RobotBase_1_1Grabbed" kindref="compound">Grabbed</ref> &gt;</type>
+        <definition>std::vector&lt;Grabbed&gt; _vGrabbedBodies</definition>
+        <argsstring></argsstring>
+        <name>_vGrabbedBodies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="345" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1aba101a9ec333640819f46a93ec1f4984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RobotStateSaver</definition>
+        <argsstring>(RobotBasePtr probot, int options=Save_LinkTransformation|Save_LinkEnable|Save_ActiveDOF|Save_ActiveManipulator)</argsstring>
+        <name>RobotStateSaver</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>probot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+          <defval>Save_LinkTransformation|Save_LinkEnable|Save_ActiveDOF|Save_ActiveManipulator</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1ab895614b5f36b5aa210aad5d9e6b847b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~RobotStateSaver</definition>
+        <argsstring>()</argsstring>
+        <name>~RobotStateSaver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a684f358bcf26cab5022f7d33465d1568" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Restore</definition>
+        <argsstring>()</argsstring>
+        <name>Restore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="338"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1afaf8c76f73bef324421c8dc97a8cf49b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void _RestoreRobot</definition>
+        <argsstring>()</argsstring>
+        <name>_RestoreRobot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="347"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper class derived from KinBodyStateSaver to additionaly save robot information. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1786">
+        <label>vector&lt; Grabbed &gt;</label>
+        <childnode refid="1787" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1787">
+        <label>Grabbed</label>
+        <link refid="classOpenRAVE_1_1RobotBase_1_1Grabbed"/>
+        <childnode refid="1788" relation="usage">
+          <edgelabel>troot</edgelabel>
+        </childnode>
+        <childnode refid="1789" relation="usage">
+          <edgelabel>vCollidingLinks</edgelabel>
+          <edgelabel>vNonCollidingLinks</edgelabel>
+        </childnode>
+      </node>
+      <node id="1788">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1789">
+        <label>vector&lt; LinkConstPtr &gt;</label>
+      </node>
+      <node id="1784">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+      <node id="1785">
+        <label>vector&lt; int &gt;</label>
+      </node>
+      <node id="1783">
+        <label>RobotStateSaver</label>
+        <link refid="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver"/>
+        <childnode refid="1784" relation="usage">
+          <edgelabel>rotationaxis</edgelabel>
+        </childnode>
+        <childnode refid="1785" relation="usage">
+          <edgelabel>vactivedofs</edgelabel>
+        </childnode>
+        <childnode refid="1786" relation="usage">
+          <edgelabel>_vGrabbedBodies</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="334" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="333" bodyend="348"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a96b8c6244de5c544065e0611b566cb84" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::RobotStateSaver</scope><name>_probot</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1afaf8c76f73bef324421c8dc97a8cf49b" prot="private" virt="virtual"><scope>OpenRAVE::RobotBase::RobotStateSaver</scope><name>_RestoreRobot</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a05dfd2aea199106122f1491d7cbd70eb" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::RobotStateSaver</scope><name>_vGrabbedBodies</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a45c7dc6b312b2ff0f573b583e2fa3cf2" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::RobotStateSaver</scope><name>affinedofs</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a817adb4414a659de88921b804c4e3072" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::RobotStateSaver</scope><name>nActiveManip</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a684f358bcf26cab5022f7d33465d1568" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::RobotStateSaver</scope><name>Restore</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1aba101a9ec333640819f46a93ec1f4984" prot="public" virt="non-virtual"><scope>OpenRAVE::RobotBase::RobotStateSaver</scope><name>RobotStateSaver</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a3feb2ef5d1d7a5c2be6d72bb43aa30c5" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::RobotStateSaver</scope><name>rotationaxis</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1a598a73664d251b083056cc30ec69f639" prot="protected" virt="non-virtual"><scope>OpenRAVE::RobotBase::RobotStateSaver</scope><name>vactivedofs</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1RobotStateSaver_1ab895614b5f36b5aa210aad5d9e6b847b" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::RobotStateSaver</scope><name>~RobotStateSaver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

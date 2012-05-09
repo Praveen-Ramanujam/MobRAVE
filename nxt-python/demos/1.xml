@@ -1,0 +1,67 @@
+<environment>
+  <camtrans>-55.273346 -28.632015 30.401173</camtrans>
+  <camrotationaxis>0.665773 -0.393625 -0.633881 85.448884</camrotationaxis>
+  <robot file="diffdrive_csiro.robot.xml">
+	<Translation>-18 -18 2</Translation>
+    	<RotationAxis>0 0 0</RotationAxis>
+  </robot>
+ <KinBody name="wood">
+ 
+  <Body type ="static"> <!-- Dynamic means movable within the enviroment -->
+            <Translation>0 0 -0.1</Translation>
+            <Geom modifiable="false" type="box"> <!-- The calculated geometry for collision will be a box -->
+                <!--render>ground.iv</render--><!-- The object will be rendered as this .wrl file -->
+ 
+                <extents>40 40 0.1</extents>
+ 		<diffusecolor>1 0 0<diffusecolor>              
+            </Geom>
+                <Mass type="box"> <!-- Mass distribution mimics a box -->
+                <com>0 .005 0</com> <!-- Center of mass is moved fowards to compensate for heavier parts in the front -->
+                <total>2</total><!-- Mass of 2 kg -->
+                </Mass>
+    </Body>
+</KinBody>
+ <physicsengine type="nxt_ode">
+        <nxt_odeproperties>
+            <contact body0="terrain" body1="front_left_wheel">
+                <friction>10</friction>
+                <model>Approx1 SoftCFM SoftERP</model>
+                <cfm>0.0001</cfm>
+                <erp>0.95</erp>
+            </contact>
+            <contact body0="terrain" body1="front_right_wheel">
+                <friction>10</friction>
+                <model>Approx1 SoftCFM SoftERP</model>
+                <cfm>0.0001</cfm>
+                <erp>0.95</erp>
+            </contact>
+            <contact body0="terrain" body1="rear_right_wheel">
+                <friction>10</friction>
+                <model>Approx1 SoftCFM SoftERP</model>
+                <cfm>0.0001</cfm>
+                <erp>0.95</erp>
+            </contact>
+            <contact> 
+                <friction>0.9</friction>
+                <model>SoftCFM SoftERP</model>
+                <cfm>0.000000001</cfm>
+                <erp>0.999999</erp>
+            </contact>
+            <contact body0="terrain" body1="rear_left_wheel">
+                <friction>10</friction>
+                <model>Approx1 SoftCFM SoftERP</model>
+                <cfm>0.0001</cfm>
+                <erp>0.95</erp>
+            </contact>
+            <gravity>0 0 -25</gravity>
+            <SelfCollision>true</SelfCollision>
+            <autodisable>on</autodisable>
+            <linearthreshold>0.1</linearthreshold>
+            <angularthreshold>0.5</angularthreshold>
+            <disabletime>0.05</disabletime>
+            <solver>QuickStep</solver>
+           <solver>NormalStep</solver>
+       </nxt_odeproperties>
+  </physicsengine>
+ 
+</environment>

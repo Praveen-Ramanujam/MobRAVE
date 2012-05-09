@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1TrajectoryBase_1_1Point" kind="class" prot="public">
+    <compoundname>OpenRAVE::TrajectoryBase::Point</compoundname>
+    <includes refid="trajectory_8h" local="no">trajectory.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1_1Point_1ab9eb6344a0fa2101e3d0107d6b2fb9df" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="158" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1_1Point_1afa9b9f267952c9af72f4211b5f1c2663" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; q</definition>
+        <argsstring></argsstring>
+        <name>q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="159" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1_1Point_1a0de64ad15aeff1a3d193e405b1c50ee7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; qdot</definition>
+        <argsstring></argsstring>
+        <name>qdot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="159" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1_1Point_1a7ccbe14f2c9cab3d000de3a80e66287e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; qtorque</definition>
+        <argsstring></argsstring>
+        <name>qtorque</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="159" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1_1Point_1ac0be5d0c3f1f3e85f5d800ec77037c5a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform trans</definition>
+        <argsstring></argsstring>
+        <name>trans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="160" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1_1Point_1a0d0abc1076462d0c9f02dc7520acb3f8" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector linearvel</definition>
+        <argsstring></argsstring>
+        <name>linearvel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="161" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1_1Point_1ad7fd6bf190171311a4cbc7da69a5a789" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector angularvel</definition>
+        <argsstring></argsstring>
+        <name>angularvel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="161" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1_1Point_1ae08c5f0c5b4c75a3e0f33dada5f2fcba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Point</definition>
+        <argsstring>()</argsstring>
+        <name>Point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="149" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="149" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1_1Point_1af4d12acfa10c6d55d26db7d27b0ff80f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Point</definition>
+        <argsstring>(const std::vector&lt; dReal &gt; &amp;newq, dReal newtime)</argsstring>
+        <name>Point</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>newq</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>newtime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="151" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1_1Point_1ac2ad7fd455bbf852ca76d58859117f68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Point</definition>
+        <argsstring>(const std::vector&lt; dReal &gt; &amp;newq, const Transform &amp;newtrans, dReal newtime)</argsstring>
+        <name>Point</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>newq</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>newtrans</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>newtime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="154" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="154" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000055"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04), please use newer API! </para></xrefdescription></xrefsect></para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1654">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1652">
+        <label>Point</label>
+        <link refid="classOpenRAVE_1_1TrajectoryBase_1_1Point"/>
+        <childnode refid="1653" relation="usage">
+          <edgelabel>qdot</edgelabel>
+          <edgelabel>q</edgelabel>
+          <edgelabel>qtorque</edgelabel>
+        </childnode>
+        <childnode refid="1654" relation="usage">
+          <edgelabel>trans</edgelabel>
+        </childnode>
+        <childnode refid="1655" relation="usage">
+          <edgelabel>linearvel</edgelabel>
+          <edgelabel>angularvel</edgelabel>
+        </childnode>
+      </node>
+      <node id="1653">
+        <label>vector&lt; dReal &gt;</label>
+      </node>
+      <node id="1655">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="147" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="146" bodyend="162"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1_1Point_1ad7fd6bf190171311a4cbc7da69a5a789" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase::Point</scope><name>angularvel</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1_1Point_1a0d0abc1076462d0c9f02dc7520acb3f8" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase::Point</scope><name>linearvel</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1_1Point_1ae08c5f0c5b4c75a3e0f33dada5f2fcba" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase::Point</scope><name>Point</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1_1Point_1af4d12acfa10c6d55d26db7d27b0ff80f" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase::Point</scope><name>Point</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1_1Point_1ac2ad7fd455bbf852ca76d58859117f68" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase::Point</scope><name>Point</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1_1Point_1afa9b9f267952c9af72f4211b5f1c2663" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase::Point</scope><name>q</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1_1Point_1a0de64ad15aeff1a3d193e405b1c50ee7" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase::Point</scope><name>qdot</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1_1Point_1a7ccbe14f2c9cab3d000de3a80e66287e" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase::Point</scope><name>qtorque</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1_1Point_1ab9eb6344a0fa2101e3d0107d6b2fb9df" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase::Point</scope><name>time</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1_1Point_1ac0be5d0c3f1f3e85f5d800ec77037c5a" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase::Point</scope><name>trans</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

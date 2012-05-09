@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/ParabolicPathSmooth
+END
+Math.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/ParabolicPathSmooth/Math.h
+END
+Timer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/ParabolicPathSmooth/Timer.cpp
+END
+DynamicPath.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/ParabolicPathSmooth/DynamicPath.cpp
+END
+ParabolicRamp.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/ParabolicPathSmooth/ParabolicRamp.h
+END
+Timer.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/ParabolicPathSmooth/Timer.h
+END
+DynamicPath.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/ParabolicPathSmooth/DynamicPath.h
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/ParabolicPathSmooth/readme.txt
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/ParabolicPathSmooth/CMakeLists.txt
+END
+ParabolicRamp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/rplanners/ParabolicPathSmooth/ParabolicRamp.cpp
+END

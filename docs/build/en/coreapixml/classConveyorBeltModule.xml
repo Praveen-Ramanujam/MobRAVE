@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classConveyorBeltModule" kind="class" prot="public">
+    <compoundname>ConveyorBeltModule</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1ModuleBase" prot="public" virt="non-virtual">ModuleBase</basecompoundref>
+    <innerclass refid="structConveyorBeltModule_1_1InstancedBody" prot="private">ConveyorBeltModule::InstancedBody</innerclass>
+    <innerclass refid="structConveyorBeltModule_1_1RegisteredBody" prot="private">ConveyorBeltModule::RegisteredBody</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classConveyorBeltModule_1a2d95cf39fba83f174d52291b9497429a" prot="private" static="no" mutable="no">
+        <type>SpaceSamplerBasePtr</type>
+        <definition>SpaceSamplerBasePtr _psampler</definition>
+        <argsstring></argsstring>
+        <name>_psampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="40" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConveyorBeltModule_1afe52337ad0a39043538c901f0747f6bc" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="123" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConveyorBeltModule_1ae17cab35cd5b0a04b587f813b8d04ab7" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector movevel</definition>
+        <argsstring></argsstring>
+        <name>movevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="123" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConveyorBeltModule_1a1a587ed36596cbd169db600e70226a74" prot="private" static="no" mutable="no">
+        <type>list&lt; RegisteredBody &gt;</type>
+        <definition>list&lt;RegisteredBody&gt; _listregistered</definition>
+        <argsstring></argsstring>
+        <name>_listregistered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="124" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classConveyorBeltModule_1a8b6f25759add2ef1b55437758323f73e" prot="private" static="no" mutable="no">
+        <type>list&lt; InstancedBody &gt;</type>
+        <definition>list&lt;InstancedBody&gt; _listinstances</definition>
+        <argsstring></argsstring>
+        <name>_listinstances</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="125" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classConveyorBeltModule_1af7aa21d86ab30d0ae3861b4c6deb2ad0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ConveyorBeltModule</definition>
+        <argsstring>(EnvironmentBasePtr penv, std::istream &amp;is)</argsstring>
+        <name>ConveyorBeltModule</name>
+        <param>
+          <type>EnvironmentBasePtr</type>
+          <declname>penv</declname>
+        </param>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="43" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="42" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classConveyorBeltModule_1a02badd80bf345ba522a25ba31e620e9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(const string &amp;cmd)</argsstring>
+        <name>main</name>
+        <reimplements refid="classOpenRAVE_1_1ModuleBase_1a9272536a00bca7f32ec0e4a7e131ac23">main</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gets called every time a problem instance is loaded to initialize the problem. Robots might not necessarily be set before this function call returns 0 on success </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="52" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classConveyorBeltModule_1abffe0b64b6a92e0b9e8e4e72e4157e93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RegisterBody</definition>
+        <argsstring>(ostream &amp;sout, istream &amp;sinput)</argsstring>
+        <name>RegisterBody</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>sout</declname>
+        </param>
+        <param>
+          <type>istream &amp;</type>
+          <declname>sinput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="57" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="56" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classConveyorBeltModule_1ae464dd09b34272ccb47f1c013556c175" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimulationStep</definition>
+        <argsstring>(dReal fElapsedTime)</argsstring>
+        <name>SimulationStep</name>
+        <param>
+          <type>dReal</type>
+          <declname>fElapsedTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="69" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="68" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classConveyorBeltModule_1ae9e0ede35f54dac6aae54261dff24fd7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InterfaceBasePtr</type>
+        <definition>static InterfaceBasePtr create</definition>
+        <argsstring>(EnvironmentBasePtr penv, std::istream &amp;is)</argsstring>
+        <name>create</name>
+        <param>
+          <type>EnvironmentBasePtr</type>
+          <declname>penv</declname>
+        </param>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="118" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Holds a registered set of bodies, at every time step creates new bodies and moves them along a trajectory. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1074">
+        <label>ModuleBase</label>
+        <link refid="classOpenRAVE_1_1ModuleBase"/>
+        <childnode refid="1075" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1073">
+        <label>ConveyorBeltModule</label>
+        <link refid="classConveyorBeltModule"/>
+        <childnode refid="1074" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1075">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1079">
+        <label>string</label>
+        <childnode refid="1080" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1081">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1079" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1087">
+        <label>RegisteredBody</label>
+        <childnode refid="1079" relation="usage">
+          <edgelabel>filename</edgelabel>
+        </childnode>
+      </node>
+      <node id="1080">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1086">
+        <label>list&lt; RegisteredBody &gt;</label>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1082">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1079" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1083">
+        <label>RaveVector</label>
+      </node>
+      <node id="1077">
+        <label>ModuleBase</label>
+        <link refid="classOpenRAVE_1_1ModuleBase"/>
+        <childnode refid="1078" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1076">
+        <label>ConveyorBeltModule</label>
+        <link refid="classConveyorBeltModule"/>
+        <childnode refid="1077" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1083" relation="usage">
+          <edgelabel>movevel</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+        <childnode refid="1084" relation="usage">
+          <edgelabel>_listinstances</edgelabel>
+        </childnode>
+        <childnode refid="1086" relation="usage">
+          <edgelabel>_listregistered</edgelabel>
+        </childnode>
+      </node>
+      <node id="1078">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1079" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1081" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1082" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+      <node id="1085">
+        <label>InstancedBody</label>
+      </node>
+      <node id="1084">
+        <label>list&lt; InstancedBody &gt;</label>
+        <childnode refid="1085" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" line="28" bodyfile="/home/pra3cob/openrave/src/cppexamples/orconveyormovement.cpp" bodystart="27" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>__description</name></member>
+      <member refid="classConveyorBeltModule_1a8b6f25759add2ef1b55437758323f73e" prot="private" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>_listinstances</name></member>
+      <member refid="classConveyorBeltModule_1a1a587ed36596cbd169db600e70226a74" prot="private" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>_listregistered</name></member>
+      <member refid="classConveyorBeltModule_1a2d95cf39fba83f174d52291b9497429a" prot="private" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>_psampler</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>Clone</name></member>
+      <member refid="classConveyorBeltModule_1af7aa21d86ab30d0ae3861b4c6deb2ad0" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>ConveyorBeltModule</name></member>
+      <member refid="classConveyorBeltModule_1ae9e0ede35f54dac6aae54261dff24fd7" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>create</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a941c8e8d2c5aa963d76aef113f19d835" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>Destroy</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classConveyorBeltModule_1a02badd80bf345ba522a25ba31e620e9c" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>main</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a5a91427df2d07efa80c64f34f54539eb" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>ModuleBase</name></member>
+      <member refid="classConveyorBeltModule_1ae17cab35cd5b0a04b587f813b8d04ab7" prot="private" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>movevel</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>READERSMAP</name></member>
+      <member refid="classConveyorBeltModule_1abffe0b64b6a92e0b9e8e4e72e4157e93" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>RegisterBody</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>ConveyorBeltModule</scope><name>RegisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a4c4ba0ffe635d14b93794268bd8e5995" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>Reset</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>SetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>SetUserData</name></member>
+      <member refid="classConveyorBeltModule_1ae464dd09b34272ccb47f1c013556c175" prot="public" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>SimulationStep</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a7b480d96bbf53f0a0d0800deec13fff1" prot="public" virt="virtual" ambiguityscope="OpenRAVE::ModuleBase::"><scope>ConveyorBeltModule</scope><name>SimulationStep</name></member>
+      <member refid="classConveyorBeltModule_1afe52337ad0a39043538c901f0747f6bc" prot="private" virt="non-virtual"><scope>ConveyorBeltModule</scope><name>start</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>ConveyorBeltModule</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>~InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1aef8e9e0635e2fe7835cbc5e5d386c7d6" prot="public" virt="virtual"><scope>ConveyorBeltModule</scope><name>~ModuleBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

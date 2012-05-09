@@ -1,0 +1,45 @@
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics}{
+\subsection{RaveCameraIntrinsics$<$ T $>$ Class Template Reference}
+\label{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics}\index{OpenRAVE::geometry::RaveCameraIntrinsics@{OpenRAVE::geometry::RaveCameraIntrinsics}}
+}
+
+
+intrinsic parameters for a camera.  
+
+
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::string \hyperlink{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_ac689303f406328d3c603051e11b482bf}{distortion\_\-model}
+\begin{DoxyCompactList}\small\item\em distortion model of the camera. if left empty, no distortion model is used. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_a74815f0494513cfbdb460a0d7365fed0}{
+std::vector$<$ T $>$ \hyperlink{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_a74815f0494513cfbdb460a0d7365fed0}{distortion\_\-coeffs}}
+\label{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_a74815f0494513cfbdb460a0d7365fed0}
+
+\begin{DoxyCompactList}\small\item\em coefficients of the distortion model \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_a93fa88200ad87160883fd23fd0663e49}{
+T \hyperlink{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_a93fa88200ad87160883fd23fd0663e49}{focal\_\-length}}
+\label{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_a93fa88200ad87160883fd23fd0663e49}
+
+\begin{DoxyCompactList}\small\item\em physical focal length distance since focal length cannot be recovered from the intrinsic matrix, but is necessary for determining the lens plane. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$ class OpenRAVE::geometry::RaveCameraIntrinsics$<$ T $>$}
+
+intrinsic parameters for a camera. 
+
+\subsubsection{Member Data Documentation}
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_ac689303f406328d3c603051e11b482bf}{
+\index{OpenRAVE::geometry::RaveCameraIntrinsics@{OpenRAVE::geometry::RaveCameraIntrinsics}!distortion\_\-model@{distortion\_\-model}}
+\index{distortion\_\-model@{distortion\_\-model}!OpenRAVE::geometry::RaveCameraIntrinsics@{OpenRAVE::geometry::RaveCameraIntrinsics}}
+\paragraph[{distortion\_\-model}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf distortion\_\-model}}\hfill}
+\label{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_ac689303f406328d3c603051e11b482bf}
+
+
+distortion model of the camera. if left empty, no distortion model is used. 
+
+Possible values are:
+\begin{DoxyItemize}
+\item \char`\"{}plumb\_\-bob\char`\"{} -\/ Brown. \char`\"{}Decentering Distortion of Lenses\char`\"{}, Photometric Engineering, pages 444-\/462, Vol. 32, No. 3, 1966 
+\end{DoxyItemize}

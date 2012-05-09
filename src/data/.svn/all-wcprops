@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data
+END
+puma_tabletop.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/puma_tabletop.env.xml
+END
+cabinet1.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/cabinet1.kinbody.xml
+END
+testwamcamera.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/testwamcamera.env.xml
+END
+pumagrab.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/pumagrab.env.xml
+END
+table.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/table.kinbody.xml
+END
+tridoftable.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/tridoftable.env.xml
+END
+ikeashelf.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/ikeashelf.kinbody.xml
+END
+youbot1.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/youbot1.env.xml
+END
+cabinet1f.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/cabinet1f.kinbody.xml
+END
+segway.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/segway.kinbody.xml
+END
+katanatable.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/katanatable.env.xml
+END
+hanoi_complex2.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/hanoi_complex2.env.xml
+END
+table_washer.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/table_washer.kinbody.xml
+END
+pa10calib_envcamera.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/pa10calib_envcamera.env.xml
+END
+hironxtable.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/hironxtable.env.xml
+END
+box0.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/box0.kinbody.xml
+END
+jack.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/jack.kinbody.xml
+END
+mug1.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/mug1.kinbody.xml
+END
+box1.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/box1.kinbody.xml
+END
+mug2.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/mug2.kinbody.xml
+END
+box2.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/box2.kinbody.xml
+END
+jsk-plate.zae
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/jsk-plate.zae
+END
+box3.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/box3.kinbody.xml
+END
+balljoint.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/balljoint.kinbody.xml
+END
+box_frootloops.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/box_frootloops.kinbody.xml
+END
+hanoi_complex.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/hanoi_complex.env.xml
+END
+ikeatable.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/ikeatable.kinbody.xml
+END
+pr2wam_test1.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/pr2wam_test1.env.xml
+END
+sample.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/sample.kinbody.xml
+END
+pa10calib.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/pa10calib.env.xml
+END
+hanoi.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/hanoi.env.xml
+END
+pa10grasp.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/pa10grasp.env.xml
+END
+pumablocks.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/pumablocks.env.xml
+END
+diffdrive_arm.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/diffdrive_arm.env.xml
+END
+puma.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/puma.env.xml
+END
+diffdrive_sample.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/diffdrive_sample.env.xml
+END
+door.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/door.env.xml
+END
+wamtest1.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/wamtest1.env.xml
+END
+dualarmmanipulation.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/dualarmmanipulation.env.xml
+END
+wamtest2.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/wamtest2.env.xml
+END
+ikeashelff.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/ikeashelff.kinbody.xml
+END
+shelf.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/shelf.kinbody.xml
+END
+camera.sensor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/camera.sensor.xml
+END
+wam_cabinet.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/wam_cabinet.env.xml
+END
+ketchup.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/ketchup.kinbody.xml
+END
+lego2.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/lego2.kinbody.xml
+END
+lab1.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/lab1.env.xml
+END
+box_frootloops_fat.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/box_frootloops_fat.kinbody.xml
+END
+lego3.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/lego3.kinbody.xml
+END
+pa10grasp2.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/pa10grasp2.env.xml
+END
+lego4.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/lego4.kinbody.xml
+END
+testphysics.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/testphysics.env.xml
+END
+thinbox.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/thinbox.kinbody.xml
+END
+pr2test1.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/pr2test1.env.xml
+END
+pr2test2.env.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/data/pr2test2.env.xml
+END

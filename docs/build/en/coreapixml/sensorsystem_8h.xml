@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="sensorsystem_8h" kind="file">
+    <compoundname>sensorsystem.h</compoundname>
+    <includedby refid="openrave_8h" local="no">include/openrave/openrave.h</includedby>
+    <invincdepgraph>
+      <node id="2344">
+        <label>src/cppexamples/ikfastloader.cpp</label>
+        <link refid="ikfastloader_8cpp"/>
+      </node>
+      <node id="2353">
+        <label>src/cppexamples/orshowsensors.cpp</label>
+        <link refid="orshowsensors_8cpp"/>
+      </node>
+      <node id="2336">
+        <label>src/cppexamples/orpythonbinding.cpp</label>
+        <link refid="orpythonbinding_8cpp"/>
+      </node>
+      <node id="2343">
+        <label>src/libopenrave-core/openrave-core.h</label>
+        <link refid="openrave-core_8h"/>
+        <childnode refid="2344" relation="include">
+        </childnode>
+        <childnode refid="2345" relation="include">
+        </childnode>
+        <childnode refid="2346" relation="include">
+        </childnode>
+        <childnode refid="2347" relation="include">
+        </childnode>
+        <childnode refid="2348" relation="include">
+        </childnode>
+        <childnode refid="2349" relation="include">
+        </childnode>
+        <childnode refid="2339" relation="include">
+        </childnode>
+        <childnode refid="2350" relation="include">
+        </childnode>
+        <childnode refid="2351" relation="include">
+        </childnode>
+        <childnode refid="2352" relation="include">
+        </childnode>
+        <childnode refid="2353" relation="include">
+        </childnode>
+        <childnode refid="2340" relation="include">
+        </childnode>
+        <childnode refid="2341" relation="include">
+        </childnode>
+      </node>
+      <node id="2341">
+        <label>src/cppexamples/oryoubotcontrol.cpp</label>
+        <link refid="oryoubotcontrol_8cpp"/>
+      </node>
+      <node id="2348">
+        <label>src/cppexamples/orikfilter.cpp</label>
+        <link refid="orikfilter_8cpp"/>
+      </node>
+      <node id="2351">
+        <label>src/cppexamples/orplanning_module.cpp</label>
+        <link refid="orplanning__module_8cpp"/>
+      </node>
+      <node id="2342">
+        <label>include/openrave/plugin.h</label>
+        <link refid="plugin_8h"/>
+        <childnode refid="2335" relation="include">
+        </childnode>
+        <childnode refid="2337" relation="include">
+        </childnode>
+      </node>
+      <node id="2350">
+        <label>src/cppexamples/orplanning_ik.cpp</label>
+        <link refid="orplanning__ik_8cpp"/>
+      </node>
+      <node id="2354">
+        <label>src/libopenrave/libopenrave.cpp</label>
+        <link refid="libopenrave_8cpp"/>
+        <childnode refid="2354" relation="include">
+        </childnode>
+      </node>
+      <node id="2334">
+        <label>include/openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="2335" relation="include">
+        </childnode>
+        <childnode refid="2336" relation="include">
+        </childnode>
+        <childnode refid="2337" relation="include">
+        </childnode>
+        <childnode refid="2338" relation="include">
+        </childnode>
+        <childnode refid="2342" relation="include">
+        </childnode>
+        <childnode refid="2343" relation="include">
+        </childnode>
+        <childnode refid="2354" relation="include">
+        </childnode>
+      </node>
+      <node id="2335">
+        <label>src/cppexamples/customreader.cpp</label>
+        <link refid="customreader_8cpp"/>
+      </node>
+      <node id="2345">
+        <label>src/cppexamples/opencvsaving.cpp</label>
+        <link refid="opencvsaving_8cpp"/>
+      </node>
+      <node id="2339">
+        <label>src/cppexamples/ormulticontrol.cpp</label>
+        <link refid="ormulticontrol_8cpp"/>
+      </node>
+      <node id="2338">
+        <label>include/openrave/planningutils.h</label>
+        <link refid="planningutils_8h"/>
+        <childnode refid="2339" relation="include">
+        </childnode>
+        <childnode refid="2340" relation="include">
+        </childnode>
+        <childnode refid="2341" relation="include">
+        </childnode>
+      </node>
+      <node id="2347">
+        <label>src/cppexamples/orconveyormovement.cpp</label>
+        <link refid="orconveyormovement_8cpp"/>
+      </node>
+      <node id="2333">
+        <label>include/openrave/sensorsystem.h</label>
+        <link refid="sensorsystem.h"/>
+        <childnode refid="2334" relation="include">
+        </childnode>
+      </node>
+      <node id="2340">
+        <label>src/cppexamples/ortrajectory.cpp</label>
+        <link refid="ortrajectory_8cpp"/>
+      </node>
+      <node id="2346">
+        <label>src/cppexamples/orcollision.cpp</label>
+        <link refid="orcollision_8cpp"/>
+      </node>
+      <node id="2349">
+        <label>src/cppexamples/orloadviewer.cpp</label>
+        <link refid="orloadviewer_8cpp"/>
+      </node>
+      <node id="2337">
+        <label>src/cppexamples/plugincpp.cpp</label>
+        <link refid="plugincpp_8cpp"/>
+      </node>
+      <node id="2352">
+        <label>src/cppexamples/orplanning_planner.cpp</label>
+        <link refid="orplanning__planner_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenRAVE_1_1SensorSystemBase" prot="public">OpenRAVE::SensorSystemBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SimpleSensorSystem" prot="public">OpenRAVE::SimpleSensorSystem</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData" prot="public">OpenRAVE::SimpleSensorSystem::XMLData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData" prot="public">OpenRAVE::SimpleSensorSystem::BodyData</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader" prot="public">OpenRAVE::SimpleSensorSystem::SimpleXMLReader</innerclass>
+    <innernamespace refid="namespaceOpenRAVE">OpenRAVE</innernamespace>
+    <briefdescription>
+<para>Sensor systems used to define how environment information is organized and how bodies are managed. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2006-2010<sp/>Rosen<sp/>Diankov<sp/>(rosen.diankov@gmail.com)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenRAVE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OpenRAVE<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="preprocessor">#ifndef<sp/>OPENRAVE_SENSORSYSTEM_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_SENSORSYSTEM_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenRAVE<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classOpenRAVE_1_1SensorSystemBase" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1SensorSystemBase" kindref="compound" tooltip="[interface] Used to manage the creation and destruction of bodies. See Sensor System...">SensorSystemBase</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="classOpenRAVE_1_1SensorSystemBase_1a987f97fd07b4705cefb798fb2cec6388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1SensorSystemBase_1a987f97fd07b4705cefb798fb2cec6388" kindref="member">SensorSystemBase</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)<sp/>:<sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref>(PT_SensorSystem,<sp/>penv)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33" refid="classOpenRAVE_1_1SensorSystemBase_1a70f819b08ce5cf8919fb598d4cacf4f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1SensorSystemBase_1a70f819b08ce5cf8919fb598d4cacf4f1" kindref="member">~SensorSystemBase</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classOpenRAVE_1_1SensorSystemBase_1affeafe65e7c4094f282d273dedbf069b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>InterfaceType<sp/><ref refid="classOpenRAVE_1_1SensorSystemBase_1affeafe65e7c4094f282d273dedbf069b" kindref="member" tooltip="return the static interface type this class points to (used for safe casting)">GetInterfaceTypeStatic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PT_SensorSystem;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddRegisteredBodies(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;KinBodyPtr&gt;&amp;<sp/>vbodies)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1KinBody_1a1ffc67e834b97ce4e1acc052180dce52" kindref="member">KinBody::ManageDataPtr</ref><sp/>AddKinBody(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody,<sp/><ref refid="namespaceOpenRAVE_1a621f0dea132e9220594b6541cbbe4aab" kindref="member">XMLReadableConstPtr</ref><sp/>pdata)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>RemoveKinBody(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsBodyPresent(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>EnableBody(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bEnable)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SwitchBody(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody1,<sp/><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody2)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63" refid="classOpenRAVE_1_1SensorSystemBase_1a60296f7d3212e2a43c3d1ed67cb75385" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1SensorSystemBase_1a60296f7d3212e2a43c3d1ed67cb75385" kindref="member">SetManageData</ref>(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody,<sp/><ref refid="classOpenRAVE_1_1KinBody_1a1ffc67e834b97ce4e1acc052180dce52" kindref="member">KinBody::ManageDataPtr</ref><sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pbody-&gt;SetManageData(data);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>GetHash()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="interfacehashes_8h_1a6ed4904a8800ca1875c42d70adb6bfa9" kindref="member">OPENRAVE_SENSORSYSTEM_HASH</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classOpenRAVE_1_1SimpleSensorSystem" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem" kindref="compound" tooltip="A very simple sensor system example that manages raw detection data.">SimpleSensorSystem</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1SensorSystemBase" kindref="compound" tooltip="[interface] Used to manage the creation and destruction of bodies. See Sensor System...">SensorSystemBase</ref></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData" kindref="compound">XMLData</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1XMLReadable" kindref="compound" tooltip="base class for readable interfaces">XMLReadable</ref><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="79" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a9dd78231cdf4cbc33ddbfdc742dee48b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a9dd78231cdf4cbc33ddbfdc742dee48b" kindref="member">XMLData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>xmlid)<sp/>:<sp/><ref refid="classOpenRAVE_1_1XMLReadable" kindref="compound" tooltip="base class for readable interfaces">XMLReadable</ref>(xmlid),<sp/>id(0)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1abd3b9e9657eab1a5a1ea756f05fa771d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1abd3b9e9657eab1a5a1ea756f05fa771d" kindref="member">copy</ref>(boost::shared_ptr&lt;XMLData<sp/>const&gt;<sp/>pdata)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>=<sp/>*pdata;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1ae11b63eb07eb4e5796c29a511b8e50cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>sid;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a7441ef0865bcb3db9b8064dd7375c1ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="87" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a5066cdd8c3272a6ee04da4d3c10efc54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>strOffsetLink;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1a066e8f0d73ffe336a558360d2715e617" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref><sp/>transOffset,transPreOffset;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>final<sp/>offset<sp/>=<sp/>transOffset<sp/>*<sp/>transReturnedFromVision<sp/>*<sp/>transPreOffset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData_1adbabe3ef66355e3eb2e0714dcabbac51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOpenRAVE_1_1SimpleSensorSystem" kindref="compound" tooltip="A very simple sensor system example that manages raw detection data.">SimpleSensorSystem</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData" kindref="compound">BodyData</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1KinBody" kindref="compound" tooltip="[interface] A kinematic body of links and joints. If not specified, method is not...">KinBody</ref>::ManageData<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a63193974c7025c28365e1bb276479e86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData" kindref="compound">BodyData</ref>(<ref refid="namespaceOpenRAVE_1adeaf3fbb73ee82de32efcd886d780f0b" kindref="member">SensorSystemBasePtr</ref><sp/>psensorsystem,<sp/><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody,<sp/>boost::shared_ptr&lt;XMLData&gt;<sp/>initdata)<sp/>:<sp/><ref refid="classOpenRAVE_1_1KinBody" kindref="compound" tooltip="[interface] A kinematic body of links and joints. If not specified, method is not...">KinBody</ref>::ManageData(psensorsystem),<sp/>_initdata(initdata),<sp/>bPresent(false),<sp/>bEnabled(true),<sp/>bLock(false)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetBody(pbody);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a194db41325bf612dfaf84620962ed493" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a621f0dea132e9220594b6541cbbe4aab" kindref="member">XMLReadableConstPtr</ref><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a194db41325bf612dfaf84620962ed493" kindref="member">GetData</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_initdata;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a65d126a7915789b77492d87dc3962347" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">KinBody::LinkPtr</ref><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a65d126a7915789b77492d87dc3962347" kindref="member">GetOffsetLink</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">KinBody::LinkPtr</ref>(_plink);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a22d8212ee560a8abd6d73cccf32bbd78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a22d8212ee560a8abd6d73cccf32bbd78" kindref="member" tooltip="true if the object is being updated by the system due to its presence in the real...">IsPresent</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bPresent;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1ab093c91e2859f12d929fe8665e67a8e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1ab093c91e2859f12d929fe8665e67a8e8" kindref="member" tooltip="true if should update openrave body">IsEnabled</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bEnabled;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1ac2ff4037e2a4a6160f5c44c25032d18c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1ac2ff4037e2a4a6160f5c44c25032d18c" kindref="member" tooltip="if true, the vision system should not destroy this object once it stops being present...">IsLocked</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bLock;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a6d79e276188e4fcccb1c44f05fcc56c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a6d79e276188e4fcccb1c44f05fcc56c4" kindref="member" tooltip="set a lock on a particular body">Lock</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bDoLock)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bLock<sp/>=<sp/>bDoLock;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a42bcbaa649be0b25699ce5d05a6fb0a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a42bcbaa649be0b25699ce5d05a6fb0a2" kindref="member">GetId</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_initdata-&gt;id;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a618fa49aef2d0ddc2a0a17946ffe6096" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a618fa49aef2d0ddc2a0a17946ffe6096" kindref="member">GetSid</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_initdata-&gt;sid;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a55730ee4b7513f3fab8f66488660b948" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref>&amp;<sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a55730ee4b7513f3fab8f66488660b948" kindref="member">GetRecentTransform</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tnew;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="131" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1aa646a3ce2392eb3f2ecbccaa7c6ad24d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetBody(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">KinBody::LinkPtr</ref><sp/>plink;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>_initdata-&gt;strOffsetLink.size()<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plink<sp/>=<sp/>pbody-&gt;GetLink(_initdata-&gt;strOffsetLink);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!plink<sp/>)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plink<sp/>=<sp/>pbody-&gt;GetLinks().front();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_plink<sp/>=<sp/>plink;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1af09cc8a4be6ee94c354530c65da91f1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;XMLData&gt;<sp/>_initdata;</highlight></codeline>
+<codeline lineno="142" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1ab4302663b5f174ec898e576dd612fc17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>lastupdated;</highlight></codeline>
+<codeline lineno="143" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1aed8b59ede622e9c5714324294520fd31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref><sp/>tnew;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1acc3c7c6a31e7fee873bb7cb81bf35396" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bPresent;</highlight></codeline>
+<codeline lineno="146" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a506a5970fc50eeb9d861c9e9fa18735f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bEnabled;</highlight></codeline>
+<codeline lineno="147" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1ace7c02a3fc0b3f4dd66a37508be25186" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bLock;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1a51a532d8f8c507a5cb5e6754612f6eb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1KinBody_1a05ac08f3af6bf716a6f2991385c92467" kindref="member">KinBody::LinkWeakPtr</ref><sp/>_plink;</highlight></codeline>
+<codeline lineno="150" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData_1adbabe3ef66355e3eb2e0714dcabbac51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOpenRAVE_1_1SimpleSensorSystem" kindref="compound" tooltip="A very simple sensor system example that manages raw detection data.">SimpleSensorSystem</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader" kindref="compound">SimpleXMLReader</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1BaseXMLReader" kindref="compound">BaseXMLReader</ref></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader" kindref="compound">SimpleXMLReader</ref>(boost::shared_ptr&lt;XMLData&gt;);</highlight></codeline>
+<codeline lineno="157" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a96a8303765bddf9742cbc422f8a9c2d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a4518fd20d196b853bb157999524b6fde" kindref="member">XMLReadablePtr</ref><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a96a8303765bddf9742cbc422f8a9c2d6" kindref="member">GetReadable</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_pdata;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ProcessElement<sp/>startElement(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a7372895c7fd9541aa829987c3eb9aaf9" kindref="member">AttributesList</ref>&amp;<sp/>atts);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>endElement(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>characters(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>ch);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="165" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a74c7f90728193060cc7c5e51d386fd59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;XMLData&gt;<sp/>_pdata;</highlight></codeline>
+<codeline lineno="166" refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a8fc3524f4e679a41dcc8d0f302d637ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>ss;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref><sp/>RegisterXMLReaderId(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>xmlid);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem" kindref="compound" tooltip="A very simple sensor system example that manages raw detection data.">SimpleSensorSystem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>xmlid,<sp/><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classOpenRAVE_1_1SimpleSensorSystem" kindref="compound" tooltip="A very simple sensor system example that manages raw detection data.">SimpleSensorSystem</ref>();</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset();</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddRegisteredBodies(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;KinBodyPtr&gt;&amp;<sp/>vbodies);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1KinBody_1a1ffc67e834b97ce4e1acc052180dce52" kindref="member">KinBody::ManageDataPtr</ref><sp/>AddKinBody(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody,<sp/><ref refid="namespaceOpenRAVE_1a621f0dea132e9220594b6541cbbe4aab" kindref="member">XMLReadableConstPtr</ref><sp/>pdata);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>RemoveKinBody(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsBodyPresent(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>EnableBody(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bEnable);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SwitchBody(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody1,<sp/><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody2);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="186" refid="classOpenRAVE_1_1SimpleSensorSystem_1a348eeeee06dae7c876e0e99d822623e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;boost::shared_ptr&lt;BodyData&gt;,<sp/><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref><sp/>&gt;<sp/>SNAPSHOT;</highlight></codeline>
+<codeline lineno="187" refid="classOpenRAVE_1_1SimpleSensorSystem_1a5792c2fe379a6dccbb6805ecc6725fb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;int,boost::shared_ptr&lt;BodyData&gt;<sp/>&gt;<sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1a5792c2fe379a6dccbb6805ecc6725fb2" kindref="member">BODIES</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;BodyData&gt;<sp/>CreateBodyData(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody,<sp/>boost::shared_ptr&lt;XMLData<sp/>const&gt;<sp/>pdata);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_UpdateBodies(std::list&lt;SNAPSHOT&gt;&amp;<sp/>listbodies);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_UpdateBodiesThread();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="classOpenRAVE_1_1SimpleSensorSystem_1a6733c13f703a0d6ecc870505b52a4eb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1a6733c13f703a0d6ecc870505b52a4eb7" kindref="member">SetRecentTransform</ref>(boost::shared_ptr&lt;BodyData&gt;<sp/>pdata,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref>&amp;<sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pdata-&gt;tnew<sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a5465be4feef36a211b06feebdc5e3b42" kindref="member">BaseXMLReaderPtr</ref><sp/>CreateXMLReaderId(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>xmlid,<sp/><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref><sp/>ptr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a7372895c7fd9541aa829987c3eb9aaf9" kindref="member">AttributesList</ref>&amp;<sp/>atts);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="classOpenRAVE_1_1SimpleSensorSystem_1a56d6d3f275574755531b433d4b44c2db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>_xmlid;</highlight></codeline>
+<codeline lineno="200" refid="classOpenRAVE_1_1SimpleSensorSystem_1a27be2a37f89ac651836ed65f50688a62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1SimpleSensorSystem_1a5792c2fe379a6dccbb6805ecc6725fb2" kindref="member">BODIES</ref><sp/>_mapbodies;</highlight></codeline>
+<codeline lineno="201" refid="classOpenRAVE_1_1SimpleSensorSystem_1abf18812ae19b048af3f11234e0bf605c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::mutex<sp/>_mutex;</highlight></codeline>
+<codeline lineno="202" refid="classOpenRAVE_1_1SimpleSensorSystem_1a7811890bab9e6b54c7b4feeffb50f1b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>_expirationtime;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="203" refid="classOpenRAVE_1_1SimpleSensorSystem_1a39d60ecfd36564366b28218f90334b6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_bShutdown;</highlight></codeline>
+<codeline lineno="204" refid="classOpenRAVE_1_1SimpleSensorSystem_1a0014c919522d899aaa11a37553f158bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::thread<sp/>_threadUpdate;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>OpenRAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h"/>
+  </compounddef>
+</doxygen>

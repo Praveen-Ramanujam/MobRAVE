@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="openrave__config" kind="page">
+    <compoundname>openrave_config</compoundname>
+    <title>openrave-config</title>
+    <detaileddescription>
+<para>Used to find the OpenRAVE installation location and all the include/development/examples files.</para><para>Usage: <verbatim>
+openrave-config
+  [--prefix[=DIR]]
+  [--exec-prefix[=DIR]]
+  [--version] [--cflags]
+  [--libs]
+  [--libs-core]
+  [--libs-only-l]
+  [--libs-only-L]
+  [--cflags-only-I]
+  [--shared-libs]
+  [--python-dir]
+  [--octave-dir]
+  [--matlab-dir]
+  [--usage | --help]
+</verbatim> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

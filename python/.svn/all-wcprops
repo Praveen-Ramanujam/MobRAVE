@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python
+END
+openravepy_ext.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/openravepy_ext.py
+END
+ikfast_generator_cpp.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/ikfast_generator_cpp.py
+END
+misc.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/misc.py
+END
+metaclass.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/metaclass.py
+END
+openravepy.egg-info.in
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/openravepy.egg-info.in
+END
+ikfast.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/ikfast.py
+END
+__init__.py.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/__init__.py.in
+END
+openrave-createplugin.py.in
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/openrave-createplugin.py.in
+END
+openrave.py.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/openrave.py.in
+END
+pyANN.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/pyANN.py
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/CMakeLists.txt
+END
+openravepy.__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/openravepy.__init__.py
+END
+openrave-robot.py.in
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/python/openrave-robot.py.in
+END

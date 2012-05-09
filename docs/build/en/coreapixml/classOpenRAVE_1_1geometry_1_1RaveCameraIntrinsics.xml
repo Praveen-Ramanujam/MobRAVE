@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics" kind="class" prot="public">
+    <compoundname>OpenRAVE::geometry::RaveCameraIntrinsics</compoundname>
+    <includes refid="geometry_8h" local="no">geometry.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a079621bb5829e1e1ef5f4a769e46da9a" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T fx</definition>
+        <argsstring></argsstring>
+        <name>fx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="645" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1abc48edd39c432bf1b9d9283113a17ca2" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T fy</definition>
+        <argsstring></argsstring>
+        <name>fy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="645" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a448b21c0c0eb4e57836d0decaf2ba9fd" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T cx</definition>
+        <argsstring></argsstring>
+        <name>cx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="645" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1ab633701b507c20b60f917fe53fd5892f" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T cy</definition>
+        <argsstring></argsstring>
+        <name>cy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="645" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1ac689303f406328d3c603051e11b482bf" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string distortion_model</definition>
+        <argsstring></argsstring>
+        <name>distortion_model</name>
+        <briefdescription>
+<para>distortion model of the camera. if left empty, no distortion model is used. </para>        </briefdescription>
+        <detaileddescription>
+<para>Possible values are:<itemizedlist>
+<listitem><para>&quot;plumb_bob&quot; - Brown. &quot;Decentering Distortion of Lenses&quot;, Photometric Engineering, pages 444-462, Vol. 32, No. 3, 1966 </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="652" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="652" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a74815f0494513cfbdb460a0d7365fed0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; distortion_coeffs</definition>
+        <argsstring></argsstring>
+        <name>distortion_coeffs</name>
+        <briefdescription>
+<para>coefficients of the distortion model </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="653" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a93fa88200ad87160883fd23fd0663e49" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T focal_length</definition>
+        <argsstring></argsstring>
+        <name>focal_length</name>
+        <briefdescription>
+<para>physical focal length distance since focal length cannot be recovered from the intrinsic matrix, but is necessary for determining the lens plane. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="654" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="654" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a3479901190539d1184bfeba73a442b78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RaveCameraIntrinsics</definition>
+        <argsstring>()</argsstring>
+        <name>RaveCameraIntrinsics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="627" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="627" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a094bfc2026d21874ffd5971996a4e1e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RaveCameraIntrinsics</definition>
+        <argsstring>(T fx, T fy, T cx, T cy)</argsstring>
+        <name>RaveCameraIntrinsics</name>
+        <param>
+          <type>T</type>
+          <declname>fx</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>fy</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>cx</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>cy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="629" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="629" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1acf1dbe1e85714ecde15bad36f1d2d4b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics" kindref="compound">RaveCameraIntrinsics</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveCameraIntrinsics&lt;T&gt;&amp; operator=</definition>
+        <argsstring>(const RaveCameraIntrinsics&lt; U &gt; &amp;r)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics" kindref="compound">RaveCameraIntrinsics</ref>&lt; U &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="634" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="633" bodyend="643"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>intrinsic parameters for a camera. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1682">
+        <label>T</label>
+      </node>
+      <node id="1680">
+        <label>string</label>
+        <childnode refid="1681" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1681">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1679">
+        <label>RaveCameraIntrinsics&lt; T &gt;</label>
+        <link refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics"/>
+        <childnode refid="1680" relation="usage">
+          <edgelabel>distortion_model</edgelabel>
+        </childnode>
+        <childnode refid="1682" relation="usage">
+          <edgelabel>fx</edgelabel>
+          <edgelabel>fy</edgelabel>
+          <edgelabel>cx</edgelabel>
+          <edgelabel>cy</edgelabel>
+          <edgelabel>focal_length</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="625" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="624" bodyend="655"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a448b21c0c0eb4e57836d0decaf2ba9fd" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveCameraIntrinsics</scope><name>cx</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1ab633701b507c20b60f917fe53fd5892f" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveCameraIntrinsics</scope><name>cy</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a74815f0494513cfbdb460a0d7365fed0" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveCameraIntrinsics</scope><name>distortion_coeffs</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1ac689303f406328d3c603051e11b482bf" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveCameraIntrinsics</scope><name>distortion_model</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a93fa88200ad87160883fd23fd0663e49" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveCameraIntrinsics</scope><name>focal_length</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a079621bb5829e1e1ef5f4a769e46da9a" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveCameraIntrinsics</scope><name>fx</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1abc48edd39c432bf1b9d9283113a17ca2" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveCameraIntrinsics</scope><name>fy</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1acf1dbe1e85714ecde15bad36f1d2d4b6" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveCameraIntrinsics</scope><name>operator=</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a3479901190539d1184bfeba73a442b78" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveCameraIntrinsics</scope><name>RaveCameraIntrinsics</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics_1a094bfc2026d21874ffd5971996a4e1e2" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::RaveCameraIntrinsics</scope><name>RaveCameraIntrinsics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

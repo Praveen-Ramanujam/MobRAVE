@@ -1,0 +1,85 @@
+\hypertarget{group__plugin__exports}{
+\subsection{Plugin Export Functions}
+\label{group__plugin__exports}\index{Plugin Export Functions@{Plugin Export Functions}}
+}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1PLUGININFO}{PLUGININFO}
+\begin{DoxyCompactList}\small\item\em Holds all the OpenRAVE-\/specific information provided by a plugin. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__plugin__exports_ga6ae2f1554f547f27e4a5399d8aef7377}{
+typedef InterfaceBasePtr($\ast$ \hyperlink{group__plugin__exports_ga6ae2f1554f547f27e4a5399d8aef7377}{PluginExportFn\_\-OpenRAVECreateInterface} )(InterfaceType type, const std::string \&name, const char $\ast$pluginhash, const char $\ast$envhash, EnvironmentBasePtr penv)}
+\label{group__plugin__exports_ga6ae2f1554f547f27e4a5399d8aef7377}
+
+\begin{DoxyCompactList}\small\item\em Create the interfaces, see \hyperlink{group__plugin__exports_ga468c900067e08689383b3f8da642141f}{CreateInterfaceValidated}. \item\end{DoxyCompactList}\item 
+\hypertarget{group__plugin__exports_ga7cb4e2769bee1dca182b4432a900bc70}{
+typedef bool($\ast$ \hyperlink{group__plugin__exports_ga7cb4e2769bee1dca182b4432a900bc70}{PluginExportFn\_\-OpenRAVEGetPluginAttributes} )(PLUGININFO $\ast$pinfo, int size, const char $\ast$infohash)}
+\label{group__plugin__exports_ga7cb4e2769bee1dca182b4432a900bc70}
+
+\begin{DoxyCompactList}\small\item\em Called to fill information about the plugin, see \hyperlink{group__plugin__exports_gaf90c03438b94cc76e7b8a54d445ec106}{GetPluginAttributesValidated}. \item\end{DoxyCompactList}\item 
+\hypertarget{group__plugin__exports_ga7164d2e9a268c6e44a296e9488df69cd}{
+typedef void($\ast$ \hyperlink{group__plugin__exports_ga7164d2e9a268c6e44a296e9488df69cd}{PluginExportFn\_\-DestroyPlugin} )()}
+\label{group__plugin__exports_ga7164d2e9a268c6e44a296e9488df69cd}
+
+\begin{DoxyCompactList}\small\item\em Called before plugin is unloaded from openrave. See \hyperlink{group__plugin__exports_gad6773d91dae37d0ba9de59d2a05277e4}{DestroyPlugin}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+OpenRAVE::InterfaceBasePtr \hyperlink{group__plugin__exports_ga468c900067e08689383b3f8da642141f}{CreateInterfaceValidated} (OpenRAVE::InterfaceType type, const std::string \&name, std::istream \&sinput, OpenRAVE::EnvironmentBasePtr penv)
+\begin{DoxyCompactList}\small\item\em {\bfseries {\bfseries }\mbox{[}helper\mbox{]}} Validated function callback for creating an interface function. No checks need to be made on the parmaeters. \item\end{DoxyCompactList}\item 
+void \hyperlink{group__plugin__exports_gaf90c03438b94cc76e7b8a54d445ec106}{GetPluginAttributesValidated} (\hyperlink{classOpenRAVE_1_1PLUGININFO}{OpenRAVE::PLUGININFO} \&info)
+\begin{DoxyCompactList}\small\item\em {\bfseries {\bfseries }\mbox{[}helper\mbox{]}} Validated function callback for returning a plugin's information. No checks need to be made on the parmaeters. \item\end{DoxyCompactList}\item 
+\hypertarget{group__plugin__exports_ga6251cc7d3b33f6109ca5d346def08370}{
+OPENRAVE\_\-PLUGIN\_\-API OpenRAVE::InterfaceBasePtr \hyperlink{group__plugin__exports_ga6251cc7d3b33f6109ca5d346def08370}{OpenRAVECreateInterface} (OpenRAVE::InterfaceType type, const std::string \&name, const char $\ast$interfacehash, const char $\ast$envhash, OpenRAVE::EnvironmentBasePtr penv)}
+\label{group__plugin__exports_ga6251cc7d3b33f6109ca5d346def08370}
+
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}export\mbox{]}} Definition of a plugin export. Requires \hyperlink{group__plugin__exports_ga468c900067e08689383b3f8da642141f}{CreateInterfaceValidated} to be defined. \item\end{DoxyCompactList}\item 
+\hypertarget{group__plugin__exports_gafc96682ac1d9ff550d6f95d1837f3dc6}{
+OPENRAVE\_\-PLUGIN\_\-API void \hyperlink{group__plugin__exports_gafc96682ac1d9ff550d6f95d1837f3dc6}{OpenRAVEGetPluginAttributes} (\hyperlink{classOpenRAVE_1_1PLUGININFO}{OpenRAVE::PLUGININFO} $\ast$pinfo, int size, const char $\ast$infohash)}
+\label{group__plugin__exports_gafc96682ac1d9ff550d6f95d1837f3dc6}
+
+\begin{DoxyCompactList}\small\item\em {\bfseries {\bfseries }\mbox{[}export\mbox{]}} Definition of a plugin export. Requires \hyperlink{group__plugin__exports_gaf90c03438b94cc76e7b8a54d445ec106}{GetPluginAttributesValidated} to be defined. \item\end{DoxyCompactList}\item 
+\hypertarget{group__plugin__exports_gad6773d91dae37d0ba9de59d2a05277e4}{
+OPENRAVE\_\-PLUGIN\_\-API void \hyperlink{group__plugin__exports_gad6773d91dae37d0ba9de59d2a05277e4}{DestroyPlugin} ()}
+\label{group__plugin__exports_gad6773d91dae37d0ba9de59d2a05277e4}
+
+\begin{DoxyCompactList}\small\item\em {\bfseries {\bfseries }\mbox{[}export\mbox{]}} Stub function to be defined by plugin that includes rave/pluginh. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Every plugin needs to export these functions 
+
+\subsubsection{Function Documentation}
+\hypertarget{group__plugin__exports_ga468c900067e08689383b3f8da642141f}{
+\index{plugin\_\-exports@{plugin\_\-exports}!CreateInterfaceValidated@{CreateInterfaceValidated}}
+\index{CreateInterfaceValidated@{CreateInterfaceValidated}!plugin_exports@{plugin\_\-exports}}
+\paragraph[{CreateInterfaceValidated}]{\setlength{\rightskip}{0pt plus 5cm}OpenRAVE::InterfaceBasePtr CreateInterfaceValidated (OpenRAVE::InterfaceType {\em type}, \/  const std::string \& {\em name}, \/  std::istream \& {\em sinput}, \/  OpenRAVE::EnvironmentBasePtr {\em penv})}\hfill}
+\label{group__plugin__exports_ga468c900067e08689383b3f8da642141f}
+
+
+{\bfseries {\bfseries }\mbox{[}helper\mbox{]}} Validated function callback for creating an interface function. No checks need to be made on the parmaeters. 
+
+If possible, always returns a valid pointer regardless of initialization failure since the actual interface pointer stores documentation information and is used in introspection. Only use when rave/pluginh is included. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em type}]the interface type \item[\mbox{$\leftarrow$} {\em name}]the lowercase letters of the interface name \item[\mbox{$\leftarrow$} {\em sinput}]a stream to the rest of the input args to \hyperlink{group__plugin__exports_ga6251cc7d3b33f6109ca5d346def08370}{OpenRAVECreateInterface} \item[\mbox{$\leftarrow$} {\em penv}]the environment pointer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the interface if one could have been created. 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Examples: ]\par
+\hyperlink{customreader_8cpp-example}{customreader.cpp}, and \hyperlink{plugincpp_8cpp-example}{plugincpp.cpp}.\end{Desc}
+\hypertarget{group__plugin__exports_gaf90c03438b94cc76e7b8a54d445ec106}{
+\index{plugin\_\-exports@{plugin\_\-exports}!GetPluginAttributesValidated@{GetPluginAttributesValidated}}
+\index{GetPluginAttributesValidated@{GetPluginAttributesValidated}!plugin_exports@{plugin\_\-exports}}
+\paragraph[{GetPluginAttributesValidated}]{\setlength{\rightskip}{0pt plus 5cm}void GetPluginAttributesValidated ({\bf OpenRAVE::PLUGININFO} \& {\em info})}\hfill}
+\label{group__plugin__exports_gaf90c03438b94cc76e7b8a54d445ec106}
+
+
+{\bfseries {\bfseries }\mbox{[}helper\mbox{]}} Validated function callback for returning a plugin's information. No checks need to be made on the parmaeters. 
+
+This function is called only once initially to determine what the plugin offers. It should be the safest funcdtion and should not create any static resources for the plugin. Only use when rave/pluginh is included. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em info}]Holds information on what services this plugin provides. \end{DoxyParams}

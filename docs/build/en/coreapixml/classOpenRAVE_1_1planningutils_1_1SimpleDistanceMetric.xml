@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric" kind="class" prot="public">
+    <compoundname>OpenRAVE::planningutils::SimpleDistanceMetric</compoundname>
+    <includes refid="planningutils_8h" local="no">planningutils.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric_1a509c536961a51f5b102005d7bf778ecb" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+        <definition>RobotBasePtr _robot</definition>
+        <argsstring></argsstring>
+        <name>_robot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="94" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric_1abef4d36e1b419fb7950b2f7537120709" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; weights2</definition>
+        <argsstring></argsstring>
+        <name>weights2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="95" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric_1a2ed4ccee9c3b2a8592d1bfcbb28fee42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SimpleDistanceMetric</definition>
+        <argsstring>(RobotBasePtr robot)</argsstring>
+        <name>SimpleDistanceMetric</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>robot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric_1ac464d9ec17660500c738c7286bdddb44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal Eval</definition>
+        <argsstring>(const std::vector&lt; dReal &gt; &amp;c0, const std::vector&lt; dReal &gt; &amp;c1)</argsstring>
+        <name>Eval</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>c0</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>c1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>simple distance metric based on joint weights </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1846">
+        <label>vector&lt; dReal &gt;</label>
+      </node>
+      <node id="1845">
+        <label>SimpleDistanceMetric</label>
+        <link refid="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric"/>
+        <childnode refid="1846" relation="usage">
+          <edgelabel>weights2</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="89" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="88" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric_1a509c536961a51f5b102005d7bf778ecb" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::SimpleDistanceMetric</scope><name>_robot</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric_1ac464d9ec17660500c738c7286bdddb44" prot="public" virt="non-virtual"><scope>OpenRAVE::planningutils::SimpleDistanceMetric</scope><name>Eval</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric_1a2ed4ccee9c3b2a8592d1bfcbb28fee42" prot="public" virt="non-virtual"><scope>OpenRAVE::planningutils::SimpleDistanceMetric</scope><name>SimpleDistanceMetric</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric_1abef4d36e1b419fb7950b2f7537120709" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::SimpleDistanceMetric</scope><name>weights2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

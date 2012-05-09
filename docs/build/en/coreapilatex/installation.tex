@@ -1,0 +1,309 @@
+OpenRAVE uses \href{http://www.cmake.org/}{\tt CMake}, which can create the correct build systems files for a variety of system configurations. Refer to the pages below for specific systems:
+
+
+\begin{DoxyItemize}
+\item \hyperlink{installation__linux}{Building and Installing on Linux}
+\item \hyperlink{installation__windows}{Building and Installing on Windows}
+\item \hyperlink{installation__macosx}{Building and Installing on Mac OSX}
+\end{DoxyItemize}\hypertarget{installation_installation_cmake}{}\subsection{CMake Options}\label{installation_installation_cmake}
+The root Makefile creates a {\ttfamily build} directory and calls cmake with a set of options. All compiled object files are stored in {\ttfamily build}. There are many cmake options that control how OpenRAVE is built. Once OpenRAVE is built, most of them can be set by executing
+
+\begin{DoxyVerb}
+ccmake build
+\end{DoxyVerb}
+
+
+in the root sources folder. It is also possible to call cmake from the command line with a new set of options:
+
+\begin{DoxyVerb}
+cd build; cmake -DCMAKE_INSTALL_PREFIX=/my/new/install/dir -DCMAKE_BUILD_TYPE=Debug ..
+\end{DoxyVerb}
+
+
+
+\begin{DoxyItemize}
+\item {\bfseries Video Recording} To disable ffmpeg video recording, find the {\ttfamily OPT\_\-VIDEORECORDING} option and turn it to {\ttfamily OFF}. It is possible to set these options during the cmake build time by executing cmake yourself \begin{DoxyVerb}
+cmake -DOPT_VIDEORECORDING=OFF ..
+\end{DoxyVerb}
+
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item {\bfseries Double Precision} To compile OpenRAVE with {\bfseries double precision} (ie all dReal types become {\bfseries doubles}), set {\ttfamily OPT\_\-DOUBLE\_\-PRECISION} to {\ttfamily ON} during cmake. For example: \begin{DoxyVerb}
+cmake -DOPT_DOUBLE_PRECISION=ON ..
+\end{DoxyVerb}
+
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item {\bfseries Static Libraries} To also build static libraries of openrave use the {\ttfamily OPT\_\-STATIC} option. Plugins will still be linked dynamically. \begin{DoxyVerb}
+cmake -DOPT_STATIC=ON ..
+\end{DoxyVerb}
+
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item {\bfseries Plugin Compilation} It is possible to only compile the core and skip the plugins using the {\ttfamily OPT\_\-PLUGINS} option. \begin{DoxyVerb}
+cmake -DOPT_PLUGINS=OFF ..
+\end{DoxyVerb}
+
+\end{DoxyItemize}\hypertarget{installation_install_structure}{}\subsection{Install Directory Structure}\label{installation_install_structure}
+
+\begin{DoxyItemize}
+\item bin
+\begin{DoxyItemize}
+\item \hyperlink{p__basic__usage}{openrave} -\/ Start a simple environment and attach the default viewer, collision checkers, physics engines, and servers.
+\item \href{http://openrave.org/en/main/command_line_tools.html#openrave-py}{\tt {\bfseries openrave.py}} -\/ Start a simple environment through \href{http://openrave.org/en/main/tutorials/openravepy_beginning.html#openravepy-beginning}{\tt openravepy}. Allows access to all openrave functionality including database generation and examples.
+\item \hyperlink{openrave__config}{openrave-\/config} -\/ configuration file that helps users find the OpenRAVE installation.
+\item openrave-\/hashpy -\/ Query the body and robot hashes.
+\end{DoxyItemize}
+\item include
+\begin{DoxyItemize}
+\item openrave -\/ Directory for all public OpenRAVE header files.
+\item {\bfseries openrave-\/core.h} -\/ Header file for instantiating the \hyperlink{namespaceOpenRAVE}{OpenRAVE} Core
+\end{DoxyItemize}
+\item lib
+\begin{DoxyItemize}
+\item {\bfseries libopenrave} (.so, .a, .dll, .lib) -\/ Library that all plugins should link to offering the \hyperlink{group__interfaces}{Base Interface Classes}.
+\item {\bfseries libopenrave-\/core} (.so, .a, .dll, .lib) -\/ Library that allows any application to start the OpenRAVE core internally.
+\item cmake
+\begin{DoxyItemize}
+\item openraveX.Y
+\begin{DoxyItemize}
+\item {\bfseries openrave-\/config.cmake} -\/ cmake file for searching for openrave installations
+\item {\bfseries openrave-\/config-\/version.cmake} -\/ cmake file for searching for openrave installations
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item pythonX.Y
+\begin{DoxyItemize}
+\item site-\/packages (dist-\/packages)
+\begin{DoxyItemize}
+\item openravepy -\/ Python bindings, database generators, and examples. Directory structure is explained \href{http://openrave.org/en/main/tutorials/openravepy_beginning.html#openravepy-beginning}{\tt here}.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item share
+\begin{DoxyItemize}
+\item openrave
+\begin{DoxyItemize}
+\item cppexamples -\/ All C++ examples
+\begin{DoxyItemize}
+\item {\bfseries CMakeLists.txt} -\/ The \href{http://www.cmake.org/}{\tt cmake} file used to compile all the examples.
+\end{DoxyItemize}
+\item data -\/ Loadable OpenRAVE environment and object files.
+\item matlab -\/ All Matlab scripting functions and examples. Include this directory into the MATLAB path.
+\item models -\/ 3D model resources
+\item octave -\/ All Octave scripting functions and examples. Include this directory into the OCTAVE\_\-PATH.
+\item plugins -\/ Plugins compiled by the OpenRAVE main distribution.
+\item robots -\/ Robot XML files usually containing just a {\ttfamily $<$robot$>$} or {\ttfamily $<$kinbody$>$} tag. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{installation_linux}{}\subsection{Building and Installing on Linux}\label{installation_linux}
+Download the sources from \href{http://sourceforge.net/projects/openrave}{\tt sourceforge}.
+
+\begin{DoxyVerb}
+svn co https://openrave.svn.sourceforge.net/svnroot/openrave/tags/latest_stable openrave
+\end{DoxyVerb}
+
+
+OpenRAVE works only with qt4! Before compiling SoQt or OpenRAVE make sure to remove any qt3 related dev packages like {\ttfamily qt3-\/dev-\/tools} or {\ttfamily libqt3-\/headers}.
+
+If there are compilation errors with templates, might have to use gcc version 4.1 or greater. You can check your version of gcc by {\ttfamily gcc -\/-\/version}\hypertarget{installation__linux_ilinux_package}{}\subsubsection{Installing from Package Manager}\label{installation__linux_ilinux_package}
+\hypertarget{installation__linux_ilinux_ubuntu}{}\paragraph{Ubuntu}\label{installation__linux_ilinux_ubuntu}
+\begin{DoxyVerb}
+sudo add-apt-repository ppa:openrave/release
+sudo sh -c 'echo "deb-src http://ppa.launchpad.net/openrave/release/ubuntu `lsb_release -cs` main" >> /etc/apt/sources.list.d/openrave-release-`lsb_release -cs`.list'
+sudo apt-get update
+sudo apt-get build-dep openrave
+\end{DoxyVerb}
+\hypertarget{installation__linux_ilinux_fedora}{}\paragraph{Fedora Core Users}\label{installation__linux_ilinux_fedora}
+Might need to add the livna yum repository for ffmpeg. To install the necessary packages type
+
+\begin{DoxyVerb}
+sudo yum install qt4-devel Coin2-devel glew-devel gsm-devel x264 x264-devel ffmpeg-devel libdc1394-devel libtheora-devel libmp4v2-devel ode-devel boost-devel cmake
+\end{DoxyVerb}
+
+
+Be careful if installing {\bfseries soqt-\/devel} from the package manager, it may be compiled with the wrong version of Qt. If compiling SoQt from sources, check {\ttfamily QTDIR} and make sure it points to the correct version.\hypertarget{installation__linux_ilinux_libraries}{}\subsubsection{Necessary libraries for Old Linux Distros}\label{installation__linux_ilinux_libraries}
+(Only install these libraries from sources if not in package manager.
+
+
+\begin{DoxyItemize}
+\item {\bfseries } \href{http://www.boost.org/users/download/}{\tt boost}
+\item {\bfseries } \href{http://www.coin3d.org}{\tt Coin3d}
+\item {\bfseries } \href{ftp://ftp.coin3d.org/pub/snapshots/SoQt-latest.tar.gz}{\tt SoQt}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item {\bfseries x86-\/64 users:} SoQt might give a compilation error in SoQtComponent.cpp. To fix it, go into {\ttfamily src/Inventor/Qt/SoQtComponent.cpp}:103 and replace {\ttfamily unsigned long key} with {\ttfamily SbDict::Key key}. 
+\end{DoxyItemize}\hypertarget{installation__linux_ilinux_collisionphysics}{}\subsubsection{Collision Checkers and Physics Simulators}\label{installation__linux_ilinux_collisionphysics}
+Although OpenRAVE is not tied to any particular collision checker, it requires at least one is installed to get basic functions. Here are the following libraries that have OpenRAVE plugins:
+
+
+\begin{DoxyItemize}
+\item \href{http://www.ode.org}{\tt ODE Collision/Physics} -\/ install from sources 0.8-\/0.10.1 tested to work. It is possible to compile ODE with double precision.
+\begin{DoxyItemize}
+\item For 0.10.1, configuring with {\ttfamily -\/-\/enable-\/new-\/trimesh} option will randomly crash openrave, so use at your own risk.
+\item If not using enable-\/new-\/trimesh, disabling asserts (via {\ttfamily -\/-\/disable-\/asserts}) is necessary due to some weird bug in normalization bug.
+\item For 0.10+. If installing on x86-\/64 distro, configure ODE with {\ttfamily -\/-\/enable-\/shared}.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item \href{http://www.bulletphysics.com}{\tt Bullet Collision} -\/ Need to install to a system directory so OpenRAVE can find it using {\ttfamily pkg-\/config}. If using autotools {\ttfamily configure}, need to remove {\ttfamily install-\/sh} before running {\ttfamily autogen.sh}. Bullet is detected using {\ttfamily pkg-\/config}, so {\ttfamily bullet.pc} is needed.
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item \href{http://www.cs.unc.edu/~geom/SSV/}{\tt PQP Collision} -\/ source code separate inside {\bfseries pqprave} plugin.
+\end{DoxyItemize}\hypertarget{installation__linux_ilinux_python}{}\subsubsection{Python}\label{installation__linux_ilinux_python}
+In order to use the python bindings through the \href{http://openrave.org/en/main/tutorials/openravepy_beginning.html#openravepy-beginning}{\tt openravepy} module, you'll need to install python, boost python, python numpy, and python sympy. .
+
+To setup the python path in bash add the following line:
+
+\begin{DoxyVerb}
+export PYTHONPATH=$PYTHONPATH:`openrave-config --python-dir`
+\end{DoxyVerb}
+\hypertarget{installation__linux_ilinux_octavematlab}{}\subsubsection{Octave/Matlab}\label{installation__linux_ilinux_octavematlab}
+Both \href{http://www.gnu.org/software/octave/}{\tt Octave} and Matlab are supported and the OpenRAVE build system automatically detects and compiles the mex files for each.
+
+Octave users:
+\begin{DoxyItemize}
+\item Make sure {\ttfamily mkoctfile} is in your path. If installing octave from the package managers, also install the {\bfseries octave headers} package.
+\item Add {\ttfamily \$OPENRAVE\_\-INSTALL/share/openrave/octave} to OCTAVE\_\-PATH (default is {\ttfamily /usr/local/share/openrave/octave}).
+\end{DoxyItemize}
+
+Matlab users:
+\begin{DoxyItemize}
+\item make sure {\ttfamily mex} is in the system path
+\item Compile the $\ast$.cpp files inside {\ttfamily \$OPENRAVE\_\-INSTALL/share/openrave-\/x}.y/matlab and addit to the MATLAB Path.
+\end{DoxyItemize}\hypertarget{installation__linux_ilinux_building}{}\subsubsection{Building OpenRAVE}\label{installation__linux_ilinux_building}
+After all necessary libraries have been installed, it is time to finally build and install OpenRAVE. In the root openrave folder type
+
+\begin{DoxyVerb}
+make
+\end{DoxyVerb}
+
+
+This will compile all files. To install all the files type
+
+\begin{DoxyVerb}
+make install
+\end{DoxyVerb}
+
+
+Because multiple openrave versions can co-\/exist in a system, to install all files except symlinks so that previous installations are not clobbered, do:
+
+\begin{DoxyVerb}
+make altinstall
+\end{DoxyVerb}
+
+
+To choose a different install directory, type
+
+\begin{DoxyVerb}
+make prefix=/my/new/dir
+\end{DoxyVerb}
+
+
+In case libraries are added after the initial install of OpenRAVE, remove the cmake cached files using:
+
+\begin{DoxyVerb}
+rm build/CMakeCache.txt
+\end{DoxyVerb}
+
+
+If the cached files are not removed, the new system settings will not be noticed.\hypertarget{installation__linux_ilinux_bash}{}\subsubsection{Bash Shell}\label{installation__linux_ilinux_bash}
+Can enable automatic completion of several openrave programs like {\ttfamily openrave.py} by sourcing the {\ttfamily openravebash} file. Add this to your {\ttfamily $\sim$}./.bashrc file:
+
+\begin{DoxyVerb}
+source `openrave-config --prefix`/share/openrave/openravebash
+\end{DoxyVerb}
+ \hypertarget{installation_windows}{}\subsection{Building and Installing on Windows}\label{installation_windows}
+{\bfseries NOTE:} Only Windows XP has been tested. Windows 7 and others have been reported to work, but might need to modify the executable properties to {\bfseries windows95 compatibility mode} after the executable has been built.
+
+It is recommended to use \hyperlink{namespaceOpenRAVE}{OpenRAVE} from the official \href{http://sourceforge.net/projects/openrave/files/}{\tt Windows Installers on Sourceforge}.\hypertarget{installation__windows_iwin_octavematlab}{}\subsubsection{Installation of 3rd Party Software}\label{installation__windows_iwin_octavematlab}
+Download the sources from \href{http://sourceforge.net/projects/openrave}{\tt sourceforge} (\href{http://tortoisesvn.net/downloads.html/}{\tt Tortoise SVN} is recommended). The subversion url is:
+
+\begin{DoxyVerb}
+https://openrave.svn.sourceforge.net/svnroot/openrave/tags/latest_stable
+\end{DoxyVerb}
+
+
+Check out the openrave sources {\bfseries in a path whose directories do not contain spaces}!!!. For example {\ttfamily C:$\backslash$openrave}.
+
+A lot of the 3rd party libraries are already inside the openrave sources. However, the following need to be installed:
+
+
+\begin{DoxyItemize}
+\item \href{http://www.boostpro.com/download/}{\tt Latest Boost C++ Libraries} -\/ Select {\bfseries Multithreaded DLL}!
+\begin{DoxyItemize}
+\item A local boost installation is included in the sources in case cannot use a system install.
+\end{DoxyItemize}
+\item \href{http://code.google.com/p/qt-msvc-installer/downloads/list}{\tt Qt4 MSVC Installer}
+\item \href{http://www.cmake.org/cmake/resources/software.html}{\tt CMake}.
+\item For openravepy python bindings ({\bfseries make sure Python version is compatible with Boost.Python! 2.6 is recommended!}):
+\begin{DoxyItemize}
+\item \href{http://python.org/download/releases/2.6.6}{\tt Python 2.6.6}
+\item \href{http://sourceforge.net/projects/numpy/files}{\tt numpy superpack}
+\item {\bfseries Highly Recommended:} \href{http://ipython.scipy.org/moin/PyReadline/Intro}{\tt PyReadline} and \href{http://ipython.scipy.org/moin/Download}{\tt IPython}
+\item {\bfseries Recommended:} \href{http://sourceforge.net/projects/scipy/files/}{\tt SciPy} -\/ the scientific library for Python is recommended.
+\item \href{http://code.google.com/p/sympy/downloads/list}{\tt SymPy} -\/ Python Symbolic Mathematics.
+\item {\bfseries openravepy} will not compile in Debug mode unless the Python debug libraries are also installed.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{installation__windows_iwin_octavematlab}{}\paragraph{Installation of 3rd Party Software}\label{installation__windows_iwin_octavematlab}
+Both \href{http://www.gnu.org/software/octave/}{\tt Octave} and Matlab are supported and the OpenRAVE build system automatically detects and compiles the mex files for each.
+
+
+\begin{DoxyItemize}
+\item If using Octave, make sure to add the path to {\ttfamily mkoctfile} to the \$Path environment variable. If you are using Matlab, make sure that the path to {\ttfamily mex} is in the PATH environment variable (ie, typing {\ttfamily mex} on the command line gives the MATLAB compiler). On Windows Mik-\/Tex overwrites the {\ttfamily mex} program with its own version, so any matlab paths have to be declared before Mik-\/Tex in the PATH variable. You can check if the paths are set correctly by starting up the command prompt and typing {\ttfamily mkoctfile} or {\ttfamily mex}.
+\end{DoxyItemize}
+
+Octave users:
+\begin{DoxyItemize}
+\item Make sure {\ttfamily mkoctfile} is in your system path.
+\item If you having problems with the JVM, try installing octave using gnuplot (rather than jhandles).
+\item Compiling mex files should use the same compiler as was used to build the Octave package. As of October 2008, the official Octave binaries are compiled with Visual Studio 2005 (freely available).
+\item Add {\ttfamily \$OPENRAVE\_\-INSTALL$\backslash$share$\backslash$openrave$\backslash$octave} to the Octave path (default is {\ttfamily C:$\backslash$Program Files$\backslash$openrave$\backslash$share$\backslash$openrave$\backslash$octave}).
+\end{DoxyItemize}
+
+Matlab users:
+\begin{DoxyItemize}
+\item make sure {\ttfamily mex} is in your path and actually points to the Matlab {\ttfamily mex} program.
+\item Compile the $\ast$.cpp files inside {\ttfamily \$OPENRAVE\_\-INSTALL$\backslash$share$\backslash$openrave-\/$\ast$$\backslash$matlab} and addit to the MATLAB Path. Can use runmex.bat for that.
+\end{DoxyItemize}\hypertarget{installation__windows_iwin_building}{}\subsubsection{Building OpenRAVE}\label{installation__windows_iwin_building}
+Run the {\ttfamily CMake} GUI and specify a build directory somewhere out of the current source directory. Click on the Configure and Generate buttons. For Visual Studio users, this will generate a {\bfseries OpenRAVE.sln} file. Open the Microsoft Visual Studio solution file and select the {\bfseries RelWithDebInfo} or {\bfseries Release} configuration, and build everything. Once done, build the INSTALL project. This should install everything in {\ttfamily C:$\backslash$Program Files$\backslash$openrave}. The installation directory can be changed by configuring {\ttfamily CMake's} CMAKE\_\-INSTALL\_\-PREFIX variable to a new path. If using the command-\/line, can specify the install directory with {\ttfamily -\/DCMAKE\_\-INSTALL\_\-PREFIX=\char`\"{}my/new/install/dir\char`\"{}}.
+
+Before running anything, have to modify the following environment variables:
+\begin{DoxyItemize}
+\item {\ttfamily PYTHONPATH} -\/ add {\ttfamily \char`\"{}C:$\backslash$$\backslash$Program Files$\backslash$$\backslash$openrave$\backslash$$\backslash$share$\backslash$$\backslash$openrave\char`\"{}}
+\item {\ttfamily Path} -\/ add {\ttfamily \char`\"{}C:$\backslash$$\backslash$Program Files$\backslash$$\backslash$openrave$\backslash$$\backslash$bin\char`\"{}} to the front. Furthermore, if Qt and Boost are installed in separate directories, have to add the location of their DLLs to Path (for example {\ttfamily C:$\backslash$Qt$\backslash$4.7.1$\backslash$bin} and {\ttfamily C:$\backslash$Program Files$\backslash$boost$\backslash$boost\_\-1\_\-44$\backslash$lib}). Be very careful when putting it in the back since several user have had problems with different Qt libraries conflicting!
+\end{DoxyItemize}\hypertarget{installation__windows_iwin_updating}{}\subsubsection{Updating Subversion}\label{installation__windows_iwin_updating}
+Whenever updating subversion, it should just be sufficient to run {\ttfamily runcmake\_\-win.bat} again and then open the solution file build all the projects, and then manually build the INSTALL project. If an update to libraries or programs happens (for example Octave/MATLAB/python was installed/uninstalled), it is recommended to clear the cmake cache by first removing {\ttfamily build$\backslash$CMakeCache.txt} before running {\ttfamily runcmake\_\-win.bat}. \hypertarget{installation_macosx}{}\subsection{Building and Installing on Mac OSX}\label{installation_macosx}
+First execute this command:
+
+\begin{DoxyVerb}
+sudo port install cmake boost libxml2 glew py27-numpy py27-pyplusplus
+\end{DoxyVerb}
+
+
+The py27-\/xx are for python 2.7 users. If a different version of python will be used, the names will have to change correspondingly. Note that OpenRAVE automatically chooses the newest version of python it can find, therefore it is necessary that the python bindings also correspond to this version.
+
+Sometimes it is easiest to install boost python directly from sources. Once installed, make sure to set the {\ttfamily BOOST\_\-ROOT} environment variable to point to it before compiling OpenRAVE.
+
+It is also necessary to install these libraries:
+
+
+\begin{DoxyItemize}
+\item \href{http://trolltech.com/developer/downloads/qt/mac}{\tt Qt} -\/ download the installer. Users have reported problems with using {\bfseries port install qt4-\/mac} due to Cocoa. It is highly recommended to use the official qt4 installer package.
+\item \href{http://www.coin3d.org/lib/coin}{\tt Coin3D} -\/ build from sources
+\item \href{http://www.coin3d.org/lib/soqt}{\tt SoQt} -\/ build from sources. Might ask you to set QTDIR to the correct directory.
+\item ffmpeg and other video recording codecs
+\end{DoxyItemize}
+
+After this, follow the instructions on \hyperlink{installation__linux}{Building and Installing on Linux}. 

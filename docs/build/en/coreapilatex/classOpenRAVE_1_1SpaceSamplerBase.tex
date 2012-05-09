@@ -1,0 +1,142 @@
+\hypertarget{classOpenRAVE_1_1SpaceSamplerBase}{
+\subsection{SpaceSamplerBase Class Reference}
+\label{classOpenRAVE_1_1SpaceSamplerBase}\index{OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} Contains space samplers commonly used in planners. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__spacesampler}{SpaceSampler Concepts}.  
+
+
+
+
+Inheritance diagram for SpaceSamplerBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{classOpenRAVE_1_1SpaceSamplerBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for SpaceSamplerBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{classOpenRAVE_1_1SpaceSamplerBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1SpaceSamplerBase_a0841286ea829596bce2ceab61ef3645c}{
+virtual void \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_a0841286ea829596bce2ceab61ef3645c}{SetSeed} (uint32\_\-t seed) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION}
+\label{classOpenRAVE_1_1SpaceSamplerBase_a0841286ea829596bce2ceab61ef3645c}
+
+\begin{DoxyCompactList}\small\item\em sets a new seed. For sequence samplers, the seed describes the n$^\wedge$th sample to begin at. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SpaceSamplerBase_adda3b11ca875fd0b90192d3700fdc024}{
+virtual void \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_adda3b11ca875fd0b90192d3700fdc024}{SetSpaceDOF} (int dof) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION}
+\label{classOpenRAVE_1_1SpaceSamplerBase_adda3b11ca875fd0b90192d3700fdc024}
+
+\begin{DoxyCompactList}\small\item\em Sets the degrees of freedom of the space (note this is different from the parameterization dimension). \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1SpaceSamplerBase_a50e5a2752e24bf4c5dfaa2873696a5a9}{
+virtual int \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_a50e5a2752e24bf4c5dfaa2873696a5a9}{GetDOF} () const =0}
+\label{classOpenRAVE_1_1SpaceSamplerBase_a50e5a2752e24bf4c5dfaa2873696a5a9}
+
+\begin{DoxyCompactList}\small\item\em returns the degrees of freedom of the sampling space \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_a1c2746b270bee7389df0b315a18a719c}{GetNumberOfValues} () const =0
+\begin{DoxyCompactList}\small\item\em Dimension of the return samples. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_a01de3c15828fffc3e8fde1384735f428}{GetLimits} (std::vector$<$ dReal $>$ \&vLowerLimit, std::vector$<$ dReal $>$ \&vUpperLimit) const OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em returns the minimum and maximum values returned for each dimension (size is \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_a1c2746b270bee7389df0b315a18a719c}{GetNumberOfValues()}) \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_afb999fb02a4ba0107783be362f3ec6fe}{GetLimits} (std::vector$<$ uint32\_\-t $>$ \&vLowerLimit, std::vector$<$ uint32\_\-t $>$ \&vUpperLimit) const OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em returns the minimum and maximum values returned for each dimension (size is \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_a1c2746b270bee7389df0b315a18a719c}{GetNumberOfValues()}) \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_ac7edf671cbb636f75edb247680ea6a87}{SampleSequence} (std::vector$<$ dReal $>$ \&samples, size\_\-t num=1, \hyperlink{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937}{IntervalType} interval=IT\_\-Closed) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em sequentially sampling returning the next 'num' samples \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_a34363c72ec66a1249f4c94000d15fd7b}{SampleSequence} (std::vector$<$ uint32\_\-t $>$ \&sample, size\_\-t num=1) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em sequentially sampling returning the next 'num' samples \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_a090abc1c115a60100fc8ed5c85a5ebc2}{SampleComplete} (std::vector$<$ dReal $>$ \&samples, size\_\-t num, \hyperlink{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937}{IntervalType} interval=IT\_\-Closed) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em returns N samples that best approximate the entire sampling space. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_a996ca169f30d50c4b58f7dd249d312c9}{SampleComplete} (std::vector$<$ uint32\_\-t $>$ \&samples, size\_\-t num) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em returns N samples that best approximate the entire sampling space. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1SpaceSamplerBase_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1SpaceSamplerBase_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em return the static interface type this class points to (used for safe casting) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} Contains space samplers commonly used in planners. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__spacesampler}{SpaceSampler Concepts}. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1SpaceSamplerBase_afb999fb02a4ba0107783be362f3ec6fe}{
+\index{OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}}
+\paragraph[{GetLimits}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetLimits (std::vector$<$ uint32\_\-t $>$ \& {\em vLowerLimit}, \/  std::vector$<$ uint32\_\-t $>$ \& {\em vUpperLimit}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SpaceSamplerBase_afb999fb02a4ba0107783be362f3ec6fe}
+
+
+returns the minimum and maximum values returned for each dimension (size is \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_a1c2746b270bee7389df0b315a18a719c}{GetNumberOfValues()}) 
+
+By default the limits should be \mbox{[}0,2$^\wedge$32-\/1\mbox{]} \hypertarget{classOpenRAVE_1_1SpaceSamplerBase_a01de3c15828fffc3e8fde1384735f428}{
+\index{OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}}
+\paragraph[{GetLimits}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetLimits (std::vector$<$ dReal $>$ \& {\em vLowerLimit}, \/  std::vector$<$ dReal $>$ \& {\em vUpperLimit}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SpaceSamplerBase_a01de3c15828fffc3e8fde1384735f428}
+
+
+returns the minimum and maximum values returned for each dimension (size is \hyperlink{classOpenRAVE_1_1SpaceSamplerBase_a1c2746b270bee7389df0b315a18a719c}{GetNumberOfValues()}) 
+
+By default the limits should be in \mbox{[}0,1\mbox{]}$^\wedge$N. \hypertarget{classOpenRAVE_1_1SpaceSamplerBase_a1c2746b270bee7389df0b315a18a719c}{
+\index{OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}!GetNumberOfValues@{GetNumberOfValues}}
+\index{GetNumberOfValues@{GetNumberOfValues}!OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}}
+\paragraph[{GetNumberOfValues}]{\setlength{\rightskip}{0pt plus 5cm}virtual int GetNumberOfValues () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SpaceSamplerBase_a1c2746b270bee7389df0b315a18a719c}
+
+
+Dimension of the return samples. 
+
+Number of values used to represent the parameterization of the space ($>$= dof). For example, let a quaternion describe a 3D rotation. The DOF of the space is 3, while the dimension of the returned samples is 4. \hypertarget{classOpenRAVE_1_1SpaceSamplerBase_a996ca169f30d50c4b58f7dd249d312c9}{
+\index{OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}!SampleComplete@{SampleComplete}}
+\index{SampleComplete@{SampleComplete}!OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}}
+\paragraph[{SampleComplete}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SampleComplete (std::vector$<$ uint32\_\-t $>$ \& {\em samples}, \/  size\_\-t {\em num})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SpaceSamplerBase_a996ca169f30d50c4b58f7dd249d312c9}
+
+
+returns N samples that best approximate the entire sampling space. 
+
+The sampler can fail by returning an array of size 0. \hypertarget{classOpenRAVE_1_1SpaceSamplerBase_a090abc1c115a60100fc8ed5c85a5ebc2}{
+\index{OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}!SampleComplete@{SampleComplete}}
+\index{SampleComplete@{SampleComplete}!OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}}
+\paragraph[{SampleComplete}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SampleComplete (std::vector$<$ dReal $>$ \& {\em samples}, \/  size\_\-t {\em num}, \/  {\bf IntervalType} {\em interval} = {\ttfamily IT\_\-Closed})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SpaceSamplerBase_a090abc1c115a60100fc8ed5c85a5ebc2}
+
+
+returns N samples that best approximate the entire sampling space. 
+
+The sampler can fail by returning an array of size 0. \hypertarget{classOpenRAVE_1_1SpaceSamplerBase_a34363c72ec66a1249f4c94000d15fd7b}{
+\index{OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}!SampleSequence@{SampleSequence}}
+\index{SampleSequence@{SampleSequence}!OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}}
+\paragraph[{SampleSequence}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SampleSequence (std::vector$<$ uint32\_\-t $>$ \& {\em sample}, \/  size\_\-t {\em num} = {\ttfamily 1})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SpaceSamplerBase_a34363c72ec66a1249f4c94000d15fd7b}
+
+
+sequentially sampling returning the next 'num' samples 
+
+The sampler can fail by returning an array of size 0. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sample}]the values of the samples. This is a num$\ast$GetNumberOfValues() array. \item[{\em num}]number of samples to return \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1SpaceSamplerBase_ac7edf671cbb636f75edb247680ea6a87}{
+\index{OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}!SampleSequence@{SampleSequence}}
+\index{SampleSequence@{SampleSequence}!OpenRAVE::SpaceSamplerBase@{OpenRAVE::SpaceSamplerBase}}
+\paragraph[{SampleSequence}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SampleSequence (std::vector$<$ dReal $>$ \& {\em samples}, \/  size\_\-t {\em num} = {\ttfamily 1}, \/  {\bf IntervalType} {\em interval} = {\ttfamily IT\_\-Closed})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1SpaceSamplerBase_ac7edf671cbb636f75edb247680ea6a87}
+
+
+sequentially sampling returning the next 'num' samples 
+
+The sampler can fail by returning an array of size 0. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sample}]the values of the samples. This is a num$\ast$GetNumberOfValues() array. \item[{\em num}]number of samples to return \item[{\em interval}]the sampling intervel for each of the dimensions. \end{DoxyParams}

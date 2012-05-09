@@ -1,0 +1,865 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1ConfigurationSpecification" kind="class" prot="public">
+    <compoundname>OpenRAVE::ConfigurationSpecification</compoundname>
+    <includes refid="openrave_8h" local="no">openrave.h</includes>
+    <innerclass refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group" prot="public">OpenRAVE::ConfigurationSpecification::Group</innerclass>
+    <innerclass refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Reader" prot="public">OpenRAVE::ConfigurationSpecification::Reader</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1ConfigurationSpecification_1a63d9b7e5c662b5da5584f0d927368812" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group" kindref="compound">Group</ref> &gt;</type>
+        <definition>std::vector&lt;Group&gt; _vgroups</definition>
+        <argsstring></argsstring>
+        <name>_vgroups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1012" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1012" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a2604e7d09eac46b2cd1aa71bde874c96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~ConfigurationSpecification</definition>
+        <argsstring>()</argsstring>
+        <name>~ConfigurationSpecification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="872" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="872" bodyend="873"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1ac938a6c271285a5468b805a3243e20e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int GetDOF</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDOF</name>
+        <briefdescription>
+<para>return the dimension of the configuraiton space (degrees of freedom) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="876" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1112" bodyend="1119"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1afa8720abaf6972d6dac22a8cd1a67225" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool IsValid</definition>
+        <argsstring>() const </argsstring>
+        <name>IsValid</name>
+        <briefdescription>
+<para>check if the groups form a continguous space </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="879" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1121" bodyend="1149"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a960ebd93cb8c58ceab0eb48b047faa98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const ConfigurationSpecification &amp;r) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="881" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1151" bodyend="1172"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1ab88bf03e1e56cb6f0ed1d48bb3ea60c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const ConfigurationSpecification &amp;r) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="882" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1174" bodyend="1177"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a00dca7273ad0d271e131ecc1119683c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group" kindref="compound">Group</ref> &gt;::const_iterator</type>
+        <definition>std::vector&lt; ConfigurationSpecification::Group &gt;::const_iterator FindCompatibleGroup</definition>
+        <argsstring>(const Group &amp;g, bool exactmatch=false) const </argsstring>
+        <name>FindCompatibleGroup</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group" kindref="compound">Group</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exactmatch</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>finds the most compatible group to the given group </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the group to query, only the <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a9b45b3e13bd9167aab02e17e08916231" kindref="member">Group::name</ref> and <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a03745287ca42590ead4a18807041fc66" kindref="member">Group::dof</ref> values are used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exactmatch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, will only return groups whose name exactly matches with g.name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an iterator part of _vgroups that represents the most compatible group. If no group is found, will return _vgroups.end() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="889" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1179" bodyend="1221"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a87b31e59fa16769e474a12ba0a9f8e08" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group" kindref="compound">Group</ref> &gt;::const_iterator</type>
+        <definition>std::vector&lt; ConfigurationSpecification::Group &gt;::const_iterator FindTimeDerivativeGroup</definition>
+        <argsstring>(const Group &amp;g, bool exactmatch=false) const </argsstring>
+        <name>FindTimeDerivativeGroup</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group" kindref="compound">Group</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exactmatch</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Return the most compatible group that represents the time-derivative data of the group. </para>        </briefdescription>
+        <detaileddescription>
+<para>For example given a &apos;joint_values&apos; group, this will return the closest &apos;joint_velocities&apos; group. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the group to query, only the <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a9b45b3e13bd9167aab02e17e08916231" kindref="member">Group::name</ref> and <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a03745287ca42590ead4a18807041fc66" kindref="member">Group::dof</ref> values are used </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exactmatch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, will only return groups whose name exactly matches with g.name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an iterator part of _vgroups that represents the most compatible group. If no group is found, will return _vgroups.end() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="897" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1223" bodyend="1246"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a09106b9e4924dea94502089f75b20d89" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AddVelocityGroups</definition>
+        <argsstring>(bool adddeltatime)</argsstring>
+        <name>AddVelocityGroups</name>
+        <param>
+          <type>bool</type>
+          <declname>adddeltatime</declname>
+        </param>
+        <briefdescription>
+<para>adds a velocity group for every position group. </para>        </briefdescription>
+        <detaileddescription>
+<para>If velocities groups already exist, they are checked for and/or modified. Note that the configuration space might be re-ordered as a result of this function call. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adddeltatime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true will add the &apos;deltatime&apos; tag, which is necessary for trajectory sampling </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="905" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1248" bodyend="1313"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a6be51f9b2c8e8199ad72e978b6e6c4da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref></type>
+        <definition>ConfigurationSpecification ConvertToVelocitySpecification</definition>
+        <argsstring>() const </argsstring>
+        <name>ConvertToVelocitySpecification</name>
+        <briefdescription>
+<para>converts all the groups to the corresponding velocity groups and returns the specification </para>        </briefdescription>
+        <detaileddescription>
+<para>The velocity configuration space will have a one-to-one correspondence with the </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="910" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1315" bodyend="1331"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a047529d130cdde5c5fb9e17798a97a6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref></type>
+        <definition>ConfigurationSpecification GetTimeDerivativeSpecification</definition>
+        <argsstring>(int timederivative) const </argsstring>
+        <name>GetTimeDerivativeSpecification</name>
+        <param>
+          <type>int</type>
+          <declname>timederivative</declname>
+        </param>
+        <briefdescription>
+<para>returns a new specification of just particular time-derivative groups. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timederivative</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time derivative to query groups from. 0 is positions/joint values, 1 is velocities, 2 is accelerations, etc </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="915" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1333" bodyend="1365"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a54f613faeb77f06c9942d09833274962" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ResetGroupOffsets</definition>
+        <argsstring>()</argsstring>
+        <name>ResetGroupOffsets</name>
+        <briefdescription>
+<para>set the offsets of each group in order to get a contiguous configuration space </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="919" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1367" bodyend="1374"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a5624a2dfc350dfe608dc26d86b7e7c08" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int AddDeltaTime</definition>
+        <argsstring>()</argsstring>
+        <name>AddDeltaTime</name>
+        <briefdescription>
+<para>adds the deltatime tag to the end if one doesn&apos;t exist and returns the index into the configuration space </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="922" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1376" bodyend="1391"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1abe95cfefe50156e8f37edca80cb87154" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ExtractTransform</definition>
+        <argsstring>(Transform &amp;t, std::vector&lt; dReal &gt;::const_iterator itdata, KinBodyConstPtr pbody) const </argsstring>
+        <name>ExtractTransform</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::const_iterator</type>
+          <declname>itdata</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref></type>
+          <declname>pbody</declname>
+        </param>
+        <briefdescription>
+<para>extracts an affine transform given the start of a configuration space point </para>        </briefdescription>
+        <detaileddescription>
+<para>Looks for &apos;affine_transform&apos; groups. If pbody is not initialized, will choose the first affine_transform found. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inout]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>t the transform holding the default values, which will be overwritten with the new values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">itdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data in the format of this configuration specification. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if at least one group was found for extracting </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="931" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1393" bodyend="1412"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a74cb255b5496f80fa38cbde4cfb853e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ExtractIkParameterization</definition>
+        <argsstring>(IkParameterization &amp;ikparam, std::vector&lt; dReal &gt;::const_iterator itdata, int timederivative=0) const </argsstring>
+        <name>ExtractIkParameterization</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &amp;</type>
+          <declname>ikparam</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::const_iterator</type>
+          <declname>itdata</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timederivative</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>extracts an ikparameterization given the start of a configuration space point </para>        </briefdescription>
+        <detaileddescription>
+<para>Looks for &apos;ikparam&apos; groups. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inout]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ikparam filled with ikparameterization (if found) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">itdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data in the format of this configuration specification </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if at least one group was found for extracting </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="940" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1414" bodyend="1436"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1ac58749acb6422259c079fdb0b62a6d59" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ExtractAffineValues</definition>
+        <argsstring>(std::vector&lt; dReal &gt;::iterator itvalues, std::vector&lt; dReal &gt;::const_iterator itdata, KinBodyConstPtr pbody, int affinedofs, int timederivative=0) const </argsstring>
+        <name>ExtractAffineValues</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::iterator</type>
+          <declname>itvalues</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::const_iterator</type>
+          <declname>itdata</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref></type>
+          <declname>pbody</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>affinedofs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timederivative</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>extracts the affine values </para>        </briefdescription>
+        <detaileddescription>
+<para>Looks for &apos;affine_X&apos; groups. If pbody is not initialized, will choose the first affine_X found. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inout]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>itvalues iterator to vector that holds the default values and will be overwritten with the new values. must be initialized </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">itdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data in the format of this configuration specification. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">affinedofs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the format of the affine dofs requested </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timederivative</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time derivative of the data to extract </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if at least one group was found for extracting </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="951" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1438" bodyend="1476"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a982a9ba9c94e0c983df1824b2464ddef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ExtractJointValues</definition>
+        <argsstring>(std::vector&lt; dReal &gt;::iterator itvalues, std::vector&lt; dReal &gt;::const_iterator itdata, KinBodyConstPtr pbody, const std::vector&lt; int &gt; &amp;indices, int timederivative=0) const </argsstring>
+        <name>ExtractJointValues</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::iterator</type>
+          <declname>itvalues</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::const_iterator</type>
+          <declname>itdata</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref></type>
+          <declname>pbody</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timederivative</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>extracts a body&apos;s joint values given the start of a configuration space point </para>        </briefdescription>
+        <detaileddescription>
+<para>Looks for &apos;joint_X&apos; groups. If pbody is not initialized, will choose the first joint_X found. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inout]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>itvalues iterator to vector that holds the default values and will be overwritten with the new values. must be initialized </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">itdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data in the format of this configuration specification. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the set of DOF indices of the body to extract and write into itvalues. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timederivative</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time derivative of the data to extract </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if at least one group was found for extracting </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="962" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1478" bodyend="1513"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1ad8c580ee81ec1c23acc74af42a5422de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ExtractDeltaTime</definition>
+        <argsstring>(dReal &amp;deltatime, std::vector&lt; dReal &gt;::const_iterator itdata) const </argsstring>
+        <name>ExtractDeltaTime</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &amp;</type>
+          <declname>deltatime</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::const_iterator</type>
+          <declname>itdata</declname>
+        </param>
+        <briefdescription>
+<para>extracts the delta time from the configuration if one exists </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="965" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1515" bodyend="1524"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1ab4da99dc9ebd9975a68a3d87abb1f236" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool InsertJointValues</definition>
+        <argsstring>(std::vector&lt; dReal &gt;::iterator itdata, std::vector&lt; dReal &gt;::const_iterator itvalues, KinBodyConstPtr pbody, const std::vector&lt; int &gt; &amp;indices, int timederivative=0) const </argsstring>
+        <name>InsertJointValues</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::iterator</type>
+          <declname>itdata</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::const_iterator</type>
+          <declname>itvalues</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref></type>
+          <declname>pbody</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timederivative</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>inserts a set of joint values into a configuration space point </para>        </briefdescription>
+        <detaileddescription>
+<para>Looks for &apos;joint_X&apos; groups. If pbody is not initialized, will use the first joint_X found. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inout]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>itdata data in the format of this configuration specification. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">itvalues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iterator to joint values to write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the set of DOF indices that itvalues represents. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timederivative</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time derivative of the data to insert </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if at least one group was found for inserting </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="976" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1526" bodyend="1561"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1ab65b63518528950d146752020602107d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool InsertDeltaTime</definition>
+        <argsstring>(std::vector&lt; dReal &gt;::iterator itdata, dReal deltatime)</argsstring>
+        <name>InsertDeltaTime</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::iterator</type>
+          <declname>itdata</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>deltatime</declname>
+        </param>
+        <briefdescription>
+<para>sets the deltatime field of the data if one exists </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inout]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>itdata data in the format of this configuration specification. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">deltatime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the delta time of the time stamp (from previous point) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if at least one group was found for inserting </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="984" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1563" bodyend="1573"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a42b91113c92f1a813682f355d51b43df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConvertGroupData</definition>
+        <argsstring>(std::vector&lt; dReal &gt;::iterator ittargetdata, size_t targetstride, const Group &amp;gtarget, std::vector&lt; dReal &gt;::const_iterator itsourcedata, size_t sourcestride, const Group &amp;gsource, size_t numpoints, EnvironmentBaseConstPtr penv)</argsstring>
+        <name>ConvertGroupData</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::iterator</type>
+          <declname>ittargetdata</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>targetstride</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group" kindref="compound">Group</ref> &amp;</type>
+          <declname>gtarget</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::const_iterator</type>
+          <declname>itsourcedata</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sourcestride</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group" kindref="compound">Group</ref> &amp;</type>
+          <declname>gsource</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>numpoints</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1aae90d424b7f3d69b2f382c5e30d1ae57" kindref="member">EnvironmentBaseConstPtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+<para>given two compatible groups, convers data represented in the source group to data represented in the target group </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ittargetdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iterator pointing to start of target group data that should be overwritten </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>targetstride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of elements that to go from the next target point. Necessary if numpoints &gt; 1. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gtarget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the target configuration group </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itsourcedata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iterator pointing to start of source group data that should be read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sourcestride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of elements that to go from the next source point. Necessary if numpoints &gt; 1. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gsource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the source configuration group </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numpoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of points to convert. The target and source strides are gtarget.dof and gsource.dof </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>penv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[optional] The environment which might be needed to fill in unknown data. Assumes environment is locked. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classOpenRAVE_1_1openrave__exception" kindref="compound">openrave_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>throw f groups are incompatible </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="998" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1621" bodyend="1872"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1a10788f496736608c276546db6127792a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConvertData</definition>
+        <argsstring>(std::vector&lt; dReal &gt;::iterator ittargetdata, const ConfigurationSpecification &amp;targetspec, std::vector&lt; dReal &gt;::const_iterator itsourcedata, const ConfigurationSpecification &amp;sourcespec, size_t numpoints, EnvironmentBaseConstPtr penv, bool filluninitialized=true)</argsstring>
+        <name>ConvertData</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::iterator</type>
+          <declname>ittargetdata</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref> &amp;</type>
+          <declname>targetspec</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;::const_iterator</type>
+          <declname>itsourcedata</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref> &amp;</type>
+          <declname>sourcespec</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>numpoints</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1aae90d424b7f3d69b2f382c5e30d1ae57" kindref="member">EnvironmentBaseConstPtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>filluninitialized</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Converts from one specification to another. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ittargetdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iterator pointing to start of target group data that should be overwritten </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>targetspec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the target configuration specification </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itsourcedata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iterator pointing to start of source group data that should be read </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sourcespec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the source configuration specification </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numpoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of points to convert. The target and source strides are gtarget.dof and gsource.dof </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>penv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[optional] The environment which might be needed to fill in unknown data. Assumes environment is locked. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filluninitialized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If there exists target groups that cannot be initialized, then will set default values to them. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1010" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="1874" bodyend="1930"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A configuration specification references values in the environment that then define a configuration-space which can be searched for. </para>    </briefdescription>
+    <detaileddescription>
+<para>It is composed of several groups targetting values for individual bodies. It is serialized into XML. The XML syntax is as follows:</para><para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/>&lt;configuration&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>&lt;group<sp/>name=</highlight><highlight class="stringliteral">&quot;string&quot;</highlight><highlight class="normal"><sp/>offset=</highlight><highlight class="stringliteral">&quot;#OFF1&quot;</highlight><highlight class="normal"><sp/>dof=</highlight><highlight class="stringliteral">&quot;#D1&quot;</highlight><highlight class="normal"><sp/>interpolation=</highlight><highlight class="stringliteral">&quot;string&quot;</highlight><highlight class="normal">/&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>&lt;group<sp/>name=</highlight><highlight class="stringliteral">&quot;string&quot;</highlight><highlight class="normal"><sp/>offset=</highlight><highlight class="stringliteral">&quot;#OFF2&quot;</highlight><highlight class="normal"><sp/>dof=</highlight><highlight class="stringliteral">&quot;#D2&quot;</highlight><highlight class="normal"><sp/>interpolation=</highlight><highlight class="stringliteral">&quot;string&quot;</highlight><highlight class="normal">/&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>&lt;/configuration&gt;</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1015">
+        <label>ConfigurationSpecification</label>
+        <link refid="classOpenRAVE_1_1ConfigurationSpecification"/>
+        <childnode refid="1016" relation="usage">
+          <edgelabel>_vgroups</edgelabel>
+        </childnode>
+      </node>
+      <node id="1016">
+        <label>vector&lt; Group &gt;</label>
+        <childnode refid="1017" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1018">
+        <label>string</label>
+        <childnode refid="1019" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1017">
+        <label>Group</label>
+        <link refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group"/>
+        <childnode refid="1018" relation="usage">
+          <edgelabel>interpolation</edgelabel>
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="1019">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="811" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="810" bodyend="1013"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a63d9b7e5c662b5da5584f0d927368812" prot="public" virt="non-virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>_vgroups</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a5624a2dfc350dfe608dc26d86b7e7c08" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>AddDeltaTime</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a09106b9e4924dea94502089f75b20d89" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>AddVelocityGroups</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a10788f496736608c276546db6127792a" prot="public" virt="non-virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>ConvertData</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a42b91113c92f1a813682f355d51b43df" prot="public" virt="non-virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>ConvertGroupData</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a6be51f9b2c8e8199ad72e978b6e6c4da" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>ConvertToVelocitySpecification</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1ac58749acb6422259c079fdb0b62a6d59" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>ExtractAffineValues</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1ad8c580ee81ec1c23acc74af42a5422de" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>ExtractDeltaTime</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a74cb255b5496f80fa38cbde4cfb853e4" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>ExtractIkParameterization</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a982a9ba9c94e0c983df1824b2464ddef" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>ExtractJointValues</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1abe95cfefe50156e8f37edca80cb87154" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>ExtractTransform</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a00dca7273ad0d271e131ecc1119683c2" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>FindCompatibleGroup</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a87b31e59fa16769e474a12ba0a9f8e08" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>FindTimeDerivativeGroup</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1ac938a6c271285a5468b805a3243e20e6" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>GetDOF</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a047529d130cdde5c5fb9e17798a97a6c" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>GetTimeDerivativeSpecification</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1ab65b63518528950d146752020602107d" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>InsertDeltaTime</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1ab4da99dc9ebd9975a68a3d87abb1f236" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>InsertJointValues</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1afa8720abaf6972d6dac22a8cd1a67225" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>IsValid</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1ab88bf03e1e56cb6f0ed1d48bb3ea60c0" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>operator!=</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a960ebd93cb8c58ceab0eb48b047faa98" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>operator==</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a54f613faeb77f06c9942d09833274962" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>ResetGroupOffsets</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1a2604e7d09eac46b2cd1aa71bde874c96" prot="public" virt="virtual"><scope>OpenRAVE::ConfigurationSpecification</scope><name>~ConfigurationSpecification</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

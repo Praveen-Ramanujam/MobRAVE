@@ -1,0 +1,198 @@
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase}{
+\subsection{PhysicsEngineBase Class Reference}
+\label{classOpenRAVE_1_1PhysicsEngineBase}\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} The physics engine interfaces supporting simulations and dynamics. See \hyperlink{arch__physicsengine}{Physics Engine Concepts}.  
+
+
+
+
+Inheritance diagram for PhysicsEngineBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{classOpenRAVE_1_1PhysicsEngineBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for PhysicsEngineBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{classOpenRAVE_1_1PhysicsEngineBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_a1a564c7b9b8e445067840544e1899454}{
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_a1a564c7b9b8e445067840544e1899454}{SetPhysicsOptions} (int physicsoptions)=0}
+\label{classOpenRAVE_1_1PhysicsEngineBase_a1a564c7b9b8e445067840544e1899454}
+
+\begin{DoxyCompactList}\small\item\em Set basic physics engine using the PhysicsEngineOptions enum. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_a7cc87335dc1afb1ab99e53b7a4a70ac7}{SetPhysicsOptions} (std::ostream \&sout, std::istream \&sinput) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}=0
+\item 
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_a253ffd76b6c58523ff7813a7e777cce0}{
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_a253ffd76b6c58523ff7813a7e777cce0}{InitEnvironment} ()=0}
+\label{classOpenRAVE_1_1PhysicsEngineBase_a253ffd76b6c58523ff7813a7e777cce0}
+
+\begin{DoxyCompactList}\small\item\em called when environment sets this physics engine, engine assumes responsibility for \hyperlink{classOpenRAVE_1_1KinBody_a3f8a2e40760cf2ee75f604c0f18b27ec}{KinBody::\_\-pPhysicsData} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_addd261b357621ad88f262f311792efb6}{DestroyEnvironment} ()=0
+\item 
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_a7daf60b368b32643ad95691260b5246a}{
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_a7daf60b368b32643ad95691260b5246a}{InitKinBody} (KinBodyPtr body)=0}
+\label{classOpenRAVE_1_1PhysicsEngineBase_a7daf60b368b32643ad95691260b5246a}
+
+\begin{DoxyCompactList}\small\item\em notified when a new body has been initialized in the environment \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_a22f75fdf00f98694da099efeb13bff41}{SetLinkVelocity} (KinBody::LinkPtr link, const Vector \&linearvel, const Vector \&angularvel)=0
+\begin{DoxyCompactList}\small\item\em Force the body velocity of a link, velocities correspond to the link's coordinate system origin. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_af03adc7bf75eb75c954ae0396df1f193}{SetLinkVelocities} (KinBodyPtr body, const std::vector$<$ std::pair$<$ Vector, Vector $>$ $>$ \&velocities)=0
+\begin{DoxyCompactList}\small\item\em Sets the velocities for each link, velocities correspond to the link's coordinate system origin. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_a696a55b63521ab0e08b9b203d2b3bcdb}{GetLinkVelocity} (KinBody::LinkConstPtr link, Vector \&linearvel, Vector \&angularvel)=0
+\begin{DoxyCompactList}\small\item\em Gets the velocity of a link, velocities correspond to the link's coordinate system origin. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_a4ab5cdca35ec2cc52158345188d370e2}{GetLinkVelocities} (KinBodyConstPtr body, std::vector$<$ std::pair$<$ Vector, Vector $>$ $>$ \&velocities)=0
+\begin{DoxyCompactList}\small\item\em Sets the velocities for each link, velocities correspond to the link's coordinate system origin. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_aac5b2aa6d0506ac155b01c4a981970e6}{SetBodyForce} (KinBody::LinkPtr link, const Vector \&force, const Vector \&position, bool bAdd) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_a88e1824a57094ca3795b76147fa89430}{SetBodyTorque} (KinBody::LinkPtr link, const Vector \&torque, bool bAdd) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_ac967d28c3b1f7df4280dc32b25bc9227}{AddJointTorque} (KinBody::JointPtr pjoint, const std::vector$<$ dReal $>$ \&pTorques) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_ac1814e555930327871aa74a002eb11ec}{GetLinkForceTorque} (KinBody::LinkConstPtr link, Vector \&force, Vector \&torque) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_abf9cb070312280c553bfb29079ecb5ed}{SetGravity} (const Vector \&gravity) OPENRAVE\_\-DUMMY\_\-IMPLEMENTATION
+\begin{DoxyCompactList}\small\item\em set the gravity direction \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_ad060957d4850f20600b9d99732912fef}{SimulateStep} (dReal fTimeElapsed)=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_a1a58013a452eea3921fb0ddcfb263813}{GetBodyVelocity} (KinBodyConstPtr body, std::vector$<$ Vector $>$ \&vLinearVelocities, std::vector$<$ Vector $>$ \&vAngularVelocities) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1PhysicsEngineBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1PhysicsEngineBase_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em return the static interface type this class points to (used for safe casting) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} The physics engine interfaces supporting simulations and dynamics. See \hyperlink{arch__physicsengine}{Physics Engine Concepts}. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_ac967d28c3b1f7df4280dc32b25bc9227}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!AddJointTorque@{AddJointTorque}}
+\index{AddJointTorque@{AddJointTorque}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{AddJointTorque}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool AddJointTorque (KinBody::JointPtr {\em pjoint}, \/  const std::vector$<$ dReal $>$ \& {\em pTorques})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_ac967d28c3b1f7df4280dc32b25bc9227}
+adds torque to a joint 
+\begin{DoxyParams}{Parameters}
+\item[{\em pjoint}]-\/ the joint the torque is added to \item[{\em pTorques}]-\/ the torques added to the joint. Pointer because the joint dof can be greater than 1. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_addd261b357621ad88f262f311792efb6}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!DestroyEnvironment@{DestroyEnvironment}}
+\index{DestroyEnvironment@{DestroyEnvironment}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{DestroyEnvironment}]{\setlength{\rightskip}{0pt plus 5cm}virtual void DestroyEnvironment ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_addd261b357621ad88f262f311792efb6}
+called when environment switches to a different physics engine has to clear/deallocate any memory associated with \hyperlink{classOpenRAVE_1_1KinBody_a3f8a2e40760cf2ee75f604c0f18b27ec}{KinBody::\_\-pPhysicsData} \hypertarget{classOpenRAVE_1_1PhysicsEngineBase_a1a58013a452eea3921fb0ddcfb263813}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!GetBodyVelocity@{GetBodyVelocity}}
+\index{GetBodyVelocity@{GetBodyVelocity}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{GetBodyVelocity}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool GetBodyVelocity (KinBodyConstPtr {\em body}, \/  std::vector$<$ Vector $>$ \& {\em vLinearVelocities}, \/  std::vector$<$ Vector $>$ \& {\em vAngularVelocities})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_a1a58013a452eea3921fb0ddcfb263813}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_ac1814e555930327871aa74a002eb11ec}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!GetLinkForceTorque@{GetLinkForceTorque}}
+\index{GetLinkForceTorque@{GetLinkForceTorque}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{GetLinkForceTorque}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool GetLinkForceTorque (KinBody::LinkConstPtr {\em link}, \/  Vector \& {\em force}, \/  Vector \& {\em torque})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_ac1814e555930327871aa74a002eb11ec}
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em link}]a constant pointer to a link \item[\mbox{$\rightarrow$} {\em force}]current force on the COM of the link \item[\mbox{$\rightarrow$} {\em torque}]current torque on the COM of the link \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_a4ab5cdca35ec2cc52158345188d370e2}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!GetLinkVelocities@{GetLinkVelocities}}
+\index{GetLinkVelocities@{GetLinkVelocities}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{GetLinkVelocities}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool GetLinkVelocities (KinBodyConstPtr {\em body}, \/  std::vector$<$ std::pair$<$ Vector, Vector $>$ $>$ \& {\em velocities})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_a4ab5cdca35ec2cc52158345188d370e2}
+
+
+Sets the velocities for each link, velocities correspond to the link's coordinate system origin. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em velocities}]the linear and angular (axis $\ast$ angular\_\-speed) velocities for each link. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_a696a55b63521ab0e08b9b203d2b3bcdb}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!GetLinkVelocity@{GetLinkVelocity}}
+\index{GetLinkVelocity@{GetLinkVelocity}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{GetLinkVelocity}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool GetLinkVelocity (KinBody::LinkConstPtr {\em link}, \/  Vector \& {\em linearvel}, \/  Vector \& {\em angularvel})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_a696a55b63521ab0e08b9b203d2b3bcdb}
+
+
+Gets the velocity of a link, velocities correspond to the link's coordinate system origin. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em linearvel}]-\/ linear velocity of base link \item[\mbox{$\rightarrow$} {\em angularvel}]-\/ angular velocity rotation\_\-axis$\ast$theta\_\-dot \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_aac5b2aa6d0506ac155b01c4a981970e6}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!SetBodyForce@{SetBodyForce}}
+\index{SetBodyForce@{SetBodyForce}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{SetBodyForce}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetBodyForce (KinBody::LinkPtr {\em link}, \/  const Vector \& {\em force}, \/  const Vector \& {\em position}, \/  bool {\em bAdd})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_aac5b2aa6d0506ac155b01c4a981970e6}
+add a force at a particular position in a link 
+\begin{DoxyParams}{Parameters}
+\item[{\em force}]the direction and magnitude of the force \item[{\em position}]in the world where the force is getting applied \item[{\em bAdd}]if true, force is added to previous forces, otherwise it is set \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_a88e1824a57094ca3795b76147fa89430}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!SetBodyTorque@{SetBodyTorque}}
+\index{SetBodyTorque@{SetBodyTorque}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{SetBodyTorque}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetBodyTorque (KinBody::LinkPtr {\em link}, \/  const Vector \& {\em torque}, \/  bool {\em bAdd})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_a88e1824a57094ca3795b76147fa89430}
+adds torque to a body (absolute coords) 
+\begin{DoxyParams}{Parameters}
+\item[{\em link}]the link to add a torque to \item[{\em torque}]torque vector \item[{\em bAdd}]if true, torque is added to previous torques, otherwise it is set \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_abf9cb070312280c553bfb29079ecb5ed}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!SetGravity@{SetGravity}}
+\index{SetGravity@{SetGravity}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{SetGravity}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetGravity (const Vector \& {\em gravity})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_abf9cb070312280c553bfb29079ecb5ed}
+
+
+set the gravity direction 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em joint}]\item[\mbox{$\rightarrow$} {\em force}]current accumulated force on the COM of the link \item[\mbox{$\rightarrow$} {\em torque}]current accumulated torque on the COM of the link \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_af03adc7bf75eb75c954ae0396df1f193}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!SetLinkVelocities@{SetLinkVelocities}}
+\index{SetLinkVelocities@{SetLinkVelocities}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{SetLinkVelocities}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetLinkVelocities (KinBodyPtr {\em body}, \/  const std::vector$<$ std::pair$<$ Vector, Vector $>$ $>$ \& {\em velocities})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_af03adc7bf75eb75c954ae0396df1f193}
+
+
+Sets the velocities for each link, velocities correspond to the link's coordinate system origin. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em body}]the body to query velocities from. \item[\mbox{$\leftarrow$} {\em velocities}]sets the linear and angular (axis $\ast$ angular\_\-speed) velocities for each link \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_a22f75fdf00f98694da099efeb13bff41}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!SetLinkVelocity@{SetLinkVelocity}}
+\index{SetLinkVelocity@{SetLinkVelocity}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{SetLinkVelocity}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetLinkVelocity (KinBody::LinkPtr {\em link}, \/  const Vector \& {\em linearvel}, \/  const Vector \& {\em angularvel})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_a22f75fdf00f98694da099efeb13bff41}
+
+
+Force the body velocity of a link, velocities correspond to the link's coordinate system origin. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em link}]link to set velocities. \item[\mbox{$\leftarrow$} {\em linearvel}]linear velocity of base link \item[\mbox{$\leftarrow$} {\em angularvel}]angular velocity rotation\_\-axis$\ast$theta\_\-dot \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_a7cc87335dc1afb1ab99e53b7a4a70ac7}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!SetPhysicsOptions@{SetPhysicsOptions}}
+\index{SetPhysicsOptions@{SetPhysicsOptions}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{SetPhysicsOptions}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetPhysicsOptions (std::ostream \& {\em sout}, \/  std::istream \& {\em sinput})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_a7cc87335dc1afb1ab99e53b7a4a70ac7}
+\hypertarget{classOpenRAVE_1_1PhysicsEngineBase_ad060957d4850f20600b9d99732912fef}{
+\index{OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}!SimulateStep@{SimulateStep}}
+\index{SimulateStep@{SimulateStep}!OpenRAVE::PhysicsEngineBase@{OpenRAVE::PhysicsEngineBase}}
+\paragraph[{SimulateStep}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SimulateStep (dReal {\em fTimeElapsed})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PhysicsEngineBase_ad060957d4850f20600b9d99732912fef}
+dynamically simulate system for fTimeElapsed seconds add torques to the joints of the body. Torques disappear after one timestep of simulation 

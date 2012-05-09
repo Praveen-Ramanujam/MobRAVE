@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test
+END
+test_programs.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_programs.py
+END
+test_geometry.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_geometry.py
+END
+test_collision.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_collision.py
+END
+test_iksolver.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_iksolver.py
+END
+test_global.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_global.py
+END
+test_environment.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_environment.py
+END
+test_planning.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_planning.py
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/README
+END
+test_sampling.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_sampling.py
+END
+test_ikfast.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_ikfast.py
+END
+test_physics.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_physics.py
+END
+test_robot.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_robot.py
+END
+common_test_openrave.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/common_test_openrave.py
+END
+run_tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/run_tests.py
+END
+test_databases.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_databases.py
+END
+test_kinematics.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/test_kinematics.py
+END
+spectypes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/spectypes.xml
+END

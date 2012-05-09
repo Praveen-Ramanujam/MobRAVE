@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="installation__linux" kind="page">
+    <compoundname>installation_linux</compoundname>
+    <title>Building and Installing on Linux</title>
+    <detaileddescription>
+<para>Download the sources from <ulink url="http://sourceforge.net/projects/openrave">sourceforge</ulink>.</para><para><verbatim>
+svn co https://openrave.svn.sourceforge.net/svnroot/openrave/tags/latest_stable openrave
+</verbatim></para><para>OpenRAVE works only with qt4! Before compiling SoQt or OpenRAVE make sure to remove any qt3 related dev packages like <computeroutput>qt3-dev-tools</computeroutput> or <computeroutput>libqt3-headers</computeroutput>.</para><para>If there are compilation errors with templates, might have to use gcc version 4.1 or greater. You can check your version of gcc by <computeroutput>gcc --version</computeroutput></para><sect1 id="installation__linux_1ilinux_package">
+<title>Installing from Package Manager</title>
+<sect2 id="installation__linux_1ilinux_ubuntu">
+<title>Ubuntu</title>
+<para><verbatim>
+sudo add-apt-repository ppa:openrave/release
+sudo sh -c &apos;echo &quot;deb-src http://ppa.launchpad.net/openrave/release/ubuntu `lsb_release -cs` main&quot; &gt;&gt; /etc/apt/sources.list.d/openrave-release-`lsb_release -cs`.list&apos;
+sudo apt-get update
+sudo apt-get build-dep openrave
+</verbatim></para></sect2>
+<sect2 id="installation__linux_1ilinux_fedora">
+<title>Fedora Core Users</title>
+<para>Might need to add the livna yum repository for ffmpeg. To install the necessary packages type</para><para><verbatim>
+sudo yum install qt4-devel Coin2-devel glew-devel gsm-devel x264 x264-devel ffmpeg-devel libdc1394-devel libtheora-devel libmp4v2-devel ode-devel boost-devel cmake
+</verbatim></para><para>Be careful if installing <bold>soqt-devel</bold> from the package manager, it may be compiled with the wrong version of Qt. If compiling SoQt from sources, check <computeroutput>QTDIR</computeroutput> and make sure it points to the correct version.</para></sect2>
+</sect1>
+<sect1 id="installation__linux_1ilinux_libraries">
+<title>Necessary libraries for Old Linux Distros</title>
+<para>(Only install these libraries from sources if not in package manager.</para><para><itemizedlist>
+<listitem><para><bold></bold> <ulink url="http://www.boost.org/users/download/">boost</ulink></para></listitem><listitem><para><bold></bold> <ulink url="http://www.coin3d.org">Coin3d</ulink></para></listitem><listitem><para><bold></bold> <ulink url="ftp://ftp.coin3d.org/pub/snapshots/SoQt-latest.tar.gz">SoQt</ulink></para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><bold>x86-64 users:</bold> SoQt might give a compilation error in SoQtComponent.cpp. To fix it, go into <computeroutput>src/Inventor/Qt/SoQtComponent.cpp</computeroutput>:103 and replace <computeroutput>unsigned long key</computeroutput> with <computeroutput>SbDict::Key key</computeroutput>. </para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="installation__linux_1ilinux_collisionphysics">
+<title>Collision Checkers and Physics Simulators</title>
+<para>Although OpenRAVE is not tied to any particular collision checker, it requires at least one is installed to get basic functions. Here are the following libraries that have OpenRAVE plugins:</para><para><itemizedlist>
+<listitem><para><ulink url="http://www.ode.org">ODE Collision/Physics</ulink> - install from sources 0.8-0.10.1 tested to work. It is possible to compile ODE with double precision.<itemizedlist>
+<listitem><para>For 0.10.1, configuring with <computeroutput>--enable-new-trimesh</computeroutput> option will randomly crash openrave, so use at your own risk.</para></listitem><listitem><para>If not using enable-new-trimesh, disabling asserts (via <computeroutput>--disable-asserts</computeroutput>) is necessary due to some weird bug in normalization bug.</para></listitem><listitem><para>For 0.10+. If installing on x86-64 distro, configure ODE with <computeroutput>--enable-shared</computeroutput>.</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><ulink url="http://www.bulletphysics.com">Bullet Collision</ulink> - Need to install to a system directory so OpenRAVE can find it using <computeroutput>pkg-config</computeroutput>. If using autotools <computeroutput>configure</computeroutput>, need to remove <computeroutput>install-sh</computeroutput> before running <computeroutput>autogen.sh</computeroutput>. Bullet is detected using <computeroutput>pkg-config</computeroutput>, so <computeroutput>bullet.pc</computeroutput> is needed.</para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><ulink url="http://www.cs.unc.edu/~geom/SSV/">PQP Collision</ulink> - source code separate inside <bold>pqprave</bold> plugin.</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="installation__linux_1ilinux_python">
+<title>Python</title>
+<para>In order to use the python bindings through the <ulink url="http://openrave.org/en/main/tutorials/openravepy_beginning.html#openravepy-beginning">openravepy</ulink> module, you&apos;ll need to install python, boost python, python numpy, and python sympy. .</para><para>To setup the python path in bash add the following line:</para><para><verbatim>
+export PYTHONPATH=$PYTHONPATH:`openrave-config --python-dir`
+</verbatim></para></sect1>
+<sect1 id="installation__linux_1ilinux_octavematlab">
+<title>Octave/Matlab</title>
+<para>Both <ulink url="http://www.gnu.org/software/octave/">Octave</ulink> and Matlab are supported and the OpenRAVE build system automatically detects and compiles the mex files for each.</para><para>Octave users:<itemizedlist>
+<listitem><para>Make sure <computeroutput>mkoctfile</computeroutput> is in your path. If installing octave from the package managers, also install the <bold>octave headers</bold> package.</para></listitem><listitem><para>Add <computeroutput>$OPENRAVE_INSTALL/share/openrave/octave</computeroutput> to OCTAVE_PATH (default is <computeroutput>/usr/local/share/openrave/octave</computeroutput>).</para></listitem></itemizedlist>
+</para><para>Matlab users:<itemizedlist>
+<listitem><para>make sure <computeroutput>mex</computeroutput> is in the system path</para></listitem><listitem><para>Compile the *.cpp files inside <computeroutput>$OPENRAVE_INSTALL/share/openrave-x</computeroutput>.y/matlab and addit to the MATLAB Path.</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="installation__linux_1ilinux_building">
+<title>Building OpenRAVE</title>
+<para>After all necessary libraries have been installed, it is time to finally build and install OpenRAVE. In the root openrave folder type</para><para><verbatim>
+make
+</verbatim></para><para>This will compile all files. To install all the files type</para><para><verbatim>
+make install
+</verbatim></para><para>Because multiple openrave versions can co-exist in a system, to install all files except symlinks so that previous installations are not clobbered, do:</para><para><verbatim>
+make altinstall
+</verbatim></para><para>To choose a different install directory, type</para><para><verbatim>
+make prefix=/my/new/dir
+</verbatim></para><para>In case libraries are added after the initial install of OpenRAVE, remove the cmake cached files using:</para><para><verbatim>
+rm build/CMakeCache.txt
+</verbatim></para><para>If the cached files are not removed, the new system settings will not be noticed.</para></sect1>
+<sect1 id="installation__linux_1ilinux_bash">
+<title>Bash Shell</title>
+<para>Can enable automatic completion of several openrave programs like <computeroutput>openrave.py</computeroutput> by sourcing the <computeroutput>openravebash</computeroutput> file. Add this to your <computeroutput>~</computeroutput>./.bashrc file:</para><para><verbatim>
+source `openrave-config --prefix`/share/openrave/openravebash
+</verbatim> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

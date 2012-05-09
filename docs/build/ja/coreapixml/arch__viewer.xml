@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="arch__viewer" kind="page">
+    <compoundname>arch_viewer</compoundname>
+    <title>Viewer Concepts</title>
+    <detaileddescription>
+<para><bold>Reference:</bold> <ref refid="classOpenRAVE_1_1ViewerBase" kindref="compound">OpenRAVE::ViewerBase</ref> Viewer is responsible only for the environment it is attached to. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="arch__kinbody" kind="page">
+    <compoundname>arch_kinbody</compoundname>
+    <title>Kinematics Body Concepts</title>
+    <detaileddescription>
+<para><bold>Reference:</bold> <ref refid="classOpenRAVE_1_1KinBody" kindref="compound">OpenRAVE::KinBody</ref></para><para>Each KinBody can be thought of as the basic rigid body element in <ref refid="namespaceOpenRAVE" kindref="compound">OpenRAVE</ref>. It is composed of a collection of links (rigid bodies) connected with joints. The KinBody class provides a lot of functionality (from a planning perspective) needed to perform complex tasks:</para><para><itemizedlist>
+<listitem><para>Setting and getting joint values</para></listitem><listitem><para>Setting and getting the transformations of all links</para></listitem><listitem><para>Getting the velocities of each joint (or link)</para></listitem><listitem><para>Self collision detection functions</para></listitem><listitem><para>Kinematic hierarchy querying - The underlying structure of KinBody is a list of links, not a tree. However, after some careful analysis, the parent and child links of a particular link can be extracted.</para></listitem><listitem><para>Jacobian calculation - both translational and rotational.</para></listitem><listitem><para>Attaching bodies online - a necessary function for manipulation planning; is called, for example, when an object is rigidly grasped by a hand</para></listitem></itemizedlist>
+</para><sect1 id="arch__kinbody_1arch_kinbody_options">
+<title>Loading Options</title>
+<para>This is the set of loading options passed as a AttributesList into functions like <ref refid="classOpenRAVE_1_1EnvironmentBase_1a047abcaeeef915017c37dd31d34866e8" kindref="member">OpenRAVE::EnvironmentBase::ReadKinBodyXMLFile</ref>:<itemizedlist>
+<listitem><para><bold>prefix</bold>: prefix link, joint, manipulator, and sensor names with a string</para></listitem><listitem><para><bold>skipgeometry</bold>: if 1 or true, will skip loading all geometry of the links </para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

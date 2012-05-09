@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/bulletrave
+END
+bulletcollision.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/bulletrave/bulletcollision.cpp
+END
+bulletrave.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/bulletrave/bulletrave.cpp
+END
+plugindefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/bulletrave/plugindefs.h
+END
+bulletspace.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/bulletrave/bulletspace.h
+END
+bulletphysics.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/bulletrave/bulletphysics.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/bulletrave/CMakeLists.txt
+END

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1SensorGeometry" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::SensorGeometry</compoundname>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData" prot="public" virt="non-virtual">ActuatorGeomData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1CameraGeomData" prot="public" virt="non-virtual">CameraGeomData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1Force6DGeomData" prot="public" virt="non-virtual">Force6DGeomData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1IMUGeomData" prot="public" virt="non-virtual">IMUGeomData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1JointEncoderGeomData" prot="public" virt="non-virtual">JointEncoderGeomData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData" prot="public" virt="non-virtual">LaserGeomData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData" prot="public" virt="non-virtual">OdometryGeomData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1TactileGeomData" prot="public" virt="non-virtual">TactileGeomData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1TouchGeomData" prot="public" virt="non-virtual">TouchGeomData</derivedcompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a2448e133d651783f1acfe3f944ba4dc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~SensorGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>~SensorGeometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="198" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="198" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a3cf408517e49fe46f25b023c690c2ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetType</name>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1TactileGeomData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1IMUGeomData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1Force6DGeomData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1JointEncoderGeomData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1CameraGeomData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1TouchGeomData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="200"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>permanent properties of the sensors </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1821">
+        <label>SensorGeometry</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry"/>
+      </node>
+      <node id="1830">
+        <label>TouchGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1TouchGeomData"/>
+        <childnode refid="1821" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1824">
+        <label>Force6DGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1Force6DGeomData"/>
+        <childnode refid="1821" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1827">
+        <label>LaserGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1LaserGeomData"/>
+        <childnode refid="1821" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1825">
+        <label>IMUGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1IMUGeomData"/>
+        <childnode refid="1821" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1826">
+        <label>JointEncoderGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1JointEncoderGeomData"/>
+        <childnode refid="1821" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1828">
+        <label>OdometryGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData"/>
+        <childnode refid="1821" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1823">
+        <label>CameraGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1CameraGeomData"/>
+        <childnode refid="1821" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1822">
+        <label>ActuatorGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData"/>
+        <childnode refid="1821" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1829">
+        <label>TactileGeomData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1TactileGeomData"/>
+        <childnode refid="1821" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="196" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="195" bodyend="201"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a3cf408517e49fe46f25b023c690c2ea0" prot="public" virt="pure-virtual"><scope>OpenRAVE::SensorBase::SensorGeometry</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorGeometry_1a2448e133d651783f1acfe3f944ba4dc3" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::SensorGeometry</scope><name>~SensorGeometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1TrajectoryBase" kind="class" prot="public">
+    <compoundname>OpenRAVE::TrajectoryBase</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1InterfaceBase" prot="public" virt="non-virtual">InterfaceBase</basecompoundref>
+    <includes refid="trajectory_8h" local="no">trajectory.h</includes>
+    <innerclass refid="classOpenRAVE_1_1TrajectoryBase_1_1Point" prot="public">OpenRAVE::TrajectoryBase::Point</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classOpenRAVE_1_1TrajectoryBase_1a16220697329e6c8f40dd5e0ec4f4b384" prot="public" static="no">
+        <type><ref refid="classOpenRAVE_1_1TrajectoryBase_1_1Point" kindref="compound">Point</ref> TPOINT</type>
+        <definition>typedef Point TPOINT RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000056"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="165" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1a52698d8bfef94dd709800b3ab81fdc7e" prot="public" static="yes" mutable="no">
+        <type>const int TO_OneLine</type>
+        <definition>const int TO_OneLine RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000068"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="220" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1a721ee98d03faa355053f17ae6f21ca98" prot="public" static="yes" mutable="no">
+        <type>const int TO_NoHeader</type>
+        <definition>const int TO_NoHeader RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="221" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1ab39e1b10b432d633678b9f221429bb92" prot="public" static="yes" mutable="no">
+        <type>const int TO_IncludeTimestamps</type>
+        <definition>const int TO_IncludeTimestamps RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="222" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1aa81206fce5ec09a7746fcdd7621cd269" prot="public" static="yes" mutable="no">
+        <type>const int TO_IncludeBaseTransformation</type>
+        <definition>const int TO_IncludeBaseTransformation RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="223" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1a7d19cf7496aca21f9d3466068dad4c74" prot="public" static="yes" mutable="no">
+        <type>const int TO_IncludeVelocities</type>
+        <definition>const int TO_IncludeVelocities RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="224" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1aa2b71f320aa8317dd7c95a98282ad86a" prot="public" static="yes" mutable="no">
+        <type>const int TO_IncludeTorques</type>
+        <definition>const int TO_IncludeTorques RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="225" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1a35c5722763a85351388727311a4cbf70" prot="public" static="yes" mutable="no">
+        <type>const int TO_InterpolationMask</type>
+        <definition>const int TO_InterpolationMask RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 0x1c0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="226" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1a07f3821811305c7c0895e7925448e4d8" prot="public" static="yes" mutable="no">
+        <type>const int NONE</type>
+        <definition>const int NONE RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="227" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1aed8bb5f4096a3957265d2629954d7217" prot="public" static="yes" mutable="no">
+        <type>const int LINEAR</type>
+        <definition>const int LINEAR RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="228" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1a7b44c6158a12f5fcf1df7e4c92d1f276" prot="public" static="yes" mutable="no">
+        <type>const int LINEAR_BLEND</type>
+        <definition>const int LINEAR_BLEND RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="229" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1a87484890b029c7e756d4d74b452702f5" prot="public" static="yes" mutable="no">
+        <type>const int CUBIC</type>
+        <definition>const int CUBIC RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="230" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1a581f95b06ac8e10ba91eabc4f147aa58" prot="public" static="yes" mutable="no">
+        <type>const int QUINTIC</type>
+        <definition>const int QUINTIC RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="231" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1ac479481c8fd8db495a55b8f6095449cd" prot="public" static="yes" mutable="no">
+        <type>const int NUM_METHODS</type>
+        <definition>const int NUM_METHODS RAVE_DEPRECATED</definition>
+        <argsstring></argsstring>
+        <name>RAVE_DEPRECATED</name>
+        <initializer> 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="232" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1TrajectoryBase_1aa33a378751288ce456f4a7d6128985d3" prot="private" static="no" mutable="yes">
+        <type>std::vector&lt; <ref refid="classOpenRAVE_1_1TrajectoryBase_1_1Point" kindref="compound">Point</ref> &gt;</type>
+        <definition>std::vector&lt;Point&gt; __vdeprecatedpoints</definition>
+        <argsstring></argsstring>
+        <name>__vdeprecatedpoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000069"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04), unfortunately necessary for back compat </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="248" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a1a0492e1cf8f7fc2ea314e483a50ef2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TrajectoryBase</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>TrajectoryBase</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a3d2a9a01377ad57032b16627454b9298" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~TrajectoryBase</definition>
+        <argsstring>()</argsstring>
+        <name>~TrajectoryBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="33" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="33" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1ada3d183ab9d1d31a6b4e305c2ac174e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Init</definition>
+        <argsstring>(const ConfigurationSpecification &amp;spec)=0</argsstring>
+        <name>Init</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a2d4b62249bd00ee23a28a491fce41dc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Insert</definition>
+        <argsstring>(size_t index, const std::vector&lt; dReal &gt; &amp;data, bool bOverwrite=false)=0</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOverwrite</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Sets/inserts new waypoints in the same configuration specification as the trajectory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index where to start modifying the trajectory. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to insert, can represent multiple consecutive waypoints. data.size()/GetConfigurationSpecification().<ref refid="classOpenRAVE_1_1TrajectoryBase_1a181d63496678472a4e902bcea6fea659" kindref="member">GetDOF()</ref> waypoints are added. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bOverwrite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, will overwrite the waypoints starting at index, and will insert new waypoints only if end of trajectory is reached. If false, will insert the points before index: a 0 index inserts the new data in the beginning, a <ref refid="classOpenRAVE_1_1TrajectoryBase_1aee0058cd9ab78480cbef78db3bf1fc75" kindref="member">GetNumWaypoints()</ref> index inserts the new data at the end. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a1adb5dcb120bbec5da9e326a84d61fb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Insert</definition>
+        <argsstring>(size_t index, const std::vector&lt; dReal &gt; &amp;data, const ConfigurationSpecification &amp;spec, bool bOverwrite=false)=0</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOverwrite</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Sets/inserts new waypoints in a <bold>user-given</bold> configuration specification. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index where to start modifying the trajectory. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to insert, can represent multiple consecutive waypoints. data.size()/GetConfigurationSpecification().<ref refid="classOpenRAVE_1_1TrajectoryBase_1a181d63496678472a4e902bcea6fea659" kindref="member">GetDOF()</ref> waypoints are added. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the specification in which the input data come in. Depending on what data is offered, some values of this trajectory&apos;s specification might not be initialized. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bOverwrite</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, will overwrite the waypoints starting at index, and will insert new waypoints only if end of trajectory is reached. If false, will insert the points before index: a 0 index inserts the new data in the beginning, a <ref refid="classOpenRAVE_1_1TrajectoryBase_1aee0058cd9ab78480cbef78db3bf1fc75" kindref="member">GetNumWaypoints()</ref> index inserts the new data at the end. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1aa2b3c4b3091179afbb354f985e15701f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Remove</definition>
+        <argsstring>(size_t startindex, size_t endindex)=0</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>size_t</type>
+          <declname>startindex</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>endindex</declname>
+        </param>
+        <briefdescription>
+<para>removes a number of waypoints starting at the specified index </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a479f3837904daa33d4e11e7fadd28aed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Sample</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;data, dReal time) const =0</argsstring>
+        <name>Sample</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>samples a data point on the trajectory at a particular time </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data[out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sampled point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time to sample </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1acbaf4d3d503703e9d8274b73b880e969" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Sample</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;data, dReal time, const ConfigurationSpecification &amp;spec) const </argsstring>
+        <name>Sample</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <briefdescription>
+<para>samples a data point on the trajectory at a particular time and returns data for the group specified. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default implementation is slow, so interface developers should override it. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data[out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sampled point </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the time to sample </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spec[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the specification format to return the data in </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a420ec6d8dcc4536a352c0b731bf8bc53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref> &amp;</type>
+        <definition>virtual const ConfigurationSpecification&amp; GetConfigurationSpecification</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetConfigurationSpecification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1aee0058cd9ab78480cbef78db3bf1fc75" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t GetNumWaypoints</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetNumWaypoints</name>
+        <briefdescription>
+<para>return the number of waypoints </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a27ce506aadd014e6c7e960daf5840e92" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void GetWaypoints</definition>
+        <argsstring>(size_t startindex, size_t endindex, std::vector&lt; dReal &gt; &amp;data) const =0</argsstring>
+        <name>GetWaypoints</name>
+        <param>
+          <type>size_t</type>
+          <declname>startindex</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>endindex</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>return a set of waypoints in the range [startindex,endindex) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startindex[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the start index of the waypoint (included) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endindex[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the end index of the waypoint (not included) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data[out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data of the waypoint </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a6a20ad14d835b86e00ecfb25fd1b2b3b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void GetWaypoints</definition>
+        <argsstring>(size_t startindex, size_t endindex, std::vector&lt; dReal &gt; &amp;data, const ConfigurationSpecification &amp;spec) const </argsstring>
+        <name>GetWaypoints</name>
+        <param>
+          <type>size_t</type>
+          <declname>startindex</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>endindex</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <briefdescription>
+<para>return a set of waypoints in the range [startindex,endindex) in a different configuration specification. </para>        </briefdescription>
+        <detaileddescription>
+<para>The default implementation is very slow, so trajectory developers should really override it. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startindex[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the start index of the waypoint (included) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endindex[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the end index of the waypoint (not included) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spec[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the specification to return the data in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data[out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data of the waypoint </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1aaf8eb26adc6ee1d49723d97bc5b06fc6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetWaypoint</definition>
+        <argsstring>(int index, std::vector&lt; dReal &gt; &amp;data) const </argsstring>
+        <name>GetWaypoint</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>returns one waypoint </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the waypoint. If &lt; 0, then counting starts from the last waypoint. For example GetWaypoints(-1,data) returns the last waypoint. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data[out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data of the waypoint </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="108" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="107" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1accf42064cea2190dc8756f945d40b59b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetWaypoint</definition>
+        <argsstring>(int index, std::vector&lt; dReal &gt; &amp;data, const ConfigurationSpecification &amp;spec) const </argsstring>
+        <name>GetWaypoint</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <briefdescription>
+<para>returns one waypoint </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index[in]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the waypoint. If &lt; 0, then counting starts from the last waypoint. For example GetWaypoints(-1,data) returns the last waypoint. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data[out]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the data of the waypoint </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="123" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="122" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1adde787bbcf5b10de65353d70095ac74f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>virtual dReal GetDuration</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetDuration</name>
+        <briefdescription>
+<para>return the duration of the trajectory in seconds </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1adfa364ca828b73e2e46ebe94c16ab492" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void serialize</definition>
+        <argsstring>(std::ostream &amp;O, int options=0) const </argsstring>
+        <name>serialize</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>output the trajectory in XML format </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1adaeacd32f1a27831c97032e1e6b24944" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void deserialize</definition>
+        <argsstring>(std::istream &amp;I)</argsstring>
+        <name>deserialize</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>I</declname>
+        </param>
+        <briefdescription>
+<para>initialize the trajectory </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Clone</definition>
+        <argsstring>(InterfaceBaseConstPtr preference, int cloningoptions)</argsstring>
+        <name>Clone</name>
+        <reimplements refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496">Clone</reimplements>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a98930a0f0fa346643e6694577adac990" kindref="member">InterfaceBaseConstPtr</ref></type>
+          <declname>preference</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cloningoptions</declname>
+        </param>
+        <briefdescription>
+<para>Clone the contents of an interface to the current interface. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>preference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface whose information to clone </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cloningoptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mask of CloningOptions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classOpenRAVE_1_1openrave__exception" kindref="compound">openrave_exception</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if command doesn&apos;t succeed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a59dda2f7a9f5935bf9542c394069f6ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SampleTrajectory</definition>
+        <argsstring>(dReal time, Point &amp;tp) const RAVE_DEPRECATED</argsstring>
+        <name>SampleTrajectory</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1TrajectoryBase_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>tp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000057"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a28d819266bc461377ede27b048f0a2f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const std::vector&lt; <ref refid="classOpenRAVE_1_1TrajectoryBase_1_1Point" kindref="compound">Point</ref> &gt; &amp;</type>
+        <definition>virtual const std::vector&lt;Point&gt;&amp; GetPoints</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000058"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a181d63496678472a4e902bcea6fea659" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetDOF</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetDOF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000059"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="174" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="174" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a536656d38490de6aadc079c9f20b754d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>virtual dReal GetTotalDuration</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetTotalDuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000060"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="180" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1af8ac97f47745ae12998f6637e11ceaab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Write</definition>
+        <argsstring>(std::ostream &amp;O, int options) const RAVE_DEPRECATED</argsstring>
+        <name>Write</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000061"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="185" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1ac92225ac78a03d41680a022e11a5f4b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Read</definition>
+        <argsstring>(std::istream &amp;I, RobotBaseConstPtr) RAVE_DEPRECATED</argsstring>
+        <name>Read</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>I</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ae14278c03739b5661d2542c17ca5db8e" kindref="member">RobotBaseConstPtr</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000062"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="191" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="191" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1aadc88793694f7fdb20427e235bcfed49" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int GetInterpMethod</definition>
+        <argsstring>() const RAVE_DEPRECATED</argsstring>
+        <name>GetInterpMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000063"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="197" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="197" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1ae8962475965fc74539a8a1ff1c227f61" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool CalcTrajTiming</definition>
+        <argsstring>(RobotBasePtr probot, int interp, bool autocalc, bool activedof, dReal fmaxvelmult=1) RAVE_DEPRECATED</argsstring>
+        <name>CalcTrajTiming</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>probot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>interp</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>autocalc</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>activedof</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>fmaxvelmult</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000064"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1acff991618208e360f3c8f6af691fb947" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Clear</definition>
+        <argsstring>() RAVE_DEPRECATED</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000065"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="206" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1af75c151370d2a44fbd1c94bc2b6b06cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AddPoint</definition>
+        <argsstring>(const Point &amp;p) RAVE_DEPRECATED</argsstring>
+        <name>AddPoint</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1TrajectoryBase_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000066"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1acfa84d2797c5b267c12d0ef048493ba0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Reset</definition>
+        <argsstring>(int dof) RAVE_DEPRECATED</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>int</type>
+          <declname>dof</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000067"><xreftitle>Deprecated</xreftitle><xrefdescription><para>(11/10/04) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="215" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="214" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InterfaceType</type>
+        <definition>static InterfaceType GetInterfaceTypeStatic</definition>
+        <argsstring>()</argsstring>
+        <name>GetInterfaceTypeStatic</name>
+        <briefdescription>
+<para>return the static interface type this class points to (used for safe casting) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="37" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="37" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a02ad4bf783dae1e01a6fd404f5bcc421" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref></type>
+        <definition>TrajectoryBasePtr shared_trajectory</definition>
+        <argsstring>()</argsstring>
+        <name>shared_trajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="235" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="235" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1a0c62c56a55d665490310dd63605888e3" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1ae4a194e7d8dcb23b1acad4ff9f84ad49" kindref="member">TrajectoryBaseConstPtr</ref></type>
+        <definition>TrajectoryBaseConstPtr shared_trajectory_const</definition>
+        <argsstring>() const </argsstring>
+        <name>shared_trajectory_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="238" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="238" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1TrajectoryBase_1af386ad7515f485242895df543029d333" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* GetHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetHash</name>
+        <reimplements refid="classOpenRAVE_1_1InterfaceBase_1abfb0be978f0f9899582785d67c4b3d40">GetHash</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="243" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="243" bodyend="245"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><bold>[interface]</bold> Encapsulate a time-parameterized trajectories of robot configurations. <bold>If not specified, method is not multi-thread safe.</bold> <ulink url="../main/architecture/trajectory.html">Trajectory Concepts</ulink> </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1931">
+        <label>TrajectoryBase</label>
+        <link refid="classOpenRAVE_1_1TrajectoryBase"/>
+        <childnode refid="1932" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1932">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1942">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1940">
+        <label>Point</label>
+        <link refid="classOpenRAVE_1_1TrajectoryBase_1_1Point"/>
+        <childnode refid="1941" relation="usage">
+          <edgelabel>qdot</edgelabel>
+          <edgelabel>q</edgelabel>
+          <edgelabel>qtorque</edgelabel>
+        </childnode>
+        <childnode refid="1942" relation="usage">
+          <edgelabel>trans</edgelabel>
+        </childnode>
+        <childnode refid="1943" relation="usage">
+          <edgelabel>linearvel</edgelabel>
+          <edgelabel>angularvel</edgelabel>
+        </childnode>
+      </node>
+      <node id="1935">
+        <label>string</label>
+        <childnode refid="1936" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1941">
+        <label>vector&lt; dReal &gt;</label>
+      </node>
+      <node id="1937">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1935" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1943">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+      <node id="1936">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1939">
+        <label>vector&lt; Point &gt;</label>
+        <childnode refid="1940" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1933">
+        <label>TrajectoryBase</label>
+        <link refid="classOpenRAVE_1_1TrajectoryBase"/>
+        <childnode refid="1934" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1939" relation="usage">
+          <edgelabel>__vdeprecatedpoints</edgelabel>
+        </childnode>
+      </node>
+      <node id="1938">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1935" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1934">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1935" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1937" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1938" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/trajectory.h" line="30" bodyfile="/home/pra3cob/openrave/include/openrave/trajectory.h" bodystart="29" bodyend="249"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>__description</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1aa33a378751288ce456f4a7d6128985d3" prot="private" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>__vdeprecatedpoints</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1af75c151370d2a44fbd1c94bc2b6b06cd" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>AddPoint</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1ae8962475965fc74539a8a1ff1c227f61" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>CalcTrajTiming</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1acff991618208e360f3c8f6af691fb947" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>Clear</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>Clone</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1adaeacd32f1a27831c97032e1e6b24944" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>deserialize</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a420ec6d8dcc4536a352c0b731bf8bc53" prot="public" virt="pure-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetConfigurationSpecification</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a181d63496678472a4e902bcea6fea659" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetDOF</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1adde787bbcf5b10de65353d70095ac74f" prot="public" virt="pure-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetDuration</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1af386ad7515f485242895df543029d333" prot="private" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetHash</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1aadc88793694f7fdb20427e235bcfed49" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetInterpMethod</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1aee0058cd9ab78480cbef78db3bf1fc75" prot="public" virt="pure-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetNumWaypoints</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a28d819266bc461377ede27b048f0a2f5" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetPoints</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a536656d38490de6aadc079c9f20b754d" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetTotalDuration</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1aaf8eb26adc6ee1d49723d97bc5b06fc6" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetWaypoint</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1accf42064cea2190dc8756f945d40b59b" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetWaypoint</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a27ce506aadd014e6c7e960daf5840e92" prot="public" virt="pure-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetWaypoints</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a6a20ad14d835b86e00ecfb25fd1b2b3b" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetWaypoints</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1ada3d183ab9d1d31a6b4e305c2ac174e6" prot="public" virt="pure-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>Init</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a2d4b62249bd00ee23a28a491fce41dc1" prot="public" virt="pure-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>Insert</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a1adb5dcb120bbec5da9e326a84d61fb9" prot="public" virt="pure-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>Insert</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a16220697329e6c8f40dd5e0ec4f4b384" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a52698d8bfef94dd709800b3ab81fdc7e" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a721ee98d03faa355053f17ae6f21ca98" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1ab39e1b10b432d633678b9f221429bb92" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1aa81206fce5ec09a7746fcdd7621cd269" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a7d19cf7496aca21f9d3466068dad4c74" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1aa2b71f320aa8317dd7c95a98282ad86a" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a35c5722763a85351388727311a4cbf70" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a07f3821811305c7c0895e7925448e4d8" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1aed8bb5f4096a3957265d2629954d7217" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a7b44c6158a12f5fcf1df7e4c92d1f276" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a87484890b029c7e756d4d74b452702f5" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a581f95b06ac8e10ba91eabc4f147aa58" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1ac479481c8fd8db495a55b8f6095449cd" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RAVE_DEPRECATED</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1ac92225ac78a03d41680a022e11a5f4b2" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>Read</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>RegisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1aa2b3c4b3091179afbb354f985e15701f" prot="public" virt="pure-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>Remove</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1acfa84d2797c5b267c12d0ef048493ba0" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>Reset</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a479f3837904daa33d4e11e7fadd28aed" prot="public" virt="pure-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>Sample</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1acbaf4d3d503703e9d8274b73b880e969" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>Sample</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a59dda2f7a9f5935bf9542c394069f6ee" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>SampleTrajectory</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1adfa364ca828b73e2e46ebe94c16ab492" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>SetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a02ad4bf783dae1e01a6fd404f5bcc421" prot="protected" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>shared_trajectory</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a0c62c56a55d665490310dd63605888e3" prot="protected" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>shared_trajectory_const</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a1a0492e1cf8f7fc2ea314e483a50ef2b" prot="public" virt="non-virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>TrajectoryBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1af8ac97f47745ae12998f6637e11ceaab" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>Write</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>~InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1TrajectoryBase_1a3d2a9a01377ad57032b16627454b9298" prot="public" virt="virtual"><scope>OpenRAVE::TrajectoryBase</scope><name>~TrajectoryBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

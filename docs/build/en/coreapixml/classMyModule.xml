@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classMyModule" kind="class" prot="public">
+    <compoundname>MyModule</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1ModuleBase" prot="public" virt="non-virtual">ModuleBase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMyModule_1a70c9843a70fc8afb5401c63b08afe312" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyModule</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>MyModule</name>
+        <param>
+          <type>EnvironmentBasePtr</type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" line="19" bodyfile="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" bodystart="18" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyModule_1a36a98806f9de4436a88d6b683b34d838" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~MyModule</definition>
+        <argsstring>()</argsstring>
+        <name>~MyModule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" line="24" bodyfile="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyModule_1ac919a991060ede6983343719401686de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Destroy</definition>
+        <argsstring>()</argsstring>
+        <name>Destroy</name>
+        <reimplements refid="classOpenRAVE_1_1ModuleBase_1a941c8e8d2c5aa963d76aef113f19d835">Destroy</reimplements>
+        <briefdescription>
+<para>called when problem gets unloaded from environment </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" line="27" bodyfile="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyModule_1a02badd80bf345ba522a25ba31e620e9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(const string &amp;cmd)</argsstring>
+        <name>main</name>
+        <reimplements refid="classOpenRAVE_1_1ModuleBase_1a9272536a00bca7f32ec0e4a7e131ac23">main</reimplements>
+        <param>
+          <type>const string &amp;</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gets called every time a problem instance is loaded to initialize the problem. Robots might not necessarily be set before this function call returns 0 on success </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" line="32" bodyfile="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyModule_1ad852aa14e4ab678c41b4bd0e9e4c9a61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NumBodies</definition>
+        <argsstring>(ostream &amp;sout, istream &amp;sinput)</argsstring>
+        <name>NumBodies</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>sout</declname>
+        </param>
+        <param>
+          <type>istream &amp;</type>
+          <declname>sinput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" line="38" bodyfile="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" bodystart="37" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classMyModule_1a3454d0158278faae615ba251964919b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Load</definition>
+        <argsstring>(ostream &amp;sout, istream &amp;sinput)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>sout</declname>
+        </param>
+        <param>
+          <type>istream &amp;</type>
+          <declname>sinput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" line="46" bodyfile="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" bodystart="45" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1515">
+        <label>MyModule</label>
+        <link refid="classMyModule"/>
+        <childnode refid="1516" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1516">
+        <label>ModuleBase</label>
+        <link refid="classOpenRAVE_1_1ModuleBase"/>
+        <childnode refid="1517" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1517">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1518">
+        <label>MyModule</label>
+        <link refid="classMyModule"/>
+        <childnode refid="1519" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1521">
+        <label>string</label>
+        <childnode refid="1522" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1523">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1521" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1522">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1524">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1521" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1519">
+        <label>ModuleBase</label>
+        <link refid="classOpenRAVE_1_1ModuleBase"/>
+        <childnode refid="1520" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1520">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1521" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1523" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1524" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" line="16" bodyfile="/home/pra3cob/openrave/src/cppexamples/plugincpp.cpp" bodystart="15" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>MyModule</scope><name>__description</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>MyModule</scope><name>Clone</name></member>
+      <member refid="classMyModule_1ac919a991060ede6983343719401686de" prot="public" virt="virtual"><scope>MyModule</scope><name>Destroy</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>MyModule</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>MyModule</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>MyModule</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>MyModule</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>MyModule</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>MyModule</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>MyModule</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>MyModule</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>MyModule</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>MyModule</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>MyModule</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>MyModule</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>MyModule</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classMyModule_1a3454d0158278faae615ba251964919b5" prot="public" virt="non-virtual"><scope>MyModule</scope><name>Load</name></member>
+      <member refid="classMyModule_1a02badd80bf345ba522a25ba31e620e9c" prot="public" virt="virtual"><scope>MyModule</scope><name>main</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a5a91427df2d07efa80c64f34f54539eb" prot="public" virt="non-virtual"><scope>MyModule</scope><name>ModuleBase</name></member>
+      <member refid="classMyModule_1a70c9843a70fc8afb5401c63b08afe312" prot="public" virt="non-virtual"><scope>MyModule</scope><name>MyModule</name></member>
+      <member refid="classMyModule_1ad852aa14e4ab678c41b4bd0e9e4c9a61" prot="public" virt="non-virtual"><scope>MyModule</scope><name>NumBodies</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>MyModule</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>MyModule</scope><name>RegisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a4c4ba0ffe635d14b93794268bd8e5995" prot="public" virt="virtual"><scope>MyModule</scope><name>Reset</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>MyModule</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>MyModule</scope><name>SetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>MyModule</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>MyModule</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1a7b480d96bbf53f0a0d0800deec13fff1" prot="public" virt="virtual"><scope>MyModule</scope><name>SimulationStep</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>MyModule</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>MyModule</scope><name>~InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1ModuleBase_1aef8e9e0635e2fe7835cbc5e5d386c7d6" prot="public" virt="virtual"><scope>MyModule</scope><name>~ModuleBase</name></member>
+      <member refid="classMyModule_1a36a98806f9de4436a88d6b683b34d838" prot="public" virt="virtual"><scope>MyModule</scope><name>~MyModule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,315 @@
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator}{
+\subsection{Manipulator Class Reference}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator}\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+}
+
+
+Defines a chain of joints for an arm and set of joints for a gripper. Simplifies operating with them.  
+
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Transform \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a2206c7317f62f083c3f57868ba82bfee}{GetTransform} () const 
+\begin{DoxyCompactList}\small\item\em Return the transformation of the end effector (manipulator frame). \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae2b496857b0c5970bf0544e938e96125}{SetIkSolver} (IkSolverBasePtr iksolver)
+\begin{DoxyCompactList}\small\item\em Sets the ik solver and initializes it with the current manipulator. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a9ada1e961494800a5feae0672896f797}{
+virtual IkSolverBasePtr \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a9ada1e961494800a5feae0672896f797}{GetIkSolver} () const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a9ada1e961494800a5feae0672896f797}
+
+\begin{DoxyCompactList}\small\item\em Returns the currently set ik solver. \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_ab73a54e94fe2be07ec7dc08220585ae9}{GetNumFreeParameters} () const \hyperlink{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{RAVE\_\-DEPRECATED}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_ad1c511325beab0040d0b5f764291ec86}{GetFreeParameters} (std::vector$<$ dReal $>$ \&vFreeParameters) const \hyperlink{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{RAVE\_\-DEPRECATED}
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_ab77b38a94a16401b402f178513e9af5d}{
+virtual LinkPtr \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_ab77b38a94a16401b402f178513e9af5d}{GetBase} () const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_ab77b38a94a16401b402f178513e9af5d}
+
+\begin{DoxyCompactList}\small\item\em the base used for the iksolver \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a359b65aa0b4feca9d86f6f300dd0a50a}{
+virtual LinkPtr \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a359b65aa0b4feca9d86f6f300dd0a50a}{GetEndEffector} () const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a359b65aa0b4feca9d86f6f300dd0a50a}
+
+\begin{DoxyCompactList}\small\item\em the end effector link (used to define workspace distance) \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_afc05cfe6a87b76f1027596591ee688ce}{
+virtual Transform \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_afc05cfe6a87b76f1027596591ee688ce}{GetLocalToolTransform} () const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_afc05cfe6a87b76f1027596591ee688ce}
+
+\begin{DoxyCompactList}\small\item\em Return transform with respect to end effector defining the grasp coordinate system. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a853353ac859599b30cee9e99b17fa728}{SetLocalToolTransform} (const Transform \&t)
+\begin{DoxyCompactList}\small\item\em Sets the local tool transform with respect to the end effector. \item\end{DoxyCompactList}\item 
+virtual Transform \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a427344bec7ce8135433b47fd0b04f1f4}{GetGraspTransform} () const \hyperlink{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{RAVE\_\-DEPRECATED}
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_af77d0225ce1ef4be58ca978d1cd13f10}{
+virtual const std::vector$<$ int $>$ \& \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_af77d0225ce1ef4be58ca978d1cd13f10}{GetGripperIndices} () const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_af77d0225ce1ef4be58ca978d1cd13f10}
+
+\begin{DoxyCompactList}\small\item\em Gripper indices of the joints that the manipulator controls. \item\end{DoxyCompactList}\item 
+virtual const std::vector$<$ int $>$ \& \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_ade23a90fcb4102d98f20dddad76ded75}{GetArmIndices} () const 
+\begin{DoxyCompactList}\small\item\em Return the indices of the DOFs of the arm (used for IK, etc). \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a29109f7d70f0066ba24f7b5ef6deb835}{
+virtual const std::vector$<$ dReal $>$ \& \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a29109f7d70f0066ba24f7b5ef6deb835}{GetClosingDirection} () const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a29109f7d70f0066ba24f7b5ef6deb835}
+
+\begin{DoxyCompactList}\small\item\em return the normal direction to move joints to 'close' the hand \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_ad07d05c88555a8420be3012a74950a00}{
+virtual Vector \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_ad07d05c88555a8420be3012a74950a00}{GetLocalToolDirection} () const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_ad07d05c88555a8420be3012a74950a00}
+
+\begin{DoxyCompactList}\small\item\em direction of palm/head/manipulator used for approaching. defined inside the manipulator/grasp coordinate system \item\end{DoxyCompactList}\item 
+virtual Vector \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a92a9ef35f92ddbef89fc434defe397fc}{GetDirection} () const 
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_afe8f72c898a5e9200f5132a2a58e52cb}{FindIKSolution} (const \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \&param, std::vector$<$ dReal $>$ \&solution, int filteroptions) const 
+\begin{DoxyCompactList}\small\item\em Find a close solution to the current robot's joint values. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a89829fe0eeca1eb5ca8424bc8575b346}{FindIKSolutions} (const \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \&param, std::vector$<$ std::vector$<$ dReal $>$ $>$ \&solutions, int filteroptions) const 
+\begin{DoxyCompactList}\small\item\em Find all the IK solutions for the given end effector transform. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_af4452ae2258d7656aa374bc0530edc1f}{GetIkParameterization} (\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2e}{IkParameterizationType} iktype) const 
+\begin{DoxyCompactList}\small\item\em returns the parameterization of a given IK type for the current manipulator position. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae88cd3fc2bd2b4da5ea6b84ed9edc6b9}{GetIkParameterization} (const \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \&ikparam) const 
+\begin{DoxyCompactList}\small\item\em returns a full parameterization of a given IK type for the current manipulator position using an existing \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} as the seed. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a814285268af782cfac89350db77df299}{
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a814285268af782cfac89350db77df299}{GetChildJoints} (std::vector$<$ JointPtr $>$ \&vjoints) const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a814285268af782cfac89350db77df299}
+
+\begin{DoxyCompactList}\small\item\em Get all child joints of the manipulator starting at the pEndEffector link. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae7d4690b82988f471033acbd0bb460ae}{
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae7d4690b82988f471033acbd0bb460ae}{GetChildDOFIndices} (std::vector$<$ int $>$ \&vdofndices) const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae7d4690b82988f471033acbd0bb460ae}
+
+\begin{DoxyCompactList}\small\item\em Get all child DOF indices of the manipulator starting at the pEndEffector link. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a63a72836eeef2579aff6424767e91007}{IsChildLink} (LinkConstPtr plink) const 
+\begin{DoxyCompactList}\small\item\em returns true if a link is part of the child links of the manipulator. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a235e6b3b9b27422cdf11846a71f5ca66}{GetChildLinks} (std::vector$<$ LinkPtr $>$ \&vlinks) const 
+\begin{DoxyCompactList}\small\item\em Get all child links of the manipulator starting at pEndEffector link. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a9891f6fc2999ae047ebc9d06c0bf4069}{GetIndependentLinks} (std::vector$<$ LinkPtr $>$ \&vlinks) const 
+\begin{DoxyCompactList}\small\item\em Get all links that are independent of the arm and gripper joints. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a409973001a95f36e715c2f227fd28c5a}{CheckEndEffectorCollision} (const Transform \&tEE, CollisionReportPtr report=CollisionReportPtr()) const 
+\begin{DoxyCompactList}\small\item\em Checks collision with only the gripper given its end-\/effector transform. Ignores disabled links. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a03b7a7ec9520a1302bbfd13ac2e2e225}{CheckIndependentCollision} (CollisionReportPtr report=CollisionReportPtr()) const 
+\begin{DoxyCompactList}\small\item\em Checks collision with the environment with all the independent links of the robot. Ignores disabled links. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a27b105dc167c45d59ff59d5f6198c431}{
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a27b105dc167c45d59ff59d5f6198c431}{IsGrabbing} (KinBodyConstPtr body) const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a27b105dc167c45d59ff59d5f6198c431}
+
+\begin{DoxyCompactList}\small\item\em return true if the body is being grabbed by any link on this manipulator \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_aa52f91874dcc3f6a9525294c819b5634}{
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_aa52f91874dcc3f6a9525294c819b5634}{CalculateJacobian} (boost::multi\_\-array$<$ dReal, 2 $>$ \&mjacobian) const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_aa52f91874dcc3f6a9525294c819b5634}
+
+\begin{DoxyCompactList}\small\item\em computes the jacobian of the manipulator arm indices from the current manipulator frame origin. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a20e08189ce7cdd52494706e4221481ec}{
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a20e08189ce7cdd52494706e4221481ec}{CalculateRotationJacobian} (boost::multi\_\-array$<$ dReal, 2 $>$ \&mjacobian) const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a20e08189ce7cdd52494706e4221481ec}
+
+\begin{DoxyCompactList}\small\item\em computes the quaternion jacobian of the manipulator arm indices from the current manipulator frame rotation. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a47689e0294c39e5accb1c634a5b0296c}{
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a47689e0294c39e5accb1c634a5b0296c}{CalculateAngularVelocityJacobian} (boost::multi\_\-array$<$ dReal, 2 $>$ \&mjacobian) const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a47689e0294c39e5accb1c634a5b0296c}
+
+\begin{DoxyCompactList}\small\item\em computes the angule axis jacobian of the manipulator arm indices. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae230a8d361998e79a15128bfe18ec86a}{
+virtual const std::string \& \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae230a8d361998e79a15128bfe18ec86a}{GetStructureHash} () const }
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae230a8d361998e79a15128bfe18ec86a}
+
+\begin{DoxyCompactList}\small\item\em Return hash of just the manipulator definition. \item\end{DoxyCompactList}\item 
+virtual const std::string \& \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a7322a77b768ce7997022a7b4b4ca46fe}{GetKinematicsStructureHash} () const 
+\begin{DoxyCompactList}\small\item\em Return hash of all kinematics information that involves solving the inverse kinematics equations. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a06e8b45efe1699af0520ca886402f495}{
+std::vector$<$ std::string $>$ \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a06e8b45efe1699af0520ca886402f495}{\_\-vgripperjointnames}}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a06e8b45efe1699af0520ca886402f495}
+
+\begin{DoxyCompactList}\small\item\em names of the gripper joints \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Defines a chain of joints for an arm and set of joints for a gripper. Simplifies operating with them. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a409973001a95f36e715c2f227fd28c5a}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!CheckEndEffectorCollision@{CheckEndEffectorCollision}}
+\index{CheckEndEffectorCollision@{CheckEndEffectorCollision}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{CheckEndEffectorCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckEndEffectorCollision (const Transform \& {\em tEE}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a409973001a95f36e715c2f227fd28c5a}
+
+
+Checks collision with only the gripper given its end-\/effector transform. Ignores disabled links. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tEE}]the end effector transform \item[\mbox{$\rightarrow$} {\em report}]\mbox{[}optional\mbox{]} collision report \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a collision occurred 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a03b7a7ec9520a1302bbfd13ac2e2e225}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!CheckIndependentCollision@{CheckIndependentCollision}}
+\index{CheckIndependentCollision@{CheckIndependentCollision}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{CheckIndependentCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckIndependentCollision (CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a03b7a7ec9520a1302bbfd13ac2e2e225}
+
+
+Checks collision with the environment with all the independent links of the robot. Ignores disabled links. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em report}]\mbox{[}optional\mbox{]} collision report \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a collision occurred 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_afe8f72c898a5e9200f5132a2a58e52cb}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!FindIKSolution@{FindIKSolution}}
+\index{FindIKSolution@{FindIKSolution}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{FindIKSolution}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool FindIKSolution (const {\bf IkParameterization} \& {\em param}, \/  std::vector$<$ dReal $>$ \& {\em solution}, \/  int {\em filteroptions}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_afe8f72c898a5e9200f5132a2a58e52cb}
+
+
+Find a close solution to the current robot's joint values. 
+
+The function is a wrapper around the IkSolver interface. Note that the solution returned is not guaranteed to be the closest solution. In order to compute that, will have to compute all the ik solutions using FindIKSolutions. 
+\begin{DoxyParams}{Parameters}
+\item[{\em param}]The transformation of the end-\/effector in the global coord system \item[{\em solution}]Will be of size \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_ade23a90fcb4102d98f20dddad76ded75}{GetArmIndices()}.size() and contain the best solution \item[\mbox{$\leftarrow$} {\em filteroptions}]A bitmask of \hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdc}{IkFilterOptions} values controlling what is checked for each ik solution. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a89829fe0eeca1eb5ca8424bc8575b346}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!FindIKSolutions@{FindIKSolutions}}
+\index{FindIKSolutions@{FindIKSolutions}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{FindIKSolutions}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool FindIKSolutions (const {\bf IkParameterization} \& {\em param}, \/  std::vector$<$ std::vector$<$ dReal $>$ $>$ \& {\em solutions}, \/  int {\em filteroptions}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a89829fe0eeca1eb5ca8424bc8575b346}
+
+
+Find all the IK solutions for the given end effector transform. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em param}]The transformation of the end-\/effector in the global coord system \item[{\em solutions}]An array of all solutions, each element in solutions is of size \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_ade23a90fcb4102d98f20dddad76ded75}{GetArmIndices()}.size() \item[\mbox{$\leftarrow$} {\em filteroptions}]A bitmask of \hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdc}{IkFilterOptions} values controlling what is checked for each ik solution. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_ade23a90fcb4102d98f20dddad76ded75}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!GetArmIndices@{GetArmIndices}}
+\index{GetArmIndices@{GetArmIndices}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{GetArmIndices}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::vector$<$int$>$\& GetArmIndices () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_ade23a90fcb4102d98f20dddad76ded75}
+
+
+Return the indices of the DOFs of the arm (used for IK, etc). 
+
+Usually the DOF indices from pBase to pEndEffector \hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a235e6b3b9b27422cdf11846a71f5ca66}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!GetChildLinks@{GetChildLinks}}
+\index{GetChildLinks@{GetChildLinks}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{GetChildLinks}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetChildLinks (std::vector$<$ LinkPtr $>$ \& {\em vlinks}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a235e6b3b9b27422cdf11846a71f5ca66}
+
+
+Get all child links of the manipulator starting at pEndEffector link. 
+
+The child links do not include the arm links. \hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a92a9ef35f92ddbef89fc434defe397fc}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{GetDirection}]{\setlength{\rightskip}{0pt plus 5cm}virtual Vector GetDirection () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a92a9ef35f92ddbef89fc434defe397fc}
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_ad1c511325beab0040d0b5f764291ec86}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!GetFreeParameters@{GetFreeParameters}}
+\index{GetFreeParameters@{GetFreeParameters}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{GetFreeParameters}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool GetFreeParameters (std::vector$<$ dReal $>$ \& {\em vFreeParameters}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_ad1c511325beab0040d0b5f764291ec86}
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a427344bec7ce8135433b47fd0b04f1f4}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!GetGraspTransform@{GetGraspTransform}}
+\index{GetGraspTransform@{GetGraspTransform}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{GetGraspTransform}]{\setlength{\rightskip}{0pt plus 5cm}virtual Transform GetGraspTransform () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a427344bec7ce8135433b47fd0b04f1f4}
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae88cd3fc2bd2b4da5ea6b84ed9edc6b9}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!GetIkParameterization@{GetIkParameterization}}
+\index{GetIkParameterization@{GetIkParameterization}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{GetIkParameterization}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf IkParameterization} GetIkParameterization (const {\bf IkParameterization} \& {\em ikparam}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae88cd3fc2bd2b4da5ea6b84ed9edc6b9}
+
+
+returns a full parameterization of a given IK type for the current manipulator position using an existing \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} as the seed. 
+
+Ideally pluging the returned ik parameterization into FindIkSolution should return the a manipulator configuration such that a new call to GetIkParameterization returns the same values. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ikparam}]Some IK types like Lookat3D and TranslationLocalGlobal6D set constraints in the global coordinate system of the manipulator. Because these values are not stored in manipulator itself, they have to be passed in through an existing \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization}. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_af4452ae2258d7656aa374bc0530edc1f}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!GetIkParameterization@{GetIkParameterization}}
+\index{GetIkParameterization@{GetIkParameterization}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{GetIkParameterization}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf IkParameterization} GetIkParameterization ({\bf IkParameterizationType} {\em iktype}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_af4452ae2258d7656aa374bc0530edc1f}
+
+
+returns the parameterization of a given IK type for the current manipulator position. 
+
+Ideally pluging the returned ik parameterization into FindIkSolution should return the a manipulator configuration such that a new call to GetIkParameterization returns the same values. In other words: 
+\begin{DoxyCode}
+            ikparam = manip->GetIkParameterization(iktype);
+            ... move robot
+            std::vector<dReal> sol;
+            if( FindIKSolution(ikparam,sol, filteroptions) ) {
+                manip->GetRobot()->SetActiveDOFs(manip->GetArmIndices());
+                manip->GetRobot()->SetActiveDOFValues(sol);
+                BOOST_ASSERT( dist(manip->GetIkParameterization(iktype), ikparam)
+       <= epsilon );
+            }
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+\item[{\em iktype}]the type of parameterization to request \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a9891f6fc2999ae047ebc9d06c0bf4069}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!GetIndependentLinks@{GetIndependentLinks}}
+\index{GetIndependentLinks@{GetIndependentLinks}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{GetIndependentLinks}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetIndependentLinks (std::vector$<$ LinkPtr $>$ \& {\em vlinks}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a9891f6fc2999ae047ebc9d06c0bf4069}
+
+
+Get all links that are independent of the arm and gripper joints. 
+
+In other words, returns all links not on the path from the base to the end effector and not children of the end effector. The base and all links rigidly attached to it are also returned. \hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a7322a77b768ce7997022a7b4b4ca46fe}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!GetKinematicsStructureHash@{GetKinematicsStructureHash}}
+\index{GetKinematicsStructureHash@{GetKinematicsStructureHash}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{GetKinematicsStructureHash}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::string\& GetKinematicsStructureHash () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a7322a77b768ce7997022a7b4b4ca46fe}
+
+
+Return hash of all kinematics information that involves solving the inverse kinematics equations. 
+
+This includes joint axes, joint positions, and final grasp transform. Hash is used to cache the solvers. \hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_ab73a54e94fe2be07ec7dc08220585ae9}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!GetNumFreeParameters@{GetNumFreeParameters}}
+\index{GetNumFreeParameters@{GetNumFreeParameters}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{GetNumFreeParameters}]{\setlength{\rightskip}{0pt plus 5cm}virtual int GetNumFreeParameters () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_ab73a54e94fe2be07ec7dc08220585ae9}
+\hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a2206c7317f62f083c3f57868ba82bfee}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!GetTransform@{GetTransform}}
+\index{GetTransform@{GetTransform}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{GetTransform}]{\setlength{\rightskip}{0pt plus 5cm}virtual Transform GetTransform () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a2206c7317f62f083c3f57868ba82bfee}
+
+
+Return the transformation of the end effector (manipulator frame). 
+
+All inverse kinematics and grasping queries are specifying this frame. \hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a63a72836eeef2579aff6424767e91007}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!IsChildLink@{IsChildLink}}
+\index{IsChildLink@{IsChildLink}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{IsChildLink}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsChildLink (LinkConstPtr {\em plink}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a63a72836eeef2579aff6424767e91007}
+
+
+returns true if a link is part of the child links of the manipulator. 
+
+The child links do not include the arm links. \hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae2b496857b0c5970bf0544e938e96125}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!SetIkSolver@{SetIkSolver}}
+\index{SetIkSolver@{SetIkSolver}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{SetIkSolver}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetIkSolver (IkSolverBasePtr {\em iksolver})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_ae2b496857b0c5970bf0544e938e96125}
+
+
+Sets the ik solver and initializes it with the current manipulator. 
+
+Due to complications with translation,rotation,direction,and ray ik, the ik solver should take into account the grasp transform (\_\-tLocalTool) internally. The actual ik primitives are transformed into the base frame only. \hypertarget{classOpenRAVE_1_1RobotBase_1_1Manipulator_a853353ac859599b30cee9e99b17fa728}{
+\index{OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}!SetLocalToolTransform@{SetLocalToolTransform}}
+\index{SetLocalToolTransform@{SetLocalToolTransform}!OpenRAVE::RobotBase::Manipulator@{OpenRAVE::RobotBase::Manipulator}}
+\paragraph[{SetLocalToolTransform}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetLocalToolTransform (const Transform \& {\em t})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_1_1Manipulator_a853353ac859599b30cee9e99b17fa728}
+
+
+Sets the local tool transform with respect to the end effector. 
+
+Because this call will change manipulator hash, it resets the loaded IK and sets the Prop\_\-RobotManipulatorTool message. 

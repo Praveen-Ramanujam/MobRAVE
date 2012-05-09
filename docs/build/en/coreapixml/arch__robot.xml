@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="arch__robot" kind="page">
+    <compoundname>arch_robot</compoundname>
+    <title>Robot Concepts</title>
+    <detaileddescription>
+<para><bold>Reference:</bold> <ref refid="classOpenRAVE_1_1RobotBase" kindref="compound">OpenRAVE::RobotBase</ref></para><para>Robots are a special type of KinBody that need higher level functionality for their control and movement in the environment. There are a couple of differences between a Robot and a regular KinBody.</para><sect1 id="arch__robot_1arch_robot_manipulator">
+<title>Manipulators</title>
+<para>Every robot supports a list of <ref refid="classOpenRAVE_1_1RobotBase_1_1Manipulator" kindref="compound">Manipulator</ref> objects that describe the links the robot should use when manipulating parts of the environment. Usually manipulators are serial chains with a Base link and an End Effector link. Each manipulator is also decomposed into two parts: the arm and the hand. The hand usually makes contact with the objects while the arm transfers the hand to its destination. The Manipulator class also has an optional pointer to a IkSolverBase class providing inverse kinematics functionality. The IK solver used by a Manipulator can be changed by Manipulator::SetIKSolver, so plugins can provide and set their own IK solvers.</para></sect1>
+<sect1 id="arch__robot_1arch_robot_activedof">
+<title>Active Degrees of Freedom</title>
+<para>When controlling and planning for a robot, it is possible to set the degrees of freedom that should be used. For example, consider a humanoid robot. There should be in easy way to specify to planners that only the right hand of the robot should be taken into consideration when planning; the rest of the joints should be ignored. Or consider the case where we care about navigation of the humanoid robot. Here we would want to control the translation of the robot on the plane and its orientation. Perhaps we want to do footstep planning and also care about controlling the two legs. All this is possible with the Active Degrees of Freedom feature provided by <ref refid="namespaceOpenRAVE" kindref="compound">OpenRAVE</ref>. First call RobotBase::SetActiveDOFs to set the degrees of freedom of the robot; it is also possible to set translation about the XYZ axes or the angle around a rotation axis as a degree of freedom. Each RobotBase function with the word Active expects the active DOF values to be specified. Basically, for any function in KinBody that deals with Joints, there is a corresponding active function in RobotBase.</para></sect1>
+<sect1 id="arch__robot_1arch_robot_grabbing">
+<title>Grabbing Bodies</title>
+<para>It is possible for a robot to attach a <ref refid="classOpenRAVE_1_1KinBody" kindref="compound">KinBody</ref> onto one of its links so that when the link moves, the KinBody also moves. Because collision detection will stop being checked between the robot and the KinBody, you could say that the KinBody becomes a part of the robot temporarily. This functionality is necessary for manipulation planning. Whenever the robot is carrying a body, all collisions between the robot and that item should be ignored once the body has been grasped.</para></sect1>
+<sect1 id="arch__robot_1arch_robot_sensors">
+<title>Attaching Sensors</title>
+<para>Can attach any number of sensors to the robot&apos;s links through the <ref refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor" kindref="compound">AttachedSensor</ref> class. The sensor transformation will be completely owned by the robot. A robot can be attached with any number of sensors on any number of links. As the robot link moves, the sensor moves with it preserving its relative transformation.</para><para>AttachedSensor object holds a <ref refid="classOpenRAVE_1_1SensorBase" kindref="compound">SensorBase</ref> object that contains the actual object gathering and publishing data.</para></sect1>
+<sect1 id="arch__robot_1arch_robot_options">
+<title>Loading Options</title>
+<para>This is the set of loading options passed as a AttributesList into functions like <ref refid="classOpenRAVE_1_1EnvironmentBase_1a93df9cb2035fd4489282e9fbe0f96b93" kindref="member">OpenRAVE::EnvironmentBase::ReadRobotXMLFile</ref>.</para><para>KinBody <ref refid="arch__kinbody_1arch_kinbody_options" kindref="member">Loading Options</ref> is also valid. </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

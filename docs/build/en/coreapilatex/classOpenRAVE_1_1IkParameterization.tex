@@ -1,0 +1,109 @@
+\hypertarget{classOpenRAVE_1_1IkParameterization}{
+\subsection{IkParameterization Class Reference}
+\label{classOpenRAVE_1_1IkParameterization}\index{OpenRAVE::IkParameterization@{OpenRAVE::IkParameterization}}
+}
+
+
+Parameterization of basic primitives for querying inverse-\/kinematics solutions.  
+
+
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2e}{IkParameterizationType} Type \hyperlink{classOpenRAVE_1_1IkParameterization_a63fa0d3744e7eebf98b264ad1242bfad}{RAVE\_\-DEPRECATED}
+\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1IkParameterization_ab994a253edd28a41888587bd321cbc57}{
+\hyperlink{classOpenRAVE_1_1IkParameterization_ab994a253edd28a41888587bd321cbc57}{IkParameterization} (const Transform \&t)}
+\label{classOpenRAVE_1_1IkParameterization_ab994a253edd28a41888587bd321cbc57}
+
+\begin{DoxyCompactList}\small\item\em sets a 6D transform parameterization \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1IkParameterization_a64665dcd48df2d9d27a121e9f850afa9}{
+\hyperlink{classOpenRAVE_1_1IkParameterization_a64665dcd48df2d9d27a121e9f850afa9}{IkParameterization} (const \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{RAY} \&r)}
+\label{classOpenRAVE_1_1IkParameterization_a64665dcd48df2d9d27a121e9f850afa9}
+
+\begin{DoxyCompactList}\small\item\em sets a ray parameterization \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1IkParameterization_a94da438fe0e35f8c244d753cc815594c}{
+\hyperlink{classOpenRAVE_1_1IkParameterization_a94da438fe0e35f8c244d753cc815594c}{IkParameterization} (const Transform \&t, \hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2e}{IkParameterizationType} type)}
+\label{classOpenRAVE_1_1IkParameterization_a94da438fe0e35f8c244d753cc815594c}
+
+\begin{DoxyCompactList}\small\item\em set a custom parameterization using a transform as the source of the data. Not all types are supported with this method. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1IkParameterization_ac938a6c271285a5468b805a3243e20e6}{
+int \hyperlink{classOpenRAVE_1_1IkParameterization_ac938a6c271285a5468b805a3243e20e6}{GetDOF} () const }
+\label{classOpenRAVE_1_1IkParameterization_ac938a6c271285a5468b805a3243e20e6}
+
+\begin{DoxyCompactList}\small\item\em Returns the minimum degree of freedoms required for the IK type. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1IkParameterization_ac914934393fca4ffa7cc103ac9068ece}{
+int \hyperlink{classOpenRAVE_1_1IkParameterization_ac914934393fca4ffa7cc103ac9068ece}{GetNumberOfValues} () const }
+\label{classOpenRAVE_1_1IkParameterization_ac914934393fca4ffa7cc103ac9068ece}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of values used to represent the parameterization ( $>$= dof ). The number of values serialized is this number plus 1 for the iktype. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1IkParameterization_a935c8c5f94115fb874a0bb425515344e}{
+void \hyperlink{classOpenRAVE_1_1IkParameterization_a935c8c5f94115fb874a0bb425515344e}{SetLookat3D} (const \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{RAY} \&ray)}
+\label{classOpenRAVE_1_1IkParameterization_a935c8c5f94115fb874a0bb425515344e}
+
+\begin{DoxyCompactList}\small\item\em the ray direction is not used for IK, however it is needed in order to compute the error \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1IkParameterization_a4bfb30431b8a3d0e0b3e138ad1e826c8}{
+dReal \hyperlink{classOpenRAVE_1_1IkParameterization_a4bfb30431b8a3d0e0b3e138ad1e826c8}{ComputeDistanceSqr} (const \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization} \&ikparam) const }
+\label{classOpenRAVE_1_1IkParameterization_a4bfb30431b8a3d0e0b3e138ad1e826c8}
+
+\begin{DoxyCompactList}\small\item\em Computes the distance squared between two IK parmaeterizations. \item\end{DoxyCompactList}\item 
+void \hyperlink{classOpenRAVE_1_1IkParameterization_ab349673fdd07cae6247793bb3961f7e4}{GetValues} (std::vector$<$ dReal $>$::iterator itvalues) const 
+\begin{DoxyCompactList}\small\item\em fills the iterator with the serialized values of the ikparameterization. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf }\par
+{\em \label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ }\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classOpenRAVE_1_1IkParameterization_a7526eb60609136e3393811ad4a28ca40}{SetTransform} (const Transform \&t) \hyperlink{classOpenRAVE_1_1IkParameterization_a63fa0d3744e7eebf98b264ad1242bfad}{RAVE\_\-DEPRECATED}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1IkParameterization_a14e61929c0affee6b5ebd14889aff297}{
+static int \hyperlink{classOpenRAVE_1_1IkParameterization_a14e61929c0affee6b5ebd14889aff297}{GetDOF} (\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2e}{IkParameterizationType} type)}
+\label{classOpenRAVE_1_1IkParameterization_a14e61929c0affee6b5ebd14889aff297}
+
+\begin{DoxyCompactList}\small\item\em Returns the minimum degree of freedoms required for the IK type. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1IkParameterization_aba838fc410e5033a481e33d594ac72bd}{
+static int \hyperlink{classOpenRAVE_1_1IkParameterization_aba838fc410e5033a481e33d594ac72bd}{GetNumberOfValues} (\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2e}{IkParameterizationType} type)}
+\label{classOpenRAVE_1_1IkParameterization_aba838fc410e5033a481e33d594ac72bd}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of values used to represent the parameterization ( $>$= dof ). The number of values serialized is this number plus 1 for the iktype. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Parameterization of basic primitives for querying inverse-\/kinematics solutions. Holds the parameterization of a geometric primitive useful for autonomous manipulation scenarios like: 6D pose, 3D translation, 3D rotation, 3D look at direction, and ray look at direction. \begin{Desc}
+\item[Examples: ]\par
+
+
+\hyperlink{ikfastloader_8cpp-example}{ikfastloader.cpp}, and \hyperlink{orikfilter_8cpp-example}{orikfilter.cpp}.
+
+\end{Desc}
+
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classOpenRAVE_1_1IkParameterization_a63fa0d3744e7eebf98b264ad1242bfad}{
+\index{OpenRAVE::IkParameterization@{OpenRAVE::IkParameterization}!RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}}
+\index{RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}!OpenRAVE::IkParameterization@{OpenRAVE::IkParameterization}}
+\paragraph[{RAVE\_\-DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf IkParameterizationType} Type {\bf RAVE\_\-DEPRECATED}}\hfill}
+\label{classOpenRAVE_1_1IkParameterization_a63fa0d3744e7eebf98b264ad1242bfad}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1IkParameterization_ab349673fdd07cae6247793bb3961f7e4}{
+\index{OpenRAVE::IkParameterization@{OpenRAVE::IkParameterization}!GetValues@{GetValues}}
+\index{GetValues@{GetValues}!OpenRAVE::IkParameterization@{OpenRAVE::IkParameterization}}
+\paragraph[{GetValues}]{\setlength{\rightskip}{0pt plus 5cm}void GetValues (std::vector$<$ dReal $>$::iterator {\em itvalues}) const}\hfill}
+\label{classOpenRAVE_1_1IkParameterization_ab349673fdd07cae6247793bb3961f7e4}
+
+
+fills the iterator with the serialized values of the ikparameterization. 
+
+the container the iterator points to needs to have \hyperlink{classOpenRAVE_1_1IkParameterization_aba838fc410e5033a481e33d594ac72bd}{GetNumberOfValues()} available. \hypertarget{classOpenRAVE_1_1IkParameterization_a7526eb60609136e3393811ad4a28ca40}{
+\index{OpenRAVE::IkParameterization@{OpenRAVE::IkParameterization}!SetTransform@{SetTransform}}
+\index{SetTransform@{SetTransform}!OpenRAVE::IkParameterization@{OpenRAVE::IkParameterization}}
+\paragraph[{SetTransform}]{\setlength{\rightskip}{0pt plus 5cm}void SetTransform (const Transform \& {\em t})}\hfill}
+\label{classOpenRAVE_1_1IkParameterization_a7526eb60609136e3393811ad4a28ca40}

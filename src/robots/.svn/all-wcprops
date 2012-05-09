@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots
+END
+barrettwam4.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/barrettwam4.robot.xml
+END
+pumaarm.zae
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/pumaarm.zae
+END
+puma.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/puma.robot.xml
+END
+pr2-beta-sim.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/pr2-beta-sim.robot.xml
+END
+diffdrive_sample.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/diffdrive_sample.robot.xml
+END
+barretthand.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/barretthand.kinbody.xml
+END
+mitsubishi-pa10.zae
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/mitsubishi-pa10.zae
+END
+rotation_stage.zae
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/rotation_stage.zae
+END
+schunk-lwa3-dual.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/schunk-lwa3-dual.robot.xml
+END
+wam4.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/wam4.kinbody.xml
+END
+wam7.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/wam7.kinbody.xml
+END
+pumagripper.zae
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/pumagripper.zae
+END
+man1.zae
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/man1.zae
+END
+kawada-hironx.zae
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/kawada-hironx.zae
+END
+schunk_manip.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/schunk_manip.kinbody.xml
+END
+pr2-beta-static.zae
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/pr2-beta-static.zae
+END
+neuronics-katana.zae
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/neuronics-katana.zae
+END
+barretthand.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/barretthand.robot.xml
+END
+diffdrive_caster.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/diffdrive_caster.robot.xml
+END
+pumagripper.kinbody.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/pumagripper.kinbody.xml
+END
+kuka-youbot.zae
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/kuka-youbot.zae
+END
+barrettwam.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/barrettwam.robot.xml
+END
+barrett-wam-sensors.zae
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/barrett-wam-sensors.zae
+END
+pa10schunk.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/pa10schunk.robot.xml
+END
+schunk_manip.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/schunk_manip.robot.xml
+END
+barrettsegway.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/barrettsegway.robot.xml
+END
+pumabarrett.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/pumabarrett.robot.xml
+END
+tridof.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/tridof.robot.xml
+END
+shadow-hand.zae
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/shadow-hand.zae
+END
+collisionmap.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/collisionmap.robot.xml
+END
+schunk-lwa3.zae
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/schunk-lwa3.zae
+END
+pumagripper.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/pumagripper.robot.xml
+END
+barrettwam-dual.robot.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/robots/barrettwam-dual.robot.xml
+END

@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler" kind="class" prot="public">
+    <compoundname>OpenRAVE::planningutils::ManipulatorIKGoalSampler</compoundname>
+    <includes refid="planningutils_8h" local="no">planningutils.h</includes>
+    <innerclass refid="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo" prot="protected">OpenRAVE::planningutils::ManipulatorIKGoalSampler::SampleInfo</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a96b8c6244de5c544065e0611b566cb84" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+        <definition>RobotBasePtr _probot</definition>
+        <argsstring></argsstring>
+        <name>_probot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="135" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1ac6e06d5d4efff1ed1b00c47345bc532d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1RobotBase_1acd0ffcc71189ba5106c0481f70ae94e0" kindref="member">RobotBase::ManipulatorConstPtr</ref></type>
+        <definition>RobotBase::ManipulatorConstPtr _pmanip</definition>
+        <argsstring></argsstring>
+        <name>_pmanip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="136" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1ae592a3e761080e25de5c77ee9c63ebbb" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _nummaxsamples</definition>
+        <argsstring></argsstring>
+        <name>_nummaxsamples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="137" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a427a9ce04a51c550cf4b076c28bdb552" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _nummaxtries</definition>
+        <argsstring></argsstring>
+        <name>_nummaxtries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="137" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1ac87befcbfdb7503f5829a0ee99481e1e" prot="protected" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo" kindref="compound">SampleInfo</ref> &gt;</type>
+        <definition>std::list&lt;SampleInfo&gt; _listsamples</definition>
+        <argsstring></argsstring>
+        <name>_listsamples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="138" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a7e08e622c6ffa37aa689ccbe47c6c5e4" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7176d63b178b8eab68b6947d4d850bb" kindref="member">SpaceSamplerBasePtr</ref></type>
+        <definition>SpaceSamplerBasePtr _pindexsampler</definition>
+        <argsstring></argsstring>
+        <name>_pindexsampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="139" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a017e5b4d36f2cd4e2e828e53cce0ea5e" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal _fsampleprob</definition>
+        <argsstring></argsstring>
+        <name>_fsampleprob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="140" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a78c822433bd8dedb5eada09aca5cb95a" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref></type>
+        <definition>CollisionReportPtr _report</definition>
+        <argsstring></argsstring>
+        <name>_report</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="141" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a79e7be1389ab2253f7f973eb8b56db11" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt;dReal&gt; &gt; _viksolutions</definition>
+        <argsstring></argsstring>
+        <name>_viksolutions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="142" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a0387c57557444c9d47dd5e7f75a35811" prot="protected" static="no" mutable="no">
+        <type>std::list&lt; int &gt;</type>
+        <definition>std::list&lt;int&gt; _listreturnedsamples</definition>
+        <argsstring></argsstring>
+        <name>_listreturnedsamples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="143" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a9959c6ea58fc53b2090ae04e4d670ced" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; _vfreestart</definition>
+        <argsstring></argsstring>
+        <name>_vfreestart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="144" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1ae54d7ea3a46f4336ef3029d855e445f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ManipulatorIKGoalSampler</definition>
+        <argsstring>(RobotBase::ManipulatorConstPtr pmanip, const std::list&lt; IkParameterization &gt; &amp;listparameterizations, int nummaxsamples=20, int nummaxtries=10, dReal fsampleprob=1)</argsstring>
+        <name>ManipulatorIKGoalSampler</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1RobotBase_1acd0ffcc71189ba5106c0481f70ae94e0" kindref="member">RobotBase::ManipulatorConstPtr</ref></type>
+          <declname>pmanip</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref> &gt; &amp;</type>
+          <declname>listparameterizations</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nummaxsamples</declname>
+          <defval>20</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nummaxtries</declname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>fsampleprob</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a841814e8d4783a1ea35562cffc3640ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~ManipulatorIKGoalSampler</definition>
+        <argsstring>()</argsstring>
+        <name>~ManipulatorIKGoalSampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="120" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="120" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1acd7a7e685e72c9f53278a909fccb7df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Sample</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;vgoal)</argsstring>
+        <name>Sample</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vgoal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1afdc2f60ad205d7079d1b80e3e4117caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int GetIkParameterizationIndex</definition>
+        <argsstring>(int index)</argsstring>
+        <name>GetIkParameterizationIndex</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1ab752cab4e3f6e85b8fc815d638eef939" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetSamplingProb</definition>
+        <argsstring>(dReal fsampleprob)</argsstring>
+        <name>SetSamplingProb</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>fsampleprob</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Samples numsamples of solutions and each solution to vsolutions. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nummaxsamples</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the max samples to query from a particular workspace goal. This does not necessarily mean every goal will have this many samples. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nummaxtries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of attemps to return a goal per Sample call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fsampleprob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The probability to attempt to sample a goal </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1468">
+        <label>vector&lt; std::vector&lt; dReal &gt; &gt;</label>
+        <childnode refid="1466" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1469">
+        <label>list&lt; SampleInfo &gt;</label>
+        <childnode refid="1470" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1472">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1471">
+        <label>IkParameterization</label>
+        <link refid="classOpenRAVE_1_1IkParameterization"/>
+        <childnode refid="1472" relation="usage">
+          <edgelabel>_transform</edgelabel>
+        </childnode>
+      </node>
+      <node id="1466">
+        <label>vector&lt; dReal &gt;</label>
+      </node>
+      <node id="1470">
+        <label>SampleInfo</label>
+        <link refid="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo"/>
+        <childnode refid="1471" relation="usage">
+          <edgelabel>_ikparam</edgelabel>
+        </childnode>
+      </node>
+      <node id="1465">
+        <label>ManipulatorIKGoalSampler</label>
+        <link refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler"/>
+        <childnode refid="1466" relation="usage">
+          <edgelabel>_vfreestart</edgelabel>
+        </childnode>
+        <childnode refid="1467" relation="usage">
+          <edgelabel>_listreturnedsamples</edgelabel>
+        </childnode>
+        <childnode refid="1468" relation="usage">
+          <edgelabel>_viksolutions</edgelabel>
+        </childnode>
+        <childnode refid="1469" relation="usage">
+          <edgelabel>_listsamples</edgelabel>
+        </childnode>
+      </node>
+      <node id="1467">
+        <label>list&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="117" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="116" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a017e5b4d36f2cd4e2e828e53cce0ea5e" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>_fsampleprob</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a0387c57557444c9d47dd5e7f75a35811" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>_listreturnedsamples</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1ac87befcbfdb7503f5829a0ee99481e1e" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>_listsamples</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1ae592a3e761080e25de5c77ee9c63ebbb" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>_nummaxsamples</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a427a9ce04a51c550cf4b076c28bdb552" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>_nummaxtries</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a7e08e622c6ffa37aa689ccbe47c6c5e4" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>_pindexsampler</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1ac6e06d5d4efff1ed1b00c47345bc532d" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>_pmanip</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a96b8c6244de5c544065e0611b566cb84" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>_probot</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a78c822433bd8dedb5eada09aca5cb95a" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>_report</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a9959c6ea58fc53b2090ae04e4d670ced" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>_vfreestart</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a79e7be1389ab2253f7f973eb8b56db11" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>_viksolutions</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1afdc2f60ad205d7079d1b80e3e4117caf" prot="public" virt="virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>GetIkParameterizationIndex</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1ae54d7ea3a46f4336ef3029d855e445f3" prot="public" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>ManipulatorIKGoalSampler</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1acd7a7e685e72c9f53278a909fccb7df2" prot="public" virt="virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>Sample</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1ab752cab4e3f6e85b8fc815d638eef939" prot="public" virt="virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>SetSamplingProb</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1a841814e8d4783a1ea35562cffc3640ea" prot="public" virt="virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler</scope><name>~ManipulatorIKGoalSampler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

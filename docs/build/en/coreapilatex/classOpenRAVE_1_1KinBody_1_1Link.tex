@@ -1,0 +1,315 @@
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link}{
+\subsection{Link Class Reference}
+\label{classOpenRAVE_1_1KinBody_1_1Link}\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+}
+
+
+A rigid body holding all its collision and rendering data.  
+
+
+
+
+Collaboration diagram for Link:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=108pt]{classOpenRAVE_1_1KinBody_1_1Link__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES}{GEOMPROPERTIES}
+\item 
+class \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{TRIMESH}
+\begin{DoxyCompactList}\small\item\em User data for trimesh geometries. Vertices are defined in counter-\/clockwise order for outward pointing faces. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a8add275d6ea176d9144ec92584014b03}{
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a8add275d6ea176d9144ec92584014b03}{Link} (KinBodyPtr parent)}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a8add275d6ea176d9144ec92584014b03}
+
+\begin{DoxyCompactList}\small\item\em pass in a ODE world \item\end{DoxyCompactList}\item 
+bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a3578d5b29398025138bfed3ef1e99558}{IsStatic} () const 
+\begin{DoxyCompactList}\small\item\em Indicates a static body that does not move with respect to the root link. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_ab093c91e2859f12d929fe8665e67a8e8}{IsEnabled} () const 
+\begin{DoxyCompactList}\small\item\em returns true if the link is enabled. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a93204280b89842474930316675ce9f07}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a93204280b89842474930316675ce9f07}{Enable} (bool enable)}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a93204280b89842474930316675ce9f07}
+
+\begin{DoxyCompactList}\small\item\em Enables a \hyperlink{classOpenRAVE_1_1KinBody_1_1Link}{Link}. An enabled link takes part in collision detection and physics simulations. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_aef334d32f92d94b51d66c428cbad2c08}{
+KinBodyPtr \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_aef334d32f92d94b51d66c428cbad2c08}{GetParent} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Link_aef334d32f92d94b51d66c428cbad2c08}
+
+\begin{DoxyCompactList}\small\item\em parent body that link belong to. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a75ee2e62d9d1cb0e02f76db0ea981967}{
+int \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a75ee2e62d9d1cb0e02f76db0ea981967}{GetIndex} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Link_a75ee2e62d9d1cb0e02f76db0ea981967}
+
+\begin{DoxyCompactList}\small\item\em unique index into parent \hyperlink{classOpenRAVE_1_1KinBody_a32ba11c03aabb873b3e503c8e5b93e53}{KinBody::GetLinks} vector \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a19007e9a11f60fac50720cd38a4d6ede}{
+virtual \hyperlink{classOpenRAVE_1_1geometry_1_1aabb}{AABB} \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a19007e9a11f60fac50720cd38a4d6ede}{ComputeAABB} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Link_a19007e9a11f60fac50720cd38a4d6ede}
+
+\begin{DoxyCompactList}\small\item\em Compute the aabb of all the geometries of the link in the world coordinate system. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a86547f5ece146c65832bab4395226789}{
+Transform \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a86547f5ece146c65832bab4395226789}{GetTransform} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Link_a86547f5ece146c65832bab4395226789}
+
+\begin{DoxyCompactList}\small\item\em Return the current transformation of the link in the world coordinate system. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a975b50117973af79adde0411409e1cea}{GetParentLinks} (std::vector$<$ boost::shared\_\-ptr$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link}{Link} $>$ $>$ \&vParentLinks) const 
+\begin{DoxyCompactList}\small\item\em Return all the direct parent links in the kinematics hierarchy of this link. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a5cda3b918d179bac6174b1114ba930fe}{IsParentLink} (boost::shared\_\-ptr$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link}{Link} const  $>$ plink) const 
+\begin{DoxyCompactList}\small\item\em Tests if a link is a direct parent. \item\end{DoxyCompactList}\item 
+Vector \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a2e9a0c247f0f9d1c47b78a745268a98e}{GetCOMOffset} () const 
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_ad2869657aaca15eb379f92e506206a15}{SetStatic} (bool bStatic)
+\begin{DoxyCompactList}\small\item\em sets a link to be static. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a92abef33e0bc4eca1756178c31e18645}{SetTransform} (const Transform \&transform)
+\begin{DoxyCompactList}\small\item\em Sets the transform of the link regardless of kinematics. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a36916dd947512e36587e4ecfbf26887c}{SetForce} (const Vector \&force, const Vector \&pos, bool add)
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_ac06ccbc6d023627b4032dc3b41beaf93}{SetTorque} (const Vector \&torque, bool add)
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a259dd9e4a7286a0fe86197b4206166f8}{SetVelocity} (const Vector \&linearvel, const Vector \&angularvel)
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a9d1d9e28a3922fc0af0bf9e920e71257}{GetVelocity} (Vector \&linearvel, Vector \&angularvel) const 
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a3792744cdcfbc87c686624b9e756b2dd}{
+const std::list$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES}{GEOMPROPERTIES} $>$ \& \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a3792744cdcfbc87c686624b9e756b2dd}{GetGeometries} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Link_a3792744cdcfbc87c686624b9e756b2dd}
+
+\begin{DoxyCompactList}\small\item\em returns a list of all the geometry objects. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_ad4297527ddd151a0e0a03d86bf16f35e}{SwapGeometries} (std::list$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES}{GEOMPROPERTIES} $>$ \&listNewGeometries)
+\begin{DoxyCompactList}\small\item\em swaps the current geometries with the new geometries. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a80c6877ca0a3b0f5104b00ccfbc7b591}{ValidateContactNormal} (const Vector \&position, Vector \&normal) const 
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a672f12849d49d15030f9386095bf753d}{
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a672f12849d49d15030f9386095bf753d}{IsRigidlyAttached} (boost::shared\_\-ptr$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link}{Link} const  $>$ plink) const }
+\label{classOpenRAVE_1_1KinBody_1_1Link_a672f12849d49d15030f9386095bf753d}
+
+\begin{DoxyCompactList}\small\item\em returns true if plink is rigidily attahced to this link. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a1452271a9a62d59785c04764543f94d7}{GetRigidlyAttachedLinks} (std::vector$<$ boost::shared\_\-ptr$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link}{Link} $>$ $>$ \&vattachedlinks) const 
+\begin{DoxyCompactList}\small\item\em Gets all the rigidly attached links to linkindex, also adds the link to the list. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a1bab50e6e76ae9ea147557c8126fc59c}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a1bab50e6e76ae9ea147557c8126fc59c}{\_\-Update} ()}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a1bab50e6e76ae9ea147557c8126fc59c}
+
+\begin{DoxyCompactList}\small\item\em Updates the cached information due to changes in the collision data. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_adcfc5692c983a70c6021762566cdc7e0}{\_\-t}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_ab634a14715f1de4a28e3eecaea8e5dbe}{
+TransformMatrix \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_ab634a14715f1de4a28e3eecaea8e5dbe}{\_\-transMass}}
+\label{classOpenRAVE_1_1KinBody_1_1Link_ab634a14715f1de4a28e3eecaea8e5dbe}
+
+\begin{DoxyCompactList}\small\item\em the 3x3 inertia and center of mass of the link in the link's coordinate system \item\end{DoxyCompactList}\item 
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{TRIMESH} \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a6b6b4ec4cfd7d6b0ccaff370fe3ddc5e}{collision}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_aaf2ed934b37cbbd236fdd1b01a5f5005}{
+std::string \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_aaf2ed934b37cbbd236fdd1b01a5f5005}{\_\-name}}
+\label{classOpenRAVE_1_1KinBody_1_1Link_aaf2ed934b37cbbd236fdd1b01a5f5005}
+
+\begin{DoxyCompactList}\small\item\em optional link name \item\end{DoxyCompactList}\item 
+std::list$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES}{GEOMPROPERTIES} $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_ab6b7d1c39509f8a533583eb6b185418d}{\_\-listGeomProperties}
+\item 
+bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_ae7605f811744b718329556c2399ee430}{\_\-bStatic}
+\item 
+bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_af3bf3d9314227021700269eb8eff8359}{\_\-bIsEnabled}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+A rigid body holding all its collision and rendering data. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a2e9a0c247f0f9d1c47b78a745268a98e}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!GetCOMOffset@{GetCOMOffset}}
+\index{GetCOMOffset@{GetCOMOffset}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{GetCOMOffset}]{\setlength{\rightskip}{0pt plus 5cm}Vector GetCOMOffset () const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a2e9a0c247f0f9d1c47b78a745268a98e}
+\begin{DoxyReturn}{Returns}
+center of mass offset in the link's local coordinate frame 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a975b50117973af79adde0411409e1cea}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!GetParentLinks@{GetParentLinks}}
+\index{GetParentLinks@{GetParentLinks}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{GetParentLinks}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetParentLinks (std::vector$<$ boost::shared\_\-ptr$<$ {\bf Link} $>$ $>$ \& {\em vParentLinks}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a975b50117973af79adde0411409e1cea}
+
+
+Return all the direct parent links in the kinematics hierarchy of this link. 
+
+A parent link is is immediately connected to this link by a joint and has a path to the root joint so that it is possible to compute this link's transformation from its parent. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em filled}]with the parent links \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a1452271a9a62d59785c04764543f94d7}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!GetRigidlyAttachedLinks@{GetRigidlyAttachedLinks}}
+\index{GetRigidlyAttachedLinks@{GetRigidlyAttachedLinks}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{GetRigidlyAttachedLinks}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetRigidlyAttachedLinks (std::vector$<$ boost::shared\_\-ptr$<$ {\bf Link} $>$ $>$ \& {\em vattachedlinks}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a1452271a9a62d59785c04764543f94d7}
+
+
+Gets all the rigidly attached links to linkindex, also adds the link to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em vattachedlinks}]the array to insert all links attached to linkindex with the link itself. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a9d1d9e28a3922fc0af0bf9e920e71257}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!GetVelocity@{GetVelocity}}
+\index{GetVelocity@{GetVelocity}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{GetVelocity}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetVelocity (Vector \& {\em linearvel}, \/  Vector \& {\em angularvel}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a9d1d9e28a3922fc0af0bf9e920e71257}
+get the velocity of the link 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em linearvel}]the translational velocity \item[\mbox{$\rightarrow$} {\em angularvel}]is the rotation axis $\ast$ angular speed \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_ab093c91e2859f12d929fe8665e67a8e8}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!IsEnabled@{IsEnabled}}
+\index{IsEnabled@{IsEnabled}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{IsEnabled}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsEnabled () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_ab093c91e2859f12d929fe8665e67a8e8}
+
+
+returns true if the link is enabled. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a93204280b89842474930316675ce9f07}{Enable} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a5cda3b918d179bac6174b1114ba930fe}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!IsParentLink@{IsParentLink}}
+\index{IsParentLink@{IsParentLink}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{IsParentLink}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsParentLink (boost::shared\_\-ptr$<$ {\bf Link} const  $>$ {\em plink}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a5cda3b918d179bac6174b1114ba930fe}
+
+
+Tests if a link is a direct parent. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a975b50117973af79adde0411409e1cea}{GetParentLinks} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em link}]The link to test if it is one of the parents of this link. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a3578d5b29398025138bfed3ef1e99558}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!IsStatic@{IsStatic}}
+\index{IsStatic@{IsStatic}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{IsStatic}]{\setlength{\rightskip}{0pt plus 5cm}bool IsStatic () const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a3578d5b29398025138bfed3ef1e99558}
+
+
+Indicates a static body that does not move with respect to the root link. 
+
+Static should be used when an object has infinite mass and shouldn't be affected by physics (including gravity). Collision still works. \hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a36916dd947512e36587e4ecfbf26887c}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!SetForce@{SetForce}}
+\index{SetForce@{SetForce}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{SetForce}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetForce (const Vector \& {\em force}, \/  const Vector \& {\em pos}, \/  bool {\em add})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a36916dd947512e36587e4ecfbf26887c}
+adds an external force at pos (absolute coords) 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em force}]the direction and magnitude of the force \item[\mbox{$\leftarrow$} {\em pos}]in the world where the force is getting applied \item[\mbox{$\leftarrow$} {\em add}]if true, force is added to previous forces, otherwise it is set \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_ad2869657aaca15eb379f92e506206a15}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!SetStatic@{SetStatic}}
+\index{SetStatic@{SetStatic}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{SetStatic}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetStatic (bool {\em bStatic})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_ad2869657aaca15eb379f92e506206a15}
+
+
+sets a link to be static. 
+
+Because this can affect the kinematics, it requires the body's internal structures to be recomputed \hypertarget{classOpenRAVE_1_1KinBody_1_1Link_ac06ccbc6d023627b4032dc3b41beaf93}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!SetTorque@{SetTorque}}
+\index{SetTorque@{SetTorque}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{SetTorque}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetTorque (const Vector \& {\em torque}, \/  bool {\em add})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_ac06ccbc6d023627b4032dc3b41beaf93}
+adds torque to a body (absolute coords) 
+\begin{DoxyParams}{Parameters}
+\item[{\em add}]if true, torque is added to previous torques, otherwise it is set \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a92abef33e0bc4eca1756178c31e18645}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!SetTransform@{SetTransform}}
+\index{SetTransform@{SetTransform}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{SetTransform}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetTransform (const Transform \& {\em transform})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a92abef33e0bc4eca1756178c31e18645}
+
+
+Sets the transform of the link regardless of kinematics. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em t}]the new transformation \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a259dd9e4a7286a0fe86197b4206166f8}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!SetVelocity@{SetVelocity}}
+\index{SetVelocity@{SetVelocity}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{SetVelocity}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetVelocity (const Vector \& {\em linearvel}, \/  const Vector \& {\em angularvel})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a259dd9e4a7286a0fe86197b4206166f8}
+forces the velocity of the link 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em linearvel}]the translational velocity \item[\mbox{$\leftarrow$} {\em angularvel}]is the rotation axis $\ast$ angular speed \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_ad4297527ddd151a0e0a03d86bf16f35e}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!SwapGeometries@{SwapGeometries}}
+\index{SwapGeometries@{SwapGeometries}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{SwapGeometries}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SwapGeometries (std::list$<$ {\bf GEOMPROPERTIES} $>$ \& {\em listNewGeometries})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_ad4297527ddd151a0e0a03d86bf16f35e}
+
+
+swaps the current geometries with the new geometries. 
+
+This gives a user control for dynamically changing the object geometry. Note that the kinbody/robot hash could change. \hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a80c6877ca0a3b0f5104b00ccfbc7b591}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!ValidateContactNormal@{ValidateContactNormal}}
+\index{ValidateContactNormal@{ValidateContactNormal}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{ValidateContactNormal}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ValidateContactNormal (const Vector \& {\em position}, \/  Vector \& {\em normal}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a80c6877ca0a3b0f5104b00ccfbc7b591}
+validates the contact normal on link and makes sure the normal faces \char`\"{}outside\char`\"{} of the geometry shape it lies on. An exception can be thrown if position is not on a geometry surface 
+\begin{DoxyParams}{Parameters}
+\item[{\em position}]the position of the contact point specified in the link's coordinate system, assumes it is on a particular geometry \item[{\em normal}]the unit normal of the contact point specified in the link's coordinate system \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the normal is changed to face outside of the shape 
+\end{DoxyReturn}
+
+
+\subsubsection{Member Data Documentation}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_af3bf3d9314227021700269eb8eff8359}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!\_\-bIsEnabled@{\_\-bIsEnabled}}
+\index{\_\-bIsEnabled@{\_\-bIsEnabled}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{\_\-bIsEnabled}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \_\-bIsEnabled}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_af3bf3d9314227021700269eb8eff8359}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_ab093c91e2859f12d929fe8665e67a8e8}{IsEnabled} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_ae7605f811744b718329556c2399ee430}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!\_\-bStatic@{\_\-bStatic}}
+\index{\_\-bStatic@{\_\-bStatic}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{\_\-bStatic}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \_\-bStatic}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_ae7605f811744b718329556c2399ee430}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a3578d5b29398025138bfed3ef1e99558}{IsStatic} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_ab6b7d1c39509f8a533583eb6b185418d}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!\_\-listGeomProperties@{\_\-listGeomProperties}}
+\index{\_\-listGeomProperties@{\_\-listGeomProperties}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{\_\-listGeomProperties}]{\setlength{\rightskip}{0pt plus 5cm}std::list$<${\bf GEOMPROPERTIES}$>$ {\bf \_\-listGeomProperties}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_ab6b7d1c39509f8a533583eb6b185418d}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a3792744cdcfbc87c686624b9e756b2dd}{GetGeometries} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_adcfc5692c983a70c6021762566cdc7e0}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!\_\-t@{\_\-t}}
+\index{\_\-t@{\_\-t}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}Transform {\bf \_\-t}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_adcfc5692c983a70c6021762566cdc7e0}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_a86547f5ece146c65832bab4395226789}{GetTransform} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Link_a6b6b4ec4cfd7d6b0ccaff370fe3ddc5e}{
+\index{OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}!collision@{collision}}
+\index{collision@{collision}!OpenRAVE::KinBody::Link@{OpenRAVE::KinBody::Link}}
+\paragraph[{collision}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TRIMESH} {\bf collision}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Link_a6b6b4ec4cfd7d6b0ccaff370fe3ddc5e}
+triangles for collision checking, triangles are always the triangulation of the body when it is at the identity transformation 

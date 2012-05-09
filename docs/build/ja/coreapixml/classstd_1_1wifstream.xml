@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classstd_1_1wifstream" kind="class" prot="public">
+    <compoundname>std::wifstream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::basic_ifstream&lt; wchar_t &gt;</basecompoundref>
+    <briefdescription>
+<para>STL class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1991">
+        <label>basic_ifstream&lt; wchar_t &gt;</label>
+        <childnode refid="1992" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1992">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="1993" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1994">
+        <label>ios_base</label>
+      </node>
+      <node id="1990">
+        <label>wifstream</label>
+        <childnode refid="1991" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1993">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="1994" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1996">
+        <label>basic_ifstream&lt; wchar_t &gt;</label>
+        <childnode refid="1997" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1997">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="1998" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1999">
+        <label>ios_base</label>
+      </node>
+      <node id="1995">
+        <label>wifstream</label>
+        <childnode refid="1996" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1998">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="1999" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="[STL]" line="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

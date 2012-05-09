@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1PLUGININFO" kind="class" prot="public">
+    <compoundname>OpenRAVE::PLUGININFO</compoundname>
+    <includes refid="plugininfo_8h" local="no">plugininfo.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1PLUGININFO_1a2d74b2b8311c0e6ed7e4afb33a98efa0" prot="public" static="no" mutable="no">
+        <type>std::map&lt; InterfaceType, std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt;InterfaceType, std::vector&lt;std::string&gt; &gt; interfacenames</definition>
+        <argsstring></argsstring>
+        <name>interfacenames</name>
+        <briefdescription>
+<para>offered interfaces </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/plugininfo.h" line="35" bodyfile="/home/pra3cob/openrave/include/openrave/plugininfo.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PLUGININFO_1aad880fc4455c253781e8968f2239d56f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+<para>OPENRAVE_VERSION. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/plugininfo.h" line="36" bodyfile="/home/pra3cob/openrave/include/openrave/plugininfo.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PLUGININFO_1a5b7c0ad30b24c51b5ebf9797c893d212" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PLUGININFO</definition>
+        <argsstring>()</argsstring>
+        <name>PLUGININFO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/plugininfo.h" line="33" bodyfile="/home/pra3cob/openrave/include/openrave/plugininfo.h" bodystart="33" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Holds all the OpenRAVE-specific information provided by a plugin. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classOpenRAVE_1_1PLUGININFO" kindref="compound">PLUGININFO</ref> has a hash computed for it to validate its size and type before having a plugin fill it. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1649">
+        <label>string</label>
+        <childnode refid="1650" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1646">
+        <label>PLUGININFO</label>
+        <link refid="classOpenRAVE_1_1PLUGININFO"/>
+        <childnode refid="1647" relation="usage">
+          <edgelabel>interfacenames</edgelabel>
+        </childnode>
+      </node>
+      <node id="1648">
+        <label>vector&lt; std::string &gt;</label>
+        <childnode refid="1649" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1650">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1647">
+        <label>map&lt; InterfaceType, std::vector&lt; std::string &gt; &gt;</label>
+        <childnode refid="1648" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/plugininfo.h" line="31" bodyfile="/home/pra3cob/openrave/include/openrave/plugininfo.h" bodystart="30" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1PLUGININFO_1a2d74b2b8311c0e6ed7e4afb33a98efa0" prot="public" virt="non-virtual"><scope>OpenRAVE::PLUGININFO</scope><name>interfacenames</name></member>
+      <member refid="classOpenRAVE_1_1PLUGININFO_1a5b7c0ad30b24c51b5ebf9797c893d212" prot="public" virt="non-virtual"><scope>OpenRAVE::PLUGININFO</scope><name>PLUGININFO</name></member>
+      <member refid="classOpenRAVE_1_1PLUGININFO_1aad880fc4455c253781e8968f2239d56f" prot="public" virt="non-virtual"><scope>OpenRAVE::PLUGININFO</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

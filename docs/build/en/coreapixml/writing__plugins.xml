@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="writing__plugins" kind="page">
+    <compoundname>writing_plugins</compoundname>
+    <title>Writing Plugins and Interfaces</title>
+    <detaileddescription>
+<sect1 id="writing__plugins_1writing_plugins_contents">
+<title>Contents</title>
+<para><itemizedlist>
+<listitem><para><ref refid="writing__plugins_1writing_plugins_example" kindref="member">Making a Simple Interface</ref></para></listitem><listitem><para><ref refid="writing__plugins_1writing_plugins_build" kindref="member">Building the Plugin</ref></para></listitem><listitem><para><ref refid="writing__plugins_1writing_plugins_usage" kindref="member">Using the Plugin</ref></para></listitem><listitem><para><ref refid="writing__plugins_1writing_plugins_doc" kindref="member">Documenting Interfaces</ref></para></listitem><listitem><para><ref refid="writing__plugins_1writing_plugins_loading" kindref="member">Loading Plugins</ref></para></listitem></itemizedlist>
+</para><para>Every plugin needs to export several functions as defined in <ref refid="group__plugin__exports" kindref="compound">Plugin Export Functions</ref> to notify OpenRAVE what interfaces it has. When a plugin is first loaded, it is validated by the environment and its <ref refid="group__plugin__exports_1gafc96682ac1d9ff550d6f95d1837f3dc6" kindref="member">OpenRAVEGetPluginAttributes</ref> function will be called in order so the OpenRAVE core can register the names of its provided interfaces. Plugins themselves can query functionality offer by other plugins through the environment&apos;s interface querying functions.</para></sect1>
+<sect1 id="writing__plugins_1writing_plugins_example">
+<title>Making a Simple Interface</title>
+<para>Example <ref refid="plugincpp.cpp-example" kindref="compound">plugincpp.cpp</ref> creates a <ref refid="namespaceOpenRAVE_1a706109092d88147a96bd94422219c4a0" kindref="member">OpenRAVE::ProblemInstance</ref> interface named <bold>MyProblem</bold> and have it offer two commands: <bold>numbodies</bold> and <bold>load</bold>.</para><para></para><para>The first #include the compiler sees has to be <ref refid="openrave_8h" kindref="compound">openrave/openrave.h</ref>. Then for the main C++ file, we include <ref refid="plugin_8h" kindref="compound">openrave/plugin.h</ref> for several helper functions.</para><para><programlisting><codeline></codeline>
+<codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="openrave_8h" kindref="compound" tooltip="Defines the public headers that every plugin must include in order to use openrave...">openrave/openrave.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="plugin_8h" kindref="compound" tooltip="Provides helper functions for creating plugins. Defines all the necessary functions...">openrave/plugin.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/bind.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">OpenRAVE;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMyModule" kindref="compound">MyModule</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ModuleBase_1a5a91427df2d07efa80c64f34f54539eb" kindref="member">ModuleBase</ref></highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+</programlisting></para><para>Now register the two commands of the problem. <computeroutput>boost::bind</computeroutput> is necessary for specifying member functions as callbacks.</para><para><programlisting></programlisting></para><para>Provide the implementations for the member functions: <programlisting></programlisting></para><para>It is recommend to plugin authors to include <ref refid="plugin_8h" kindref="compound">openrave/plugin.h</ref> in their main C++ file, this will provide implementations for the export functions and ask the user to provide a new set of functions <ref refid="group__plugin__exports_1ga468c900067e08689383b3f8da642141f" kindref="member">CreateInterfaceValidated</ref> and <ref refid="group__plugin__exports_1gaf90c03438b94cc76e7b8a54d445ec106" kindref="member">GetPluginAttributesValidated</ref>.</para><para>Providing <bold>MyProblem</bold> would look like:</para><para><programlisting></programlisting></para><para>In order to tell OpenRAVE what is provided, have to define:</para><para><programlisting></programlisting></para></sect1>
+<sect1 id="writing__plugins_1writing_plugins_build">
+<title>Building the Plugin</title>
+<sect2 id="writing__plugins_1writing_plugins_cmake">
+<title>Using CMake (Linux and Windows)</title>
+<para>The main build system of OpenRAVE is cmake, and <ref refid="FindOpenRAVE.cmake-example" kindref="compound">FindOpenRAVE.cmake</ref> can be used to find the OpenRAVE installation. An example of the <computeroutput>CMakeLists.txt</computeroutput> file for compiling a plugin using <ref refid="FindOpenRAVE.cmake-example" kindref="compound">FindOpenRAVE.cmake</ref> is:</para><para><verbatim>
+cmake_minimum_required (VERSION 2.6)
+project (plugincpp)
+find_package(OpenRAVE REQUIRED)
+include_directories(${OpenRAVE_INCLUDE_DIRS})
+link_directories(${OpenRAVE_LIBRARY_DIRS})
+add_library(plugincpp SHARED plugincpp.cpp)
+set_target_properties(plugincpp PROPERTIES COMPILE_FLAGS &quot;${OpenRAVE_CXX_FLAGS}&quot; LINK_FLAGS &quot;${OpenRAVE_LINK_FLAGS}&quot;)
+target_link_libraries(plugincpp ${OpenRAVE_LIBRARIES})
+</verbatim></para></sect2>
+<sect2 id="writing__plugins_1writing_plugins_linux">
+<title>Other Build Systems</title>
+<para>If not using CMake, then here&apos;s how the development files are organized:</para><para><bold>Linux Users</bold></para><para>Depending on where openrave was installed, a <ref refid="openrave__config" kindref="compound">openrave-config</ref> should have been created in the <computeroutput>$OPENRAVE_INSTALL/bin</computeroutput> directory. It is possible to call <computeroutput>openrave-config --cflags</computeroutput> to get the correct paths and flags to include in gcc to link with <computeroutput>libopenrave.so</computeroutput>.</para></sect2>
+</sect1>
+<sect1 id="writing__plugins_1writing_plugins_usage">
+<title>Using the Plugin</title>
+<para>There are several ways to load the generated plugin.</para><para><itemizedlist>
+<listitem><para>The most simplest method is to add its installation directory to <ulink url="../main/environment_variables.html">OPENRAVE_PLUGINS</ulink>. OpenRAVE will automatically load it up at start up. You can confirm this is the case using: <verbatim>
+openrave --listplugins
+</verbatim></para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para>A more explicit way is to load it from the command line using any one of the following methods: <verbatim>
+openrave --loadplugin $SOMEPATH/libplugincpp
+openrave --loadplugin $SOMEPATH/libplugincpp.so
+openrave --loadplugin ./libplugincpp.so
+</verbatim> where <computeroutput>$SOMEPATH</computeroutput> is the absolute/relative path of the shared object.</para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para>Another way is to load it from the C++/Python/APIs:<linebreak/>
+ <bold>C++</bold> <programlisting><codeline><highlight class="normal"><ref refid="namespaceOpenRAVE_1a0bdb20966417e80729f69b3d878c17b0" kindref="member" tooltip="Load a plugin and its interfaces.">RaveLoadPlugin</ref>(env,</highlight><highlight class="stringliteral">&quot;plugincpp&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> <bold>Python</bold> <verbatim>
+RaveLoadPlugin(&apos;plugincpp&apos;)
+</verbatim> <bold>Octave</bold> <verbatim>
+orEnvLoadPlugin(&apos;plugincpp&apos;);
+</verbatim></para></listitem></itemizedlist>
+</para><para>Once the plugin is loaded, we can create the interface and call its commands to load an environment and return the number of bodies:</para><para><bold>C++</bold> <programlisting><codeline><highlight class="normal"><ref refid="namespaceOpenRAVE_1aea9d0df40daa822e9ec442630e016f49" kindref="member">ProblemInstancePtr</ref><sp/>prob<sp/>=<sp/><ref refid="namespaceOpenRAVE_1a211849aac354463d4a3617a20f13caea" kindref="member">RaveCreateProblem</ref>(env,</highlight><highlight class="stringliteral">&quot;MyProblem&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">env-&gt;AddModule(prob,</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">stringstream<sp/>sinput,<sp/>sout;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>input<sp/>the<sp/>load<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">sinput<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;load<sp/>data/lab1.env.xml&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!prob-&gt;SendCommand(sout,sinput)<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a9bbbf668aa39f398c341e946ab8a43f5" kindref="member">RAVELOG_WARN</ref>(</highlight><highlight class="stringliteral">&quot;command<sp/>failed!\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sinput.str(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>have<sp/>to<sp/>reset<sp/>the<sp/>stream<sp/>from<sp/>the<sp/>previous<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sinput<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;numbodies&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>input<sp/>the<sp/>numbodies<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>prob-&gt;SendCommand(sout,sinput);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numbodies;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sout<sp/>&gt;&gt;<sp/>numbodies;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a334922a6794604207afe36b4feda230e" kindref="member">RAVELOG_INFO</ref>(</highlight><highlight class="stringliteral">&quot;number<sp/>of<sp/>bodies<sp/>are:<sp/>%d\n&quot;</highlight><highlight class="normal">,numbodies);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><bold>Python</bold> <verbatim>
+prob = RaveCreateProblem(env,&apos;MyProblem&apos;)
+env.AddModule(prob,args=&apos;&apos;)
+cmdout = prob.SendCommand(&apos;load data/lab1.env.xml&apos;)
+if cmdout is None:
+    raveLogWarn(&apos;command failed!&apos;)
+else:
+    cmdout = prob.SendCommand(&apos;numbodies&apos;)
+    print &apos;number of bodies are: &apos;,cmdout
+</verbatim></para><para><bold>Octave</bold> (only simple commands possible) <verbatim>
+prob = orEnvCreateProblem(&apos;MyProblem&apos;);
+orProblemSendCommand(&apos;load data/lab1.env.xml&apos;,prob);
+numbodies = orProblemSendCommand(&apos;numbodies&apos;,prob);
+disp([&apos;number of bodies are: &apos; num2str(numbodies)])
+</verbatim></para></sect1>
+<sect1 id="writing__plugins_1writing_plugins_doc">
+<title>Documenting Interfaces</title>
+<para>The format of all interface documentation is the widely adopted standard <ulink url="http://docutils.sourceforge.net/rst.html">reStructuredText</ulink>. The description of an interface and all information about its usage should be provided by two places:</para><para><itemizedlist>
+<listitem><para><ref refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" kindref="member">OpenRAVE::InterfaceBase::GetDescription()</ref> - Returns the full documentation of the interface description. If opening new sections, do not to use &apos;-&apos;.</para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><ref refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" kindref="member">OpenRAVE::InterfaceBase::RegisterCommand()</ref> - Help string in every command registered. If opening new sections, do not to use &apos;-&apos;, &apos;=&apos;, and &apos;~&apos;.</para></listitem></itemizedlist>
+</para><para>These descriptions are automatically parsed using Sphinx and put on the web.</para><para>The reason why doxygen and other commenting tools are not adopted for plugin documentation is because the <ref refid="group__interfaces" kindref="compound">Base Interface Classes</ref> are the only binding between plugins. Even if the header file or provided functions of a particular plugin were provided, other plugins would not be able to use them if not offered through the OpenRAVE&apos;s channels.</para></sect1>
+<sect1 id="writing__plugins_1writing_plugins_loading">
+<title>Loading Plugins</title>
+<para>Many mechanisms have been put in place to prevent mismatching/old plugins to be loaded by the core. Using interfaces from stale plugins can lead to unexpected crashes that are very difficult to debug. It is possible to automatically come up with a unique hash of the interface functions and members by running each interface through a C++ lexer and then creating a 128bit unique md5 hash. In order to protect plugins compiled with a different version, OpenRAVE creates a md5 hash from each interface class definition using <ref refid="cpp-gen-md5_8cpp_1cpp-gen-md5" kindref="member">cpp-gen-md5</ref> and stores them in <ref refid="interfacehashes_8h" kindref="compound">openrave/interfacehashes.h</ref>.</para><para>The interface hash can be retrieved using <ref refid="namespaceOpenRAVE_1a58037fbef85e1f0c8695edd7e2537172" kindref="member">OpenRAVE::RaveGetInterfaceHash</ref>. For an interface to be loaded successfully, the plugin has to check that the hash the core is using matches the hash compiled with the plugin. These types of checks ensure that stale plugins will never be loaded; helper functions are offered in <ref refid="plugin_8h" kindref="compound">openrave/plugin.h</ref>, which all plugin authors should use. </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

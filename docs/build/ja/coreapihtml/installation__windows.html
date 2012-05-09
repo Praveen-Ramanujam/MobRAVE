@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: Windowsユーザーのためのインストール方法 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="index.html">Open Robotics Automation Virtual Environment</a>&nbsp;&raquo;&nbsp;<a class="el" href="installation.html">インストール方法</a>
+  </div>
+</div>
+<div class="contents">
+
+
+<h1><a class="anchor" id="installation_windows">Windowsユーザーのためのインストール方法 </a></h1><p><b>注意：</b> 現在はWindows XPのみサポートされていますが、Windows 7でも動けるはずです。</p>
+<h2><a class="anchor" id="iwin_thirdparty">
+第三者ソフトウェアのインストール</a></h2>
+<p>ソースコードを<a href="http://sourceforge.net/projects/openrave">sourceforge</a>からダウンロードしてください．（subversionのソフトウェアとしては<a href="http://tortoisesvn.tigris.org/">Tortoise SVN</a>がお勧めです．）ソースコードをチェックアウトするディレクトリには<b>スペースを含めないように注意してください</b>．例えば<code>C:\openraveのように指定してください．</code> </p>
+<p>以下のものはインストールが必要です．</p>
+<ul>
+<li><a href="http://www.boostpro.com/download/">Boost C++</a> - 最新のBoostライブラリー。<b>Multithreaded DLL</b>を選択!.<ul>
+<li>既にopenraveのソースに含まれている。</li>
+</ul>
+</li>
+<li><a href="http://www.cmake.org/cmake/resources/software.html">CMake</a>.</li>
+<li><a href="http://code.google.com/p/qt-msvc-installer/downloads/list">Qt4 MSVC Installer</a></li>
+<li><a href="http://python.org/download">Python 2.6</a>, <a href="http://sourceforge.net/projects/numpy/files">numpy superpack</a>, <a href="http://www.pythonware.com/products/pil">Python Imaging Library (PIL)</a> openravepy用<ul>
+<li>Pythonデバッグライブラリもインストールされないと，<b>openravepy</b>はデバッグモードでコンパイルされません．</li>
+<li><a href="http://ipython.scipy.org">IPython</a> がPythonスクリプトでの開発には推奨されます．</li>
+<li><a href="http://sourceforge.net/projects/scipy/files/">SciPy</a> - 科学，工学のためのpython用ライブラリ（いくつかの実行例を試すには必要です）</li>
+<li><a href="http://code.google.com/p/sympy/downloads/list">SymPy</a> - Python Symbolic Mathematics.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="iwin_octavematlab">
+Octave/Matlab</a></h3>
+<p><a href="http://www.gnu.org/software/octave/">Octave</a> と Matlab は共にサポートされています．OpenRAVEのビルドシステムはOctave/Matlabを自動的に検出し，それぞれのmexファイルをコンパイルします．</p>
+<ul>
+<li>WindowsではMik-Texはmexプログラムを自身のバージョンで上書きします．そのためパス変数の中の全てのmatlabパスはMik-Texの前に宣言されていなければなりません．パスが正しく設定されているかどうかは起動後，<code>mkoctfileか<code>mexと入力することで確認できます．</code> </code> </li>
+</ul>
+<p>Octave ユーザー:</p>
+<ul>
+<li><code>mkoctfile</code> があなたの環境パスにあることを確認してください．</li>
+<li>JVMで問題が合った場合は，gbuplotのoctaveをインストールしてみてください．</li>
+<li>mexファイルをコンパイルするにはOctaveパッケージをコンパイルした時と同じコンパイラを使わなければなりません．</li>
+<li>OCTAVE_PATH （デフォルトは<code>C:\Program Files\openrave\share\openrave\octave</code>）に<code>$OPENRAVE_INSTALL\share\openrave\octaveを追加してください．</code> </li>
+</ul>
+<p>Matlab ユーザー:</p>
+<ul>
+<li><code>mex</code> がパスにあることを確認してください．</li>
+<li>Matlabのパス（デフォルトは<code>C:\Program Files\openrave\share\openrave\matlab</code>）に<code>$OPENRAVE_INSTALL\share\openrave\matlabを追加してください．</code> </li>
+</ul>
+<h2><a class="anchor" id="iwin_building">
+OpenRAVEのビルドとインストール</a></h2>
+<p><code>runcmake_win.batを実行してください．これはあなたの環境にあるコンパイラを自動で検出して実行します．そして，<code>msvc_files.tgzを展開し，コンパイルされたオブジェクトを<code>buildに生成します．<code>build\openrave.slnでMicrosoft</code> Visual</code> Studioのソリューションファイルを開き<b>Release</b>か<b>RelWithDebInfo</b>設定を選択して全てをビルドします．それが終了したらINSTALLプロジェクトをビルドします．これは全てを<code>C:\Program</code> Files\openrave</code>にインストールします．インストール先のディレクトリは<code>cmake</code> with</code> <code>-DCMAKE_INSTALL_PREFIX="my/new/install/dir"</code>を行うことで手動で変更可能です．</p>
+<p>OpenRAVEを実行する前に，以下の環境変数を変更する必要があります．</p>
+<ul>
+<li><code>PYTHONPATH</code> - <code>C:\Program Files\openrave\share\openrave</code>を追加してください．</li>
+<li><code>Path</code> - <code>C:\Program Files\openrave\bin</code>を今ある全てのパス設定の前に追加してください．後に追加すると異なるQtライブラリと衝突する問題が報告されていますので注意してください．</li>
+</ul>
+<p>現在，<b>bullet physics</b>はOpenRAVEにセットアップされませんので注意してください．</p>
+<h2><a class="anchor" id="iwin_updating">
+Subversionの更新</a></h2>
+<p>subversionを更新したときには常に<code>runcmake_win.batを再度実行し，Solution</code> Fileを開いて全てのプロジェクトをビルドして，INSTALLプロジェクトを手動でビルドする必要があります．ライブラリが更新される，もしくはプログラムが更新される（例えばOctave/Matlab/Pythonが追加/削除される）場合は，<code>runcmake_win.batを実行する前にはじめに<code>build\CMakeCache.txtを削除しcmakeのキャッシュを空にしてください．</code> </code> </p>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:06 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

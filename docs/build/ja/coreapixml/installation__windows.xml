@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="installation__windows" kind="page">
+    <compoundname>installation_windows</compoundname>
+    <title>Windowsユーザーのためのインストール方法</title>
+    <detaileddescription>
+<para><bold>注意：</bold> 現在はWindows XPのみサポートされていますが、Windows 7でも動けるはずです。</para><sect1 id="installation__windows_1iwin_thirdparty">
+<title>第三者ソフトウェアのインストール</title>
+<para>ソースコードを<ulink url="http://sourceforge.net/projects/openrave">sourceforge</ulink>からダウンロードしてください．（subversionのソフトウェアとしては<ulink url="http://tortoisesvn.tigris.org/">Tortoise SVN</ulink>がお勧めです．）ソースコードをチェックアウトするディレクトリには<bold>スペースを含めないように注意してください</bold>．例えば<computeroutput>C:\openraveのように指定してください．</computeroutput> </para><para>以下のものはインストールが必要です．</para><para><itemizedlist>
+<listitem><para><ulink url="http://www.boostpro.com/download/">Boost C++</ulink> - 最新のBoostライブラリー。<bold>Multithreaded DLL</bold>を選択!.<itemizedlist>
+<listitem><para>既にopenraveのソースに含まれている。</para></listitem></itemizedlist>
+</para></listitem><listitem><para><ulink url="http://www.cmake.org/cmake/resources/software.html">CMake</ulink>.</para></listitem><listitem><para><ulink url="http://code.google.com/p/qt-msvc-installer/downloads/list">Qt4 MSVC Installer</ulink></para></listitem><listitem><para><ulink url="http://python.org/download">Python 2.6</ulink>, <ulink url="http://sourceforge.net/projects/numpy/files">numpy superpack</ulink>, <ulink url="http://www.pythonware.com/products/pil">Python Imaging Library (PIL)</ulink> openravepy用<itemizedlist>
+<listitem><para>Pythonデバッグライブラリもインストールされないと，<bold>openravepy</bold>はデバッグモードでコンパイルされません．</para></listitem><listitem><para><ulink url="http://ipython.scipy.org">IPython</ulink> がPythonスクリプトでの開発には推奨されます．</para></listitem><listitem><para><ulink url="http://sourceforge.net/projects/scipy/files/">SciPy</ulink> - 科学，工学のためのpython用ライブラリ（いくつかの実行例を試すには必要です）</para></listitem><listitem><para><ulink url="http://code.google.com/p/sympy/downloads/list">SymPy</ulink> - Python Symbolic Mathematics.</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><sect2 id="installation__windows_1iwin_octavematlab">
+<title>Octave/Matlab</title>
+<para><ulink url="http://www.gnu.org/software/octave/">Octave</ulink> と Matlab は共にサポートされています．OpenRAVEのビルドシステムはOctave/Matlabを自動的に検出し，それぞれのmexファイルをコンパイルします．</para><para><itemizedlist>
+<listitem><para>WindowsではMik-Texはmexプログラムを自身のバージョンで上書きします．そのためパス変数の中の全てのmatlabパスはMik-Texの前に宣言されていなければなりません．パスが正しく設定されているかどうかは起動後，<computeroutput>mkoctfileか<computeroutput>mexと入力することで確認できます．</computeroutput> </computeroutput> </para></listitem></itemizedlist>
+</para><para>Octave ユーザー:<itemizedlist>
+<listitem><para><computeroutput>mkoctfile</computeroutput> があなたの環境パスにあることを確認してください．</para></listitem><listitem><para>JVMで問題が合った場合は，gbuplotのoctaveをインストールしてみてください．</para></listitem><listitem><para>mexファイルをコンパイルするにはOctaveパッケージをコンパイルした時と同じコンパイラを使わなければなりません．</para></listitem><listitem><para>OCTAVE_PATH （デフォルトは<computeroutput>C:\Program Files\openrave\share\openrave\octave</computeroutput>）に<computeroutput>$OPENRAVE_INSTALL\share\openrave\octaveを追加してください．</computeroutput> </para></listitem></itemizedlist>
+</para><para>Matlab ユーザー:<itemizedlist>
+<listitem><para><computeroutput>mex</computeroutput> がパスにあることを確認してください．</para></listitem><listitem><para>Matlabのパス（デフォルトは<computeroutput>C:\Program Files\openrave\share\openrave\matlab</computeroutput>）に<computeroutput>$OPENRAVE_INSTALL\share\openrave\matlabを追加してください．</computeroutput> </para></listitem></itemizedlist>
+</para></sect2>
+</sect1>
+<sect1 id="installation__windows_1iwin_building">
+<title>OpenRAVEのビルドとインストール</title>
+<para><computeroutput>runcmake_win.batを実行してください．これはあなたの環境にあるコンパイラを自動で検出して実行します．そして，<computeroutput>msvc_files.tgzを展開し，コンパイルされたオブジェクトを<computeroutput>buildに生成します．<computeroutput>build\openrave.slnでMicrosoft</computeroutput> Visual</computeroutput> Studioのソリューションファイルを開き<bold>Release</bold>か<bold>RelWithDebInfo</bold>設定を選択して全てをビルドします．それが終了したらINSTALLプロジェクトをビルドします．これは全てを<computeroutput>C:\Program</computeroutput> Files\openrave</computeroutput>にインストールします．インストール先のディレクトリは<computeroutput>cmake</computeroutput> with</computeroutput> <computeroutput>-DCMAKE_INSTALL_PREFIX=&quot;my/new/install/dir&quot;</computeroutput>を行うことで手動で変更可能です．</para><para>OpenRAVEを実行する前に，以下の環境変数を変更する必要があります．<itemizedlist>
+<listitem><para><computeroutput>PYTHONPATH</computeroutput> - <computeroutput>C:\Program Files\openrave\share\openrave</computeroutput>を追加してください．</para></listitem><listitem><para><computeroutput>Path</computeroutput> - <computeroutput>C:\Program Files\openrave\bin</computeroutput>を今ある全てのパス設定の前に追加してください．後に追加すると異なるQtライブラリと衝突する問題が報告されていますので注意してください．</para></listitem></itemizedlist>
+</para><para>現在，<bold>bullet physics</bold>はOpenRAVEにセットアップされませんので注意してください．</para></sect1>
+<sect1 id="installation__windows_1iwin_updating">
+<title>Subversionの更新</title>
+<para>subversionを更新したときには常に<computeroutput>runcmake_win.batを再度実行し，Solution</computeroutput> Fileを開いて全てのプロジェクトをビルドして，INSTALLプロジェクトを手動でビルドする必要があります．ライブラリが更新される，もしくはプログラムが更新される（例えばOctave/Matlab/Pythonが追加/削除される）場合は，<computeroutput>runcmake_win.batを実行する前にはじめに<computeroutput>build\CMakeCache.txtを削除しcmakeのキャッシュを空にしてください．</computeroutput> </computeroutput> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

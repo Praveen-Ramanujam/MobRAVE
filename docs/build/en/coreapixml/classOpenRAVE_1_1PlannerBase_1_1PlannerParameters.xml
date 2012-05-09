@@ -1,0 +1,1168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kind="class" prot="public">
+    <compoundname>OpenRAVE::PlannerBase::PlannerParameters</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1BaseXMLReader" prot="public" virt="non-virtual">BaseXMLReader</basecompoundref>
+    <basecompoundref refid="classOpenRAVE_1_1XMLReadable" prot="public" virt="non-virtual">XMLReadable</basecompoundref>
+    <includes refid="planner_8h" local="no">planner.h</includes>
+      <sectiondef kind="user-defined">
+      <description><para><anchor id="_1amgrpd41d8cd98f00b204e9800998ecf8427e"/> </para></description>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ab4d8dc52e167678ba742d5e74fa8bbd2" prot="protected" static="no" mutable="no">
+        <type>std::stringstream</type>
+        <definition>std::stringstream _ss</definition>
+        <argsstring></argsstring>
+        <name>_ss</name>
+        <briefdescription>
+<para>holds the data read by characters </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="257" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1af1b3c43634a060ac8c81588387d85b86" prot="protected" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; std::stringstream &gt;</type>
+        <definition>boost::shared_ptr&lt;std::stringstream&gt; _sslocal</definition>
+        <argsstring></argsstring>
+        <name>_sslocal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="258" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a6bdbb89d87824ee05004fbd5ecd4994b" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; _vXMLParameters</definition>
+        <argsstring></argsstring>
+        <name>_vXMLParameters</name>
+        <briefdescription>
+<para>all the top-level XML parameter tags (lower case) that are handled by this parameter structure, should be registered in the constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="260" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aeef176e516fa467c3a1ea9c210f96d48" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9" kindref="member">ProcessElement</ref></type>
+        <definition>virtual ProcessElement startElement</definition>
+        <argsstring>(const std::string &amp;name, const AttributesList &amp;atts)</argsstring>
+        <name>startElement</name>
+        <reimplements refid="classOpenRAVE_1_1BaseXMLReader_1a96b3e3b4503108964001ad58ab724ac3">startElement</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1a7372895c7fd9541aa829987c3eb9aaf9" kindref="member">AttributesList</ref> &amp;</type>
+          <declname>atts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets called in the beginning of each &quot;&lt;type&gt;&quot; expression. In this case, name is &quot;type&quot; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the tag, will be always lower case </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>atts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string of attributes where the first std::string is the attribute name and second is the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if tag is accepted and this class will process it, otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1afc6f1ff707e6fd690100c89e3cd4c291" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool endElement</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>endElement</name>
+        <reimplements refid="classOpenRAVE_1_1BaseXMLReader_1a3b5c1a1dc1e0965a9e27f139b18db4d9">endElement</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets called at the end of each &quot;&lt;/type&gt;&quot; expression. In this case, name is &quot;type&quot; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the tag, will be always lower case </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if XMLReader has finished parsing (one condition is that name==_fieldname) , otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a91544148bc143140fe0474224180233d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void characters</definition>
+        <argsstring>(const std::string &amp;ch)</argsstring>
+        <name>characters</name>
+        <reimplements refid="classOpenRAVE_1_1BaseXMLReader_1a0b124434353fd2e48d951c2053e63408">characters</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gets called for all data in between tags. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string to the data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="256"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aaa75769bb0c706f4de9f59bc2a43f524" prot="public" static="no">
+        <type>boost::function&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>(const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;dReal(const std::vector&lt;dReal&gt;&amp;)&gt; CostFn</definition>
+        <argsstring></argsstring>
+        <name>CostFn</name>
+        <briefdescription>
+<para>Cost function on the state pace (optional). </para>        </briefdescription>
+        <detaileddescription>
+<para>cost = _costfn(config) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the cost of being in the current state </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="86" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ac6a5c6b1eb0d15f3cd0f69f8d4871df3" prot="public" static="no">
+        <type>boost::function&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>(const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;dReal(const std::vector&lt;dReal&gt;&amp;)&gt; GoalFn</definition>
+        <argsstring></argsstring>
+        <name>GoalFn</name>
+        <briefdescription>
+<para>Goal heuristic function.(optional). </para>        </briefdescription>
+        <detaileddescription>
+<para>distance = _goalfn(config)</para><para>Goal is complete when returns 0 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- distance to closest goal </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="96" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a1e96b9c9b49635f5bfd32531e41fb0e8" prot="public" static="no">
+        <type>boost::function&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>(const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;, const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;dReal(const std::vector&lt;dReal&gt;&amp;, const std::vector&lt;dReal&gt;&amp;)&gt; DistMetricFn</definition>
+        <argsstring></argsstring>
+        <name>DistMetricFn</name>
+        <briefdescription>
+<para>Distance metric between configuration spaces (optional). </para>        </briefdescription>
+        <detaileddescription>
+<para>distmetric(config1,config2)</para><para>Two configurations are considered the same when function returns 0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="104" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aca89abb7137aa4f3aa98065ce10f7f6a" prot="public" static="no">
+        <type>boost::function&lt; bool(const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;, const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;, <ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937" kindref="member">IntervalType</ref>, <ref refid="classOpenRAVE_1_1PlannerBase_1a5b660e564b471d714462742a939dbd40" kindref="member">PlannerBase::ConfigurationListPtr</ref>)&gt;</type>
+        <definition>typedef boost::function&lt;bool (const std::vector&lt;dReal&gt;&amp;, const std::vector&lt;dReal&gt;&amp;, IntervalType, PlannerBase::ConfigurationListPtr)&gt; CheckPathConstraintFn</definition>
+        <argsstring></argsstring>
+        <name>CheckPathConstraintFn</name>
+        <briefdescription>
+<para>Checks that all the constraints are satisfied between two configurations. </para>        </briefdescription>
+        <detaileddescription>
+<para>The simplest and most fundamental constraint is line-collision checking. The robot goes from q0 to q1.</para><para>success = _checkpathconstraints(q0,q1,interval,configurations)</para><para>When called, q0 is guaranteed to be set on the robot. The function returns true if the path to q1 satisfies all the constraints of the planner. If q0==q1, and interval==IT_OpenStart or IT_OpenEnd, then only one configuration should be checked. It is recommended to use IT_OpenStart. Because this function can internally use neighstatefn, need to make sure that Q0-&gt;Q1 is going from initial to goal direction.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the configuration the robot is coming from (currently set). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>q1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the configuration the robot should move to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies whether to check the end points of the interval for constraints </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configurations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional argument that will hold the intermediate configuraitons checked between q0 and q1 configurations. The appended configurations will be all valid and in free space. They are appended after the items already stored on the list. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="123" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a1b5ac1fcfcc5e5775ffbbc9c451541fd" prot="public" static="no">
+        <type>boost::function&lt; bool(std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;bool (std::vector&lt;dReal&gt;&amp;)&gt; SampleFn</definition>
+        <argsstring></argsstring>
+        <name>SampleFn</name>
+        <briefdescription>
+<para>Samples a random configuration (mandatory). </para>        </briefdescription>
+        <detaileddescription>
+<para>The dimension of the returned sample is the dimension of the configuration space. success = samplefn(newsample) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="131" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a60329a58cd803c66dc0701e9944d8ed9" prot="public" static="no">
+        <type>boost::function&lt; bool(std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;bool (std::vector&lt;dReal&gt;&amp;)&gt; SampleGoalFn</definition>
+        <argsstring></argsstring>
+        <name>SampleGoalFn</name>
+        <briefdescription>
+<para>Samples a valid goal configuration (optional). </para>        </briefdescription>
+        <detaileddescription>
+<para>If valid, the function should be called at every iteration. Any type of sampling probabilities and conditions can be encoded inside the function. The dimension of the returned sample is the dimension of the configuration space. success = samplegoalfn(newsample) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="141" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a8cd1af608ebe03bf544992b322e6f5aa" prot="public" static="no">
+        <type>boost::function&lt; bool(std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;bool (std::vector&lt;dReal&gt;&amp;)&gt; SampleInitialFn</definition>
+        <argsstring></argsstring>
+        <name>SampleInitialFn</name>
+        <briefdescription>
+<para>Samples a valid initial configuration (optional). </para>        </briefdescription>
+        <detaileddescription>
+<para>If valid, the function should be called at every iteration. Any type of sampling probabilities and conditions can be encoded inside the function. The dimension of the returned sample is the dimension of the configuration space. success = sampleinitialfn(newsample) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="151" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a78bb26c318f93bce6e3ea11fc95a99fc" prot="public" static="no">
+        <type>boost::function&lt; bool(std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;, const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;, <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>)&gt;</type>
+        <definition>typedef boost::function&lt;bool (std::vector&lt;dReal&gt;&amp;, const std::vector&lt;dReal&gt;&amp;, dReal)&gt; SampleNeighFn</definition>
+        <argsstring></argsstring>
+        <name>SampleNeighFn</name>
+        <briefdescription>
+<para>Returns a random configuration around a neighborhood (optional). </para>        </briefdescription>
+        <detaileddescription>
+<para>_sampleneighfn(newsample,pCurSample,fRadius)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pCurSample</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the neighborhood to sample around </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- specifies the max distance of sampling. The higher the value, the farther the samples will go The distance metric can be arbitrary, but is usually PlannerParameters::pdistmetric. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>if sample was successfully generated return true, otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="163" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a8f178813af84b26eb8a12ade9a556482" prot="public" static="no">
+        <type>boost::function&lt; void(const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;void (const std::vector&lt;dReal&gt;&amp;)&gt; SetStateFn</definition>
+        <argsstring></argsstring>
+        <name>SetStateFn</name>
+        <briefdescription>
+<para>Sets the state of the robot. Default is active robot joints (mandatory). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="167" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ae2be23760038f12a589f6a8cfb0a5780" prot="public" static="no">
+        <type>boost::function&lt; void(std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;void (std::vector&lt;dReal&gt;&amp;)&gt; GetStateFn</definition>
+        <argsstring></argsstring>
+        <name>GetStateFn</name>
+        <briefdescription>
+<para>Gets the state of the robot. Default is active robot joints (mandatory). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="170" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a58f093aece5495e4be24da19e9cb4cc7" prot="public" static="no">
+        <type>boost::function&lt; void(std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;, const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;)&gt;</type>
+        <definition>typedef boost::function&lt;void (std::vector&lt;dReal&gt;&amp;,const std::vector&lt;dReal&gt;&amp;)&gt; DiffStateFn</definition>
+        <argsstring></argsstring>
+        <name>DiffStateFn</name>
+        <briefdescription>
+<para>Computes the difference of two states. </para>        </briefdescription>
+        <detaileddescription>
+<para>_diffstatefn(q1,q2) -&gt; q1 -= q2</para><para>An explicit difference function is necessary for correct interpolation when there are circular joints. Default is regular subtraction. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="180" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a602e68d3c6c25efa6539bbd8b5e02c39" prot="public" static="no">
+        <type>boost::function&lt; bool(std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;, const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;, int)&gt;</type>
+        <definition>typedef boost::function&lt;bool (std::vector&lt;dReal&gt;&amp;,const std::vector&lt;dReal&gt;&amp;, int)&gt; NeighStateFn</definition>
+        <argsstring></argsstring>
+        <name>NeighStateFn</name>
+        <briefdescription>
+<para>Adds a delta state to a curent state, acting like a next-nearest-neighbor function along a given direction. </para>        </briefdescription>
+        <detaileddescription>
+<para>success = _neighstatefn(q,qdelta,fromgoal) -&gt; q = Filter(q+qdelta) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current state </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qdelta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the delta to add </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fromgoal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 if q is coming from a goal state, 0 if it is coming from an initial state</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+In RRTs this is used for the extension operation. The new state is stored in the first parameter q. Note that the function can also add a filter to the final destination (like projecting onto a constraint manifold). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="193" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a24d5a3136b64a22a3385a9680843cbf5" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound">ConfigurationSpecification</ref></type>
+        <definition>ConfigurationSpecification _configurationspecification</definition>
+        <argsstring></argsstring>
+        <name>_configurationspecification</name>
+        <briefdescription>
+<para>the configuration specification in which the planner works in. This specification is passed to the trajecotry creation modules. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="80" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1afd674f55702e652867153a4ea5655415" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aaa75769bb0c706f4de9f59bc2a43f524" kindref="member">CostFn</ref></type>
+        <definition>CostFn _costfn</definition>
+        <argsstring></argsstring>
+        <name>_costfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="87" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a251626b7c19c35180f64712bb90dfc6f" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ac6a5c6b1eb0d15f3cd0f69f8d4871df3" kindref="member">GoalFn</ref></type>
+        <definition>GoalFn _goalfn</definition>
+        <argsstring></argsstring>
+        <name>_goalfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="97" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aa4e21b3274a2d611df29139e610e31f9" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a1e96b9c9b49635f5bfd32531e41fb0e8" kindref="member">DistMetricFn</ref></type>
+        <definition>DistMetricFn _distmetricfn</definition>
+        <argsstring></argsstring>
+        <name>_distmetricfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="105" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a51351299cd508ef90418b44d6959d989" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aca89abb7137aa4f3aa98065ce10f7f6a" kindref="member">CheckPathConstraintFn</ref></type>
+        <definition>CheckPathConstraintFn _checkpathconstraintsfn</definition>
+        <argsstring></argsstring>
+        <name>_checkpathconstraintsfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="124" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a9e4fc9aea09a7dcf8aea9f14e2ecb755" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a1b5ac1fcfcc5e5775ffbbc9c451541fd" kindref="member">SampleFn</ref></type>
+        <definition>SampleFn _samplefn</definition>
+        <argsstring></argsstring>
+        <name>_samplefn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="132" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a7587ead6ad8c68d2d255755012a52fa6" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a60329a58cd803c66dc0701e9944d8ed9" kindref="member">SampleGoalFn</ref></type>
+        <definition>SampleGoalFn _samplegoalfn</definition>
+        <argsstring></argsstring>
+        <name>_samplegoalfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="142" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1abc008d20e0f068fed178d64a7b2b2ffd" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a8cd1af608ebe03bf544992b322e6f5aa" kindref="member">SampleInitialFn</ref></type>
+        <definition>SampleInitialFn _sampleinitialfn</definition>
+        <argsstring></argsstring>
+        <name>_sampleinitialfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="152" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a68bbb727e1792c8fdbe345641eb031a3" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a78bb26c318f93bce6e3ea11fc95a99fc" kindref="member">SampleNeighFn</ref></type>
+        <definition>SampleNeighFn _sampleneighfn</definition>
+        <argsstring></argsstring>
+        <name>_sampleneighfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="164" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aa83a795822a8b73310203acaf0b2a74b" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a8f178813af84b26eb8a12ade9a556482" kindref="member">SetStateFn</ref></type>
+        <definition>SetStateFn _setstatefn</definition>
+        <argsstring></argsstring>
+        <name>_setstatefn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="168" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a92304944fb5594cac6be85477fc0c440" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ae2be23760038f12a589f6a8cfb0a5780" kindref="member">GetStateFn</ref></type>
+        <definition>GetStateFn _getstatefn</definition>
+        <argsstring></argsstring>
+        <name>_getstatefn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="171" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a375c6b6d83b3d2a0563db1e3cad41288" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a58f093aece5495e4be24da19e9cb4cc7" kindref="member">DiffStateFn</ref></type>
+        <definition>DiffStateFn _diffstatefn</definition>
+        <argsstring></argsstring>
+        <name>_diffstatefn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="181" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0bb9400d1009be3bd887015255bcd118" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a602e68d3c6c25efa6539bbd8b5e02c39" kindref="member">NeighStateFn</ref></type>
+        <definition>NeighStateFn _neighstatefn</definition>
+        <argsstring></argsstring>
+        <name>_neighstatefn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="194" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aad3112dc0481a0b114f1154ee1d743a7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; vinitialconfig</definition>
+        <argsstring></argsstring>
+        <name>vinitialconfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>to specify multiple initial or goal configurations, put them into the vector in series (note: not all planners support multiple goals) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="198" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a2bf4037908e01bbad579ac04d2c1dae4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; vgoalconfig</definition>
+        <argsstring></argsstring>
+        <name>vgoalconfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="198" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0a56912aa3223faae5d69840ef0edd14" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; _vConfigLowerLimit</definition>
+        <argsstring></argsstring>
+        <name>_vConfigLowerLimit</name>
+        <briefdescription>
+<para>the absolute limits of the configuration space. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="201" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a49cd6c1c809d3f307ebbfd639cfc6ddb" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; _vConfigUpperLimit</definition>
+        <argsstring></argsstring>
+        <name>_vConfigUpperLimit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="201" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1acfdac79592a4faa5e57c23b22c7a8954" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; _vConfigVelocityLimit</definition>
+        <argsstring></argsstring>
+        <name>_vConfigVelocityLimit</name>
+        <briefdescription>
+<para>the absolute velocity limits of each DOF of the configuration space. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="204" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a647a79190686baca1e50eef9887d0b70" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; _vConfigAccelerationLimit</definition>
+        <argsstring></argsstring>
+        <name>_vConfigAccelerationLimit</name>
+        <briefdescription>
+<para>the absolute acceleration limits of each DOF of the configuration space. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="207" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a803fc76d967c3adcf76e737344977d62" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt;</type>
+        <definition>std::vector&lt;dReal&gt; _vConfigResolution</definition>
+        <argsstring></argsstring>
+        <name>_vConfigResolution</name>
+        <briefdescription>
+<para>the discretization resolution of each dimension of the configuration space </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="210" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a377dd1c13871195e977151411e0033bf" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal _fStepLength</definition>
+        <argsstring></argsstring>
+        <name>_fStepLength</name>
+        <briefdescription>
+<para>a discretization between the path that connects two configurations </para>        </briefdescription>
+        <detaileddescription>
+<para>This length represents how dense the samples get distributed across the configuration space. It represents the maximum distance between neighbors when adding new configuraitons. If 0 or less, planner chooses best step length. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="218" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a75940963abf9391dca1ec1d48b7a11cc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _nMaxIterations</definition>
+        <argsstring></argsstring>
+        <name>_nMaxIterations</name>
+        <briefdescription>
+<para>maximum number of iterations before the planner gives up. If 0 or less, planner chooses best iterations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="221" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aece70c470f96fbe3cd74ce45ee0145b0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _sPostProcessingPlanner</definition>
+        <argsstring></argsstring>
+        <name>_sPostProcessingPlanner</name>
+        <briefdescription>
+<para>Specifies the planner that will perform the post-processing path smoothing before returning. </para>        </briefdescription>
+        <detaileddescription>
+<para>If empty, will not path smooth the returned trajectories (used to measure algorithm time) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="226" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0f1a23c0726e36b98edbe514d4962d08" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _sPostProcessingParameters</definition>
+        <argsstring></argsstring>
+        <name>_sPostProcessingParameters</name>
+        <briefdescription>
+<para>The serialized planner parameters to pass to the path optimizer. </para>        </briefdescription>
+        <detaileddescription>
+<para>For example: std::stringstream(_sPostProcessingParameters) &gt;&gt; _parameters; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="231" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a05c2cb3cd9524fb2b1883a7639801084" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _sExtraParameters</definition>
+        <argsstring></argsstring>
+        <name>_sExtraParameters</name>
+        <briefdescription>
+<para>Extra parameters data that does not fit within this planner parameters structure, but is still important not to lose all the information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="234" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a36ea723dd387b575d60f25e762801e2d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a5465be4feef36a211b06feebdc5e3b42" kindref="member">BaseXMLReaderPtr</ref></type>
+        <definition>BaseXMLReaderPtr __pcurreader</definition>
+        <argsstring></argsstring>
+        <name>__pcurreader</name>
+        <briefdescription>
+<para>temporary reader </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="266" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aad79f0bbbafe39fca06faf93544ae74a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string __processingtag</definition>
+        <argsstring></argsstring>
+        <name>__processingtag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="267" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a6ccdf26921ce2a928e37174879ad9a37" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _plannerparametersdepth</definition>
+        <argsstring></argsstring>
+        <name>_plannerparametersdepth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="268" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1adf3a87ab62474f73fa70d42a3264ef70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PlannerParameters</definition>
+        <argsstring>()</argsstring>
+        <name>PlannerParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a14f454af206fdf4328967bed64cda689" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~PlannerParameters</definition>
+        <argsstring>()</argsstring>
+        <name>~PlannerParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="65" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="65" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a98b727075503cffbc2c40ddfd51a8890" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerParameters</ref> &amp;</type>
+        <definition>virtual PlannerParameters&amp; operator=</definition>
+        <argsstring>(const PlannerParameters &amp;r)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerParameters</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Attemps to copy data from one set of parameters to another in the safest manner. </para>        </briefdescription>
+        <detaileddescription>
+<para>First serializes the data of the right hand into a string, then initializes the current parameters via &gt;&gt; pointers to functions are copied directly </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a14758c28fa2c4bf4440aefd9895285a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void copy</definition>
+        <argsstring>(boost::shared_ptr&lt; PlannerParameters const  &gt; r)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerParameters</ref> const  &gt;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a209ca0bfbbc31be9ecee12ce308374c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetRobotActiveJoints</definition>
+        <argsstring>(RobotBasePtr robot)</argsstring>
+        <name>SetRobotActiveJoints</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>robot</declname>
+        </param>
+        <briefdescription>
+<para>sets up the planner parameters to use the active joints of the robot </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a44fbec2fd26a45cada889c5c0f0751c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int GetDOF</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDOF</name>
+        <briefdescription>
+<para>Return the degrees of freedom of the planning configuration space. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="237" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="237" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0a5bb6979a5bdcdb408ab97b8f3f6ee2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerBase::PlannerParameters</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt;PlannerBase::PlannerParameters&gt; shared_parameters</definition>
+        <argsstring>()</argsstring>
+        <name>shared_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="242" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="242" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a9a9dbd98b427819f681d54e5ee332b31" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerBase::PlannerParameters</ref> const  &gt;</type>
+        <definition>boost::shared_ptr&lt;PlannerBase::PlannerParameters const &gt; shared_parameters_const</definition>
+        <argsstring>() const </argsstring>
+        <name>shared_parameters_const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="245" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="245" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a2084222cd1b9f555406d306d65680d7b" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool serialize</definition>
+        <argsstring>(std::ostream &amp;O) const </argsstring>
+        <name>serialize</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>O</declname>
+        </param>
+        <briefdescription>
+<para>output the planner parameters in a string (in XML format) don&apos;t use <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerParameters</ref> as a tag! </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="251"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a3fa6b654355e303ae1ad55be0b567ce8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PlannerParameters</definition>
+        <argsstring>(const PlannerParameters &amp;r)</argsstring>
+        <name>PlannerParameters</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerParameters</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>prevent copy constructors since it gets complicated with virtual functions </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="265"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a3a2efece353b49fc6235ec2ded1a7c9f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend OPENRAVE_API std::ostream &amp;</type>
+        <definition>OPENRAVE_API std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;O, const PlannerParameters &amp;v)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>O</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerParameters</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>outputs the data and surrounds it with </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>&lt;PlannerParameters&gt; </verbatim> tags </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="271"/>
+      </memberdef>
+      <memberdef kind="friend" id="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ac5b28f01c1ef45850c2fd44be0b12aea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend OPENRAVE_API std::istream &amp;</type>
+        <definition>OPENRAVE_API std::istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;I, PlannerParameters &amp;v)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>I</declname>
+        </param>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound">PlannerParameters</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>expects </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>&lt;PlannerParameters&gt; </verbatim> to be the first token. Parses stream until <verbatim>&lt;/PlannerParameters&gt; </verbatim> reached </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="273"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes a common and serializable interface for planning parameters. </para>    </briefdescription>
+    <detaileddescription>
+<para>The class is serializable to XML, so can be loaded from file or passed around the network. If extra parameters need to be specified, derive from this class and<itemizedlist>
+<listitem><para>add the extra tags to <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a6bdbb89d87824ee05004fbd5ecd4994b" kindref="member">PlannerParameters::_vXMLParameters</ref></para></listitem><listitem><para>override <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aeef176e516fa467c3a1ea9c210f96d48" kindref="member">PlannerParameters::startElement</ref> and <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1afc6f1ff707e6fd690100c89e3cd4c291" kindref="member">PlannerParameters::endElement</ref> for processing</para></listitem><listitem><para>possibly override the <ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a91544148bc143140fe0474224180233d" kindref="member">PlannerParameters::characters</ref></para></listitem></itemizedlist>
+</para><para>Also allows the parameters and descriptions to be serialized to reStructuredText for documentation purposes. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1625">
+        <label>XMLReadable</label>
+        <link refid="classOpenRAVE_1_1XMLReadable"/>
+      </node>
+      <node id="1624">
+        <label>BaseXMLReader</label>
+        <link refid="classOpenRAVE_1_1BaseXMLReader"/>
+      </node>
+      <node id="1623">
+        <label>PlannerParameters</label>
+        <link refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters"/>
+        <childnode refid="1624" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1625" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1635">
+        <label>stringstream</label>
+        <childnode refid="1636" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1632">
+        <label>ConfigurationSpecification</label>
+        <link refid="classOpenRAVE_1_1ConfigurationSpecification"/>
+        <childnode refid="1633" relation="usage">
+          <edgelabel>_vgroups</edgelabel>
+        </childnode>
+      </node>
+      <node id="1633">
+        <label>vector&lt; Group &gt;</label>
+        <childnode refid="1634" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1638">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="1639" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1628">
+        <label>string</label>
+        <childnode refid="1629" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1637">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="1638" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1641" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1631">
+        <label>vector&lt; dReal &gt;</label>
+      </node>
+      <node id="1630">
+        <label>XMLReadable</label>
+        <link refid="classOpenRAVE_1_1XMLReadable"/>
+        <childnode refid="1628" relation="usage">
+          <edgelabel>__xmlid</edgelabel>
+        </childnode>
+      </node>
+      <node id="1642">
+        <label>vector&lt; std::string &gt;</label>
+        <childnode refid="1628" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1634">
+        <label>Group</label>
+        <link refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group"/>
+        <childnode refid="1628" relation="usage">
+          <edgelabel>interpolation</edgelabel>
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="1629">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1640">
+        <label>ios_base</label>
+      </node>
+      <node id="1641">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="1639" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1639">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="1640" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1627">
+        <label>BaseXMLReader</label>
+        <link refid="classOpenRAVE_1_1BaseXMLReader"/>
+        <childnode refid="1628" relation="usage">
+          <edgelabel>_filename</edgelabel>
+        </childnode>
+      </node>
+      <node id="1636">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="1637" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1626">
+        <label>PlannerParameters</label>
+        <link refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters"/>
+        <childnode refid="1627" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1631" relation="usage">
+          <edgelabel>_vConfigResolution</edgelabel>
+          <edgelabel>vinitialconfig</edgelabel>
+          <edgelabel>_vConfigUpperLimit</edgelabel>
+          <edgelabel>_vConfigAccelerationLimit</edgelabel>
+          <edgelabel>vgoalconfig</edgelabel>
+          <edgelabel>_vConfigVelocityLimit</edgelabel>
+          <edgelabel>_vConfigLowerLimit</edgelabel>
+        </childnode>
+        <childnode refid="1632" relation="usage">
+          <edgelabel>_configurationspecification</edgelabel>
+        </childnode>
+        <childnode refid="1635" relation="usage">
+          <edgelabel>_ss</edgelabel>
+        </childnode>
+        <childnode refid="1628" relation="usage">
+          <edgelabel>_sPostProcessingParameters</edgelabel>
+          <edgelabel>_sPostProcessingPlanner</edgelabel>
+          <edgelabel>__processingtag</edgelabel>
+          <edgelabel>_sExtraParameters</edgelabel>
+        </childnode>
+        <childnode refid="1642" relation="usage">
+          <edgelabel>_vXMLParameters</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/planner.h" line="62" bodyfile="/home/pra3cob/openrave/include/openrave/planner.h" bodystart="61" bodyend="274"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a36ea723dd387b575d60f25e762801e2d" prot="private" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>__pcurreader</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aad79f0bbbafe39fca06faf93544ae74a" prot="private" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>__processingtag</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a51351299cd508ef90418b44d6959d989" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_checkpathconstraintsfn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a24d5a3136b64a22a3385a9680843cbf5" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_configurationspecification</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1afd674f55702e652867153a4ea5655415" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_costfn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a375c6b6d83b3d2a0563db1e3cad41288" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_diffstatefn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aa4e21b3274a2d611df29139e610e31f9" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_distmetricfn</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a895aefe990ffe9af66bb5cd4e37d3579" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_filename</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a377dd1c13871195e977151411e0033bf" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_fStepLength</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a92304944fb5594cac6be85477fc0c440" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_getstatefn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a251626b7c19c35180f64712bb90dfc6f" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_goalfn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0bb9400d1009be3bd887015255bcd118" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_neighstatefn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a75940963abf9391dca1ec1d48b7a11cc" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_nMaxIterations</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a6ccdf26921ce2a928e37174879ad9a37" prot="private" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_plannerparametersdepth</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a9e4fc9aea09a7dcf8aea9f14e2ecb755" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_samplefn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a7587ead6ad8c68d2d255755012a52fa6" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_samplegoalfn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1abc008d20e0f068fed178d64a7b2b2ffd" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_sampleinitialfn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a68bbb727e1792c8fdbe345641eb031a3" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_sampleneighfn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aa83a795822a8b73310203acaf0b2a74b" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_setstatefn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a05c2cb3cd9524fb2b1883a7639801084" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_sExtraParameters</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0f1a23c0726e36b98edbe514d4962d08" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_sPostProcessingParameters</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aece70c470f96fbe3cd74ce45ee0145b0" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_sPostProcessingPlanner</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ab4d8dc52e167678ba742d5e74fa8bbd2" prot="protected" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_ss</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1af1b3c43634a060ac8c81588387d85b86" prot="protected" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_sslocal</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a647a79190686baca1e50eef9887d0b70" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_vConfigAccelerationLimit</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0a56912aa3223faae5d69840ef0edd14" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_vConfigLowerLimit</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a803fc76d967c3adcf76e737344977d62" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_vConfigResolution</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a49cd6c1c809d3f307ebbfd639cfc6ddb" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_vConfigUpperLimit</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1acfdac79592a4faa5e57c23b22c7a8954" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_vConfigVelocityLimit</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a6bdbb89d87824ee05004fbd5ecd4994b" prot="protected" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>_vXMLParameters</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5143187ada5e3a593490b42b2851bbbe" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>BaseXMLReader</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a91544148bc143140fe0474224180233d" prot="protected" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>characters</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aca89abb7137aa4f3aa98065ce10f7f6a" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>CheckPathConstraintFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a14758c28fa2c4bf4440aefd9895285a0" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>copy</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aaa75769bb0c706f4de9f59bc2a43f524" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>CostFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a58f093aece5495e4be24da19e9cb4cc7" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>DiffStateFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a1e96b9c9b49635f5bfd32531e41fb0e8" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>DistMetricFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1afc6f1ff707e6fd690100c89e3cd4c291" prot="protected" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>endElement</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a44fbec2fd26a45cada889c5c0f0751c8" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>GetDOF</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a96a8303765bddf9742cbc422f8a9c2d6" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>GetReadable</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ae2be23760038f12a589f6a8cfb0a5780" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>GetStateFn</name></member>
+      <member refid="classOpenRAVE_1_1XMLReadable_1a0821649216dd12d46644e17732a6f03b" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>GetXMLId</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ac6a5c6b1eb0d15f3cd0f69f8d4871df3" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>GoalFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a602e68d3c6c25efa6539bbd8b5e02c39" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>NeighStateFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a3a2efece353b49fc6235ec2ded1a7c9f" prot="private" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a98b727075503cffbc2c40ddfd51a8890" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>operator=</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ac5b28f01c1ef45850c2fd44be0b12aea" prot="private" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9a14953fbbe151fd55cd76395cdccc4af6" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>PE_Ignore</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9a55670b1a206d4da09ef69e3690ee7bba" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>PE_Pass</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9a5123a3d32d744694919844d9675ede67" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>PE_Support</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1adf3a87ab62474f73fa70d42a3264ef70" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>PlannerParameters</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a3fa6b654355e303ae1ad55be0b567ce8" prot="private" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>PlannerParameters</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>ProcessElement</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a1b5ac1fcfcc5e5775ffbbc9c451541fd" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>SampleFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a60329a58cd803c66dc0701e9944d8ed9" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>SampleGoalFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a8cd1af608ebe03bf544992b322e6f5aa" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>SampleInitialFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a78bb26c318f93bce6e3ea11fc95a99fc" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>SampleNeighFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a2084222cd1b9f555406d306d65680d7b" prot="protected" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a209ca0bfbbc31be9ecee12ce308374c4" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>SetRobotActiveJoints</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a8f178813af84b26eb8a12ade9a556482" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>SetStateFn</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0a5bb6979a5bdcdb408ab97b8f3f6ee2" prot="protected" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>shared_parameters</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a9a9dbd98b427819f681d54e5ee332b31" prot="protected" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>shared_parameters_const</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aeef176e516fa467c3a1ea9c210f96d48" prot="protected" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>startElement</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a2bf4037908e01bbad579ac04d2c1dae4" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>vgoalconfig</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aad3112dc0481a0b114f1154ee1d743a7" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>vinitialconfig</name></member>
+      <member refid="classOpenRAVE_1_1XMLReadable_1af15a81c4a38531ede7ba24014b511539" prot="public" virt="non-virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>XMLReadable</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a034ab256eb83ff95644a30e038957979" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>~BaseXMLReader</name></member>
+      <member refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a14f454af206fdf4328967bed64cda689" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>~PlannerParameters</name></member>
+      <member refid="classOpenRAVE_1_1XMLReadable_1ad5134b6ff094d23e59c5fedd318219a7" prot="public" virt="virtual"><scope>OpenRAVE::PlannerBase::PlannerParameters</scope><name>~XMLReadable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

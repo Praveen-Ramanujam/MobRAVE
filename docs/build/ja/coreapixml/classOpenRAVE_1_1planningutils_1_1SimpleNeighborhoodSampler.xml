@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler" kind="class" prot="public">
+    <compoundname>OpenRAVE::planningutils::SimpleNeighborhoodSampler</compoundname>
+    <includes refid="planningutils_8h" local="no">planningutils.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler_1a2d95cf39fba83f174d52291b9497429a" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7176d63b178b8eab68b6947d4d850bb" kindref="member">SpaceSamplerBasePtr</ref></type>
+        <definition>SpaceSamplerBasePtr _psampler</definition>
+        <argsstring></argsstring>
+        <name>_psampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="107" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler_1adffc52f78b3cf37f580720c06045e775" prot="protected" static="no" mutable="no">
+        <type>boost::function&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>(const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;, const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;)&gt;</type>
+        <definition>boost::function&lt;dReal(const std::vector&lt;dReal&gt;&amp;, const std::vector&lt;dReal&gt;&amp;)&gt; _distmetricfn</definition>
+        <argsstring></argsstring>
+        <name>_distmetricfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="108" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler_1a8435f46c3b019382a476fa6eb55fcf0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SimpleNeighborhoodSampler</definition>
+        <argsstring>(SpaceSamplerBasePtr psampler, const boost::function&lt; dReal(const std::vector&lt; dReal &gt; &amp;, const std::vector&lt; dReal &gt; &amp;)&gt; &amp;distmetricfn)</argsstring>
+        <name>SimpleNeighborhoodSampler</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ad7176d63b178b8eab68b6947d4d850bb" kindref="member">SpaceSamplerBasePtr</ref></type>
+          <declname>psampler</declname>
+        </param>
+        <param>
+          <type>const boost::function&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>(const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;, const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;)&gt; &amp;</type>
+          <declname>distmetricfn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler_1ac20cf38fe78285900c9fdaff98cc01f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Sample</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;vNewSample, const std::vector&lt; dReal &gt; &amp;vCurSample, dReal fRadius)</argsstring>
+        <name>Sample</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vNewSample</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>vCurSample</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>fRadius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler_1a3d6238fbb3703ef19bfbc428e8e53b80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Sample</definition>
+        <argsstring>(std::vector&lt; dReal &gt; &amp;samples)</argsstring>
+        <name>Sample</name>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>samples the neighborhood of a configuration using the configuration space distance metric and sampler. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="100" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="99" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler_1adffc52f78b3cf37f580720c06045e775" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::SimpleNeighborhoodSampler</scope><name>_distmetricfn</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler_1a2d95cf39fba83f174d52291b9497429a" prot="protected" virt="non-virtual"><scope>OpenRAVE::planningutils::SimpleNeighborhoodSampler</scope><name>_psampler</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler_1ac20cf38fe78285900c9fdaff98cc01f6" prot="public" virt="non-virtual"><scope>OpenRAVE::planningutils::SimpleNeighborhoodSampler</scope><name>Sample</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler_1a3d6238fbb3703ef19bfbc428e8e53b80" prot="public" virt="non-virtual"><scope>OpenRAVE::planningutils::SimpleNeighborhoodSampler</scope><name>Sample</name></member>
+      <member refid="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler_1a8435f46c3b019382a476fa6eb55fcf0e" prot="public" virt="non-virtual"><scope>OpenRAVE::planningutils::SimpleNeighborhoodSampler</scope><name>SimpleNeighborhoodSampler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

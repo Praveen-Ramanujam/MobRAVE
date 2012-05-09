@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: include/openrave/planningutils.h (r2848/r2841) ソースファイル 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<h1>include/openrave/planningutils.h (r2848/r2841)</h1><a href="planningutils_8h.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// -*- coding: utf-8 -*-</span>
+<a name="l00002"></a>00002 <span class="comment">// Copyright (C) 2006-2011 Rosen Diankov &lt;rosen.diankov@gmail.com&gt;</span>
+<a name="l00003"></a>00003 <span class="comment">//</span>
+<a name="l00004"></a>00004 <span class="comment">// This file is part of OpenRAVE.</span>
+<a name="l00005"></a>00005 <span class="comment">// OpenRAVE is free software: you can redistribute it and/or modify</span>
+<a name="l00006"></a>00006 <span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span>
+<a name="l00007"></a>00007 <span class="comment">// the Free Software Foundation, either version 3 of the License, or</span>
+<a name="l00008"></a>00008 <span class="comment">// at your option) any later version.</span>
+<a name="l00009"></a>00009 <span class="comment">//</span>
+<a name="l00010"></a>00010 <span class="comment">// This program is distributed in the hope that it will be useful,</span>
+<a name="l00011"></a>00011 <span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<a name="l00012"></a>00012 <span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<a name="l00013"></a>00013 <span class="comment">// GNU Lesser General Public License for more details.</span>
+<a name="l00014"></a>00014 <span class="comment">//</span>
+<a name="l00015"></a>00015 <span class="comment">// You should have received a copy of the GNU Lesser General Public License</span>
+<a name="l00016"></a>00016 <span class="comment">// along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
+<a name="l00017"></a>00017 
+<a name="l00021"></a>00021 <span class="preprocessor">#ifndef OPENRAVE_PLANNINGUTILS_H</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#define OPENRAVE_PLANNINGUTILS_H</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span>
+<a name="l00024"></a>00024 <span class="preprocessor">#include &lt;<a class="code" href="openrave_8h.html" title="Defines the public headers that every plugin must include in order to use openrave...">openrave/openrave.h</a>&gt;</span>
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026 <span class="keyword">namespace </span>OpenRAVE {
+<a name="l00027"></a>00027 
+<a name="l00028"></a><a class="code" href="namespaceOpenRAVE_1_1planningutils.html">00028</a> <span class="keyword">namespace </span>planningutils {
+<a name="l00029"></a>00029 
+<a name="l00033"></a>00033 <a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <span class="keywordtype">int</span> <a class="code" href="namespaceOpenRAVE_1_1planningutils.html#a3371dbb8b41bc0b2a79273dc3b90d375" title="Jitters the active joint angles of the robot until it escapes collision.">JitterActiveDOF</a>(<a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> robot,<span class="keywordtype">int</span> nMaxIterations=5000,<a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> fRand=0.03f,<span class="keyword">const</span> <a class="code" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a602e68d3c6c25efa6539bbd8b5e02c39" title="Adds a delta state to a curent state, acting like a next-nearest-neighbor function...">PlannerBase::PlannerParameters::NeighStateFn</a>&amp; neighstatefn = <a class="code" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a602e68d3c6c25efa6539bbd8b5e02c39" title="Adds a delta state to a curent state, acting like a next-nearest-neighbor function...">PlannerBase::PlannerParameters::NeighStateFn</a>());
+<a name="l00034"></a>00034 
+<a name="l00036"></a>00036 <a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <span class="keywordtype">bool</span> <a class="code" href="namespaceOpenRAVE_1_1planningutils.html#a1f782836180a0fb466ac0a852f234f1f" title="Jitters the transform of a body until it escapes collision.">JitterTransform</a>(<a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> pbody, <span class="keywordtype">float</span> fJitter, <span class="keywordtype">int</span> nMaxIterations=1000);
+<a name="l00037"></a>00037 
+<a name="l00046"></a>00046 <a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <span class="keywordtype">void</span> <a class="code" href="namespaceOpenRAVE_1_1planningutils.html#ab5e7f7405551cd5eb22e19e61d424a8b" title="validates a trajectory with respect to the planning constraints.">VerifyTrajectory</a>(<a class="code" href="classOpenRAVE_1_1PlannerBase.html#ab566be29bf1d40d8631782886bb45bb0">PlannerBase::PlannerParametersConstPtr</a> parameters, <a class="code" href="namespaceOpenRAVE.html#ae4a194e7d8dcb23b1acad4ff9f84ad49">TrajectoryBaseConstPtr</a> trajectory, <a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> samplingstep=0.002);
+<a name="l00047"></a>00047 
+<a name="l00055"></a>00055 <a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <span class="keywordtype">void</span> <a class="code" href="namespaceOpenRAVE_1_1planningutils.html#a164e0c7cc3c0c50d13573f72aa57f2dc" title="retimes the trajectory points consisting of active dofs of the robot">RetimeActiveDOFTrajectory</a>(<a class="code" href="namespaceOpenRAVE.html#aa3c159b394f2e4ec46ac49416a2acf17">TrajectoryBasePtr</a> traj, <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> robot, <span class="keywordtype">bool</span> hastimestamps=<span class="keyword">false</span>, <a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> fmaxvelmult=1, <span class="keyword">const</span> std::string&amp; plannername=<span class="stringliteral">&quot;&quot;</span>);
+<a name="l00056"></a>00056 
+<a name="l00065"></a>00065 <a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <span class="keywordtype">void</span> <a class="code" href="namespaceOpenRAVE_1_1planningutils.html#a0560d78f2da8b7cee9e9106787ec5dda" title="retimes the trajectory points consisting of affine dofs">RetimeAffineTrajectory</a>(<a class="code" href="namespaceOpenRAVE.html#aa3c159b394f2e4ec46ac49416a2acf17">TrajectoryBasePtr</a> traj, <span class="keyword">const</span> std::vector&lt;dReal&gt;&amp; maxvelocities, <span class="keyword">const</span> std::vector&lt;dReal&gt;&amp; maxaccelerations, <span class="keywordtype">bool</span> hastimestamps=<span class="keyword">false</span>, <span class="keyword">const</span> std::string&amp; plannername=<span class="stringliteral">&quot;&quot;</span>);
+<a name="l00066"></a>00066 
+<a name="l00068"></a>00068 <a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <span class="keywordtype">void</span> <a class="code" href="namespaceOpenRAVE_1_1planningutils.html#ab19429a9a082977dc3300a648dd4a93d" title="convert the trajectory and all its points to a new specification">ConvertTrajectorySpecification</a>(<a class="code" href="namespaceOpenRAVE.html#aa3c159b394f2e4ec46ac49416a2acf17">TrajectoryBasePtr</a> traj, <span class="keyword">const</span> <a class="code" href="classOpenRAVE_1_1ConfigurationSpecification.html" title="A configuration specification references values in the environment that then define...">ConfigurationSpecification</a>&amp; spec);
+<a name="l00069"></a>00069 
+<a name="l00073"></a>00073 <a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <a class="code" href="namespaceOpenRAVE.html#aa3c159b394f2e4ec46ac49416a2acf17">TrajectoryBasePtr</a> <a class="code" href="namespaceOpenRAVE_1_1planningutils.html#abcb19942c53d53b351156386767bd5c1" title="reverses the order of the trajectory waypoints and times.">ReverseTrajectory</a>(<a class="code" href="namespaceOpenRAVE.html#ae4a194e7d8dcb23b1acad4ff9f84ad49">TrajectoryBaseConstPtr</a> traj);
+<a name="l00074"></a>00074 
+<a name="l00076"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1LineCollisionConstraint.html">00076</a> <span class="keyword">class </span><a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <a class="code" href="classOpenRAVE_1_1planningutils_1_1LineCollisionConstraint.html" title="Line collision.">LineCollisionConstraint</a>
+<a name="l00077"></a>00077 {
+<a name="l00078"></a>00078 <span class="keyword">public</span>:
+<a name="l00079"></a>00079     <a class="code" href="classOpenRAVE_1_1planningutils_1_1LineCollisionConstraint.html" title="Line collision.">LineCollisionConstraint</a>();
+<a name="l00080"></a>00080     <span class="keywordtype">bool</span> Check(<a class="code" href="classOpenRAVE_1_1PlannerBase.html#a65a20c3007e065de99a3f21bb177013d">PlannerBase::PlannerParametersWeakPtr</a> _params, <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> robot, <span class="keyword">const</span> std::vector&lt;dReal&gt;&amp; pQ0, <span class="keyword">const</span> std::vector&lt;dReal&gt;&amp; pQ1, <a class="code" href="namespaceOpenRAVE.html#a0d04dbfb6240509e26f8336ab1756937" title="Specifies the boundary conditions of intervals for sampling.">IntervalType</a> interval, <a class="code" href="classOpenRAVE_1_1PlannerBase.html#a5b660e564b471d714462742a939dbd40">PlannerBase::ConfigurationListPtr</a> pvCheckedConfigurations);
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082 <span class="keyword">protected</span>:
+<a name="l00083"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1LineCollisionConstraint.html#a2b2b28a6934599337ccfdcac63516f78">00083</a>     std::vector&lt;dReal&gt; _vtempconfig, dQ;
+<a name="l00084"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1LineCollisionConstraint.html#a78c822433bd8dedb5eada09aca5cb95a">00084</a>     <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> _report;
+<a name="l00085"></a>00085 };
+<a name="l00086"></a>00086 
+<a name="l00088"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric.html">00088</a> <span class="keyword">class </span><a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <a class="code" href="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric.html" title="simple distance metric based on joint weights">SimpleDistanceMetric</a>
+<a name="l00089"></a>00089 {
+<a name="l00090"></a>00090 <span class="keyword">public</span>:
+<a name="l00091"></a>00091     <a class="code" href="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric.html" title="simple distance metric based on joint weights">SimpleDistanceMetric</a>(<a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> robot);
+<a name="l00092"></a>00092     <a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> Eval(<span class="keyword">const</span> std::vector&lt;dReal&gt;&amp; c0, <span class="keyword">const</span> std::vector&lt;dReal&gt;&amp; c1);
+<a name="l00093"></a>00093 <span class="keyword">protected</span>:
+<a name="l00094"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric.html#a509c536961a51f5b102005d7bf778ecb">00094</a>     <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> _robot;
+<a name="l00095"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1SimpleDistanceMetric.html#abef4d36e1b419fb7950b2f7537120709">00095</a>     std::vector&lt;dReal&gt; weights2;
+<a name="l00096"></a>00096 };
+<a name="l00097"></a>00097 
+<a name="l00099"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler.html">00099</a> <span class="keyword">class </span><a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <a class="code" href="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler.html" title="samples the neighborhood of a configuration using the configuration space distance...">SimpleNeighborhoodSampler</a>
+<a name="l00100"></a>00100 {
+<a name="l00101"></a>00101 <span class="keyword">public</span>:
+<a name="l00102"></a>00102     <a class="code" href="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler.html" title="samples the neighborhood of a configuration using the configuration space distance...">SimpleNeighborhoodSampler</a>(<a class="code" href="namespaceOpenRAVE.html#ad7176d63b178b8eab68b6947d4d850bb">SpaceSamplerBasePtr</a> psampler, <span class="keyword">const</span> boost::function&lt;<a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>(<span class="keyword">const</span> std::vector&lt;dReal&gt;&amp;, <span class="keyword">const</span> std::vector&lt;dReal&gt;&amp;)&gt;&amp;distmetricfn);
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104     <span class="keywordtype">bool</span> Sample(std::vector&lt;dReal&gt;&amp; vNewSample, <span class="keyword">const</span> std::vector&lt;dReal&gt;&amp; vCurSample, <a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> fRadius);
+<a name="l00105"></a>00105     <span class="keywordtype">bool</span> Sample(std::vector&lt;dReal&gt;&amp; samples);
+<a name="l00106"></a>00106 <span class="keyword">protected</span>:
+<a name="l00107"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler.html#a2d95cf39fba83f174d52291b9497429a">00107</a>     <a class="code" href="namespaceOpenRAVE.html#ad7176d63b178b8eab68b6947d4d850bb">SpaceSamplerBasePtr</a> _psampler;
+<a name="l00108"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1SimpleNeighborhoodSampler.html#adffc52f78b3cf37f580720c06045e775">00108</a>     boost::function&lt;dReal(const std::vector&lt;dReal&gt;&amp;, <span class="keyword">const</span> std::vector&lt;dReal&gt;&amp;)&gt; _distmetricfn;
+<a name="l00109"></a>00109 };
+<a name="l00110"></a>00110 
+<a name="l00116"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html">00116</a> <span class="keyword">class </span><a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html" title="Samples numsamples of solutions and each solution to vsolutions.">ManipulatorIKGoalSampler</a>
+<a name="l00117"></a>00117 {
+<a name="l00118"></a>00118 <span class="keyword">public</span>:
+<a name="l00119"></a>00119     <a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html" title="Samples numsamples of solutions and each solution to vsolutions.">ManipulatorIKGoalSampler</a>(<a class="code" href="classOpenRAVE_1_1RobotBase.html#acd0ffcc71189ba5106c0481f70ae94e0">RobotBase::ManipulatorConstPtr</a> pmanip, <span class="keyword">const</span> std::list&lt;IkParameterization&gt;&amp;listparameterizations, <span class="keywordtype">int</span> nummaxsamples=20, <span class="keywordtype">int</span> nummaxtries=10, <a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> fsampleprob=1);
+<a name="l00120"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#a841814e8d4783a1ea35562cffc3640ea">00120</a>     <span class="keyword">virtual</span> <a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#a841814e8d4783a1ea35562cffc3640ea">~ManipulatorIKGoalSampler</a>() {
+<a name="l00121"></a>00121     }
+<a name="l00122"></a>00122     <span class="comment">//void SetCheckPathConstraintsFn(const PlannerBase::PlannerParameters::CheckPathConstraintFn&amp; checkfn)</span>
+<a name="l00123"></a>00123     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Sample(std::vector&lt;dReal&gt;&amp; vgoal);
+<a name="l00124"></a>00124     <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetIkParameterizationIndex(<span class="keywordtype">int</span> index);
+<a name="l00125"></a>00125     <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetSamplingProb(<a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> fsampleprob);
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127 <span class="keyword">protected</span>:
+<a name="l00128"></a><a class="code" href="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo.html">00128</a>     <span class="keyword">struct </span><a class="code" href="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo.html">SampleInfo</a>
+<a name="l00129"></a>00129     {
+<a name="l00130"></a><a class="code" href="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo.html#a7f2d8742bca1024404b3f04ffba74d61">00130</a>         <a class="code" href="classOpenRAVE_1_1IkParameterization.html" title="Parameterization of basic primitives for querying inverse-kinematics solutions.">IkParameterization</a> _ikparam;
+<a name="l00131"></a><a class="code" href="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo.html#a20478c33b04a7e5d0847e69c5d0f7c13">00131</a>         <span class="keywordtype">int</span> _numleft;
+<a name="l00132"></a><a class="code" href="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo.html#a2d95cf39fba83f174d52291b9497429a">00132</a>         <a class="code" href="namespaceOpenRAVE.html#ad7176d63b178b8eab68b6947d4d850bb">SpaceSamplerBasePtr</a> _psampler;
+<a name="l00133"></a><a class="code" href="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo.html#a29aec141fdcff4335b3d67834ea02195">00133</a>         <span class="keywordtype">int</span> _orgindex;
+<a name="l00134"></a>00134     };
+<a name="l00135"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#a96b8c6244de5c544065e0611b566cb84">00135</a>     <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> _probot;
+<a name="l00136"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#ac6e06d5d4efff1ed1b00c47345bc532d">00136</a>     <a class="code" href="classOpenRAVE_1_1RobotBase.html#acd0ffcc71189ba5106c0481f70ae94e0">RobotBase::ManipulatorConstPtr</a> _pmanip;
+<a name="l00137"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#a427a9ce04a51c550cf4b076c28bdb552">00137</a>     <span class="keywordtype">int</span> _nummaxsamples, _nummaxtries;
+<a name="l00138"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#ac87befcbfdb7503f5829a0ee99481e1e">00138</a>     std::list&lt;SampleInfo&gt; _listsamples;
+<a name="l00139"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#a7e08e622c6ffa37aa689ccbe47c6c5e4">00139</a>     <a class="code" href="namespaceOpenRAVE.html#ad7176d63b178b8eab68b6947d4d850bb">SpaceSamplerBasePtr</a> _pindexsampler;
+<a name="l00140"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#a017e5b4d36f2cd4e2e828e53cce0ea5e">00140</a>     <a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> _fsampleprob;
+<a name="l00141"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#a78c822433bd8dedb5eada09aca5cb95a">00141</a>     <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> _report;
+<a name="l00142"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#a79e7be1389ab2253f7f973eb8b56db11">00142</a>     std::vector&lt; std::vector&lt;dReal&gt; &gt; _viksolutions;
+<a name="l00143"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#a0387c57557444c9d47dd5e7f75a35811">00143</a>     std::list&lt;int&gt; _listreturnedsamples;
+<a name="l00144"></a><a class="code" href="classOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler.html#a9959c6ea58fc53b2090ae04e4d670ced">00144</a>     std::vector&lt;dReal&gt; _vfreestart;
+<a name="l00145"></a>00145 };
+<a name="l00146"></a>00146 
+<a name="l00147"></a><a class="code" href="namespaceOpenRAVE_1_1planningutils.html#aac42ef7a026c90010ccca8b42e5ed203">00147</a> <span class="keyword">typedef</span> boost::shared_ptr&lt;ManipulatorIKGoalSampler&gt; <a class="code" href="namespaceOpenRAVE_1_1planningutils.html#aac42ef7a026c90010ccca8b42e5ed203">ManipulatorIKGoalSamplerPtr</a>;
+<a name="l00148"></a>00148 
+<a name="l00149"></a>00149 } <span class="comment">// planningutils</span>
+<a name="l00150"></a>00150 } <span class="comment">// OpenRAVE</span>
+<a name="l00151"></a>00151 
+<a name="l00152"></a>00152 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:42:53 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

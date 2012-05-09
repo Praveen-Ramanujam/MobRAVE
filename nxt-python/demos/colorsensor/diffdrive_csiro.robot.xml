@@ -1,0 +1,358 @@
+    <robot name="diffdrive">
+    
+        <KinBody name="car">
+            <Body name="chassis" type="dynamic">
+                <mass type="box">
+                    <total>0.7</total>
+                </mass>
+                <Geom type="box">
+                    <Extents>1.0 0.3 0.2</Extents>
+                    <diffuseColor>0.5 0.5 0.5</diffuseColor>
+                </Geom>
+            </Body>
+            <Body name="gyro" type="dynamic">
+                <mass type="box">
+                    <total>0.01</total>
+                </mass>
+                <offsetfrom>chassis</offsetfrom>
+                <Translation> 0 0.65 -0.25 </Translation>
+                <Geom type="box">
+                    <Extents>0.01 0.01 0.1</Extents>
+                    <diffuseColor>1 0 0</diffuseColor>
+                </Geom>
+            </Body>
+            <Body name="front_left_wheel" type="dynamic">
+                <mass>
+                    <total>0.3</total>
+                </mass>
+                <offsetfrom>chassis</offsetfrom>
+                <Translation> 0.515 0.65 -0.25 </Translation>
+                <Geom type="cylinder">
+                      <radius>0.375</radius>
+                      <height>0.24</height>
+                      <diffuseColor>0.05 0.05 0.05</diffuseColor>
+                </Geom>
+            </Body>
+            <Body name="rear_left_wheel" type="dynamic">
+                <mass>
+                    <total>0.3</total>
+                </mass>
+                <offsetfrom>chassis</offsetfrom>
+                <Translation> -0.515 0.65 -0.25 </Translation>
+                <Geom type="cylinder">
+                      <radius>0.375</radius>
+                      <height>0.24</height>
+                      <diffuseColor>0.05 0.05 0.05</diffuseColor>
+                </Geom>
+            </Body>
+            <Body name="front_right_wheel" type="dynamic">
+                <mass>
+                    <total>0.3</total>
+                </mass>
+                <offsetfrom>chassis</offsetfrom>
+                <Translation> 0.515 -0.65 -0.25 </Translation>
+                <Geom type="cylinder">
+                      <radius>0.375</radius>
+                      <height>0.24</height>
+                      <diffuseColor>0.05 0.05 0.05</diffuseColor>
+                </Geom>
+            </Body>
+            <Body name="rear_right_wheel" type="dynamic">
+                <mass>
+                    <total>0.3</total>
+                </mass>
+                <offsetfrom>chassis</offsetfrom>
+                <Translation> -0.515 -0.65 -0.25 </Translation>
+                <Geom type="cylinder">
+                      <radius>0.375</radius>
+                      <height>0.24</height>
+                      <diffuseColor>0.05 0.05 0.05</diffuseColor>
+                </Geom>
+            </Body>
+            <Body name="steer_hub_left" type="dynamic">
+                <mass type="box">
+                    <total>0.1</total>
+                </mass>
+                <offsetfrom>chassis</offsetfrom>
+                <Translation> 0.515 0.4 -0.25 </Translation>
+                <Geom type="box">
+                    <Extents>0.01 0.01 0.01</Extents>
+                </Geom>
+            </Body>
+            <Body name="steer_hub_right" type="dynamic">
+                <mass type="box">
+                    <total>0.1</total>
+                </mass>
+                <offsetfrom>chassis</offsetfrom>
+                <Translation> 0.515 -0.4 -0.25 </Translation>
+                <Geom type="box">
+                    <Extents>0.01 0.01 0.01</Extents>
+                </Geom>
+            </Body>
+            <!--<Joint name="joint_flwheel_chassis" type="hinge2" circular="true">
+                <Body>chassis</Body>
+                <Body>front_left_wheel</Body>
+                <offsetfrom>chassis</offsetfrom>
+                <Anchor> 0.515 0.4 -0.25</Anchor>
+                <axis1> 0 0 1 </axis1>
+                <axis2> 0 1 0 </axis2>
+            </Joint>
+            <Joint name="joint_frwheel_chassis" type="hinge2" circular="true">
+                <Body>chassis</Body>
+                <Body>front_right_wheel</Body>
+                <offsetfrom>chassis</offsetfrom>
+                <Anchor> 0.515 -0.4 -0.25</Anchor>
+                <axis1> 0 0 1 </axis1>
+                <axis2> 0 1 0 </axis2>
+            </Joint>-->
+            <Joint name="joint_flwheel_chassis0" type="hinge" circular="true">
+                <Body>steer_hub_left</Body>
+                <Body>chassis</Body>
+                <offsetfrom>chassis</offsetfrom>
+                <Anchor> 0.515 0.4 -0.25</Anchor>
+                <axis> 0 0 1 </axis>
+            </Joint>
+            <Joint name="joint_flwheel_chassis1" type="hinge" circular="true">
+                <Body>steer_hub_left</Body>
+                <Body>front_left_wheel</Body>
+                <offsetfrom>chassis</offsetfrom>
+                <Anchor> 0.515 0.4 -0.25</Anchor>
+                <axis> 0 1 0 </axis>
+            </Joint>
+            <Joint name="joint_frwheel_chassis0" type="hinge" circular="true">
+                <Body>steer_hub_right</Body>
+                <Body>chassis</Body>
+                <offsetfrom>chassis</offsetfrom>
+                <Anchor> 0.515 -0.4 -0.25</Anchor>
+                <axis> 0 0 1 </axis>
+            </Joint>
+            <Joint name="joint_frwheel_chassis1" type="hinge" circular="true">
+                <Body>steer_hub_right</Body>
+                <Body>front_right_wheel</Body>
+                <offsetfrom>chassis</offsetfrom>
+                <Anchor> 0.515 -0.4 -0.25</Anchor>
+                <axis> 0 1 0 </axis>
+            </Joint>
+            <Joint name="joint_rlwheel_chassis" type="hinge" circular="true">
+                <Body>chassis</Body>
+                <Body>rear_left_wheel</Body>
+                <offsetfrom>rear_left_wheel</offsetfrom>
+                <Anchor> 0 0 0</Anchor>
+                <axis> 0 1 0 </axis>
+            </Joint>
+            <Joint name="joint_rrwheel_chassis" type="hinge" circular="true">
+                <Body>chassis</Body>
+                <Body>rear_right_wheel</Body>
+                <offsetfrom>rear_right_wheel</offsetfrom>
+                <Anchor> 0 0 0</Anchor>
+                <axis> 0 1 0 </axis>
+            </Joint>
+            <Joint name="joint_gyro" type="hinge" circular="true">
+                <Body>chassis</Body>
+                <Body>gyro</Body>
+                <offsetfrom>chassis</offsetfrom>
+                <Anchor> 0 0 0</Anchor>
+                <axis> 0 1 0 </axis>
+            </Joint>
+            
+        </KinBody>
+   <AttachedSensor name="color">
+   <link>chassis</link>
+    <translation>1.25 0 0.1</translation>
+    <rotationaxis>0 1 0 165</rotationaxis>
+    <sensor type="BaseCamera">
+      <KK>80 60 80 60</KK>
+      <width>160</width>
+      <height>120</height>
+      <framerate>5</framerate>
+      <color>0.5 0.5 1</color>
+    </sensor>
+  </AttachedSensor>
+ 
+	<!--AttachedSensor name="Touch">
+    <link>chassis</link>
+    <translation>1.05 0 0.1</translation>
+    <rotationaxis>0 0 1 0</rotationaxis>
+    <sensor type="TouchSensor">
+       <scantime>0.1</scantime>
+    </sensor>
+  </AttachedSensor-->
+  <AttachedSensor name="myflashlaser">
+      <link>chassis</link>
+      <translation>1.05 0 0</translation>
+      <rotationaxis>0 1 0 90</rotationaxis>
+     <sensor type="BaseFlashLidar3D">
+      <!--sensor type="Sonar"-->
+       <maxrange>3</maxrange>
+       <minrange>0</minrange>
+        <scantime>0.2</scantime>
+        <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <KK>32 24 32 24</KK>
+        <width>30</width>
+        <height>30</height>
+        <color>1 1 0</color>
+      </sensor>
+    </AttachedSensor>
+  <!--AttachedSensor name="myflashlaser">
+    <link>chassis</link>
+    <translation>1.05 0 0.2</translation>
+    <rotationaxis>0 1 0 -30</rotationaxis>
+    <sensor type="BaseSpinningLaser2D">
+       <spinaxis>0 1 0</spinaxis>
+       <spinspeed>10</spinspeed>
+       <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <minrange>0</minrange>
+        <maxrange>4</maxrange>
+        <scantime>0.1</scantime>
+      <color>1 0 0</color>
+    </sensor>
+  </AttachedSensor>
+  <AttachedSensor name="myflashlaser1">
+    <link>chassis</link>
+    <translation>1.05 0 0.2</translation>
+    <rotationaxis>0 1 0 7.5</rotationaxis>
+    <sensor type="BaseLaser2D">
+       <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <minrange>0</minrange>
+        <maxrange>4</maxrange>
+        <scantime>0.1</scantime>
+      <color>1 0 0</color>
+    </sensor>
+  </AttachedSensor>
+  <AttachedSensor name="myflashlaser2">
+    <link>chassis</link>
+    <translation>1.05 0 0.2</translation>
+    <rotationaxis>0 1 0 6.5</rotationaxis>
+    <sensor type="BaseLaser2D">
+       <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <minrange>0</minrange>
+        <maxrange>4</maxrange>
+        <scantime>0.1</scantime>
+      <color>1 0 0</color>
+    </sensor>
+  </AttachedSensor>
+ <AttachedSensor name="myflashlaser3">
+    <link>chassis</link>
+    <translation>1.05 0 0.2</translation>
+    <rotationaxis>0 1 0 5.5</rotationaxis>
+    <sensor type="BaseLaser2D">
+       <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <minrange>0</minrange>
+        <maxrange>4</maxrange>
+        <scantime>0.1</scantime>
+      <color>1 0 0</color>
+    </sensor>
+  </AttachedSensor>
+ <AttachedSensor name="myflashlaser4">
+    <link>chassis</link>
+    <translation>1.05 0 0.2</translation>
+    <rotationaxis>0 1 0 4.5</rotationaxis>
+    <sensor type="BaseLaser2D">
+       <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <minrange>0</minrange>
+        <maxrange>4</maxrange>
+        <scantime>0.1</scantime>
+      <color>1 0 0</color>
+    </sensor>
+  </AttachedSensor>
+ <AttachedSensor name="myflashlaser5">
+    <link>chassis</link>
+    <translation>1.05 0 0.2</translation>
+    <rotationaxis>0 1 0 3.5</rotationaxis>
+    <sensor type="BaseLaser2D">
+       <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <minrange>0</minrange>
+        <maxrange>4</maxrange>
+        <scantime>0.1</scantime>
+      <color>1 0 0</color>
+    </sensor>
+  </AttachedSensor>
+ <AttachedSensor name="myflashlaser6">
+    <link>chassis</link>
+    <translation>1.05 0 0.2</translation>
+    <rotationaxis>0 1 0 2.5</rotationaxis>
+    <sensor type="BaseLaser2D">
+       <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <minrange>0</minrange>
+        <maxrange>4</maxrange>
+        <scantime>0.1</scantime>
+      <color>1 0 0</color>
+    </sensor>
+  </AttachedSensor>
+ <AttachedSensor name="myflashlaser7">
+    <link>chassis</link>
+    <translation>1.05 0 0.2</translation>
+    <rotationaxis>0 1 0 1.5</rotationaxis>
+    <sensor type="BaseLaser2D">
+       <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <minrange>0</minrange>
+        <maxrange>4</maxrange>
+        <scantime>0.1</scantime>
+      <color>1 0 0</color>
+    </sensor>
+  </AttachedSensor>
+<AttachedSensor name="myflashlaser8">
+    <link>chassis</link>
+    <translation>1.05 0 0.2</translation>
+    <rotationaxis>0 1 0 1</rotationaxis>
+    <sensor type="BaseLaser2D">
+       <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <minrange>0</minrange>
+        <maxrange>4</maxrange>
+        <scantime>0.1</scantime>
+      <color>1 0 0</color>
+    </sensor>
+  </AttachedSensor>
+<AttachedSensor name="myflashlaser9">
+    <link>chassis</link>
+    <translation>1.05 0 0.2</translation>
+    <rotationaxis>0 1 0 0.5</rotationaxis>
+    <sensor type="BaseLaser2D">
+       <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <minrange>0</minrange>
+        <maxrange>4</maxrange>
+        <scantime>0.1</scantime>
+      <color>1 0 0</color>
+    </sensor>
+  </AttachedSensor>
+<AttachedSensor name="myflashlaser10">
+    <link>chassis</link>
+    <translation>1.05 0 0.2</translation>
+    <rotationaxis>0 1 0 1.5</rotationaxis>
+    <sensor type="BaseLaser2D">
+       <minangle>-15</minangle>
+        <maxangle>15</maxangle>
+        <resolution>0.1</resolution>
+        <minrange>0</minrange>
+        <maxrange>4</maxrange>
+        <scantime>0.1</scantime>
+      <color>1 0 0</color>
+    </sensor>
+  </AttachedSensor-->
+</robot>
+
+
+
+

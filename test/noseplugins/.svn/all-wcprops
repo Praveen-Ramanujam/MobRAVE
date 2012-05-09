@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/noseplugins
+END
+multiprocess.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/noseplugins/multiprocess.py
+END
+nosexcover.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/noseplugins/nosexcover.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/noseplugins/__init__.py
+END
+xunitmultiprocess.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/noseplugins/xunitmultiprocess.py
+END
+capture.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/noseplugins/capture.py
+END
+callableclass.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/test/noseplugins/callableclass.py
+END

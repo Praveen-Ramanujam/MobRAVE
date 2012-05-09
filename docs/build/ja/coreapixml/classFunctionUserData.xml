@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classFunctionUserData" kind="class" prot="public">
+    <compoundname>FunctionUserData</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1UserData" prot="public" virt="non-virtual">UserData</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFunctionUserData_1a9bf6140464e79a241b1f09bf83f4223e" prot="public" static="no" mutable="no">
+        <type>boost::python::object</type>
+        <definition>boost::python::object simulationfn</definition>
+        <argsstring></argsstring>
+        <name>simulationfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="54" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFunctionUserData_1a3f55251eab9ec2728ca067e780c4b782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~FunctionUserData</definition>
+        <argsstring>()</argsstring>
+        <name>~FunctionUserData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="52" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="52" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1170">
+        <label>UserData</label>
+        <link refid="classOpenRAVE_1_1UserData"/>
+      </node>
+      <node id="1169">
+        <label>FunctionUserData</label>
+        <link refid="classFunctionUserData"/>
+        <childnode refid="1170" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1172">
+        <label>UserData</label>
+        <link refid="classOpenRAVE_1_1UserData"/>
+      </node>
+      <node id="1171">
+        <label>FunctionUserData</label>
+        <link refid="classFunctionUserData"/>
+        <childnode refid="1172" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="50" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="49" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classFunctionUserData_1a9bf6140464e79a241b1f09bf83f4223e" prot="public" virt="non-virtual"><scope>FunctionUserData</scope><name>simulationfn</name></member>
+      <member refid="classFunctionUserData_1a3f55251eab9ec2728ca067e780c4b782" prot="public" virt="virtual"><scope>FunctionUserData</scope><name>~FunctionUserData</name></member>
+      <member refid="classOpenRAVE_1_1UserData_1aaaa5baf9761b9e8f4c120b58d379ab12" prot="public" virt="virtual"><scope>FunctionUserData</scope><name>~UserData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

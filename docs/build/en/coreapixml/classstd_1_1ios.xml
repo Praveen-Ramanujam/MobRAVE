@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classstd_1_1ios" kind="class" prot="public">
+    <compoundname>std::ios</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::basic_ios&lt; char &gt;</basecompoundref>
+    <briefdescription>
+<para>STL class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1263">
+        <label>ios</label>
+        <childnode refid="1264" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1264">
+        <label>basic_ios&lt; char &gt;</label>
+        <childnode refid="1265" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1265">
+        <label>ios_base</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1266">
+        <label>ios</label>
+        <childnode refid="1267" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1267">
+        <label>basic_ios&lt; char &gt;</label>
+        <childnode refid="1268" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1268">
+        <label>ios_base</label>
+      </node>
+    </collaborationgraph>
+    <location file="[STL]" line="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

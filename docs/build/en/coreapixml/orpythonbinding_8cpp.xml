@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="orpythonbinding_8cpp" kind="file">
+    <compoundname>orpythonbinding.cpp</compoundname>
+    <includes refid="openrave_8h" local="no">openrave/openrave.h</includes>
+    <includes local="no">boost/python.hpp</includes>
+    <includes local="no">boost/python/exception_translator.hpp</includes>
+    <includes local="no">boost/python/stl_iterator.hpp</includes>
+    <includes local="no">pyconfig.h</includes>
+    <includes local="no">exception</includes>
+    <includes local="no">boost/shared_ptr.hpp</includes>
+    <includes local="no">boost/format.hpp</includes>
+    <includes local="no">boost/assert.hpp</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">sstream</includes>
+    <incdepgraph>
+      <node id="3063">
+        <label>list</label>
+      </node>
+      <node id="3075">
+        <label>boost/thread/mutex.hpp</label>
+      </node>
+      <node id="3100">
+        <label>openrave/robot.h</label>
+        <link refid="robot_8h"/>
+      </node>
+      <node id="3057">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3107">
+        <label>openrave/environment.h</label>
+        <link refid="environment_8h"/>
+      </node>
+      <node id="3092">
+        <label>openrave/plugininfo.h</label>
+        <link refid="plugininfo_8h"/>
+      </node>
+      <node id="3094">
+        <label>openrave/spacesampler.h</label>
+        <link refid="spacesampler_8h"/>
+      </node>
+      <node id="3109">
+        <label>boost/python/exception_translator.hpp</label>
+      </node>
+      <node id="3067">
+        <label>iomanip</label>
+      </node>
+      <node id="3071">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="3087">
+        <label>limits</label>
+      </node>
+      <node id="3090">
+        <label>openrave/mathextra.h</label>
+        <link refid="mathextra_8h"/>
+        <childnode refid="3089" relation="include">
+        </childnode>
+        <childnode refid="3085" relation="include">
+        </childnode>
+        <childnode refid="3091" relation="include">
+        </childnode>
+      </node>
+      <node id="3073">
+        <label>boost/tuple/tuple.hpp</label>
+      </node>
+      <node id="3077">
+        <label>boost/thread/recursive_mutex.hpp</label>
+      </node>
+      <node id="3082">
+        <label>openrave/config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="3054">
+        <label>src/cppexamples/orpythonbinding.cpp</label>
+        <link refid="orpythonbinding.cpp"/>
+        <childnode refid="3055" relation="include">
+        </childnode>
+        <childnode refid="3108" relation="include">
+        </childnode>
+        <childnode refid="3109" relation="include">
+        </childnode>
+        <childnode refid="3110" relation="include">
+        </childnode>
+        <childnode refid="3111" relation="include">
+        </childnode>
+        <childnode refid="3066" relation="include">
+        </childnode>
+        <childnode refid="3071" relation="include">
+        </childnode>
+        <childnode refid="3079" relation="include">
+        </childnode>
+        <childnode refid="3112" relation="include">
+        </childnode>
+        <childnode refid="3062" relation="include">
+        </childnode>
+        <childnode refid="3058" relation="include">
+        </childnode>
+        <childnode refid="3069" relation="include">
+        </childnode>
+      </node>
+      <node id="3060">
+        <label>stdint.h</label>
+      </node>
+      <node id="3079">
+        <label>boost/format.hpp</label>
+      </node>
+      <node id="3083">
+        <label>openrave/interfacehashes.h</label>
+        <link refid="interfacehashes_8h"/>
+      </node>
+      <node id="3085">
+        <label>cmath</label>
+      </node>
+      <node id="3089">
+        <label>cassert</label>
+      </node>
+      <node id="3078">
+        <label>boost/static_assert.hpp</label>
+      </node>
+      <node id="3076">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="3111">
+        <label>pyconfig.h</label>
+      </node>
+      <node id="3061">
+        <label>string</label>
+      </node>
+      <node id="3072">
+        <label>boost/weak_ptr.hpp</label>
+      </node>
+      <node id="3064">
+        <label>map</label>
+      </node>
+      <node id="3066">
+        <label>exception</label>
+      </node>
+      <node id="3068">
+        <label>fstream</label>
+      </node>
+      <node id="3098">
+        <label>openrave/collisionchecker.h</label>
+        <link refid="collisionchecker_8h"/>
+      </node>
+      <node id="3070">
+        <label>boost/function.hpp</label>
+      </node>
+      <node id="3112">
+        <label>boost/assert.hpp</label>
+      </node>
+      <node id="3103">
+        <label>openrave/controller.h</label>
+        <link refid="controller_8h"/>
+      </node>
+      <node id="3102">
+        <label>openrave/planner.h</label>
+        <link refid="planner_8h"/>
+      </node>
+      <node id="3055">
+        <label>openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="3056" relation="include">
+        </childnode>
+        <childnode refid="3057" relation="include">
+        </childnode>
+        <childnode refid="3058" relation="include">
+        </childnode>
+        <childnode refid="3059" relation="include">
+        </childnode>
+        <childnode refid="3060" relation="include">
+        </childnode>
+        <childnode refid="3061" relation="include">
+        </childnode>
+        <childnode refid="3062" relation="include">
+        </childnode>
+        <childnode refid="3063" relation="include">
+        </childnode>
+        <childnode refid="3064" relation="include">
+        </childnode>
+        <childnode refid="3065" relation="include">
+        </childnode>
+        <childnode refid="3066" relation="include">
+        </childnode>
+        <childnode refid="3067" relation="include">
+        </childnode>
+        <childnode refid="3068" relation="include">
+        </childnode>
+        <childnode refid="3069" relation="include">
+        </childnode>
+        <childnode refid="3070" relation="include">
+        </childnode>
+        <childnode refid="3071" relation="include">
+        </childnode>
+        <childnode refid="3072" relation="include">
+        </childnode>
+        <childnode refid="3073" relation="include">
+        </childnode>
+        <childnode refid="3074" relation="include">
+        </childnode>
+        <childnode refid="3075" relation="include">
+        </childnode>
+        <childnode refid="3076" relation="include">
+        </childnode>
+        <childnode refid="3077" relation="include">
+        </childnode>
+        <childnode refid="3078" relation="include">
+        </childnode>
+        <childnode refid="3079" relation="include">
+        </childnode>
+        <childnode refid="3080" relation="include">
+        </childnode>
+        <childnode refid="3081" relation="include">
+        </childnode>
+        <childnode refid="3082" relation="include">
+        </childnode>
+        <childnode refid="3083" relation="include">
+        </childnode>
+        <childnode refid="3084" relation="include">
+        </childnode>
+        <childnode refid="3090" relation="include">
+        </childnode>
+        <childnode refid="3092" relation="include">
+        </childnode>
+        <childnode refid="3093" relation="include">
+        </childnode>
+        <childnode refid="3094" relation="include">
+        </childnode>
+        <childnode refid="3095" relation="include">
+        </childnode>
+        <childnode refid="3096" relation="include">
+        </childnode>
+        <childnode refid="3097" relation="include">
+        </childnode>
+        <childnode refid="3098" relation="include">
+        </childnode>
+        <childnode refid="3099" relation="include">
+        </childnode>
+        <childnode refid="3100" relation="include">
+        </childnode>
+        <childnode refid="3101" relation="include">
+        </childnode>
+        <childnode refid="3102" relation="include">
+        </childnode>
+        <childnode refid="3103" relation="include">
+        </childnode>
+        <childnode refid="3104" relation="include">
+        </childnode>
+        <childnode refid="3105" relation="include">
+        </childnode>
+        <childnode refid="3106" relation="include">
+        </childnode>
+        <childnode refid="3107" relation="include">
+        </childnode>
+      </node>
+      <node id="3110">
+        <label>boost/python/stl_iterator.hpp</label>
+      </node>
+      <node id="3056">
+        <label>cstdio</label>
+      </node>
+      <node id="3106">
+        <label>openrave/viewer.h</label>
+        <link refid="viewer_8h"/>
+      </node>
+      <node id="3108">
+        <label>boost/python.hpp</label>
+      </node>
+      <node id="3062">
+        <label>vector</label>
+      </node>
+      <node id="3095">
+        <label>openrave/kinbody.h</label>
+        <link refid="kinbody_8h"/>
+      </node>
+      <node id="3088">
+        <label>utility</label>
+      </node>
+      <node id="3069">
+        <label>sstream</label>
+      </node>
+      <node id="3105">
+        <label>openrave/sensorsystem.h</label>
+        <link refid="sensorsystem_8h"/>
+      </node>
+      <node id="3104">
+        <label>openrave/physicsengine.h</label>
+        <link refid="physicsengine_8h"/>
+      </node>
+      <node id="3074">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="3084">
+        <label>openrave/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="3085" relation="include">
+        </childnode>
+        <childnode refid="3086" relation="include">
+        </childnode>
+        <childnode refid="3087" relation="include">
+        </childnode>
+        <childnode refid="3088" relation="include">
+        </childnode>
+        <childnode refid="3058" relation="include">
+        </childnode>
+        <childnode refid="3059" relation="include">
+        </childnode>
+        <childnode refid="3089" relation="include">
+        </childnode>
+      </node>
+      <node id="3059">
+        <label>cstdlib</label>
+      </node>
+      <node id="3086">
+        <label>iostream</label>
+      </node>
+      <node id="3096">
+        <label>openrave/trajectory.h</label>
+        <link refid="trajectory_8h"/>
+      </node>
+      <node id="3091">
+        <label>climits</label>
+      </node>
+      <node id="3093">
+        <label>openrave/interface.h</label>
+        <link refid="interface_8h"/>
+      </node>
+      <node id="3101">
+        <label>openrave/iksolver.h</label>
+        <link refid="iksolver_8h"/>
+      </node>
+      <node id="3080">
+        <label>boost/array.hpp</label>
+      </node>
+      <node id="3097">
+        <label>openrave/module.h</label>
+        <link refid="module_8h"/>
+      </node>
+      <node id="3065">
+        <label>set</label>
+      </node>
+      <node id="3081">
+        <label>boost/multi_array.hpp</label>
+      </node>
+      <node id="3058">
+        <label>cstring</label>
+      </node>
+      <node id="3099">
+        <label>openrave/sensor.h</label>
+        <link refid="sensor_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classFunctionUserData" prot="public">FunctionUserData</innerclass>
+    <innerclass refid="classPythonBindingModule" prot="public">PythonBindingModule</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="orpythonbinding_8cpp_1a4834368c5c3c12fcd1ad7861c48439e1" prot="public" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; void &gt;</type>
+        <definition>boost::shared_ptr&lt;void&gt; g_PythonBindingInterfaceHandle</definition>
+        <argsstring></argsstring>
+        <name>g_PythonBindingInterfaceHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="89" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="orpythonbinding_8cpp_1a7a3c4da759e2fc58c6686b5d5c2ad7c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>InterfaceBasePtr</type>
+        <definition>InterfaceBasePtr PythonBindingCreateInterface</definition>
+        <argsstring>(EnvironmentBasePtr penv, std::istream &amp;istream)</argsstring>
+        <name>PythonBindingCreateInterface</name>
+        <param>
+          <type>EnvironmentBasePtr</type>
+          <declname>penv</declname>
+        </param>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>istream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="92" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="orpythonbinding_8cpp_1a8d4db7ac9eb1344f591b6901b870d318" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>InterfaceBasePtr</type>
+        <definition>InterfaceBasePtr RegisterSimulationFunction</definition>
+        <argsstring>(int environmentid, boost::python::object simulationfn)</argsstring>
+        <name>RegisterSimulationFunction</name>
+        <param>
+          <type>int</type>
+          <declname>environmentid</declname>
+        </param>
+        <param>
+          <type>boost::python::object</type>
+          <declname>simulationfn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="97" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="96" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="orpythonbinding_8cpp_1a7f8934a0c50d70a317cb981bc9f49af8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Init</definition>
+        <argsstring>(UserDataPtr globalstate)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>UserDataPtr</type>
+          <declname>globalstate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="108" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="107" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="orpythonbinding_8cpp_1a26299d71d49dd80a01f27ca70bdc2270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_PYTHON_MODULE</definition>
+        <argsstring>(orpythonbinding)</argsstring>
+        <name>BOOST_PYTHON_MODULE</name>
+        <param>
+          <type>orpythonbinding</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" line="116" bodyfile="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp" bodystart="115" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="30"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="openrave_8h" kindref="compound" tooltip="Defines the public headers that every plugin must include in order to use openrave...">openrave/openrave.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/python.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/python/exception_translator.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/python/stl_iterator.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pyconfig.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/shared_ptr.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/format.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/assert.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">OpenRAVE;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classFunctionUserData" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFunctionUserData" kindref="compound">FunctionUserData</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1UserData" kindref="compound" tooltip="base class for all user data">UserData</ref></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52" refid="classFunctionUserData_1a3f55251eab9ec2728ca067e780c4b782" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classFunctionUserData_1a3f55251eab9ec2728ca067e780c4b782" kindref="member">~FunctionUserData</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54" refid="classFunctionUserData_1a9bf6140464e79a241b1f09bf83f4223e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::python::object<sp/><ref refid="classFunctionUserData_1a9bf6140464e79a241b1f09bf83f4223e" kindref="member">simulationfn</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classPythonBindingModule" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPythonBindingModule" kindref="compound">PythonBindingModule</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ModuleBase" kindref="compound" tooltip="[interface] A loadable module of user code meant to solve a specific domain. If not...">ModuleBase</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60" refid="classPythonBindingModule_1a1824493f29358a9dfd262f916cbb9626" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPythonBindingModule_1a1824493f29358a9dfd262f916cbb9626" kindref="member">PythonBindingModule</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv,<sp/>std::istream&amp;)<sp/>:<sp/><ref refid="classOpenRAVE_1_1ModuleBase" kindref="compound" tooltip="[interface] A loadable module of user code meant to solve a specific domain. If not...">ModuleBase</ref>(penv)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" kindref="member" tooltip="set user data">SetUserData</ref>(<ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classFunctionUserData" kindref="compound">FunctionUserData</ref>()));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63" refid="classPythonBindingModule_1ab852a7862fb930a8a4f644191859d0fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classPythonBindingModule_1ab852a7862fb930a8a4f644191859d0fc" kindref="member">~PythonBindingModule</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a5c5058dd8a101f87dca4d6ca16bc7ebc" kindref="member">RAVELOG_DEBUG</ref>(</highlight><highlight class="stringliteral">&quot;destroying<sp/>python<sp/>binding\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classPythonBindingModule_1a7b480d96bbf53f0a0d0800deec13fff1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPythonBindingModule_1a7b480d96bbf53f0a0d0800deec13fff1" kindref="member">SimulationStep</ref>(<ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>fElapsedTime)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;FunctionUserData&gt;<sp/>p<sp/>=<sp/>boost::dynamic_pointer_cast&lt;<ref refid="classFunctionUserData" kindref="compound">FunctionUserData</ref>&gt;(<ref refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" kindref="member" tooltip="return the user custom data">GetUserData</ref>());</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!!p<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PyGILState_STATE<sp/>gstate<sp/>=<sp/>PyGILState_Ensure();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>p-&gt;simulationfn(fElapsedTime);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(...)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a9bbbf668aa39f398c341e946ab8a43f5" kindref="member">RAVELOG_WARN</ref>(</highlight><highlight class="stringliteral">&quot;unknown<sp/>exception<sp/>in<sp/>python<sp/>callback,<sp/>please<sp/>register<sp/>again:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PyErr_Print();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PyGILState_Release(gstate);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>ret<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" kindref="member">GetEnv</ref>()-&gt;Remove(shared_from_this());</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="orpythonbinding_8cpp_1a4834368c5c3c12fcd1ad7861c48439e1" refkind="member"><highlight class="normal">boost::shared_ptr&lt;void&gt;<sp/><ref refid="orpythonbinding_8cpp_1a4834368c5c3c12fcd1ad7861c48439e1" kindref="member">g_PythonBindingInterfaceHandle</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="orpythonbinding_8cpp_1a7a3c4da759e2fc58c6686b5d5c2ad7c2" refkind="member"><highlight class="normal"><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref><sp/><ref refid="orpythonbinding_8cpp_1a7a3c4da759e2fc58c6686b5d5c2ad7c2" kindref="member">PythonBindingCreateInterface</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv,<sp/>std::istream&amp;<sp/>istream)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classPythonBindingModule" kindref="compound">PythonBindingModule</ref>(penv,istream));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="orpythonbinding_8cpp_1a8d4db7ac9eb1344f591b6901b870d318" refkind="member"><highlight class="normal"><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref><sp/><ref refid="orpythonbinding_8cpp_1a8d4db7ac9eb1344f591b6901b870d318" kindref="member">RegisterSimulationFunction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>environmentid,<sp/>boost::python::object<sp/>simulationfn)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a8f388daa26e3d70da4f292f61554a4cd" kindref="member">ModuleBasePtr</ref><sp/>module<sp/>=<sp/><ref refid="namespaceOpenRAVE_1a85a2344a8c87ccc8573c58c05f17616e" kindref="member">RaveCreateModule</ref>(<ref refid="namespaceOpenRAVE_1ac5ad28f8313d016b3ecde4c01737d652" kindref="member" tooltip="get the environment from its unique id">RaveGetEnvironment</ref>(environmentid),<sp/></highlight><highlight class="stringliteral">&quot;PythonBinding&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!!module<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;FunctionUserData&gt;<sp/>p<sp/>=<sp/>boost::dynamic_pointer_cast&lt;<ref refid="classFunctionUserData" kindref="compound">FunctionUserData</ref>&gt;(module-&gt;GetUserData());</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p-&gt;simulationfn<sp/>=<sp/>simulationfn;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>module-&gt;GetEnv()-&gt;AddModule(module,</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref>(module);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="orpythonbinding_8cpp_1a7f8934a0c50d70a317cb981bc9f49af8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="orpythonbinding_8cpp_1a7f8934a0c50d70a317cb981bc9f49af8" kindref="member">Init</ref>(<ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref><sp/>globalstate)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a4cad8fb5664f22d9c877fc520ec20abe" kindref="member" tooltip="Initializes the global state from an already loaded OpenRAVE environment.">RaveInitializeFromState</ref>(globalstate);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!<ref refid="orpythonbinding_8cpp_1a4834368c5c3c12fcd1ad7861c48439e1" kindref="member">g_PythonBindingInterfaceHandle</ref><sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="orpythonbinding_8cpp_1a4834368c5c3c12fcd1ad7861c48439e1" kindref="member">g_PythonBindingInterfaceHandle</ref><sp/>=<sp/><ref refid="namespaceOpenRAVE_1a331d3070544589695a6a05e7da0f419f" kindref="member" tooltip="Registers a function to create an interface, this allows the interface to be created...">RaveRegisterInterface</ref>(PT_Module,<sp/></highlight><highlight class="stringliteral">&quot;PythonBinding&quot;</highlight><highlight class="normal">,<sp/><ref refid="interfacehashes_8h_1a8d659abed23f85be062a462fa04ad130" kindref="member">OPENRAVE_MODULE_HASH</ref>,<ref refid="interfacehashes_8h_1a9aed328f2c74952f51841514b2bb211a" kindref="member">OPENRAVE_ENVIRONMENT_HASH</ref>,<sp/><ref refid="orpythonbinding_8cpp_1a7a3c4da759e2fc58c6686b5d5c2ad7c2" kindref="member">PythonBindingCreateInterface</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="orpythonbinding_8cpp_1a26299d71d49dd80a01f27ca70bdc2270" refkind="member"><highlight class="normal"><ref refid="orpythonbinding_8cpp_1a26299d71d49dd80a01f27ca70bdc2270" kindref="member">BOOST_PYTHON_MODULE</ref>(orpythonbinding)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::python::def(</highlight><highlight class="stringliteral">&quot;Init&quot;</highlight><highlight class="normal">,<sp/><ref refid="orpythonbinding_8cpp_1a7f8934a0c50d70a317cb981bc9f49af8" kindref="member">Init</ref>,<sp/>boost::python::args(</highlight><highlight class="stringliteral">&quot;globalstate&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;initializes<sp/>the<sp/>python<sp/>bindings<sp/>with<sp/>the<sp/>openrave<sp/>global<sp/>state&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>boost::python::def(</highlight><highlight class="stringliteral">&quot;RegisterSimulationFunction&quot;</highlight><highlight class="normal">,<sp/><ref refid="orpythonbinding_8cpp_1a8d4db7ac9eb1344f591b6901b870d318" kindref="member">RegisterSimulationFunction</ref>,<sp/>boost::python::args(</highlight><highlight class="stringliteral">&quot;environmentid&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;simulationfn&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/src/cppexamples/orpythonbinding.cpp"/>
+  </compounddef>
+</doxygen>

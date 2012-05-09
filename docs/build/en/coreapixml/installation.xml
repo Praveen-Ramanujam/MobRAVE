@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="installation" kind="page">
+    <compoundname>installation</compoundname>
+    <title>Building and Installing</title>
+    <detaileddescription>
+<para>OpenRAVE uses <ulink url="http://www.cmake.org/">CMake</ulink>, which can create the correct build systems files for a variety of system configurations. Refer to the pages below for specific systems:</para><para><itemizedlist>
+<listitem><para><ref refid="installation__linux" kindref="compound">Building and Installing on Linux</ref></para></listitem><listitem><para><ref refid="installation__windows" kindref="compound">Building and Installing on Windows</ref></para></listitem><listitem><para><ref refid="installation__macosx" kindref="compound">Building and Installing on Mac OSX</ref></para></listitem></itemizedlist>
+</para><sect1 id="installation_1installation_cmake">
+<title>CMake Options</title>
+<para>The root Makefile creates a <computeroutput>build</computeroutput> directory and calls cmake with a set of options. All compiled object files are stored in <computeroutput>build</computeroutput>. There are many cmake options that control how OpenRAVE is built. Once OpenRAVE is built, most of them can be set by executing</para><para><verbatim>
+ccmake build
+</verbatim></para><para>in the root sources folder. It is also possible to call cmake from the command line with a new set of options:</para><para><verbatim>
+cd build; cmake -DCMAKE_INSTALL_PREFIX=/my/new/install/dir -DCMAKE_BUILD_TYPE=Debug ..
+</verbatim></para><para><itemizedlist>
+<listitem><para><bold>Video Recording</bold> To disable ffmpeg video recording, find the <computeroutput>OPT_VIDEORECORDING</computeroutput> option and turn it to <computeroutput>OFF</computeroutput>. It is possible to set these options during the cmake build time by executing cmake yourself <verbatim>
+cmake -DOPT_VIDEORECORDING=OFF ..
+</verbatim></para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><bold>Double Precision</bold> To compile OpenRAVE with <bold>double precision</bold> (ie all dReal types become <bold>doubles</bold>), set <computeroutput>OPT_DOUBLE_PRECISION</computeroutput> to <computeroutput>ON</computeroutput> during cmake. For example: <verbatim>
+cmake -DOPT_DOUBLE_PRECISION=ON ..
+</verbatim></para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><bold>Static Libraries</bold> To also build static libraries of openrave use the <computeroutput>OPT_STATIC</computeroutput> option. Plugins will still be linked dynamically. <verbatim>
+cmake -DOPT_STATIC=ON ..
+</verbatim></para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para><bold>Plugin Compilation</bold> It is possible to only compile the core and skip the plugins using the <computeroutput>OPT_PLUGINS</computeroutput> option. <verbatim>
+cmake -DOPT_PLUGINS=OFF ..
+</verbatim></para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="installation_1install_structure">
+<title>Install Directory Structure</title>
+<para><itemizedlist>
+<listitem><para>bin<itemizedlist>
+<listitem><para><ref refid="p__basic__usage" kindref="compound">openrave</ref> - Start a simple environment and attach the default viewer, collision checkers, physics engines, and servers.</para></listitem><listitem><para><ulink url="http://openrave.org/en/main/command_line_tools.html#openrave-py"><bold>openrave.py</bold></ulink> - Start a simple environment through <ulink url="http://openrave.org/en/main/tutorials/openravepy_beginning.html#openravepy-beginning">openravepy</ulink>. Allows access to all openrave functionality including database generation and examples.</para></listitem><listitem><para><ref refid="openrave__config" kindref="compound">openrave-config</ref> - configuration file that helps users find the OpenRAVE installation.</para></listitem><listitem><para>openrave-hashpy - Query the body and robot hashes.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>include<itemizedlist>
+<listitem><para>openrave - Directory for all public OpenRAVE header files.</para></listitem><listitem><para><bold><ref refid="openrave-core_8h" kindref="compound">openrave-core.h</ref></bold> - Header file for instantiating the <ref refid="namespaceOpenRAVE" kindref="compound">OpenRAVE</ref> Core</para></listitem></itemizedlist>
+</para></listitem><listitem><para>lib<itemizedlist>
+<listitem><para><bold>libopenrave</bold> (.so, .a, .dll, .lib) - Library that all plugins should link to offering the <ref refid="group__interfaces" kindref="compound">Base Interface Classes</ref>.</para></listitem><listitem><para><bold>libopenrave-core</bold> (.so, .a, .dll, .lib) - Library that allows any application to start the OpenRAVE core internally.</para></listitem><listitem><para>cmake<itemizedlist>
+<listitem><para>openraveX.Y<itemizedlist>
+<listitem><para><bold>openrave-config.cmake</bold> - cmake file for searching for openrave installations</para></listitem><listitem><para><bold>openrave-config-version.cmake</bold> - cmake file for searching for openrave installations</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem><listitem><para>pythonX.Y<itemizedlist>
+<listitem><para>site-packages (dist-packages)<itemizedlist>
+<listitem><para>openravepy - Python bindings, database generators, and examples. Directory structure is explained <ulink url="http://openrave.org/en/main/tutorials/openravepy_beginning.html#openravepy-beginning">here</ulink>.</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem><listitem><para>share<itemizedlist>
+<listitem><para>openrave<itemizedlist>
+<listitem><para>cppexamples - All C++ examples<itemizedlist>
+<listitem><para><bold>CMakeLists.txt</bold> - The <ulink url="http://www.cmake.org/">cmake</ulink> file used to compile all the examples.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>data - Loadable OpenRAVE environment and object files.</para></listitem><listitem><para>matlab - All Matlab scripting functions and examples. Include this directory into the MATLAB path.</para></listitem><listitem><para>models - 3D model resources</para></listitem><listitem><para>octave - All Octave scripting functions and examples. Include this directory into the OCTAVE_PATH.</para></listitem><listitem><para>plugins - Plugins compiled by the OpenRAVE main distribution.</para></listitem><listitem><para>robots - Robot XML files usually containing just a <computeroutput>&lt;robot&gt;</computeroutput> or <computeroutput>&lt;kinbody&gt;</computeroutput> tag. </para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

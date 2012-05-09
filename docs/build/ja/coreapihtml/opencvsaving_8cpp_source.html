@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: src/cppexamples/opencvsaving.cpp (r2848/r2627) ソースファイル 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<h1>src/cppexamples/opencvsaving.cpp (r2848/r2627)</h1><a href="opencvsaving_8cpp.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;<a class="code" href="openrave-core_8h.html">openrave-core.h</a>&gt;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;boost/thread/thread.hpp&gt;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &lt;boost/bind.hpp&gt;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;opencv/cv.h&gt;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;opencv/highgui.h&gt;</span>
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <span class="preprocessor">#ifdef _WIN32</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#define WIN32_LEAN_AND_MEAN</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#include &lt;winsock2.h&gt;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#define usleep(micro) Sleep(micro/1000)</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span>
+<a name="l00024"></a>00024 <span class="keyword">using namespace </span>OpenRAVE;
+<a name="l00025"></a>00025 <span class="keyword">using namespace </span>std;
+<a name="l00026"></a>00026 
+<a name="l00027"></a><a class="code" href="opencvsaving_8cpp.html#a87e5a6712bd042f3257acfbf82827714">00027</a> <span class="keywordtype">void</span> <a class="code" href="opencvsaving_8cpp.html#a87e5a6712bd042f3257acfbf82827714">SetViewer</a>(<a class="code" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> penv, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; viewername)
+<a name="l00028"></a>00028 {
+<a name="l00029"></a>00029     <a class="code" href="namespaceOpenRAVE.html#af0d19499c5ac95f5e1ac60b29187d7c4">ViewerBasePtr</a> viewer = <a class="code" href="namespaceOpenRAVE.html#a75b6125ec62afca70c38afe81f572db1">RaveCreateViewer</a>(penv,viewername);
+<a name="l00030"></a>00030     BOOST_ASSERT(!!viewer);
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032     <span class="comment">// attach it to the environment:</span>
+<a name="l00033"></a>00033     penv-&gt;AddViewer(viewer);
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035     <span class="comment">// finally you call the viewer&#39;s infinite loop (this is why you need a separate thread) :</span>
+<a name="l00036"></a>00036     <span class="keywordtype">bool</span> showgui = <span class="keyword">true</span>;
+<a name="l00037"></a>00037     viewer-&gt;main(showgui);
+<a name="l00038"></a>00038 }
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="classOpenRAVECamera.html">00040</a> <span class="keyword">class </span><a class="code" href="classOpenRAVECamera.html">OpenRAVECamera</a>
+<a name="l00041"></a>00041 {
+<a name="l00042"></a>00042 <span class="keyword">public</span>:
+<a name="l00043"></a><a class="code" href="classOpenRAVECamera.html#a06f7b630c99538982e381d5300b3c7cd">00043</a>     <a class="code" href="classOpenRAVECamera.html#a06f7b630c99538982e381d5300b3c7cd">OpenRAVECamera</a>(<a class="code" href="namespaceOpenRAVE.html#adb9a2496735bc0d80ced5a5d7dfb653b">SensorBasePtr</a> psensor)
+<a name="l00044"></a>00044     {
+<a name="l00045"></a>00045         <a class="code" href="classOpenRAVECamera.html#adc179e985fc051be06f9a9aaf713aed0">pcamera</a>=psensor;
+<a name="l00046"></a>00046         <a class="code" href="classOpenRAVECamera.html#ac0bd3d73c9354dbe454fbcf5990a518e">pdata</a> = boost::static_pointer_cast&lt;<a class="code" href="classOpenRAVE_1_1SensorBase_1_1CameraSensorData.html">SensorBase::CameraSensorData</a>&gt;(<a class="code" href="classOpenRAVECamera.html#adc179e985fc051be06f9a9aaf713aed0">pcamera</a>-&gt;CreateSensorData(SensorBase::ST_Camera));
+<a name="l00047"></a>00047         <a class="code" href="classOpenRAVECamera.html#a8e024717e317bc47393595a53f1b8bd5">geom</a> = *boost::static_pointer_cast&lt;<a class="code" href="classOpenRAVE_1_1SensorBase_1_1CameraGeomData.html">SensorBase::CameraGeomData</a>&gt;(<a class="code" href="classOpenRAVECamera.html#adc179e985fc051be06f9a9aaf713aed0">pcamera</a>-&gt;GetSensorGeometry(SensorBase::ST_Camera));
+<a name="l00048"></a>00048         <a class="code" href="classOpenRAVECamera.html#aba816f4f00aa201710204894c1823010">img</a> = cvCreateImage(cvSize(geom.width,geom.height),IPL_DEPTH_8U,3);
+<a name="l00049"></a>00049     }
+<a name="l00050"></a><a class="code" href="classOpenRAVECamera.html#a669c5f25f1268859fcf9e51a52b5a5ef">00050</a>     <span class="keyword">virtual</span> <a class="code" href="classOpenRAVECamera.html#a669c5f25f1268859fcf9e51a52b5a5ef">~OpenRAVECamera</a>() {
+<a name="l00051"></a>00051         cvReleaseImage(&amp;<a class="code" href="classOpenRAVECamera.html#aba816f4f00aa201710204894c1823010">img</a>);
+<a name="l00052"></a>00052     }
+<a name="l00053"></a>00053 
+<a name="l00054"></a><a class="code" href="classOpenRAVECamera.html#adc179e985fc051be06f9a9aaf713aed0">00054</a>     <a class="code" href="namespaceOpenRAVE.html#adb9a2496735bc0d80ced5a5d7dfb653b">SensorBasePtr</a> <a class="code" href="classOpenRAVECamera.html#adc179e985fc051be06f9a9aaf713aed0">pcamera</a>;
+<a name="l00055"></a><a class="code" href="classOpenRAVECamera.html#a8e024717e317bc47393595a53f1b8bd5">00055</a>     <a class="code" href="classOpenRAVE_1_1SensorBase_1_1CameraGeomData.html">SensorBase::CameraGeomData</a> <a class="code" href="classOpenRAVECamera.html#a8e024717e317bc47393595a53f1b8bd5">geom</a>;
+<a name="l00056"></a><a class="code" href="classOpenRAVECamera.html#ac0bd3d73c9354dbe454fbcf5990a518e">00056</a>     boost::shared_ptr&lt;SensorBase::CameraSensorData&gt; <a class="code" href="classOpenRAVECamera.html#ac0bd3d73c9354dbe454fbcf5990a518e">pdata</a>;
+<a name="l00057"></a><a class="code" href="classOpenRAVECamera.html#aba816f4f00aa201710204894c1823010">00057</a>     IplImage* <a class="code" href="classOpenRAVECamera.html#aba816f4f00aa201710204894c1823010">img</a>;
+<a name="l00058"></a>00058 };
+<a name="l00059"></a>00059 
+<a name="l00060"></a><a class="code" href="opencvsaving_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">00060</a> <span class="keywordtype">int</span> <a class="code" href="ikfastloader_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> ** argv)
+<a name="l00061"></a>00061 {
+<a name="l00062"></a>00062     <a class="code" href="namespaceOpenRAVE.html#ab89ccf2331c4ee81662f687cedaa1781" title="Explicitly initializes the global OpenRAVE state (optional).">RaveInitialize</a>(<span class="keyword">true</span>); <span class="comment">// start openrave core</span>
+<a name="l00063"></a>00063     <a class="code" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> penv = <a class="code" href="namespaceOpenRAVE.html#aec9c3dd6a1f2908a1eb84ca59243e00a">RaveCreateEnvironment</a>(); <span class="comment">// create the main environment</span>
+<a name="l00064"></a>00064     boost::thread thviewer(boost::bind(<a class="code" href="opencvsaving_8cpp.html#a87e5a6712bd042f3257acfbf82827714">SetViewer</a>,penv,<span class="stringliteral">&quot;qtcoin&quot;</span>));
+<a name="l00065"></a>00065     penv-&gt;Load(<span class="stringliteral">&quot;data/pa10calib_envcamera.env.xml&quot;</span>);
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067     std::vector&lt;RobotBasePtr&gt; vrobots;
+<a name="l00068"></a>00068     penv-&gt;GetRobots(vrobots);
+<a name="l00069"></a>00069     <span class="keywordflow">if</span>( vrobots.size() &gt; 0 ) {
+<a name="l00070"></a>00070         <a class="code" href="openrave_8h.html#a334922a6794604207afe36b4feda230e">RAVELOG_INFO</a>(<span class="stringliteral">&quot;moving the robot a little\n&quot;</span>);
+<a name="l00071"></a>00071         <a class="code" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> t = vrobots.at(0)-&gt;GetTransform();
+<a name="l00072"></a>00072         t.trans.x += 0.6;
+<a name="l00073"></a>00073         vrobots.at(0)-&gt;SetTransform(t);
+<a name="l00074"></a>00074     }
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076     <span class="comment">// extract all the cameras</span>
+<a name="l00077"></a>00077     std::vector&lt;SensorBasePtr&gt; allsensors;
+<a name="l00078"></a>00078     penv-&gt;GetSensors(allsensors);
+<a name="l00079"></a>00079     std::vector&lt; boost::shared_ptr&lt;OpenRAVECamera&gt; &gt; vcameras;
+<a name="l00080"></a>00080     <span class="keywordflow">for</span>( std::vector&lt;SensorBasePtr&gt;::iterator itsensor = allsensors.begin(); itsensor != allsensors.end(); ++itsensor) {
+<a name="l00081"></a>00081         <span class="keywordflow">if</span>( (*itsensor)-&gt;Supports(SensorBase::ST_Camera) ) {
+<a name="l00082"></a>00082             (*itsensor)-&gt;Configure(SensorBase::CC_PowerOn);
+<a name="l00083"></a>00083             (*itsensor)-&gt;Configure(SensorBase::CC_RenderDataOn);
+<a name="l00084"></a>00084             vcameras.push_back(boost::shared_ptr&lt;OpenRAVECamera&gt;(<span class="keyword">new</span> <a class="code" href="classOpenRAVECamera.html">OpenRAVECamera</a>(*itsensor)));
+<a name="l00085"></a>00085         }
+<a name="l00086"></a>00086     }
+<a name="l00087"></a>00087     <span class="keywordflow">while</span>(1) {
+<a name="l00088"></a>00088         <span class="comment">// read the camera data and save the image</span>
+<a name="l00089"></a>00089         <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> icamera = 0; icamera &lt; vcameras.size(); ++icamera) {
+<a name="l00090"></a>00090             vcameras[icamera]-&gt;pcamera-&gt;GetSensorData(vcameras[icamera]-&gt;pdata);
+<a name="l00091"></a>00091             <span class="keywordflow">if</span>( vcameras[icamera]-&gt;pdata-&gt;vimagedata.size() &gt; 0 ) {
+<a name="l00092"></a>00092                 <span class="keywordtype">char</span>* imageData = vcameras[icamera]-&gt;img-&gt;imageData;
+<a name="l00093"></a>00093                 uint8_t* src = &amp;vcameras[icamera]-&gt;pdata-&gt;vimagedata.at(0);
+<a name="l00094"></a>00094                 <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i &lt; vcameras[icamera]-&gt;geom.height; i++, imageData += vcameras[icamera]-&gt;img-&gt;widthStep, src += 3*vcameras[icamera]-&gt;geom.width) {
+<a name="l00095"></a>00095                     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;vcameras[icamera]-&gt;geom.width; j++) {
+<a name="l00096"></a>00096                         imageData[3*j] = src[3*j];
+<a name="l00097"></a>00097                         imageData[3*j+1] = src[3*j+1];
+<a name="l00098"></a>00098                         imageData[3*j+2] = src[3*j+2];
+<a name="l00099"></a>00099                     }
+<a name="l00100"></a>00100                 }
+<a name="l00101"></a>00101                 <span class="keywordtype">string</span> filename = str(boost::format(<span class="stringliteral">&quot;camera%d.jpg&quot;</span>)%icamera);
+<a name="l00102"></a>00102                 <a class="code" href="openrave_8h.html#a334922a6794604207afe36b4feda230e">RAVELOG_INFO</a>(str(boost::format(<span class="stringliteral">&quot;saving image %s&quot;</span>)%filename));
+<a name="l00103"></a>00103                 cvSaveImage(filename.c_str(),vcameras[icamera]-&gt;img);
+<a name="l00104"></a>00104             }
+<a name="l00105"></a>00105         }
+<a name="l00106"></a>00106         usleep(200000);
+<a name="l00107"></a>00107     }
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109     <span class="keywordflow">return</span> 0;
+<a name="l00110"></a>00110 }
+</pre></div></div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:42:53 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

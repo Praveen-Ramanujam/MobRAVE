@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02
+END
+pcredemo.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcredemo.c
+END
+pcre_stringpiece.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_stringpiece.h.in
+END
+pcre_compile.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_compile.c
+END
+pcrecpp.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcrecpp.h
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/AUTHORS
+END
+pcre_scanner_unittest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_scanner_unittest.cc
+END
+pcre_scanner.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_scanner.cc
+END
+pcre_xclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_xclass.c
+END
+pcre_newline.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_newline.c
+END
+pcre_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_config.c
+END
+pcre_maketables.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_maketables.c
+END
+LICENCE
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/LICENCE
+END
+pcre_ucd.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_ucd.c
+END
+pcre_printint.src
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_printint.src
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/INSTALL
+END
+pcre_ord2utf8.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_ord2utf8.c
+END
+pcre_fullinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_fullinfo.c
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/COPYING
+END
+pcre_get.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_get.c
+END
+pcre_stringpiece.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_stringpiece.cc
+END
+pcretest.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcretest.c
+END
+pcre_try_flipped.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_try_flipped.c
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/NEWS
+END
+pcre_globals.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_globals.c
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/CMakeLists.txt
+END
+pcrecpp_internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcrecpp_internal.h
+END
+pcre_refcount.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_refcount.c
+END
+pcre_version.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_version.c
+END
+pcrecpp_unittest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcrecpp_unittest.cc
+END
+pcrecpp.cc
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcrecpp.cc
+END
+pcrecpparg.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcrecpparg.h.in
+END
+pcre.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre.h.in
+END
+pcre_info.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_info.c
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/ChangeLog
+END
+pcre_scanner.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_scanner.h
+END
+pcre_dfa_exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_dfa_exec.c
+END
+pcregrep.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcregrep.c
+END
+pcre.h.generic
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre.h.generic
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/README
+END
+pcreposix.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcreposix.c
+END
+pcre_valid_utf8.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_valid_utf8.c
+END
+pcre_study.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_study.c
+END
+pcreposix.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcreposix.h
+END
+HACKING
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/HACKING
+END
+pcre_chartables.c.dist
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_chartables.c.dist
+END
+pcre_tables.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_tables.c
+END
+NON-UNIX-USE
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/NON-UNIX-USE
+END
+dftables.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/dftables.c
+END
+pcre_stringpiece_unittest.cc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_stringpiece_unittest.cc
+END
+pcre_internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_internal.h
+END
+ucp.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/ucp.h
+END
+pcre_exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/pcre_exec.c
+END
+config-cmake.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/config-cmake.h.in
+END

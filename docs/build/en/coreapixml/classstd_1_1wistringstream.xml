@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classstd_1_1wistringstream" kind="class" prot="public">
+    <compoundname>std::wistringstream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::basic_istringstream&lt; wchar_t &gt;</basecompoundref>
+    <briefdescription>
+<para>STL class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2016">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="2017" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2018">
+        <label>ios_base</label>
+      </node>
+      <node id="2014">
+        <label>wistringstream</label>
+        <childnode refid="2015" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2017">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="2018" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2015">
+        <label>basic_istringstream&lt; wchar_t &gt;</label>
+        <childnode refid="2016" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2021">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="2022" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2023">
+        <label>ios_base</label>
+      </node>
+      <node id="2019">
+        <label>wistringstream</label>
+        <childnode refid="2020" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2022">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="2023" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2020">
+        <label>basic_istringstream&lt; wchar_t &gt;</label>
+        <childnode refid="2021" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="[STL]" line="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

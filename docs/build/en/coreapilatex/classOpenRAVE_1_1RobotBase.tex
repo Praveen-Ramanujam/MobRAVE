@@ -1,0 +1,864 @@
+\hypertarget{classOpenRAVE_1_1RobotBase}{
+\subsection{RobotBase Class Reference}
+\label{classOpenRAVE_1_1RobotBase}\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} A robot is a kinematic body that has attached manipulators, sensors, and controllers. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__robot}{Robot Concepts}.  
+
+
+
+
+Inheritance diagram for RobotBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{classOpenRAVE_1_1RobotBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for RobotBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classOpenRAVE_1_1RobotBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1RobotBase_1_1AttachedSensor}{AttachedSensor}
+\begin{DoxyCompactList}\small\item\em Attaches a sensor to a link on the robot. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1RobotBase_1_1Grabbed}{Grabbed}
+\begin{DoxyCompactList}\small\item\em The information of a currently grabbed body. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator}{Manipulator}
+\begin{DoxyCompactList}\small\item\em Defines a chain of joints for an arm and set of joints for a gripper. Simplifies operating with them. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1RobotBase_1_1RobotStateSaver}{RobotStateSaver}
+\begin{DoxyCompactList}\small\item\em Helper class derived from KinBodyStateSaver to additionaly save robot information. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_ae67a1ee5e11749340bfbca5bd6749424}{InitFromFile} (const std::string \&filename, const AttributesList \&atts=AttributesList()) \hyperlink{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{RAVE\_\-DEPRECATED}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_a3f81f529c6959894555ad8841a134431}{InitFromData} (const std::string \&data, const AttributesList \&atts=AttributesList()) \hyperlink{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{RAVE\_\-DEPRECATED}
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a93fa4dbd84cc30d4dae78ee20d816ce3}{
+virtual std::vector$<$ ManipulatorPtr $>$ \& \hyperlink{classOpenRAVE_1_1RobotBase_a93fa4dbd84cc30d4dae78ee20d816ce3}{GetManipulators} ()}
+\label{classOpenRAVE_1_1RobotBase_a93fa4dbd84cc30d4dae78ee20d816ce3}
+
+\begin{DoxyCompactList}\small\item\em Returns the manipulators of the robot. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ad19fd054ec0bb506ca08d1a7deaa005d}{
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_ad19fd054ec0bb506ca08d1a7deaa005d}{SetTransform} (const Transform \&trans)}
+\label{classOpenRAVE_1_1RobotBase_ad19fd054ec0bb506ca08d1a7deaa005d}
+
+\begin{DoxyCompactList}\small\item\em Transforms the robot and updates the attached sensors and grabbed bodies. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_ab51d371d29d7947197b90d8e915de00f}{SimulationStep} (dReal fElapsedTime)
+\begin{DoxyCompactList}\small\item\em Simulate the robot and update the grabbed bodies and attached sensors. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_a3d555222cf7b02d592a0a31cef5d479d}{CheckSelfCollision} (CollisionReportPtr report=CollisionReportPtr()) const 
+\begin{DoxyCompactList}\small\item\em Check if body is self colliding. Links that are joined together are ignored. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_ac0f7aeb30af9069736ec789db0bf75d8}{CheckLinkCollision} (int ilinkindex, const Transform \&tlinktrans, CollisionReportPtr report=CollisionReportPtr())
+\begin{DoxyCompactList}\small\item\em checks collision of a robot link with the surrounding environment. Attached/Grabbed bodies to this link are also checked for collision. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_aadffdb83bc22dcdd5dd50c27d1bb5496}{
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_aadffdb83bc22dcdd5dd50c27d1bb5496}{Clone} (InterfaceBaseConstPtr preference, int cloningoptions)}
+\label{classOpenRAVE_1_1RobotBase_aadffdb83bc22dcdd5dd50c27d1bb5496}
+
+\begin{DoxyCompactList}\small\item\em does not clone the grabbed bodies since it requires pointers from other bodies (that might not be initialized yet) \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_a38fa8d57d2eefc36568411a129c741d3}{IsRobot} () const 
+\item 
+virtual const std::string \& \hyperlink{classOpenRAVE_1_1RobotBase_afe87e86a10bb78f6653dcd1a4558f07a}{GetRobotStructureHash} () const 
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a52ee62fc6defb50ff79a59e41d141566}{
+virtual ControllerBasePtr \hyperlink{classOpenRAVE_1_1RobotBase_a52ee62fc6defb50ff79a59e41d141566}{GetController} () const }
+\label{classOpenRAVE_1_1RobotBase_a52ee62fc6defb50ff79a59e41d141566}
+
+\begin{DoxyCompactList}\small\item\em gets the robot controller \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_a8384a87dcfccbd3b27006c1769219c28}{SetController} (ControllerBasePtr controller, const std::vector$<$ int $>$ \&dofindices, int nControlTransformation)
+\begin{DoxyCompactList}\small\item\em set a controller for a robot \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_a4d4d9910820087bb1a0d916ca1bb0e5c}{SetController} (ControllerBasePtr controller, const std::string \&args) \hyperlink{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{RAVE\_\-DEPRECATED}
+\item 
+void \hyperlink{classOpenRAVE_1_1RobotBase_a84070a927466aa5da331649c94b5e854}{GetFullTrajectoryFromActive} (TrajectoryBasePtr pfulltraj, TrajectoryBaseConstPtr pActiveTraj, bool bOverwriteTransforms=true) \hyperlink{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{RAVE\_\-DEPRECATED}
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Grabbing Bodies}\par
+{\em \label{_amgrpd50fc6ccc37aa4de8c2f9c816753d58c}
+ A grabbed body becomes part of the robot and its relative pose with respect to a robot's link will be fixed. \hyperlink{classOpenRAVE_1_1KinBody_a1a340c6aa418a10fcf9847474376b1ba}{KinBody::\_\-AttachBody} is called for every grabbed body in order to make the grabbed body a part of the robot. Once grabbed, the inter-\/collisions between the robot and the body are regarded as self-\/collisions; any outside collisions of the body and the environment are regarded as environment collisions with the robot. }\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_abd0375cf84ce804abe302d3e6faddf76}{Grab} (KinBodyPtr body, LinkPtr pRobotLinkToGrabWith, const std::set$<$ int $>$ \&setRobotLinksToIgnore)
+\begin{DoxyCompactList}\small\item\em Grab the body with the specified link. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_a52c7267f79b4d09c583fce816a8a31df}{Grab} (KinBodyPtr body, LinkPtr pRobotLinkToGrabWith)
+\begin{DoxyCompactList}\small\item\em Grab a body with the specified link. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_a922b8a6c3e70c59f28eb327b3c7f71f8}{Grab} (KinBodyPtr body, const std::set$<$ int $>$ \&setRobotLinksToIgnore)
+\begin{DoxyCompactList}\small\item\em Grabs the body with the active manipulator's end effector. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_a233feb0353ba90cb2e60fea75043f364}{Grab} (KinBodyPtr body)
+\begin{DoxyCompactList}\small\item\em Grabs the body with the active manipulator's end effector. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_ada9b12e106deb259af6c3f9f2d8589c1}{Release} (KinBodyPtr body)
+\begin{DoxyCompactList}\small\item\em Release the body if grabbed. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_a786014c730e245029cf6d944eb65ee2d}{ReleaseAllGrabbed} ()
+\begin{DoxyCompactList}\small\item\em Release all grabbed bodies. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_ac96a4eead413884c18f29cbf299ede3a}{RegrabAll} ()
+\item 
+virtual LinkPtr \hyperlink{classOpenRAVE_1_1RobotBase_a10ff30e0c1c04abfcbf5ce480a82330f}{IsGrabbing} (KinBodyConstPtr body) const 
+\begin{DoxyCompactList}\small\item\em return the robot link that is currently grabbing the body. If the body is not grabbed, will return an empty pointer. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_a39f91578d76bc2c4f2182aeb6c49a2ef}{GetGrabbed} (std::vector$<$ KinBodyPtr $>$ \&vbodies) const 
+\begin{DoxyCompactList}\small\item\em gets all grabbed bodies of the robot \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1RobotBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1RobotBase_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em Return the static interface type this class points to (used for safe casting). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a3a10edb8cb573ac97bfed0e05dc2a29a}{
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_a3a10edb8cb573ac97bfed0e05dc2a29a}{\_\-ComputeInternalInformation} ()}
+\label{classOpenRAVE_1_1RobotBase_a3a10edb8cb573ac97bfed0e05dc2a29a}
+
+\begin{DoxyCompactList}\small\item\em Proprocess the manipulators and sensors and build the specific robot hashes. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_a218a09068212db7bb35c7d4ce792e309}{\_\-ParametersChanged} (int parameters)
+\begin{DoxyCompactList}\small\item\em Called to notify the body that certain groups of parameters have been changed. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a05dfd2aea199106122f1491d7cbd70eb}{
+std::vector$<$ \hyperlink{classOpenRAVE_1_1RobotBase_1_1Grabbed}{Grabbed} $>$ \hyperlink{classOpenRAVE_1_1RobotBase_a05dfd2aea199106122f1491d7cbd70eb}{\_\-vGrabbedBodies}}
+\label{classOpenRAVE_1_1RobotBase_a05dfd2aea199106122f1491d7cbd70eb}
+
+\begin{DoxyCompactList}\small\item\em vector of grabbed bodies \item\end{DoxyCompactList}\item 
+std::vector$<$ ManipulatorPtr $>$ \hyperlink{classOpenRAVE_1_1RobotBase_affad71c6cc8ac660314a5e10e4caae34}{\_\-vecManipulators}
+\item 
+int \hyperlink{classOpenRAVE_1_1RobotBase_aa111f44aea6f2b407af5ed096cd48edb}{\_\-nActiveManip}
+\item 
+std::vector$<$ AttachedSensorPtr $>$ \hyperlink{classOpenRAVE_1_1RobotBase_aac98310b73ec888db282a3ca58db245a}{\_\-vecSensors}
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a56f7252f6901d68bd1d637800120ea24}{
+int \hyperlink{classOpenRAVE_1_1RobotBase_a56f7252f6901d68bd1d637800120ea24}{\_\-nActiveDOF}}
+\label{classOpenRAVE_1_1RobotBase_a56f7252f6901d68bd1d637800120ea24}
+
+\begin{DoxyCompactList}\small\item\em Active degrees of freedom; if -\/1, use robot dofs. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a335c90fceb6b2b3efd23f357b9071ff2}{
+int \hyperlink{classOpenRAVE_1_1RobotBase_a335c90fceb6b2b3efd23f357b9071ff2}{\_\-nAffineDOFs}}
+\label{classOpenRAVE_1_1RobotBase_a335c90fceb6b2b3efd23f357b9071ff2}
+
+\begin{DoxyCompactList}\small\item\em dofs describe what affine transformations are allowed \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_aa2c84fbfca1619fcd03a3085432c7489}{
+Vector \hyperlink{classOpenRAVE_1_1RobotBase_aa2c84fbfca1619fcd03a3085432c7489}{\_\-vRotationAxisLowerLimits}}
+\label{classOpenRAVE_1_1RobotBase_aa2c84fbfca1619fcd03a3085432c7489}
+
+\begin{DoxyCompactList}\small\item\em the xyz components are used if the rotation axis is solely about X,Y,or Z; otherwise the W component is used. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Affine DOFs}
+\label{_amgrp62be18eed7c72d5f553733a12f3e3602}
+ Methods using the active degrees of freedoms of the robot. Active DOFs are a way for the user to specify degrees of freedom of interest for a current execution block. All planners by default use the robot's active DOF and active manipultor. For every Get$\ast$ method, there is a corresponding GetActive$\ast$ method rather than the methods when setting joints. The active DOFs also include affine transfomrations of the robot's base. Affine transformation DOFs can be found after the joint DOFs in this order: X, Y, Z, Rotation where rotation can be around a specified axis a full 3D rotation. Usually the affine transforamtion is with respect to the first link in the body \begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} DOF\_\-NoTransform \hyperlink{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{RAVE\_\-DEPRECATED} = OpenRAVE::DOF\_\-NoTransform
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a17eb2c02db0e448f7305cbb2cd174525}{
+static const \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} DOF\_\-X {\bfseries RAVE\_\-DEPRECATED} = OpenRAVE::DOF\_\-X}
+\label{classOpenRAVE_1_1RobotBase_a17eb2c02db0e448f7305cbb2cd174525}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a064c19af74ffccc473774e53497df767}{
+static const \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} DOF\_\-Y {\bfseries RAVE\_\-DEPRECATED} = OpenRAVE::DOF\_\-Y}
+\label{classOpenRAVE_1_1RobotBase_a064c19af74ffccc473774e53497df767}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_af920cbd372e9736b45b8582a0f4a3e6a}{
+static const \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} DOF\_\-Z {\bfseries RAVE\_\-DEPRECATED} = OpenRAVE::DOF\_\-Z}
+\label{classOpenRAVE_1_1RobotBase_af920cbd372e9736b45b8582a0f4a3e6a}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a2d3278e7bbdd94bad80e4fdbb3b41f3c}{
+static const \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} DOF\_\-RotationAxis {\bfseries RAVE\_\-DEPRECATED} = OpenRAVE::DOF\_\-RotationAxis}
+\label{classOpenRAVE_1_1RobotBase_a2d3278e7bbdd94bad80e4fdbb3b41f3c}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a69f9adfb1b7b3c44f848101a6d3264ec}{
+static const \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} DOF\_\-Rotation3D {\bfseries RAVE\_\-DEPRECATED} = OpenRAVE::DOF\_\-Rotation3D}
+\label{classOpenRAVE_1_1RobotBase_a69f9adfb1b7b3c44f848101a6d3264ec}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a9831d84c5bfb91758c158748834737d5}{
+static const \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} DOF\_\-RotationQuat {\bfseries RAVE\_\-DEPRECATED} = OpenRAVE::DOF\_\-RotationQuat}
+\label{classOpenRAVE_1_1RobotBase_a9831d84c5bfb91758c158748834737d5}
+
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_a36a3474433e5ec3ab832a28f8fe8651b}{SetActiveDOFs} (const std::vector$<$ int $>$ \&dofindices, int affine=OpenRAVE::DOF\_\-NoTransform)
+\begin{DoxyCompactList}\small\item\em Set the joint indices and affine transformation dofs that the planner should use. If \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a5ee6baa8acb92c310cbc1ece082640d0}{DOF\_\-RotationAxis} is specified, the previously set axis is used. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_a1320f8a27bf8e2431f2d876ab74b5375}{SetActiveDOFs} (const std::vector$<$ int $>$ \&dofindices, int affine, const Vector \&rotationaxis)
+\begin{DoxyCompactList}\small\item\em Set the joint indices and affine transformation dofs that the planner should use. If \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a5ee6baa8acb92c310cbc1ece082640d0}{DOF\_\-RotationAxis} is specified, then rotationaxis is set as the new axis. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a2fc26db3a3c302bfa1df5d972485e39c}{
+virtual int {\bfseries GetActiveDOF} () const }
+\label{classOpenRAVE_1_1RobotBase_a2fc26db3a3c302bfa1df5d972485e39c}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a84fb801be236fc623a1d0d14de7dd6f9}{
+virtual int {\bfseries GetAffineDOF} () const }
+\label{classOpenRAVE_1_1RobotBase_a84fb801be236fc623a1d0d14de7dd6f9}
+
+\item 
+virtual int \hyperlink{classOpenRAVE_1_1RobotBase_a7cfd3a308f74598a3a33a5010137c632}{GetAffineDOFIndex} (\hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} dof) const 
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_aacdc590ce4cd7f988710a1f684d2d425}{
+virtual const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \& \hyperlink{classOpenRAVE_1_1RobotBase_aacdc590ce4cd7f988710a1f684d2d425}{GetActiveConfigurationSpecification} () const }
+\label{classOpenRAVE_1_1RobotBase_aacdc590ce4cd7f988710a1f684d2d425}
+
+\begin{DoxyCompactList}\small\item\em return the configuration specification of the active dofs \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ab0cb7626edf9be09a3b713366439a2c9}{
+virtual const std::vector$<$ int $>$ \& \hyperlink{classOpenRAVE_1_1RobotBase_ab0cb7626edf9be09a3b713366439a2c9}{GetActiveDOFIndices} () const }
+\label{classOpenRAVE_1_1RobotBase_ab0cb7626edf9be09a3b713366439a2c9}
+
+\begin{DoxyCompactList}\small\item\em Return the set of active dof indices of the joints. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_aab0d7f45072809314846897b948e02af}{
+virtual Vector {\bfseries GetAffineRotationAxis} () const }
+\label{classOpenRAVE_1_1RobotBase_aab0d7f45072809314846897b948e02af}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_add14e0337082d480614feaae1e213a68}{
+virtual void {\bfseries SetAffineTranslationLimits} (const Vector \&lower, const Vector \&upper)}
+\label{classOpenRAVE_1_1RobotBase_add14e0337082d480614feaae1e213a68}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_aef35115a5319c141ba26fa4c7db5d10d}{
+virtual void {\bfseries SetAffineRotationAxisLimits} (const Vector \&lower, const Vector \&upper)}
+\label{classOpenRAVE_1_1RobotBase_aef35115a5319c141ba26fa4c7db5d10d}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a73d18528595acfccfb5dac1b917c931d}{
+virtual void {\bfseries SetAffineRotation3DLimits} (const Vector \&lower, const Vector \&upper)}
+\label{classOpenRAVE_1_1RobotBase_a73d18528595acfccfb5dac1b917c931d}
+
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_a5b49831e704d28f7228dbc317add6efc}{SetAffineRotationQuatLimits} (const Vector \&quatangle)
+\begin{DoxyCompactList}\small\item\em sets the quaternion limits using a starting rotation and the max angle deviation from it. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a6c09d769ec334623646521b39565d95e}{
+virtual void {\bfseries SetAffineTranslationMaxVels} (const Vector \&vels)}
+\label{classOpenRAVE_1_1RobotBase_a6c09d769ec334623646521b39565d95e}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a9540e66fefbfbb2c4cbe3fb0614be6fe}{
+virtual void {\bfseries SetAffineRotationAxisMaxVels} (const Vector \&vels)}
+\label{classOpenRAVE_1_1RobotBase_a9540e66fefbfbb2c4cbe3fb0614be6fe}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_aca639b7d618f16865b23db95c94e78e6}{
+virtual void {\bfseries SetAffineRotation3DMaxVels} (const Vector \&vels)}
+\label{classOpenRAVE_1_1RobotBase_aca639b7d618f16865b23db95c94e78e6}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ab7a68cd681ffee1ae12c186539971a19}{
+virtual void {\bfseries SetAffineRotationQuatMaxVels} (dReal vels)}
+\label{classOpenRAVE_1_1RobotBase_ab7a68cd681ffee1ae12c186539971a19}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a8c9f1eb0dddfebee4c61f1919f01d377}{
+virtual void {\bfseries SetAffineTranslationResolution} (const Vector \&resolution)}
+\label{classOpenRAVE_1_1RobotBase_a8c9f1eb0dddfebee4c61f1919f01d377}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ab1ab13a4085dec73ce772f138c1f299f}{
+virtual void {\bfseries SetAffineRotationAxisResolution} (const Vector \&resolution)}
+\label{classOpenRAVE_1_1RobotBase_ab1ab13a4085dec73ce772f138c1f299f}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ad6392e792d3f470609ef7c30f1bcf21a}{
+virtual void {\bfseries SetAffineRotation3DResolution} (const Vector \&resolution)}
+\label{classOpenRAVE_1_1RobotBase_ad6392e792d3f470609ef7c30f1bcf21a}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a8622f54ae85efd7c567931e1d38e3528}{
+virtual void {\bfseries SetAffineRotationQuatResolution} (dReal resolution)}
+\label{classOpenRAVE_1_1RobotBase_a8622f54ae85efd7c567931e1d38e3528}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_af0424e83f813d7a0ee9f81f0681850ad}{
+virtual void {\bfseries SetAffineTranslationWeights} (const Vector \&weights)}
+\label{classOpenRAVE_1_1RobotBase_af0424e83f813d7a0ee9f81f0681850ad}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a423aba3715d11bb70958bf2ee4bec667}{
+virtual void {\bfseries SetAffineRotationAxisWeights} (const Vector \&weights)}
+\label{classOpenRAVE_1_1RobotBase_a423aba3715d11bb70958bf2ee4bec667}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a44c44a092857697901d3398fae0a4662}{
+virtual void {\bfseries SetAffineRotation3DWeights} (const Vector \&weights)}
+\label{classOpenRAVE_1_1RobotBase_a44c44a092857697901d3398fae0a4662}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a215b8d8f4ee61d9928e8f6526e09961f}{
+virtual void {\bfseries SetAffineRotationQuatWeights} (dReal weights)}
+\label{classOpenRAVE_1_1RobotBase_a215b8d8f4ee61d9928e8f6526e09961f}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ac09ced409b9d1f3d8f02001b7872b67d}{
+virtual void {\bfseries GetAffineTranslationLimits} (Vector \&lower, Vector \&upper) const }
+\label{classOpenRAVE_1_1RobotBase_ac09ced409b9d1f3d8f02001b7872b67d}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ac115b354d225eca0e1709514df2c0b84}{
+virtual void {\bfseries GetAffineRotationAxisLimits} (Vector \&lower, Vector \&upper) const }
+\label{classOpenRAVE_1_1RobotBase_ac115b354d225eca0e1709514df2c0b84}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a9a7744d25dfee40289c3627c92600164}{
+virtual void {\bfseries GetAffineRotation3DLimits} (Vector \&lower, Vector \&upper) const }
+\label{classOpenRAVE_1_1RobotBase_a9a7744d25dfee40289c3627c92600164}
+
+\item 
+virtual Vector \hyperlink{classOpenRAVE_1_1RobotBase_ab4bb2e38267520019e902a1a5d4abbd3}{GetAffineRotationQuatLimits} () const 
+\begin{DoxyCompactList}\small\item\em gets the quaternion limits \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a7e786845d8bf9466a6e247aebd5c5b0a}{
+virtual Vector {\bfseries GetAffineTranslationMaxVels} () const }
+\label{classOpenRAVE_1_1RobotBase_a7e786845d8bf9466a6e247aebd5c5b0a}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_abf108494f261bedf28da4c47dd1d1b67}{
+virtual Vector {\bfseries GetAffineRotationAxisMaxVels} () const }
+\label{classOpenRAVE_1_1RobotBase_abf108494f261bedf28da4c47dd1d1b67}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a65da250f4afc4bc8bf1a806a7ec3770e}{
+virtual Vector {\bfseries GetAffineRotation3DMaxVels} () const }
+\label{classOpenRAVE_1_1RobotBase_a65da250f4afc4bc8bf1a806a7ec3770e}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a0ee99bcf088bc54fa0c603bac5b382f6}{
+virtual dReal {\bfseries GetAffineRotationQuatMaxVels} () const }
+\label{classOpenRAVE_1_1RobotBase_a0ee99bcf088bc54fa0c603bac5b382f6}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ae6354aaf3bdd8bc1e74b41406fa57bdc}{
+virtual Vector {\bfseries GetAffineTranslationResolution} () const }
+\label{classOpenRAVE_1_1RobotBase_ae6354aaf3bdd8bc1e74b41406fa57bdc}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a66601f4bb3a81034eae0c679f82ed617}{
+virtual Vector {\bfseries GetAffineRotationAxisResolution} () const }
+\label{classOpenRAVE_1_1RobotBase_a66601f4bb3a81034eae0c679f82ed617}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a6025846422a2a51036074376dc82c041}{
+virtual Vector {\bfseries GetAffineRotation3DResolution} () const }
+\label{classOpenRAVE_1_1RobotBase_a6025846422a2a51036074376dc82c041}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ac2662710c28c1572b162274e2f11960c}{
+virtual dReal {\bfseries GetAffineRotationQuatResolution} () const }
+\label{classOpenRAVE_1_1RobotBase_ac2662710c28c1572b162274e2f11960c}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a5f4ceb6a03fd622bc1a6c91129ab3d18}{
+virtual Vector {\bfseries GetAffineTranslationWeights} () const }
+\label{classOpenRAVE_1_1RobotBase_a5f4ceb6a03fd622bc1a6c91129ab3d18}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_af9be1867b964acf453eb90ff928984b7}{
+virtual Vector {\bfseries GetAffineRotationAxisWeights} () const }
+\label{classOpenRAVE_1_1RobotBase_af9be1867b964acf453eb90ff928984b7}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ac778428d71865bf655e99a9bd4bb8f10}{
+virtual Vector {\bfseries GetAffineRotation3DWeights} () const }
+\label{classOpenRAVE_1_1RobotBase_ac778428d71865bf655e99a9bd4bb8f10}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_aaa97c9f414114e097817403bebc69a65}{
+virtual dReal {\bfseries GetAffineRotationQuatWeights} () const }
+\label{classOpenRAVE_1_1RobotBase_aaa97c9f414114e097817403bebc69a65}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a61b3cab18397704d70fb5ffa52f0b6b8}{
+virtual void {\bfseries SetActiveDOFValues} (const std::vector$<$ dReal $>$ \&values, bool bCheckLimits=false)}
+\label{classOpenRAVE_1_1RobotBase_a61b3cab18397704d70fb5ffa52f0b6b8}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a4ff9c8d01c002b80c3a28d131b0542ba}{
+virtual void {\bfseries GetActiveDOFValues} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1RobotBase_a4ff9c8d01c002b80c3a28d131b0542ba}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a970f78a67cf4d831562471e688a10e2c}{
+virtual void {\bfseries SetActiveDOFVelocities} (const std::vector$<$ dReal $>$ \&velocities, bool bCheckLimits=false)}
+\label{classOpenRAVE_1_1RobotBase_a970f78a67cf4d831562471e688a10e2c}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a15eab9433976f9b667512c8d8fab379f}{
+virtual void {\bfseries GetActiveDOFVelocities} (std::vector$<$ dReal $>$ \&velocities) const }
+\label{classOpenRAVE_1_1RobotBase_a15eab9433976f9b667512c8d8fab379f}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ad1720281ce1b90117f2ea608994cd0c8}{
+virtual void {\bfseries GetActiveDOFLimits} (std::vector$<$ dReal $>$ \&lower, std::vector$<$ dReal $>$ \&upper) const }
+\label{classOpenRAVE_1_1RobotBase_ad1720281ce1b90117f2ea608994cd0c8}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a79d75124b60a2e5c5896824036b83c39}{
+virtual void {\bfseries GetActiveDOFResolutions} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1RobotBase_a79d75124b60a2e5c5896824036b83c39}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ad4d3771c5eb2f888d99c56e9a56cf2fe}{
+virtual void {\bfseries GetActiveDOFWeights} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1RobotBase_ad4d3771c5eb2f888d99c56e9a56cf2fe}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a8af7cfd13ee38f54b023141ecc09f598}{
+virtual void {\bfseries GetActiveDOFVelocityLimits} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1RobotBase_a8af7cfd13ee38f54b023141ecc09f598}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a430512c9498310ee59516bad6735d300}{
+virtual void {\bfseries GetActiveDOFAccelerationLimits} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1RobotBase_a430512c9498310ee59516bad6735d300}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a0f6e2659ed68f68330cfae433ea46f11}{
+virtual void {\bfseries GetActiveDOFMaxVel} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1RobotBase_a0f6e2659ed68f68330cfae433ea46f11}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ad9283ddebe5ce968918aeeb513248382}{
+virtual void {\bfseries GetActiveDOFMaxAccel} (std::vector$<$ dReal $>$ \&v) const }
+\label{classOpenRAVE_1_1RobotBase_ad9283ddebe5ce968918aeeb513248382}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a13c032494357fa0f2333e73d47322020}{
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_a13c032494357fa0f2333e73d47322020}{SubtractActiveDOFValues} (std::vector$<$ dReal $>$ \&q1, const std::vector$<$ dReal $>$ \&q2) const }
+\label{classOpenRAVE_1_1RobotBase_a13c032494357fa0f2333e73d47322020}
+
+\begin{DoxyCompactList}\small\item\em computes the configuration difference q1-\/q2 and stores it in q1. Takes into account joint limits and circular joints \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_aff994b4316d3a31304ee13227e72322b}{SetActiveManipulator} (int index)
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_a479c1b360a34fdc516369e1c3dbb3dc5}{SetActiveManipulator} (const std::string \&manipname)
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_af5782c8413c068ddc9f471a8e4f48a3c}{
+virtual ManipulatorPtr {\bfseries GetActiveManipulator} ()}
+\label{classOpenRAVE_1_1RobotBase_af5782c8413c068ddc9f471a8e4f48a3c}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_ad1f13a31373ebba2b4853f73f5125d96}{
+virtual ManipulatorConstPtr {\bfseries GetActiveManipulator} () const }
+\label{classOpenRAVE_1_1RobotBase_ad1f13a31373ebba2b4853f73f5125d96}
+
+\item 
+virtual int \hyperlink{classOpenRAVE_1_1RobotBase_a1b663dc6bca08704a562fdc74e25dfd0}{GetActiveManipulatorIndex} () const 
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_a53f7fcf5ff3f270a12fd9714d760bc58}{SetMotion} (TrajectoryBaseConstPtr ptraj) \hyperlink{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{RAVE\_\-DEPRECATED}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_a4dfa799940ac67f7c409053aeda11346}{SetActiveMotion} (TrajectoryBaseConstPtr ptraj) \hyperlink{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{RAVE\_\-DEPRECATED}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1RobotBase_afae0e0c1c67c2b5295255e684197bb0d}{SetActiveMotion} (TrajectoryBaseConstPtr ptraj, dReal fSpeed) \hyperlink{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{RAVE\_\-DEPRECATED}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_a93636f2303581a0614c9520d3351afc2}{CalculateActiveJacobian} (int index, const Vector \&offset, boost::multi\_\-array$<$ dReal, 2 $>$ \&mjacobian) const 
+\begin{DoxyCompactList}\small\item\em Calculates the translation jacobian with respect to a link. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_aac4c333a2aaf16a25405efa53c84ead8}{
+virtual void {\bfseries CalculateActiveJacobian} (int index, const Vector \&offset, std::vector$<$ dReal $>$ \&pfJacobian) const }
+\label{classOpenRAVE_1_1RobotBase_aac4c333a2aaf16a25405efa53c84ead8}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_adbcd635f193bc643498b99eab2ba0357}{
+virtual void {\bfseries CalculateActiveRotationJacobian} (int index, const Vector \&qInitialRot, boost::multi\_\-array$<$ dReal, 2 $>$ \&vjacobian) const }
+\label{classOpenRAVE_1_1RobotBase_adbcd635f193bc643498b99eab2ba0357}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a06b2f47ecf6fd9d395cf16f24cd102f0}{
+virtual void {\bfseries CalculateActiveRotationJacobian} (int index, const Vector \&qInitialRot, std::vector$<$ dReal $>$ \&pfJacobian) const }
+\label{classOpenRAVE_1_1RobotBase_a06b2f47ecf6fd9d395cf16f24cd102f0}
+
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1RobotBase_a86ad4866d727f58a05ffd898ff411ee0}{CalculateActiveAngularVelocityJacobian} (int index, boost::multi\_\-array$<$ dReal, 2 $>$ \&mjacobian) const 
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a2d4889bd0db8c8aad99c992b13cc2db7}{
+virtual void {\bfseries CalculateActiveAngularVelocityJacobian} (int index, std::vector$<$ dReal $>$ \&pfJacobian) const }
+\label{classOpenRAVE_1_1RobotBase_a2d4889bd0db8c8aad99c992b13cc2db7}
+
+\item 
+\hypertarget{classOpenRAVE_1_1RobotBase_a0dfdf7668c68c2860a27983804e90c8b}{
+virtual const std::set$<$ int $>$ \& {\bfseries GetNonAdjacentLinks} (int adjacentoptions=0) const }
+\label{classOpenRAVE_1_1RobotBase_a0dfdf7668c68c2860a27983804e90c8b}
+
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} A robot is a kinematic body that has attached manipulators, sensors, and controllers. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__robot}{Robot Concepts}. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1RobotBase_a218a09068212db7bb35c7d4ce792e309}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!\_\-ParametersChanged@{\_\-ParametersChanged}}
+\index{\_\-ParametersChanged@{\_\-ParametersChanged}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{\_\-ParametersChanged}]{\setlength{\rightskip}{0pt plus 5cm}virtual void \_\-ParametersChanged (int {\em parameters})\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a218a09068212db7bb35c7d4ce792e309}
+
+
+Called to notify the body that certain groups of parameters have been changed. 
+
+This function in calls every registers calledback that is tracking the changes. 
+
+Reimplemented from \hyperlink{classOpenRAVE_1_1KinBody_a218a09068212db7bb35c7d4ce792e309}{KinBody}.
+
+\hypertarget{classOpenRAVE_1_1RobotBase_a86ad4866d727f58a05ffd898ff411ee0}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!CalculateActiveAngularVelocityJacobian@{CalculateActiveAngularVelocityJacobian}}
+\index{CalculateActiveAngularVelocityJacobian@{CalculateActiveAngularVelocityJacobian}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{CalculateActiveAngularVelocityJacobian}]{\setlength{\rightskip}{0pt plus 5cm}virtual void CalculateActiveAngularVelocityJacobian (int {\em index}, \/  boost::multi\_\-array$<$ dReal, 2 $>$ \& {\em mjacobian}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a86ad4866d727f58a05ffd898ff411ee0}
+Calculates the angular velocity jacobian of a specified link about the axes of world coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]of the link that the rotation is attached to \item[{\em mjacobian}]3x(num ACTIVE DOF) matrix \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_a93636f2303581a0614c9520d3351afc2}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!CalculateActiveJacobian@{CalculateActiveJacobian}}
+\index{CalculateActiveJacobian@{CalculateActiveJacobian}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{CalculateActiveJacobian}]{\setlength{\rightskip}{0pt plus 5cm}virtual void CalculateActiveJacobian (int {\em index}, \/  const Vector \& {\em offset}, \/  boost::multi\_\-array$<$ dReal, 2 $>$ \& {\em mjacobian}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a93636f2303581a0614c9520d3351afc2}
+
+
+Calculates the translation jacobian with respect to a link. 
+
+Calculates the partial differentials for the active degrees of freedom that in the path from the root node to \_\-veclinks\mbox{[}index\mbox{]} (doesn't touch the rest of the values). 
+\begin{DoxyParams}{Parameters}
+\item[{\em mjacobian}]a 3 x ActiveDOF matrix \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_ac0f7aeb30af9069736ec789db0bf75d8}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!CheckLinkCollision@{CheckLinkCollision}}
+\index{CheckLinkCollision@{CheckLinkCollision}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{CheckLinkCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckLinkCollision (int {\em ilinkindex}, \/  const Transform \& {\em tlinktrans}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_ac0f7aeb30af9069736ec789db0bf75d8}
+
+
+checks collision of a robot link with the surrounding environment. Attached/Grabbed bodies to this link are also checked for collision. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ilinkindex}]the index of the link to check \item[\mbox{$\leftarrow$} {\em tlinktrans}]The transform of the link to check \item[\mbox{$\rightarrow$} {\em report}]\mbox{[}optional\mbox{]} collision report \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_a3d555222cf7b02d592a0a31cef5d479d}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!CheckSelfCollision@{CheckSelfCollision}}
+\index{CheckSelfCollision@{CheckSelfCollision}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{CheckSelfCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckSelfCollision (CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a3d555222cf7b02d592a0a31cef5d479d}
+
+
+Check if body is self colliding. Links that are joined together are ignored. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em report}]\mbox{[}optional\mbox{]} collision report \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classOpenRAVE_1_1KinBody_a3d555222cf7b02d592a0a31cef5d479d}{KinBody}.
+
+\hypertarget{classOpenRAVE_1_1RobotBase_a1b663dc6bca08704a562fdc74e25dfd0}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!GetActiveManipulatorIndex@{GetActiveManipulatorIndex}}
+\index{GetActiveManipulatorIndex@{GetActiveManipulatorIndex}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{GetActiveManipulatorIndex}]{\setlength{\rightskip}{0pt plus 5cm}virtual int GetActiveManipulatorIndex () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a1b663dc6bca08704a562fdc74e25dfd0}
+\begin{DoxyReturn}{Returns}
+index of the current active manipulator 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1RobotBase_a7cfd3a308f74598a3a33a5010137c632}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!GetAffineDOFIndex@{GetAffineDOFIndex}}
+\index{GetAffineDOFIndex@{GetAffineDOFIndex}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{GetAffineDOFIndex}]{\setlength{\rightskip}{0pt plus 5cm}virtual int GetAffineDOFIndex ({\bf DOFAffine} {\em dof}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a7cfd3a308f74598a3a33a5010137c632}
+\hypertarget{classOpenRAVE_1_1RobotBase_ab4bb2e38267520019e902a1a5d4abbd3}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!GetAffineRotationQuatLimits@{GetAffineRotationQuatLimits}}
+\index{GetAffineRotationQuatLimits@{GetAffineRotationQuatLimits}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{GetAffineRotationQuatLimits}]{\setlength{\rightskip}{0pt plus 5cm}virtual Vector GetAffineRotationQuatLimits () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_ab4bb2e38267520019e902a1a5d4abbd3}
+
+
+gets the quaternion limits 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em quatangle}]quaternion\_\-start $\ast$ max\_\-angle. acos(q dot quaternion\_\-start) $<$= max\_\-angle \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_a84070a927466aa5da331649c94b5e854}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!GetFullTrajectoryFromActive@{GetFullTrajectoryFromActive}}
+\index{GetFullTrajectoryFromActive@{GetFullTrajectoryFromActive}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{GetFullTrajectoryFromActive}]{\setlength{\rightskip}{0pt plus 5cm}void GetFullTrajectoryFromActive (TrajectoryBasePtr {\em pfulltraj}, \/  TrajectoryBaseConstPtr {\em pActiveTraj}, \/  bool {\em bOverwriteTransforms} = {\ttfamily true})}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a84070a927466aa5da331649c94b5e854}
+\hypertarget{classOpenRAVE_1_1RobotBase_a39f91578d76bc2c4f2182aeb6c49a2ef}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!GetGrabbed@{GetGrabbed}}
+\index{GetGrabbed@{GetGrabbed}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{GetGrabbed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetGrabbed (std::vector$<$ KinBodyPtr $>$ \& {\em vbodies}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a39f91578d76bc2c4f2182aeb6c49a2ef}
+
+
+gets all grabbed bodies of the robot 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em vbodies}]filled with the grabbed bodies \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_afe87e86a10bb78f6653dcd1a4558f07a}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!GetRobotStructureHash@{GetRobotStructureHash}}
+\index{GetRobotStructureHash@{GetRobotStructureHash}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{GetRobotStructureHash}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::string\& GetRobotStructureHash () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_afe87e86a10bb78f6653dcd1a4558f07a}
+A md5 hash unique to the particular robot structure that involves manipulation and sensing components The serialization for the attached sensors will not involve any sensor specific properties (since they can change through calibration) \hypertarget{classOpenRAVE_1_1RobotBase_a233feb0353ba90cb2e60fea75043f364}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!Grab@{Grab}}
+\index{Grab@{Grab}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{Grab}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Grab (KinBodyPtr {\em body})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a233feb0353ba90cb2e60fea75043f364}
+
+
+Grabs the body with the active manipulator's end effector. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em body}]the body to be grabbed \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful and body is grabbed 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1RobotBase_a922b8a6c3e70c59f28eb327b3c7f71f8}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!Grab@{Grab}}
+\index{Grab@{Grab}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{Grab}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Grab (KinBodyPtr {\em body}, \/  const std::set$<$ int $>$ \& {\em setRobotLinksToIgnore})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a922b8a6c3e70c59f28eb327b3c7f71f8}
+
+
+Grabs the body with the active manipulator's end effector. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em body}]the body to be grabbed \item[\mbox{$\leftarrow$} {\em setRobotLinksToIgnore}]Additional robot link indices that collision checker ignore when checking collisions between the grabbed body and the robot. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful and body is grabbed 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1RobotBase_a52c7267f79b4d09c583fce816a8a31df}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!Grab@{Grab}}
+\index{Grab@{Grab}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{Grab}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Grab (KinBodyPtr {\em body}, \/  LinkPtr {\em pRobotLinkToGrabWith})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a52c7267f79b4d09c583fce816a8a31df}
+
+
+Grab a body with the specified link. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em body}]the body to be grabbed \item[\mbox{$\leftarrow$} {\em pRobotLinkToGrabWith}]the link of this robot that will perform the grab \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful and body is grabbed/ 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1RobotBase_abd0375cf84ce804abe302d3e6faddf76}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!Grab@{Grab}}
+\index{Grab@{Grab}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{Grab}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Grab (KinBodyPtr {\em body}, \/  LinkPtr {\em pRobotLinkToGrabWith}, \/  const std::set$<$ int $>$ \& {\em setRobotLinksToIgnore})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_abd0375cf84ce804abe302d3e6faddf76}
+
+
+Grab the body with the specified link. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em body}]the body to be grabbed \item[\mbox{$\leftarrow$} {\em pRobotLinkToGrabWith}]the link of this robot that will perform the grab \item[\mbox{$\leftarrow$} {\em setRobotLinksToIgnore}]Additional robot link indices that collision checker ignore when checking collisions between the grabbed body and the robot. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful and body is grabbed. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1RobotBase_a3f81f529c6959894555ad8841a134431}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!InitFromData@{InitFromData}}
+\index{InitFromData@{InitFromData}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{InitFromData}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InitFromData (const std::string \& {\em data}, \/  const AttributesList \& {\em atts} = {\ttfamily AttributesList()})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a3f81f529c6959894555ad8841a134431}
+\begin{DoxySeeAlso}{See also}
+EnvironmentBase::ReadRobotXMLData 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \hyperlink{classOpenRAVE_1_1KinBody_a3f81f529c6959894555ad8841a134431}{KinBody}.
+
+\hypertarget{classOpenRAVE_1_1RobotBase_ae67a1ee5e11749340bfbca5bd6749424}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!InitFromFile@{InitFromFile}}
+\index{InitFromFile@{InitFromFile}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{InitFromFile}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InitFromFile (const std::string \& {\em filename}, \/  const AttributesList \& {\em atts} = {\ttfamily AttributesList()})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_ae67a1ee5e11749340bfbca5bd6749424}
+\begin{DoxySeeAlso}{See also}
+EnvironmentBase::ReadRobotXMLFile 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \hyperlink{classOpenRAVE_1_1KinBody_ae67a1ee5e11749340bfbca5bd6749424}{KinBody}.
+
+\hypertarget{classOpenRAVE_1_1RobotBase_a10ff30e0c1c04abfcbf5ce480a82330f}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!IsGrabbing@{IsGrabbing}}
+\index{IsGrabbing@{IsGrabbing}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{IsGrabbing}]{\setlength{\rightskip}{0pt plus 5cm}virtual LinkPtr IsGrabbing (KinBodyConstPtr {\em body}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a10ff30e0c1c04abfcbf5ce480a82330f}
+
+
+return the robot link that is currently grabbing the body. If the body is not grabbed, will return an empty pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em body}]the body to check \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_a38fa8d57d2eefc36568411a129c741d3}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!IsRobot@{IsRobot}}
+\index{IsRobot@{IsRobot}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{IsRobot}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsRobot () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a38fa8d57d2eefc36568411a129c741d3}
+\begin{DoxyReturn}{Returns}
+true if this body is derived from \hyperlink{classOpenRAVE_1_1RobotBase}{RobotBase} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classOpenRAVE_1_1KinBody_a38fa8d57d2eefc36568411a129c741d3}{KinBody}.
+
+\hypertarget{classOpenRAVE_1_1RobotBase_ac96a4eead413884c18f29cbf299ede3a}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!RegrabAll@{RegrabAll}}
+\index{RegrabAll@{RegrabAll}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{RegrabAll}]{\setlength{\rightskip}{0pt plus 5cm}virtual void RegrabAll ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_ac96a4eead413884c18f29cbf299ede3a}
+Releases and grabs all bodies, has the effect of recalculating all the initial collision with the bodies.
+
+This has the effect of resetting the current collisions any grabbed body makes with the robot into an ignore list. \hypertarget{classOpenRAVE_1_1RobotBase_ada9b12e106deb259af6c3f9f2d8589c1}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!Release@{Release}}
+\index{Release@{Release}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Release (KinBodyPtr {\em body})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_ada9b12e106deb259af6c3f9f2d8589c1}
+
+
+Release the body if grabbed. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em body}]body to release \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_a786014c730e245029cf6d944eb65ee2d}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!ReleaseAllGrabbed@{ReleaseAllGrabbed}}
+\index{ReleaseAllGrabbed@{ReleaseAllGrabbed}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{ReleaseAllGrabbed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ReleaseAllGrabbed ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a786014c730e245029cf6d944eb65ee2d}
+
+
+Release all grabbed bodies. 
+
+release all bodies \hypertarget{classOpenRAVE_1_1RobotBase_a1320f8a27bf8e2431f2d876ab74b5375}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!SetActiveDOFs@{SetActiveDOFs}}
+\index{SetActiveDOFs@{SetActiveDOFs}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{SetActiveDOFs}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetActiveDOFs (const std::vector$<$ int $>$ \& {\em dofindices}, \/  int {\em affine}, \/  const Vector \& {\em rotationaxis})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a1320f8a27bf8e2431f2d876ab74b5375}
+
+
+Set the joint indices and affine transformation dofs that the planner should use. If \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a5ee6baa8acb92c310cbc1ece082640d0}{DOF\_\-RotationAxis} is specified, then rotationaxis is set as the new axis. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dofindices}]the indices of the original degrees of freedom to use. \item[{\em affine}]A bitmask of \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} values \item[{\em rotationaxis}]if \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a5ee6baa8acb92c310cbc1ece082640d0}{DOF\_\-RotationAxis} is specified, pRotationAxis is used as the new axis \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_a36a3474433e5ec3ab832a28f8fe8651b}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!SetActiveDOFs@{SetActiveDOFs}}
+\index{SetActiveDOFs@{SetActiveDOFs}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{SetActiveDOFs}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetActiveDOFs (const std::vector$<$ int $>$ \& {\em dofindices}, \/  int {\em affine} = {\ttfamily OpenRAVE::DOF\_\-NoTransform})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a36a3474433e5ec3ab832a28f8fe8651b}
+
+
+Set the joint indices and affine transformation dofs that the planner should use. If \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a5ee6baa8acb92c310cbc1ece082640d0}{DOF\_\-RotationAxis} is specified, the previously set axis is used. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dofindices}]the indices of the original degrees of freedom to use. \item[{\em affine}]A bitmask of \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} values \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_a479c1b360a34fdc516369e1c3dbb3dc5}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!SetActiveManipulator@{SetActiveManipulator}}
+\index{SetActiveManipulator@{SetActiveManipulator}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{SetActiveManipulator}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetActiveManipulator (const std::string \& {\em manipname})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a479c1b360a34fdc516369e1c3dbb3dc5}
+sets the active manipulator of the robot 
+\begin{DoxyParams}{Parameters}
+\item[{\em manipname}]manipulator name \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_aff994b4316d3a31304ee13227e72322b}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!SetActiveManipulator@{SetActiveManipulator}}
+\index{SetActiveManipulator@{SetActiveManipulator}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{SetActiveManipulator}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetActiveManipulator (int {\em index})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_aff994b4316d3a31304ee13227e72322b}
+sets the active manipulator of the robot 
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]manipulator index \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_afae0e0c1c67c2b5295255e684197bb0d}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!SetActiveMotion@{SetActiveMotion}}
+\index{SetActiveMotion@{SetActiveMotion}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{SetActiveMotion}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetActiveMotion (TrajectoryBaseConstPtr {\em ptraj}, \/  dReal {\em fSpeed})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_afae0e0c1c67c2b5295255e684197bb0d}
+\hypertarget{classOpenRAVE_1_1RobotBase_a4dfa799940ac67f7c409053aeda11346}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!SetActiveMotion@{SetActiveMotion}}
+\index{SetActiveMotion@{SetActiveMotion}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{SetActiveMotion}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetActiveMotion (TrajectoryBaseConstPtr {\em ptraj})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a4dfa799940ac67f7c409053aeda11346}
+\hypertarget{classOpenRAVE_1_1RobotBase_a5b49831e704d28f7228dbc317add6efc}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!SetAffineRotationQuatLimits@{SetAffineRotationQuatLimits}}
+\index{SetAffineRotationQuatLimits@{SetAffineRotationQuatLimits}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{SetAffineRotationQuatLimits}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetAffineRotationQuatLimits (const Vector \& {\em quatangle})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a5b49831e704d28f7228dbc317add6efc}
+
+
+sets the quaternion limits using a starting rotation and the max angle deviation from it. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em quatangle}]quaternion\_\-start $\ast$ max\_\-angle. acos(q dot quaternion\_\-start) $<$= max\_\-angle. If max\_\-angle is 0, then will take the current transform of the robot \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_a4d4d9910820087bb1a0d916ca1bb0e5c}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!SetController@{SetController}}
+\index{SetController@{SetController}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{SetController}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetController (ControllerBasePtr {\em controller}, \/  const std::string \& {\em args})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a4d4d9910820087bb1a0d916ca1bb0e5c}
+\hypertarget{classOpenRAVE_1_1RobotBase_a8384a87dcfccbd3b27006c1769219c28}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!SetController@{SetController}}
+\index{SetController@{SetController}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{SetController}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetController (ControllerBasePtr {\em controller}, \/  const std::vector$<$ int $>$ \& {\em dofindices}, \/  int {\em nControlTransformation})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a8384a87dcfccbd3b27006c1769219c28}
+
+
+set a controller for a robot 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pController}]-\/ if NULL, sets the controller of this robot to NULL. otherwise attemps to set the controller to this robot. \item[{\em args}]-\/ the argument list to pass when initializing the controller \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1RobotBase_a53f7fcf5ff3f270a12fd9714d760bc58}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!SetMotion@{SetMotion}}
+\index{SetMotion@{SetMotion}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{SetMotion}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetMotion (TrajectoryBaseConstPtr {\em ptraj})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_a53f7fcf5ff3f270a12fd9714d760bc58}
+\hypertarget{classOpenRAVE_1_1RobotBase_ab51d371d29d7947197b90d8e915de00f}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!SimulationStep@{SimulationStep}}
+\index{SimulationStep@{SimulationStep}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{SimulationStep}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SimulationStep (dReal {\em fElapsedTime})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_ab51d371d29d7947197b90d8e915de00f}
+
+
+Simulate the robot and update the grabbed bodies and attached sensors. 
+
+Do not call SimulationStep for the attached sensors in this function. 
+
+Reimplemented from \hyperlink{classOpenRAVE_1_1KinBody_ab51d371d29d7947197b90d8e915de00f}{KinBody}.
+
+
+
+\subsubsection{Member Data Documentation}
+\hypertarget{classOpenRAVE_1_1RobotBase_aa111f44aea6f2b407af5ed096cd48edb}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!\_\-nActiveManip@{\_\-nActiveManip}}
+\index{\_\-nActiveManip@{\_\-nActiveManip}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{\_\-nActiveManip}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \_\-nActiveManip}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_aa111f44aea6f2b407af5ed096cd48edb}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1RobotBase_a1b663dc6bca08704a562fdc74e25dfd0}{GetActiveManipulatorIndex} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1RobotBase_affad71c6cc8ac660314a5e10e4caae34}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!\_\-vecManipulators@{\_\-vecManipulators}}
+\index{\_\-vecManipulators@{\_\-vecManipulators}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{\_\-vecManipulators}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ManipulatorPtr$>$ {\bf \_\-vecManipulators}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_affad71c6cc8ac660314a5e10e4caae34}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1RobotBase_a93fa4dbd84cc30d4dae78ee20d816ce3}{GetManipulators} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1RobotBase_aac98310b73ec888db282a3ca58db245a}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!\_\-vecSensors@{\_\-vecSensors}}
+\index{\_\-vecSensors@{\_\-vecSensors}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{\_\-vecSensors}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$AttachedSensorPtr$>$ {\bf \_\-vecSensors}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_aac98310b73ec888db282a3ca58db245a}
+\begin{DoxySeeAlso}{See also}
+GetAttachedSensors 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}{
+\index{OpenRAVE::RobotBase@{OpenRAVE::RobotBase}!RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}}
+\index{RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}!OpenRAVE::RobotBase@{OpenRAVE::RobotBase}}
+\paragraph[{RAVE\_\-DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf DOFAffine} DOF\_\-NoTransform {\bf RAVE\_\-DEPRECATED} = OpenRAVE::DOF\_\-NoTransform\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1RobotBase_ad7131b2e388f7f953e9cc14f7336c8e2}

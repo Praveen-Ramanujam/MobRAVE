@@ -1,0 +1,36 @@
+\hypertarget{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC}{
+\subsection{MIMIC Struct Reference}
+\label{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC}\index{OpenRAVE::KinBody::Joint::MIMIC@{OpenRAVE::KinBody::Joint::MIMIC}}
+}
+
+
+Holds mimic information about position, velocity, and acceleration of one axis of the joint.  
+
+
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_a8200045292ac48810750b8fe7ff145fb}{
+std::vector$<$ DOFFormat $>$ \hyperlink{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_a8200045292ac48810750b8fe7ff145fb}{\_\-vdofformat}}
+\label{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_a8200045292ac48810750b8fe7ff145fb}
+
+\begin{DoxyCompactList}\small\item\em the format of the values the equation takes order is important. \item\end{DoxyCompactList}\item 
+\hypertarget{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_a88385fe7c2cecd8d6e625252f60a8f1f}{
+std::vector$<$ DOFHierarchy $>$ \hyperlink{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_a88385fe7c2cecd8d6e625252f60a8f1f}{\_\-vmimicdofs}}
+\label{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_a88385fe7c2cecd8d6e625252f60a8f1f}
+
+\begin{DoxyCompactList}\small\item\em all dof indices that the equations depends on. DOFHierarchy::dofindex can repeat \item\end{DoxyCompactList}\item 
+\hypertarget{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_afa8152d59e3406ade563decf34300195}{
+std::vector$<$ boost::shared\_\-ptr$<$ FunctionParserBase$<$ dReal $>$ $>$ $>$ \hyperlink{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_afa8152d59e3406ade563decf34300195}{\_\-accelfns}}
+\label{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_afa8152d59e3406ade563decf34300195}
+
+\begin{DoxyCompactList}\small\item\em the velocity and acceleration partial derivatives with respect to each of the values in \_\-vdofformat \item\end{DoxyCompactList}\item 
+\hypertarget{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_aefb73aaff0cfa2065a5153ff0705796c}{
+boost::array$<$ std::string, 3 $>$ \hyperlink{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_aefb73aaff0cfa2065a5153ff0705796c}{\_\-equations}}
+\label{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_aefb73aaff0cfa2065a5153ff0705796c}
+
+\begin{DoxyCompactList}\small\item\em the original equations \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Holds mimic information about position, velocity, and acceleration of one axis of the joint. In every array, \mbox{[}0\mbox{]} is position, \mbox{[}1\mbox{]} is velocity, \mbox{[}2\mbox{]} is acceleration. 

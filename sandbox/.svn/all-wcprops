@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox
+END
+mobilemanipulation.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/mobilemanipulation.py
+END
+mobilemanipulation-pr2.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/mobilemanipulation-pr2.py
+END
+updateikfiles.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/updateikfiles.py
+END
+debugik.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/debugik.py
+END
+debugplanning.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/debugplanning.py
+END
+evaluateplanning.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/evaluateplanning.py
+END
+fkfast.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/fkfast.py
+END
+ikfast_generator_vb.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/ikfast_generator_vb.py
+END
+setupgcc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/setupgcc.sh
+END
+.uncrustify.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/.uncrustify.cfg
+END
+testpyann.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/testpyann.py
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/README
+END
+debugkinbody.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/sandbox/debugkinbody.py
+END

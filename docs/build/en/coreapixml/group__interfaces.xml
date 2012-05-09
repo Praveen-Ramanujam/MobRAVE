@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="group__interfaces" kind="group">
+    <compoundname>interfaces</compoundname>
+    <title>Base Interface Classes</title>
+    <innerclass refid="classOpenRAVE_1_1CollisionCheckerBase" prot="public">OpenRAVE::CollisionCheckerBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1ControllerBase" prot="public">OpenRAVE::ControllerBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1IkSolverBase" prot="public">OpenRAVE::IkSolverBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1InterfaceBase" prot="public">OpenRAVE::InterfaceBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1KinBody" prot="public">OpenRAVE::KinBody</innerclass>
+    <innerclass refid="classOpenRAVE_1_1ModuleBase" prot="public">OpenRAVE::ModuleBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1PhysicsEngineBase" prot="public">OpenRAVE::PhysicsEngineBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1PlannerBase" prot="public">OpenRAVE::PlannerBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1RobotBase" prot="public">OpenRAVE::RobotBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorBase" prot="public">OpenRAVE::SensorBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SensorSystemBase" prot="public">OpenRAVE::SensorSystemBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1SpaceSamplerBase" prot="public">OpenRAVE::SpaceSamplerBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1TrajectoryBase" prot="public">OpenRAVE::TrajectoryBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1ViewerBase" prot="public">OpenRAVE::ViewerBase</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A list of the OpenRAVE interface templates. See <ref refid="interface__concepts" kindref="compound">Base Interface Concepts</ref>. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

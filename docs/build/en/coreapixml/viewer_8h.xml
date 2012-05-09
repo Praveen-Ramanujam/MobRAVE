@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="viewer_8h" kind="file">
+    <compoundname>viewer.h</compoundname>
+    <includedby refid="openrave_8h" local="no">include/openrave/openrave.h</includedby>
+    <invincdepgraph>
+      <node id="2413">
+        <label>src/cppexamples/ikfastloader.cpp</label>
+        <link refid="ikfastloader_8cpp"/>
+      </node>
+      <node id="2422">
+        <label>src/cppexamples/orshowsensors.cpp</label>
+        <link refid="orshowsensors_8cpp"/>
+      </node>
+      <node id="2405">
+        <label>src/cppexamples/orpythonbinding.cpp</label>
+        <link refid="orpythonbinding_8cpp"/>
+      </node>
+      <node id="2412">
+        <label>src/libopenrave-core/openrave-core.h</label>
+        <link refid="openrave-core_8h"/>
+        <childnode refid="2413" relation="include">
+        </childnode>
+        <childnode refid="2414" relation="include">
+        </childnode>
+        <childnode refid="2415" relation="include">
+        </childnode>
+        <childnode refid="2416" relation="include">
+        </childnode>
+        <childnode refid="2417" relation="include">
+        </childnode>
+        <childnode refid="2418" relation="include">
+        </childnode>
+        <childnode refid="2408" relation="include">
+        </childnode>
+        <childnode refid="2419" relation="include">
+        </childnode>
+        <childnode refid="2420" relation="include">
+        </childnode>
+        <childnode refid="2421" relation="include">
+        </childnode>
+        <childnode refid="2422" relation="include">
+        </childnode>
+        <childnode refid="2409" relation="include">
+        </childnode>
+        <childnode refid="2410" relation="include">
+        </childnode>
+      </node>
+      <node id="2410">
+        <label>src/cppexamples/oryoubotcontrol.cpp</label>
+        <link refid="oryoubotcontrol_8cpp"/>
+      </node>
+      <node id="2417">
+        <label>src/cppexamples/orikfilter.cpp</label>
+        <link refid="orikfilter_8cpp"/>
+      </node>
+      <node id="2420">
+        <label>src/cppexamples/orplanning_module.cpp</label>
+        <link refid="orplanning__module_8cpp"/>
+      </node>
+      <node id="2411">
+        <label>include/openrave/plugin.h</label>
+        <link refid="plugin_8h"/>
+        <childnode refid="2404" relation="include">
+        </childnode>
+        <childnode refid="2406" relation="include">
+        </childnode>
+      </node>
+      <node id="2419">
+        <label>src/cppexamples/orplanning_ik.cpp</label>
+        <link refid="orplanning__ik_8cpp"/>
+      </node>
+      <node id="2423">
+        <label>src/libopenrave/libopenrave.cpp</label>
+        <link refid="libopenrave_8cpp"/>
+        <childnode refid="2423" relation="include">
+        </childnode>
+      </node>
+      <node id="2403">
+        <label>include/openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="2404" relation="include">
+        </childnode>
+        <childnode refid="2405" relation="include">
+        </childnode>
+        <childnode refid="2406" relation="include">
+        </childnode>
+        <childnode refid="2407" relation="include">
+        </childnode>
+        <childnode refid="2411" relation="include">
+        </childnode>
+        <childnode refid="2412" relation="include">
+        </childnode>
+        <childnode refid="2423" relation="include">
+        </childnode>
+      </node>
+      <node id="2404">
+        <label>src/cppexamples/customreader.cpp</label>
+        <link refid="customreader_8cpp"/>
+      </node>
+      <node id="2414">
+        <label>src/cppexamples/opencvsaving.cpp</label>
+        <link refid="opencvsaving_8cpp"/>
+      </node>
+      <node id="2408">
+        <label>src/cppexamples/ormulticontrol.cpp</label>
+        <link refid="ormulticontrol_8cpp"/>
+      </node>
+      <node id="2402">
+        <label>include/openrave/viewer.h</label>
+        <link refid="viewer.h"/>
+        <childnode refid="2403" relation="include">
+        </childnode>
+      </node>
+      <node id="2407">
+        <label>include/openrave/planningutils.h</label>
+        <link refid="planningutils_8h"/>
+        <childnode refid="2408" relation="include">
+        </childnode>
+        <childnode refid="2409" relation="include">
+        </childnode>
+        <childnode refid="2410" relation="include">
+        </childnode>
+      </node>
+      <node id="2416">
+        <label>src/cppexamples/orconveyormovement.cpp</label>
+        <link refid="orconveyormovement_8cpp"/>
+      </node>
+      <node id="2409">
+        <label>src/cppexamples/ortrajectory.cpp</label>
+        <link refid="ortrajectory_8cpp"/>
+      </node>
+      <node id="2415">
+        <label>src/cppexamples/orcollision.cpp</label>
+        <link refid="orcollision_8cpp"/>
+      </node>
+      <node id="2418">
+        <label>src/cppexamples/orloadviewer.cpp</label>
+        <link refid="orloadviewer_8cpp"/>
+      </node>
+      <node id="2406">
+        <label>src/cppexamples/plugincpp.cpp</label>
+        <link refid="plugincpp_8cpp"/>
+      </node>
+      <node id="2421">
+        <label>src/cppexamples/orplanning_planner.cpp</label>
+        <link refid="orplanning__planner_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenRAVE_1_1GraphHandle" prot="public">OpenRAVE::GraphHandle</innerclass>
+    <innerclass refid="classOpenRAVE_1_1ViewerBase" prot="public">OpenRAVE::ViewerBase</innerclass>
+    <innernamespace refid="namespaceOpenRAVE">OpenRAVE</innernamespace>
+    <briefdescription>
+<para>Graphical interface functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2006-2010<sp/>Rosen<sp/>Diankov<sp/>(rosen.diankov@gmail.com)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenRAVE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OpenRAVE<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="preprocessor">#ifndef<sp/>OPENRAVE_VIEWER_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VIEWER_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenRAVE<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classOpenRAVE_1_1GraphHandle" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1GraphHandle" kindref="compound" tooltip="Handle holding the plot from the viewers. The plot will continue to be drawn as long...">GraphHandle</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33" refid="classOpenRAVE_1_1GraphHandle_1ad09f6fa2b2ca085bb48fdedaec68c2f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1GraphHandle_1ad09f6fa2b2ca085bb48fdedaec68c2f8" kindref="member">~GraphHandle</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetTransform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>RaveTransform&lt;float&gt;&amp;<sp/>t)<sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetShow(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bshow)<sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;GraphHandle&gt;<sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref>;</highlight></codeline>
+<codeline lineno="45" refid="namespaceOpenRAVE_1a2ea062f1371b4da2d0658ce8ee193c67" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;GraphHandle<sp/>const&gt;<sp/><ref refid="namespaceOpenRAVE_1a2ea062f1371b4da2d0658ce8ee193c67" kindref="member">GraphHandleConstPtr</ref>;</highlight></codeline>
+<codeline lineno="46" refid="namespaceOpenRAVE_1a6ffa8ec3faca0206558b612186934a4e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::weak_ptr&lt;GraphHandle<sp/>const&gt;<sp/><ref refid="namespaceOpenRAVE_1a6ffa8ec3faca0206558b612186934a4e" kindref="member">GraphHandleWeakPtr</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classOpenRAVE_1_1ViewerBase" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1ViewerBase" kindref="compound" tooltip="[interface] Base class for the graphics and gui engine that renders the environment...">ViewerBase</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54" refid="classOpenRAVE_1_1ViewerBase_1ad5d8dc37aba1d6a686f461d48d29727a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ViewerBase_1ad5d8dc37aba1d6a686f461d48d29727a" kindref="member">ViewerEvents</ref></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56" refid="classOpenRAVE_1_1ViewerBase_1ad5d8dc37aba1d6a686f461d48d29727aaba3d470046d1fbaa4e3c883403fc9940" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VE_ItemSelection<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classOpenRAVE_1_1ViewerBase_1a4791e23f1e8900e29e1b5158d266400a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1ViewerBase_1a4791e23f1e8900e29e1b5158d266400a" kindref="member">ViewerBase</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)<sp/>:<sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref>(PT_Viewer,<sp/>penv)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61" refid="classOpenRAVE_1_1ViewerBase_1acaaab7fd961a857cc0dc41abd8750d7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ViewerBase_1acaaab7fd961a857cc0dc41abd8750d7c" kindref="member">~ViewerBase</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classOpenRAVE_1_1ViewerBase_1affeafe65e7c4094f282d273dedbf069b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>InterfaceType<sp/><ref refid="classOpenRAVE_1_1ViewerBase_1affeafe65e7c4094f282d273dedbf069b" kindref="member" tooltip="return the static interface type this class points to (used for safe casting)">GetInterfaceTypeStatic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PT_Viewer;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ikfastloader_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bShow<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>quitmainloop()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetCamera(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>RaveTransform&lt;float&gt;&amp;<sp/>trans,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>focalDistance=0)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>RaveTransform&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;<sp/>GetCameraTransform()<sp/>const<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>geometry::RaveCameraIntrinsics&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;<sp/>GetCameraIntrinsics()<sp/>const<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GetCameraImage(std::vector&lt;uint8_t&gt;&amp;<sp/>memory,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>const<sp/>RaveTransform&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>t,<sp/>const<sp/><ref refid="classOpenRAVE_1_1SensorBase" kindref="compound" tooltip="[interface] A sensor measures physical properties from the environment. If not specified...">SensorBase</ref>::CameraIntrinsics&amp;<sp/>intrinsics)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset()<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetBkgndColor(const<sp/>RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>color)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classOpenRAVE_1_1ViewerBase_1aab6d9553843a6d593ee530045d7fff9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>typedef<sp/>boost::function&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>(<ref refid="classOpenRAVE_1_1KinBody" kindref="compound" tooltip="[interface] A kinematic body of links and joints. If not specified, method is not...">KinBody</ref>::LinkPtr<sp/>plink,RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;,RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;)&gt;<sp/>ItemSelectionCallbackFn;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>boost::shared_ptr&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;<sp/>RegisterItemSelectionCallback(const<sp/>ItemSelectionCallbackFn&amp;<sp/>fncallback)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classOpenRAVE_1_1ViewerBase_1a33dae9848e343e6740ad259e09e92607" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>typedef<sp/>boost::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(const<sp/>uint8_t*,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)&gt;<sp/>ViewerImageCallbackFn;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>boost::shared_ptr&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;<sp/>RegisterViewerImageCallback(const<sp/>ViewerImageCallbackFn&amp;<sp/>fncallback)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetEnvironmentSync(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bUpdate)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EnvironmentSync()<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetSize(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classOpenRAVE_1_1ViewerBase_1a93a7763493f3da4687ca55db4a32b05e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ViewerSetSize(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetSize(w,h);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Move(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="classOpenRAVE_1_1ViewerBase_1a00e98066bc03fa4d2b287d2a6a2d2b4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ViewerBase_1a00e98066bc03fa4d2b287d2a6a2d2b4c" kindref="member">ViewerMove</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Move(x,y);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)<sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classOpenRAVE_1_1ViewerBase_1adfc56134be2ef5b157c9a0b55d5d4e13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ViewerBase_1adfc56134be2ef5b157c9a0b55d5d4e13" kindref="member">ViewerSetTitle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>ptitle)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetName(ptitle);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>GetName()<sp/>const<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateCameraTransform()<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="164" refid="classOpenRAVE_1_1ViewerBase_1ab0582044ee7b7222de5e7406ad64f93a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>typedef<sp/>ItemSelectionCallbackFn<sp/>ViewerCallbackFn<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref>;</highlight></codeline>
+<codeline lineno="166" refid="classOpenRAVE_1_1ViewerBase_1a87bb8fc16f70e17fc3955a734a5a9cc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>boost::shared_ptr&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;<sp/>RegisterCallback(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>properties,<sp/>const<sp/>ItemSelectionCallbackFn&amp;<sp/>fncallback)<sp/>RAVE_DEPRECATED</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RegisterItemSelectionCallback(fncallback);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>LoadModel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>pfilename)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/><ref refid="openrave_8h_1a8c8b71f8bce0e483451f3eeac08ac11b" kindref="member">OPENRAVE_DUMMY_IMPLEMENTATION</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="175" refid="classOpenRAVE_1_1ViewerBase_1ab89b5888abf5a74bd6571a47cf83b7cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1ViewerBase_1ab89b5888abf5a74bd6571a47cf83b7cd" kindref="member">SetViewerData</ref>(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>body,<sp/><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref><sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>body-&gt;SetViewerData(data);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>plot3(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>ppoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numPoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fPointSize,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>RaveVector&lt;float&gt;&amp;<sp/>color,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drawstyle<sp/>=<sp/>0)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>plot3(const<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>ppoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numPoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fPointSize,<sp/>const<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>colors,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>drawstyle<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bhasalpha=false)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>drawlinestrip(const<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>ppoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numPoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fwidth,<sp/>const<sp/>RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>color)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>drawlinestrip(const<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>ppoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numPoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fwidth,<sp/>const<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>colors)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>drawlinelist(const<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>ppoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numPoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fwidth,<sp/>const<sp/>RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>color)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>drawlinelist(const<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>ppoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numPoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fwidth,<sp/>const<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>colors)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>drawarrow(const<sp/>RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>p1,<sp/>const<sp/>RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>p2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fwidth,<sp/>const<sp/>RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>color)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>drawbox(const<sp/>RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>vpos,<sp/>const<sp/>RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>vextents)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>drawplane(const<sp/>RaveTransform&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>tplane,<sp/>const<sp/>RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>vextents,<sp/>const<sp/>boost::multi_array&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,3&gt;&amp;<sp/>vtexture)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>drawtrimesh(const<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>ppoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/>const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pIndices,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numTriangles,<sp/>const<sp/>RaveVector&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;&amp;<sp/>color)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="namespaceOpenRAVE_1a11bae0ab3a7dd29755f7af2e5376c47d" kindref="member">GraphHandlePtr</ref><sp/>drawtrimesh(const<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>ppoints,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stride,<sp/>const<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pIndices,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numTriangles,<sp/>const<sp/>boost::multi_array&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,2&gt;&amp;<sp/>colors)<sp/>OPENRAVE_DUMMY_IMPLEMENTATION;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="classOpenRAVE_1_1ViewerBase_1a4bedf8fe190553ca2e13881b58faebf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/><ref refid="namespaceOpenRAVE_1af0d19499c5ac95f5e1ac60b29187d7c4" kindref="member">ViewerBasePtr</ref><sp/>shared_viewer()<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1ViewerBase" kindref="compound" tooltip="[interface] Base class for the graphics and gui engine that renders the environment...">ViewerBase</ref>&gt;(shared_from_this());</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199" refid="classOpenRAVE_1_1ViewerBase_1a9f2f2a97b74fe4a12b5df509ececc31d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1aa8352f0d31944978b6a5cebf018b4596" kindref="member">ViewerBaseConstPtr</ref><sp/><ref refid="classOpenRAVE_1_1ViewerBase_1a9f2f2a97b74fe4a12b5df509ececc31d" kindref="member">shared_viewer_const</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1ViewerBase" kindref="compound" tooltip="[interface] Base class for the graphics and gui engine that renders the environment...">ViewerBase</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&gt;(shared_from_this());</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>GetHash()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="interfacehashes_8h_1aad9cdc9cd86a5ee75e310400f765d4f8" kindref="member">OPENRAVE_VIEWER_HASH</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>RAVE_PRIVATE</highlight></codeline>
+<codeline lineno="209"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight></codeline>
+<codeline lineno="210"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Environment;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>class<sp/>::Environment;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>OpenRAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/include/openrave/viewer.h"/>
+  </compounddef>
+</doxygen>

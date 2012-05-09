@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1geometry_1_1triangle" kind="class" prot="public">
+    <compoundname>OpenRAVE::geometry::triangle</compoundname>
+    <includes refid="geometry_8h" local="no">geometry.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1triangle_1a999427d22750bdb0167657cfb1717899" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; v1</definition>
+        <argsstring></argsstring>
+        <name>v1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="595" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1triangle_1a9cf626ef7e79aa0246e7aef2999fcc33" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; v2</definition>
+        <argsstring></argsstring>
+        <name>v2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="595" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1triangle_1ac7fe127146278408bbe3b94d37d6e076" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; v3</definition>
+        <argsstring></argsstring>
+        <name>v3</name>
+        <briefdescription>
+<para>the vertices of the triangle </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="595" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="595" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1triangle_1aee18579fe54e859a60b719481c024adb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>triangle</definition>
+        <argsstring>()</argsstring>
+        <name>triangle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="588" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="588" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1triangle_1adf00c6c105d01ef6f8233d0338d0a8ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>triangle</definition>
+        <argsstring>(const RaveVector&lt; T &gt; &amp;v1, const RaveVector&lt; T &gt; &amp;v2, const RaveVector&lt; T &gt; &amp;v3)</argsstring>
+        <name>triangle</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+          <declname>v3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="590" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="590" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1triangle_1ae8b102b9ae19210a76226af078908b9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~triangle</definition>
+        <argsstring>()</argsstring>
+        <name>~triangle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="592" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="592" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1triangle_1a5775a6d3e2eff07da614dce1d8431213" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>const RaveVector&lt;T&gt;&amp; operator[]</definition>
+        <argsstring>(int i) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="597" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="597" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1triangle_1a50e9d74512ba451686342d92374bca18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt; &amp;</type>
+        <definition>RaveVector&lt;T&gt;&amp; operator[]</definition>
+        <argsstring>(int i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="600" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="600" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1geometry_1_1triangle_1af4d87900d43b4538e692a34a4ebb5964" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; normal</definition>
+        <argsstring>()</argsstring>
+        <name>normal</name>
+        <briefdescription>
+<para>assumes CCW ordering of vertices </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="605" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="605" bodyend="607"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A triangle defined by 3 points. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="586" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="585" bodyend="608"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1geometry_1_1triangle_1af4d87900d43b4538e692a34a4ebb5964" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::triangle</scope><name>normal</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1triangle_1a5775a6d3e2eff07da614dce1d8431213" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::triangle</scope><name>operator[]</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1triangle_1a50e9d74512ba451686342d92374bca18" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::triangle</scope><name>operator[]</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1triangle_1aee18579fe54e859a60b719481c024adb" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::triangle</scope><name>triangle</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1triangle_1adf00c6c105d01ef6f8233d0338d0a8ec" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::triangle</scope><name>triangle</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1triangle_1a999427d22750bdb0167657cfb1717899" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::triangle</scope><name>v1</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1triangle_1a9cf626ef7e79aa0246e7aef2999fcc33" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::triangle</scope><name>v2</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1triangle_1ac7fe127146278408bbe3b94d37d6e076" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::triangle</scope><name>v3</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1triangle_1ae8b102b9ae19210a76226af078908b9f" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::triangle</scope><name>~triangle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

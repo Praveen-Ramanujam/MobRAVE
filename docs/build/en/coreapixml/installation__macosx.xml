@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="installation__macosx" kind="page">
+    <compoundname>installation_macosx</compoundname>
+    <title>Building and Installing on Mac OSX</title>
+    <detaileddescription>
+<para>First execute this command:</para><para><verbatim>
+sudo port install cmake boost libxml2 glew py27-numpy py27-pyplusplus
+</verbatim></para><para>The py27-xx are for python 2.7 users. If a different version of python will be used, the names will have to change correspondingly. Note that OpenRAVE automatically chooses the newest version of python it can find, therefore it is necessary that the python bindings also correspond to this version.</para><para>Sometimes it is easiest to install boost python directly from sources. Once installed, make sure to set the <computeroutput>BOOST_ROOT</computeroutput> environment variable to point to it before compiling OpenRAVE.</para><para>It is also necessary to install these libraries:</para><para><itemizedlist>
+<listitem><para><ulink url="http://trolltech.com/developer/downloads/qt/mac">Qt</ulink> - download the installer. Users have reported problems with using <bold>port install qt4-mac</bold> due to Cocoa. It is highly recommended to use the official qt4 installer package.</para></listitem><listitem><para><ulink url="http://www.coin3d.org/lib/coin">Coin3D</ulink> - build from sources</para></listitem><listitem><para><ulink url="http://www.coin3d.org/lib/soqt">SoQt</ulink> - build from sources. Might ask you to set QTDIR to the correct directory.</para></listitem><listitem><para>ffmpeg and other video recording codecs</para></listitem></itemizedlist>
+</para><para>After this, follow the instructions on <ref refid="installation__linux" kindref="compound">Building and Installing on Linux</ref>. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

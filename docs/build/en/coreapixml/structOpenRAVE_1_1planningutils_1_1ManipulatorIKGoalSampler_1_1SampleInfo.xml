@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo" kind="struct" prot="protected">
+    <compoundname>OpenRAVE::planningutils::ManipulatorIKGoalSampler::SampleInfo</compoundname>
+    <includes refid="planningutils_8h" local="no">planningutils.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo_1a7f2d8742bca1024404b3f04ffba74d61" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1IkParameterization" kindref="compound">IkParameterization</ref></type>
+        <definition>IkParameterization _ikparam</definition>
+        <argsstring></argsstring>
+        <name>_ikparam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="130" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo_1a20478c33b04a7e5d0847e69c5d0f7c13" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _numleft</definition>
+        <argsstring></argsstring>
+        <name>_numleft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="131" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo_1a2d95cf39fba83f174d52291b9497429a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7176d63b178b8eab68b6947d4d850bb" kindref="member">SpaceSamplerBasePtr</ref></type>
+        <definition>SpaceSamplerBasePtr _psampler</definition>
+        <argsstring></argsstring>
+        <name>_psampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="132" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo_1a29aec141fdcff4335b3d67834ea02195" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _orgindex</definition>
+        <argsstring></argsstring>
+        <name>_orgindex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="133" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1800">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1799">
+        <label>IkParameterization</label>
+        <link refid="classOpenRAVE_1_1IkParameterization"/>
+        <childnode refid="1800" relation="usage">
+          <edgelabel>_transform</edgelabel>
+        </childnode>
+      </node>
+      <node id="1798">
+        <label>SampleInfo</label>
+        <link refid="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo"/>
+        <childnode refid="1799" relation="usage">
+          <edgelabel>_ikparam</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/planningutils.h" line="129" bodyfile="/home/pra3cob/openrave/include/openrave/planningutils.h" bodystart="128" bodyend="134"/>
+    <listofallmembers>
+      <member refid="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo_1a7f2d8742bca1024404b3f04ffba74d61" prot="public" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler::SampleInfo</scope><name>_ikparam</name></member>
+      <member refid="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo_1a20478c33b04a7e5d0847e69c5d0f7c13" prot="public" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler::SampleInfo</scope><name>_numleft</name></member>
+      <member refid="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo_1a29aec141fdcff4335b3d67834ea02195" prot="public" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler::SampleInfo</scope><name>_orgindex</name></member>
+      <member refid="structOpenRAVE_1_1planningutils_1_1ManipulatorIKGoalSampler_1_1SampleInfo_1a2d95cf39fba83f174d52291b9497429a" prot="public" virt="non-virtual"><scope>OpenRAVE::planningutils::ManipulatorIKGoalSampler::SampleInfo</scope><name>_psampler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

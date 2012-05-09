@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classstd_1_1wistream" kind="class" prot="public">
+    <compoundname>std::wistream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::basic_istream&lt; wchar_t &gt;</basecompoundref>
+    <briefdescription>
+<para>STL class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2006">
+        <label>wistream</label>
+        <childnode refid="2007" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2009">
+        <label>ios_base</label>
+      </node>
+      <node id="2008">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="2009" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2007">
+        <label>basic_istream&lt; wchar_t &gt;</label>
+        <childnode refid="2008" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2010">
+        <label>wistream</label>
+        <childnode refid="2011" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2013">
+        <label>ios_base</label>
+      </node>
+      <node id="2012">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="2013" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2011">
+        <label>basic_istream&lt; wchar_t &gt;</label>
+        <childnode refid="2012" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="[STL]" line="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

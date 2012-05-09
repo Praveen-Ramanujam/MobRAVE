@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O2 -g  -shared -Wl,-soname,libcustomreader.so -o libcustomreader.so CMakeFiles/customreader.dir/customreader.cpp.o -L/usr/local/lib -lopenrave0.5 -Wl,-rpath,/usr/local/lib: 

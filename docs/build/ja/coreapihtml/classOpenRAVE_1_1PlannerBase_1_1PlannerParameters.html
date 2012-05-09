@@ -1,0 +1,1264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: クラス PlannerParameters 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="classOpenRAVE_1_1PlannerBase.html">PlannerBase</a>::<a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス PlannerParameters</h1><!-- doxytag: class="OpenRAVE::PlannerBase::PlannerParameters" --><!-- doxytag: inherits="OpenRAVE::BaseXMLReader,OpenRAVE::XMLReadable" -->
+<p>Describes a common and serializable interface for planning parameters.  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="planner_8h_source.html">planner.h</a>&gt;</code></p>
+<div class="dynheader">
+PlannerParametersに対する継承グラフ</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__inherit__graph.png" border="0" usemap="#PlannerParameters_inherit__map" alt="Inheritance graph"/></div>
+<map name="PlannerParameters_inherit__map" id="PlannerParameters_inherit__map">
+<area shape="rect" href="classOpenRAVE_1_1BaseXMLReader.html" title="BaseXMLReader" alt="" coords="5,5,125,35"/><area shape="rect" href="classOpenRAVE_1_1XMLReadable.html" title="base class for readable interfaces" alt="" coords="149,5,251,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+PlannerParametersのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__coll__graph.png" border="0" usemap="#PlannerParameters_coll__map" alt="Collaboration graph"/></div>
+<map name="PlannerParameters_coll__map" id="PlannerParameters_coll__map">
+<area shape="rect" href="classOpenRAVE_1_1BaseXMLReader.html" title="BaseXMLReader" alt="" coords="795,124,915,153"/><area shape="rect" title="STL class." alt="" coords="375,177,428,207"/><area shape="rect" href="classOpenRAVE_1_1XMLReadable.html" title="base class for readable interfaces" alt="" coords="1157,177,1259,207"/><area shape="rect" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html" title="A group referencing the values of one body in the environment." alt="" coords="652,240,708,269"/><area shape="rect" title="STL class." alt="" coords="132,177,271,207"/><area shape="rect" href="classOpenRAVE_1_1ConfigurationSpecification.html" title="A configuration specification references values in the environment that then define..." alt="" coords="1287,229,1457,259"/><area shape="rect" title="STL class." alt="" coords="1325,485,1419,515"/><area shape="rect" title="STL class." alt="" coords="951,485,1129,515"/><area shape="rect" title="STL class." alt="" coords="600,485,760,515"/><area shape="rect" title="STL class." alt="" coords="325,460,477,489"/><area shape="rect" title="STL class." alt="" coords="137,481,265,511"/><area shape="rect" title="STL class." alt="" coords="323,513,480,543"/><area shape="rect" title="STL class." alt="" coords="7,481,79,511"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>(const <br class="typebreak"/>
+std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aaa75769bb0c706f4de9f59bc2a43f524">CostFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cost function on the state pace (optional).  <a href="#aaa75769bb0c706f4de9f59bc2a43f524"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>(const <br class="typebreak"/>
+std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#ac6a5c6b1eb0d15f3cd0f69f8d4871df3">GoalFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Goal heuristic function.(optional).  <a href="#ac6a5c6b1eb0d15f3cd0f69f8d4871df3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>(const <br class="typebreak"/>
+std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;, const <br class="typebreak"/>
+std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a1e96b9c9b49635f5bfd32531e41fb0e8">DistMetricFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Distance metric between configuration spaces (optional).  <a href="#a1e96b9c9b49635f5bfd32531e41fb0e8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; bool(const <br class="typebreak"/>
+std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;, const <br class="typebreak"/>
+std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;<br class="typebreak"/>
+ &amp;, <a class="el" href="namespaceOpenRAVE.html#a0d04dbfb6240509e26f8336ab1756937">IntervalType</a>, <br class="typebreak"/>
+<a class="el" href="classOpenRAVE_1_1PlannerBase.html#a5b660e564b471d714462742a939dbd40">PlannerBase::ConfigurationListPtr</a>)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aca89abb7137aa4f3aa98065ce10f7f6a">CheckPathConstraintFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Checks that all the constraints are satisfied between two configurations.  <a href="#aca89abb7137aa4f3aa98065ce10f7f6a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; bool(std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a1b5ac1fcfcc5e5775ffbbc9c451541fd">SampleFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Samples a random configuration (mandatory).  <a href="#a1b5ac1fcfcc5e5775ffbbc9c451541fd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; bool(std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a60329a58cd803c66dc0701e9944d8ed9">SampleGoalFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Samples a valid goal configuration (optional).  <a href="#a60329a58cd803c66dc0701e9944d8ed9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; bool(std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a8cd1af608ebe03bf544992b322e6f5aa">SampleInitialFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Samples a valid initial configuration (optional).  <a href="#a8cd1af608ebe03bf544992b322e6f5aa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; bool(std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;, const std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;, <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a78bb26c318f93bce6e3ea11fc95a99fc">SampleNeighFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns a random configuration around a neighborhood (optional).  <a href="#a78bb26c318f93bce6e3ea11fc95a99fc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; void(const <br class="typebreak"/>
+std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a8f178813af84b26eb8a12ade9a556482">SetStateFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the state of the robot. Default is active robot joints (mandatory).  <a href="#a8f178813af84b26eb8a12ade9a556482"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; void(std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#ae2be23760038f12a589f6a8cfb0a5780">GetStateFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the state of the robot. Default is active robot joints (mandatory).  <a href="#ae2be23760038f12a589f6a8cfb0a5780"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; void(std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;, const std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a58f093aece5495e4be24da19e9cb4cc7">DiffStateFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Computes the difference of two states.  <a href="#a58f093aece5495e4be24da19e9cb4cc7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; bool(std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;, const std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt; &amp;, int)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a602e68d3c6c25efa6539bbd8b5e02c39">NeighStateFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a delta state to a curent state, acting like a next-nearest-neighbor function along a given direction.  <a href="#a602e68d3c6c25efa6539bbd8b5e02c39"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#adf3a87ab62474f73fa70d42a3264ef70">PlannerParameters</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a14f454af206fdf4328967bed64cda689">~PlannerParameters</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a98b727075503cffbc2c40ddfd51a8890">operator=</a> (const <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a> &amp;r)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Attemps to copy data from one set of parameters to another in the safest manner.  <a href="#a98b727075503cffbc2c40ddfd51a8890"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a14758c28fa2c4bf4440aefd9895285a0">copy</a> (boost::shared_ptr&lt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a> const  &gt; r)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a209ca0bfbbc31be9ecee12ce308374c4">SetRobotActiveJoints</a> (<a class="el" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> robot)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sets up the planner parameters to use the active joints of the robot  <a href="#a209ca0bfbbc31be9ecee12ce308374c4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a44fbec2fd26a45cada889c5c0f0751c8">GetDOF</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the degrees of freedom of the planning configuration space.  <a href="#a44fbec2fd26a45cada889c5c0f0751c8"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Public 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a24d5a3136b64a22a3385a9680843cbf5">_configurationspecification</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the configuration specification in which the planner works in. This specification is passed to the trajecotry creation modules.  <a href="#a24d5a3136b64a22a3385a9680843cbf5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aaa75769bb0c706f4de9f59bc2a43f524">CostFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#afd674f55702e652867153a4ea5655415">_costfn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#ac6a5c6b1eb0d15f3cd0f69f8d4871df3">GoalFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a251626b7c19c35180f64712bb90dfc6f">_goalfn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a1e96b9c9b49635f5bfd32531e41fb0e8">DistMetricFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aa4e21b3274a2d611df29139e610e31f9">_distmetricfn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aca89abb7137aa4f3aa98065ce10f7f6a">CheckPathConstraintFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a51351299cd508ef90418b44d6959d989">_checkpathconstraintsfn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a1b5ac1fcfcc5e5775ffbbc9c451541fd">SampleFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a9e4fc9aea09a7dcf8aea9f14e2ecb755">_samplefn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a60329a58cd803c66dc0701e9944d8ed9">SampleGoalFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a7587ead6ad8c68d2d255755012a52fa6">_samplegoalfn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a8cd1af608ebe03bf544992b322e6f5aa">SampleInitialFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#abc008d20e0f068fed178d64a7b2b2ffd">_sampleinitialfn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a78bb26c318f93bce6e3ea11fc95a99fc">SampleNeighFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a68bbb727e1792c8fdbe345641eb031a3">_sampleneighfn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a8f178813af84b26eb8a12ade9a556482">SetStateFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aa83a795822a8b73310203acaf0b2a74b">_setstatefn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#ae2be23760038f12a589f6a8cfb0a5780">GetStateFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a92304944fb5594cac6be85477fc0c440">_getstatefn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a58f093aece5495e4be24da19e9cb4cc7">DiffStateFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a375c6b6d83b3d2a0563db1e3cad41288">_diffstatefn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a602e68d3c6c25efa6539bbd8b5e02c39">NeighStateFn</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a0bb9400d1009be3bd887015255bcd118">_neighstatefn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aad3112dc0481a0b114f1154ee1d743a7">vinitialconfig</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a2bf4037908e01bbad579ac04d2c1dae4">vgoalconfig</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a0a56912aa3223faae5d69840ef0edd14">_vConfigLowerLimit</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the absolute limits of the configuration space.  <a href="#a0a56912aa3223faae5d69840ef0edd14"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a49cd6c1c809d3f307ebbfd639cfc6ddb">_vConfigUpperLimit</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#acfdac79592a4faa5e57c23b22c7a8954">_vConfigVelocityLimit</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the absolute velocity limits of each DOF of the configuration space.  <a href="#acfdac79592a4faa5e57c23b22c7a8954"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a647a79190686baca1e50eef9887d0b70">_vConfigAccelerationLimit</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the absolute acceleration limits of each DOF of the configuration space.  <a href="#a647a79190686baca1e50eef9887d0b70"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a803fc76d967c3adcf76e737344977d62">_vConfigResolution</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">the discretization resolution of each dimension of the configuration space  <a href="#a803fc76d967c3adcf76e737344977d62"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a377dd1c13871195e977151411e0033bf">_fStepLength</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">a discretization between the path that connects two configurations  <a href="#a377dd1c13871195e977151411e0033bf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a75940963abf9391dca1ec1d48b7a11cc">_nMaxIterations</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">maximum number of iterations before the planner gives up. If 0 or less, planner chooses best iterations.  <a href="#a75940963abf9391dca1ec1d48b7a11cc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aece70c470f96fbe3cd74ce45ee0145b0">_sPostProcessingPlanner</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Specifies the planner that will perform the post-processing path smoothing before returning.  <a href="#aece70c470f96fbe3cd74ce45ee0145b0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a0f1a23c0726e36b98edbe514d4962d08">_sPostProcessingParameters</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The serialized planner parameters to pass to the path optimizer.  <a href="#a0f1a23c0726e36b98edbe514d4962d08"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a05c2cb3cd9524fb2b1883a7639801084">_sExtraParameters</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Extra parameters data that does not fit within this planner parameters structure, but is still important not to lose all the information.  <a href="#a05c2cb3cd9524fb2b1883a7639801084"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Protected メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerBase::PlannerParameters</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a0a5bb6979a5bdcdb408ab97b8f3f6ee2">shared_parameters</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerBase::PlannerParameters</a> <br class="typebreak"/>
+const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a9a9dbd98b427819f681d54e5ee332b31">shared_parameters_const</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a2084222cd1b9f555406d306d65680d7b">serialize</a> (std::ostream &amp;O) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">output the planner parameters in a string (in XML format) don't use <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html" title="Describes a common and serializable interface for planning parameters.">PlannerParameters</a> as a tag!  <a href="#a2084222cd1b9f555406d306d65680d7b"></a><br/></td></tr>
+<tr><td colspan="2"><h2>フレンド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API std::ostream &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a3a2efece353b49fc6235ec2ded1a7c9f">operator&lt;&lt;</a> (std::ostream &amp;O, const <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a> &amp;v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">outputs the data and surrounds it with  <a href="#a3a2efece353b49fc6235ec2ded1a7c9f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API std::istream &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#ac5b28f01c1ef45850c2fd44be0b12aea">operator&gt;&gt;</a> (std::istream &amp;I, <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a> &amp;v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">expects  <a href="#ac5b28f01c1ef45850c2fd44be0b12aea"></a><br/></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpd41d8cd98f00b204e9800998ecf8427e"></a> </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::stringstream&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#ab4d8dc52e167678ba742d5e74fa8bbd2">_ss</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">holds the data read by characters  <a href="#ab4d8dc52e167678ba742d5e74fa8bbd2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr<br class="typebreak"/>
+&lt; std::stringstream &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#af1b3c43634a060ac8c81588387d85b86">_sslocal</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a6bdbb89d87824ee05004fbd5ecd4994b">_vXMLParameters</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">all the top-level XML parameter tags (lower case) that are handled by this parameter structure, should be registered in the constructor  <a href="#a6bdbb89d87824ee05004fbd5ecd4994b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9">ProcessElement</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aeef176e516fa467c3a1ea9c210f96d48">startElement</a> (const std::string &amp;name, const <a class="el" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a> &amp;atts)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#afc6f1ff707e6fd690100c89e3cd4c291">endElement</a> (const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a91544148bc143140fe0474224180233d">characters</a> (const std::string &amp;ch)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>Describes a common and serializable interface for planning parameters. </p>
+<p>The class is serializable to XML, so can be loaded from file or passed around the network. If extra parameters need to be specified, derive from this class and</p>
+<ul>
+<li>add the extra tags to <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a6bdbb89d87824ee05004fbd5ecd4994b" title="all the top-level XML parameter tags (lower case) that are handled by this parameter...">PlannerParameters::_vXMLParameters</a></li>
+<li>override <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aeef176e516fa467c3a1ea9c210f96d48">PlannerParameters::startElement</a> and <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#afc6f1ff707e6fd690100c89e3cd4c291">PlannerParameters::endElement</a> for processing</li>
+<li>possibly override the <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a91544148bc143140fe0474224180233d">PlannerParameters::characters</a></li>
+</ul>
+<p>Also allows the parameters and descriptions to be serialized to reStructuredText for documentation purposes. </p>
+<dl><dt><b>例: </b></dt><dd>
+<p><a class="el" href="orplanning__planner_8cpp-example.html#_a13">orplanning_planner.cpp</a>.</p>
+</dd>
+</dl>
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00061">61</a> 行で定義されています。</p>
+<hr/><h2>型定義</h2>
+<a class="anchor" id="aca89abb7137aa4f3aa98065ce10f7f6a"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::CheckPathConstraintFn" ref="aca89abb7137aa4f3aa98065ce10f7f6a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;bool (const std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;, const std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;, <a class="el" href="namespaceOpenRAVE.html#a0d04dbfb6240509e26f8336ab1756937">IntervalType</a>, <a class="el" href="classOpenRAVE_1_1PlannerBase.html#a5b660e564b471d714462742a939dbd40">PlannerBase::ConfigurationListPtr</a>)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aca89abb7137aa4f3aa98065ce10f7f6a">CheckPathConstraintFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Checks that all the constraints are satisfied between two configurations. </p>
+<p>The simplest and most fundamental constraint is line-collision checking. The robot goes from q0 to q1.</p>
+<p>success = _checkpathconstraints(q0,q1,interval,configurations)</p>
+<p>When called, q0 is guaranteed to be set on the robot. The function returns true if the path to q1 satisfies all the constraints of the planner. If q0==q1, and interval==IT_OpenStart or IT_OpenEnd, then only one configuration should be checked. It is recommended to use IT_OpenStart. Because this function can internally use neighstatefn, need to make sure that Q0-&gt;Q1 is going from initial to goal direction.</p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>q0</em>&nbsp;</td><td>is the configuration the robot is coming from (currently set). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>q1</em>&nbsp;</td><td>is the configuration the robot should move to. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>interval</em>&nbsp;</td><td>Specifies whether to check the end points of the interval for constraints </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>configurations</em>&nbsp;</td><td>Optional argument that will hold the intermediate configuraitons checked between q0 and q1 configurations. The appended configurations will be all valid and in free space. They are appended after the items already stored on the list. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00123">123</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa75769bb0c706f4de9f59bc2a43f524"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::CostFn" ref="aaa75769bb0c706f4de9f59bc2a43f524" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>(const std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aaa75769bb0c706f4de9f59bc2a43f524">CostFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cost function on the state pace (optional). </p>
+<p>cost = _costfn(config) </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>cost</em>&nbsp;</td><td>the cost of being in the current state </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00086">86</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a58f093aece5495e4be24da19e9cb4cc7"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::DiffStateFn" ref="a58f093aece5495e4be24da19e9cb4cc7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;void (std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;,const std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a58f093aece5495e4be24da19e9cb4cc7">DiffStateFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Computes the difference of two states. </p>
+<p>_diffstatefn(q1,q2) -&gt; q1 -= q2</p>
+<p>An explicit difference function is necessary for correct interpolation when there are circular joints. Default is regular subtraction. </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00180">180</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e96b9c9b49635f5bfd32531e41fb0e8"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::DistMetricFn" ref="a1e96b9c9b49635f5bfd32531e41fb0e8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>(const std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;, const std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a1e96b9c9b49635f5bfd32531e41fb0e8">DistMetricFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Distance metric between configuration spaces (optional). </p>
+<p>distmetric(config1,config2)</p>
+<p>Two configurations are considered the same when function returns 0. </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00104">104</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2be23760038f12a589f6a8cfb0a5780"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::GetStateFn" ref="ae2be23760038f12a589f6a8cfb0a5780" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;void (std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#ae2be23760038f12a589f6a8cfb0a5780">GetStateFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gets the state of the robot. Default is active robot joints (mandatory). </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00170">170</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6a5c6b1eb0d15f3cd0f69f8d4871df3"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::GoalFn" ref="ac6a5c6b1eb0d15f3cd0f69f8d4871df3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>(const std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#ac6a5c6b1eb0d15f3cd0f69f8d4871df3">GoalFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Goal heuristic function.(optional). </p>
+<p>distance = _goalfn(config)</p>
+<p>Goal is complete when returns 0 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>distance</em>&nbsp;</td><td>- distance to closest goal </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00096">96</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a602e68d3c6c25efa6539bbd8b5e02c39"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::NeighStateFn" ref="a602e68d3c6c25efa6539bbd8b5e02c39" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;bool (std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;,const std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;, int)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a602e68d3c6c25efa6539bbd8b5e02c39">NeighStateFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Adds a delta state to a curent state, acting like a next-nearest-neighbor function along a given direction. </p>
+<p>success = _neighstatefn(q,qdelta,fromgoal) -&gt; q = Filter(q+qdelta) </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>q</em>&nbsp;</td><td>the current state </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>qdelta</em>&nbsp;</td><td>the delta to add </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>fromgoal</em>&nbsp;</td><td>1 if q is coming from a goal state, 0 if it is coming from an initial state</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>In RRTs this is used for the extension operation. The new state is stored in the first parameter q. Note that the function can also add a filter to the final destination (like projecting onto a constraint manifold). </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00193">193</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b5ac1fcfcc5e5775ffbbc9c451541fd"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::SampleFn" ref="a1b5ac1fcfcc5e5775ffbbc9c451541fd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;bool (std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a1b5ac1fcfcc5e5775ffbbc9c451541fd">SampleFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Samples a random configuration (mandatory). </p>
+<p>The dimension of the returned sample is the dimension of the configuration space. success = samplefn(newsample) </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00131">131</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a60329a58cd803c66dc0701e9944d8ed9"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::SampleGoalFn" ref="a60329a58cd803c66dc0701e9944d8ed9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;bool (std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a60329a58cd803c66dc0701e9944d8ed9">SampleGoalFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Samples a valid goal configuration (optional). </p>
+<p>If valid, the function should be called at every iteration. Any type of sampling probabilities and conditions can be encoded inside the function. The dimension of the returned sample is the dimension of the configuration space. success = samplegoalfn(newsample) </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00141">141</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8cd1af608ebe03bf544992b322e6f5aa"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::SampleInitialFn" ref="a8cd1af608ebe03bf544992b322e6f5aa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;bool (std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a8cd1af608ebe03bf544992b322e6f5aa">SampleInitialFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Samples a valid initial configuration (optional). </p>
+<p>If valid, the function should be called at every iteration. Any type of sampling probabilities and conditions can be encoded inside the function. The dimension of the returned sample is the dimension of the configuration space. success = sampleinitialfn(newsample) </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00151">151</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a78bb26c318f93bce6e3ea11fc95a99fc"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::SampleNeighFn" ref="a78bb26c318f93bce6e3ea11fc95a99fc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;bool (std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;, const std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;, <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a78bb26c318f93bce6e3ea11fc95a99fc">SampleNeighFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns a random configuration around a neighborhood (optional). </p>
+<p>_sampleneighfn(newsample,pCurSample,fRadius)</p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pCurSample</em>&nbsp;</td><td>- the neighborhood to sample around </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>fRadius</em>&nbsp;</td><td>- specifies the max distance of sampling. The higher the value, the farther the samples will go The distance metric can be arbitrary, but is usually PlannerParameters::pdistmetric. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>if sample was successfully generated return true, otherwise false </dd></dl>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00163">163</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f178813af84b26eb8a12ade9a556482"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::SetStateFn" ref="a8f178813af84b26eb8a12ade9a556482" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;void (const std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt;&amp;)&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a8f178813af84b26eb8a12ade9a556482">SetStateFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sets the state of the robot. Default is active robot joints (mandatory). </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00167">167</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="adf3a87ab62474f73fa70d42a3264ef70"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::PlannerParameters" ref="adf3a87ab62474f73fa70d42a3264ef70" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a14f454af206fdf4328967bed64cda689"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::~PlannerParameters" ref="a14f454af206fdf4328967bed64cda689" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00065">65</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a91544148bc143140fe0474224180233d"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::characters" ref="a91544148bc143140fe0474224180233d" args="(const std::string &amp;ch)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void characters </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>ch</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>gets called for all data in between tags. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ch</em>&nbsp;</td><td>a string to the data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a0b124434353fd2e48d951c2053e63408">BaseXMLReader</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a14758c28fa2c4bf4440aefd9895285a0"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::copy" ref="a14758c28fa2c4bf4440aefd9895285a0" args="(boost::shared_ptr&lt; PlannerParameters const  &gt; r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void copy </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a> const  &gt;&nbsp;</td>
+          <td class="paramname"> <em>r</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afc6f1ff707e6fd690100c89e3cd4c291"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::endElement" ref="afc6f1ff707e6fd690100c89e3cd4c291" args="(const std::string &amp;name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool endElement </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Gets called at the end of each "&lt;/type&gt;" expression. In this case, name is "type" </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>of the tag, will be always lower case </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if XMLReader has finished parsing (one condition is that name==_fieldname) , otherwise false </dd></dl>
+
+<p><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a3b5c1a1dc1e0965a9e27f139b18db4d9">BaseXMLReader</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a44fbec2fd26a45cada889c5c0f0751c8"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::GetDOF" ref="a44fbec2fd26a45cada889c5c0f0751c8" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int GetDOF </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the degrees of freedom of the planning configuration space. </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00237">237</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a98b727075503cffbc2c40ddfd51a8890"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::operator=" ref="a98b727075503cffbc2c40ddfd51a8890" args="(const PlannerParameters &amp;r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a>&amp; operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>r</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Attemps to copy data from one set of parameters to another in the safest manner. </p>
+<p>First serializes the data of the right hand into a string, then initializes the current parameters via &gt;&gt; pointers to functions are copied directly </p>
+
+</div>
+</div>
+<a class="anchor" id="a2084222cd1b9f555406d306d65680d7b"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::serialize" ref="a2084222cd1b9f555406d306d65680d7b" args="(std::ostream &amp;O) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool serialize </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>O</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>output the planner parameters in a string (in XML format) don't use <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html" title="Describes a common and serializable interface for planning parameters.">PlannerParameters</a> as a tag! </p>
+
+</div>
+</div>
+<a class="anchor" id="a209ca0bfbbc31be9ecee12ce308374c4"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::SetRobotActiveJoints" ref="a209ca0bfbbc31be9ecee12ce308374c4" args="(RobotBasePtr robot)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetRobotActiveJoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a>&nbsp;</td>
+          <td class="paramname"> <em>robot</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>sets up the planner parameters to use the active joints of the robot </p>
+
+</div>
+</div>
+<a class="anchor" id="a0a5bb6979a5bdcdb408ab97b8f3f6ee2"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::shared_parameters" ref="a0a5bb6979a5bdcdb408ab97b8f3f6ee2" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;<a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerBase::PlannerParameters</a>&gt; shared_parameters </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00242">242</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a9dbd98b427819f681d54e5ee332b31"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::shared_parameters_const" ref="a9a9dbd98b427819f681d54e5ee332b31" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;<a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerBase::PlannerParameters</a> const &gt; shared_parameters_const </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00245">245</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aeef176e516fa467c3a1ea9c210f96d48"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::startElement" ref="aeef176e516fa467c3a1ea9c210f96d48" args="(const std::string &amp;name, const AttributesList &amp;atts)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a5f6b74d2490bcfd578227b002ec9c5d9">ProcessElement</a> startElement </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>atts</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Gets called in the beginning of each "&lt;type&gt;" expression. In this case, name is "type" </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>of the tag, will be always lower case </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>atts</em>&nbsp;</td><td>string of attributes where the first std::string is the attribute name and second is the value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>true if tag is accepted and this class will process it, otherwise false </dd></dl>
+
+<p><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html#a96b3e3b4503108964001ad58ab724ac3">BaseXMLReader</a>を実装しています。</p>
+
+</div>
+</div>
+<hr/><h2>フレンドと関連する関数</h2>
+<a class="anchor" id="a3a2efece353b49fc6235ec2ded1a7c9f"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::operator&lt;&lt;" ref="a3a2efece353b49fc6235ec2ded1a7c9f" args="(std::ostream &amp;O, const PlannerParameters &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPENRAVE_API std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>O</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>outputs the data and surrounds it with </p>
+<div class="fragment"><pre class="fragment">&lt;PlannerParameters&gt; </pre></div><p> tags </p>
+
+</div>
+</div>
+<a class="anchor" id="ac5b28f01c1ef45850c2fd44be0b12aea"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::operator&gt;&gt;" ref="ac5b28f01c1ef45850c2fd44be0b12aea" args="(std::istream &amp;I, PlannerParameters &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPENRAVE_API std::istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&nbsp;</td>
+          <td class="paramname"> <em>I</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html">PlannerParameters</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>expects </p>
+<div class="fragment"><pre class="fragment">&lt;PlannerParameters&gt; </pre></div><p> to be the first token. Parses stream until </p>
+<div class="fragment"><pre class="fragment">&lt;/PlannerParameters&gt; </pre></div><p> reached </p>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="a51351299cd508ef90418b44d6959d989"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_checkpathconstraintsfn" ref="a51351299cd508ef90418b44d6959d989" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aca89abb7137aa4f3aa98065ce10f7f6a">CheckPathConstraintFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a51351299cd508ef90418b44d6959d989">_checkpathconstraintsfn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00124">124</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a24d5a3136b64a22a3385a9680843cbf5"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_configurationspecification" ref="a24d5a3136b64a22a3385a9680843cbf5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a24d5a3136b64a22a3385a9680843cbf5">_configurationspecification</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the configuration specification in which the planner works in. This specification is passed to the trajecotry creation modules. </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00080">80</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="afd674f55702e652867153a4ea5655415"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_costfn" ref="afd674f55702e652867153a4ea5655415" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aaa75769bb0c706f4de9f59bc2a43f524">CostFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#afd674f55702e652867153a4ea5655415">_costfn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00087">87</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a375c6b6d83b3d2a0563db1e3cad41288"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_diffstatefn" ref="a375c6b6d83b3d2a0563db1e3cad41288" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a58f093aece5495e4be24da19e9cb4cc7">DiffStateFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a375c6b6d83b3d2a0563db1e3cad41288">_diffstatefn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00181">181</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4e21b3274a2d611df29139e610e31f9"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_distmetricfn" ref="aa4e21b3274a2d611df29139e610e31f9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a1e96b9c9b49635f5bfd32531e41fb0e8">DistMetricFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aa4e21b3274a2d611df29139e610e31f9">_distmetricfn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00105">105</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a377dd1c13871195e977151411e0033bf"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_fStepLength" ref="a377dd1c13871195e977151411e0033bf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a377dd1c13871195e977151411e0033bf">_fStepLength</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>a discretization between the path that connects two configurations </p>
+<p>This length represents how dense the samples get distributed across the configuration space. It represents the maximum distance between neighbors when adding new configuraitons. If 0 or less, planner chooses best step length. </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00218">218</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a92304944fb5594cac6be85477fc0c440"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_getstatefn" ref="a92304944fb5594cac6be85477fc0c440" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#ae2be23760038f12a589f6a8cfb0a5780">GetStateFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a92304944fb5594cac6be85477fc0c440">_getstatefn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00171">171</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a251626b7c19c35180f64712bb90dfc6f"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_goalfn" ref="a251626b7c19c35180f64712bb90dfc6f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#ac6a5c6b1eb0d15f3cd0f69f8d4871df3">GoalFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a251626b7c19c35180f64712bb90dfc6f">_goalfn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00097">97</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0bb9400d1009be3bd887015255bcd118"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_neighstatefn" ref="a0bb9400d1009be3bd887015255bcd118" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a602e68d3c6c25efa6539bbd8b5e02c39">NeighStateFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a0bb9400d1009be3bd887015255bcd118">_neighstatefn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00194">194</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a75940963abf9391dca1ec1d48b7a11cc"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_nMaxIterations" ref="a75940963abf9391dca1ec1d48b7a11cc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a75940963abf9391dca1ec1d48b7a11cc">_nMaxIterations</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>maximum number of iterations before the planner gives up. If 0 or less, planner chooses best iterations. </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00221">221</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e4fc9aea09a7dcf8aea9f14e2ecb755"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_samplefn" ref="a9e4fc9aea09a7dcf8aea9f14e2ecb755" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a1b5ac1fcfcc5e5775ffbbc9c451541fd">SampleFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a9e4fc9aea09a7dcf8aea9f14e2ecb755">_samplefn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00132">132</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7587ead6ad8c68d2d255755012a52fa6"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_samplegoalfn" ref="a7587ead6ad8c68d2d255755012a52fa6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a60329a58cd803c66dc0701e9944d8ed9">SampleGoalFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a7587ead6ad8c68d2d255755012a52fa6">_samplegoalfn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00142">142</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="abc008d20e0f068fed178d64a7b2b2ffd"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_sampleinitialfn" ref="abc008d20e0f068fed178d64a7b2b2ffd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a8cd1af608ebe03bf544992b322e6f5aa">SampleInitialFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#abc008d20e0f068fed178d64a7b2b2ffd">_sampleinitialfn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00152">152</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a68bbb727e1792c8fdbe345641eb031a3"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_sampleneighfn" ref="a68bbb727e1792c8fdbe345641eb031a3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a78bb26c318f93bce6e3ea11fc95a99fc">SampleNeighFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a68bbb727e1792c8fdbe345641eb031a3">_sampleneighfn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00164">164</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa83a795822a8b73310203acaf0b2a74b"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_setstatefn" ref="aa83a795822a8b73310203acaf0b2a74b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a8f178813af84b26eb8a12ade9a556482">SetStateFn</a> <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aa83a795822a8b73310203acaf0b2a74b">_setstatefn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00168">168</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a05c2cb3cd9524fb2b1883a7639801084"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_sExtraParameters" ref="a05c2cb3cd9524fb2b1883a7639801084" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a05c2cb3cd9524fb2b1883a7639801084">_sExtraParameters</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Extra parameters data that does not fit within this planner parameters structure, but is still important not to lose all the information. </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00234">234</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f1a23c0726e36b98edbe514d4962d08"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_sPostProcessingParameters" ref="a0f1a23c0726e36b98edbe514d4962d08" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a0f1a23c0726e36b98edbe514d4962d08">_sPostProcessingParameters</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The serialized planner parameters to pass to the path optimizer. </p>
+<p>For example: std::stringstream(_sPostProcessingParameters) &gt;&gt; _parameters; </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00231">231</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aece70c470f96fbe3cd74ce45ee0145b0"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_sPostProcessingPlanner" ref="aece70c470f96fbe3cd74ce45ee0145b0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aece70c470f96fbe3cd74ce45ee0145b0">_sPostProcessingPlanner</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Specifies the planner that will perform the post-processing path smoothing before returning. </p>
+<p>If empty, will not path smooth the returned trajectories (used to measure algorithm time) </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00226">226</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4d8dc52e167678ba742d5e74fa8bbd2"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_ss" ref="ab4d8dc52e167678ba742d5e74fa8bbd2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::stringstream <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#ab4d8dc52e167678ba742d5e74fa8bbd2">_ss</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>holds the data read by characters </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00257">257</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="af1b3c43634a060ac8c81588387d85b86"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_sslocal" ref="af1b3c43634a060ac8c81588387d85b86" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;std::stringstream&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#af1b3c43634a060ac8c81588387d85b86">_sslocal</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00258">258</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a647a79190686baca1e50eef9887d0b70"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_vConfigAccelerationLimit" ref="a647a79190686baca1e50eef9887d0b70" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a647a79190686baca1e50eef9887d0b70">_vConfigAccelerationLimit</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the absolute acceleration limits of each DOF of the configuration space. </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00207">207</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a56912aa3223faae5d69840ef0edd14"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_vConfigLowerLimit" ref="a0a56912aa3223faae5d69840ef0edd14" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a0a56912aa3223faae5d69840ef0edd14">_vConfigLowerLimit</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the absolute limits of the configuration space. </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00201">201</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a803fc76d967c3adcf76e737344977d62"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_vConfigResolution" ref="a803fc76d967c3adcf76e737344977d62" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a803fc76d967c3adcf76e737344977d62">_vConfigResolution</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the discretization resolution of each dimension of the configuration space </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00210">210</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a49cd6c1c809d3f307ebbfd639cfc6ddb"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_vConfigUpperLimit" ref="a49cd6c1c809d3f307ebbfd639cfc6ddb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a49cd6c1c809d3f307ebbfd639cfc6ddb">_vConfigUpperLimit</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00201">201</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="acfdac79592a4faa5e57c23b22c7a8954"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_vConfigVelocityLimit" ref="acfdac79592a4faa5e57c23b22c7a8954" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#acfdac79592a4faa5e57c23b22c7a8954">_vConfigVelocityLimit</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>the absolute velocity limits of each DOF of the configuration space. </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00204">204</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6bdbb89d87824ee05004fbd5ecd4994b"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::_vXMLParameters" ref="a6bdbb89d87824ee05004fbd5ecd4994b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a6bdbb89d87824ee05004fbd5ecd4994b">_vXMLParameters</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>all the top-level XML parameter tags (lower case) that are handled by this parameter structure, should be registered in the constructor </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00260">260</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2bf4037908e01bbad579ac04d2c1dae4"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::vgoalconfig" ref="a2bf4037908e01bbad579ac04d2c1dae4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#a2bf4037908e01bbad579ac04d2c1dae4">vgoalconfig</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00198">198</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aad3112dc0481a0b114f1154ee1d743a7"></a><!-- doxytag: member="OpenRAVE::PlannerBase::PlannerParameters::vinitialconfig" ref="aad3112dc0481a0b114f1154ee1d743a7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt; <a class="el" href="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters.html#aad3112dc0481a0b114f1154ee1d743a7">vinitialconfig</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>to specify multiple initial or goal configurations, put them into the vector in series (note: not all planners support multiple goals) </p>
+
+<p> <a class="el" href="planner_8h_source.html">planner.h</a> の <a class="el" href="planner_8h_source.html#l00198">198</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>include/openrave/<a class="el" href="planner_8h_source.html">planner.h (r2848/r2781)</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:12 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

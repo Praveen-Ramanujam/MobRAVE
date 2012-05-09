@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat" kind="struct" prot="public">
+    <compoundname>OpenRAVE::KinBody::Joint::MIMIC::DOFFormat</compoundname>
+    <includes refid="kinbody_8h" local="no">kinbody.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1af2a4b5caf22c6cc02aa4d9ae6460d6bb" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t jointindex</definition>
+        <argsstring></argsstring>
+        <name>jointindex</name>
+        <briefdescription>
+<para>the index into the joints, if &gt;= GetJoints.size(), then points to the passive joints </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="675" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1a1c91a1ef39b5ab20fcc5ce582e9993dd" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t dofindex</definition>
+        <argsstring></argsstring>
+        <name>dofindex</name>
+        <bitfield> 14</bitfield>
+        <briefdescription>
+<para>if &gt;= 0, then points to a DOF of the robot that is NOT mimiced </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="676" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1aae90d1d0f77fce4ac9dc55e071f04b97" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t axis</definition>
+        <argsstring></argsstring>
+        <name>axis</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+<para>the axis of the joint index </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="677" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1af10bf97070bca7e2aeef94d43b9fe01e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;</definition>
+        <argsstring>(const DOFFormat &amp;r) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat" kindref="compound">DOFFormat</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="678"/>
+      </memberdef>
+      <memberdef kind="function" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1a73f63c670e6c411e66f992857883fa94" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const DOFFormat &amp;r) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat" kindref="compound">DOFFormat</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="679"/>
+      </memberdef>
+      <memberdef kind="function" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1a59db0b987d63bf54b775c26877523e16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1KinBody_1_1Joint" kindref="compound">Joint</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt;Joint&gt; GetJoint</definition>
+        <argsstring>(KinBodyPtr parent) const </argsstring>
+        <name>GetJoint</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="680"/>
+      </memberdef>
+      <memberdef kind="function" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1a48f5623159c3ee19b0e7df0fcc36e975" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1KinBody_1_1Joint" kindref="compound">Joint</ref> const  &gt;</type>
+        <definition>boost::shared_ptr&lt;Joint const&gt; GetJoint</definition>
+        <argsstring>(KinBodyConstPtr parent) const </argsstring>
+        <name>GetJoint</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref></type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="681"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="674" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="673" bodyend="682"/>
+    <listofallmembers>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1aae90d1d0f77fce4ac9dc55e071f04b97" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC::DOFFormat</scope><name>axis</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1a1c91a1ef39b5ab20fcc5ce582e9993dd" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC::DOFFormat</scope><name>dofindex</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1a59db0b987d63bf54b775c26877523e16" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC::DOFFormat</scope><name>GetJoint</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1a48f5623159c3ee19b0e7df0fcc36e975" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC::DOFFormat</scope><name>GetJoint</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1af2a4b5caf22c6cc02aa4d9ae6460d6bb" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC::DOFFormat</scope><name>jointindex</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1af10bf97070bca7e2aeef94d43b9fe01e" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC::DOFFormat</scope><name>operator&lt;</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat_1a73f63c670e6c411e66f992857883fa94" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC::DOFFormat</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

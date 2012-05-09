@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1GraphHandle" kind="class" prot="public">
+    <compoundname>OpenRAVE::GraphHandle</compoundname>
+    <includes refid="viewer_8h" local="no">viewer.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1GraphHandle_1ad09f6fa2b2ca085bb48fdedaec68c2f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~GraphHandle</definition>
+        <argsstring>()</argsstring>
+        <name>~GraphHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="33" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="33" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1GraphHandle_1a1e4f3343130d6f10fba4b13f3be3913d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetTransform</definition>
+        <argsstring>(const RaveTransform&lt; float &gt; &amp;t) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetTransform</name>
+        <param>
+          <type>const RaveTransform&lt; float &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Changes the underlying transformation of the plot. <bold>[multi-thread safe]</bold> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new transformation of the plot </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1GraphHandle_1a5f9250c51a292ef2849ed651b59d27e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetShow</definition>
+        <argsstring>(bool bshow) OPENRAVE_DUMMY_IMPLEMENTATION</argsstring>
+        <name>SetShow</name>
+        <param>
+          <type>bool</type>
+          <declname>bshow</declname>
+        </param>
+        <briefdescription>
+<para>Shows or hides the plot without destroying its resources. <bold>[multi-thread safe]</bold> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Handle holding the plot from the viewers. The plot will continue to be drawn as long as a reference to this handle is held. </para>    </briefdescription>
+    <detaileddescription>
+<para>Designed to be multi-thread safe and destruction and modification of the viewer plot can be done at any time. The viewers internally handle synchronization and threading issues. </para>    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/viewer.h" line="31" bodyfile="/home/pra3cob/openrave/include/openrave/viewer.h" bodystart="30" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1GraphHandle_1a5f9250c51a292ef2849ed651b59d27e4" prot="public" virt="virtual"><scope>OpenRAVE::GraphHandle</scope><name>SetShow</name></member>
+      <member refid="classOpenRAVE_1_1GraphHandle_1a1e4f3343130d6f10fba4b13f3be3913d" prot="public" virt="virtual"><scope>OpenRAVE::GraphHandle</scope><name>SetTransform</name></member>
+      <member refid="classOpenRAVE_1_1GraphHandle_1ad09f6fa2b2ca085bb48fdedaec68c2f8" prot="public" virt="virtual"><scope>OpenRAVE::GraphHandle</scope><name>~GraphHandle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

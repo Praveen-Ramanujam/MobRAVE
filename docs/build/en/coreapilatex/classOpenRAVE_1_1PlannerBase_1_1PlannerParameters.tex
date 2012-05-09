@@ -1,0 +1,363 @@
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{
+\subsection{PlannerParameters Class Reference}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+}
+
+
+Describes a common and serializable interface for planning parameters.  
+
+
+
+
+Inheritance diagram for PlannerParameters:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for PlannerParameters:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=380pt]{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::function$<$ dReal(const std::vector$<$ dReal $>$ \&)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aaa75769bb0c706f4de9f59bc2a43f524}{CostFn}
+\begin{DoxyCompactList}\small\item\em Cost function on the state pace (optional). \item\end{DoxyCompactList}\item 
+typedef boost::function$<$ dReal(const std::vector$<$ dReal $>$ \&)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ac6a5c6b1eb0d15f3cd0f69f8d4871df3}{GoalFn}
+\begin{DoxyCompactList}\small\item\em Goal heuristic function.(optional). \item\end{DoxyCompactList}\item 
+typedef boost::function$<$ dReal(const std::vector$<$ dReal $>$ \&, const std::vector$<$ dReal $>$ \&)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a1e96b9c9b49635f5bfd32531e41fb0e8}{DistMetricFn}
+\begin{DoxyCompactList}\small\item\em Distance metric between configuration spaces (optional). \item\end{DoxyCompactList}\item 
+typedef boost::function$<$ bool(const std::vector$<$ dReal $>$ \&, const std::vector$<$ dReal $>$ \&, \hyperlink{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937}{IntervalType}, PlannerBase::ConfigurationListPtr)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aca89abb7137aa4f3aa98065ce10f7f6a}{CheckPathConstraintFn}
+\begin{DoxyCompactList}\small\item\em Checks that all the constraints are satisfied between two configurations. \item\end{DoxyCompactList}\item 
+typedef boost::function$<$ bool(std::vector$<$ dReal $>$ \&)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a1b5ac1fcfcc5e5775ffbbc9c451541fd}{SampleFn}
+\begin{DoxyCompactList}\small\item\em Samples a random configuration (mandatory). \item\end{DoxyCompactList}\item 
+typedef boost::function$<$ bool(std::vector$<$ dReal $>$ \&)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a60329a58cd803c66dc0701e9944d8ed9}{SampleGoalFn}
+\begin{DoxyCompactList}\small\item\em Samples a valid goal configuration (optional). \item\end{DoxyCompactList}\item 
+typedef boost::function$<$ bool(std::vector$<$ dReal $>$ \&)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a8cd1af608ebe03bf544992b322e6f5aa}{SampleInitialFn}
+\begin{DoxyCompactList}\small\item\em Samples a valid initial configuration (optional). \item\end{DoxyCompactList}\item 
+typedef boost::function$<$ bool(std::vector$<$ dReal $>$ \&, const std::vector$<$ dReal $>$ \&, dReal)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a78bb26c318f93bce6e3ea11fc95a99fc}{SampleNeighFn}
+\begin{DoxyCompactList}\small\item\em Returns a random configuration around a neighborhood (optional). \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a8f178813af84b26eb8a12ade9a556482}{
+typedef boost::function$<$ void(const std::vector$<$ dReal $>$ \&)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a8f178813af84b26eb8a12ade9a556482}{SetStateFn}}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a8f178813af84b26eb8a12ade9a556482}
+
+\begin{DoxyCompactList}\small\item\em Sets the state of the robot. Default is active robot joints (mandatory). \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ae2be23760038f12a589f6a8cfb0a5780}{
+typedef boost::function$<$ void(std::vector$<$ dReal $>$ \&)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ae2be23760038f12a589f6a8cfb0a5780}{GetStateFn}}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ae2be23760038f12a589f6a8cfb0a5780}
+
+\begin{DoxyCompactList}\small\item\em Gets the state of the robot. Default is active robot joints (mandatory). \item\end{DoxyCompactList}\item 
+typedef boost::function$<$ void(std::vector$<$ dReal $>$ \&, const std::vector$<$ dReal $>$ \&)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a58f093aece5495e4be24da19e9cb4cc7}{DiffStateFn}
+\begin{DoxyCompactList}\small\item\em Computes the difference of two states. \item\end{DoxyCompactList}\item 
+typedef boost::function$<$ bool(std::vector$<$ dReal $>$ \&, const std::vector$<$ dReal $>$ \&, int)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a602e68d3c6c25efa6539bbd8b5e02c39}{NeighStateFn}
+\begin{DoxyCompactList}\small\item\em Adds a delta state to a curent state, acting like a next-\/nearest-\/neighbor function along a given direction. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters} \& \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a98b727075503cffbc2c40ddfd51a8890}{operator=} (const \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters} \&r)
+\begin{DoxyCompactList}\small\item\em Attemps to copy data from one set of parameters to another in the safest manner. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a209ca0bfbbc31be9ecee12ce308374c4}{
+virtual void \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a209ca0bfbbc31be9ecee12ce308374c4}{SetRobotActiveJoints} (RobotBasePtr robot)}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a209ca0bfbbc31be9ecee12ce308374c4}
+
+\begin{DoxyCompactList}\small\item\em sets up the planner parameters to use the active joints of the robot \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a44fbec2fd26a45cada889c5c0f0751c8}{
+virtual int \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a44fbec2fd26a45cada889c5c0f0751c8}{GetDOF} () const }
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a44fbec2fd26a45cada889c5c0f0751c8}
+
+\begin{DoxyCompactList}\small\item\em Return the degrees of freedom of the planning configuration space. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a24d5a3136b64a22a3385a9680843cbf5}{
+\hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a24d5a3136b64a22a3385a9680843cbf5}{\_\-configurationspecification}}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a24d5a3136b64a22a3385a9680843cbf5}
+
+\begin{DoxyCompactList}\small\item\em the configuration specification in which the planner works in. This specification is passed to the trajecotry creation modules. \item\end{DoxyCompactList}\item 
+std::vector$<$ dReal $>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aad3112dc0481a0b114f1154ee1d743a7}{vinitialconfig}
+\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a0a56912aa3223faae5d69840ef0edd14}{
+std::vector$<$ dReal $>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a0a56912aa3223faae5d69840ef0edd14}{\_\-vConfigLowerLimit}}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a0a56912aa3223faae5d69840ef0edd14}
+
+\begin{DoxyCompactList}\small\item\em the absolute limits of the configuration space. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_acfdac79592a4faa5e57c23b22c7a8954}{
+std::vector$<$ dReal $>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_acfdac79592a4faa5e57c23b22c7a8954}{\_\-vConfigVelocityLimit}}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_acfdac79592a4faa5e57c23b22c7a8954}
+
+\begin{DoxyCompactList}\small\item\em the absolute velocity limits of each DOF of the configuration space. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a647a79190686baca1e50eef9887d0b70}{
+std::vector$<$ dReal $>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a647a79190686baca1e50eef9887d0b70}{\_\-vConfigAccelerationLimit}}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a647a79190686baca1e50eef9887d0b70}
+
+\begin{DoxyCompactList}\small\item\em the absolute acceleration limits of each DOF of the configuration space. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a803fc76d967c3adcf76e737344977d62}{
+std::vector$<$ dReal $>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a803fc76d967c3adcf76e737344977d62}{\_\-vConfigResolution}}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a803fc76d967c3adcf76e737344977d62}
+
+\begin{DoxyCompactList}\small\item\em the discretization resolution of each dimension of the configuration space \item\end{DoxyCompactList}\item 
+dReal \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a377dd1c13871195e977151411e0033bf}{\_\-fStepLength}
+\begin{DoxyCompactList}\small\item\em a discretization between the path that connects two configurations \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a75940963abf9391dca1ec1d48b7a11cc}{
+int \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a75940963abf9391dca1ec1d48b7a11cc}{\_\-nMaxIterations}}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a75940963abf9391dca1ec1d48b7a11cc}
+
+\begin{DoxyCompactList}\small\item\em maximum number of iterations before the planner gives up. If 0 or less, planner chooses best iterations. \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aece70c470f96fbe3cd74ce45ee0145b0}{\_\-sPostProcessingPlanner}
+\begin{DoxyCompactList}\small\item\em Specifies the planner that will perform the post-\/processing path smoothing before returning. \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a0f1a23c0726e36b98edbe514d4962d08}{\_\-sPostProcessingParameters}
+\begin{DoxyCompactList}\small\item\em The serialized planner parameters to pass to the path optimizer. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a05c2cb3cd9524fb2b1883a7639801084}{
+std::string \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a05c2cb3cd9524fb2b1883a7639801084}{\_\-sExtraParameters}}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a05c2cb3cd9524fb2b1883a7639801084}
+
+\begin{DoxyCompactList}\small\item\em Extra parameters data that does not fit within this planner parameters structure, but is still important not to lose all the information. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a2084222cd1b9f555406d306d65680d7b}{
+virtual bool \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a2084222cd1b9f555406d306d65680d7b}{serialize} (std::ostream \&O) const }
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a2084222cd1b9f555406d306d65680d7b}
+
+\begin{DoxyCompactList}\small\item\em output the planner parameters in a string (in XML format) don't use \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters} as a tag! \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+OPENRAVE\_\-API std::ostream \& \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a3a2efece353b49fc6235ec2ded1a7c9f}{operator$<$$<$} (std::ostream \&O, const \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters} \&v)
+\begin{DoxyCompactList}\small\item\em outputs the data and surrounds it with \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API std::istream \& \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ac5b28f01c1ef45850c2fd44be0b12aea}{operator$>$$>$} (std::istream \&I, \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters} \&v)
+\begin{DoxyCompactList}\small\item\em expects \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ab4d8dc52e167678ba742d5e74fa8bbd2}{
+std::stringstream \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ab4d8dc52e167678ba742d5e74fa8bbd2}{\_\-ss}}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ab4d8dc52e167678ba742d5e74fa8bbd2}
+
+\begin{DoxyCompactList}\small\item\em holds the data read by characters \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a6bdbb89d87824ee05004fbd5ecd4994b}{
+std::vector$<$ std::string $>$ \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a6bdbb89d87824ee05004fbd5ecd4994b}{\_\-vXMLParameters}}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a6bdbb89d87824ee05004fbd5ecd4994b}
+
+\begin{DoxyCompactList}\small\item\em all the top-\/level XML parameter tags (lower case) that are handled by this parameter structure, should be registered in the constructor \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Describes a common and serializable interface for planning parameters. The class is serializable to XML, so can be loaded from file or passed around the network. If extra parameters need to be specified, derive from this class and
+\begin{DoxyItemize}
+\item add the extra tags to \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a6bdbb89d87824ee05004fbd5ecd4994b}{PlannerParameters::\_\-vXMLParameters}
+\item override PlannerParameters::startElement and PlannerParameters::endElement for processing
+\item possibly override the PlannerParameters::characters
+\end{DoxyItemize}
+
+Also allows the parameters and descriptions to be serialized to reStructuredText for documentation purposes. \begin{Desc}
+\item[Examples: ]\par
+
+
+\hyperlink{orplanning__planner_8cpp-example}{orplanning\_\-planner.cpp}.
+
+\end{Desc}
+
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aca89abb7137aa4f3aa98065ce10f7f6a}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!CheckPathConstraintFn@{CheckPathConstraintFn}}
+\index{CheckPathConstraintFn@{CheckPathConstraintFn}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{CheckPathConstraintFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$bool (const std::vector$<$dReal$>$\&, const std::vector$<$dReal$>$\&, {\bf IntervalType}, PlannerBase::ConfigurationListPtr)$>$ {\bf CheckPathConstraintFn}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aca89abb7137aa4f3aa98065ce10f7f6a}
+
+
+Checks that all the constraints are satisfied between two configurations. 
+
+The simplest and most fundamental constraint is line-\/collision checking. The robot goes from q0 to q1.
+
+success = \_\-checkpathconstraints(q0,q1,interval,configurations)
+
+When called, q0 is guaranteed to be set on the robot. The function returns true if the path to q1 satisfies all the constraints of the planner. If q0==q1, and interval==IT\_\-OpenStart or IT\_\-OpenEnd, then only one configuration should be checked. It is recommended to use IT\_\-OpenStart. Because this function can internally use neighstatefn, need to make sure that Q0-\/$>$Q1 is going from initial to goal direction.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em q0}]is the configuration the robot is coming from (currently set). \item[{\em q1}]is the configuration the robot should move to. \item[{\em interval}]Specifies whether to check the end points of the interval for constraints \item[{\em configurations}]Optional argument that will hold the intermediate configuraitons checked between q0 and q1 configurations. The appended configurations will be all valid and in free space. They are appended after the items already stored on the list. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aaa75769bb0c706f4de9f59bc2a43f524}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!CostFn@{CostFn}}
+\index{CostFn@{CostFn}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{CostFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$dReal(const std::vector$<$dReal$>$\&)$>$ {\bf CostFn}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aaa75769bb0c706f4de9f59bc2a43f524}
+
+
+Cost function on the state pace (optional). 
+
+cost = \_\-costfn(config) 
+\begin{DoxyParams}{Parameters}
+\item[{\em cost}]the cost of being in the current state \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a58f093aece5495e4be24da19e9cb4cc7}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!DiffStateFn@{DiffStateFn}}
+\index{DiffStateFn@{DiffStateFn}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{DiffStateFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$void (std::vector$<$dReal$>$\&,const std::vector$<$dReal$>$\&)$>$ {\bf DiffStateFn}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a58f093aece5495e4be24da19e9cb4cc7}
+
+
+Computes the difference of two states. 
+
+\_\-diffstatefn(q1,q2) -\/$>$ q1 -\/= q2
+
+An explicit difference function is necessary for correct interpolation when there are circular joints. Default is regular subtraction. \hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a1e96b9c9b49635f5bfd32531e41fb0e8}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!DistMetricFn@{DistMetricFn}}
+\index{DistMetricFn@{DistMetricFn}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{DistMetricFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$dReal(const std::vector$<$dReal$>$\&, const std::vector$<$dReal$>$\&)$>$ {\bf DistMetricFn}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a1e96b9c9b49635f5bfd32531e41fb0e8}
+
+
+Distance metric between configuration spaces (optional). 
+
+distmetric(config1,config2)
+
+Two configurations are considered the same when function returns 0. \hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ac6a5c6b1eb0d15f3cd0f69f8d4871df3}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!GoalFn@{GoalFn}}
+\index{GoalFn@{GoalFn}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{GoalFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$dReal(const std::vector$<$dReal$>$\&)$>$ {\bf GoalFn}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ac6a5c6b1eb0d15f3cd0f69f8d4871df3}
+
+
+Goal heuristic function.(optional). 
+
+distance = \_\-goalfn(config)
+
+Goal is complete when returns 0 
+\begin{DoxyParams}{Parameters}
+\item[{\em distance}]-\/ distance to closest goal \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a602e68d3c6c25efa6539bbd8b5e02c39}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!NeighStateFn@{NeighStateFn}}
+\index{NeighStateFn@{NeighStateFn}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{NeighStateFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$bool (std::vector$<$dReal$>$\&,const std::vector$<$dReal$>$\&, int)$>$ {\bf NeighStateFn}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a602e68d3c6c25efa6539bbd8b5e02c39}
+
+
+Adds a delta state to a curent state, acting like a next-\/nearest-\/neighbor function along a given direction. 
+
+success = \_\-neighstatefn(q,qdelta,fromgoal) -\/$>$ q = Filter(q+qdelta) 
+\begin{DoxyParams}{Parameters}
+\item[{\em q}]the current state \item[{\em qdelta}]the delta to add \item[{\em fromgoal}]1 if q is coming from a goal state, 0 if it is coming from an initial state\end{DoxyParams}
+In RRTs this is used for the extension operation. The new state is stored in the first parameter q. Note that the function can also add a filter to the final destination (like projecting onto a constraint manifold). \hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a1b5ac1fcfcc5e5775ffbbc9c451541fd}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!SampleFn@{SampleFn}}
+\index{SampleFn@{SampleFn}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{SampleFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$bool (std::vector$<$dReal$>$\&)$>$ {\bf SampleFn}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a1b5ac1fcfcc5e5775ffbbc9c451541fd}
+
+
+Samples a random configuration (mandatory). 
+
+The dimension of the returned sample is the dimension of the configuration space. success = samplefn(newsample) \hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a60329a58cd803c66dc0701e9944d8ed9}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!SampleGoalFn@{SampleGoalFn}}
+\index{SampleGoalFn@{SampleGoalFn}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{SampleGoalFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$bool (std::vector$<$dReal$>$\&)$>$ {\bf SampleGoalFn}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a60329a58cd803c66dc0701e9944d8ed9}
+
+
+Samples a valid goal configuration (optional). 
+
+If valid, the function should be called at every iteration. Any type of sampling probabilities and conditions can be encoded inside the function. The dimension of the returned sample is the dimension of the configuration space. success = samplegoalfn(newsample) \hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a8cd1af608ebe03bf544992b322e6f5aa}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!SampleInitialFn@{SampleInitialFn}}
+\index{SampleInitialFn@{SampleInitialFn}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{SampleInitialFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$bool (std::vector$<$dReal$>$\&)$>$ {\bf SampleInitialFn}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a8cd1af608ebe03bf544992b322e6f5aa}
+
+
+Samples a valid initial configuration (optional). 
+
+If valid, the function should be called at every iteration. Any type of sampling probabilities and conditions can be encoded inside the function. The dimension of the returned sample is the dimension of the configuration space. success = sampleinitialfn(newsample) \hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a78bb26c318f93bce6e3ea11fc95a99fc}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!SampleNeighFn@{SampleNeighFn}}
+\index{SampleNeighFn@{SampleNeighFn}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{SampleNeighFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$bool (std::vector$<$dReal$>$\&, const std::vector$<$dReal$>$\&, dReal)$>$ {\bf SampleNeighFn}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a78bb26c318f93bce6e3ea11fc95a99fc}
+
+
+Returns a random configuration around a neighborhood (optional). 
+
+\_\-sampleneighfn(newsample,pCurSample,fRadius)
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pCurSample}]-\/ the neighborhood to sample around \item[{\em fRadius}]-\/ specifies the max distance of sampling. The higher the value, the farther the samples will go The distance metric can be arbitrary, but is usually PlannerParameters::pdistmetric. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if sample was successfully generated return true, otherwise false 
+\end{DoxyReturn}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a98b727075503cffbc2c40ddfd51a8890}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!operator=@{operator=}}
+\index{operator=@{operator=}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf PlannerParameters}\& operator= (const {\bf PlannerParameters} \& {\em r})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a98b727075503cffbc2c40ddfd51a8890}
+
+
+Attemps to copy data from one set of parameters to another in the safest manner. 
+
+First serializes the data of the right hand into a string, then initializes the current parameters via $>$$>$ pointers to functions are copied directly 
+
+\subsubsection{Friends And Related Function Documentation}
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a3a2efece353b49fc6235ec2ded1a7c9f}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API std::ostream\& operator$<$$<$ (std::ostream \& {\em O}, \/  const {\bf PlannerParameters} \& {\em v})\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a3a2efece353b49fc6235ec2ded1a7c9f}
+
+
+outputs the data and surrounds it with 
+
+\begin{DoxyVerb}<PlannerParameters> \end{DoxyVerb}
+ tags \hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ac5b28f01c1ef45850c2fd44be0b12aea}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API std::istream\& operator$>$$>$ (std::istream \& {\em I}, \/  {\bf PlannerParameters} \& {\em v})\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_ac5b28f01c1ef45850c2fd44be0b12aea}
+
+
+expects 
+
+\begin{DoxyVerb}<PlannerParameters> \end{DoxyVerb}
+ to be the first token. Parses stream until \begin{DoxyVerb}</PlannerParameters> \end{DoxyVerb}
+ reached 
+
+\subsubsection{Member Data Documentation}
+\hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a377dd1c13871195e977151411e0033bf}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!\_\-fStepLength@{\_\-fStepLength}}
+\index{\_\-fStepLength@{\_\-fStepLength}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{\_\-fStepLength}]{\setlength{\rightskip}{0pt plus 5cm}dReal {\bf \_\-fStepLength}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a377dd1c13871195e977151411e0033bf}
+
+
+a discretization between the path that connects two configurations 
+
+This length represents how dense the samples get distributed across the configuration space. It represents the maximum distance between neighbors when adding new configuraitons. If 0 or less, planner chooses best step length. \hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a0f1a23c0726e36b98edbe514d4962d08}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!\_\-sPostProcessingParameters@{\_\-sPostProcessingParameters}}
+\index{\_\-sPostProcessingParameters@{\_\-sPostProcessingParameters}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{\_\-sPostProcessingParameters}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf \_\-sPostProcessingParameters}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a0f1a23c0726e36b98edbe514d4962d08}
+
+
+The serialized planner parameters to pass to the path optimizer. 
+
+For example: std::stringstream(\_\-sPostProcessingParameters) $>$$>$ \_\-parameters; \hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aece70c470f96fbe3cd74ce45ee0145b0}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!\_\-sPostProcessingPlanner@{\_\-sPostProcessingPlanner}}
+\index{\_\-sPostProcessingPlanner@{\_\-sPostProcessingPlanner}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{\_\-sPostProcessingPlanner}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf \_\-sPostProcessingPlanner}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aece70c470f96fbe3cd74ce45ee0145b0}
+
+
+Specifies the planner that will perform the post-\/processing path smoothing before returning. 
+
+If empty, will not path smooth the returned trajectories (used to measure algorithm time) \hypertarget{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aad3112dc0481a0b114f1154ee1d743a7}{
+\index{OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}!vinitialconfig@{vinitialconfig}}
+\index{vinitialconfig@{vinitialconfig}!OpenRAVE::PlannerBase::PlannerParameters@{OpenRAVE::PlannerBase::PlannerParameters}}
+\paragraph[{vinitialconfig}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$dReal$>$ {\bf vinitialconfig}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_aad3112dc0481a0b114f1154ee1d743a7}
+to specify multiple initial or goal configurations, put them into the vector in series (note: not all planners support multiple goals) 

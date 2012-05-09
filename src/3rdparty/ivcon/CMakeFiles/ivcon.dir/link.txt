@@ -1,0 +1,2 @@
+/usr/bin/ar cr libivcon.a  CMakeFiles/ivcon.dir/ivcon.cpp.o
+/usr/bin/ranlib libivcon.a

@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classCustomController" kind="class" prot="public">
+    <compoundname>CustomController</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1ControllerBase" prot="public" virt="non-virtual">ControllerBase</basecompoundref>
+    <innerclass refid="classCustomController_1_1PIDXMLReader" prot="public">CustomController::PIDXMLReader</innerclass>
+    <innerclass refid="classCustomController_1_1XMLData" prot="public">CustomController::XMLData</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCustomController_1a96b8c6244de5c544065e0611b566cb84" prot="protected" static="no" mutable="no">
+        <type>RobotBasePtr</type>
+        <definition>RobotBasePtr _probot</definition>
+        <argsstring></argsstring>
+        <name>_probot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="137" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCustomController_1a2f9e8f5dab3e9126375a9e479d087224" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; _dofindices</definition>
+        <argsstring></argsstring>
+        <name>_dofindices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="138" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCustomController_1a1e82d77ea3eec0ff00ec78f1e825bad5" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _nControlTransformation</definition>
+        <argsstring></argsstring>
+        <name>_nControlTransformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="139" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCustomController_1a0d2fa65f6bac8e7680204629c5c0a9f5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BaseXMLReaderPtr</type>
+        <definition>static BaseXMLReaderPtr CreateXMLReader</definition>
+        <argsstring>(InterfaceBasePtr ptr, const AttributesList &amp;atts)</argsstring>
+        <name>CreateXMLReader</name>
+        <param>
+          <type>InterfaceBasePtr</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1a7372895c7fd9541aa829987c3eb9aaf9" kindref="member">AttributesList</ref> &amp;</type>
+          <declname>atts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="74" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="73" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCustomController_1a9678a5ee0a6d56aa8b830050996f5aa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CustomController</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>CustomController</name>
+        <param>
+          <type>EnvironmentBasePtr</type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="80" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1af1d119cf4241b5f73f066bcee947502f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~CustomController</definition>
+        <argsstring>()</argsstring>
+        <name>~CustomController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="82" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="82" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1ad5666862ecbce5aee42019ec18687268" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Init</definition>
+        <argsstring>(RobotBasePtr robot, const std::vector&lt; int &gt; &amp;dofindices, int nControlTransformation)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>RobotBasePtr</type>
+          <declname>robot</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>dofindices</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nControlTransformation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="86" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="85" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1ac832f4b57548e744cabdaae217278bcb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::vector&lt; int &gt; &amp;</type>
+        <definition>virtual const std::vector&lt;int&gt;&amp; GetControlDOFIndices</definition>
+        <argsstring>() const </argsstring>
+        <name>GetControlDOFIndices</name>
+        <reimplements refid="classOpenRAVE_1_1ControllerBase_1a4dad85cda4f74030d3d50e0ae37f7d68">GetControlDOFIndices</reimplements>
+        <briefdescription>
+<para>returns the dof indices controlled </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="109" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1a6c462684c3045b5750621c92b0da6caa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int IsControlTransformation</definition>
+        <argsstring>() const </argsstring>
+        <name>IsControlTransformation</name>
+        <reimplements refid="classOpenRAVE_1_1ControllerBase_1af577c7692eed532e6ed26db3dca5ef47">IsControlTransformation</reimplements>
+        <briefdescription>
+<para>returns non-zero value if base affine transformation is controlled. </para>        </briefdescription>
+        <detaileddescription>
+<para>Only one controller can modify translation and orientation per robot. For now, the two cannot be divided. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="112" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1a9989f0173dfbf913acbb058988e73afa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Reset</definition>
+        <argsstring>(int options)</argsstring>
+        <name>Reset</name>
+        <reimplements refid="classOpenRAVE_1_1ControllerBase_1aa495f583f5f0b3b3c412f730fdf8d715">Reset</reimplements>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+<para>Resets the current controller trajectories and any other state associated with the robot. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- specific options that can be used to control what to reset </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="116" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="116" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1af1af273cd9e5e2acfbc7be600a9b6ca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SetDesired</definition>
+        <argsstring>(const std::vector&lt; dReal &gt; &amp;values, TransformConstPtr trans)</argsstring>
+        <name>SetDesired</name>
+        <param>
+          <type>const std::vector&lt; dReal &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>TransformConstPtr</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="118" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1af1e3ef64d2cae76132b269abc057af31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SetPath</definition>
+        <argsstring>(TrajectoryBaseConstPtr ptraj)</argsstring>
+        <name>SetPath</name>
+        <param>
+          <type>TrajectoryBaseConstPtr</type>
+          <declname>ptraj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="121" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1a8e0171e39bae4dfe1590c0c844cf2b6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SimulationStep</definition>
+        <argsstring>(dReal fTimeElapsed)</argsstring>
+        <name>SimulationStep</name>
+        <param>
+          <type>dReal</type>
+          <declname>fTimeElapsed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="124" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="124" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1a223430ff4833c832a9689262eeb6a509" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool IsDone</definition>
+        <argsstring>()</argsstring>
+        <name>IsDone</name>
+        <reimplements refid="classOpenRAVE_1_1ControllerBase_1a2a9a4df35568126aca5e305ca35d1d31">IsDone</reimplements>
+        <briefdescription>
+<para>Return true when goal reached. </para>        </briefdescription>
+        <detaileddescription>
+<para>If a trajectory was set, return only when trajectory is done. If SetDesired was called, return only when robot is is at the desired location. If SendCommand sent, returns true when the command was completed by the hand. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="126" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1aeeadca62100efc2104208ddac5603bef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>dReal</type>
+        <definition>virtual dReal GetTime</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTime</name>
+        <reimplements refid="classOpenRAVE_1_1ControllerBase_1a80ec605da12db741e7c3e518af07e6d5">GetTime</reimplements>
+        <briefdescription>
+<para>return the time along the current command </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="129" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="129" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1a8d4e8b42f55281a47dd90d525f19e9c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>RobotBasePtr</type>
+        <definition>virtual RobotBasePtr GetRobot</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRobot</name>
+        <reimplements refid="classOpenRAVE_1_1ControllerBase_1a096f5c8d99a8100089ee11b7fc8bda3f">GetRobot</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="132" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="132" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1089">
+        <label>ControllerBase</label>
+        <link refid="classOpenRAVE_1_1ControllerBase"/>
+        <childnode refid="1090" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1090">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+      </node>
+      <node id="1088">
+        <label>CustomController</label>
+        <link refid="classCustomController"/>
+        <childnode refid="1089" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1092">
+        <label>ControllerBase</label>
+        <link refid="classOpenRAVE_1_1ControllerBase"/>
+        <childnode refid="1093" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>string</label>
+        <childnode refid="1095" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1096">
+        <label>map&lt; std::string, boost::shared_ptr&lt; InterfaceCommand &gt;, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1094" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1098">
+        <label>vector&lt; int &gt;</label>
+      </node>
+      <node id="1097">
+        <label>map&lt; std::string, XMLReadablePtr, CaseInsensitiveCompare &gt;</label>
+        <childnode refid="1094" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1093">
+        <label>InterfaceBase</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase"/>
+        <childnode refid="1094" relation="usage">
+          <edgelabel>__strpluginname</edgelabel>
+          <edgelabel>__struri</edgelabel>
+          <edgelabel>__strxmlid</edgelabel>
+          <edgelabel>__description</edgelabel>
+        </childnode>
+        <childnode refid="1096" relation="usage">
+          <edgelabel>__mapCommands</edgelabel>
+        </childnode>
+        <childnode refid="1097" relation="usage">
+          <edgelabel>__mapReadableInterfaces</edgelabel>
+        </childnode>
+      </node>
+      <node id="1091">
+        <label>CustomController</label>
+        <link refid="classCustomController"/>
+        <childnode refid="1092" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1098" relation="usage">
+          <edgelabel>_dofindices</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="15" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="14" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a22f4da10ed5f1c80a18f2bcd96776c1a" prot="protected" virt="non-virtual"><scope>CustomController</scope><name>__description</name></member>
+      <member refid="classCustomController_1a2f9e8f5dab3e9126375a9e479d087224" prot="protected" virt="non-virtual"><scope>CustomController</scope><name>_dofindices</name></member>
+      <member refid="classCustomController_1a1e82d77ea3eec0ff00ec78f1e825bad5" prot="protected" virt="non-virtual"><scope>CustomController</scope><name>_nControlTransformation</name></member>
+      <member refid="classCustomController_1a96b8c6244de5c544065e0611b566cb84" prot="protected" virt="non-virtual"><scope>CustomController</scope><name>_probot</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aadffdb83bc22dcdd5dd50c27d1bb5496" prot="public" virt="virtual"><scope>CustomController</scope><name>Clone</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1af051c65cd5e6c845eba3c83a22ca0116" prot="public" virt="non-virtual"><scope>CustomController</scope><name>ControllerBase</name></member>
+      <member refid="classCustomController_1a0d2fa65f6bac8e7680204629c5c0a9f5" prot="public" virt="non-virtual"><scope>CustomController</scope><name>CreateXMLReader</name></member>
+      <member refid="classCustomController_1a9678a5ee0a6d56aa8b830050996f5aa3" prot="public" virt="non-virtual"><scope>CustomController</scope><name>CustomController</name></member>
+      <member refid="classCustomController_1ac832f4b57548e744cabdaae217278bcb" prot="public" virt="virtual"><scope>CustomController</scope><name>GetControlDOFIndices</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1b571821be060055bf6f2474e12fa5a3" prot="public" virt="virtual"><scope>CustomController</scope><name>GetDescription</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a847c7f827694fd3db16f20b5669e1743" prot="public" virt="non-virtual"><scope>CustomController</scope><name>GetEnv</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab6da1a274144d2dae86c4414fdc00c8a" prot="public" virt="non-virtual"><scope>CustomController</scope><name>GetInterfaceType</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1affeafe65e7c4094f282d273dedbf069b" prot="public" virt="non-virtual"><scope>CustomController</scope><name>GetInterfaceTypeStatic</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a909d5f1a5ae6d3fbb73b69c26b3e6bb4" prot="public" virt="non-virtual"><scope>CustomController</scope><name>GetPluginName</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a948f97af111d83fad6ff054f88aaa214" prot="public" virt="non-virtual"><scope>CustomController</scope><name>GetReadableInterface</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a843c0a1f79a31b230bb85f265f97be6c" prot="public" virt="non-virtual"><scope>CustomController</scope><name>GetReadableInterfaces</name></member>
+      <member refid="classCustomController_1a8d4e8b42f55281a47dd90d525f19e9c4" prot="public" virt="virtual"><scope>CustomController</scope><name>GetRobot</name></member>
+      <member refid="classCustomController_1aeeadca62100efc2104208ddac5603bef" prot="public" virt="virtual"><scope>CustomController</scope><name>GetTime</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1a5850b39ddc68841ef2961c2eb7bf7b8f" prot="public" virt="virtual"><scope>CustomController</scope><name>GetTorque</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a155ad446997ca5823937f9c171c17021" prot="public" virt="virtual"><scope>CustomController</scope><name>GetURI</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a975ebca32c743c8530807758e7c46618" prot="public" virt="virtual"><scope>CustomController</scope><name>GetUserData</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1aa7df84105fae386c84139ce5c5b7f1f1" prot="public" virt="virtual"><scope>CustomController</scope><name>GetVelocity</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1adebf2ecc7ec47f5d27229457e84cab87" prot="public" virt="virtual"><scope>CustomController</scope><name>GetXMLFilename</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a23e085422cc13cf058b9f9558a7d9de6" prot="public" virt="non-virtual"><scope>CustomController</scope><name>GetXMLId</name></member>
+      <member refid="classCustomController_1ad5666862ecbce5aee42019ec18687268" prot="public" virt="virtual"><scope>CustomController</scope><name>Init</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1ae61f45e499ec45a2b70ae3a1af53101b" prot="public" virt="virtual" ambiguityscope="OpenRAVE::ControllerBase::"><scope>CustomController</scope><name>Init</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1a27ba60fa2a3a9f63a64b127369482d9a" prot="public" virt="pure-virtual" ambiguityscope="OpenRAVE::ControllerBase::"><scope>CustomController</scope><name>Init</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1505a042027909cb3c715713812d554f" prot="public" virt="non-virtual"><scope>CustomController</scope><name>InterfaceBase</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" prot="protected" virt="non-virtual"><scope>CustomController</scope><name>InterfaceCommandFn</name></member>
+      <member refid="classCustomController_1a6c462684c3045b5750621c92b0da6caa" prot="public" virt="virtual"><scope>CustomController</scope><name>IsControlTransformation</name></member>
+      <member refid="classCustomController_1a223430ff4833c832a9689262eeb6a509" prot="public" virt="virtual"><scope>CustomController</scope><name>IsDone</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a14a2c1d323f2f411a9b9eb1e14b99aca" prot="public" virt="non-virtual"><scope>CustomController</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a840776899a1d3677582fc6ef87be6ef2" prot="protected" virt="virtual"><scope>CustomController</scope><name>RegisterCommand</name></member>
+      <member refid="classCustomController_1a9989f0173dfbf913acbb058988e73afa" prot="public" virt="virtual"><scope>CustomController</scope><name>Reset</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1293cda647f18fe751e66b910af52407" prot="public" virt="virtual"><scope>CustomController</scope><name>SendCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a9d548988a71fd50f890acdec255bdc17" prot="public" virt="virtual"><scope>CustomController</scope><name>SetDescription</name></member>
+      <member refid="classCustomController_1af1af273cd9e5e2acfbc7be600a9b6ca7" prot="public" virt="virtual"><scope>CustomController</scope><name>SetDesired</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1accd34e8fe0dfb473777ab4668bf7a5d9" prot="public" virt="pure-virtual" ambiguityscope="OpenRAVE::ControllerBase::"><scope>CustomController</scope><name>SetDesired</name></member>
+      <member refid="classCustomController_1af1e3ef64d2cae76132b269abc057af31" prot="public" virt="virtual"><scope>CustomController</scope><name>SetPath</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1aaab0e601177272e3bedb63f0ff5ebf32" prot="public" virt="pure-virtual" ambiguityscope="OpenRAVE::ControllerBase::"><scope>CustomController</scope><name>SetPath</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1ab3a2d5e41d756988959d9f5cdccfe284" prot="public" virt="virtual"><scope>CustomController</scope><name>SetUserData</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1aba2de87983f5e6ad881df19cc6198018" prot="public" virt="virtual"><scope>CustomController</scope><name>SetUserData</name></member>
+      <member refid="classCustomController_1a8e0171e39bae4dfe1590c0c844cf2b6c" prot="public" virt="virtual"><scope>CustomController</scope><name>SimulationStep</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1a43163cebf021667f69b0c6b2d357c2fa" prot="public" virt="pure-virtual" ambiguityscope="OpenRAVE::ControllerBase::"><scope>CustomController</scope><name>SimulationStep</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a1a70446e03a29c6c9a5650886027cd2e" prot="protected" virt="virtual"><scope>CustomController</scope><name>UnregisterCommand</name></member>
+      <member refid="classOpenRAVE_1_1ControllerBase_1aa248527e7bc5f73db1fddfd87673d65d" prot="public" virt="virtual"><scope>CustomController</scope><name>~ControllerBase</name></member>
+      <member refid="classCustomController_1af1d119cf4241b5f73f066bcee947502f" prot="public" virt="virtual"><scope>CustomController</scope><name>~CustomController</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1a90ab55ffa15c68875747d2ac2458b8e1" prot="public" virt="virtual"><scope>CustomController</scope><name>~InterfaceBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

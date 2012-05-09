@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="dir_5c78347d7c9c217df46aae0a309e4868" kind="dir">
+    <compoundname>src/libopenrave-core/</compoundname>
+    <innerfile refid="openrave-core_8h">openrave-core.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/src/libopenrave-core/"/>
+  </compounddef>
+</doxygen>

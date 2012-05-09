@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="arch__spacesampler" kind="page">
+    <compoundname>arch_spacesampler</compoundname>
+    <title>SpaceSampler Concepts</title>
+    <detaileddescription>
+<para><bold>Reference:</bold> <ref refid="classOpenRAVE_1_1SpaceSamplerBase" kindref="compound">OpenRAVE::SpaceSamplerBase</ref></para><para>Space samplers are responsible for generating samples in spaces like R^n, SO(3), SE(3), etc. The samples can be randomized or deterministic.</para><para>Each sampler can support returning the values in a floating-point precision or unsigned integer format. There are sampling calls for each version. The samplers could choose to implement only one of the types of both, this should be clear in the Supports function.</para><para>Each sampler has a state and can be configured with different dimensions and seeds. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="installation__macosx" kind="page">
+    <compoundname>installation_macosx</compoundname>
+    <title>Mac OSXユーザーのためのインストール方法</title>
+    <detaileddescription>
+<para>はじめに以下のコマンドを実行してください．</para><para><verbatim>
+sudo port install cmake boost libxml2 glew py26-numpy py26-pyplusplus
+</verbatim></para><para>以下のライブラリのインストールが必要です．</para><para><itemizedlist>
+<listitem><para><ulink url="http://trolltech.com/developer/downloads/qt/mac">Qt</ulink> - インストーラーをダウンロードしてください．以下のコマンドを使用することもできますが，１〜２時間かかるかもしれません． <verbatim>
+port install qt4-mac
+</verbatim></para></listitem><listitem><para><ulink url="http://www.coin3d.org/lib/coin">Coin3D</ulink> - インストーラーをダウンロードしてください．</para></listitem><listitem><para><ulink url="http://www.coin3d.org/lib/soqt">SoQt</ulink> - <ulink url="http://ftp.coin3d.org/coin/src/snapshots/SoQt-latest.tar.gz">ここ</ulink>から最新版のソースファイルをダウンロードしてください．QTDIRを正しいディレクトリに設定するように言われるかもしれません．</para></listitem><listitem><para>ffmpeg と 他のビデオ録画用のコーデック</para></listitem></itemizedlist>
+</para><para>この後は．<ref refid="installation__linux" kindref="compound">Linuxユーザーのためのインストール方法</ref>に従ってください． </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

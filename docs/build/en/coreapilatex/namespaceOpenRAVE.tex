@@ -1,0 +1,1318 @@
+\hypertarget{namespaceOpenRAVE}{
+\subsection{OpenRAVE Namespace Reference}
+\label{namespaceOpenRAVE}\index{OpenRAVE@{OpenRAVE}}
+}
+
+
+The entire OpenRAVE library.  
+
+
+\subsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespaceOpenRAVE_1_1geometry}{geometry}
+
+
+\begin{DoxyCompactList}\small\item\em Templated math and geometric functions. \item\end{DoxyCompactList}
+
+\item 
+namespace \hyperlink{namespaceOpenRAVE_1_1mathextra}{mathextra}
+
+
+\begin{DoxyCompactList}\small\item\em Extra math routines that are useful to have but don't really belong anywhere. \item\end{DoxyCompactList}
+
+\end{DoxyCompactItemize}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1CollisionReport}{CollisionReport}
+\begin{DoxyCompactList}\small\item\em Holds information about a particular collision that occured. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1CollisionCheckerBase}{CollisionCheckerBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} Responsible for all collision checking queries of the environment. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__collisionchecker}{Collision Checker Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1CollisionOptionsStateSaver}{CollisionOptionsStateSaver}
+\begin{DoxyCompactList}\small\item\em Helper class to save and restore the collision options. If options are not supported and required is true, throws an exception. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1ControllerBase}{ControllerBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} Abstract base class to encapsulate a local controller. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__controller}{Controller Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1MultiController}{MultiController}
+\begin{DoxyCompactList}\small\item\em controller that manage multiple controllers, allows users to easily set multiple controllers for one robot. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1EnvironmentBase}{EnvironmentBase}
+\begin{DoxyCompactList}\small\item\em Maintains a world state, which serves as the gateway to all functions offered through OpenRAVE. See \hyperlink{architecture__concepts_arch_environment}{Environment Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1IkSolverBase}{IkSolverBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} Base class for all Inverse Kinematic solvers. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__iksolver}{Inverse Kinematics Solver Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1InterfaceBase}{InterfaceBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} Base class for all interfaces that \hyperlink{namespaceOpenRAVE}{OpenRAVE} provides. See \hyperlink{interface__concepts}{Base Interface Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1KinBody}{KinBody}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} A kinematic body of links and joints. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__kinbody}{Kinematics Body Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1ModuleBase}{ModuleBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} A loadable module of user code meant to solve a specific domain. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__module}{Module Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}
+\begin{DoxyCompactList}\small\item\em Exception that all \hyperlink{namespaceOpenRAVE}{OpenRAVE} internal methods throw; the error codes are held in \hyperlink{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262c}{OpenRAVEErrorCode}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1UserData}{UserData}
+\begin{DoxyCompactList}\small\item\em base class for all user data \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1XMLReadable}{XMLReadable}
+\begin{DoxyCompactList}\small\item\em base class for readable interfaces \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1BaseXMLReader}{BaseXMLReader}
+\item 
+class \hyperlink{classOpenRAVE_1_1DummyXMLReader}{DummyXMLReader}
+\begin{DoxyCompactList}\small\item\em reads until the tag ends \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification}
+\begin{DoxyCompactList}\small\item\em A configuration specification references values in the environment that then define a configuration-\/space which can be searched for. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1IkParameterization}{IkParameterization}
+\begin{DoxyCompactList}\small\item\em Parameterization of basic primitives for querying inverse-\/kinematics solutions. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1PhysicsEngineBase}{PhysicsEngineBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} The physics engine interfaces supporting simulations and dynamics. See \hyperlink{arch__physicsengine}{Physics Engine Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1PlannerBase}{PlannerBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} Planner interface that generates trajectories for target objects to follow through the environment. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__planner}{Planner Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1PLUGININFO}{PLUGININFO}
+\begin{DoxyCompactList}\small\item\em Holds all the OpenRAVE-\/specific information provided by a plugin. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1RobotBase}{RobotBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} A robot is a kinematic body that has attached manipulators, sensors, and controllers. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__robot}{Robot Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1SensorBase}{SensorBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} A sensor measures physical properties from the environment. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__sensor}{Sensor Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1SensorSystemBase}{SensorSystemBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} Used to manage the creation and destruction of bodies. See \hyperlink{arch__sensorsystem}{Sensor System Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1SimpleSensorSystem}{SimpleSensorSystem}
+\begin{DoxyCompactList}\small\item\em A very simple sensor system example that manages raw detection data. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1SpaceSamplerBase}{SpaceSamplerBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} Contains space samplers commonly used in planners. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__spacesampler}{SpaceSampler Concepts}. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1TrajectoryBase}{TrajectoryBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} Encapsulate a time-\/parameterized trajectories of robot configurations. {\bfseries If not specified, method is not multi-\/thread safe.} \href{../main/architecture/trajectory.html}{\tt Trajectory Concepts} \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1GraphHandle}{GraphHandle}
+\begin{DoxyCompactList}\small\item\em Handle holding the plot from the viewers. The plot will continue to be drawn as long as a reference to this handle is held. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1ViewerBase}{ViewerBase}
+\begin{DoxyCompactList}\small\item\em {\bfseries \mbox{[}interface\mbox{]}} Base class for the graphics and gui engine that renders the environment and provides visual sensor information. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__viewer}{Viewer Concepts}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classOpenRAVE_1_1CollisionReport}{CollisionReport} COLLISIONREPORT \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+\hypertarget{namespaceOpenRAVE_a07792c5083a23c50672e928bd20a026f}{
+typedef boost::weak\_\-ptr$<$ \hyperlink{classOpenRAVE_1_1EnvironmentBase}{EnvironmentBase} $>$ \hyperlink{namespaceOpenRAVE_a07792c5083a23c50672e928bd20a026f}{EnvironmentBaseWeakPtr}}
+\label{namespaceOpenRAVE_a07792c5083a23c50672e928bd20a026f}
+
+\begin{DoxyCompactList}\small\item\em Cloning Options for interfaces and environments. \item\end{DoxyCompactList}\item 
+\hypertarget{group__plugin__exports_ga6ae2f1554f547f27e4a5399d8aef7377}{
+typedef InterfaceBasePtr($\ast$ \hyperlink{group__plugin__exports_ga6ae2f1554f547f27e4a5399d8aef7377}{PluginExportFn\_\-OpenRAVECreateInterface} )(InterfaceType type, const std::string \&name, const char $\ast$pluginhash, const char $\ast$envhash, EnvironmentBasePtr penv)}
+\label{group__plugin__exports_ga6ae2f1554f547f27e4a5399d8aef7377}
+
+\begin{DoxyCompactList}\small\item\em Create the interfaces, see \hyperlink{group__plugin__exports_ga468c900067e08689383b3f8da642141f}{CreateInterfaceValidated}. \item\end{DoxyCompactList}\item 
+\hypertarget{group__plugin__exports_ga7cb4e2769bee1dca182b4432a900bc70}{
+typedef bool($\ast$ \hyperlink{group__plugin__exports_ga7cb4e2769bee1dca182b4432a900bc70}{PluginExportFn\_\-OpenRAVEGetPluginAttributes} )(\hyperlink{classOpenRAVE_1_1PLUGININFO}{PLUGININFO} $\ast$pinfo, int size, const char $\ast$infohash)}
+\label{group__plugin__exports_ga7cb4e2769bee1dca182b4432a900bc70}
+
+\begin{DoxyCompactList}\small\item\em Called to fill information about the plugin, see \hyperlink{group__plugin__exports_gaf90c03438b94cc76e7b8a54d445ec106}{GetPluginAttributesValidated}. \item\end{DoxyCompactList}\item 
+\hypertarget{group__plugin__exports_ga7164d2e9a268c6e44a296e9488df69cd}{
+typedef void($\ast$ \hyperlink{group__plugin__exports_ga7164d2e9a268c6e44a296e9488df69cd}{PluginExportFn\_\-DestroyPlugin} )()}
+\label{group__plugin__exports_ga7164d2e9a268c6e44a296e9488df69cd}
+
+\begin{DoxyCompactList}\small\item\em Called before plugin is unloaded from openrave. See \hyperlink{group__plugin__exports_gad6773d91dae37d0ba9de59d2a05277e4}{DestroyPlugin}. \item\end{DoxyCompactList}\item 
+typedef InterfaceBasePtr($\ast$ \hyperlink{namespaceOpenRAVE_afd22dd103475de7006afbd1511a60ac4}{PluginExportFn\_\-CreateInterface} )(InterfaceType type, const std::string \&name, const char $\ast$pluginhash, EnvironmentBasePtr penv)
+\item 
+typedef bool($\ast$ \hyperlink{namespaceOpenRAVE_a79dd40a56ad2aaee2fbb678a709e2572}{PluginExportFn\_\-GetPluginAttributes} )(\hyperlink{classOpenRAVE_1_1PLUGININFO}{PLUGININFO} $\ast$pinfo, int size)
+\end{DoxyCompactItemize}
+\subsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77}{CollisionOptions} \{ \par
+\hyperlink{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77aa5d8d85bd05b340ada98305788f161d4}{CO\_\-Distance} =  1, 
+\hyperlink{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77add08e96e785c0ad01b5687ffc50a095d}{CO\_\-UseTolerance} =  2, 
+\hyperlink{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77a9bc2191e9e7b6bfc5fa1807812c45c6c}{CO\_\-Contacts} =  4, 
+\hyperlink{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77a7572c8fd23c74ad1aa04e18eb36808b6}{CO\_\-RayAnyHit} =  8, 
+\par
+\hyperlink{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77a95a75683a1fcadcd3de27e6465d74552}{CO\_\-ActiveDOFs} =  16
+ \}
+\begin{DoxyCompactList}\small\item\em options for collision checker \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespaceOpenRAVE_aec38ff628d76ac03cb4ac5d8f5cf3664}{CollisionAction} \{ \hyperlink{namespaceOpenRAVE_aec38ff628d76ac03cb4ac5d8f5cf3664a513d78b13cab5e6407e97b8210ae20ca}{CA\_\-DefaultAction} =  0, 
+\hyperlink{namespaceOpenRAVE_aec38ff628d76ac03cb4ac5d8f5cf3664a0ff1e9bcfdd50e768f778a18183da252}{CA\_\-Ignore} =  1
+ \}
+\begin{DoxyCompactList}\small\item\em action to perform whenever a collision is detected between objects \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9}{IkFilterReturn} \{ \hyperlink{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9a7a0f5642b1a33ef86868e24bb1e2ea39}{IKFR\_\-Success} =  0, 
+\hyperlink{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9ae0a9b98b94852a81354da20c4c388929}{IKFR\_\-Reject} =  1, 
+\hyperlink{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9a818a27efa66560252c93cc569caae79e}{IKFR\_\-Quit} =  2
+ \}
+\begin{DoxyCompactList}\small\item\em Return value for the ik filter that can be optionally set on an ik solver. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdc}{IkFilterOptions} \{ \par
+\hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdca9e6c06d6ccbfbbe56de480a37cf0381b}{IKFO\_\-CheckEnvCollisions} = 1, 
+\hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdca1bc83e529a1beb8fc6c7cb59fa477166}{IKFO\_\-IgnoreSelfCollisions} = 2, 
+\hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdcad66d86a301f3ccd5d17bcc1197f9c321}{IKFO\_\-IgnoreJointLimits} = 4, 
+\hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdcaf98c0e29d2aee38b7af964e15a43ff3b}{IKFO\_\-IgnoreCustomFilters} = 8, 
+\par
+\hyperlink{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdcab6c6760e71911d36d392c861002e2a6c}{IKFO\_\-IgnoreEndEffectorCollisions} = 16
+ \}
+\begin{DoxyCompactList}\small\item\em Controls what information gets validated when searching for an inverse kinematics solution. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88}{SerializationOptions} \{ \par
+\hyperlink{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88a4f89b08487512e4239c8c8936f7c2de4}{SO\_\-Kinematics} =  0x01, 
+\hyperlink{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88afa503c3acf6b50e3c292bee576395ff0}{SO\_\-Dynamics} =  0x02, 
+\hyperlink{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88a78580517a26880616f5b1c6fcfdb0945}{SO\_\-BodyState} =  0x04, 
+\hyperlink{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88a7517f05542512917f3fe40abff6adb10}{SO\_\-NamesAndFiles} =  0x08, 
+\par
+\hyperlink{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88aeb7e387f766567c9ced7e93677fb30a3}{SO\_\-RobotManipulators} =  0x10, 
+\hyperlink{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88ac7670ed300cd49644318eaf3580585df}{SO\_\-RobotSensors} =  0x20, 
+\hyperlink{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88ab81e3effdc7d19a9da6cb868a564abeb}{SO\_\-Geometry} =  0x40
+ \}
+\begin{DoxyCompactList}\small\item\em serialization options for interfaces \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262c}{OpenRAVEErrorCode} \{ , \par
+\hyperlink{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262cad33c9bd2b6b21be295e2a983f19e6006}{ORE\_\-CommandNotSupported} = 3
+, \hyperlink{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262cab6eaf97936dda5f10b34d8106c929270}{ORE\_\-InvalidPlugin} = 5, 
+\hyperlink{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262caea76ef8a6aa70c082da2d9dfeaaa2ed5}{ORE\_\-InvalidInterfaceHash} = 6, 
+\hyperlink{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262cac8a3a340f3efbef5161746764a523a35}{ORE\_\-NotImplemented} = 7, 
+\par
+\hyperlink{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262caefba8dc1666cec415519f11ca1a6699b}{ORE\_\-InconsistentConstraints} = 8
+ \}
+\begin{DoxyCompactList}\small\item\em OpenRAVE error codes \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespaceOpenRAVE_ab658e6d84759440dbf3c890446075395}{DebugLevel} \{ , \hyperlink{namespaceOpenRAVE_ab658e6d84759440dbf3c890446075395a7ff14d37cfb2aeb879feb53b506cabde}{Level\_\-VerifyPlans} = 0x80000000
+ \}
+\item 
+enum \hyperlink{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2}{CloningOptions} \{ \par
+\hyperlink{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a0c49bf8f6cc2b8f1731b1aa8326c5e63}{Clone\_\-Bodies} =  1, 
+\hyperlink{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a63f15f42828f381ffc43e2c3a894e792}{Clone\_\-Viewer} =  2, 
+\hyperlink{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a4f7d3c1c073424a486131d5516cbee6a}{Clone\_\-Simulation} =  4, 
+\hyperlink{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a0f3adf019cab24fd7564e167aac6308b}{Clone\_\-RealControllers} =  8, 
+\par
+\hyperlink{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2add1ddf3837f8e9fe41aa04fbdf1f10b1}{Clone\_\-Sensors} =  16
+ \}
+\item 
+enum \hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2e}{IkParameterizationType} \{ , \par
+\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea33b4f04338b6d55fe993b6bdd9f66956}{IKP\_\-Transform6D} = 0x67000001, 
+\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea125270b64ed51a89e7021ec7e6d71669}{IKP\_\-Rotation3D} = 0x34000002, 
+\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eae24724faf9388c7f2ae2c7cbbc9c5e94}{IKP\_\-Translation3D} = 0x33000003, 
+\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea31424bec585106a5464b4ebe4831acc9}{IKP\_\-Direction3D} = 0x23000004, 
+\par
+\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea4971a1736a1ea39559c0c49601b17533}{IKP\_\-Ray4D} = 0x46000005, 
+\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea6c4188710cb0a7084725fefd4c80d642}{IKP\_\-Lookat3D} = 0x23000006, 
+\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea68c40080732ab8a017608e45a2f20d33}{IKP\_\-TranslationDirection5D} = 0x56000007, 
+\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eadcf015cba2fad8597405a442c81e0612}{IKP\_\-TranslationXY2D} = 0x22000008, 
+\par
+\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eacb13532b686d552c5a513aa5296a9465}{IKP\_\-TranslationXYOrientation3D} = 0x33000009, 
+\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea3acb8e5a6b84403f23286a338c46e5a7}{IKP\_\-TranslationLocalGlobal6D} = 0x3600000a, 
+\hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eafc80ee4dec1e8de5665d49e6f4bb8d84}{IKP\_\-NumberOfParameterizations} = 10
+ \}
+\begin{DoxyCompactList}\small\item\em The types of inverse kinematics parameterizations supported. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} \{ , \par
+\hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a631e4be716fa05920e2708264c946507}{DOF\_\-X} =  1, 
+\hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a052eaa27c587eff647f89537d85414f2}{DOF\_\-Y} =  2, 
+\hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98ab8457ea80d330d3a701781b6bc9a935b}{DOF\_\-Z} =  4, 
+\hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98abf4ca11208a260b3c892db6f3aa87126}{DOF\_\-XYZ} = DOF\_\-X$|$DOF\_\-Y$|$DOF\_\-Z, 
+\par
+\hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a5ee6baa8acb92c310cbc1ece082640d0}{DOF\_\-RotationAxis} =  8, 
+\hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98aa05fc73c237a667dbc010b620704a58b}{DOF\_\-Rotation3D} =  16, 
+\hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a0bb7484621acd6987a116bc2b6f34a59}{DOF\_\-RotationQuat} =  32, 
+\hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a8d26ee42cff6b4d775040f3b8b7cda8d}{DOF\_\-RotationMask} = (DOF\_\-RotationAxis$|$DOF\_\-Rotation3D$|$DOF\_\-RotationQuat), 
+\par
+\hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a7dc89bc3eae094319fe037d302928916}{DOF\_\-Transform} =  (DOF\_\-XYZ$|$DOF\_\-RotationQuat)
+ \}
+\begin{DoxyCompactList}\small\item\em Selects which DOFs of the affine transformation to include in the active configuration. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespaceOpenRAVE_a5ab12d9ae992912f730cfefda6c97042}{PhysicsEngineOptions} \{ \hyperlink{namespaceOpenRAVE_a5ab12d9ae992912f730cfefda6c97042ac6a259c2e3176f579d27d30003166e17}{PEO\_\-SelfCollisions} =  1
+ \}
+\begin{DoxyCompactList}\small\item\em basic options for physics engine \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200e}{PlannerStatus} \{ \hyperlink{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200ea46d7da834c9c074260b53909874e4b38}{PS\_\-Failed} =  0, 
+\hyperlink{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200ea23c3ecb52bc33b330da0f5a4441115e5}{PS\_\-HasSolution} =  1, 
+\hyperlink{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200ea6130a9f38faec3533a7d0e5594d4ef10}{PS\_\-Interrupted} =  2
+ \}
+\begin{DoxyCompactList}\small\item\em the status of the PlanPath method. Used when PlanPath can be called multiple times to resume planning. \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853}{PlannerAction} \{ \hyperlink{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853a64ec1b874d3088ceef9bd5051c65889f}{PA\_\-None} = 0, 
+\hyperlink{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853a39d503ce662ac46ebdb9fc6e55ca7a5a}{PA\_\-Interrupt} = 1, 
+\hyperlink{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853adcf80ca3a0125b7e5de795d605ab7ffe}{PA\_\-ReturnWithAnySolution} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em action to send to the planner while it is planning. This is usually done by the user-\/specified planner callback function \item\end{DoxyCompactList}\item 
+enum \hyperlink{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937}{IntervalType} \{ \hyperlink{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937a9c15a47d726e9fbfb50b4aed7cf35856}{IT\_\-Open} = 0, 
+\hyperlink{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937a7928c735c3c6ce91beca595f8e76f08e}{IT\_\-OpenStart} = 1, 
+\hyperlink{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937aac880107c84b1475074c13cee32a6104}{IT\_\-OpenEnd} = 2, 
+\hyperlink{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937a35f5589548b539707ceaf7c95a7e96e8}{IT\_\-Closed} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Specifies the boundary conditions of intervals for sampling. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceOpenRAVE_a985876f10adcdcd967c0293b7ec17022}{
+std::string \hyperlink{namespaceOpenRAVE_a985876f10adcdcd967c0293b7ec17022}{ChangeTextColor} (int attribute, int fg, int bg)}
+\label{namespaceOpenRAVE_a985876f10adcdcd967c0293b7ec17022}
+
+\begin{DoxyCompactList}\small\item\em Change the text color (on either stdout or stderr) with an attr:fg:bg (thanks to Radu Rusu for the code). \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_ab58a943ef75af625e8f87e6d2f6f7b3c}{
+std::string \hyperlink{namespaceOpenRAVE_ab58a943ef75af625e8f87e6d2f6f7b3c}{ChangeTextColor} (int attribute, int fg)}
+\label{namespaceOpenRAVE_ab58a943ef75af625e8f87e6d2f6f7b3c}
+
+\begin{DoxyCompactList}\small\item\em Change the text color (on either stdout or stderr) with an attr:fg (thanks to Radu Rusu for the code). \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_a3a8c6e48e14f9c6fc744d8abc2856f73}{
+std::string \hyperlink{namespaceOpenRAVE_a3a8c6e48e14f9c6fc744d8abc2856f73}{ResetTextColor} ()}
+\label{namespaceOpenRAVE_a3a8c6e48e14f9c6fc744d8abc2856f73}
+
+\begin{DoxyCompactList}\small\item\em Reset the text color (on either stdout or stderr) to its original state (thanks to Radu Rusu for the code). \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_a0363fa6f5ee772cd444bdd70607bd564}{
+OPENRAVE\_\-API void \hyperlink{namespaceOpenRAVE_a0363fa6f5ee772cd444bdd70607bd564}{RaveSetDebugLevel} (int level)}
+\label{namespaceOpenRAVE_a0363fa6f5ee772cd444bdd70607bd564}
+
+\begin{DoxyCompactList}\small\item\em Sets the global openrave debug level. A combination of \hyperlink{namespaceOpenRAVE_ab658e6d84759440dbf3c890446075395}{DebugLevel}. \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_a1b830590d02eab9d6e9f08e420c42d36}{
+OPENRAVE\_\-API int \hyperlink{namespaceOpenRAVE_a1b830590d02eab9d6e9f08e420c42d36}{RaveGetDebugLevel} ()}
+\label{namespaceOpenRAVE_a1b830590d02eab9d6e9f08e420c42d36}
+
+\begin{DoxyCompactList}\small\item\em Returns the openrave debug level. \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_a49875f4e0a05692a85b7b6b37113d4cc}{
+const char $\ast$ \hyperlink{namespaceOpenRAVE_a49875f4e0a05692a85b7b6b37113d4cc}{RaveGetSourceFilename} (const char $\ast$pfilename)}
+\label{namespaceOpenRAVE_a49875f4e0a05692a85b7b6b37113d4cc}
+
+\begin{DoxyCompactList}\small\item\em extracts only the filename \item\end{DoxyCompactList}\item 
+\hyperlink{namespaceOpenRAVE_a15759460275c5fa586f4ca9656d998b9}{DefineRavePrintfW} (\_\-FATALLEVEL) DefineRavePrintfW(\_\-ERRORLEVEL) DefineRavePrintfW(\_\-WARNLEVEL) DefineRavePrintfW(\_\-DEBUGLEVEL) DefineRavePrintfW(\_\-VERBOSELEVEL) DefineRavePrintfA(\_\-FATALLEVEL) DefineRavePrintfA(\_\-ERRORLEVEL) DefineRavePrintfA(\_\-WARNLEVEL) DefineRavePrintfA(\_\-DEBUGLEVEL) DefineRavePrintfA(\_\-VERBOSELEVEL) enum InterfaceType
+\begin{DoxyCompactList}\small\item\em adds the function name and line number to an openrave exception \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API int \hyperlink{namespaceOpenRAVE_a5d7ef493cc8ed7bf8a4602cda1468466}{RaveGetIndexFromAffineDOF} (int affinedofs, \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} dof)
+\begin{DoxyCompactList}\small\item\em Given a mask of affine dofs and a dof inside that mask, returns the index where the value could be found. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} \hyperlink{namespaceOpenRAVE_adf2141071a66cfbcbe55a64ade70e9d8}{RaveGetAffineDOFFromIndex} (int affinedofs, int index)
+\begin{DoxyCompactList}\small\item\em Given a mask of affine dofs and an index into the array, returns the affine dof that is being referenced. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API int \hyperlink{namespaceOpenRAVE_a240dc0d7e6ff803758ece938c97ecb09}{RaveGetAffineDOF} (int affinedofs)
+\begin{DoxyCompactList}\small\item\em Returns the degrees of freedom needed to represent all the values in the affine dof mask. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API void \hyperlink{namespaceOpenRAVE_a66055231535a166b71d8815e8d2a73a7}{RaveGetAffineDOFValuesFromTransform} (std::vector$<$ dReal $>$::iterator itvalues, const Transform \&t, int affinedofs, const Vector \&vActvAffineRotationAxis=Vector(0, 0, 1))
+\begin{DoxyCompactList}\small\item\em Converts the transformation matrix into the specified affine values format. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API void \hyperlink{namespaceOpenRAVE_a34bfae69aaaf88137c16407df7048aea}{RaveGetTransformFromAffineDOFValues} (Transform \&t, std::vector$<$ dReal $>$::const\_\-iterator itvalues, int affinedofs, const Vector \&vActvAffineRotationAxis=Vector(0, 0, 1))
+\begin{DoxyCompactList}\small\item\em Converts affine dof values into a transform. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API void \hyperlink{namespaceOpenRAVE_af3e449c98bda910013e4b323573306d1}{RaveInitRandomGeneration} (uint32\_\-t seed)
+\item 
+OPENRAVE\_\-API uint32\_\-t \hyperlink{namespaceOpenRAVE_abc3b63337e9c8767dc7e18b30747029b}{RaveRandomInt} ()
+\item 
+OPENRAVE\_\-API float \hyperlink{namespaceOpenRAVE_a6fe8f01c322a5b2e5bccb4928f93ac0f}{RaveRandomFloat} (\hyperlink{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937}{IntervalType} interval=IT\_\-Closed)
+\item 
+OPENRAVE\_\-API double \hyperlink{namespaceOpenRAVE_aee509dcc75db9b102d2fd497e1f21de6}{RaveRandomDouble} (\hyperlink{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937}{IntervalType} interval=IT\_\-Closed)
+\item 
+\hypertarget{namespaceOpenRAVE_a32f8afb07145a214f906ea827c14422d}{
+bool \hyperlink{namespaceOpenRAVE_a32f8afb07145a214f906ea827c14422d}{RaveParseDirectories} (const char $\ast$pdirs, std::vector$<$ std::string $>$ \&vdirs)}
+\label{namespaceOpenRAVE_a32f8afb07145a214f906ea827c14422d}
+
+\begin{DoxyCompactList}\small\item\em separates the directories from a string and returns them in a vector \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API std::ostream \& \hyperlink{namespaceOpenRAVE_ae99951462c88a655511abbd361bcf841}{operator$<$$<$} (std::ostream \&O, const \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerBase::PlannerParameters} \&v)
+\item 
+OPENRAVE\_\-API std::istream \& \hyperlink{namespaceOpenRAVE_a06be8afa87a225a4a6cdc0a5c2de150a}{operator$>$$>$} (std::istream \&I, \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerBase::PlannerParameters} \&v)
+\item 
+OPENRAVE\_\-CORE\_\-API EnvironmentBasePtr \hyperlink{namespaceOpenRAVE_aec9c3dd6a1f2908a1eb84ca59243e00a}{RaveCreateEnvironment} ()
+\item 
+OPENRAVE\_\-CORE\_\-API EnvironmentBasePtr \hyperlink{namespaceOpenRAVE_ae3bd9d884ea7720a63d49b6212d13f42}{CreateEnvironment} (bool bLoadAllPlugins=true) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf }\par
+{\em \label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ }\begin{DoxyCompactItemize}
+\item 
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gac8e9a4de3eada3445281cf83f63a71ad}{RaveExp} (dReal f)
+\begin{DoxyCompactList}\small\item\em exponential \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga2358b3045fbf4f2dd3d6047c266ddb97}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga2358b3045fbf4f2dd3d6047c266ddb97}{RaveLog} (dReal f)}
+\label{group__affine__math_ga2358b3045fbf4f2dd3d6047c266ddb97}
+
+\begin{DoxyCompactList}\small\item\em logarithm \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_gafbca1a5656b1543abb89d45cf8ac4ca3}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gafbca1a5656b1543abb89d45cf8ac4ca3}{RaveCos} (dReal f)}
+\label{group__affine__math_gafbca1a5656b1543abb89d45cf8ac4ca3}
+
+\begin{DoxyCompactList}\small\item\em cosine \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga7941e0b1a64c2dd182c2ac751d08eb1e}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga7941e0b1a64c2dd182c2ac751d08eb1e}{RaveSin} (dReal f)}
+\label{group__affine__math_ga7941e0b1a64c2dd182c2ac751d08eb1e}
+
+\begin{DoxyCompactList}\small\item\em sine \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_gae39adb12086da21a4e0fe39c96aff1d6}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gae39adb12086da21a4e0fe39c96aff1d6}{RaveTan} (dReal f)}
+\label{group__affine__math_gae39adb12086da21a4e0fe39c96aff1d6}
+
+\begin{DoxyCompactList}\small\item\em tangent \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_gaaa147e7be9eb0e01250291e2aa3a81bf}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gaaa147e7be9eb0e01250291e2aa3a81bf}{RaveLog2} (dReal f)}
+\label{group__affine__math_gaaa147e7be9eb0e01250291e2aa3a81bf}
+
+\begin{DoxyCompactList}\small\item\em base 2 logarithm \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_gab7abc4771e520f8baa20554f4c6d12c2}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gab7abc4771e520f8baa20554f4c6d12c2}{RaveLog10} (dReal f)}
+\label{group__affine__math_gab7abc4771e520f8baa20554f4c6d12c2}
+
+\begin{DoxyCompactList}\small\item\em base 10 logarithm \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga97b4b78434f3e9b0b57cbd9d7b4b6610}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga97b4b78434f3e9b0b57cbd9d7b4b6610}{RaveAcos} (dReal f)}
+\label{group__affine__math_ga97b4b78434f3e9b0b57cbd9d7b4b6610}
+
+\begin{DoxyCompactList}\small\item\em arccosine \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_gabae52eb1a8ad7fc3bc90da48a4718941}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_gabae52eb1a8ad7fc3bc90da48a4718941}{RaveAsin} (dReal f)}
+\label{group__affine__math_gabae52eb1a8ad7fc3bc90da48a4718941}
+
+\begin{DoxyCompactList}\small\item\em arcsine \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga5099467e8cef4035d8e2ee264c9e312b}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga5099467e8cef4035d8e2ee264c9e312b}{RaveAtan2} (dReal fy, dReal fx)}
+\label{group__affine__math_ga5099467e8cef4035d8e2ee264c9e312b}
+
+\begin{DoxyCompactList}\small\item\em arctangent2 covering entire circle \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga793937be7953d32b65f2141199cd23d9}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga793937be7953d32b65f2141199cd23d9}{RavePow} (dReal fx, dReal fy)}
+\label{group__affine__math_ga793937be7953d32b65f2141199cd23d9}
+
+\begin{DoxyCompactList}\small\item\em power x$^\wedge$y \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga4fbefacd06b4565772517dae42e2cbcc}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga4fbefacd06b4565772517dae42e2cbcc}{RaveSqrt} (dReal f)}
+\label{group__affine__math_ga4fbefacd06b4565772517dae42e2cbcc}
+
+\begin{DoxyCompactList}\small\item\em square-\/root \item\end{DoxyCompactList}\item 
+\hypertarget{group__affine__math_ga3723ea5834c83fdbf64b9b9ad1d95cc6}{
+OPENRAVE\_\-API dReal \hyperlink{group__affine__math_ga3723ea5834c83fdbf64b9b9ad1d95cc6}{RaveFabs} (dReal f)}
+\label{group__affine__math_ga3723ea5834c83fdbf64b9b9ad1d95cc6}
+
+\begin{DoxyCompactList}\small\item\em absolute value \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Global Functionality -\/ Interface Creation, Plugin Management, Logging}\par
+{\em \label{_amgrpa44636317fec477debce11f23bc74d59}
+ \label{namespaceOpenRAVE_global_functionality}
+\hypertarget{namespaceOpenRAVE_global_functionality}{}
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceOpenRAVE_a58037fbef85e1f0c8695edd7e2537172}{
+const char $\ast$ \hyperlink{namespaceOpenRAVE_a58037fbef85e1f0c8695edd7e2537172}{RaveGetInterfaceHash} (InterfaceType type)}
+\label{namespaceOpenRAVE_a58037fbef85e1f0c8695edd7e2537172}
+
+\begin{DoxyCompactList}\small\item\em Returns the a 16 character null-\/terminated string specifying a hash of the interfaces used for checking changes. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\boost::shared\_\-ptr$<$ T $>$ \hyperlink{namespaceOpenRAVE_a5f46fb9ff755f614ea5636851a89952c}{RaveInterfaceCast} (InterfaceBasePtr pinterface)
+\begin{DoxyCompactList}\small\item\em Safely casts from the base interface class to an openrave interface using static\_\-pointer\_\-cast. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\boost::shared\_\-ptr$<$ T const  $>$ \hyperlink{namespaceOpenRAVE_adf731ae412bd36fe76b35c4e2e4f6478}{RaveInterfaceConstCast} (InterfaceBaseConstPtr pinterface)
+\begin{DoxyCompactList}\small\item\em Safely casts from the base interface class to an openrave interface using static\_\-pointer\_\-cast. \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_a40aaaac68155bc8447cdb0d90e7c88d2}{
+OPENRAVE\_\-API const std::map$<$ InterfaceType, std::string $>$ \& \hyperlink{namespaceOpenRAVE_a40aaaac68155bc8447cdb0d90e7c88d2}{RaveGetInterfaceNamesMap} ()}
+\label{namespaceOpenRAVE_a40aaaac68155bc8447cdb0d90e7c88d2}
+
+\begin{DoxyCompactList}\small\item\em returns a lower case string of the interface type \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_a2cf22ffbd99a4036dd928b8967b32d65}{
+OPENRAVE\_\-API const std::string \& {\bfseries RaveGetInterfaceName} (InterfaceType type)}
+\label{namespaceOpenRAVE_a2cf22ffbd99a4036dd928b8967b32d65}
+
+\item 
+\hypertarget{namespaceOpenRAVE_a57e2c8eb692383282f51474c92a984c5}{
+OPENRAVE\_\-API const std::map$<$ \hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2e}{IkParameterizationType}, std::string $>$ \& \hyperlink{namespaceOpenRAVE_a57e2c8eb692383282f51474c92a984c5}{RaveGetIkParameterizationMap} ()}
+\label{namespaceOpenRAVE_a57e2c8eb692383282f51474c92a984c5}
+
+\begin{DoxyCompactList}\small\item\em returns a string of the ik parameterization type names (can include upper case in order to match \hyperlink{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2e}{IkParameterizationType}) \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API std::string \hyperlink{namespaceOpenRAVE_a55e1d8c68b801cd293ec78b8d417b7e6}{RaveGetHomeDirectory} ()
+\begin{DoxyCompactList}\small\item\em Returns the openrave home directory where settings, cache, and other files are stored. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API std::string \hyperlink{namespaceOpenRAVE_a3faf74c6f78a579f18995764df3142e5}{RaveFindDatabaseFile} (const std::string \&filename, bool bRead=true)
+\begin{DoxyCompactList}\small\item\em Searches for a filename in the database and returns a full path/URL to it. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API int \hyperlink{namespaceOpenRAVE_a85619ef1740cd97d7dcb5ef306243a75}{RaveInitialize} (bool bLoadAllPlugins=true, int level=Level\_\-Info)
+\begin{DoxyCompactList}\small\item\em Explicitly initializes the global \hyperlink{namespaceOpenRAVE}{OpenRAVE} state (optional). \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API void \hyperlink{namespaceOpenRAVE_a4acb966ec91e783a5d3a5967583bb2c0}{RaveInitializeFromState} (UserDataPtr globalstate)
+\begin{DoxyCompactList}\small\item\em Initializes the global state from an already loaded \hyperlink{namespaceOpenRAVE}{OpenRAVE} environment. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API UserDataPtr \hyperlink{namespaceOpenRAVE_ac3c20e38f24dedcd46add394fd8074fb}{RaveGlobalState} ()
+\begin{DoxyCompactList}\small\item\em A pointer to the global openrave state. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API void \hyperlink{namespaceOpenRAVE_abfafe0fbe621c9be55912937f08104df}{RaveDestroy} ()
+\begin{DoxyCompactList}\small\item\em Destroys the entire \hyperlink{namespaceOpenRAVE}{OpenRAVE} state and all loaded environments. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API void \hyperlink{namespaceOpenRAVE_a9a5cb560a6ba4ba32d431e1d953dd974}{RaveGetPluginInfo} (std::list$<$ std::pair$<$ std::string, \hyperlink{classOpenRAVE_1_1PLUGININFO}{PLUGININFO} $>$ $>$ \&plugins)
+\begin{DoxyCompactList}\small\item\em Get all the loaded plugins and the interfaces they support. \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_a49664d959f0c1345db93849bd78af4db}{
+OPENRAVE\_\-API void \hyperlink{namespaceOpenRAVE_a49664d959f0c1345db93849bd78af4db}{RaveGetLoadedInterfaces} (std::map$<$ InterfaceType, std::vector$<$ std::string $>$ $>$ \&interfacenames)}
+\label{namespaceOpenRAVE_a49664d959f0c1345db93849bd78af4db}
+
+\begin{DoxyCompactList}\small\item\em Get a list of all the loaded interfaces. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API void \hyperlink{namespaceOpenRAVE_a4fd5cea1bb7d822e6acc89625c59c5f2}{RaveReloadPlugins} ()
+\begin{DoxyCompactList}\small\item\em Reloads all the plugins. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API bool \hyperlink{namespaceOpenRAVE_a6bca7a284a46924c61bcbdd37aeb3dcf}{RaveLoadPlugin} (const std::string \&libraryname)
+\begin{DoxyCompactList}\small\item\em Load a plugin and its interfaces. \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_ad05e33a91e8613cb74544e0fa933deb6}{
+OPENRAVE\_\-API bool \hyperlink{namespaceOpenRAVE_ad05e33a91e8613cb74544e0fa933deb6}{RaveHasInterface} (InterfaceType type, const std::string \&interfacename)}
+\label{namespaceOpenRAVE_ad05e33a91e8613cb74544e0fa933deb6}
+
+\begin{DoxyCompactList}\small\item\em Returns true if interface can be created, otherwise false. \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_aeb861c4ac6a6d508203eb5204f6f5356}{
+OPENRAVE\_\-API InterfaceBasePtr {\bfseries RaveCreateInterface} (EnvironmentBasePtr penv, InterfaceType type, const std::string \&interfacename)}
+\label{namespaceOpenRAVE_aeb861c4ac6a6d508203eb5204f6f5356}
+
+\item 
+\hypertarget{namespaceOpenRAVE_a0cd0346e27cf262253e8663ebf6570c5}{
+OPENRAVE\_\-API RobotBasePtr {\bfseries RaveCreateRobot} (EnvironmentBasePtr penv, const std::string \&name=\char`\"{}\char`\"{})}
+\label{namespaceOpenRAVE_a0cd0346e27cf262253e8663ebf6570c5}
+
+\item 
+\hypertarget{namespaceOpenRAVE_ad7a69c02ba562b1592849b98bc71980b}{
+OPENRAVE\_\-API PlannerBasePtr {\bfseries RaveCreatePlanner} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_ad7a69c02ba562b1592849b98bc71980b}
+
+\item 
+\hypertarget{namespaceOpenRAVE_a8b9457824b88c287764fd4beee80e416}{
+OPENRAVE\_\-API SensorSystemBasePtr {\bfseries RaveCreateSensorSystem} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_a8b9457824b88c287764fd4beee80e416}
+
+\item 
+\hypertarget{namespaceOpenRAVE_a04c8ec1b6bd90d09a2cf077e207fee39}{
+OPENRAVE\_\-API ControllerBasePtr {\bfseries RaveCreateController} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_a04c8ec1b6bd90d09a2cf077e207fee39}
+
+\item 
+\hypertarget{namespaceOpenRAVE_ac418b89191466b59a4ffbb5a759c5a95}{
+OPENRAVE\_\-API ModuleBasePtr {\bfseries RaveCreateModule} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_ac418b89191466b59a4ffbb5a759c5a95}
+
+\item 
+\hypertarget{namespaceOpenRAVE_a20a65c6196fe9f4d94aade47b9c7cfd0}{
+OPENRAVE\_\-API ModuleBasePtr {\bfseries RaveCreateProblem} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_a20a65c6196fe9f4d94aade47b9c7cfd0}
+
+\item 
+\hypertarget{namespaceOpenRAVE_a86c93d7a94a21155ab171b9d919e18b7}{
+OPENRAVE\_\-API ModuleBasePtr {\bfseries RaveCreateProblemInstance} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_a86c93d7a94a21155ab171b9d919e18b7}
+
+\item 
+\hypertarget{namespaceOpenRAVE_aed5d72a201e6c1aaf8c8bed8d1774099}{
+OPENRAVE\_\-API IkSolverBasePtr {\bfseries RaveCreateIkSolver} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_aed5d72a201e6c1aaf8c8bed8d1774099}
+
+\item 
+\hypertarget{namespaceOpenRAVE_ad46a55479cbfec752468034a3a17db22}{
+OPENRAVE\_\-API PhysicsEngineBasePtr {\bfseries RaveCreatePhysicsEngine} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_ad46a55479cbfec752468034a3a17db22}
+
+\item 
+\hypertarget{namespaceOpenRAVE_a72ea3052fbb09a2d68f757c3582426b9}{
+OPENRAVE\_\-API SensorBasePtr {\bfseries RaveCreateSensor} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_a72ea3052fbb09a2d68f757c3582426b9}
+
+\item 
+\hypertarget{namespaceOpenRAVE_a78b34b954b8d25acb7269b273dce1b29}{
+OPENRAVE\_\-API CollisionCheckerBasePtr {\bfseries RaveCreateCollisionChecker} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_a78b34b954b8d25acb7269b273dce1b29}
+
+\item 
+\hypertarget{namespaceOpenRAVE_adb3931606554988bbb34d8f0b4e28341}{
+OPENRAVE\_\-API ViewerBasePtr {\bfseries RaveCreateViewer} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_adb3931606554988bbb34d8f0b4e28341}
+
+\item 
+\hypertarget{namespaceOpenRAVE_aa6cac9a3b2135a8c2bc3cd68abeb2b5a}{
+OPENRAVE\_\-API SpaceSamplerBasePtr {\bfseries RaveCreateSpaceSampler} (EnvironmentBasePtr penv, const std::string \&name)}
+\label{namespaceOpenRAVE_aa6cac9a3b2135a8c2bc3cd68abeb2b5a}
+
+\item 
+\hypertarget{namespaceOpenRAVE_ab93068e1f0c7ab62caff93395d48f543}{
+OPENRAVE\_\-API KinBodyPtr {\bfseries RaveCreateKinBody} (EnvironmentBasePtr penv, const std::string \&name=\char`\"{}\char`\"{})}
+\label{namespaceOpenRAVE_ab93068e1f0c7ab62caff93395d48f543}
+
+\item 
+\hypertarget{namespaceOpenRAVE_a32ad1afcac238cc161e67d72a461bf60}{
+OPENRAVE\_\-API TrajectoryBasePtr \hyperlink{namespaceOpenRAVE_a32ad1afcac238cc161e67d72a461bf60}{RaveCreateTrajectory} (EnvironmentBasePtr penv, const std::string \&name=\char`\"{}\char`\"{})}
+\label{namespaceOpenRAVE_a32ad1afcac238cc161e67d72a461bf60}
+
+\begin{DoxyCompactList}\small\item\em Return an empty trajectory instance. \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_a43c761b0bcdc314f5fd6967df72169e8}{
+OPENRAVE\_\-API TrajectoryBasePtr {\bfseries RaveCreateTrajectory} (EnvironmentBasePtr penv, int dof) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}}
+\label{namespaceOpenRAVE_a43c761b0bcdc314f5fd6967df72169e8}
+
+\item 
+OPENRAVE\_\-API UserDataPtr \hyperlink{namespaceOpenRAVE_ad1ac80a7afacdb4a3a93086916eaa9e9}{RaveRegisterInterface} (InterfaceType type, const std::string \&name, const char $\ast$interfacehash, const char $\ast$envhash, const boost::function$<$ InterfaceBasePtr(EnvironmentBasePtr, std::istream \&)$>$ \&createfn)
+\begin{DoxyCompactList}\small\item\em Registers a function to create an interface, this allows the interface to be created by other modules. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API UserDataPtr \hyperlink{namespaceOpenRAVE_a255c808782af449015333e7e230bf3b8}{RaveRegisterXMLReader} (InterfaceType type, const std::string \&xmltag, const CreateXMLReaderFn \&fn)
+\begin{DoxyCompactList}\small\item\em Registers a custom xml reader for a particular interface. \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_aab71f332a1a87d00dbfaea9404034855}{
+OPENRAVE\_\-API int \hyperlink{namespaceOpenRAVE_aab71f332a1a87d00dbfaea9404034855}{RaveGetEnvironmentId} (EnvironmentBasePtr penv)}
+\label{namespaceOpenRAVE_aab71f332a1a87d00dbfaea9404034855}
+
+\begin{DoxyCompactList}\small\item\em return the environment's unique id, returns 0 if environment could not be found or not registered \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API EnvironmentBasePtr \hyperlink{namespaceOpenRAVE_aabe395213e4bac04e7d74e4a9fb73773}{RaveGetEnvironment} (int id)
+\begin{DoxyCompactList}\small\item\em get the environment from its unique id \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_aff4ecfea2be4239942302bae497b3c7c}{
+OPENRAVE\_\-API void \hyperlink{namespaceOpenRAVE_aff4ecfea2be4239942302bae497b3c7c}{RaveGetEnvironments} (std::list$<$ EnvironmentBasePtr $>$ \&listenvironments)}
+\label{namespaceOpenRAVE_aff4ecfea2be4239942302bae497b3c7c}
+
+\begin{DoxyCompactList}\small\item\em Return all the created \hyperlink{namespaceOpenRAVE}{OpenRAVE} environments. \item\end{DoxyCompactList}\item 
+OPENRAVE\_\-API BaseXMLReaderPtr \hyperlink{namespaceOpenRAVE_ad71eecb48ab2b3d6710feba24618f479}{RaveCallXMLReader} (InterfaceType type, const std::string \&xmltag, InterfaceBasePtr pinterface, const AttributesList \&atts)
+\begin{DoxyCompactList}\small\item\em Returns the current registered reader for the interface type/xmlid. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceOpenRAVE_a3f37499f2c749cd199222f3b02396613}{
+static const dReal \hyperlink{namespaceOpenRAVE_a3f37499f2c749cd199222f3b02396613}{PI} = (dReal)3.14159265358979323846}
+\label{namespaceOpenRAVE_a3f37499f2c749cd199222f3b02396613}
+
+\begin{DoxyCompactList}\small\item\em openrave constant for PI, could be replaced by accurate precision number depending on choice of dReal. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+The entire OpenRAVE library. 
+
+\subsubsection{Typedef Documentation}
+\hypertarget{namespaceOpenRAVE_afd22dd103475de7006afbd1511a60ac4}{
+\index{OpenRAVE@{OpenRAVE}!PluginExportFn\_\-CreateInterface@{PluginExportFn\_\-CreateInterface}}
+\index{PluginExportFn\_\-CreateInterface@{PluginExportFn\_\-CreateInterface}!OpenRAVE@{OpenRAVE}}
+\paragraph[{PluginExportFn\_\-CreateInterface}]{\setlength{\rightskip}{0pt plus 5cm}typedef InterfaceBasePtr($\ast$ {\bf PluginExportFn\_\-CreateInterface})(InterfaceType type, const std::string \&name, const char $\ast$pluginhash, EnvironmentBasePtr penv)}\hfill}
+\label{namespaceOpenRAVE_afd22dd103475de7006afbd1511a60ac4}
+\hypertarget{namespaceOpenRAVE_a79dd40a56ad2aaee2fbb678a709e2572}{
+\index{OpenRAVE@{OpenRAVE}!PluginExportFn\_\-GetPluginAttributes@{PluginExportFn\_\-GetPluginAttributes}}
+\index{PluginExportFn\_\-GetPluginAttributes@{PluginExportFn\_\-GetPluginAttributes}!OpenRAVE@{OpenRAVE}}
+\paragraph[{PluginExportFn\_\-GetPluginAttributes}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ {\bf PluginExportFn\_\-GetPluginAttributes})({\bf PLUGININFO} $\ast$pinfo, int size)}\hfill}
+\label{namespaceOpenRAVE_a79dd40a56ad2aaee2fbb678a709e2572}
+\hypertarget{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{
+\index{OpenRAVE@{OpenRAVE}!RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}}
+\index{RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RAVE\_\-DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf TrajectoryBase} Trajectory {\bf RAVE\_\-DEPRECATED}}\hfill}
+\label{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}
+
+
+\subsubsection{Enumeration Type Documentation}
+\hypertarget{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2}{
+\index{OpenRAVE@{OpenRAVE}!CloningOptions@{CloningOptions}}
+\index{CloningOptions@{CloningOptions}!OpenRAVE@{OpenRAVE}}
+\paragraph[{CloningOptions}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CloningOptions}}\hfill}
+\label{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{Clone\_\-Bodies@{Clone\_\-Bodies}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!Clone\_\-Bodies@{Clone\_\-Bodies}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a0c49bf8f6cc2b8f1731b1aa8326c5e63}{
+Clone\_\-Bodies}
+\label{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a0c49bf8f6cc2b8f1731b1aa8326c5e63}
+}]clone all the bodies/robots of the environment, exclude attached interfaces like sensors/controllers \index{Clone\_\-Viewer@{Clone\_\-Viewer}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!Clone\_\-Viewer@{Clone\_\-Viewer}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a63f15f42828f381ffc43e2c3a894e792}{
+Clone\_\-Viewer}
+\label{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a63f15f42828f381ffc43e2c3a894e792}
+}]clone the viewer type, although figures won't be copied, new viewer does try to match views \index{Clone\_\-Simulation@{Clone\_\-Simulation}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!Clone\_\-Simulation@{Clone\_\-Simulation}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a4f7d3c1c073424a486131d5516cbee6a}{
+Clone\_\-Simulation}
+\label{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a4f7d3c1c073424a486131d5516cbee6a}
+}]clone the physics engine and simulation state (ie, timesteps, gravity) \index{Clone\_\-RealControllers@{Clone\_\-RealControllers}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!Clone\_\-RealControllers@{Clone\_\-RealControllers}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a0f3adf019cab24fd7564e167aac6308b}{
+Clone\_\-RealControllers}
+\label{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2a0f3adf019cab24fd7564e167aac6308b}
+}]if specified, will clone the real controllers of all the robots, otherwise each robot gets ideal controller \index{Clone\_\-Sensors@{Clone\_\-Sensors}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!Clone\_\-Sensors@{Clone\_\-Sensors}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2add1ddf3837f8e9fe41aa04fbdf1f10b1}{
+Clone\_\-Sensors}
+\label{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2add1ddf3837f8e9fe41aa04fbdf1f10b1}
+}]if specified, will clone the sensors attached to the robot and added to the environment \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_aec38ff628d76ac03cb4ac5d8f5cf3664}{
+\index{OpenRAVE@{OpenRAVE}!CollisionAction@{CollisionAction}}
+\index{CollisionAction@{CollisionAction}!OpenRAVE@{OpenRAVE}}
+\paragraph[{CollisionAction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CollisionAction}}\hfill}
+\label{namespaceOpenRAVE_aec38ff628d76ac03cb4ac5d8f5cf3664}
+
+
+action to perform whenever a collision is detected between objects 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{CA\_\-DefaultAction@{CA\_\-DefaultAction}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!CA\_\-DefaultAction@{CA\_\-DefaultAction}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_aec38ff628d76ac03cb4ac5d8f5cf3664a513d78b13cab5e6407e97b8210ae20ca}{
+CA\_\-DefaultAction}
+\label{namespaceOpenRAVE_aec38ff628d76ac03cb4ac5d8f5cf3664a513d78b13cab5e6407e97b8210ae20ca}
+}]let the physics/collision engine resolve the action \index{CA\_\-Ignore@{CA\_\-Ignore}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!CA\_\-Ignore@{CA\_\-Ignore}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_aec38ff628d76ac03cb4ac5d8f5cf3664a0ff1e9bcfdd50e768f778a18183da252}{
+CA\_\-Ignore}
+\label{namespaceOpenRAVE_aec38ff628d76ac03cb4ac5d8f5cf3664a0ff1e9bcfdd50e768f778a18183da252}
+}]do nothing \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77}{
+\index{OpenRAVE@{OpenRAVE}!CollisionOptions@{CollisionOptions}}
+\index{CollisionOptions@{CollisionOptions}!OpenRAVE@{OpenRAVE}}
+\paragraph[{CollisionOptions}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CollisionOptions}}\hfill}
+\label{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77}
+
+
+options for collision checker 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{CO\_\-Distance@{CO\_\-Distance}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!CO\_\-Distance@{CO\_\-Distance}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77aa5d8d85bd05b340ada98305788f161d4}{
+CO\_\-Distance}
+\label{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77aa5d8d85bd05b340ada98305788f161d4}
+}]Compute distance measurements, this is usually slow and not all checkers support it. \index{CO\_\-UseTolerance@{CO\_\-UseTolerance}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!CO\_\-UseTolerance@{CO\_\-UseTolerance}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77add08e96e785c0ad01b5687ffc50a095d}{
+CO\_\-UseTolerance}
+\label{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77add08e96e785c0ad01b5687ffc50a095d}
+}]not used \index{CO\_\-Contacts@{CO\_\-Contacts}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!CO\_\-Contacts@{CO\_\-Contacts}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77a9bc2191e9e7b6bfc5fa1807812c45c6c}{
+CO\_\-Contacts}
+\label{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77a9bc2191e9e7b6bfc5fa1807812c45c6c}
+}]Return the contact points of the collision in the \hyperlink{classOpenRAVE_1_1CollisionReport}{CollisionReport}. Note that this takes longer to compute. \index{CO\_\-RayAnyHit@{CO\_\-RayAnyHit}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!CO\_\-RayAnyHit@{CO\_\-RayAnyHit}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77a7572c8fd23c74ad1aa04e18eb36808b6}{
+CO\_\-RayAnyHit}
+\label{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77a7572c8fd23c74ad1aa04e18eb36808b6}
+}]When performing collision with rays, if this is set, algorithm just returns any hit instead of the closest (can be faster). \index{CO\_\-ActiveDOFs@{CO\_\-ActiveDOFs}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!CO\_\-ActiveDOFs@{CO\_\-ActiveDOFs}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77a95a75683a1fcadcd3de27e6465d74552}{
+CO\_\-ActiveDOFs}
+\label{namespaceOpenRAVE_a6963e4ecb981351b8fb2e3f9e85acf77a95a75683a1fcadcd3de27e6465d74552}
+}]Allows planners to greatly reduce redundant collision checks. If set and the target object is a robot, then only the links controlled by the currently set active DOFs and their attached bodies will be checked for collisions.
+
+The things that $\ast$$\ast$will not be$\ast$$\ast$ checked for collision are:
+\begin{DoxyItemize}
+\item links that do not remove with respect to each other as a result of moving the active dofs. 
+\end{DoxyItemize}\end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_ab658e6d84759440dbf3c890446075395}{
+\index{OpenRAVE@{OpenRAVE}!DebugLevel@{DebugLevel}}
+\index{DebugLevel@{DebugLevel}!OpenRAVE@{OpenRAVE}}
+\paragraph[{DebugLevel}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DebugLevel}}\hfill}
+\label{namespaceOpenRAVE_ab658e6d84759440dbf3c890446075395}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{Level\_\-VerifyPlans@{Level\_\-VerifyPlans}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!Level\_\-VerifyPlans@{Level\_\-VerifyPlans}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_ab658e6d84759440dbf3c890446075395a7ff14d37cfb2aeb879feb53b506cabde}{
+Level\_\-VerifyPlans}
+\label{namespaceOpenRAVE_ab658e6d84759440dbf3c890446075395a7ff14d37cfb2aeb879feb53b506cabde}
+}]if set, should verify every plan returned. the verification is left up to the planners or the modules calling the planners. See planningutils::ValidateTrajectory \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{
+\index{OpenRAVE@{OpenRAVE}!DOFAffine@{DOFAffine}}
+\index{DOFAffine@{DOFAffine}!OpenRAVE@{OpenRAVE}}
+\paragraph[{DOFAffine}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DOFAffine}}\hfill}
+\label{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}
+
+
+Selects which DOFs of the affine transformation to include in the active configuration. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{DOF\_\-X@{DOF\_\-X}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!DOF\_\-X@{DOF\_\-X}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a631e4be716fa05920e2708264c946507}{
+DOF\_\-X}
+\label{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a631e4be716fa05920e2708264c946507}
+}]can move in the x direction \index{DOF\_\-Y@{DOF\_\-Y}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!DOF\_\-Y@{DOF\_\-Y}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a052eaa27c587eff647f89537d85414f2}{
+DOF\_\-Y}
+\label{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a052eaa27c587eff647f89537d85414f2}
+}]can move in the y direction \index{DOF\_\-Z@{DOF\_\-Z}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!DOF\_\-Z@{DOF\_\-Z}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98ab8457ea80d330d3a701781b6bc9a935b}{
+DOF\_\-Z}
+\label{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98ab8457ea80d330d3a701781b6bc9a935b}
+}]can move in the z direction \index{DOF\_\-XYZ@{DOF\_\-XYZ}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!DOF\_\-XYZ@{DOF\_\-XYZ}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98abf4ca11208a260b3c892db6f3aa87126}{
+DOF\_\-XYZ}
+\label{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98abf4ca11208a260b3c892db6f3aa87126}
+}]moves in xyz direction \index{DOF\_\-RotationAxis@{DOF\_\-RotationAxis}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!DOF\_\-RotationAxis@{DOF\_\-RotationAxis}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a5ee6baa8acb92c310cbc1ece082640d0}{
+DOF\_\-RotationAxis}
+\label{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a5ee6baa8acb92c310cbc1ece082640d0}
+}]can rotate around an axis (1 dof) \index{DOF\_\-Rotation3D@{DOF\_\-Rotation3D}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!DOF\_\-Rotation3D@{DOF\_\-Rotation3D}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98aa05fc73c237a667dbc010b620704a58b}{
+DOF\_\-Rotation3D}
+\label{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98aa05fc73c237a667dbc010b620704a58b}
+}]can rotate freely (3 dof), the parameterization is theta $\ast$ v, where v is the rotation axis and theta is the angle about that axis \index{DOF\_\-RotationQuat@{DOF\_\-RotationQuat}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!DOF\_\-RotationQuat@{DOF\_\-RotationQuat}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a0bb7484621acd6987a116bc2b6f34a59}{
+DOF\_\-RotationQuat}
+\label{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a0bb7484621acd6987a116bc2b6f34a59}
+}]can rotate freely (4 dof), parameterization is a quaternion. In order for limits to work correctly, the quaternion is in the space of \_\-vRotationQuatLimitStart. \_\-vRotationQuatLimitStart is always left-\/multiplied before setting the transform! \index{DOF\_\-RotationMask@{DOF\_\-RotationMask}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!DOF\_\-RotationMask@{DOF\_\-RotationMask}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a8d26ee42cff6b4d775040f3b8b7cda8d}{
+DOF\_\-RotationMask}
+\label{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a8d26ee42cff6b4d775040f3b8b7cda8d}
+}]mask for all bits representing 3D rotations \index{DOF\_\-Transform@{DOF\_\-Transform}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!DOF\_\-Transform@{DOF\_\-Transform}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a7dc89bc3eae094319fe037d302928916}{
+DOF\_\-Transform}
+\label{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a7dc89bc3eae094319fe037d302928916}
+}]translate and rotate freely in 3D space \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdc}{
+\index{OpenRAVE@{OpenRAVE}!IkFilterOptions@{IkFilterOptions}}
+\index{IkFilterOptions@{IkFilterOptions}!OpenRAVE@{OpenRAVE}}
+\paragraph[{IkFilterOptions}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf IkFilterOptions}}\hfill}
+\label{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdc}
+
+
+Controls what information gets validated when searching for an inverse kinematics solution. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{IKFO\_\-CheckEnvCollisions@{IKFO\_\-CheckEnvCollisions}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKFO\_\-CheckEnvCollisions@{IKFO\_\-CheckEnvCollisions}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdca9e6c06d6ccbfbbe56de480a37cf0381b}{
+IKFO\_\-CheckEnvCollisions}
+\label{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdca9e6c06d6ccbfbbe56de480a37cf0381b}
+}]will check environment collisions with the robot (not checked by default) \index{IKFO\_\-IgnoreSelfCollisions@{IKFO\_\-IgnoreSelfCollisions}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKFO\_\-IgnoreSelfCollisions@{IKFO\_\-IgnoreSelfCollisions}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdca1bc83e529a1beb8fc6c7cb59fa477166}{
+IKFO\_\-IgnoreSelfCollisions}
+\label{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdca1bc83e529a1beb8fc6c7cb59fa477166}
+}]will not check the self-\/collision of the robot (checked by default) \index{IKFO\_\-IgnoreJointLimits@{IKFO\_\-IgnoreJointLimits}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKFO\_\-IgnoreJointLimits@{IKFO\_\-IgnoreJointLimits}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdcad66d86a301f3ccd5d17bcc1197f9c321}{
+IKFO\_\-IgnoreJointLimits}
+\label{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdcad66d86a301f3ccd5d17bcc1197f9c321}
+}]will not check the joint limits of the robot (checked by default) \index{IKFO\_\-IgnoreCustomFilters@{IKFO\_\-IgnoreCustomFilters}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKFO\_\-IgnoreCustomFilters@{IKFO\_\-IgnoreCustomFilters}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdcaf98c0e29d2aee38b7af964e15a43ff3b}{
+IKFO\_\-IgnoreCustomFilters}
+\label{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdcaf98c0e29d2aee38b7af964e15a43ff3b}
+}]will not use the custom filter, even if one is set \index{IKFO\_\-IgnoreEndEffectorCollisions@{IKFO\_\-IgnoreEndEffectorCollisions}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKFO\_\-IgnoreEndEffectorCollisions@{IKFO\_\-IgnoreEndEffectorCollisions}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdcab6c6760e71911d36d392c861002e2a6c}{
+IKFO\_\-IgnoreEndEffectorCollisions}
+\label{namespaceOpenRAVE_a89401ff7c557d6d1ede96b550fb22bdcab6c6760e71911d36d392c861002e2a6c}
+}]will not check collision with the environment and the end effector links and bodies attached to the end effector links. The end effector links are defined by \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a235e6b3b9b27422cdf11846a71f5ca66}{RobotBase::Manipulator::GetChildLinks}. Use this option when \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator_a409973001a95f36e715c2f227fd28c5a}{RobotBase::Manipulator::CheckEndEffectorCollision} has already been called, or it is ok for the end effector to collide given the IK constraints. Self-\/collisions between the moving links and end effector are still checked. \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9}{
+\index{OpenRAVE@{OpenRAVE}!IkFilterReturn@{IkFilterReturn}}
+\index{IkFilterReturn@{IkFilterReturn}!OpenRAVE@{OpenRAVE}}
+\paragraph[{IkFilterReturn}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf IkFilterReturn}}\hfill}
+\label{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9}
+
+
+Return value for the ik filter that can be optionally set on an ik solver. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{IKFR\_\-Success@{IKFR\_\-Success}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKFR\_\-Success@{IKFR\_\-Success}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9a7a0f5642b1a33ef86868e24bb1e2ea39}{
+IKFR\_\-Success}
+\label{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9a7a0f5642b1a33ef86868e24bb1e2ea39}
+}]the ik solution is good \index{IKFR\_\-Reject@{IKFR\_\-Reject}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKFR\_\-Reject@{IKFR\_\-Reject}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9ae0a9b98b94852a81354da20c4c388929}{
+IKFR\_\-Reject}
+\label{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9ae0a9b98b94852a81354da20c4c388929}
+}]reject the ik solution \index{IKFR\_\-Quit@{IKFR\_\-Quit}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKFR\_\-Quit@{IKFR\_\-Quit}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9a818a27efa66560252c93cc569caae79e}{
+IKFR\_\-Quit}
+\label{namespaceOpenRAVE_a7a8cf38163621e225d83b4b3a8ff62e9a818a27efa66560252c93cc569caae79e}
+}]the ik solution is rejected and the ik call itself should quit with failure \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2e}{
+\index{OpenRAVE@{OpenRAVE}!IkParameterizationType@{IkParameterizationType}}
+\index{IkParameterizationType@{IkParameterizationType}!OpenRAVE@{OpenRAVE}}
+\paragraph[{IkParameterizationType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf IkParameterizationType}}\hfill}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2e}
+
+
+The types of inverse kinematics parameterizations supported. 
+
+The minimum degree of freedoms required is set in the upper 4 bits of each type. The number of values used to represent the parameterization ( $>$= dof ) is the next 4 bits. The lower bits contain a unique id of the type. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{IKP\_\-Transform6D@{IKP\_\-Transform6D}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKP\_\-Transform6D@{IKP\_\-Transform6D}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea33b4f04338b6d55fe993b6bdd9f66956}{
+IKP\_\-Transform6D}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea33b4f04338b6d55fe993b6bdd9f66956}
+}]end effector reaches desired 6D transformation \index{IKP\_\-Rotation3D@{IKP\_\-Rotation3D}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKP\_\-Rotation3D@{IKP\_\-Rotation3D}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea125270b64ed51a89e7021ec7e6d71669}{
+IKP\_\-Rotation3D}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea125270b64ed51a89e7021ec7e6d71669}
+}]end effector reaches desired 3D rotation \index{IKP\_\-Translation3D@{IKP\_\-Translation3D}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKP\_\-Translation3D@{IKP\_\-Translation3D}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eae24724faf9388c7f2ae2c7cbbc9c5e94}{
+IKP\_\-Translation3D}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eae24724faf9388c7f2ae2c7cbbc9c5e94}
+}]end effector origin reaches desired 3D translation \index{IKP\_\-Direction3D@{IKP\_\-Direction3D}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKP\_\-Direction3D@{IKP\_\-Direction3D}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea31424bec585106a5464b4ebe4831acc9}{
+IKP\_\-Direction3D}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea31424bec585106a5464b4ebe4831acc9}
+}]direction on end effector coordinate system reaches desired direction \index{IKP\_\-Ray4D@{IKP\_\-Ray4D}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKP\_\-Ray4D@{IKP\_\-Ray4D}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea4971a1736a1ea39559c0c49601b17533}{
+IKP\_\-Ray4D}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea4971a1736a1ea39559c0c49601b17533}
+}]ray on end effector coordinate system reaches desired global ray \index{IKP\_\-Lookat3D@{IKP\_\-Lookat3D}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKP\_\-Lookat3D@{IKP\_\-Lookat3D}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea6c4188710cb0a7084725fefd4c80d642}{
+IKP\_\-Lookat3D}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea6c4188710cb0a7084725fefd4c80d642}
+}]direction on end effector coordinate system points to desired 3D position \index{IKP\_\-TranslationDirection5D@{IKP\_\-TranslationDirection5D}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKP\_\-TranslationDirection5D@{IKP\_\-TranslationDirection5D}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea68c40080732ab8a017608e45a2f20d33}{
+IKP\_\-TranslationDirection5D}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea68c40080732ab8a017608e45a2f20d33}
+}]end effector origin and direction reaches desired 3D translation and direction. Can be thought of as Ray IK where the origin of the ray must coincide. \index{IKP\_\-TranslationXY2D@{IKP\_\-TranslationXY2D}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKP\_\-TranslationXY2D@{IKP\_\-TranslationXY2D}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eadcf015cba2fad8597405a442c81e0612}{
+IKP\_\-TranslationXY2D}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eadcf015cba2fad8597405a442c81e0612}
+}]2D translation along XY plane \index{IKP\_\-TranslationXYOrientation3D@{IKP\_\-TranslationXYOrientation3D}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKP\_\-TranslationXYOrientation3D@{IKP\_\-TranslationXYOrientation3D}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eacb13532b686d552c5a513aa5296a9465}{
+IKP\_\-TranslationXYOrientation3D}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eacb13532b686d552c5a513aa5296a9465}
+}]2D translation along XY plane and 1D rotation around Z axis. The offset of the rotation is measured starting at +X, so at +X is it 0, at +Y it is pi/2. \index{IKP\_\-TranslationLocalGlobal6D@{IKP\_\-TranslationLocalGlobal6D}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKP\_\-TranslationLocalGlobal6D@{IKP\_\-TranslationLocalGlobal6D}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea3acb8e5a6b84403f23286a338c46e5a7}{
+IKP\_\-TranslationLocalGlobal6D}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2ea3acb8e5a6b84403f23286a338c46e5a7}
+}]local point on end effector origin reaches desired 3D global point \index{IKP\_\-NumberOfParameterizations@{IKP\_\-NumberOfParameterizations}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IKP\_\-NumberOfParameterizations@{IKP\_\-NumberOfParameterizations}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eafc80ee4dec1e8de5665d49e6f4bb8d84}{
+IKP\_\-NumberOfParameterizations}
+\label{namespaceOpenRAVE_a16f7833e516a35d385ac594a44e44a2eafc80ee4dec1e8de5665d49e6f4bb8d84}
+}]number of parameterizations (does not count IKP\_\-None) \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937}{
+\index{OpenRAVE@{OpenRAVE}!IntervalType@{IntervalType}}
+\index{IntervalType@{IntervalType}!OpenRAVE@{OpenRAVE}}
+\paragraph[{IntervalType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf IntervalType}}\hfill}
+\label{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937}
+
+
+Specifies the boundary conditions of intervals for sampling. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{IT\_\-Open@{IT\_\-Open}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IT\_\-Open@{IT\_\-Open}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937a9c15a47d726e9fbfb50b4aed7cf35856}{
+IT\_\-Open}
+\label{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937a9c15a47d726e9fbfb50b4aed7cf35856}
+}](a,b) \index{IT\_\-OpenStart@{IT\_\-OpenStart}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IT\_\-OpenStart@{IT\_\-OpenStart}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937a7928c735c3c6ce91beca595f8e76f08e}{
+IT\_\-OpenStart}
+\label{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937a7928c735c3c6ce91beca595f8e76f08e}
+}](a,b\mbox{]} \index{IT\_\-OpenEnd@{IT\_\-OpenEnd}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IT\_\-OpenEnd@{IT\_\-OpenEnd}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937aac880107c84b1475074c13cee32a6104}{
+IT\_\-OpenEnd}
+\label{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937aac880107c84b1475074c13cee32a6104}
+}]\mbox{[}a,b) \index{IT\_\-Closed@{IT\_\-Closed}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!IT\_\-Closed@{IT\_\-Closed}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937a35f5589548b539707ceaf7c95a7e96e8}{
+IT\_\-Closed}
+\label{namespaceOpenRAVE_a0d04dbfb6240509e26f8336ab1756937a35f5589548b539707ceaf7c95a7e96e8}
+}]\mbox{[}a,b\mbox{]} \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262c}{
+\index{OpenRAVE@{OpenRAVE}!OpenRAVEErrorCode@{OpenRAVEErrorCode}}
+\index{OpenRAVEErrorCode@{OpenRAVEErrorCode}!OpenRAVE@{OpenRAVE}}
+\paragraph[{OpenRAVEErrorCode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf OpenRAVEErrorCode}}\hfill}
+\label{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262c}
+
+
+OpenRAVE error codes 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{ORE\_\-CommandNotSupported@{ORE\_\-CommandNotSupported}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!ORE\_\-CommandNotSupported@{ORE\_\-CommandNotSupported}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262cad33c9bd2b6b21be295e2a983f19e6006}{
+ORE\_\-CommandNotSupported}
+\label{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262cad33c9bd2b6b21be295e2a983f19e6006}
+}]string command could not be parsed or is not supported \index{ORE\_\-InvalidPlugin@{ORE\_\-InvalidPlugin}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!ORE\_\-InvalidPlugin@{ORE\_\-InvalidPlugin}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262cab6eaf97936dda5f10b34d8106c929270}{
+ORE\_\-InvalidPlugin}
+\label{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262cab6eaf97936dda5f10b34d8106c929270}
+}]shared object is not a valid plugin \index{ORE\_\-InvalidInterfaceHash@{ORE\_\-InvalidInterfaceHash}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!ORE\_\-InvalidInterfaceHash@{ORE\_\-InvalidInterfaceHash}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262caea76ef8a6aa70c082da2d9dfeaaa2ed5}{
+ORE\_\-InvalidInterfaceHash}
+\label{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262caea76ef8a6aa70c082da2d9dfeaaa2ed5}
+}]interface hashes do not match between plugins \index{ORE\_\-NotImplemented@{ORE\_\-NotImplemented}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!ORE\_\-NotImplemented@{ORE\_\-NotImplemented}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262cac8a3a340f3efbef5161746764a523a35}{
+ORE\_\-NotImplemented}
+\label{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262cac8a3a340f3efbef5161746764a523a35}
+}]function is not implemented by the interface. \index{ORE\_\-InconsistentConstraints@{ORE\_\-InconsistentConstraints}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!ORE\_\-InconsistentConstraints@{ORE\_\-InconsistentConstraints}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262caefba8dc1666cec415519f11ca1a6699b}{
+ORE\_\-InconsistentConstraints}
+\label{namespaceOpenRAVE_adf2fa050995e80f643f8eddc14d7262caefba8dc1666cec415519f11ca1a6699b}
+}]return solutions or trajectories do not follow the constraints of the planner/module \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_a5ab12d9ae992912f730cfefda6c97042}{
+\index{OpenRAVE@{OpenRAVE}!PhysicsEngineOptions@{PhysicsEngineOptions}}
+\index{PhysicsEngineOptions@{PhysicsEngineOptions}!OpenRAVE@{OpenRAVE}}
+\paragraph[{PhysicsEngineOptions}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf PhysicsEngineOptions}}\hfill}
+\label{namespaceOpenRAVE_a5ab12d9ae992912f730cfefda6c97042}
+
+
+basic options for physics engine 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{PEO\_\-SelfCollisions@{PEO\_\-SelfCollisions}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!PEO\_\-SelfCollisions@{PEO\_\-SelfCollisions}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a5ab12d9ae992912f730cfefda6c97042ac6a259c2e3176f579d27d30003166e17}{
+PEO\_\-SelfCollisions}
+\label{namespaceOpenRAVE_a5ab12d9ae992912f730cfefda6c97042ac6a259c2e3176f579d27d30003166e17}
+}]if set, physics engine will use contact forces from self-\/collisions \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853}{
+\index{OpenRAVE@{OpenRAVE}!PlannerAction@{PlannerAction}}
+\index{PlannerAction@{PlannerAction}!OpenRAVE@{OpenRAVE}}
+\paragraph[{PlannerAction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf PlannerAction}}\hfill}
+\label{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853}
+
+
+action to send to the planner while it is planning. This is usually done by the user-\/specified planner callback function 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{PA\_\-None@{PA\_\-None}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!PA\_\-None@{PA\_\-None}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853a64ec1b874d3088ceef9bd5051c65889f}{
+PA\_\-None}
+\label{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853a64ec1b874d3088ceef9bd5051c65889f}
+}]no action \index{PA\_\-Interrupt@{PA\_\-Interrupt}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!PA\_\-Interrupt@{PA\_\-Interrupt}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853a39d503ce662ac46ebdb9fc6e55ca7a5a}{
+PA\_\-Interrupt}
+\label{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853a39d503ce662ac46ebdb9fc6e55ca7a5a}
+}]interrupt the planner and return to user \index{PA\_\-ReturnWithAnySolution@{PA\_\-ReturnWithAnySolution}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!PA\_\-ReturnWithAnySolution@{PA\_\-ReturnWithAnySolution}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853adcf80ca3a0125b7e5de795d605ab7ffe}{
+PA\_\-ReturnWithAnySolution}
+\label{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853adcf80ca3a0125b7e5de795d605ab7ffe}
+}]return quickly with any path \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200e}{
+\index{OpenRAVE@{OpenRAVE}!PlannerStatus@{PlannerStatus}}
+\index{PlannerStatus@{PlannerStatus}!OpenRAVE@{OpenRAVE}}
+\paragraph[{PlannerStatus}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf PlannerStatus}}\hfill}
+\label{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200e}
+
+
+the status of the PlanPath method. Used when PlanPath can be called multiple times to resume planning. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{PS\_\-Failed@{PS\_\-Failed}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!PS\_\-Failed@{PS\_\-Failed}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200ea46d7da834c9c074260b53909874e4b38}{
+PS\_\-Failed}
+\label{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200ea46d7da834c9c074260b53909874e4b38}
+}]planner failed \index{PS\_\-HasSolution@{PS\_\-HasSolution}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!PS\_\-HasSolution@{PS\_\-HasSolution}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200ea23c3ecb52bc33b330da0f5a4441115e5}{
+PS\_\-HasSolution}
+\label{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200ea23c3ecb52bc33b330da0f5a4441115e5}
+}]planner succeeded \index{PS\_\-Interrupted@{PS\_\-Interrupted}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!PS\_\-Interrupted@{PS\_\-Interrupted}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200ea6130a9f38faec3533a7d0e5594d4ef10}{
+PS\_\-Interrupted}
+\label{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200ea6130a9f38faec3533a7d0e5594d4ef10}
+}]planning was interrupted, but can be resumed by calling PlanPath again \end{description}
+\end{Desc}
+
+\hypertarget{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88}{
+\index{OpenRAVE@{OpenRAVE}!SerializationOptions@{SerializationOptions}}
+\index{SerializationOptions@{SerializationOptions}!OpenRAVE@{OpenRAVE}}
+\paragraph[{SerializationOptions}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf SerializationOptions}}\hfill}
+\label{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88}
+
+
+serialization options for interfaces 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{SO\_\-Kinematics@{SO\_\-Kinematics}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!SO\_\-Kinematics@{SO\_\-Kinematics}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88a4f89b08487512e4239c8c8936f7c2de4}{
+SO\_\-Kinematics}
+\label{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88a4f89b08487512e4239c8c8936f7c2de4}
+}]kinematics information \index{SO\_\-Dynamics@{SO\_\-Dynamics}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!SO\_\-Dynamics@{SO\_\-Dynamics}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88afa503c3acf6b50e3c292bee576395ff0}{
+SO\_\-Dynamics}
+\label{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88afa503c3acf6b50e3c292bee576395ff0}
+}]dynamics information \index{SO\_\-BodyState@{SO\_\-BodyState}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!SO\_\-BodyState@{SO\_\-BodyState}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88a78580517a26880616f5b1c6fcfdb0945}{
+SO\_\-BodyState}
+\label{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88a78580517a26880616f5b1c6fcfdb0945}
+}]state of the body \index{SO\_\-NamesAndFiles@{SO\_\-NamesAndFiles}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!SO\_\-NamesAndFiles@{SO\_\-NamesAndFiles}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88a7517f05542512917f3fe40abff6adb10}{
+SO\_\-NamesAndFiles}
+\label{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88a7517f05542512917f3fe40abff6adb10}
+}]resource files and names \index{SO\_\-RobotManipulators@{SO\_\-RobotManipulators}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!SO\_\-RobotManipulators@{SO\_\-RobotManipulators}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88aeb7e387f766567c9ced7e93677fb30a3}{
+SO\_\-RobotManipulators}
+\label{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88aeb7e387f766567c9ced7e93677fb30a3}
+}]serialize robot manipulators \index{SO\_\-RobotSensors@{SO\_\-RobotSensors}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!SO\_\-RobotSensors@{SO\_\-RobotSensors}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88ac7670ed300cd49644318eaf3580585df}{
+SO\_\-RobotSensors}
+\label{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88ac7670ed300cd49644318eaf3580585df}
+}]serialize robot sensors \index{SO\_\-Geometry@{SO\_\-Geometry}!OpenRAVE@{OpenRAVE}}\index{OpenRAVE@{OpenRAVE}!SO\_\-Geometry@{SO\_\-Geometry}}\item[{\em 
+\hypertarget{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88ab81e3effdc7d19a9da6cb868a564abeb}{
+SO\_\-Geometry}
+\label{namespaceOpenRAVE_a93a1dd60e5da7bb4710cc7ca1e041d88ab81e3effdc7d19a9da6cb868a564abeb}
+}]geometry information (for collision detection) \end{description}
+\end{Desc}
+
+
+
+\subsubsection{Function Documentation}
+\hypertarget{namespaceOpenRAVE_ae3bd9d884ea7720a63d49b6212d13f42}{
+\index{OpenRAVE@{OpenRAVE}!CreateEnvironment@{CreateEnvironment}}
+\index{CreateEnvironment@{CreateEnvironment}!OpenRAVE@{OpenRAVE}}
+\paragraph[{CreateEnvironment}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-CORE\_\-API EnvironmentBasePtr OpenRAVE::CreateEnvironment (bool {\em bLoadAllPlugins} = {\ttfamily true})}\hfill}
+\label{namespaceOpenRAVE_ae3bd9d884ea7720a63d49b6212d13f42}
+\hypertarget{namespaceOpenRAVE_a15759460275c5fa586f4ca9656d998b9}{
+\index{OpenRAVE@{OpenRAVE}!DefineRavePrintfW@{DefineRavePrintfW}}
+\index{DefineRavePrintfW@{DefineRavePrintfW}!OpenRAVE@{OpenRAVE}}
+\paragraph[{DefineRavePrintfW}]{\setlength{\rightskip}{0pt plus 5cm}OpenRAVE::DefineRavePrintfW (\_\-FATALLEVEL)}\hfill}
+\label{namespaceOpenRAVE_a15759460275c5fa586f4ca9656d998b9}
+
+
+adds the function name and line number to an openrave exception 
+
+Enumeration of all the interfaces. \hypertarget{namespaceOpenRAVE_ae99951462c88a655511abbd361bcf841}{
+\index{OpenRAVE@{OpenRAVE}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!OpenRAVE@{OpenRAVE}}
+\paragraph[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API std::ostream\& OpenRAVE::operator$<$$<$ (std::ostream \& {\em O}, \/  const PlannerBase::PlannerParameters \& {\em v})}\hfill}
+\label{namespaceOpenRAVE_ae99951462c88a655511abbd361bcf841}
+\begin{DoxyVerb}<PlannerParameters> \end{DoxyVerb}
+ tags \hypertarget{namespaceOpenRAVE_a06be8afa87a225a4a6cdc0a5c2de150a}{
+\index{OpenRAVE@{OpenRAVE}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!OpenRAVE@{OpenRAVE}}
+\paragraph[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API std::istream\& OpenRAVE::operator$>$$>$ (std::istream \& {\em I}, \/  PlannerBase::PlannerParameters \& {\em v})}\hfill}
+\label{namespaceOpenRAVE_a06be8afa87a225a4a6cdc0a5c2de150a}
+\begin{DoxyVerb}<PlannerParameters> \end{DoxyVerb}
+ to be the first token. Parses stream until \begin{DoxyVerb}</PlannerParameters> \end{DoxyVerb}
+ reached \hypertarget{namespaceOpenRAVE_ad71eecb48ab2b3d6710feba24618f479}{
+\index{OpenRAVE@{OpenRAVE}!RaveCallXMLReader@{RaveCallXMLReader}}
+\index{RaveCallXMLReader@{RaveCallXMLReader}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveCallXMLReader}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API BaseXMLReaderPtr OpenRAVE::RaveCallXMLReader (InterfaceType {\em type}, \/  const std::string \& {\em xmltag}, \/  InterfaceBasePtr {\em pinterface}, \/  const AttributesList \& {\em atts})}\hfill}
+\label{namespaceOpenRAVE_ad71eecb48ab2b3d6710feba24618f479}
+
+
+Returns the current registered reader for the interface type/xmlid. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Will throw with ORE\_\-InvalidArguments if registered function could not be found. \end{DoxyExceptions}
+\hypertarget{namespaceOpenRAVE_aec9c3dd6a1f2908a1eb84ca59243e00a}{
+\index{OpenRAVE@{OpenRAVE}!RaveCreateEnvironment@{RaveCreateEnvironment}}
+\index{RaveCreateEnvironment@{RaveCreateEnvironment}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveCreateEnvironment}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-CORE\_\-API EnvironmentBasePtr OpenRAVE::RaveCreateEnvironment ()}\hfill}
+\label{namespaceOpenRAVE_aec9c3dd6a1f2908a1eb84ca59243e00a}
+Creates an \hyperlink{namespaceOpenRAVE}{OpenRAVE} environment. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bLoadAllPlugins}]passed into \hyperlink{namespaceOpenRAVE_a85619ef1740cd97d7dcb5ef306243a75}{RaveInitialize} \end{DoxyParams}
+\hypertarget{namespaceOpenRAVE_abfafe0fbe621c9be55912937f08104df}{
+\index{OpenRAVE@{OpenRAVE}!RaveDestroy@{RaveDestroy}}
+\index{RaveDestroy@{RaveDestroy}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveDestroy}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API void OpenRAVE::RaveDestroy ()}\hfill}
+\label{namespaceOpenRAVE_abfafe0fbe621c9be55912937f08104df}
+
+
+Destroys the entire \hyperlink{namespaceOpenRAVE}{OpenRAVE} state and all loaded environments. 
+
+This functions should be always called before program shutdown in order to assure all resources are relased appropriately. \hypertarget{namespaceOpenRAVE_a3faf74c6f78a579f18995764df3142e5}{
+\index{OpenRAVE@{OpenRAVE}!RaveFindDatabaseFile@{RaveFindDatabaseFile}}
+\index{RaveFindDatabaseFile@{RaveFindDatabaseFile}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveFindDatabaseFile}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API std::string OpenRAVE::RaveFindDatabaseFile (const std::string \& {\em filename}, \/  bool {\em bRead} = {\ttfamily true})}\hfill}
+\label{namespaceOpenRAVE_a3faf74c6f78a579f18995764df3142e5}
+
+
+Searches for a filename in the database and returns a full path/URL to it. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]the relative filename in the database \item[{\em bRead}]if true will only return a file if it exists. If false, will return the filename of the first valid database directory. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a non-\/empty string if a file could be found. 
+\end{DoxyReturn}
+\hypertarget{namespaceOpenRAVE_a240dc0d7e6ff803758ece938c97ecb09}{
+\index{OpenRAVE@{OpenRAVE}!RaveGetAffineDOF@{RaveGetAffineDOF}}
+\index{RaveGetAffineDOF@{RaveGetAffineDOF}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveGetAffineDOF}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API int OpenRAVE::RaveGetAffineDOF (int {\em affinedofs})}\hfill}
+\label{namespaceOpenRAVE_a240dc0d7e6ff803758ece938c97ecb09}
+
+
+Returns the degrees of freedom needed to represent all the values in the affine dof mask. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]throws if \end{DoxyExceptions}
+\hypertarget{namespaceOpenRAVE_adf2141071a66cfbcbe55a64ade70e9d8}{
+\index{OpenRAVE@{OpenRAVE}!RaveGetAffineDOFFromIndex@{RaveGetAffineDOFFromIndex}}
+\index{RaveGetAffineDOFFromIndex@{RaveGetAffineDOFFromIndex}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveGetAffineDOFFromIndex}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API {\bf DOFAffine} OpenRAVE::RaveGetAffineDOFFromIndex (int {\em affinedofs}, \/  int {\em index})}\hfill}
+\label{namespaceOpenRAVE_adf2141071a66cfbcbe55a64ade70e9d8}
+
+
+Given a mask of affine dofs and an index into the array, returns the affine dof that is being referenced. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em affinedofs}]a mask of \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} values \item[{\em index}]an index into the affine dof array \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]throws if dof if index is out of bounds \end{DoxyExceptions}
+\hypertarget{namespaceOpenRAVE_a66055231535a166b71d8815e8d2a73a7}{
+\index{OpenRAVE@{OpenRAVE}!RaveGetAffineDOFValuesFromTransform@{RaveGetAffineDOFValuesFromTransform}}
+\index{RaveGetAffineDOFValuesFromTransform@{RaveGetAffineDOFValuesFromTransform}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveGetAffineDOFValuesFromTransform}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API void OpenRAVE::RaveGetAffineDOFValuesFromTransform (std::vector$<$ dReal $>$::iterator {\em itvalues}, \/  const Transform \& {\em t}, \/  int {\em affinedofs}, \/  const Vector \& {\em vActvAffineRotationAxis} = {\ttfamily Vector(0,~0,~1)})}\hfill}
+\label{namespaceOpenRAVE_a66055231535a166b71d8815e8d2a73a7}
+
+
+Converts the transformation matrix into the specified affine values format. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em itvalues}]an iterator to the vector to write the values to. Will write exactly RaveGetAffineDOF(affinedofs) values. \item[\mbox{$\leftarrow$} {\em the}]affine transformation to convert \item[\mbox{$\leftarrow$} {\em affinedofs}]the affine format to output values in \item[\mbox{$\leftarrow$} {\em vActvAffineRotationAxis}]optional rotation axis if affinedofs specified \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a5ee6baa8acb92c310cbc1ece082640d0}{DOF\_\-RotationAxis} \end{DoxyParams}
+\hypertarget{namespaceOpenRAVE_aabe395213e4bac04e7d74e4a9fb73773}{
+\index{OpenRAVE@{OpenRAVE}!RaveGetEnvironment@{RaveGetEnvironment}}
+\index{RaveGetEnvironment@{RaveGetEnvironment}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveGetEnvironment}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API EnvironmentBasePtr OpenRAVE::RaveGetEnvironment (int {\em id})}\hfill}
+\label{namespaceOpenRAVE_aabe395213e4bac04e7d74e4a9fb73773}
+
+
+get the environment from its unique id 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em id}]the unique environment id returned by \hyperlink{namespaceOpenRAVE_aab71f332a1a87d00dbfaea9404034855}{RaveGetEnvironmentId} \end{DoxyParams}
+\hypertarget{namespaceOpenRAVE_a55e1d8c68b801cd293ec78b8d417b7e6}{
+\index{OpenRAVE@{OpenRAVE}!RaveGetHomeDirectory@{RaveGetHomeDirectory}}
+\index{RaveGetHomeDirectory@{RaveGetHomeDirectory}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveGetHomeDirectory}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API std::string OpenRAVE::RaveGetHomeDirectory ()}\hfill}
+\label{namespaceOpenRAVE_a55e1d8c68b801cd293ec78b8d417b7e6}
+
+
+Returns the openrave home directory where settings, cache, and other files are stored. 
+
+On Linux/Unix systems, this is usually \$HOME/.openrave, on Windows this is \$HOMEPATH/.openrave \hypertarget{namespaceOpenRAVE_a5d7ef493cc8ed7bf8a4602cda1468466}{
+\index{OpenRAVE@{OpenRAVE}!RaveGetIndexFromAffineDOF@{RaveGetIndexFromAffineDOF}}
+\index{RaveGetIndexFromAffineDOF@{RaveGetIndexFromAffineDOF}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveGetIndexFromAffineDOF}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API int OpenRAVE::RaveGetIndexFromAffineDOF (int {\em affinedofs}, \/  DOFAffine {\em dof})}\hfill}
+\label{namespaceOpenRAVE_a5d7ef493cc8ed7bf8a4602cda1468466}
+
+
+Given a mask of affine dofs and a dof inside that mask, returns the index where the value could be found. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em affinedofs}]a mask of \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine} values \item[{\em dof}]a set of values inside affinedofs, the index of the first value is returned \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]throws if dof is not present in affinedofs \end{DoxyExceptions}
+\hypertarget{namespaceOpenRAVE_a9a5cb560a6ba4ba32d431e1d953dd974}{
+\index{OpenRAVE@{OpenRAVE}!RaveGetPluginInfo@{RaveGetPluginInfo}}
+\index{RaveGetPluginInfo@{RaveGetPluginInfo}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveGetPluginInfo}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API void OpenRAVE::RaveGetPluginInfo (std::list$<$ std::pair$<$ std::string, PLUGININFO $>$ $>$ \& {\em plugins})}\hfill}
+\label{namespaceOpenRAVE_a9a5cb560a6ba4ba32d431e1d953dd974}
+
+
+Get all the loaded plugins and the interfaces they support. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em plugins}]A list of plugins. Each entry has the plugin name and the interfaces it supports \end{DoxyParams}
+\hypertarget{namespaceOpenRAVE_a34bfae69aaaf88137c16407df7048aea}{
+\index{OpenRAVE@{OpenRAVE}!RaveGetTransformFromAffineDOFValues@{RaveGetTransformFromAffineDOFValues}}
+\index{RaveGetTransformFromAffineDOFValues@{RaveGetTransformFromAffineDOFValues}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveGetTransformFromAffineDOFValues}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API void OpenRAVE::RaveGetTransformFromAffineDOFValues (Transform \& {\em t}, \/  std::vector$<$ dReal $>$::const\_\-iterator {\em itvalues}, \/  int {\em affinedofs}, \/  const Vector \& {\em vActvAffineRotationAxis} = {\ttfamily Vector(0,~0,~1)})}\hfill}
+\label{namespaceOpenRAVE_a34bfae69aaaf88137c16407df7048aea}
+
+
+Converts affine dof values into a transform. 
+
+Note that depending on what the dof values holds, only a part of the transform will be updated. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em t}]the output transform \item[\mbox{$\leftarrow$} {\em itvalues}]the start iterator of the affine dof values \item[\mbox{$\leftarrow$} {\em affinedofs}]the affine dof mask \item[\mbox{$\leftarrow$} {\em vActvAffineRotationAxis}]optional rotation axis if affinedofs specified \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98a5ee6baa8acb92c310cbc1ece082640d0}{DOF\_\-RotationAxis} \end{DoxyParams}
+\hypertarget{namespaceOpenRAVE_ac3c20e38f24dedcd46add394fd8074fb}{
+\index{OpenRAVE@{OpenRAVE}!RaveGlobalState@{RaveGlobalState}}
+\index{RaveGlobalState@{RaveGlobalState}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveGlobalState}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API UserDataPtr OpenRAVE::RaveGlobalState ()}\hfill}
+\label{namespaceOpenRAVE_ac3c20e38f24dedcd46add394fd8074fb}
+
+
+A pointer to the global openrave state. 
+
+\begin{DoxyReturn}{Returns}
+a managed pointer to the state. 
+\end{DoxyReturn}
+\hypertarget{namespaceOpenRAVE_a85619ef1740cd97d7dcb5ef306243a75}{
+\index{OpenRAVE@{OpenRAVE}!RaveInitialize@{RaveInitialize}}
+\index{RaveInitialize@{RaveInitialize}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveInitialize}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API int OpenRAVE::RaveInitialize (bool {\em bLoadAllPlugins} = {\ttfamily true}, \/  int {\em level} = {\ttfamily Level\_\-Info})}\hfill}
+\label{namespaceOpenRAVE_a85619ef1740cd97d7dcb5ef306243a75}
+
+
+Explicitly initializes the global \hyperlink{namespaceOpenRAVE}{OpenRAVE} state (optional). 
+
+Optional function to initialize openrave plugins and logging. Although environment creation will automatically make sure this function is called, users might want explicit control of when this happens. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bLoadAllPlugins}]If true will load all the openrave plugins automatically that can be found in the OPENRAVE\_\-PLUGINS environment path \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise an error code 
+\end{DoxyReturn}
+\hypertarget{namespaceOpenRAVE_a4acb966ec91e783a5d3a5967583bb2c0}{
+\index{OpenRAVE@{OpenRAVE}!RaveInitializeFromState@{RaveInitializeFromState}}
+\index{RaveInitializeFromState@{RaveInitializeFromState}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveInitializeFromState}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API void OpenRAVE::RaveInitializeFromState (UserDataPtr {\em globalstate})}\hfill}
+\label{namespaceOpenRAVE_a4acb966ec91e783a5d3a5967583bb2c0}
+
+
+Initializes the global state from an already loaded \hyperlink{namespaceOpenRAVE}{OpenRAVE} environment. 
+
+Because of shared object boundaries, it is necessary to pass the global state pointer around. If using plugin.h, this function is automatically called by \hyperlink{group__plugin__exports_ga468c900067e08689383b3f8da642141f}{CreateInterfaceValidated}. It is also called by and every \hyperlink{classOpenRAVE_1_1InterfaceBase}{InterfaceBase} constructor. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em globalstate}]\end{DoxyParams}
+\hypertarget{namespaceOpenRAVE_af3e449c98bda910013e4b323573306d1}{
+\index{OpenRAVE@{OpenRAVE}!RaveInitRandomGeneration@{RaveInitRandomGeneration}}
+\index{RaveInitRandomGeneration@{RaveInitRandomGeneration}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveInitRandomGeneration}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API void OpenRAVE::RaveInitRandomGeneration (uint32\_\-t {\em seed})}\hfill}
+\label{namespaceOpenRAVE_af3e449c98bda910013e4b323573306d1}
+\hypertarget{namespaceOpenRAVE_a5f46fb9ff755f614ea5636851a89952c}{
+\index{OpenRAVE@{OpenRAVE}!RaveInterfaceCast@{RaveInterfaceCast}}
+\index{RaveInterfaceCast@{RaveInterfaceCast}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveInterfaceCast}]{\setlength{\rightskip}{0pt plus 5cm}boost::shared\_\-ptr$<$T$>$ OpenRAVE::RaveInterfaceCast (InterfaceBasePtr {\em pinterface})}\hfill}
+\label{namespaceOpenRAVE_a5f46fb9ff755f614ea5636851a89952c}
+
+
+Safely casts from the base interface class to an openrave interface using static\_\-pointer\_\-cast. 
+
+The reason why dynamic\_\-pointer\_\-cast cannot be used is because interfaces might be created by different plugins, and the runtime type information will be different. \hypertarget{namespaceOpenRAVE_adf731ae412bd36fe76b35c4e2e4f6478}{
+\index{OpenRAVE@{OpenRAVE}!RaveInterfaceConstCast@{RaveInterfaceConstCast}}
+\index{RaveInterfaceConstCast@{RaveInterfaceConstCast}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveInterfaceConstCast}]{\setlength{\rightskip}{0pt plus 5cm}boost::shared\_\-ptr$<$T const$>$ OpenRAVE::RaveInterfaceConstCast (InterfaceBaseConstPtr {\em pinterface})}\hfill}
+\label{namespaceOpenRAVE_adf731ae412bd36fe76b35c4e2e4f6478}
+
+
+Safely casts from the base interface class to an openrave interface using static\_\-pointer\_\-cast. 
+
+The reason why dynamic\_\-pointer\_\-cast cannot be used is because interfaces might be created by different plugins, and the runtime type information will be different. \hypertarget{namespaceOpenRAVE_a6bca7a284a46924c61bcbdd37aeb3dcf}{
+\index{OpenRAVE@{OpenRAVE}!RaveLoadPlugin@{RaveLoadPlugin}}
+\index{RaveLoadPlugin@{RaveLoadPlugin}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveLoadPlugin}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API bool OpenRAVE::RaveLoadPlugin (const std::string \& {\em libraryname})}\hfill}
+\label{namespaceOpenRAVE_a6bca7a284a46924c61bcbdd37aeb3dcf}
+
+
+Load a plugin and its interfaces. 
+
+If the plugin is already loaded, will reload it. 
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]the filename of the plugin to load \end{DoxyParams}
+\hypertarget{namespaceOpenRAVE_aee509dcc75db9b102d2fd497e1f21de6}{
+\index{OpenRAVE@{OpenRAVE}!RaveRandomDouble@{RaveRandomDouble}}
+\index{RaveRandomDouble@{RaveRandomDouble}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveRandomDouble}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API double OpenRAVE::RaveRandomDouble (IntervalType {\em interval} = {\ttfamily IT\_\-Closed})}\hfill}
+\label{namespaceOpenRAVE_aee509dcc75db9b102d2fd497e1f21de6}
+\hypertarget{namespaceOpenRAVE_a6fe8f01c322a5b2e5bccb4928f93ac0f}{
+\index{OpenRAVE@{OpenRAVE}!RaveRandomFloat@{RaveRandomFloat}}
+\index{RaveRandomFloat@{RaveRandomFloat}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveRandomFloat}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API float OpenRAVE::RaveRandomFloat (IntervalType {\em interval} = {\ttfamily IT\_\-Closed})}\hfill}
+\label{namespaceOpenRAVE_a6fe8f01c322a5b2e5bccb4928f93ac0f}
+\hypertarget{namespaceOpenRAVE_abc3b63337e9c8767dc7e18b30747029b}{
+\index{OpenRAVE@{OpenRAVE}!RaveRandomInt@{RaveRandomInt}}
+\index{RaveRandomInt@{RaveRandomInt}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveRandomInt}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API uint32\_\-t OpenRAVE::RaveRandomInt ()}\hfill}
+\label{namespaceOpenRAVE_abc3b63337e9c8767dc7e18b30747029b}
+\hypertarget{namespaceOpenRAVE_ad1ac80a7afacdb4a3a93086916eaa9e9}{
+\index{OpenRAVE@{OpenRAVE}!RaveRegisterInterface@{RaveRegisterInterface}}
+\index{RaveRegisterInterface@{RaveRegisterInterface}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveRegisterInterface}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API UserDataPtr OpenRAVE::RaveRegisterInterface (InterfaceType {\em type}, \/  const std::string \& {\em name}, \/  const char $\ast$ {\em interfacehash}, \/  const char $\ast$ {\em envhash}, \/  const boost::function$<$ InterfaceBasePtr(EnvironmentBasePtr, std::istream \&)$>$ \& {\em createfn})}\hfill}
+\label{namespaceOpenRAVE_ad1ac80a7afacdb4a3a93086916eaa9e9}
+
+
+Registers a function to create an interface, this allows the interface to be created by other modules. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]interface type \item[{\em name}]interface name \item[{\em interfacehash}]the hash of the interface being created (use the global defines OPENRAVE\_\-X\_\-HASH) \item[{\em envhash}]the hash of the environment (use the global define OPENRAVE\_\-ENVIRONMENT\_\-HASH) \item[{\em createfn}]functions to create the interface it takes two parameters: the environment and an istream to the rest of the interface creation arguments. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a handle if function is successfully registered. By destroying the handle, the interface will be automatically unregistered. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Will throw with ORE\_\-InvalidInterfaceHash if hashes do not match \end{DoxyExceptions}
+\hypertarget{namespaceOpenRAVE_a255c808782af449015333e7e230bf3b8}{
+\index{OpenRAVE@{OpenRAVE}!RaveRegisterXMLReader@{RaveRegisterXMLReader}}
+\index{RaveRegisterXMLReader@{RaveRegisterXMLReader}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveRegisterXMLReader}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API UserDataPtr OpenRAVE::RaveRegisterXMLReader (InterfaceType {\em type}, \/  const std::string \& {\em xmltag}, \/  const CreateXMLReaderFn \& {\em fn})}\hfill}
+\label{namespaceOpenRAVE_a255c808782af449015333e7e230bf3b8}
+
+
+Registers a custom xml reader for a particular interface. 
+
+Once registered, anytime an interface is created through XML and the xmltag is seen, the function CreateXMLReaderFn will be called to get a reader for that tag 
+\begin{DoxyParams}{Parameters}
+\item[{\em xmltag}]the tag specified in xmltag is seen in the interface, the the custom reader will be created. \item[{\em fn}]CreateXMLReaderFn(pinterface,atts) -\/ passed in the pointer to the interface where the tag was seen along with the list of attributes \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer holding the registration, releasing the pointer will unregister the XML reader 
+\end{DoxyReturn}
+\hypertarget{namespaceOpenRAVE_a4fd5cea1bb7d822e6acc89625c59c5f2}{
+\index{OpenRAVE@{OpenRAVE}!RaveReloadPlugins@{RaveReloadPlugins}}
+\index{RaveReloadPlugins@{RaveReloadPlugins}!OpenRAVE@{OpenRAVE}}
+\paragraph[{RaveReloadPlugins}]{\setlength{\rightskip}{0pt plus 5cm}OPENRAVE\_\-API void OpenRAVE::RaveReloadPlugins ()}\hfill}
+\label{namespaceOpenRAVE_a4fd5cea1bb7d822e6acc89625c59c5f2}
+
+
+Reloads all the plugins. 
+
+The interfaces currently created remain will continue using the old plugins, so this function is safe in that plugins currently loaded remain loaded until the last interface that uses them is released. 

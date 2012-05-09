@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="arch__controller" kind="page">
+    <compoundname>arch_controller</compoundname>
+    <title>Controller Concepts</title>
+    <detaileddescription>
+<para><bold>Reference:</bold> <ref refid="classOpenRAVE_1_1ControllerBase" kindref="compound">OpenRAVE::ControllerBase</ref></para><para>In order for openrave to control certain robot hardware, a <ref refid="classOpenRAVE_1_1ControllerBase" kindref="compound">OpenRAVE::ControllerBase</ref> controller has to be created that will interface with the hardware-specific libraries. This controller interface then has to be created through the environment and set onto an existing robot. All commands given to the robot are first filtered through the controller, then translated to joint commands. Different controllers can have different path inputs (ie: a robot walking on a floor might just have x,y,angle), but the default is the DOF joint values.</para><sect1 id="arch__controller_1arch_controller_writing">
+<title>Writing and Using Controllers</title>
+<para>Assuming that there exists a plugin with a controller interface named <bold>MyController</bold>, here are some ways to set an openrave robot to use it:</para><para><itemizedlist>
+<listitem><para>XML<itemizedlist>
+<listitem><para>add a <bold></bold> &lt;controller&gt; tag in the openrave robot XML file like this: <verbatim>
+&lt;robot file=&quot;robots/schunk-lwa3.robot.xml&quot;&gt;
+  &lt;controller type=&quot;MyController controller arguments here&quot;&gt;&lt;/controller&gt;
+&lt;/robot&gt;
+</verbatim></para></listitem><listitem><para>It is also possible to set a controller outside of the robot definition by specifying the robot&apos;s name. For example: <verbatim>
+&lt;environment&gt;
+  &lt;robot name=&quot;schunk-lwa3&quot; file=&quot;robots/schunk-lwa3.robot.xml&quot;&gt;
+  &lt;/robot&gt;
+  &lt;controller type=&quot;MyController&quot; robot=&quot;schunk-lwa3 controller arguments here&quot;&gt;&lt;/controller&gt;
+  &lt;/environment&gt;
+</verbatim></para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para>C++ <programlisting><codeline><highlight class="normal"><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>probot<sp/>=<sp/>GetEnv()-&gt;GetRobot(</highlight><highlight class="stringliteral">&quot;schunk-lwa3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespaceOpenRAVE_1a93f3c54acfadfefe33b745f7df0c81cf" kindref="member">ControllerBasePtr</ref><sp/>pcontroller<sp/>=<sp/><ref refid="namespaceOpenRAVE_1a1df06dca7777efdfbd9e75b9ee568cd2" kindref="member">RaveCreateController</ref>(GetEnv(),</highlight><highlight class="stringliteral">&quot;MyController<sp/>controller<sp/>arguments<sp/>here&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">vector&lt;int&gt;<sp/>dofindices(probot-&gt;GetDOF());</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>probot-&gt;GetDOF();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>dofindices[i]<sp/>=<sp/>i;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nControlTransformation<sp/>=<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal">probot-&gt;SetController(pcontroller,dofindices,nControlTransformation);</highlight></codeline>
+</programlisting></para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para>Python <programlisting><codeline><highlight class="normal">robot<sp/>=<sp/>env.GetRobot(</highlight><highlight class="stringliteral">&apos;schunk-lwa3&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="architecture_8dox_1a4be64eab0b347f5993372a1a40e21901" kindref="member">controller</ref><sp/>=<sp/><ref refid="namespaceOpenRAVE_1a1df06dca7777efdfbd9e75b9ee568cd2" kindref="member">RaveCreateController</ref>(env,</highlight><highlight class="stringliteral">&apos;MyController<sp/>controller<sp/>arguments<sp/>here&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">robot.SetController(<ref refid="architecture_8dox_1a4be64eab0b347f5993372a1a40e21901" kindref="member">controller</ref>,range(robot.GetDOF()),controltransform=1)</highlight></codeline>
+</programlisting></para></listitem></itemizedlist>
+</para><para><itemizedlist>
+<listitem><para>Octave/MATLAB <verbatim>
+robotid = orEnvGetBody(&apos;schunk-lwa3&apos;);
+orRobotControllerSet(robotid,&apos;MyController&apos;,&apos;controller arguments here&apos;)
+</verbatim> </para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

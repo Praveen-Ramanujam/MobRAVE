@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="config_8h" kind="file">
+    <compoundname>config.h</compoundname>
+    <includedby refid="openrave_8h" local="no">include/openrave/openrave.h</includedby>
+    <invincdepgraph>
+      <node id="1758">
+        <label>src/cppexamples/ikfastloader.cpp</label>
+        <link refid="ikfastloader_8cpp"/>
+      </node>
+      <node id="1767">
+        <label>src/cppexamples/orshowsensors.cpp</label>
+        <link refid="orshowsensors_8cpp"/>
+      </node>
+      <node id="1747">
+        <label>build/include/openrave/config.h</label>
+        <link refid="config.h"/>
+        <childnode refid="1748" relation="include">
+        </childnode>
+      </node>
+      <node id="1750">
+        <label>src/cppexamples/orpythonbinding.cpp</label>
+        <link refid="orpythonbinding_8cpp"/>
+      </node>
+      <node id="1757">
+        <label>src/libopenrave-core/openrave-core.h</label>
+        <link refid="openrave-core_8h"/>
+        <childnode refid="1758" relation="include">
+        </childnode>
+        <childnode refid="1759" relation="include">
+        </childnode>
+        <childnode refid="1760" relation="include">
+        </childnode>
+        <childnode refid="1761" relation="include">
+        </childnode>
+        <childnode refid="1762" relation="include">
+        </childnode>
+        <childnode refid="1763" relation="include">
+        </childnode>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1764" relation="include">
+        </childnode>
+        <childnode refid="1765" relation="include">
+        </childnode>
+        <childnode refid="1766" relation="include">
+        </childnode>
+        <childnode refid="1767" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1755" relation="include">
+        </childnode>
+      </node>
+      <node id="1755">
+        <label>src/cppexamples/oryoubotcontrol.cpp</label>
+        <link refid="oryoubotcontrol_8cpp"/>
+      </node>
+      <node id="1762">
+        <label>src/cppexamples/orikfilter.cpp</label>
+        <link refid="orikfilter_8cpp"/>
+      </node>
+      <node id="1765">
+        <label>src/cppexamples/orplanning_module.cpp</label>
+        <link refid="orplanning__module_8cpp"/>
+      </node>
+      <node id="1756">
+        <label>include/openrave/plugin.h</label>
+        <link refid="plugin_8h"/>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+      </node>
+      <node id="1764">
+        <label>src/cppexamples/orplanning_ik.cpp</label>
+        <link refid="orplanning__ik_8cpp"/>
+      </node>
+      <node id="1768">
+        <label>src/libopenrave/libopenrave.cpp</label>
+        <link refid="libopenrave_8cpp"/>
+        <childnode refid="1768" relation="include">
+        </childnode>
+      </node>
+      <node id="1748">
+        <label>include/openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+        <childnode refid="1752" relation="include">
+        </childnode>
+        <childnode refid="1756" relation="include">
+        </childnode>
+        <childnode refid="1757" relation="include">
+        </childnode>
+        <childnode refid="1768" relation="include">
+        </childnode>
+      </node>
+      <node id="1749">
+        <label>src/cppexamples/customreader.cpp</label>
+        <link refid="customreader_8cpp"/>
+      </node>
+      <node id="1759">
+        <label>src/cppexamples/opencvsaving.cpp</label>
+        <link refid="opencvsaving_8cpp"/>
+      </node>
+      <node id="1753">
+        <label>src/cppexamples/ormulticontrol.cpp</label>
+        <link refid="ormulticontrol_8cpp"/>
+      </node>
+      <node id="1752">
+        <label>include/openrave/planningutils.h</label>
+        <link refid="planningutils_8h"/>
+        <childnode refid="1753" relation="include">
+        </childnode>
+        <childnode refid="1754" relation="include">
+        </childnode>
+        <childnode refid="1755" relation="include">
+        </childnode>
+      </node>
+      <node id="1761">
+        <label>src/cppexamples/orconveyormovement.cpp</label>
+        <link refid="orconveyormovement_8cpp"/>
+      </node>
+      <node id="1754">
+        <label>src/cppexamples/ortrajectory.cpp</label>
+        <link refid="ortrajectory_8cpp"/>
+      </node>
+      <node id="1760">
+        <label>src/cppexamples/orcollision.cpp</label>
+        <link refid="orcollision_8cpp"/>
+      </node>
+      <node id="1763">
+        <label>src/cppexamples/orloadviewer.cpp</label>
+        <link refid="orloadviewer_8cpp"/>
+      </node>
+      <node id="1751">
+        <label>src/cppexamples/plugincpp.cpp</label>
+        <link refid="plugincpp_8cpp"/>
+      </node>
+      <node id="1766">
+        <label>src/cppexamples/orplanning_planner.cpp</label>
+        <link refid="orplanning__planner_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="config_8h_1ae8646aebdbbe3b22be00f5c446d1996b" prot="public" static="no">
+        <name>OPENRAVE_HELPER_DLL_IMPORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="17" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a44c91b6768e14bf6e117ac4dacdc77e1" prot="public" static="no">
+        <name>OPENRAVE_HELPER_DLL_EXPORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="18" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7dfd4a0ed4083cc73efe5557bddda951" prot="public" static="no">
+        <name>OPENRAVE_HELPER_DLL_LOCAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="19" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" prot="public" static="no">
+        <name>OPENRAVE_API</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="34" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a700f824b907109c7649c8a0894abbd55" prot="public" static="no">
+        <name>OPENRAVE_LOCAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="35" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a94ece644c9f3b00c03f6a36dfe74ea4a" prot="public" static="no">
+        <name>OPENRAVE_VERSION_MAJOR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="38" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a56ed9f4d8fec2c232c21edd6f1a4303b" prot="public" static="no">
+        <name>OPENRAVE_VERSION_MINOR</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="39" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1afb36720836c0b60409ce436f56d4d67e" prot="public" static="no">
+        <name>OPENRAVE_VERSION_PATCH</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="40" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a0ea03f1725b34af9ed02c57eba833b7e" prot="public" static="no">
+        <name>OPENRAVE_VERSION_COMBINED</name>
+        <param><defname>major</defname></param>
+        <param><defname>minor</defname></param>
+        <param><defname>patch</defname></param>
+        <initializer>(((major) &lt;&lt; 16) | ((minor) &lt;&lt; 8) | (patch))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="41" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5dd6efb11c56a7e366a936533aa2a970" prot="public" static="no">
+        <name>OPENRAVE_VERSION</name>
+        <initializer>OPENRAVE_VERSION_COMBINED(OPENRAVE_VERSION_MAJOR, OPENRAVE_VERSION_MINOR, OPENRAVE_VERSION_PATCH)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="42" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1afa323c6002289e1fa77d338e87a4ec7e" prot="public" static="no">
+        <name>OPENRAVE_VERSION_EXTRACT_MAJOR</name>
+        <param><defname>version</defname></param>
+        <initializer>(((version)&gt;&gt;16)&amp;0xff)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="43" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aec8760f7909ed2f7a4e9dec421345354" prot="public" static="no">
+        <name>OPENRAVE_VERSION_EXTRACT_MINOR</name>
+        <param><defname>version</defname></param>
+        <initializer>(((version)&gt;&gt;8)&amp;0xff)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="44" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ae6a8e5c449769316749cecfb86e17941" prot="public" static="no">
+        <name>OPENRAVE_VERSION_EXTRACT_PATCH</name>
+        <param><defname>version</defname></param>
+        <initializer>(((version))&amp;0xff)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="45" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a3ff052b0769327a2aea62b01287ad1b9" prot="public" static="no">
+        <name>OPENRAVE_VERSION_STRING</name>
+        <initializer>&quot;0.5.0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="46" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a9cecd5366d895c7958b820c8f5edf284" prot="public" static="no">
+        <name>OPENRAVE_VERSION_STRING_FORMAT</name>
+        <param><defname>version</defname></param>
+        <initializer>boost::str(boost::format(&quot;%s.%s.%s&quot;)%(OPENRAVE_VERSION_EXTRACT_MAJOR(version))%(OPENRAVE_VERSION_EXTRACT_MINOR(version))%(OPENRAVE_VERSION_EXTRACT_PATCH(version)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="47" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a0c14dd4bd52ce994d2fe487e6786f6bf" prot="public" static="no">
+        <name>OPENRAVE_VERSION_GE</name>
+        <param><defname>major1</defname></param>
+        <param><defname>minor1</defname></param>
+        <param><defname>patch1</defname></param>
+        <param><defname>major2</defname></param>
+        <param><defname>minor2</defname></param>
+        <param><defname>patch2</defname></param>
+        <initializer>(OPENRAVE_VERSION_COMBINED(major1, minor1, patch1) &gt;= OPENRAVE_VERSION_COMBINED(major2, minor2, patch2))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="49" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a0dbf6c46688bd90537d4c69b34bb279b" prot="public" static="no">
+        <name>OPENRAVE_VERSION_MINIMUM</name>
+        <param><defname>major</defname></param>
+        <param><defname>minor</defname></param>
+        <param><defname>patch</defname></param>
+        <initializer>OPENRAVE_VERSION_GE(OPENRAVE_VERSION_MAJOR, OPENRAVE_VERSION_MINOR, OPENRAVE_VERSION_PATCH, major, minor, patch)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="50" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a23a866bcced0e56b4c2f8d38d40761da" prot="public" static="no">
+        <name>OPENRAVE_PRECISION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="54" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ab8ce6aebb1f317e1452fb39151aa7ead" prot="public" static="no">
+        <name>OPENRAVE_PLUGINS_INSTALL_DIR</name>
+        <initializer>&quot;/usr/local/share/openrave-0.5/plugins&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="56" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a69a7c033f4a4928b3c0ddcdb86cc313c" prot="public" static="no">
+        <name>OPENRAVE_DATA_INSTALL_DIR</name>
+        <initializer>&quot;/usr/local/share/openrave-0.5&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="57" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac19077d159912065d50e568299944d45" prot="public" static="no">
+        <name>OPENRAVE_PYTHON_INSTALL_DIR</name>
+        <initializer>&quot;/usr/local/lib/python2.6/dist-packages&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/build/include/openrave/config.h" line="58" bodyfile="/home/pra3cob/openrave/build/include/openrave/config.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines <ref refid="namespaceOpenRAVE" kindref="compound">OpenRAVE</ref> installation-specific information. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="preprocessor">#ifndef<sp/>OPENRAVE_DEFINITIONS_H</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_DEFINITIONS_H</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>||<sp/>defined(__CYGWIN__)<sp/>||<sp/>defined(_MSC_VER)</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>OPENRAVE_HELPER_DLL_IMPORT<sp/>__declspec(dllimport)</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>OPENRAVE_HELPER_DLL_EXPORT<sp/>__declspec(dllexport)</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>OPENRAVE_HELPER_DLL_LOCAL</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>__GNUC__<sp/>&gt;=<sp/>4</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>OPENRAVE_HELPER_DLL_IMPORT<sp/>__attribute__<sp/>((visibility(&quot;default&quot;)))</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>OPENRAVE_HELPER_DLL_EXPORT<sp/>__attribute__<sp/>((visibility(&quot;default&quot;)))</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>OPENRAVE_HELPER_DLL_LOCAL<sp/><sp/>__attribute__<sp/>((visibility(&quot;hidden&quot;)))</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="17" refid="config_8h_1ae8646aebdbbe3b22be00f5c446d1996b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>OPENRAVE_HELPER_DLL_IMPORT</highlight></codeline>
+<codeline lineno="18" refid="config_8h_1a44c91b6768e14bf6e117ac4dacdc77e1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>OPENRAVE_HELPER_DLL_EXPORT</highlight></codeline>
+<codeline lineno="19" refid="config_8h_1a7dfd4a0ed4083cc73efe5557bddda951" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>OPENRAVE_HELPER_DLL_LOCAL</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Now<sp/>we<sp/>use<sp/>the<sp/>generic<sp/>helper<sp/>definitions<sp/>above<sp/>to<sp/>define<sp/>OPENRAVE_API<sp/>and<sp/>OPENRAVE_LOCAL.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OPENRAVE_API<sp/>is<sp/>used<sp/>for<sp/>the<sp/>public<sp/>API<sp/>symbols.<sp/>It<sp/>either<sp/>DLL<sp/>imports<sp/>or<sp/>DLL<sp/>exports<sp/>(or<sp/>does<sp/>nothing<sp/>for<sp/>static<sp/>build)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OPENRAVE_LOCAL<sp/>is<sp/>used<sp/>for<sp/>non-api<sp/>symbols.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(OPENRAVE_DLL)<sp/>||<sp/>defined(OPENRAVE_CORE_DLL)<sp/>//<sp/>defined<sp/>if<sp/>OpenRAVE<sp/>is<sp/>compiled<sp/>as<sp/>a<sp/>DLL</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>OPENRAVE_DLL_EXPORTS<sp/>//<sp/>defined<sp/>if<sp/>we<sp/>are<sp/>building<sp/>the<sp/>OpenRAVE<sp/>DLL<sp/>(instead<sp/>of<sp/>using<sp/>it)</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>OPENRAVE_API<sp/>OPENRAVE_HELPER_DLL_EXPORT</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>OPENRAVE_API<sp/>OPENRAVE_HELPER_DLL_IMPORT</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif<sp/>//<sp/>OPENRAVE_DLL_EXPORTS</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>OPENRAVE_LOCAL<sp/>OPENRAVE_HELPER_DLL_LOCAL</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else<sp/>//<sp/>OPENRAVE_DLL<sp/>is<sp/>not<sp/>defined:<sp/>this<sp/>means<sp/>OpenRAVE<sp/>is<sp/>a<sp/>static<sp/>lib.</highlight></codeline>
+<codeline lineno="34" refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>OPENRAVE_API</highlight></codeline>
+<codeline lineno="35" refid="config_8h_1a700f824b907109c7649c8a0894abbd55" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>OPENRAVE_LOCAL</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>OPENRAVE_DLL</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="config_8h_1a94ece644c9f3b00c03f6a36dfe74ea4a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION_MAJOR<sp/>0</highlight></codeline>
+<codeline lineno="39" refid="config_8h_1a56ed9f4d8fec2c232c21edd6f1a4303b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION_MINOR<sp/>5</highlight></codeline>
+<codeline lineno="40" refid="config_8h_1afb36720836c0b60409ce436f56d4d67e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION_PATCH<sp/>0</highlight></codeline>
+<codeline lineno="41" refid="config_8h_1a0ea03f1725b34af9ed02c57eba833b7e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION_COMBINED(major,<sp/>minor,<sp/>patch)<sp/>(((major)<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>((minor)<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>(patch))</highlight></codeline>
+<codeline lineno="42" refid="config_8h_1a5dd6efb11c56a7e366a936533aa2a970" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION<sp/>OPENRAVE_VERSION_COMBINED(OPENRAVE_VERSION_MAJOR,<sp/>OPENRAVE_VERSION_MINOR,<sp/>OPENRAVE_VERSION_PATCH)</highlight></codeline>
+<codeline lineno="43" refid="config_8h_1afa323c6002289e1fa77d338e87a4ec7e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION_EXTRACT_MAJOR(version)<sp/>(((version)&gt;&gt;16)&amp;0xff)</highlight></codeline>
+<codeline lineno="44" refid="config_8h_1aec8760f7909ed2f7a4e9dec421345354" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION_EXTRACT_MINOR(version)<sp/>(((version)&gt;&gt;8)&amp;0xff)</highlight></codeline>
+<codeline lineno="45" refid="config_8h_1ae6a8e5c449769316749cecfb86e17941" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION_EXTRACT_PATCH(version)<sp/>(((version))&amp;0xff)</highlight></codeline>
+<codeline lineno="46" refid="config_8h_1a3ff052b0769327a2aea62b01287ad1b9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION_STRING<sp/>&quot;0.5.0&quot;</highlight></codeline>
+<codeline lineno="47" refid="config_8h_1a9cecd5366d895c7958b820c8f5edf284" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION_STRING_FORMAT(version)<sp/>boost::str(boost::format(&quot;%s.%s.%s&quot;)%(OPENRAVE_VERSION_EXTRACT_MAJOR(version))%(OPENRAVE_VERSION_EXTRACT_MINOR(version))%(OPENRAVE_VERSION_EXTRACT_PATCH(version)))</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="config_8h_1a0c14dd4bd52ce994d2fe487e6786f6bf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION_GE(major1,<sp/>minor1,<sp/>patch1,<sp/>major2,<sp/>minor2,<sp/>patch2)<sp/>(OPENRAVE_VERSION_COMBINED(major1,<sp/>minor1,<sp/>patch1)<sp/>&gt;=<sp/>OPENRAVE_VERSION_COMBINED(major2,<sp/>minor2,<sp/>patch2))</highlight></codeline>
+<codeline lineno="50" refid="config_8h_1a0dbf6c46688bd90537d4c69b34bb279b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_VERSION_MINIMUM(major,<sp/>minor,<sp/>patch)<sp/>OPENRAVE_VERSION_GE(OPENRAVE_VERSION_MAJOR,<sp/>OPENRAVE_VERSION_MINOR,<sp/>OPENRAVE_VERSION_PATCH,<sp/>major,<sp/>minor,<sp/>patch)</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>0,<sp/>single<sp/>precision</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>1,<sp/>double<sp/>precision</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="config_8h_1a23a866bcced0e56b4c2f8d38d40761da" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_PRECISION<sp/>1</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="config_8h_1ab8ce6aebb1f317e1452fb39151aa7ead" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_PLUGINS_INSTALL_DIR<sp/>&quot;/usr/local/share/openrave-0.5/plugins&quot;</highlight></codeline>
+<codeline lineno="57" refid="config_8h_1a69a7c033f4a4928b3c0ddcdb86cc313c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_DATA_INSTALL_DIR<sp/>&quot;/usr/local/share/openrave-0.5&quot;</highlight></codeline>
+<codeline lineno="58" refid="config_8h_1ac19077d159912065d50e568299944d45" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_PYTHON_INSTALL_DIR<sp/>&quot;/usr/local/lib/python2.6/dist-packages&quot;</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/build/include/openrave/config.h"/>
+  </compounddef>
+</doxygen>

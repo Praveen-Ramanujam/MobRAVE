@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1UserData" kind="class" prot="public">
+    <compoundname>OpenRAVE::UserData</compoundname>
+    <derivedcompoundref refid="classFunctionUserData" prot="public" virt="non-virtual">FunctionUserData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1RaveGlobal" prot="public" virt="non-virtual">RaveGlobal</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData" prot="public" virt="non-virtual">XMLReaderFunctionData</derivedcompoundref>
+    <includes refid="openrave_8h" local="no">openrave.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1UserData_1aaaa5baf9761b9e8f4c120b58d379ab12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~UserData</definition>
+        <argsstring>()</argsstring>
+        <name>~UserData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="222" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="222" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>base class for all user data </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1960">
+        <label>XMLReaderFunctionData</label>
+        <link refid="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData"/>
+        <childnode refid="1957" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1957">
+        <label>UserData</label>
+        <link refid="classOpenRAVE_1_1UserData"/>
+      </node>
+      <node id="1958">
+        <label>FunctionUserData</label>
+        <link refid="classFunctionUserData"/>
+        <childnode refid="1957" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1959">
+        <label>RaveGlobal</label>
+        <link refid="classOpenRAVE_1_1RaveGlobal"/>
+        <childnode refid="1957" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="220" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="219" bodyend="224"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1UserData_1aaaa5baf9761b9e8f4c120b58d379ab12" prot="public" virt="virtual"><scope>OpenRAVE::UserData</scope><name>~UserData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

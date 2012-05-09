@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$classOpenRAVE_1_1KinBody_1_1ManageData.html" title="Access point of the sensor system that manages the body." alt="" coords="7,5,100,35"/>
+<area shape="rect" href="$classOpenRAVE_1_1SimpleSensorSystem_1_1BodyData.html" title="BodyData" alt="" coords="151,5,228,35"/>
+</map>

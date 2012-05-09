@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1InterfaceBase_1_1InterfaceCommand" kind="class" prot="protected">
+    <compoundname>OpenRAVE::InterfaceBase::InterfaceCommand</compoundname>
+    <includes refid="interface_8h" local="no">interface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1InterfaceBase_1_1InterfaceCommand_1a0510ce7a61ab8a0287d650574b0022a4" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" kindref="member">InterfaceCommandFn</ref></type>
+        <definition>InterfaceCommandFn fn</definition>
+        <argsstring></argsstring>
+        <name>fn</name>
+        <briefdescription>
+<para>command function to run </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/interface.h" line="148" bodyfile="/home/pra3cob/openrave/include/openrave/interface.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1InterfaceBase_1_1InterfaceCommand_1aecfcd8d5595d8ba1a38ef3c624d1186a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string help</definition>
+        <argsstring></argsstring>
+        <name>help</name>
+        <briefdescription>
+<para>help string explaining command arguments </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/interface.h" line="149" bodyfile="/home/pra3cob/openrave/include/openrave/interface.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1InterfaceBase_1_1InterfaceCommand_1a21866229ad58e77093b76d8950f7483c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InterfaceCommand</definition>
+        <argsstring>()</argsstring>
+        <name>InterfaceCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/interface.h" line="144" bodyfile="/home/pra3cob/openrave/include/openrave/interface.h" bodystart="144" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1InterfaceBase_1_1InterfaceCommand_1ac35a8907e8acf8856663198a202b64b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InterfaceCommand</definition>
+        <argsstring>(InterfaceCommandFn newfn, const std::string &amp;newhelp)</argsstring>
+        <name>InterfaceCommand</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1InterfaceBase_1af078e9e99c82cbd71d0bfa325438514e" kindref="member">InterfaceCommandFn</ref></type>
+          <declname>newfn</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newhelp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/interface.h" line="146" bodyfile="/home/pra3cob/openrave/include/openrave/interface.h" bodystart="146" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1255">
+        <label>string</label>
+        <childnode refid="1256" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1254">
+        <label>InterfaceCommand</label>
+        <link refid="classOpenRAVE_1_1InterfaceBase_1_1InterfaceCommand"/>
+        <childnode refid="1255" relation="usage">
+          <edgelabel>help</edgelabel>
+        </childnode>
+      </node>
+      <node id="1256">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/interface.h" line="142" bodyfile="/home/pra3cob/openrave/include/openrave/interface.h" bodystart="141" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1_1InterfaceCommand_1a0510ce7a61ab8a0287d650574b0022a4" prot="public" virt="non-virtual"><scope>OpenRAVE::InterfaceBase::InterfaceCommand</scope><name>fn</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1_1InterfaceCommand_1aecfcd8d5595d8ba1a38ef3c624d1186a" prot="public" virt="non-virtual"><scope>OpenRAVE::InterfaceBase::InterfaceCommand</scope><name>help</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1_1InterfaceCommand_1a21866229ad58e77093b76d8950f7483c" prot="public" virt="non-virtual"><scope>OpenRAVE::InterfaceBase::InterfaceCommand</scope><name>InterfaceCommand</name></member>
+      <member refid="classOpenRAVE_1_1InterfaceBase_1_1InterfaceCommand_1ac35a8907e8acf8856663198a202b64b0" prot="public" virt="non-virtual"><scope>OpenRAVE::InterfaceBase::InterfaceCommand</scope><name>InterfaceCommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

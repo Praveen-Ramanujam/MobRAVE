@@ -1,0 +1,33 @@
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveVector}{
+\subsection{RaveVector$<$ T $>$ Class Template Reference}
+\label{classOpenRAVE_1_1geometry_1_1RaveVector}\index{OpenRAVE::geometry::RaveVector@{OpenRAVE::geometry::RaveVector}}
+}
+
+
+Vector class containing 4 dimensions.  
+
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveVector_afd7d78f59fbf96aeeba3ccea06b070f9}{
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector_afd7d78f59fbf96aeeba3ccea06b070f9}{RaveVector} (const U $\ast$pf)}
+\label{classOpenRAVE_1_1geometry_1_1RaveVector_afd7d78f59fbf96aeeba3ccea06b070f9}
+
+\begin{DoxyCompactList}\small\item\em note, it only copes 3 values! \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveVector_aaa077ecf3366c176cf3f108dfe56434b}{
+\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector_aaa077ecf3366c176cf3f108dfe56434b}{cross} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&v) const }
+\label{classOpenRAVE_1_1geometry_1_1RaveVector_aaa077ecf3366c176cf3f108dfe56434b}
+
+\begin{DoxyCompactList}\small\item\em 3 dim cross product, w is not touched \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1geometry_1_1RaveVector_ad293e3fe3c67f1817ae79697cf4851fc}{
+{\footnotesize template$<$typename U $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector_ad293e3fe3c67f1817ae79697cf4851fc}{operator$^\wedge$} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ U $>$ \&v) const }
+\label{classOpenRAVE_1_1geometry_1_1RaveVector_ad293e3fe3c67f1817ae79697cf4851fc}
+
+\begin{DoxyCompactList}\small\item\em cross product operator \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$ class OpenRAVE::geometry::RaveVector$<$ T $>$}
+
+Vector class containing 4 dimensions. It is better to use this for a 3 dim vector because it is 16byte aligned and SIMD instructions can be used 

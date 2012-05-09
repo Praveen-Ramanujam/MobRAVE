@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="planner_8h" kind="file">
+    <compoundname>planner.h</compoundname>
+    <includedby refid="openrave_8h" local="no">include/openrave/openrave.h</includedby>
+    <invincdepgraph>
+      <node id="2137">
+        <label>src/cppexamples/ikfastloader.cpp</label>
+        <link refid="ikfastloader_8cpp"/>
+      </node>
+      <node id="2146">
+        <label>src/cppexamples/orshowsensors.cpp</label>
+        <link refid="orshowsensors_8cpp"/>
+      </node>
+      <node id="2129">
+        <label>src/cppexamples/orpythonbinding.cpp</label>
+        <link refid="orpythonbinding_8cpp"/>
+      </node>
+      <node id="2136">
+        <label>src/libopenrave-core/openrave-core.h</label>
+        <link refid="openrave-core_8h"/>
+        <childnode refid="2137" relation="include">
+        </childnode>
+        <childnode refid="2138" relation="include">
+        </childnode>
+        <childnode refid="2139" relation="include">
+        </childnode>
+        <childnode refid="2140" relation="include">
+        </childnode>
+        <childnode refid="2141" relation="include">
+        </childnode>
+        <childnode refid="2142" relation="include">
+        </childnode>
+        <childnode refid="2132" relation="include">
+        </childnode>
+        <childnode refid="2143" relation="include">
+        </childnode>
+        <childnode refid="2144" relation="include">
+        </childnode>
+        <childnode refid="2145" relation="include">
+        </childnode>
+        <childnode refid="2146" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+        <childnode refid="2134" relation="include">
+        </childnode>
+      </node>
+      <node id="2134">
+        <label>src/cppexamples/oryoubotcontrol.cpp</label>
+        <link refid="oryoubotcontrol_8cpp"/>
+      </node>
+      <node id="2141">
+        <label>src/cppexamples/orikfilter.cpp</label>
+        <link refid="orikfilter_8cpp"/>
+      </node>
+      <node id="2144">
+        <label>src/cppexamples/orplanning_module.cpp</label>
+        <link refid="orplanning__module_8cpp"/>
+      </node>
+      <node id="2135">
+        <label>include/openrave/plugin.h</label>
+        <link refid="plugin_8h"/>
+        <childnode refid="2128" relation="include">
+        </childnode>
+        <childnode refid="2130" relation="include">
+        </childnode>
+      </node>
+      <node id="2143">
+        <label>src/cppexamples/orplanning_ik.cpp</label>
+        <link refid="orplanning__ik_8cpp"/>
+      </node>
+      <node id="2147">
+        <label>src/libopenrave/libopenrave.cpp</label>
+        <link refid="libopenrave_8cpp"/>
+        <childnode refid="2147" relation="include">
+        </childnode>
+      </node>
+      <node id="2126">
+        <label>include/openrave/planner.h</label>
+        <link refid="planner.h"/>
+        <childnode refid="2127" relation="include">
+        </childnode>
+      </node>
+      <node id="2127">
+        <label>include/openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="2128" relation="include">
+        </childnode>
+        <childnode refid="2129" relation="include">
+        </childnode>
+        <childnode refid="2130" relation="include">
+        </childnode>
+        <childnode refid="2131" relation="include">
+        </childnode>
+        <childnode refid="2135" relation="include">
+        </childnode>
+        <childnode refid="2136" relation="include">
+        </childnode>
+        <childnode refid="2147" relation="include">
+        </childnode>
+      </node>
+      <node id="2128">
+        <label>src/cppexamples/customreader.cpp</label>
+        <link refid="customreader_8cpp"/>
+      </node>
+      <node id="2138">
+        <label>src/cppexamples/opencvsaving.cpp</label>
+        <link refid="opencvsaving_8cpp"/>
+      </node>
+      <node id="2132">
+        <label>src/cppexamples/ormulticontrol.cpp</label>
+        <link refid="ormulticontrol_8cpp"/>
+      </node>
+      <node id="2131">
+        <label>include/openrave/planningutils.h</label>
+        <link refid="planningutils_8h"/>
+        <childnode refid="2132" relation="include">
+        </childnode>
+        <childnode refid="2133" relation="include">
+        </childnode>
+        <childnode refid="2134" relation="include">
+        </childnode>
+      </node>
+      <node id="2140">
+        <label>src/cppexamples/orconveyormovement.cpp</label>
+        <link refid="orconveyormovement_8cpp"/>
+      </node>
+      <node id="2133">
+        <label>src/cppexamples/ortrajectory.cpp</label>
+        <link refid="ortrajectory_8cpp"/>
+      </node>
+      <node id="2139">
+        <label>src/cppexamples/orcollision.cpp</label>
+        <link refid="orcollision_8cpp"/>
+      </node>
+      <node id="2142">
+        <label>src/cppexamples/orloadviewer.cpp</label>
+        <link refid="orloadviewer_8cpp"/>
+      </node>
+      <node id="2130">
+        <label>src/cppexamples/plugincpp.cpp</label>
+        <link refid="plugincpp_8cpp"/>
+      </node>
+      <node id="2145">
+        <label>src/cppexamples/orplanning_planner.cpp</label>
+        <link refid="orplanning__planner_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenRAVE_1_1PlannerBase" prot="public">OpenRAVE::PlannerBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" prot="public">OpenRAVE::PlannerBase::PlannerParameters</innerclass>
+    <innerclass refid="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress" prot="public">OpenRAVE::PlannerBase::PlannerProgress</innerclass>
+    <innernamespace refid="namespaceOpenRAVE">OpenRAVE</innernamespace>
+    <briefdescription>
+<para>Planning related defintions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2006-2011<sp/>Rosen<sp/>Diankov<sp/>&lt;rosen.diankov@gmail.com&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenRAVE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OpenRAVE<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="preprocessor">#ifndef<sp/>OPENRAVE_PLANNER_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_PLANNER_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenRAVE<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200e" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200e" kindref="member" tooltip="the status of the PlanPath method. Used when PlanPath can be called multiple times...">PlannerStatus</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200ea46d7da834c9c074260b53909874e4b38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200ea46d7da834c9c074260b53909874e4b38" kindref="member" tooltip="planner failed">PS_Failed</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="29" refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200ea23c3ecb52bc33b330da0f5a4441115e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200ea23c3ecb52bc33b330da0f5a4441115e5" kindref="member" tooltip="planner succeeded">PS_HasSolution</ref><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="30" refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200ea6130a9f38faec3533a7d0e5594d4ef10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200ea6130a9f38faec3533a7d0e5594d4ef10" kindref="member" tooltip="planning was interrupted, but can be resumed by calling PlanPath again">PS_Interrupted</ref><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="31" refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200ea4364b6dbba2773dd9e8d2d954db9109a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200ea4364b6dbba2773dd9e8d2d954db9109a" kindref="member">PS_InterruptedWithSolution</ref><sp/>=<sp/>3,<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="namespaceOpenRAVE_1a16104fe58cdf1075c47eb709e58ba853" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a16104fe58cdf1075c47eb709e58ba853" kindref="member" tooltip="action to send to the planner while it is planning. This is usually done by the user-specified...">PlannerAction</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37" refid="namespaceOpenRAVE_1a16104fe58cdf1075c47eb709e58ba853a64ec1b874d3088ceef9bd5051c65889f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a16104fe58cdf1075c47eb709e58ba853a64ec1b874d3088ceef9bd5051c65889f" kindref="member" tooltip="no action">PA_None</ref>=0,<sp/></highlight></codeline>
+<codeline lineno="38" refid="namespaceOpenRAVE_1a16104fe58cdf1075c47eb709e58ba853a39d503ce662ac46ebdb9fc6e55ca7a5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a16104fe58cdf1075c47eb709e58ba853a39d503ce662ac46ebdb9fc6e55ca7a5a" kindref="member" tooltip="interrupt the planner and return to user">PA_Interrupt</ref>=1,<sp/></highlight></codeline>
+<codeline lineno="39" refid="namespaceOpenRAVE_1a16104fe58cdf1075c47eb709e58ba853adcf80ca3a0125b7e5de795d605ab7ffe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a16104fe58cdf1075c47eb709e58ba853adcf80ca3a0125b7e5de795d605ab7ffe" kindref="member" tooltip="return quickly with any path">PA_ReturnWithAnySolution</ref>=2,<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classOpenRAVE_1_1PlannerBase" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1PlannerBase" kindref="compound" tooltip="[interface] Planner interface that generates trajectories for target objects to follow...">PlannerBase</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="classOpenRAVE_1_1PlannerBase_1a770b978b724bcdb0bff18de35c8c62d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::list&lt;<sp/>std::vector&lt;dReal&gt;<sp/>&gt;<sp/><ref refid="classOpenRAVE_1_1PlannerBase_1a770b978b724bcdb0bff18de35c8c62d5" kindref="member">ConfigurationList</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classOpenRAVE_1_1PlannerBase_1a5b660e564b471d714462742a939dbd40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;<sp/>PlannerBase::ConfigurationList<sp/>&gt;<sp/>ConfigurationListPtr;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerParameters</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1BaseXMLReader" kindref="compound">BaseXMLReader</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1XMLReadable" kindref="compound" tooltip="base class for readable interfaces">XMLReadable</ref></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerParameters</ref>();</highlight></codeline>
+<codeline lineno="65" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a14f454af206fdf4328967bed64cda689" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a14f454af206fdf4328967bed64cda689" kindref="member">~PlannerParameters</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerParameters</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerParameters</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy(boost::shared_ptr&lt;PlannerParameters<sp/>const&gt;<sp/>r);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetRobotActiveJoints(<ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>robot);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a24d5a3136b64a22a3385a9680843cbf5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1ConfigurationSpecification" kindref="compound" tooltip="A configuration specification references values in the environment that then define...">ConfigurationSpecification</ref><sp/>_configurationspecification;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aaa75769bb0c706f4de9f59bc2a43f524" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;dReal(const<sp/>std::vector&lt;dReal&gt;&amp;)&gt;<sp/>CostFn;</highlight></codeline>
+<codeline lineno="87" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1afd674f55702e652867153a4ea5655415" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CostFn<sp/>_costfn;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ac6a5c6b1eb0d15f3cd0f69f8d4871df3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;dReal(const<sp/>std::vector&lt;dReal&gt;&amp;)&gt;<sp/>GoalFn;</highlight></codeline>
+<codeline lineno="97" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a251626b7c19c35180f64712bb90dfc6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GoalFn<sp/>_goalfn;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a1e96b9c9b49635f5bfd32531e41fb0e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;dReal(const<sp/>std::vector&lt;dReal&gt;&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;)&gt;<sp/>DistMetricFn;</highlight></codeline>
+<codeline lineno="105" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aa4e21b3274a2d611df29139e610e31f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DistMetricFn<sp/>_distmetricfn;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aca89abb7137aa4f3aa98065ce10f7f6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;bool<sp/>(const<sp/>std::vector&lt;dReal&gt;&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;,<sp/><ref refid="namespaceOpenRAVE_1a0d04dbfb6240509e26f8336ab1756937" kindref="member" tooltip="Specifies the boundary conditions of intervals for sampling.">IntervalType</ref>,<sp/><ref refid="classOpenRAVE_1_1PlannerBase_1a5b660e564b471d714462742a939dbd40" kindref="member">PlannerBase::ConfigurationListPtr</ref>)&gt;<sp/>CheckPathConstraintFn;</highlight></codeline>
+<codeline lineno="124" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a51351299cd508ef90418b44d6959d989" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CheckPathConstraintFn<sp/>_checkpathconstraintsfn;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a1b5ac1fcfcc5e5775ffbbc9c451541fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;bool<sp/>(std::vector&lt;dReal&gt;&amp;)&gt;<sp/>SampleFn;</highlight></codeline>
+<codeline lineno="132" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a9e4fc9aea09a7dcf8aea9f14e2ecb755" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SampleFn<sp/>_samplefn;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a60329a58cd803c66dc0701e9944d8ed9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;bool<sp/>(std::vector&lt;dReal&gt;&amp;)&gt;<sp/>SampleGoalFn;</highlight></codeline>
+<codeline lineno="142" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a7587ead6ad8c68d2d255755012a52fa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SampleGoalFn<sp/>_samplegoalfn;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a8cd1af608ebe03bf544992b322e6f5aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;bool<sp/>(std::vector&lt;dReal&gt;&amp;)&gt;<sp/>SampleInitialFn;</highlight></codeline>
+<codeline lineno="152" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1abc008d20e0f068fed178d64a7b2b2ffd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SampleInitialFn<sp/>_sampleinitialfn;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a78bb26c318f93bce6e3ea11fc95a99fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;bool<sp/>(std::vector&lt;dReal&gt;&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;,<sp/><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref>)&gt;<sp/>SampleNeighFn;</highlight></codeline>
+<codeline lineno="164" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a68bbb727e1792c8fdbe345641eb031a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SampleNeighFn<sp/>_sampleneighfn;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a8f178813af84b26eb8a12ade9a556482" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;void<sp/>(const<sp/>std::vector&lt;dReal&gt;&amp;)&gt;<sp/>SetStateFn;</highlight></codeline>
+<codeline lineno="168" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aa83a795822a8b73310203acaf0b2a74b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetStateFn<sp/>_setstatefn;</highlight></codeline>
+<codeline lineno="170" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ae2be23760038f12a589f6a8cfb0a5780" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;void<sp/>(std::vector&lt;dReal&gt;&amp;)&gt;<sp/>GetStateFn;</highlight></codeline>
+<codeline lineno="171" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a92304944fb5594cac6be85477fc0c440" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetStateFn<sp/>_getstatefn;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a58f093aece5495e4be24da19e9cb4cc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;void<sp/>(std::vector&lt;dReal&gt;&amp;,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;)&gt;<sp/>DiffStateFn;</highlight></codeline>
+<codeline lineno="181" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a375c6b6d83b3d2a0563db1e3cad41288" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DiffStateFn<sp/>_diffstatefn;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a602e68d3c6c25efa6539bbd8b5e02c39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;bool<sp/>(std::vector&lt;dReal&gt;&amp;,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;dReal&gt;&amp;,<sp/>int)&gt;<sp/>NeighStateFn;</highlight></codeline>
+<codeline lineno="194" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0bb9400d1009be3bd887015255bcd118" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NeighStateFn<sp/>_neighstatefn;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aad3112dc0481a0b114f1154ee1d743a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;dReal&gt;<sp/>vinitialconfig,<sp/>vgoalconfig;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a49cd6c1c809d3f307ebbfd639cfc6ddb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;dReal&gt;<sp/>_vConfigLowerLimit,<sp/>_vConfigUpperLimit;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1acfdac79592a4faa5e57c23b22c7a8954" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;dReal&gt;<sp/>_vConfigVelocityLimit;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a647a79190686baca1e50eef9887d0b70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;dReal&gt;<sp/>_vConfigAccelerationLimit;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a803fc76d967c3adcf76e737344977d62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;dReal&gt;<sp/>_vConfigResolution;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a377dd1c13871195e977151411e0033bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>_fStepLength;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a75940963abf9391dca1ec1d48b7a11cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_nMaxIterations;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1aece70c470f96fbe3cd74ce45ee0145b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>_sPostProcessingPlanner;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0f1a23c0726e36b98edbe514d4962d08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>_sPostProcessingParameters;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a05c2cb3cd9524fb2b1883a7639801084" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>_sExtraParameters;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a44fbec2fd26a45cada889c5c0f0751c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a44fbec2fd26a45cada889c5c0f0751c8" kindref="member" tooltip="Return the degrees of freedom of the planning configuration space.">GetDOF</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)_vConfigLowerLimit.size();</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="242" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0a5bb6979a5bdcdb408ab97b8f3f6ee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;PlannerBase::PlannerParameters&gt;<sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a0a5bb6979a5bdcdb408ab97b8f3f6ee2" kindref="member">shared_parameters</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerBase::PlannerParameters</ref>&gt;(shared_from_this());</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a9a9dbd98b427819f681d54e5ee332b31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;PlannerBase::PlannerParameters<sp/>const<sp/>&gt;<sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a9a9dbd98b427819f681d54e5ee332b31" kindref="member">shared_parameters_const</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerBase::PlannerParameters</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&gt;(shared_from_this());</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>serialize(std::ostream&amp;<sp/>O)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ProcessElement<sp/>startElement(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a7372895c7fd9541aa829987c3eb9aaf9" kindref="member">AttributesList</ref>&amp;<sp/>atts);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>endElement(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>characters(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>ch);</highlight></codeline>
+<codeline lineno="257" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1ab4d8dc52e167678ba742d5e74fa8bbd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>_ss;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="258" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1af1b3c43634a060ac8c81588387d85b86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::shared_ptr&lt;std::stringstream&gt;<sp/>_sslocal;</highlight></codeline>
+<codeline lineno="260" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_1a6bdbb89d87824ee05004fbd5ecd4994b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>_vXMLParameters;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerParameters</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerParameters</ref><sp/>&amp;r);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a5465be4feef36a211b06feebdc5e3b42" kindref="member">BaseXMLReaderPtr</ref><sp/>__pcurreader;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>__processingtag;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_plannerparametersdepth;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/>std::ostream&amp;<sp/><ref refid="namespaceOpenRAVE_1a6659af9ccf72e04a53b444437acd0a42" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>O,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerParameters</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/>std::istream&amp;<sp/><ref refid="namespaceOpenRAVE_1a8e429f020d431c017ca32b65df5cfcd8" kindref="member">operator&gt;&gt;</ref>(std::istream&amp;<sp/>I,<sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerParameters</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="275" refid="classOpenRAVE_1_1PlannerBase_1ae5d382cbf153b353e329ddf5620e05db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;PlannerBase::PlannerParameters&gt;<sp/>PlannerParametersPtr;</highlight></codeline>
+<codeline lineno="276" refid="classOpenRAVE_1_1PlannerBase_1ab566be29bf1d40d8631782886bb45bb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;PlannerBase::PlannerParameters<sp/>const&gt;<sp/>PlannerParametersConstPtr;</highlight></codeline>
+<codeline lineno="277" refid="classOpenRAVE_1_1PlannerBase_1a65a20c3007e065de99a3f21bb177013d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::weak_ptr&lt;PlannerBase::PlannerParameters&gt;<sp/>PlannerParametersWeakPtr;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress" kindref="compound" tooltip="Planner progress information passed to each callback function.">PlannerProgress</ref></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress" kindref="compound" tooltip="Planner progress information passed to each callback function.">PlannerProgress</ref>();</highlight></codeline>
+<codeline lineno="284" refid="classOpenRAVE_1_1PlannerBase_1_1PlannerProgress_1a9ce23b64f9b145970f0bb242d4a7b18d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_iteration;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1PlannerBase" kindref="compound" tooltip="[interface] Planner interface that generates trajectories for target objects to follow...">PlannerBase</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv);</highlight></codeline>
+<codeline lineno="288" refid="classOpenRAVE_1_1PlannerBase_1a1395c7634c62ae3f5ff5134a53ca73ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1a1395c7634c62ae3f5ff5134a53ca73ff" kindref="member">~PlannerBase</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="classOpenRAVE_1_1PlannerBase_1affeafe65e7c4094f282d273dedbf069b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>InterfaceType<sp/><ref refid="classOpenRAVE_1_1PlannerBase_1affeafe65e7c4094f282d273dedbf069b" kindref="member">GetInterfaceTypeStatic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PT_Planner;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>InitPlan(<ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>robot,<sp/>PlannerParametersConstPtr<sp/>params)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>InitPlan(<ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>robot,<sp/>std::istream&amp;<sp/>isParameters);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200e" kindref="member" tooltip="the status of the PlanPath method. Used when PlanPath can be called multiple times...">PlannerStatus</ref><sp/>PlanPath(<ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref><sp/>ptraj)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="classOpenRAVE_1_1PlannerBase_1a9ec338cf4116a2bf8b874cde2aa28967" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200e" kindref="member" tooltip="the status of the PlanPath method. Used when PlanPath can be called multiple times...">PlannerStatus</ref><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1a9ec338cf4116a2bf8b874cde2aa28967" kindref="member">PlanPath</ref>(<ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref><sp/>ptraj,<sp/>boost::shared_ptr&lt;std::ostream&gt;<sp/>pOutStream)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!!pOutStream<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="openrave_8h_1a9bbbf668aa39f398c341e946ab8a43f5" kindref="member">RAVELOG_WARN</ref>(</highlight><highlight class="stringliteral">&quot;planner<sp/>does<sp/>not<sp/>support<sp/>pOutputStream<sp/>anymore,<sp/>please<sp/>find<sp/>another<sp/>method<sp/>to<sp/>return<sp/>information<sp/>like<sp/>using<sp/>SendCommand<sp/>or<sp/>writing<sp/>the<sp/>data<sp/>into<sp/>the<sp/>returned<sp/>trajectory\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PlanPath(ptraj);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>PlannerParametersConstPtr<sp/>GetParameters()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335" refid="classOpenRAVE_1_1PlannerBase_1af66cf367615e6c51bab4473f4fcf1018" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::function&lt;PlannerAction(const<sp/>PlannerProgress&amp;)&gt;<sp/>PlanCallbackFn;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref><sp/>RegisterPlanCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PlanCallbackFn&amp;<sp/>callbackfn);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="344" refid="classOpenRAVE_1_1PlannerBase_1a272abaf3ac5ee4114397daaed491a558" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ab39121477d2dd841859e79f112b52a0b" kindref="member">PlannerBasePtr</ref><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1a272abaf3ac5ee4114397daaed491a558" kindref="member">shared_planner</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1PlannerBase" kindref="compound" tooltip="[interface] Planner interface that generates trajectories for target objects to follow...">PlannerBase</ref>&gt;(shared_from_this());</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="347" refid="classOpenRAVE_1_1PlannerBase_1a46df470cfb1df5a02340b7c70a0094ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a2974ad0e9218ea646e192f2317495834" kindref="member">PlannerBaseConstPtr</ref><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1a46df470cfb1df5a02340b7c70a0094ae" kindref="member">shared_planner_const</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1PlannerBase" kindref="compound" tooltip="[interface] Planner interface that generates trajectories for target objects to follow...">PlannerBase</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&gt;(shared_from_this());</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200e" kindref="member" tooltip="the status of the PlanPath method. Used when PlanPath can be called multiple times...">PlannerStatus</ref><sp/>_ProcessPostPlanners(<ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>probot,<sp/><ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref><sp/>ptraj);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361" refid="classOpenRAVE_1_1PlannerBase_1a58137cba05f6609f7055eb493448cee1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1a58137cba05f6609f7055eb493448cee1" kindref="member">_OptimizePath</ref>(<ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref><sp/>probot,<sp/><ref refid="namespaceOpenRAVE_1aa3c159b394f2e4ec46ac49416a2acf17" kindref="member">TrajectoryBasePtr</ref><sp/>ptraj)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/>{</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!!(_ProcessPostPlanners(probot,ptraj)<sp/>&amp;<sp/><ref refid="namespaceOpenRAVE_1a7cead738b92cbe2f332dea20dd2f200ea23c3ecb52bc33b330da0f5a4441115e5" kindref="member" tooltip="planner succeeded">PS_HasSolution</ref>);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a16104fe58cdf1075c47eb709e58ba853" kindref="member" tooltip="action to send to the planner while it is planning. This is usually done by the user-specified...">PlannerAction</ref><sp/>_CallCallbacks(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PlannerProgress&amp;<sp/>progress);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>GetHash()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="interfacehashes_8h_1a630c1fec41c7b84b2658201685ed3d01" kindref="member">OPENRAVE_PLANNER_HASH</ref>;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>std::list&lt;UserDataWeakPtr&gt;<sp/>__listRegisteredCallbacks;<sp/></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377" refid="classOpenRAVE_1_1PlannerBase_1a7ec01a7c5511ff1cf228bad0a44529a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CustomPlannerCallbackData;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/>std::ostream&amp;<sp/><ref refid="namespaceOpenRAVE_1a6659af9ccf72e04a53b444437acd0a42" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>O,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerBase::PlannerParameters</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/>std::istream&amp;<sp/><ref refid="namespaceOpenRAVE_1a8e429f020d431c017ca32b65df5cfcd8" kindref="member">operator&gt;&gt;</ref>(std::istream&amp;<sp/>I,<sp/><ref refid="classOpenRAVE_1_1PlannerBase_1_1PlannerParameters" kindref="compound" tooltip="Describes a common and serializable interface for planning parameters.">PlannerBase::PlannerParameters</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>OpenRAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/include/openrave/planner.h"/>
+  </compounddef>
+</doxygen>

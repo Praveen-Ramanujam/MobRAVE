@@ -1,0 +1,558 @@
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint}{
+\subsection{Joint Class Reference}
+\label{classOpenRAVE_1_1KinBody_1_1Joint}\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+}
+
+
+Information about a joint that controls the relationship between two links.  
+
+
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC}{MIMIC}
+\begin{DoxyCompactList}\small\item\em Holds mimic information about position, velocity, and acceleration of one axis of the joint. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_af92f943e3dc4a7d1fb537fa481094fa9}{JointType} 
+\begin{DoxyCompactList}\small\item\em The type of joint movement. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a8b9389d7613c0942dded4c6af39d7ab1}{
+const std::string \& \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a8b9389d7613c0942dded4c6af39d7ab1}{GetName} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a8b9389d7613c0942dded4c6af39d7ab1}
+
+\begin{DoxyCompactList}\small\item\em The unique name of the joint. \item\end{DoxyCompactList}\item 
+int \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_aa008d1863733a137b9a417d8e5277bb0}{GetDOFIndex} () const 
+\begin{DoxyCompactList}\small\item\em Get the degree of freedom index in the body's DOF array. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_abacd0a7209e404b812bb3ca71a494d0a}{
+int \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_abacd0a7209e404b812bb3ca71a494d0a}{GetJointIndex} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_abacd0a7209e404b812bb3ca71a494d0a}
+
+\begin{DoxyCompactList}\small\item\em Get the joint index into \hyperlink{classOpenRAVE_1_1KinBody_a01fcab06f416b2ac3bac1385e09ff9bf}{KinBody::GetJoints}. \item\end{DoxyCompactList}\item 
+dReal \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a488fee47ef2f64285df38276b3902879}{GetResolution} () const 
+\begin{DoxyCompactList}\small\item\em The discretization of the joint used when line-\/collision checking. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a44fbec2fd26a45cada889c5c0f0751c8}{
+virtual int \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a44fbec2fd26a45cada889c5c0f0751c8}{GetDOF} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a44fbec2fd26a45cada889c5c0f0751c8}
+
+\begin{DoxyCompactList}\small\item\em The degrees of freedom of the joint. Each joint supports a max of 3 degrees of freedom. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a7adf99ae40bca7e94d926e3b56321fdb}{IsCircular} (int iaxis) const 
+\begin{DoxyCompactList}\small\item\em Return true if joint axis has an identification at some of its lower and upper limits. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a477d385f39817d9116efac236d56b54f}{IsRevolute} (int iaxis) const 
+\begin{DoxyCompactList}\small\item\em returns true if the axis describes a rotation around an axis. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a869db68ce6e40c67cc4c5f0f36d1a950}{IsPrismatic} (int iaxis) const 
+\begin{DoxyCompactList}\small\item\em returns true if the axis describes a translation around an axis. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_af52f395f0894e5c0a59548fcde7c353b}{
+virtual bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_af52f395f0894e5c0a59548fcde7c353b}{IsStatic} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_af52f395f0894e5c0a59548fcde7c353b}
+
+\begin{DoxyCompactList}\small\item\em Return true if joint can be treated as a static binding (ie all limits are 0). \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a04a882646ae62c1d8b2416bd525a18dc}{GetValues} (std::vector$<$ dReal $>$ \&values, bool bAppend=false) const 
+\begin{DoxyCompactList}\small\item\em Return all the joint values with the correct offsets applied. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_ae53c171bf98bb3b7bc5ab0fbd94bd90e}{
+virtual dReal \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_ae53c171bf98bb3b7bc5ab0fbd94bd90e}{GetValue} (int axis) const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_ae53c171bf98bb3b7bc5ab0fbd94bd90e}
+
+\begin{DoxyCompactList}\small\item\em Return the value of the specified joint axis only. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_acf2184aef9396b8b098871e1a040ff77}{GetVelocities} (std::vector$<$ dReal $>$ \&values, bool bAppend=false) const 
+\begin{DoxyCompactList}\small\item\em Gets the joint velocities. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a163d3455185c5ea511f74c790056b5ff}{
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a163d3455185c5ea511f74c790056b5ff}{AddTorque} (const std::vector$<$ dReal $>$ \&torques)}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a163d3455185c5ea511f74c790056b5ff}
+
+\begin{DoxyCompactList}\small\item\em Add effort (force or torque) to the joint. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_ab2179b392d53650660c9ab35c16bc4fb}{
+virtual Vector \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_ab2179b392d53650660c9ab35c16bc4fb}{GetAnchor} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_ab2179b392d53650660c9ab35c16bc4fb}
+
+\begin{DoxyCompactList}\small\item\em The anchor of the joint in global coordinates. \item\end{DoxyCompactList}\item 
+virtual Vector \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a35d06683756fe53bb8bc0809b7be21cb}{GetAxis} (int axis=0) const 
+\begin{DoxyCompactList}\small\item\em The axis of the joint in global coordinates. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a9cbbcd5d35fb3830b35c33f244570566}{GetLimits} (std::vector$<$ dReal $>$ \&vLowerLimit, std::vector$<$ dReal $>$ \&vUpperLimit, bool bAppend=false) const 
+\begin{DoxyCompactList}\small\item\em Returns the limits of the joint. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a90d56cf93256fd2c4087cd3bac140e66}{SetLimits} (const std::vector$<$ dReal $>$ \&lower, const std::vector$<$ dReal $>$ \&upper)
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a7f0e2be49eea7d168eab550af4f0ec97}{SetJointLimits} (const std::vector$<$ dReal $>$ \&lower, const std::vector$<$ dReal $>$ \&upper) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_acb05f676c90a3c2f07586b09e8ff07c4}{GetVelocityLimits} (std::vector$<$ dReal $>$ \&vmax, bool bAppend=false) const 
+\begin{DoxyCompactList}\small\item\em Returns the max velocities of the joint. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a9792a14881ff4bbcc058415fce2100d5}{SetVelocityLimits} (const std::vector$<$ dReal $>$ \&vmax)
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a1234a540b764968374f7454bda61b6e0}{GetAccelerationLimits} (std::vector$<$ dReal $>$ \&vmax, bool bAppend=false) const 
+\begin{DoxyCompactList}\small\item\em Returns the max accelerations of the joint. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a66a3b9657e5dfc13903c47664445fb93}{SetAccelerationLimits} (const std::vector$<$ dReal $>$ \&vmax)
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_aa305a00e9865044b4f6c2ec81d00d6d9}{
+virtual dReal \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_aa305a00e9865044b4f6c2ec81d00d6d9}{GetWeight} (int axis=0) const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_aa305a00e9865044b4f6c2ec81d00d6d9}
+
+\begin{DoxyCompactList}\small\item\em The weight associated with a joint's axis for computing a distance in the robot configuration space. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a7b884c5900625a5d49951afaf67fcc27}{SetWeights} (const std::vector$<$ dReal $>$ \&weights)
+\item 
+dReal \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a9dede60d3c61a885dc1b98fe86e85727}{GetWrapOffset} (int iaxis=0) const 
+\begin{DoxyCompactList}\small\item\em Return internal offset parameter that determines the branch the angle centers on. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a717d10686a55fc7c870effe21a3fcb3d}{SetWrapOffset} (dReal offset, int iaxis=0)
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_ad33ede63ec196d7af2a3d5ea4e2e5c60}{SetOffset} (dReal offset, int iaxis=0) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Internal Hierarchy Methods}\par
+{\em \label{_amgrp5fadc9ff450b069c20a2f9cda9fee3f7}
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_ac77a611b4552ee4a91058884361e1eed}{
+virtual LinkPtr \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_ac77a611b4552ee4a91058884361e1eed}{GetHierarchyParentLink} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_ac77a611b4552ee4a91058884361e1eed}
+
+\begin{DoxyCompactList}\small\item\em Return the parent link which the joint measures its angle off from (either GetFirstAttached() or GetSecondAttached()). \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a99195cfe4f294630abece8e97727941b}{
+virtual LinkPtr \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a99195cfe4f294630abece8e97727941b}{GetHierarchyChildLink} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a99195cfe4f294630abece8e97727941b}
+
+\begin{DoxyCompactList}\small\item\em Return the child link whose transformation is computed by this joint's values (either GetFirstAttached() or GetSecondAttached()). \item\end{DoxyCompactList}\item 
+virtual Vector \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a44ecb796397334c930f7e4dbb26a9f83}{GetInternalHierarchyAnchor} () const \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a2561b37d0b0c8d411d8beec026bb465e}{
+virtual Vector \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a2561b37d0b0c8d411d8beec026bb465e}{GetInternalHierarchyAxis} (int axis=0) const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a2561b37d0b0c8d411d8beec026bb465e}
+
+\begin{DoxyCompactList}\small\item\em The axis of the joint in local coordinates. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a58faa57053a1da7655220459c93aa941}{
+virtual Transform \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a58faa57053a1da7655220459c93aa941}{GetInternalHierarchyLeftTransform} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a58faa57053a1da7655220459c93aa941}
+
+\begin{DoxyCompactList}\small\item\em Left multiply transform given the base body. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_aa648aa524fbd4802a93711d1cfff76b6}{
+virtual Transform \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_aa648aa524fbd4802a93711d1cfff76b6}{GetInternalHierarchyRightTransform} () const }
+\label{classOpenRAVE_1_1KinBody_1_1Joint_aa648aa524fbd4802a93711d1cfff76b6}
+
+\begin{DoxyCompactList}\small\item\em Right multiply transform given the base body. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Mimic Joint Properties}\par
+{\em \label{_amgrp1f53e0c18272c66ca8f8cfdf88a1931d}
+ A mimic joint's angles are automatically determined from other joints based on a general purpose formula. A user does not have control of the the mimic joint values, even if they appear in the DOF list. }\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a5dc0e9a767787813d561165fbaf5a1ea}{GetMimicJointIndex} () const \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+const std::vector$<$ dReal $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a23d3a787036ec4661af61c5c0f0a60b2}{GetMimicCoeffs} () const \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+bool \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_ac8d727c6f970d30c4cdea02ce2a153bc}{IsMimic} (int axis=-\/1) const 
+\begin{DoxyCompactList}\small\item\em Returns true if a particular axis of the joint is mimiced. \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a8bc8323e310011f33ac609500db780c3}{GetMimicEquation} (int axis=0, int type=0, const std::string \&format=\char`\"{}\char`\"{}) const 
+\begin{DoxyCompactList}\small\item\em If the joint is mimic, returns the equation to compute its value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_acd2c27958f0bbd536ee752b237cbb514}{GetMimicDOFIndices} (std::vector$<$ int $>$ \&vmimicdofs, int axis=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the set of DOF indices that the computation of a joint axis depends on. Order is arbitrary. \item\end{DoxyCompactList}\item 
+void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a0e31c5be31c4145afa786e0c0d6a46ae}{SetMimicEquations} (int axis, const std::string \&poseq, const std::string \&veleq, const std::string \&acceleq=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Sets the mimic properties of the joint. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_aa78a272e319f192cece4bb8662a64cc2}{\_\-ComputePartialVelocities} (std::vector$<$ std::pair$<$ int, dReal $>$ $>$ \&vpartials, int iaxis, std::map$<$ std::pair$<$ MIMIC::DOFFormat, int $>$, dReal $>$ \&mapcachedpartials) const 
+\begin{DoxyCompactList}\small\item\em computes the partial velocities with respect to all dependent DOFs specified by \hyperlink{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_a88385fe7c2cecd8d6e625252f60a8f1f}{MIMIC::\_\-vmimicdofs}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a44e669248f1eb1fe09308bf98bd2d292}{\_\-ComputeInternalInformation} (LinkPtr plink0, LinkPtr plink1, const Vector \&\hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a64804ea505aa46e8a50d81d31cdb927d}{vanchor}, const std::vector$<$ Vector $>$ \&vaxes, const std::vector$<$ dReal $>$ \&vcurrentvalues)
+\begin{DoxyCompactList}\small\item\em Compute internal transformations and specify the attached links of the joint. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a8f7ce3595b2687565a7fb5d26c4dbef9}{
+boost::array$<$ Vector, 3 $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a8f7ce3595b2687565a7fb5d26c4dbef9}{\_\-vaxes}}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a8f7ce3595b2687565a7fb5d26c4dbef9}
+
+\begin{DoxyCompactList}\small\item\em axes in body\mbox{[}0\mbox{]}'s or environment coordinate system used to define joint movement \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a64804ea505aa46e8a50d81d31cdb927d}{
+Vector \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a64804ea505aa46e8a50d81d31cdb927d}{vanchor}}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a64804ea505aa46e8a50d81d31cdb927d}
+
+\begin{DoxyCompactList}\small\item\em anchor of the joint, this is only used to construct the internal left/right matrices \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a88c3376752ab869b6ba7ec779e280a3c}{
+dReal \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a88c3376752ab869b6ba7ec779e280a3c}{fResolution}}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a88c3376752ab869b6ba7ec779e280a3c}
+
+\begin{DoxyCompactList}\small\item\em interpolation resolution \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a0803c685cc31b774b49fccebba1345e5}{
+boost::array$<$ dReal, 3 $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a0803c685cc31b774b49fccebba1345e5}{\_\-vmaxvel}}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a0803c685cc31b774b49fccebba1345e5}
+
+\begin{DoxyCompactList}\small\item\em the soft maximum velocity (rad/s) to move the joint when planning \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a529df46fcfc8448dc4fefbb3ea96ac32}{
+boost::array$<$ dReal, 3 $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a529df46fcfc8448dc4fefbb3ea96ac32}{fHardMaxVel}}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a529df46fcfc8448dc4fefbb3ea96ac32}
+
+\begin{DoxyCompactList}\small\item\em the hard maximum velocity, robot cannot exceed this velocity. used for verification checking \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a0cf3254c3e7a7e58427bf27d31757126}{
+boost::array$<$ dReal, 3 $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a0cf3254c3e7a7e58427bf27d31757126}{\_\-vmaxaccel}}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a0cf3254c3e7a7e58427bf27d31757126}
+
+\begin{DoxyCompactList}\small\item\em the maximum acceleration (rad/s$^\wedge$2) of the joint \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a9653640e1b079a0ea7d9b2dc54743b6f}{
+boost::array$<$ dReal, 3 $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a9653640e1b079a0ea7d9b2dc54743b6f}{\_\-vmaxtorque}}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a9653640e1b079a0ea7d9b2dc54743b6f}
+
+\begin{DoxyCompactList}\small\item\em maximum torque (N.m, kg m$^\wedge$2/s$^\wedge$2) that can be applied to the joint \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a54b3b5826708888da547faeb1869895a}{
+boost::array$<$ dReal, 3 $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a54b3b5826708888da547faeb1869895a}{\_\-vweights}}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a54b3b5826708888da547faeb1869895a}
+
+\begin{DoxyCompactList}\small\item\em the weights of the joint for computing distance metrics. \item\end{DoxyCompactList}\item 
+boost::array$<$ dReal, 3 $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a463725ce817eef88b032307e46c97ed6}{\_\-voffsets}
+\item 
+boost::array$<$ dReal, 3 $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_ae9fd2b8d21b33d02a24eb85440d7f4df}{\_\-vupperlimit}
+\item 
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_af78763e010f75c80880d13539d899694}{
+boost::array$<$ boost::shared\_\-ptr$<$ \hyperlink{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC}{MIMIC} $>$, 3 $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_af78763e010f75c80880d13539d899694}{\_\-vmimic}}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_af78763e010f75c80880d13539d899694}
+
+\begin{DoxyCompactList}\small\item\em the mimic properties of each of the joint axes. It is theoretically possible for a multi-\/dof joint to have one axes mimiced and the others free. When cloning, is it ok to copy this and assume it is constant? \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_aaf2ed934b37cbbd236fdd1b01a5f5005}{\_\-name}
+\item 
+boost::array$<$ bool, 3 $>$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_ac5270bc79693dd87a40cb49428f311ea}{\_\-bIsCircular}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Information about a joint that controls the relationship between two links. 
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_af92f943e3dc4a7d1fb537fa481094fa9}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!JointType@{JointType}}
+\index{JointType@{JointType}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{JointType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf JointType}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_af92f943e3dc4a7d1fb537fa481094fa9}
+
+
+The type of joint movement. 
+
+Non-\/special joints that are combinations of revolution and prismatic joints. The first 4 bits specify the joint DOF, the next bits specify whether the joint is revolute (0) or prismatic (1). There can be also special joint types that are valid if the JointSpecialBit is set.
+
+For multi-\/dof joints, the order is transform(parentlink) $\ast$ transform(axis0) $\ast$ transform(axis1) ... 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a44e669248f1eb1fe09308bf98bd2d292}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!\_\-ComputeInternalInformation@{\_\-ComputeInternalInformation}}
+\index{\_\-ComputeInternalInformation@{\_\-ComputeInternalInformation}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{\_\-ComputeInternalInformation}]{\setlength{\rightskip}{0pt plus 5cm}virtual void \_\-ComputeInternalInformation (LinkPtr {\em plink0}, \/  LinkPtr {\em plink1}, \/  const Vector \& {\em vanchor}, \/  const std::vector$<$ Vector $>$ \& {\em vaxes}, \/  const std::vector$<$ dReal $>$ \& {\em vcurrentvalues})\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a44e669248f1eb1fe09308bf98bd2d292}
+
+
+Compute internal transformations and specify the attached links of the joint. 
+
+Called after the joint protected parameters \{vAxes, vanchor, and \_\-voffsets\} have been initialized. vAxes and vanchor should be in the frame of plink0. Compute the left and right multiplications of the joint transformation and cleans up the attached bodies. After function completes, the following parameters are initialized: \_\-tRight, \_\-tLeft, \_\-tinvRight, \_\-tinvLeft, \_\-attachedbodies. \_\-attachedbodies does not necessarily contain the links in the same order as they were input. 
+\begin{DoxyParams}{Parameters}
+\item[{\em plink0}]the first attaching link, all axes and anchors are defined in its coordinate system \item[{\em plink1}]the second attaching link \item[{\em vanchor}]the anchor of the rotation axes \item[{\em vaxes}]the axes in plink0's coordinate system of the joints \item[{\em vinitialvalues}]the current values of the robot used to set the 0 offset of the robot \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_aa78a272e319f192cece4bb8662a64cc2}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!\_\-ComputePartialVelocities@{\_\-ComputePartialVelocities}}
+\index{\_\-ComputePartialVelocities@{\_\-ComputePartialVelocities}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{\_\-ComputePartialVelocities}]{\setlength{\rightskip}{0pt plus 5cm}virtual void \_\-ComputePartialVelocities (std::vector$<$ std::pair$<$ int, dReal $>$ $>$ \& {\em vpartials}, \/  int {\em iaxis}, \/  std::map$<$ std::pair$<$ MIMIC::DOFFormat, int $>$, dReal $>$ \& {\em mapcachedpartials}) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_aa78a272e319f192cece4bb8662a64cc2}
+
+
+computes the partial velocities with respect to all dependent DOFs specified by \hyperlink{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_a88385fe7c2cecd8d6e625252f60a8f1f}{MIMIC::\_\-vmimicdofs}. 
+
+If the joint is not mimic, then just returns its own index 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em vpartials}]A list of dofindex/velocity\_\-partial pairs. The final velocity is computed by taking the dot product. The dofindices do not repeat. \item[\mbox{$\leftarrow$} {\em iaxis}]the axis \item[\mbox{$\leftrightarrow$} {\em vcachedpartials}]set of cached partials for each degree of freedom \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a1234a540b764968374f7454bda61b6e0}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetAccelerationLimits@{GetAccelerationLimits}}
+\index{GetAccelerationLimits@{GetAccelerationLimits}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetAccelerationLimits}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetAccelerationLimits (std::vector$<$ dReal $>$ \& {\em vmax}, \/  bool {\em bAppend} = {\ttfamily false}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a1234a540b764968374f7454bda61b6e0}
+
+
+Returns the max accelerations of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em the}]max acceleration \item[\mbox{$\leftarrow$} {\em bAppend}]if true will append to the end of the vector instead of erasing it \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a35d06683756fe53bb8bc0809b7be21cb}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetAxis@{GetAxis}}
+\index{GetAxis@{GetAxis}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetAxis}]{\setlength{\rightskip}{0pt plus 5cm}virtual Vector GetAxis (int {\em axis} = {\ttfamily 0}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a35d06683756fe53bb8bc0809b7be21cb}
+
+
+The axis of the joint in global coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em axis}]the axis to get \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_aa008d1863733a137b9a417d8e5277bb0}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetDOFIndex@{GetDOFIndex}}
+\index{GetDOFIndex@{GetDOFIndex}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetDOFIndex}]{\setlength{\rightskip}{0pt plus 5cm}int GetDOFIndex () const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_aa008d1863733a137b9a417d8e5277bb0}
+
+
+Get the degree of freedom index in the body's DOF array. 
+
+This does not index in \hyperlink{classOpenRAVE_1_1KinBody_a01fcab06f416b2ac3bac1385e09ff9bf}{KinBody::GetJoints()} directly! In other words, \hyperlink{classOpenRAVE_1_1KinBody_aa07f040a19a9fe7b80254915b1cce26b}{KinBody::GetDOFValues()}\mbox{[}\hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_aa008d1863733a137b9a417d8e5277bb0}{GetDOFIndex()}\mbox{]} == \hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a04a882646ae62c1d8b2416bd525a18dc}{GetValues()}\mbox{[}0\mbox{]} \hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a44ecb796397334c930f7e4dbb26a9f83}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetInternalHierarchyAnchor@{GetInternalHierarchyAnchor}}
+\index{GetInternalHierarchyAnchor@{GetInternalHierarchyAnchor}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetInternalHierarchyAnchor}]{\setlength{\rightskip}{0pt plus 5cm}virtual Vector GetInternalHierarchyAnchor () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a44ecb796397334c930f7e4dbb26a9f83}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a9cbbcd5d35fb3830b35c33f244570566}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetLimits@{GetLimits}}
+\index{GetLimits@{GetLimits}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetLimits}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetLimits (std::vector$<$ dReal $>$ \& {\em vLowerLimit}, \/  std::vector$<$ dReal $>$ \& {\em vUpperLimit}, \/  bool {\em bAppend} = {\ttfamily false}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a9cbbcd5d35fb3830b35c33f244570566}
+
+
+Returns the limits of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em vLowerLimit}]the lower limits \item[\mbox{$\rightarrow$} {\em vUpperLimit}]the upper limits \item[\mbox{$\leftarrow$} {\em bAppend}]if true will append to the end of the vector instead of erasing it \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a23d3a787036ec4661af61c5c0f0a60b2}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetMimicCoeffs@{GetMimicCoeffs}}
+\index{GetMimicCoeffs@{GetMimicCoeffs}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetMimicCoeffs}]{\setlength{\rightskip}{0pt plus 5cm}const std::vector$<$dReal$>$ GetMimicCoeffs () const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a23d3a787036ec4661af61c5c0f0a60b2}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_acd2c27958f0bbd536ee752b237cbb514}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetMimicDOFIndices@{GetMimicDOFIndices}}
+\index{GetMimicDOFIndices@{GetMimicDOFIndices}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetMimicDOFIndices}]{\setlength{\rightskip}{0pt plus 5cm}void GetMimicDOFIndices (std::vector$<$ int $>$ \& {\em vmimicdofs}, \/  int {\em axis} = {\ttfamily 0}) const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_acd2c27958f0bbd536ee752b237cbb514}
+
+
+Returns the set of DOF indices that the computation of a joint axis depends on. Order is arbitrary. 
+
+If the mimic joint uses the values of other mimic joints, then the dependent DOFs of that joint are also copied over. Therefore, the dof indices returned can be more than the actual variables used in the equation. 
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Throws an exception if the axis is not mimic. \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a8bc8323e310011f33ac609500db780c3}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetMimicEquation@{GetMimicEquation}}
+\index{GetMimicEquation@{GetMimicEquation}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetMimicEquation}]{\setlength{\rightskip}{0pt plus 5cm}std::string GetMimicEquation (int {\em axis} = {\ttfamily 0}, \/  int {\em type} = {\ttfamily 0}, \/  const std::string \& {\em format} = {\ttfamily \char`\"{}\char`\"{}}) const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a8bc8323e310011f33ac609500db780c3}
+
+
+If the joint is mimic, returns the equation to compute its value. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em axis}]the axis index \item[\mbox{$\leftarrow$} {\em type}]0 for position, 1 for velocity, 2 for acceleration. \item[\mbox{$\leftarrow$} {\em format}]the format the equations are returned in. If empty or \char`\"{}fparser\char`\"{}, equation in fparser format. Also supports: \char`\"{}mathml\char`\"{}.\end{DoxyParams}
+MathML:
+
+Set 'format' to \char`\"{}mathml\char`\"{}. The joint variables are specified with $<$csymbol$>$. If a targetted joint has more than one degree of freedom, then axis is suffixed with \_\-\%d. If 'type' is 1 or 2, the partial derivatives are outputted as consecutive $<$math$>$$<$/math$>$ tags in the same order as \hyperlink{structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_a8200045292ac48810750b8fe7ff145fb}{MIMIC::\_\-vdofformat} \hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a5dc0e9a767787813d561165fbaf5a1ea}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetMimicJointIndex@{GetMimicJointIndex}}
+\index{GetMimicJointIndex@{GetMimicJointIndex}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetMimicJointIndex}]{\setlength{\rightskip}{0pt plus 5cm}int GetMimicJointIndex () const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a5dc0e9a767787813d561165fbaf5a1ea}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a488fee47ef2f64285df38276b3902879}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetResolution@{GetResolution}}
+\index{GetResolution@{GetResolution}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetResolution}]{\setlength{\rightskip}{0pt plus 5cm}dReal GetResolution () const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a488fee47ef2f64285df38276b3902879}
+
+
+The discretization of the joint used when line-\/collision checking. 
+
+The resolutions are set as large as possible such that the joint will not go through obstacles of determined size. \hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a04a882646ae62c1d8b2416bd525a18dc}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetValues@{GetValues}}
+\index{GetValues@{GetValues}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetValues}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetValues (std::vector$<$ dReal $>$ \& {\em values}, \/  bool {\em bAppend} = {\ttfamily false}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a04a882646ae62c1d8b2416bd525a18dc}
+
+
+Return all the joint values with the correct offsets applied. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bAppend}]if true will append to the end of the vector instead of erasing it \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+degrees of freedom of the joint (even if pValues is NULL) 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_acf2184aef9396b8b098871e1a040ff77}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetVelocities@{GetVelocities}}
+\index{GetVelocities@{GetVelocities}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetVelocities}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetVelocities (std::vector$<$ dReal $>$ \& {\em values}, \/  bool {\em bAppend} = {\ttfamily false}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_acf2184aef9396b8b098871e1a040ff77}
+
+
+Gets the joint velocities. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bAppend}]if true will append to the end of the vector instead of erasing it \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the degrees of freedom of the joint (even if pValues is NULL) 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_acb05f676c90a3c2f07586b09e8ff07c4}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetVelocityLimits@{GetVelocityLimits}}
+\index{GetVelocityLimits@{GetVelocityLimits}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetVelocityLimits}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetVelocityLimits (std::vector$<$ dReal $>$ \& {\em vmax}, \/  bool {\em bAppend} = {\ttfamily false}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_acb05f676c90a3c2f07586b09e8ff07c4}
+
+
+Returns the max velocities of the joint. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em the}]max velocity \item[\mbox{$\leftarrow$} {\em bAppend}]if true will append to the end of the vector instead of erasing it \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a9dede60d3c61a885dc1b98fe86e85727}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!GetWrapOffset@{GetWrapOffset}}
+\index{GetWrapOffset@{GetWrapOffset}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{GetWrapOffset}]{\setlength{\rightskip}{0pt plus 5cm}dReal GetWrapOffset (int {\em iaxis} = {\ttfamily 0}) const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a9dede60d3c61a885dc1b98fe86e85727}
+
+
+Return internal offset parameter that determines the branch the angle centers on. 
+
+Wrap offsets are needed for rotation joints since the range is limited to 2$\ast$pi. This allows the wrap offset to be set so the joint can function in \mbox{[}-\/pi+offset,pi+offset\mbox{]}.. 
+\begin{DoxyParams}{Parameters}
+\item[{\em iaxis}]the axis to get the offset from \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a7adf99ae40bca7e94d926e3b56321fdb}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!IsCircular@{IsCircular}}
+\index{IsCircular@{IsCircular}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{IsCircular}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsCircular (int {\em iaxis}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a7adf99ae40bca7e94d926e3b56321fdb}
+
+
+Return true if joint axis has an identification at some of its lower and upper limits. 
+
+An identification of the lower and upper limits means that once the joint reaches its upper limits, it is also at its lower limit. The most common identification on revolute joints at -\/pi and pi. 'circularity' means the joint does not stop at limits. Although currently not developed, it could be possible to support identification for joints that are not revolute. \hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_ac8d727c6f970d30c4cdea02ce2a153bc}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!IsMimic@{IsMimic}}
+\index{IsMimic@{IsMimic}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{IsMimic}]{\setlength{\rightskip}{0pt plus 5cm}bool IsMimic (int {\em axis} = {\ttfamily -\/1}) const}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_ac8d727c6f970d30c4cdea02ce2a153bc}
+
+
+Returns true if a particular axis of the joint is mimiced. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em axis}]the axis to query. When -\/1 returns true if any of the axes have mimic joints \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a869db68ce6e40c67cc4c5f0f36d1a950}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!IsPrismatic@{IsPrismatic}}
+\index{IsPrismatic@{IsPrismatic}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{IsPrismatic}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsPrismatic (int {\em iaxis}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a869db68ce6e40c67cc4c5f0f36d1a950}
+
+
+returns true if the axis describes a translation around an axis. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em iaxis}]the axis of the joint to return the results for \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a477d385f39817d9116efac236d56b54f}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!IsRevolute@{IsRevolute}}
+\index{IsRevolute@{IsRevolute}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{IsRevolute}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsRevolute (int {\em iaxis}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a477d385f39817d9116efac236d56b54f}
+
+
+returns true if the axis describes a rotation around an axis. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em iaxis}]the axis of the joint to return the results for \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a66a3b9657e5dfc13903c47664445fb93}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!SetAccelerationLimits@{SetAccelerationLimits}}
+\index{SetAccelerationLimits@{SetAccelerationLimits}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{SetAccelerationLimits}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetAccelerationLimits (const std::vector$<$ dReal $>$ \& {\em vmax})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a66a3b9657e5dfc13903c47664445fb93}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a1234a540b764968374f7454bda61b6e0}{GetAccelerationLimits} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a7f0e2be49eea7d168eab550af4f0ec97}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!SetJointLimits@{SetJointLimits}}
+\index{SetJointLimits@{SetJointLimits}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{SetJointLimits}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetJointLimits (const std::vector$<$ dReal $>$ \& {\em lower}, \/  const std::vector$<$ dReal $>$ \& {\em upper})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a7f0e2be49eea7d168eab550af4f0ec97}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a90d56cf93256fd2c4087cd3bac140e66}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!SetLimits@{SetLimits}}
+\index{SetLimits@{SetLimits}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{SetLimits}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetLimits (const std::vector$<$ dReal $>$ \& {\em lower}, \/  const std::vector$<$ dReal $>$ \& {\em upper})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a90d56cf93256fd2c4087cd3bac140e66}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a9cbbcd5d35fb3830b35c33f244570566}{GetLimits} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a0e31c5be31c4145afa786e0c0d6a46ae}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!SetMimicEquations@{SetMimicEquations}}
+\index{SetMimicEquations@{SetMimicEquations}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{SetMimicEquations}]{\setlength{\rightskip}{0pt plus 5cm}void SetMimicEquations (int {\em axis}, \/  const std::string \& {\em poseq}, \/  const std::string \& {\em veleq}, \/  const std::string \& {\em acceleq} = {\ttfamily \char`\"{}\char`\"{}})}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a0e31c5be31c4145afa786e0c0d6a46ae}
+
+
+Sets the mimic properties of the joint. 
+
+The equations can use the joint names directly in the equation, which represent the position of the joint. Any non-\/mimic joint part of \hyperlink{classOpenRAVE_1_1KinBody_a01fcab06f416b2ac3bac1385e09ff9bf}{KinBody::GetJoints()} can be used in the computation of the values. If a joint has more than one degree of freedom, then suffix it '\_\-' and the axis index. For example universaljoint\_\-0 $\ast$ 10 + sin(universaljoint\_\-1).
+
+See \href{http://warp.povusers.org/FunctionParser/fparser.html}{\tt http://warp.povusers.org/FunctionParser/fparser.html} for a full description of the equation formats.
+
+The velocity and acceleration equations are specified in terms of partial derivatives, which means one expression needs to be specified per degree of freedom of used. In order to separate the expressions use \char`\"{}$|$name ...\char`\"{}. The name should immediately follow '$|$'. For example:
+
+$|$universaljoint\_\-0 10 $|$universaljoint\_\-1 10$\ast$cos(universaljoint\_\-1)
+
+If there is only one variable used in the position equation, then the equation can be specified directly without using \char`\"{}\{\}\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em axis}]the axis to set the properties for. \item[\mbox{$\leftarrow$} {\em poseq}]Equation for joint's position. If it is empty, the mimic properties are turned off for this joint. \item[\mbox{$\leftarrow$} {\em veleq}]First-\/order partial derivatives of poseq with respect to all used DOFs. Only the variables used in poseq are allowed to be used. If poseq is not empty, this is required. \item[\mbox{$\leftarrow$} {\em acceleq}]Second-\/order partial derivatives of poseq with respect to all used DOFs. Only the variables used in poseq are allowed to be used. Optional. \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Throws an exception if the mimic equation is invalid in any way. \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_ad33ede63ec196d7af2a3d5ea4e2e5c60}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!SetOffset@{SetOffset}}
+\index{SetOffset@{SetOffset}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{SetOffset}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetOffset (dReal {\em offset}, \/  int {\em iaxis} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_ad33ede63ec196d7af2a3d5ea4e2e5c60}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a9792a14881ff4bbcc058415fce2100d5}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!SetVelocityLimits@{SetVelocityLimits}}
+\index{SetVelocityLimits@{SetVelocityLimits}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{SetVelocityLimits}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetVelocityLimits (const std::vector$<$ dReal $>$ \& {\em vmax})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a9792a14881ff4bbcc058415fce2100d5}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_acb05f676c90a3c2f07586b09e8ff07c4}{GetVelocityLimits} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a7b884c5900625a5d49951afaf67fcc27}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!SetWeights@{SetWeights}}
+\index{SetWeights@{SetWeights}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{SetWeights}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetWeights (const std::vector$<$ dReal $>$ \& {\em weights})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a7b884c5900625a5d49951afaf67fcc27}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_aa305a00e9865044b4f6c2ec81d00d6d9}{GetWeight} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a717d10686a55fc7c870effe21a3fcb3d}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!SetWrapOffset@{SetWrapOffset}}
+\index{SetWrapOffset@{SetWrapOffset}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{SetWrapOffset}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetWrapOffset (dReal {\em offset}, \/  int {\em iaxis} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a717d10686a55fc7c870effe21a3fcb3d}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a9dede60d3c61a885dc1b98fe86e85727}{GetWrapOffset} 
+\end{DoxySeeAlso}
+
+
+\subsubsection{Member Data Documentation}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_ac5270bc79693dd87a40cb49428f311ea}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!\_\-bIsCircular@{\_\-bIsCircular}}
+\index{\_\-bIsCircular@{\_\-bIsCircular}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{\_\-bIsCircular}]{\setlength{\rightskip}{0pt plus 5cm}boost::array$<$bool,3$>$ {\bf \_\-bIsCircular}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_ac5270bc79693dd87a40cb49428f311ea}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a7adf99ae40bca7e94d926e3b56321fdb}{IsCircular} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_aaf2ed934b37cbbd236fdd1b01a5f5005}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!\_\-name@{\_\-name}}
+\index{\_\-name@{\_\-name}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf \_\-name}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_aaf2ed934b37cbbd236fdd1b01a5f5005}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1KinBody_1_1Joint_a8b9389d7613c0942dded4c6af39d7ab1}{GetName} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_a463725ce817eef88b032307e46c97ed6}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!\_\-voffsets@{\_\-voffsets}}
+\index{\_\-voffsets@{\_\-voffsets}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{\_\-voffsets}]{\setlength{\rightskip}{0pt plus 5cm}boost::array$<$dReal,3$>$ {\bf \_\-voffsets}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_a463725ce817eef88b032307e46c97ed6}
+\begin{DoxySeeAlso}{See also}
+GetOffset 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1KinBody_1_1Joint_ae9fd2b8d21b33d02a24eb85440d7f4df}{
+\index{OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}!\_\-vupperlimit@{\_\-vupperlimit}}
+\index{\_\-vupperlimit@{\_\-vupperlimit}!OpenRAVE::KinBody::Joint@{OpenRAVE::KinBody::Joint}}
+\paragraph[{\_\-vupperlimit}]{\setlength{\rightskip}{0pt plus 5cm}boost::array$<$dReal,3$>$ {\bf \_\-vupperlimit}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1KinBody_1_1Joint_ae9fd2b8d21b33d02a24eb85440d7f4df}
+joint limits 

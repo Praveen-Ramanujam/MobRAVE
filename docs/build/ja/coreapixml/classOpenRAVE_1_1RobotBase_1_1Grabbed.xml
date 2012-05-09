@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1RobotBase_1_1Grabbed" kind="class" prot="public">
+    <compoundname>OpenRAVE::RobotBase::Grabbed</compoundname>
+    <includes refid="robot_8h" local="no">robot.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Grabbed_1a8b4ce70056acd56ee57c2907fba4f0a7" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1af9b7d1a6c8cb513416c8e667f3c25418" kindref="member">KinBodyWeakPtr</ref></type>
+        <definition>KinBodyWeakPtr pbody</definition>
+        <argsstring></argsstring>
+        <name>pbody</name>
+        <briefdescription>
+<para>the grabbed body </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="326" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Grabbed_1a76161751334f832eef6c40dc13da705f" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+        <definition>LinkPtr plinkrobot</definition>
+        <argsstring></argsstring>
+        <name>plinkrobot</name>
+        <briefdescription>
+<para>robot link that is grabbing the body </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="327" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Grabbed_1aee557ee79ea3cfc3aab0f1db0ac08715" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">LinkConstPtr</ref> &gt;</type>
+        <definition>std::vector&lt;LinkConstPtr&gt; vCollidingLinks</definition>
+        <argsstring></argsstring>
+        <name>vCollidingLinks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="328" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Grabbed_1a5c367c3a637ef9778667fb00efdfaad7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">LinkConstPtr</ref> &gt;</type>
+        <definition>std::vector&lt;LinkConstPtr&gt; vNonCollidingLinks</definition>
+        <argsstring></argsstring>
+        <name>vNonCollidingLinks</name>
+        <briefdescription>
+<para>robot links that already collide with the body </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="328" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1Grabbed_1a4603d447a8a0a8105a15f198626977ef" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform troot</definition>
+        <argsstring></argsstring>
+        <name>troot</name>
+        <briefdescription>
+<para>root transform (of first link of body) relative to plinkrobot&apos;s transform. In other words, pbody-&gt;<ref refid="classOpenRAVE_1_1KinBody_1a2206c7317f62f083c3f57868ba82bfee" kindref="member">GetTransform()</ref> == plinkrobot-&gt;<ref refid="classOpenRAVE_1_1KinBody_1a2206c7317f62f083c3f57868ba82bfee" kindref="member">GetTransform()</ref>*troot </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="329" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The information of a currently grabbed body. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1185">
+        <label>Grabbed</label>
+        <link refid="classOpenRAVE_1_1RobotBase_1_1Grabbed"/>
+        <childnode refid="1186" relation="usage">
+          <edgelabel>troot</edgelabel>
+        </childnode>
+        <childnode refid="1187" relation="usage">
+          <edgelabel>vCollidingLinks</edgelabel>
+          <edgelabel>vNonCollidingLinks</edgelabel>
+        </childnode>
+      </node>
+      <node id="1186">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1187">
+        <label>vector&lt; LinkConstPtr &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="324" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="323" bodyend="330"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Grabbed_1a8b4ce70056acd56ee57c2907fba4f0a7" prot="public" virt="non-virtual"><scope>OpenRAVE::RobotBase::Grabbed</scope><name>pbody</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Grabbed_1a76161751334f832eef6c40dc13da705f" prot="public" virt="non-virtual"><scope>OpenRAVE::RobotBase::Grabbed</scope><name>plinkrobot</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Grabbed_1a4603d447a8a0a8105a15f198626977ef" prot="public" virt="non-virtual"><scope>OpenRAVE::RobotBase::Grabbed</scope><name>troot</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Grabbed_1aee557ee79ea3cfc3aab0f1db0ac08715" prot="public" virt="non-virtual"><scope>OpenRAVE::RobotBase::Grabbed</scope><name>vCollidingLinks</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1Grabbed_1a5c367c3a637ef9778667fb00efdfaad7" prot="public" virt="non-virtual"><scope>OpenRAVE::RobotBase::Grabbed</scope><name>vNonCollidingLinks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

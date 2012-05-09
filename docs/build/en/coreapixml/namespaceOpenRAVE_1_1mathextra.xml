@@ -1,0 +1,2359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="namespaceOpenRAVE_1_1mathextra" kind="namespace">
+    <compoundname>OpenRAVE::mathextra</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a81fb331bc68449313f352e6582e361a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * mult4</definition>
+        <argsstring>(float *pfres, const float *pf1, const float *pf2)</argsstring>
+        <name>mult4</name>
+        <param>
+          <type>float *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="49" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="702" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a4a44ef5d851ffffeb1288c50abbf29b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * multtrans3</definition>
+        <argsstring>(float *pfres, const float *pf1, const float *pf2)</argsstring>
+        <name>multtrans3</name>
+        <param>
+          <type>float *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="52" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="706" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a06f3263e838f64e607923ff065d9c37a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * multtrans4</definition>
+        <argsstring>(float *pfres, const float *pf1, const float *pf2)</argsstring>
+        <name>multtrans4</name>
+        <param>
+          <type>float *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="53" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="709" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a725e782059052b4e40f8dc99b39c2779" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * transnorm3</definition>
+        <argsstring>(float *pfout, const float *pfmat, const float *pf)</argsstring>
+        <name>transnorm3</name>
+        <param>
+          <type>float *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pfmat</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="54" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="712" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a1f2f6a714d9937409f4af7e8abbedf60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * transpose3</definition>
+        <argsstring>(const float *pf, float *pfres)</argsstring>
+        <name>transpose3</name>
+        <param>
+          <type>const float *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>pfres</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="56" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="716" bodyend="718"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ae3ecb8ff5bf7b3701e1eff7a399d5724" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * transpose4</definition>
+        <argsstring>(const float *pf, float *pfres)</argsstring>
+        <name>transpose4</name>
+        <param>
+          <type>const float *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>pfres</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="57" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="719" bodyend="721"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a6e66dbcddc141b9c134e65aeeb444b68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dot2</definition>
+        <argsstring>(const float *pf1, const float *pf2)</argsstring>
+        <name>dot2</name>
+        <param>
+          <type>const float *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="59" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="723" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a527c9a64311f7f2c2428d79acae6cbff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dot3</definition>
+        <argsstring>(const float *pf1, const float *pf2)</argsstring>
+        <name>dot3</name>
+        <param>
+          <type>const float *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="60" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="726" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a96bf07ea8f5101a0147508758262f674" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float dot4</definition>
+        <argsstring>(const float *pf1, const float *pf2)</argsstring>
+        <name>dot4</name>
+        <param>
+          <type>const float *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="61" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="729" bodyend="731"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a3a0b2ebd387daef7aafb864d73c77038" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float lengthsqr2</definition>
+        <argsstring>(const float *pf)</argsstring>
+        <name>lengthsqr2</name>
+        <param>
+          <type>const float *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="63" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="733" bodyend="735"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ad8930797789eae5569491c0f05174426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float lengthsqr3</definition>
+        <argsstring>(const float *pf)</argsstring>
+        <name>lengthsqr3</name>
+        <param>
+          <type>const float *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="64" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="736" bodyend="738"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1aed0b451327f9924a83137a0aa1229f42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float lengthsqr4</definition>
+        <argsstring>(const float *pf)</argsstring>
+        <name>lengthsqr4</name>
+        <param>
+          <type>const float *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="65" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="739" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1affc167f7a19e542e4d13b79775bdec8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * normalize2</definition>
+        <argsstring>(float *pfout, const float *pf)</argsstring>
+        <name>normalize2</name>
+        <param>
+          <type>float *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="67" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="743" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a229decb2c54cdee7cca9a03139d6f6ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * normalize3</definition>
+        <argsstring>(float *pfout, const float *pf)</argsstring>
+        <name>normalize3</name>
+        <param>
+          <type>float *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="68" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="746" bodyend="748"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a4fe10078a02dc7fa9f562de150662fbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * normalize4</definition>
+        <argsstring>(float *pfout, const float *pf)</argsstring>
+        <name>normalize4</name>
+        <param>
+          <type>float *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="69" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="749" bodyend="751"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a28281cdd752b067fcfa996b3ed329067" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * cross3</definition>
+        <argsstring>(float *pfout, const float *pf1, const float *pf2)</argsstring>
+        <name>cross3</name>
+        <param>
+          <type>float *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="71" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="753" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a43c711671450191396c6a6fb64b14ab6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * mult3_s4</definition>
+        <argsstring>(float *pfres, const float *pf1, const float *pf2)</argsstring>
+        <name>mult3_s4</name>
+        <param>
+          <type>float *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="74" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="758" bodyend="760"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a68d9ac2c8ee157350fb5f7a9e12777df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * mult3_s3</definition>
+        <argsstring>(float *pfres, const float *pf1, const float *pf2)</argsstring>
+        <name>mult3_s3</name>
+        <param>
+          <type>float *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="75" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="761" bodyend="763"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ac0e5067fda68bff2c95ec6656447cfdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * inv3</definition>
+        <argsstring>(const float *pf, float *pfres, float *pfdet, int stride)</argsstring>
+        <name>inv3</name>
+        <param>
+          <type>const float *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>pfdet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="77" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="765" bodyend="767"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ab4314fb677aba33db7ec8988bdedc1c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * inv4</definition>
+        <argsstring>(const float *pf, float *pfres)</argsstring>
+        <name>inv4</name>
+        <param>
+          <type>const float *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>pfres</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="78" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="768" bodyend="770"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a51d61c3f4ce92cc12ddc36c596e28818" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * mult4</definition>
+        <argsstring>(double *pfres, const double *pf1, const double *pf2)</argsstring>
+        <name>mult4</name>
+        <param>
+          <type>double *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="81" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="773" bodyend="775"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ad913b5b9fe5fd614847b31e53e3e7db7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * multtrans3</definition>
+        <argsstring>(double *pfres, const double *pf1, const double *pf2)</argsstring>
+        <name>multtrans3</name>
+        <param>
+          <type>double *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="84" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="777" bodyend="779"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a17dfaea3650877d99d2d5f29a1ed231c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * multtrans4</definition>
+        <argsstring>(double *pfres, const double *pf1, const double *pf2)</argsstring>
+        <name>multtrans4</name>
+        <param>
+          <type>double *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="85" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="780" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1aa3a8acec5125df0f367c0c953d60e31a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * transnorm3</definition>
+        <argsstring>(double *pfout, const double *pfmat, const double *pf)</argsstring>
+        <name>transnorm3</name>
+        <param>
+          <type>double *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pfmat</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="86" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="783" bodyend="785"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a457012e782e2f95245815950325c0efa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * transpose3</definition>
+        <argsstring>(const double *pf, double *pfres)</argsstring>
+        <name>transpose3</name>
+        <param>
+          <type>const double *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>pfres</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="88" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="787" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1aeacb67821892b748b6f71a122212d570" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * transpose4</definition>
+        <argsstring>(const double *pf, double *pfres)</argsstring>
+        <name>transpose4</name>
+        <param>
+          <type>const double *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>pfres</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="89" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="790" bodyend="792"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a2b1c71ffd8f415e540c9fe6ae219209b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dot2</definition>
+        <argsstring>(const double *pf1, const double *pf2)</argsstring>
+        <name>dot2</name>
+        <param>
+          <type>const double *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="91" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="794" bodyend="796"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1afaa340ef61dba68399a443d1b5b850da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dot3</definition>
+        <argsstring>(const double *pf1, const double *pf2)</argsstring>
+        <name>dot3</name>
+        <param>
+          <type>const double *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="92" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="797" bodyend="799"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1aec2800b40c34066bd48eb3274267c7d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dot4</definition>
+        <argsstring>(const double *pf1, const double *pf2)</argsstring>
+        <name>dot4</name>
+        <param>
+          <type>const double *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="93" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="800" bodyend="802"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a3107f8f697b36b792709be295f88fac3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double lengthsqr2</definition>
+        <argsstring>(const double *pf)</argsstring>
+        <name>lengthsqr2</name>
+        <param>
+          <type>const double *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="95" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="804" bodyend="806"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ae8b2f5dd2264fc8f50a197f0a055eacd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double lengthsqr3</definition>
+        <argsstring>(const double *pf)</argsstring>
+        <name>lengthsqr3</name>
+        <param>
+          <type>const double *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="96" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="807" bodyend="809"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a1af3baebf2928b5a4b99ad29665b837f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double lengthsqr4</definition>
+        <argsstring>(const double *pf)</argsstring>
+        <name>lengthsqr4</name>
+        <param>
+          <type>const double *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="97" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="810" bodyend="812"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1aa020dd4463b869ba8786d255fc5ecb91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * normalize2</definition>
+        <argsstring>(double *pfout, const double *pf)</argsstring>
+        <name>normalize2</name>
+        <param>
+          <type>double *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="99" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="814" bodyend="816"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a3b2de808d9b42ec46282a1b8aeb3eb68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * normalize3</definition>
+        <argsstring>(double *pfout, const double *pf)</argsstring>
+        <name>normalize3</name>
+        <param>
+          <type>double *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="100" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="817" bodyend="819"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a73ac77b5d5ecdb67f6d4f998373b4aa8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * normalize4</definition>
+        <argsstring>(double *pfout, const double *pf)</argsstring>
+        <name>normalize4</name>
+        <param>
+          <type>double *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="101" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="820" bodyend="822"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a2b3b5a10b93accf124ff45ea0bd5c68f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * cross3</definition>
+        <argsstring>(double *pfout, const double *pf1, const double *pf2)</argsstring>
+        <name>cross3</name>
+        <param>
+          <type>double *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="103" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="824" bodyend="826"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a4c9a9fb2d0102a448f615ef4d63f1b1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * mult3_s4</definition>
+        <argsstring>(double *pfres, const double *pf1, const double *pf2)</argsstring>
+        <name>mult3_s4</name>
+        <param>
+          <type>double *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="106" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="829" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ab384d1c83141acdad73f6cec4f5a6c78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * mult3_s3</definition>
+        <argsstring>(double *pfres, const double *pf1, const double *pf2)</argsstring>
+        <name>mult3_s3</name>
+        <param>
+          <type>double *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="107" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="832" bodyend="834"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1addece3c4630229504027ea78f2eab03c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * inv3</definition>
+        <argsstring>(const double *pf, double *pfres, double *pfdet, int stride)</argsstring>
+        <name>inv3</name>
+        <param>
+          <type>const double *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>pfdet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="109" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="836" bodyend="838"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a1f42b846cb8ee1147d2fe85fdd8e8be3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * inv4</definition>
+        <argsstring>(const double *pf, double *pfres)</argsstring>
+        <name>inv4</name>
+        <param>
+          <type>const double *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>pfres</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="110" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="839" bodyend="841"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a3c6e92adb2deae09d195c86818918c4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool eig2</definition>
+        <argsstring>(const T *pfmat, T *peigs, T &amp;fv1x, T &amp;fv1y, T &amp;fv2x, T &amp;fv2y)</argsstring>
+        <name>eig2</name>
+        <param>
+          <type>const T *</type>
+          <declname>pfmat</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>peigs</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>fv1x</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>fv1y</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>fv2x</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>fv2y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>extract eigen values and vectors from a 2x2 matrix and returns true if all values are real returned eigen vectors are normalized </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="120" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="212" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a497d33fc82165e195c97e0c834e65db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OPENRAVE_API int</type>
+        <definition>OPENRAVE_API int OpenRAVE::mathextra::CubicRoots</definition>
+        <argsstring>(double c0, double c1, double c2, double *r0, double *r1, double *r2)</argsstring>
+        <name>CubicRoots</name>
+        <param>
+          <type>double</type>
+          <declname>c0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>r0</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ad10d0faef4a5cb3a8469265678154d85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Tridiagonal3</definition>
+        <argsstring>(S *mat, T *diag, T *subd)</argsstring>
+        <name>Tridiagonal3</name>
+        <param>
+          <type>S *</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>diag</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>subd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="125" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="1101" bodyend="1136"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ab4008c737b79b568a509235e6b9c5f01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OPENRAVE_API bool</type>
+        <definition>OPENRAVE_API bool OpenRAVE::mathextra::QLAlgorithm3</definition>
+        <argsstring>(float *m_aafEntry, float *afDiag, float *afSubDiag)</argsstring>
+        <name>QLAlgorithm3</name>
+        <param>
+          <type>float *</type>
+          <declname>m_aafEntry</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>afDiag</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>afSubDiag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="126"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a1b285db34ea6d395023b64a2d2fae37b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OPENRAVE_API bool</type>
+        <definition>OPENRAVE_API bool OpenRAVE::mathextra::QLAlgorithm3</definition>
+        <argsstring>(double *m_aafEntry, double *afDiag, double *afSubDiag)</argsstring>
+        <name>QLAlgorithm3</name>
+        <param>
+          <type>double *</type>
+          <declname>m_aafEntry</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>afDiag</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>afSubDiag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a49dafe034618c02f2190ca994eeea976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OPENRAVE_API void</type>
+        <definition>OPENRAVE_API void OpenRAVE::mathextra::EigenSymmetric3</definition>
+        <argsstring>(const double *fCovariance, double *eval, double *fAxes)</argsstring>
+        <name>EigenSymmetric3</name>
+        <param>
+          <type>const double *</type>
+          <declname>fCovariance</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>eval</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>fAxes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="128"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ac7b910595448278e861ce787a01fc9a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void OpenRAVE::mathextra::GetCovarBasisVectors</definition>
+        <argsstring>(const T fCovariance[3][3], T vbasis[3][3])</argsstring>
+        <name>GetCovarBasisVectors</name>
+        <param>
+          <type>const T</type>
+          <declname>fCovariance</declname>
+          <array>[3][3]</array>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>vbasis</declname>
+          <array>[3][3]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes the eigenvectors of the covariance matrix and forms a basis <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fCovariance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a symmetric 3x3 matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">vbasis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the basis vectors extracted (form a right hand coordinate system). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="135" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="134" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a698af188ade25c457317354c0e9ebcba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void svd3</definition>
+        <argsstring>(const T *A, T *U, T *D, T *V)</argsstring>
+        <name>svd3</name>
+        <param>
+          <type>const T *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>D</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SVD of a 3x3 matrix A such that A = U*diag(D)*V&apos; The row stride for all matrices is 3*sizeof(T) bytes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>3x3 matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">U</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>3x3 matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">D</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>3x1 matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">V</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>3x3 matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="152" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="1139" bodyend="1194"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a5da29cad5c0859b8f34444a2c7977744" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mult</definition>
+        <argsstring>(T *pf, T fa, int r)</argsstring>
+        <name>mult</name>
+        <param>
+          <type>T *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>fa</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="155"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a28fab5ce9954860ea9ffb5bee9fc0f09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int Min</definition>
+        <argsstring>(T *pts, int stride, int numPts)</argsstring>
+        <name>Min</name>
+        <param>
+          <type>T *</type>
+          <declname>pts</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numPts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="163" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="1197" bodyend="1208"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1afa49cf2b486df8e832804efe2eb23835" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int Max</definition>
+        <argsstring>(T *pts, int stride, int numPts)</argsstring>
+        <name>Max</name>
+        <param>
+          <type>T *</type>
+          <declname>pts</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numPts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="164" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="1211" bodyend="1222"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a83ec66af95ada84efae402892c3b4550" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>S *</type>
+        <definition>S * mult</definition>
+        <argsstring>(T *pf1, R *pf2, int r1, int c1, int c2, S *pfres, bool badd=false)</argsstring>
+        <name>mult</name>
+        <param>
+          <type>T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>R *</type>
+          <declname>pf2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type>S *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>badd</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="172" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="844" bodyend="869"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a026fa1e10be5ba90b2907f207a57d686" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>S *</type>
+        <definition>S * multtrans</definition>
+        <argsstring>(T *pf1, R *pf2, int r1, int c1, int c2, S *pfres, bool badd=false)</argsstring>
+        <name>multtrans</name>
+        <param>
+          <type>T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>R *</type>
+          <declname>pf2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type>S *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>badd</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="178" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="872" bodyend="900"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a9da8532a0ff0230a01ae8e64e59d25b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>S *</type>
+        <definition>S * multtrans_to2</definition>
+        <argsstring>(T *pf1, R *pf2, int r1, int c1, int r2, S *pfres, bool badd=false)</argsstring>
+        <name>multtrans_to2</name>
+        <param>
+          <type>T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>R *</type>
+          <declname>pf2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type>S *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>badd</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="185" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="903" bodyend="928"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ad9d449f5bf7205e75134e9b6452360b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * multto1</definition>
+        <argsstring>(T *pf1, T *pf2, int r1, int c1, T *pftemp=NULL)</argsstring>
+        <name>multto1</name>
+        <param>
+          <type>T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pf2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pftemp</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="191" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="930" bodyend="965"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a2ccbcd22eee92b1456746b47329263a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * multto2</definition>
+        <argsstring>(T *pf1, S *pf2, int r2, int c2, S *pftemp=NULL)</argsstring>
+        <name>multto2</name>
+        <param>
+          <type>T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>S *</type>
+          <declname>pf2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type>S *</type>
+          <declname>pftemp</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="195" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="967" bodyend="1007"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a219be6390b14991d050a220fd5485eb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void sub</definition>
+        <argsstring>(T *pf1, T *pf2, int r)</argsstring>
+        <name>sub</name>
+        <param>
+          <type>T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pf2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="198" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="1019" bodyend="1027"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a0f1951ea43605ecb4afc8c63b7df5ede" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T normsqr</definition>
+        <argsstring>(const T *pf1, int r)</argsstring>
+        <name>normsqr</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="199" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="1029" bodyend="1040"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ac64ed03a4d6b1db8560d1d0c6e19122c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T lengthsqr</definition>
+        <argsstring>(const T *pf1, const T *pf2, int length)</argsstring>
+        <name>lengthsqr</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="200" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="1042" bodyend="1052"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a88c880c263a9a5dc3731a588157ba573" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T dot</definition>
+        <argsstring>(T *pf1, T *pf2, int length)</argsstring>
+        <name>dot</name>
+        <param>
+          <type>T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pf2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="201" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="1054" bodyend="1063"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ad51c7a2a23e482e3b2d13c0dd938a86f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T sum</definition>
+        <argsstring>(T *pf, int length)</argsstring>
+        <name>sum</name>
+        <param>
+          <type>T *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="203" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="1065" bodyend="1074"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1abb67a10be5fe708132dbe3792089cb43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool inv2</definition>
+        <argsstring>(T *pf, T *pfres)</argsstring>
+        <name>inv2</name>
+        <param>
+          <type>T *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pfres</declname>
+        </param>
+        <briefdescription>
+<para>takes the inverse of the 2x2 matrix pf and stores it into pfres, returns true if matrix is invertible </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="206" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="1076" bodyend="1098"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ad6d7baf85607fa62597982c478ac0331" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int OpenRAVE::mathextra::solvequad</definition>
+        <argsstring>(T a, T b, T c, T &amp;r1, T &amp;r2)</argsstring>
+        <name>solvequad</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="257" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="256" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1acdad3d8acab4d752d7373d9cb5a0a9db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_mult3_s4</definition>
+        <argsstring>(T *pfres, const T *pf1, const T *pf2)</argsstring>
+        <name>_mult3_s4</name>
+        <param>
+          <type>T *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+<para>mult3 with a 3x3 matrix whose row stride is 16 bytes </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="288" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="287" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ae5a24b1c71ce7b35a40ae7008ddf47ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_mult3_s3</definition>
+        <argsstring>(T *pfres, const T *pf1, const T *pf2)</argsstring>
+        <name>_mult3_s3</name>
+        <param>
+          <type>T *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+<para>mult3 with a 3x3 matrix whose row stride is 12 bytes </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="303" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="302" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1accf35ea6f28861c4eec720e7794dacaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_mult4</definition>
+        <argsstring>(T *pfres, const T *p1, const T *p2)</argsstring>
+        <name>_mult4</name>
+        <param>
+          <type>T *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="320" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="319" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ab6a85af5edd8ccef7544f4a5f887e83b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_multtrans3</definition>
+        <argsstring>(T *pfres, const T *pf1, const T *pf2)</argsstring>
+        <name>_multtrans3</name>
+        <param>
+          <type>T *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="353" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="352" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a72ce422ba1557a6048a2d9d175db1785" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_multtrans4</definition>
+        <argsstring>(T *pfres, const T *pf1, const T *pf2)</argsstring>
+        <name>_multtrans4</name>
+        <param>
+          <type>T *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="377" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="376" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ad9d110d6d2dd3e1f4777ff1c42aa2fff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T OpenRAVE::mathextra::matrixdet3</definition>
+        <argsstring>(const T *pf, int stride)</argsstring>
+        <name>matrixdet3</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <briefdescription>
+<para>Compute the determinant of a 3x3 matrix whose row stride stride elements. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="395" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="394" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1abb859ce4ca095416219250a83ca94793" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_inv3</definition>
+        <argsstring>(const T *pf, T *pfres, T *pfdet, int stride)</argsstring>
+        <name>_inv3</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pfres</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pfdet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+        </param>
+        <briefdescription>
+<para>3x3 matrix inverse. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the input 3x3 matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the result of the operation, can be the same matrix as pf </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pfdet</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not NULL, fills it with the determinant of the source matrix </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the stride in elements between elements. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="410" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="409" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a81c950faa17b5d293eb547c9b3bcab41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_inv4</definition>
+        <argsstring>(const T *pf, T *pfres)</argsstring>
+        <name>_inv4</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pfres</declname>
+        </param>
+        <briefdescription>
+<para>4x4 matrix inverse. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="463" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="462" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a98432a8613c3ee83bb5b6d2092b406ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_transpose3</definition>
+        <argsstring>(const T *pf, T *pfres)</argsstring>
+        <name>_transpose3</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pfres</declname>
+        </param>
+        <briefdescription>
+<para>Transpose a 3x3 matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="541" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="540" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1af6485a9fbc08e970a019a8c78df0d54b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_transpose4</definition>
+        <argsstring>(const T *pf, T *pfres)</argsstring>
+        <name>_transpose4</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pfres</declname>
+        </param>
+        <briefdescription>
+<para>Transpose a 4x4 matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="561" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="560" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a623e8f4c9e97b3c84962c6e9b99fa679" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T OpenRAVE::mathextra::_dot2</definition>
+        <argsstring>(const T *pf1, const T *pf2)</argsstring>
+        <name>_dot2</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="583" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="582" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a659ebd94608c5ff92aae50be29fd2097" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T OpenRAVE::mathextra::_dot3</definition>
+        <argsstring>(const T *pf1, const T *pf2)</argsstring>
+        <name>_dot3</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="590" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="589" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1acaa8f8e426d6febf2e4fe5d3b497c161" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T OpenRAVE::mathextra::_dot4</definition>
+        <argsstring>(const T *pf1, const T *pf2)</argsstring>
+        <name>_dot4</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="597" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="596" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ad2db5ce47ed368515243a0945634a3c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T OpenRAVE::mathextra::_lengthsqr2</definition>
+        <argsstring>(const T *pf)</argsstring>
+        <name>_lengthsqr2</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="604" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="603" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a2712ff08011a416b781253817d713788" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T OpenRAVE::mathextra::_lengthsqr3</definition>
+        <argsstring>(const T *pf)</argsstring>
+        <name>_lengthsqr3</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="611" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="610" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1aa64e50799e90cc59c2c1733fb8031373" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T OpenRAVE::mathextra::_lengthsqr4</definition>
+        <argsstring>(const T *pf)</argsstring>
+        <name>_lengthsqr4</name>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="618" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="617" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a82f1895d58de57e819a121aa483c698e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_normalize2</definition>
+        <argsstring>(T *pfout, const T *pf)</argsstring>
+        <name>_normalize2</name>
+        <param>
+          <type>T *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="625" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="624" bodyend="634"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a937a71d661275c59259cdd6d62775ec3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_normalize3</definition>
+        <argsstring>(T *pfout, const T *pf)</argsstring>
+        <name>_normalize3</name>
+        <param>
+          <type>T *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="638" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="637" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a6064a73d64b7d0e816f1e6a8b2dd6d4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_normalize4</definition>
+        <argsstring>(T *pfout, const T *pf)</argsstring>
+        <name>_normalize4</name>
+        <param>
+          <type>T *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="653" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="652" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a058906813b50d023a9b2d4f6c3722b7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_cross3</definition>
+        <argsstring>(T *pfout, const T *pf1, const T *pf2)</argsstring>
+        <name>_cross3</name>
+        <param>
+          <type>T *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="669" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="668" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1a01d9e7e21e06c174e19d9b7335960770" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* OpenRAVE::mathextra::_transnorm3</definition>
+        <argsstring>(T *pfout, const T *pfmat, const T *pf)</argsstring>
+        <name>_transnorm3</name>
+        <param>
+          <type>T *</type>
+          <declname>pfout</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pfmat</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>pf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="683" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="682" bodyend="700"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceOpenRAVE_1_1mathextra_1ab6e747e0ab612067f2652d7b13b0289d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void OpenRAVE::mathextra::add</definition>
+        <argsstring>(T *pf1, T *pf2, int r)</argsstring>
+        <name>add</name>
+        <param>
+          <type>T *</type>
+          <declname>pf1</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pf2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="1010" bodyfile="/home/pra3cob/openrave/include/openrave/mathextra.h" bodystart="1009" bodyend="1017"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Extra math routines that are useful to have but don&apos;t really belong anywhere. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/mathextra.h" line="40"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/release
+END
+README.rst
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/release/README.rst
+END
+generate_installer_windows.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/release/generate_installer_windows.py
+END
+sendtosourceforge.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/release/sendtosourceforge.sh
+END

@@ -1,0 +1,28 @@
+.. _spacesampler-mt19937:
+
+MT19937 - basesamplers
+----------------------
+
+:Type: :ref:`interface-spacesampler`
+
+:Plugin: :ref:`plugin-basesamplers`
+
+:Interface Author: Takuji Nishimura and Makoto Matsumoto
+
+Mersenne twister sampling algorithm that is based on matrix linear recurrence over finite binary field F2. It has a period of 2^19937-1 and passes many tests for statistical uniform randomness.
+
+
+MT19937 Commands
+================
+
+
+.. _spacesampler-mt19937-help:
+
+
+help
+~~~~
+
+display help commands.
+
+~~~~
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/360/trunk/examples
+END
+mary.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/186/trunk/examples/mary.py
+END
+spin.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/186/trunk/examples/spin.py
+END
+test_sensors.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/186/trunk/examples/test_sensors.py
+END
+latency.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/186/trunk/examples/latency.py
+END
+cnc.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/360/trunk/examples/cnc.py
+END
+message_test.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/186/trunk/examples/message_test.py
+END
+alpharex.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/271/trunk/examples/alpharex.py
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/subversion/!svn/ver/973/trunk/tools/MotorControl
+END
+FlashNXTWithFirmware1.29.bat
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/subversion/!svn/ver/898/trunk/tools/MotorControl/FlashNXTWithFirmware1.29.bat
+END
+MotorFunctions.nxc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/subversion/!svn/ver/726/trunk/tools/MotorControl/MotorFunctions.nxc
+END
+MotorControl22.rxe
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/subversion/!svn/ver/898/trunk/tools/MotorControl/MotorControl22.rxe
+END
+CompileMotorControlHere.bat
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/subversion/!svn/ver/898/trunk/tools/MotorControl/CompileMotorControlHere.bat
+END
+ControllerCore.nxc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/subversion/!svn/ver/971/trunk/tools/MotorControl/ControllerCore.nxc
+END
+CompileAndTransferMotorControlToNXT.bat
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/subversion/!svn/ver/898/trunk/tools/MotorControl/CompileAndTransferMotorControlToNXT.bat
+END
+SpeedFromPosLookup.nxc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/subversion/!svn/ver/758/trunk/tools/MotorControl/SpeedFromPosLookup.nxc
+END
+Controller.nxc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/subversion/!svn/ver/971/trunk/tools/MotorControl/Controller.nxc
+END
+MotorControl22.nxc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/subversion/!svn/ver/971/trunk/tools/MotorControl/MotorControl22.nxc
+END
+TransferMotorControlBinaryToNXT.bat
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/subversion/!svn/ver/909/trunk/tools/MotorControl/TransferMotorControlBinaryToNXT.bat
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake
+END
+CGAL_GeneratorSpecificSettings.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/CGAL_GeneratorSpecificSettings.cmake
+END
+FindGMP.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/FindGMP.cmake
+END
+FindGMPXX.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/FindGMPXX.cmake
+END
+CheckCXXCompilerFlag.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/CheckCXXCompilerFlag.cmake
+END
+FindMPFR.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/FindMPFR.cmake
+END
+CheckCXXSourceRuns.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/CheckCXXSourceRuns.cmake
+END
+FindCoin.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/FindCoin.cmake
+END
+FindLibXml2.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/FindLibXml2.cmake
+END
+FindSoQt4.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/FindSoQt4.cmake
+END
+CGAL_FindPackageHandleStandardArgs.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/CGAL_FindPackageHandleStandardArgs.cmake
+END
+DebSourcePPA.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/DebSourcePPA.cmake
+END
+FindMPFI.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/FindMPFI.cmake
+END
+cmake_uninstall.cmake.in
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/modules-cmake/cmake_uninstall.cmake.in
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/379/trunk/nxt/sensor
+END
+common.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/186/trunk/nxt/sensor/common.py
+END
+generic.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/202/trunk/nxt/sensor/generic.py
+END
+digital.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/379/trunk/nxt/sensor/digital.py
+END
+hitechnic.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/377/trunk/nxt/sensor/hitechnic.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/205/trunk/nxt/sensor/__init__.py
+END
+analog.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/186/trunk/nxt/sensor/analog.py
+END
+mindsensors.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/203/trunk/nxt/sensor/mindsensors.py
+END

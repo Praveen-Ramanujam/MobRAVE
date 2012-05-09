@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classstd_1_1overflow__error" kind="class" prot="public">
+    <compoundname>std::overflow_error</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">runtime_error</basecompoundref>
+    <briefdescription>
+<para>STL class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1588">
+        <label>runtime_error</label>
+        <childnode refid="1589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1589">
+        <label>exception</label>
+      </node>
+      <node id="1587">
+        <label>overflow_error</label>
+        <childnode refid="1588" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1591">
+        <label>runtime_error</label>
+        <childnode refid="1592" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1592">
+        <label>exception</label>
+      </node>
+      <node id="1590">
+        <label>overflow_error</label>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="[STL]" line="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

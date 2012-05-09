@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="collisionchecker_8h" kind="file">
+    <compoundname>collisionchecker.h</compoundname>
+    <includedby refid="openrave_8h" local="no">include/openrave/openrave.h</includedby>
+    <invincdepgraph>
+      <node id="1823">
+        <label>src/cppexamples/ikfastloader.cpp</label>
+        <link refid="ikfastloader_8cpp"/>
+      </node>
+      <node id="1832">
+        <label>src/cppexamples/orshowsensors.cpp</label>
+        <link refid="orshowsensors_8cpp"/>
+      </node>
+      <node id="1815">
+        <label>src/cppexamples/orpythonbinding.cpp</label>
+        <link refid="orpythonbinding_8cpp"/>
+      </node>
+      <node id="1822">
+        <label>src/libopenrave-core/openrave-core.h</label>
+        <link refid="openrave-core_8h"/>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1818" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+      </node>
+      <node id="1820">
+        <label>src/cppexamples/oryoubotcontrol.cpp</label>
+        <link refid="oryoubotcontrol_8cpp"/>
+      </node>
+      <node id="1827">
+        <label>src/cppexamples/orikfilter.cpp</label>
+        <link refid="orikfilter_8cpp"/>
+      </node>
+      <node id="1830">
+        <label>src/cppexamples/orplanning_module.cpp</label>
+        <link refid="orplanning__module_8cpp"/>
+      </node>
+      <node id="1821">
+        <label>include/openrave/plugin.h</label>
+        <link refid="plugin_8h"/>
+        <childnode refid="1814" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+      </node>
+      <node id="1829">
+        <label>src/cppexamples/orplanning_ik.cpp</label>
+        <link refid="orplanning__ik_8cpp"/>
+      </node>
+      <node id="1833">
+        <label>src/libopenrave/libopenrave.cpp</label>
+        <link refid="libopenrave_8cpp"/>
+        <childnode refid="1833" relation="include">
+        </childnode>
+      </node>
+      <node id="1812">
+        <label>include/openrave/collisionchecker.h</label>
+        <link refid="collisionchecker.h"/>
+        <childnode refid="1813" relation="include">
+        </childnode>
+      </node>
+      <node id="1813">
+        <label>include/openrave/openrave.h</label>
+        <link refid="openrave_8h"/>
+        <childnode refid="1814" relation="include">
+        </childnode>
+        <childnode refid="1815" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+        <childnode refid="1821" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+      </node>
+      <node id="1814">
+        <label>src/cppexamples/customreader.cpp</label>
+        <link refid="customreader_8cpp"/>
+      </node>
+      <node id="1824">
+        <label>src/cppexamples/opencvsaving.cpp</label>
+        <link refid="opencvsaving_8cpp"/>
+      </node>
+      <node id="1818">
+        <label>src/cppexamples/ormulticontrol.cpp</label>
+        <link refid="ormulticontrol_8cpp"/>
+      </node>
+      <node id="1817">
+        <label>include/openrave/planningutils.h</label>
+        <link refid="planningutils_8h"/>
+        <childnode refid="1818" relation="include">
+        </childnode>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+      </node>
+      <node id="1826">
+        <label>src/cppexamples/orconveyormovement.cpp</label>
+        <link refid="orconveyormovement_8cpp"/>
+      </node>
+      <node id="1819">
+        <label>src/cppexamples/ortrajectory.cpp</label>
+        <link refid="ortrajectory_8cpp"/>
+      </node>
+      <node id="1825">
+        <label>src/cppexamples/orcollision.cpp</label>
+        <link refid="orcollision_8cpp"/>
+      </node>
+      <node id="1828">
+        <label>src/cppexamples/orloadviewer.cpp</label>
+        <link refid="orloadviewer_8cpp"/>
+      </node>
+      <node id="1816">
+        <label>src/cppexamples/plugincpp.cpp</label>
+        <link refid="plugincpp_8cpp"/>
+      </node>
+      <node id="1831">
+        <label>src/cppexamples/orplanning_planner.cpp</label>
+        <link refid="orplanning__planner_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOpenRAVE_1_1CollisionReport" prot="public">OpenRAVE::CollisionReport</innerclass>
+    <innerclass refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT" prot="public">OpenRAVE::CollisionReport::CONTACT</innerclass>
+    <innerclass refid="classOpenRAVE_1_1CollisionCheckerBase" prot="public">OpenRAVE::CollisionCheckerBase</innerclass>
+    <innerclass refid="classOpenRAVE_1_1CollisionOptionsStateSaver" prot="public">OpenRAVE::CollisionOptionsStateSaver</innerclass>
+    <innernamespace refid="namespaceOpenRAVE">OpenRAVE</innernamespace>
+    <briefdescription>
+<para>Collision checking related definitions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2006-2011<sp/>Rosen<sp/>Diankov<sp/>&lt;rosen.diankov@gmail.com&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>OpenRAVE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OpenRAVE<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="preprocessor">#ifndef<sp/>OPENRAVE_COLLISIONCHECKER_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OPENRAVE_COLLISIONCHECKER_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespaceOpenRAVE" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenRAVE<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77" kindref="member" tooltip="options for collision checker">CollisionOptions</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77aa5d8d85bd05b340ada98305788f161d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77aa5d8d85bd05b340ada98305788f161d4" kindref="member" tooltip="Compute distance measurements, this is usually slow and not all checkers support...">CO_Distance</ref><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="29" refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77add08e96e785c0ad01b5687ffc50a095d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77add08e96e785c0ad01b5687ffc50a095d" kindref="member" tooltip="not used">CO_UseTolerance</ref><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="30" refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77a9bc2191e9e7b6bfc5fa1807812c45c6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77a9bc2191e9e7b6bfc5fa1807812c45c6c" kindref="member" tooltip="Return the contact points of the collision in the CollisionReport. Note that this...">CO_Contacts</ref><sp/>=<sp/>4,<sp/></highlight></codeline>
+<codeline lineno="31" refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77a7572c8fd23c74ad1aa04e18eb36808b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77a7572c8fd23c74ad1aa04e18eb36808b6" kindref="member" tooltip="When performing collision with rays, if this is set, algorithm just returns any hit...">CO_RayAnyHit</ref><sp/>=<sp/>8,<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77a95a75683a1fcadcd3de27e6465d74552" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a6963e4ecb981351b8fb2e3f9e85acf77a95a75683a1fcadcd3de27e6465d74552" kindref="member">CO_ActiveDOFs</ref><sp/>=<sp/>16,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="namespaceOpenRAVE_1aec38ff628d76ac03cb4ac5d8f5cf3664" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1aec38ff628d76ac03cb4ac5d8f5cf3664" kindref="member" tooltip="action to perform whenever a collision is detected between objects">CollisionAction</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45" refid="namespaceOpenRAVE_1aec38ff628d76ac03cb4ac5d8f5cf3664a513d78b13cab5e6407e97b8210ae20ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1aec38ff628d76ac03cb4ac5d8f5cf3664a513d78b13cab5e6407e97b8210ae20ca" kindref="member" tooltip="let the physics/collision engine resolve the action">CA_DefaultAction</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="46" refid="namespaceOpenRAVE_1aec38ff628d76ac03cb4ac5d8f5cf3664a0ff1e9bcfdd50e768f778a18183da252" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1aec38ff628d76ac03cb4ac5d8f5cf3664a0ff1e9bcfdd50e768f778a18183da252" kindref="member" tooltip="do nothing">CA_Ignore</ref><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classOpenRAVE_1_1CollisionReport" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1CollisionReport" kindref="compound" tooltip="Holds information about a particular collision that occured.">CollisionReport</ref></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53" refid="classOpenRAVE_1_1CollisionReport_1aee4dc1859dffe934cc277b4dd0c8637e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1CollisionReport_1aee4dc1859dffe934cc277b4dd0c8637e" kindref="member">CollisionReport</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Reset();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT" kindref="compound">CONTACT</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60" refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ad6ae798d5ef83f841aaeecb34cfb3ed7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ad6ae798d5ef83f841aaeecb34cfb3ed7" kindref="member">CONTACT</ref>()<sp/>:<sp/>depth(0)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62" refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1afd855a076dcd739d188e251a24a0639e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1afd855a076dcd739d188e251a24a0639e" kindref="member">CONTACT</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref><sp/>&amp;p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref><sp/>&amp;n,<sp/><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>d)<sp/>:<sp/>pos(p),<sp/>norm(n)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>depth<sp/>=<sp/>d;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ae19a907bc741ffa358691997cd93774b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref><sp/>pos;<sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ab75019187f78449b47afc5a9d3dddfa9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref><sp/>norm;<sp/></highlight></codeline>
+<codeline lineno="68" refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1a185d9932888015f84a7400e4b05ee235" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>depth;<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classOpenRAVE_1_1CollisionReport_1a849fa981f121eb25a67e4e14392840ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>options;<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classOpenRAVE_1_1CollisionReport_1a66034fcc62ac4142477872950ef70663" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref><sp/>plink1,<sp/>plink2;<sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//KinBody::Link::GeomConstPtr<sp/>pgeom1,<sp/>pgeom2;<sp/>///&lt;<sp/>the<sp/>specified<sp/>geometries<sp/>hit<sp/>for<sp/>the<sp/>given<sp/>links</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classOpenRAVE_1_1CollisionReport_1a2d4acb52d99b57b5b524aaa557ab91eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCols;<sp/></highlight></codeline>
+<codeline lineno="77" refid="classOpenRAVE_1_1CollisionReport_1a4d32ef985c209aaaca9a4e61c9855e0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;KinBody::LinkConstPtr&gt;<sp/>vLinkColliding;<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classOpenRAVE_1_1CollisionReport_1a39ecee22e3be662c17e9c9d28215dd66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>minDistance;<sp/></highlight></codeline>
+<codeline lineno="80" refid="classOpenRAVE_1_1CollisionReport_1a04fc6ba3cfd80183ace93d10661cf32f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numWithinTol;<sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classOpenRAVE_1_1CollisionReport_1afd310727fc8474b0057786fadf2088df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;CONTACT&gt;<sp/>contacts;<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Reset(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coloptions<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/>__str__()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1CollisionReport" kindref="compound" tooltip="Holds information about a particular collision that occured.">CollisionReport</ref><sp/>COLLISIONREPORT<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classOpenRAVE_1_1CollisionCheckerBase" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1CollisionCheckerBase" kindref="compound" tooltip="[interface] Responsible for all collision checking queries of the environment. If...">CollisionCheckerBase</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96" refid="classOpenRAVE_1_1CollisionCheckerBase_1a56c838c403f80a2dc81142e82550bb00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1CollisionCheckerBase_1a56c838c403f80a2dc81142e82550bb00" kindref="member">CollisionCheckerBase</ref>(<ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref><sp/>penv)<sp/>:<sp/><ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound" tooltip="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface...">InterfaceBase</ref>(PT_CollisionChecker,<sp/>penv)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98" refid="classOpenRAVE_1_1CollisionCheckerBase_1ae61a39c48fb7fb39970286d986d9497f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1CollisionCheckerBase_1ae61a39c48fb7fb39970286d986d9497f" kindref="member">~CollisionCheckerBase</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classOpenRAVE_1_1CollisionCheckerBase_1affeafe65e7c4094f282d273dedbf069b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>InterfaceType<sp/><ref refid="classOpenRAVE_1_1CollisionCheckerBase_1affeafe65e7c4094f282d273dedbf069b" kindref="member" tooltip="return the static interface type this class points to (used for safe casting)">GetInterfaceTypeStatic</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>PT_CollisionChecker;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>SetCollisionOptions(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>collisionoptions)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetCollisionOptions()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetTolerance(<ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref><sp/>tolerance)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>InitKinBody(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Enable(<ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref><sp/>pbody,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bEnable)<sp/><ref refid="namespaceOpenRAVE_1af23fc4c2c72950a8c02f38ef71680bc6" kindref="member">RAVE_DEPRECATED</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>EnableLink(<ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref><sp/>pbody,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bEnable)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"></codeline>
+<codeline lineno="128"></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckCollision(<ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref><sp/>pbody1,<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report<sp/>=<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>())=0;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckCollision(<ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref><sp/>pbody1,<sp/><ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref><sp/>pbody2,<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report<sp/>=<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>())=0;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckCollision(<ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref><sp/>plink,<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report<sp/>=<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>())=0;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckCollision(<ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref><sp/>plink1,<sp/><ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref><sp/>plink2,<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report<sp/>=<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>())=0;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckCollision(<ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref><sp/>plink,<sp/><ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref><sp/>pbody,<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report<sp/>=<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>())=0;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckCollision(<ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref><sp/>plink,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;KinBodyConstPtr&gt;&amp;<sp/>vbodyexcluded,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;KinBody::LinkConstPtr&gt;&amp;<sp/>vlinkexcluded,<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report<sp/>=<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>())=0;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckCollision(<ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref><sp/>pbody,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;KinBodyConstPtr&gt;&amp;<sp/>vbodyexcluded,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;KinBody::LinkConstPtr&gt;&amp;<sp/>vlinkexcluded,<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report<sp/>=<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>())=0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckCollision(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound" tooltip="A ray defined by an origin and a direction.">RAY</ref>&amp;<sp/>ray,<sp/><ref refid="classOpenRAVE_1_1KinBody_1a99c416f979a09dfc6ef42fd62bd4e77e" kindref="member">KinBody::LinkConstPtr</ref><sp/>plink,<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report<sp/>=<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>())<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckCollision(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound" tooltip="A ray defined by an origin and a direction.">RAY</ref>&amp;<sp/>ray,<sp/><ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref><sp/>pbody,<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report<sp/>=<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>())<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckCollision(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1geometry_1_1ray" kindref="compound" tooltip="A ray defined by an origin and a direction.">RAY</ref>&amp;<sp/>ray,<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report<sp/>=<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>())<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>InitEnvironment()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DestroyEnvironment()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckSelfCollision(<ref refid="namespaceOpenRAVE_1a7ad9b63f36f8be408ec6e70ebe8130f7" kindref="member">KinBodyConstPtr</ref><sp/>pbody,<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref><sp/>report<sp/>=<sp/><ref refid="namespaceOpenRAVE_1ae3a01279d893036b26d4bb1b74d3ef0f" kindref="member">CollisionReportPtr</ref>())<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="classOpenRAVE_1_1CollisionCheckerBase_1a70dbb6e0a6d0ed48a1cdc8a18b7e9d6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOpenRAVE_1_1CollisionCheckerBase_1a70dbb6e0a6d0ed48a1cdc8a18b7e9d6b" kindref="member">SetCollisionData</ref>(<ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref><sp/>pbody,<sp/><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref><sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pbody-&gt;SetCollisionData(data);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="classOpenRAVE_1_1CollisionCheckerBase_1af79569a9b259e0c635bb3067ea9705a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1ae3e7611a64b7d4204203d69014f45fe8" kindref="member">CollisionCheckerBasePtr</ref><sp/><ref refid="classOpenRAVE_1_1CollisionCheckerBase_1af79569a9b259e0c635bb3067ea9705a0" kindref="member">shared_collisionchecker</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1CollisionCheckerBase" kindref="compound" tooltip="[interface] Responsible for all collision checking queries of the environment. If...">CollisionCheckerBase</ref>&gt;(shared_from_this());</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192" refid="classOpenRAVE_1_1CollisionCheckerBase_1a6744c8192f44ad702df77f90feb1d9b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespaceOpenRAVE_1a3926e37e3bbc1c29da84fe6cea27d1fc" kindref="member">CollisionCheckerBaseConstPtr</ref><sp/><ref refid="classOpenRAVE_1_1CollisionCheckerBase_1a6744c8192f44ad702df77f90feb1d9b9" kindref="member">shared_collisionchecker_const</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::static_pointer_cast&lt;<ref refid="classOpenRAVE_1_1CollisionCheckerBase" kindref="compound" tooltip="[interface] Responsible for all collision checking queries of the environment. If...">CollisionCheckerBase</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&gt;(shared_from_this());</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>GetHash()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="interfacehashes_8h_1aeb6852b3e1998e4f7561ed1e6b90d973" kindref="member">OPENRAVE_COLLISIONCHECKER_HASH</ref>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>RAVE_PRIVATE</highlight></codeline>
+<codeline lineno="202"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight></codeline>
+<codeline lineno="203"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Environment;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>class<sp/>::Environment;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="208" refid="classOpenRAVE_1_1CollisionCheckerBase_1a05156daee84eb0b5dd4b0802dae57fa6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOpenRAVE_1_1KinBody" kindref="compound" tooltip="[interface] A kinematic body of links and joints. If not specified, method is not...">KinBody</ref>;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="classOpenRAVE_1_1CollisionOptionsStateSaver" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1a5570a9c8b03ef026009d5233c146aa0c" kindref="member">OPENRAVE_API</ref><sp/><ref refid="classOpenRAVE_1_1CollisionOptionsStateSaver" kindref="compound" tooltip="Helper class to save and restore the collision options. If options are not supported...">CollisionOptionsStateSaver</ref></highlight></codeline>
+<codeline lineno="213"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOpenRAVE_1_1CollisionOptionsStateSaver" kindref="compound" tooltip="Helper class to save and restore the collision options. If options are not supported...">CollisionOptionsStateSaver</ref>(<ref refid="namespaceOpenRAVE_1ae3e7611a64b7d4204203d69014f45fe8" kindref="member">CollisionCheckerBasePtr</ref><sp/>p,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newoptions,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>required=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classOpenRAVE_1_1CollisionOptionsStateSaver" kindref="compound" tooltip="Helper class to save and restore the collision options. If options are not supported...">CollisionOptionsStateSaver</ref>();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_oldoptions;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceOpenRAVE_1ae3e7611a64b7d4204203d69014f45fe8" kindref="member">CollisionCheckerBasePtr</ref><sp/>_p;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>OpenRAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h"/>
+  </compounddef>
+</doxygen>

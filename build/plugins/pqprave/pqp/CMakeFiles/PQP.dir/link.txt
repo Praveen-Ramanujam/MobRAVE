@@ -1,0 +1,2 @@
+/usr/bin/ar cr libPQP.a  CMakeFiles/PQP.dir/Build.cpp.o CMakeFiles/PQP.dir/BV.cpp.o CMakeFiles/PQP.dir/TriDist.cpp.o CMakeFiles/PQP.dir/PQP.cpp.o
+/usr/bin/ranlib libPQP.a

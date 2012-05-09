@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: src/cppexamples/ikfastloader.cpp 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>src/cppexamples/ikfastloader.cpp</h1><h3 class="version">(r2848/r2565)</h3><code>#include &lt;<a class="el" href="openrave-core_8h_source.html">openrave-core.h</a>&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;cstring&gt;</code><br/>
+<code>#include &lt;sstream&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;boost/iostreams/device/file_descriptor.hpp&gt;</code><br/>
+<code>#include &lt;boost/iostreams/stream.hpp&gt;</code><br/>
+<code>#include &lt;boost/format.hpp&gt;</code><br/>
+<div class="dynheader">
+ikfastloader.cppのインクルード依存関係図</div>
+<div class="dynsection">
+<div class="center"><img src="ikfastloader_8cpp__incl.png" border="0" usemap="#src_2cppexamples_2ikfastloader_8cpp_map" alt=""/></div>
+<map name="src_2cppexamples_2ikfastloader_8cpp_map" id="src_2cppexamples_2ikfastloader_8cpp">
+<area shape="rect" href="openrave-core_8h.html" title="openrave&#45;core.h" alt="" coords="4808,83,4923,112"/><area shape="rect" href="openrave_8h.html" title="Defines the public headers that every plugin must include in order to use openrave..." alt="" coords="3548,160,3689,189"/><area shape="rect" href="config_8h.html" title="Defines OpenRAVE installation&#45;specific information." alt="" coords="2341,237,2464,267"/><area shape="rect" href="interfacehashes_8h.html" title="openrave/interfacehashes.h" alt="" coords="2488,237,2669,267"/><area shape="rect" href="geometry_8h.html" title="Basic gemoetric primitives and affine math functions on them." alt="" coords="5456,237,5600,267"/><area shape="rect" href="mathextra_8h.html" title="Extra math routines that are useful to have but don&#39;t really belong anywhere..." alt="" coords="2693,237,2840,267"/><area shape="rect" href="plugininfo_8h.html" title="Holds the plugin information structure." alt="" coords="2864,237,3008,267"/><area shape="rect" href="interface_8h.html" title="Base interface definition that all exported interfaces derive from." alt="" coords="3032,237,3171,267"/><area shape="rect" href="spacesampler_8h.html" title="Sampling definitions." alt="" coords="3195,237,3365,267"/><area shape="rect" href="kinbody_8h.html" title="Kinematics body related definitions." alt="" coords="3389,237,3523,267"/><area shape="rect" href="trajectory_8h.html" title="Definition of OpenRAVE::TrajectoryBase." alt="" coords="3547,237,3691,267"/><area shape="rect" href="module_8h.html" title="Modules containing useful routines and algorithms." alt="" coords="3715,237,3845,267"/><area shape="rect" href="collisionchecker_8h.html" title="Collision checking related definitions." alt="" coords="3869,237,4051,267"/><area shape="rect" href="sensor_8h.html" title="Sensor and sensing related defintions." alt="" coords="4075,237,4203,267"/><area shape="rect" href="robot_8h.html" title="Base robot and manipulator description." alt="" coords="4227,237,4344,267"/><area shape="rect" href="iksolver_8h.html" title="Inverse kinematics related definitions." alt="" coords="4368,237,4501,267"/><area shape="rect" href="planner_8h.html" title="Planning related defintions." alt="" coords="4525,237,4656,267"/><area shape="rect" href="controller_8h.html" title="Controller related definitions." alt="" coords="4680,237,4821,267"/><area shape="rect" href="physicsengine_8h.html" title="Physics engine related definitions." alt="" coords="4845,237,5016,267"/><area shape="rect" href="sensorsystem_8h.html" title="Sensor systems used to define how environment information is organized and how bodies..." alt="" coords="5040,237,5211,267"/></map>
+</div>
+
+<p><a href="ikfastloader_8cpp_source.html">ソースコードを見る。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>関数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikfastloader_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+</table>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a3c04138a5bfe5d72780bb7e82a18e627"></a><!-- doxytag: member="ikfastloader.cpp::main" ref="a3c04138a5bfe5d72780bb7e82a18e627" args="(int argc, char **argv)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&nbsp;</td>
+          <td class="paramname"> <em>argv</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>例: </b></dt><dd><a class="el" href="ikfastloader_8cpp-example.html#a0">ikfastloader.cpp</a>, <a class="el" href="opencvsaving_8cpp-example.html#a14">opencvsaving.cpp</a>, <a class="el" href="orcollision_8cpp-example.html#a6">orcollision.cpp</a>, <a class="el" href="orconveyormovement_8cpp-example.html#a24">orconveyormovement.cpp</a>, <a class="el" href="orikfilter_8cpp-example.html#a7">orikfilter.cpp</a>, <a class="el" href="orloadviewer_8cpp-example.html#a4">orloadviewer.cpp</a>, <a class="el" href="ormulticontrol_8cpp-example.html#a4">ormulticontrol.cpp</a>, <a class="el" href="orplanning__ik_8cpp-example.html#a4">orplanning_ik.cpp</a>, <a class="el" href="orplanning__module_8cpp-example.html#a4">orplanning_module.cpp</a>, <a class="el" href="orplanning__planner_8cpp-example.html#a4">orplanning_planner.cpp</a>, <a class="el" href="orshowsensors_8cpp-example.html#a4">orshowsensors.cpp</a>, と <a class="el" href="ortrajectory_8cpp-example.html#a8">ortrajectory.cpp</a>.</dd>
+</dl>
+<p> <a class="el" href="ikfastloader_8cpp_source.html">ikfastloader.cpp</a> の <a class="el" href="ikfastloader_8cpp_source.html#l00031">31</a> 行で定義されています。</p>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:42:59 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="dir_fd3cf8d5caa1f91bd0a200b6f3599a79" kind="dir">
+    <compoundname>include/openrave/</compoundname>
+    <innerfile refid="collisionchecker_8h">collisionchecker.h</innerfile>
+    <innerfile refid="controller_8h">controller.h</innerfile>
+    <innerfile refid="environment_8h">environment.h</innerfile>
+    <innerfile refid="geometry_8h">geometry.h</innerfile>
+    <innerfile refid="iksolver_8h">iksolver.h</innerfile>
+    <innerfile refid="interface_8h">interface.h</innerfile>
+    <innerfile refid="kinbody_8h">kinbody.h</innerfile>
+    <innerfile refid="mathextra_8h">mathextra.h</innerfile>
+    <innerfile refid="module_8h">module.h</innerfile>
+    <innerfile refid="openrave_8h">openrave.h</innerfile>
+    <innerfile refid="physicsengine_8h">physicsengine.h</innerfile>
+    <innerfile refid="planner_8h">planner.h</innerfile>
+    <innerfile refid="planningutils_8h">planningutils.h</innerfile>
+    <innerfile refid="plugin_8h">plugin.h</innerfile>
+    <innerfile refid="plugininfo_8h">plugininfo.h</innerfile>
+    <innerfile refid="robot_8h">robot.h</innerfile>
+    <innerfile refid="sensor_8h">sensor.h</innerfile>
+    <innerfile refid="sensorsystem_8h">sensorsystem.h</innerfile>
+    <innerfile refid="spacesampler_8h">spacesampler.h</innerfile>
+    <innerfile refid="trajectory_8h">trajectory.h</innerfile>
+    <innerfile refid="viewer_8h">viewer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/"/>
+  </compounddef>
+</doxygen>

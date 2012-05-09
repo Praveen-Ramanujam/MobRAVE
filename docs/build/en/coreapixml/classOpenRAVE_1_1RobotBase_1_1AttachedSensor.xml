@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor" kind="class" prot="public">
+    <compoundname>OpenRAVE::RobotBase::AttachedSensor</compoundname>
+    <includes refid="robot_8h" local="no">robot.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a91adb4292cb705acffbbb8db89c32731" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1afca3cd803319e1caa2cfb0f763a601b8" kindref="member">RobotBaseWeakPtr</ref></type>
+        <definition>RobotBaseWeakPtr _probot</definition>
+        <argsstring></argsstring>
+        <name>_probot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="299" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a4a0f352df0079cf9bde960e5756472f1" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1adb9a2496735bc0d80ced5a5d7dfb653b" kindref="member">SensorBasePtr</ref></type>
+        <definition>SensorBasePtr psensor</definition>
+        <argsstring></argsstring>
+        <name>psensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="300" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1ad0e1355b6494acf91fb0796070e4b09c" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a05ac08f3af6bf716a6f2991385c92467" kindref="member">LinkWeakPtr</ref></type>
+        <definition>LinkWeakPtr pattachedlink</definition>
+        <argsstring></argsstring>
+        <name>pattachedlink</name>
+        <briefdescription>
+<para>the robot link that the sensor is attached to </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="301" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a15876fe5eb763740e0f9f898a3ab0170" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform trelative</definition>
+        <argsstring></argsstring>
+        <name>trelative</name>
+        <briefdescription>
+<para>relative transform of the sensor with respect to the attached link </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="302" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1ab0573bb40f279d92be9b727d28a3e6f4" prot="private" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1adfb77411b1a558ad93cf53a7da1ca06f" kindref="member">SensorBase::SensorDataPtr</ref></type>
+        <definition>SensorBase::SensorDataPtr pdata</definition>
+        <argsstring></argsstring>
+        <name>pdata</name>
+        <briefdescription>
+<para>pointer to a preallocated data using psensor-&gt;CreateSensorData() </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="303" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1aaf2ed934b37cbbd236fdd1b01a5f5005" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+<para>name of the attached sensor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="304" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a5d8b8633413f4b63bd95df0ea5c9bded" prot="private" static="no" mutable="yes">
+        <type>std::string</type>
+        <definition>std::string __hashstructure</definition>
+        <argsstring></argsstring>
+        <name>__hashstructure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="305" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a1a96c3d16a7b03f3cca0bd53348be088" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class RobotBase</definition>
+        <argsstring></argsstring>
+        <name>RobotBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="317" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1aa6a3caed630f41c070d11ffc32358391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AttachedSensor</definition>
+        <argsstring>(RobotBasePtr probot)</argsstring>
+        <name>AttachedSensor</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>probot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1adfafbed56314aaf1a78749c240a74834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AttachedSensor</definition>
+        <argsstring>(RobotBasePtr probot, const AttachedSensor &amp;sensor, int cloningoptions)</argsstring>
+        <name>AttachedSensor</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+          <declname>probot</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor" kindref="compound">AttachedSensor</ref> &amp;</type>
+          <declname>sensor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cloningoptions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1afc342770e3695e484d739bc34e7e6301" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~AttachedSensor</definition>
+        <argsstring>()</argsstring>
+        <name>~AttachedSensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a30a049a62774bc5c63a1a1381309d1d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1adb9a2496735bc0d80ced5a5d7dfb653b" kindref="member">SensorBasePtr</ref></type>
+        <definition>virtual SensorBasePtr GetSensor</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="270" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="270" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a67e2a5cc1653ac6dd06c8e46707e1314" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1a8dea7b02ac1900156e6776d795c476c3" kindref="member">LinkPtr</ref></type>
+        <definition>virtual LinkPtr GetAttachingLink</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAttachingLink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="273" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="273" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a38bdcc74995404480244b28055cdf8bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>virtual Transform GetRelativeTransform</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRelativeTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="276" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="276" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a2206c7317f62f083c3f57868ba82bfee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>virtual Transform GetTransform</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="279" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="279" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a8d4e8b42f55281a47dd90d525f19e9c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a5a9955dc6058f09c4462952478dfcf58" kindref="member">RobotBasePtr</ref></type>
+        <definition>virtual RobotBasePtr GetRobot</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRobot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="282" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="282" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a3cc720dbc55fa8e07a0f85343d3bb136" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; GetName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="285" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="285" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a418e6eeff093f69fbdd7a025d588ee5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1adfb77411b1a558ad93cf53a7da1ca06f" kindref="member">SensorBase::SensorDataPtr</ref></type>
+        <definition>virtual SensorBase::SensorDataPtr GetData</definition>
+        <argsstring>() const </argsstring>
+        <name>GetData</name>
+        <briefdescription>
+<para>retrieves the current data from the sensor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1aa7d7d0eecb04d9f1255f6d8ea6700e3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetRelativeTransform</definition>
+        <argsstring>(const Transform &amp;t)</argsstring>
+        <name>SetRelativeTransform</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1ac3d3423a3fae6eb66bc8e0ff6fc23e3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void serialize</definition>
+        <argsstring>(std::ostream &amp;o, int options) const </argsstring>
+        <name>serialize</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1ae230a8d361998e79a15128bfe18ec86a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; GetStructureHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetStructureHash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>hash of the sensor definition </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="297"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Attaches a sensor to a link on the robot. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="732">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="733">
+        <label>string</label>
+        <childnode refid="734" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="734">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="731">
+        <label>AttachedSensor</label>
+        <link refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor"/>
+        <childnode refid="732" relation="usage">
+          <edgelabel>trelative</edgelabel>
+        </childnode>
+        <childnode refid="733" relation="usage">
+          <edgelabel>_name</edgelabel>
+          <edgelabel>__hashstructure</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/robot.h" line="264" bodyfile="/home/pra3cob/openrave/include/openrave/robot.h" bodystart="263" bodyend="318"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a5d8b8633413f4b63bd95df0ea5c9bded" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>__hashstructure</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1aaf2ed934b37cbbd236fdd1b01a5f5005" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>_name</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a91adb4292cb705acffbbb8db89c32731" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>_probot</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1aa6a3caed630f41c070d11ffc32358391" prot="public" virt="non-virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>AttachedSensor</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1adfafbed56314aaf1a78749c240a74834" prot="public" virt="non-virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>AttachedSensor</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a67e2a5cc1653ac6dd06c8e46707e1314" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>GetAttachingLink</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a418e6eeff093f69fbdd7a025d588ee5c" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>GetData</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a3cc720dbc55fa8e07a0f85343d3bb136" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>GetName</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a38bdcc74995404480244b28055cdf8bf" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>GetRelativeTransform</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a8d4e8b42f55281a47dd90d525f19e9c4" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>GetRobot</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a30a049a62774bc5c63a1a1381309d1d7" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>GetSensor</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1ae230a8d361998e79a15128bfe18ec86a" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>GetStructureHash</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a2206c7317f62f083c3f57868ba82bfee" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>GetTransform</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1ad0e1355b6494acf91fb0796070e4b09c" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>pattachedlink</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1ab0573bb40f279d92be9b727d28a3e6f4" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>pdata</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a4a0f352df0079cf9bde960e5756472f1" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>psensor</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1ac3d3423a3fae6eb66bc8e0ff6fc23e3e" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1aa7d7d0eecb04d9f1255f6d8ea6700e3c" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>SetRelativeTransform</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1a15876fe5eb763740e0f9f898a3ab0170" prot="private" virt="non-virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>trelative</name></member>
+      <member refid="classOpenRAVE_1_1RobotBase_1_1AttachedSensor_1afc342770e3695e484d739bc34e7e6301" prot="public" virt="virtual"><scope>OpenRAVE::RobotBase::AttachedSensor</scope><name>~AttachedSensor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

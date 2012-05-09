@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp
+END
+Build.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/Build.cpp
+END
+PQP.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/PQP.cpp
+END
+PQP_Internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/PQP_Internal.h
+END
+Tri.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/Tri.h
+END
+GetTime.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/GetTime.h
+END
+Build.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/Build.h
+END
+PQP.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/PQP.h
+END
+BV.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/BV.cpp
+END
+OBB_Disjoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/OBB_Disjoint.h
+END
+BV.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/BV.h
+END
+PQP_Compile.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/PQP_Compile.h
+END
+BVTQ.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/BVTQ.h
+END
+TriDist.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/TriDist.cpp
+END
+MatVec.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/MatVec.h
+END
+RectDist.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/RectDist.h
+END
+TriDist.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/TriDist.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/pqprave/pqp/CMakeLists.txt
+END

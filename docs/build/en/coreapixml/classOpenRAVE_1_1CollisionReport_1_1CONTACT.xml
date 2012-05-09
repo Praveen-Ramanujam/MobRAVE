@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1CollisionReport_1_1CONTACT" kind="class" prot="public">
+    <compoundname>OpenRAVE::CollisionReport::CONTACT</compoundname>
+    <includes refid="collisionchecker_8h" local="no">collisionchecker.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ae19a907bc741ffa358691997cd93774b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+<para>where the contact occured </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="66" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ab75019187f78449b47afc5a9d3dddfa9" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector norm</definition>
+        <argsstring></argsstring>
+        <name>norm</name>
+        <briefdescription>
+<para>the normals of the faces </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="67" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1a185d9932888015f84a7400e4b05ee235" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <briefdescription>
+<para>the penetration depth, positive means the surfaces are penetrating, negative means the surfaces are not colliding (used for distance queries) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="68" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ad6ae798d5ef83f841aaeecb34cfb3ed7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CONTACT</definition>
+        <argsstring>()</argsstring>
+        <name>CONTACT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="60" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="60" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1afd855a076dcd739d188e251a24a0639e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CONTACT</definition>
+        <argsstring>(const Vector &amp;p, const Vector &amp;n, dReal d)</argsstring>
+        <name>CONTACT</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="62" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="62" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1061">
+        <label>CONTACT</label>
+        <link refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT"/>
+        <childnode refid="1062" relation="usage">
+          <edgelabel>norm</edgelabel>
+          <edgelabel>pos</edgelabel>
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/collisionchecker.h" line="58" bodyfile="/home/pra3cob/openrave/include/openrave/collisionchecker.h" bodystart="57" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ad6ae798d5ef83f841aaeecb34cfb3ed7" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport::CONTACT</scope><name>CONTACT</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1afd855a076dcd739d188e251a24a0639e" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport::CONTACT</scope><name>CONTACT</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1a185d9932888015f84a7400e4b05ee235" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport::CONTACT</scope><name>depth</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ab75019187f78449b47afc5a9d3dddfa9" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport::CONTACT</scope><name>norm</name></member>
+      <member refid="classOpenRAVE_1_1CollisionReport_1_1CONTACT_1ae19a907bc741ffa358691997cd93774b" prot="public" virt="non-virtual"><scope>OpenRAVE::CollisionReport::CONTACT</scope><name>pos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

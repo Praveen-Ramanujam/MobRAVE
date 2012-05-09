@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/cmake
+END
+FindReadline.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/cmake/FindReadline.cmake
+END
+FindPackageHandleStandardArgs.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/cmake/FindPackageHandleStandardArgs.cmake
+END
+COPYING-CMAKE-SCRIPTS
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/pcre-8.02/cmake/COPYING-CMAKE-SCRIPTS
+END

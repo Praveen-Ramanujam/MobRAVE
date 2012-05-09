@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC" kind="struct" prot="protected">
+    <compoundname>OpenRAVE::KinBody::Joint::MIMIC</compoundname>
+    <includes refid="kinbody_8h" local="no">kinbody.h</includes>
+    <innerclass refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat" prot="public">OpenRAVE::KinBody::Joint::MIMIC::DOFFormat</innerclass>
+    <innerclass refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy" prot="public">OpenRAVE::KinBody::Joint::MIMIC::DOFHierarchy</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1a8200045292ac48810750b8fe7ff145fb" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat" kindref="compound">DOFFormat</ref> &gt;</type>
+        <definition>std::vector&lt; DOFFormat &gt; _vdofformat</definition>
+        <argsstring></argsstring>
+        <name>_vdofformat</name>
+        <briefdescription>
+<para>the format of the values the equation takes order is important. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="683" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1a88385fe7c2cecd8d6e625252f60a8f1f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy" kindref="compound">DOFHierarchy</ref> &gt;</type>
+        <definition>std::vector&lt;DOFHierarchy&gt; _vmimicdofs</definition>
+        <argsstring></argsstring>
+        <name>_vmimicdofs</name>
+        <briefdescription>
+<para>all dof indices that the equations depends on. <ref refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy_1a1c91a1ef39b5ab20fcc5ce582e9993dd" kindref="member">DOFHierarchy::dofindex</ref> can repeat </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="692" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1afcaa4153d4f42df6c1843e9d6b599b3b" prot="public" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; FunctionParserBase&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt;</type>
+        <definition>boost::shared_ptr&lt;FunctionParserBase&lt;dReal&gt; &gt; _posfn</definition>
+        <argsstring></argsstring>
+        <name>_posfn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="693" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1ae96032cc03e65fc96c8b8598c8648d9b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; boost::shared_ptr&lt; FunctionParserBase&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;boost::shared_ptr&lt;FunctionParserBase&lt;dReal&gt; &gt; &gt; _velfns</definition>
+        <argsstring></argsstring>
+        <name>_velfns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="694" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1afa8152d59e3406ade563decf34300195" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; boost::shared_ptr&lt; FunctionParserBase&lt; <ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref> &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;boost::shared_ptr&lt;FunctionParserBase&lt;dReal&gt; &gt; &gt; _accelfns</definition>
+        <argsstring></argsstring>
+        <name>_accelfns</name>
+        <briefdescription>
+<para>the velocity and acceleration partial derivatives with respect to each of the values in _vdofformat </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="694" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1aefb73aaff0cfa2065a5153ff0705796c" prot="public" static="no" mutable="no">
+        <type>boost::array&lt; std::string, 3 &gt;</type>
+        <definition>boost::array&lt; std::string, 3&gt; _equations</definition>
+        <argsstring></argsstring>
+        <name>_equations</name>
+        <briefdescription>
+<para>the original equations </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="695" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Holds mimic information about position, velocity, and acceleration of one axis of the joint. </para>    </briefdescription>
+    <detaileddescription>
+<para>In every array, [0] is position, [1] is velocity, [2] is acceleration. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1483">
+        <label>DOFHierarchy</label>
+        <link refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFHierarchy"/>
+      </node>
+      <node id="1478">
+        <label>MIMIC</label>
+        <link refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC"/>
+        <childnode refid="1479" relation="usage">
+          <edgelabel>_velfns</edgelabel>
+          <edgelabel>_accelfns</edgelabel>
+        </childnode>
+        <childnode refid="1480" relation="usage">
+          <edgelabel>_vdofformat</edgelabel>
+        </childnode>
+        <childnode refid="1482" relation="usage">
+          <edgelabel>_vmimicdofs</edgelabel>
+        </childnode>
+      </node>
+      <node id="1479">
+        <label>vector&lt; boost::shared_ptr&lt; FunctionParserBase&lt; dReal &gt; &gt; &gt;</label>
+      </node>
+      <node id="1481">
+        <label>DOFFormat</label>
+        <link refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1_1DOFFormat"/>
+      </node>
+      <node id="1480">
+        <label>vector&lt; DOFFormat &gt;</label>
+        <childnode refid="1481" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1482">
+        <label>vector&lt; DOFHierarchy &gt;</label>
+        <childnode refid="1483" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="672" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="671" bodyend="696"/>
+    <listofallmembers>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1afa8152d59e3406ade563decf34300195" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC</scope><name>_accelfns</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1aefb73aaff0cfa2065a5153ff0705796c" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC</scope><name>_equations</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1afcaa4153d4f42df6c1843e9d6b599b3b" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC</scope><name>_posfn</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1a8200045292ac48810750b8fe7ff145fb" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC</scope><name>_vdofformat</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1ae96032cc03e65fc96c8b8598c8648d9b" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC</scope><name>_velfns</name></member>
+      <member refid="structOpenRAVE_1_1KinBody_1_1Joint_1_1MIMIC_1a88385fe7c2cecd8d6e625252f60a8f1f" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Joint::MIMIC</scope><name>_vmimicdofs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

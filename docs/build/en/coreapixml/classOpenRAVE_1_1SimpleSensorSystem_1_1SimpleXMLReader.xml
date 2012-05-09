@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader" kind="class" prot="public">
+    <compoundname>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1BaseXMLReader" prot="public" virt="non-virtual">BaseXMLReader</basecompoundref>
+    <includes refid="sensorsystem_8h" local="no">sensorsystem.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a74c7f90728193060cc7c5e51d386fd59" prot="protected" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData" kindref="compound">XMLData</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt;XMLData&gt; _pdata</definition>
+        <argsstring></argsstring>
+        <name>_pdata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="165" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a8fc3524f4e679a41dcc8d0f302d637ed" prot="protected" static="no" mutable="no">
+        <type>std::stringstream</type>
+        <definition>std::stringstream ss</definition>
+        <argsstring></argsstring>
+        <name>ss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="166" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a2a0a559ec063a0fd04ca055235aad0ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SimpleXMLReader</definition>
+        <argsstring>(boost::shared_ptr&lt; XMLData &gt;)</argsstring>
+        <name>SimpleXMLReader</name>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1SimpleSensorSystem_1_1XMLData" kindref="compound">XMLData</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a96a8303765bddf9742cbc422f8a9c2d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespaceOpenRAVE_1a4518fd20d196b853bb157999524b6fde" kindref="member">XMLReadablePtr</ref></type>
+        <definition>virtual XMLReadablePtr GetReadable</definition>
+        <argsstring>()</argsstring>
+        <name>GetReadable</name>
+        <reimplements refid="classOpenRAVE_1_1BaseXMLReader_1a96a8303765bddf9742cbc422f8a9c2d6">GetReadable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a readable interface that stores the information processsed for the current tag This pointer is used to the <ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound">InterfaceBase</ref> class registered readers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="157" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="157" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1aeef176e516fa467c3a1ea9c210f96d48" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9" kindref="member">ProcessElement</ref></type>
+        <definition>virtual ProcessElement startElement</definition>
+        <argsstring>(const std::string &amp;name, const AttributesList &amp;atts)</argsstring>
+        <name>startElement</name>
+        <reimplements refid="classOpenRAVE_1_1BaseXMLReader_1a96b3e3b4503108964001ad58ab724ac3">startElement</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1a7372895c7fd9541aa829987c3eb9aaf9" kindref="member">AttributesList</ref> &amp;</type>
+          <declname>atts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets called in the beginning of each &quot;&lt;type&gt;&quot; expression. In this case, name is &quot;type&quot; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the tag, will be always lower case </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>atts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string of attributes where the first std::string is the attribute name and second is the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if tag is accepted and this class will process it, otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1afc6f1ff707e6fd690100c89e3cd4c291" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool endElement</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>endElement</name>
+        <reimplements refid="classOpenRAVE_1_1BaseXMLReader_1a3b5c1a1dc1e0965a9e27f139b18db4d9">endElement</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets called at the end of each &quot;&lt;/type&gt;&quot; expression. In this case, name is &quot;type&quot; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the tag, will be always lower case </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if XMLReader has finished parsing (one condition is that name==_fieldname) , otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a91544148bc143140fe0474224180233d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void characters</definition>
+        <argsstring>(const std::string &amp;ch)</argsstring>
+        <name>characters</name>
+        <reimplements refid="classOpenRAVE_1_1BaseXMLReader_1a0b124434353fd2e48d951c2053e63408">characters</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gets called for all data in between tags. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string to the data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="162"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1861">
+        <label>BaseXMLReader</label>
+        <link refid="classOpenRAVE_1_1BaseXMLReader"/>
+      </node>
+      <node id="1860">
+        <label>SimpleXMLReader</label>
+        <link refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader"/>
+        <childnode refid="1861" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1866">
+        <label>stringstream</label>
+        <childnode refid="1867" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1869">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="1870" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1864">
+        <label>string</label>
+        <childnode refid="1865" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1868">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="1869" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1872" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1865">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1871">
+        <label>ios_base</label>
+      </node>
+      <node id="1872">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="1870" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1870">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="1871" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1863">
+        <label>BaseXMLReader</label>
+        <link refid="classOpenRAVE_1_1BaseXMLReader"/>
+        <childnode refid="1864" relation="usage">
+          <edgelabel>_filename</edgelabel>
+        </childnode>
+      </node>
+      <node id="1867">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="1868" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1862">
+        <label>SimpleXMLReader</label>
+        <link refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader"/>
+        <childnode refid="1863" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1866" relation="usage">
+          <edgelabel>ss</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensorsystem.h" line="154" bodyfile="/home/pra3cob/openrave/include/openrave/sensorsystem.h" bodystart="153" bodyend="167"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a895aefe990ffe9af66bb5cd4e37d3579" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>_filename</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a74c7f90728193060cc7c5e51d386fd59" prot="protected" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>_pdata</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5143187ada5e3a593490b42b2851bbbe" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>BaseXMLReader</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a91544148bc143140fe0474224180233d" prot="public" virt="virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>characters</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1afc6f1ff707e6fd690100c89e3cd4c291" prot="public" virt="virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>endElement</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a96a8303765bddf9742cbc422f8a9c2d6" prot="public" virt="virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>GetReadable</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9a14953fbbe151fd55cd76395cdccc4af6" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>PE_Ignore</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9a55670b1a206d4da09ef69e3690ee7bba" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>PE_Pass</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9a5123a3d32d744694919844d9675ede67" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>PE_Support</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>ProcessElement</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a2a0a559ec063a0fd04ca055235aad0ff" prot="public" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>SimpleXMLReader</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1a8fc3524f4e679a41dcc8d0f302d637ed" prot="protected" virt="non-virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>ss</name></member>
+      <member refid="classOpenRAVE_1_1SimpleSensorSystem_1_1SimpleXMLReader_1aeef176e516fa467c3a1ea9c210f96d48" prot="public" virt="virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>startElement</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a034ab256eb83ff95644a30e038957979" prot="public" virt="virtual"><scope>OpenRAVE::SimpleSensorSystem::SimpleXMLReader</scope><name>~BaseXMLReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

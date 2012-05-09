@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib
+END
+scs2mpfr.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/scs2mpfr.c
+END
+addition_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/addition_scs.c
+END
+print_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/print_scs.c
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/AUTHORS
+END
+scs2double.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/scs2double.c
+END
+multiplication_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/multiplication_scs.c
+END
+double2scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/double2scs.c
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/ChangeLog
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/README
+END
+scs_private.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/scs_private.c
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/TODO
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/INSTALL
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/COPYING
+END
+scs_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/scs_private.h
+END
+zero_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/zero_scs.c
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/NEWS
+END
+division_scs.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/division_scs.c
+END
+scs.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/crlibm-1.0beta4/scs_lib/scs.h
+END

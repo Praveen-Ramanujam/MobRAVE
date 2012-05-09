@@ -1,0 +1,185 @@
+\hypertarget{classOpenRAVE_1_1InterfaceBase}{
+\subsection{InterfaceBase Class Reference}
+\label{classOpenRAVE_1_1InterfaceBase}\index{OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} Base class for all interfaces that \hyperlink{namespaceOpenRAVE}{OpenRAVE} provides. See \hyperlink{interface__concepts}{Base Interface Concepts}.  
+
+
+
+
+Inheritance diagram for InterfaceBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{classOpenRAVE_1_1InterfaceBase__inherit__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std::string \& \hyperlink{classOpenRAVE_1_1InterfaceBase_a23e085422cc13cf058b9f9558a7d9de6}{GetXMLId} () const 
+\item 
+const std::string \& \hyperlink{classOpenRAVE_1_1InterfaceBase_a909d5f1a5ae6d3fbb73b69c26b3e6bb4}{GetPluginName} () const 
+\item 
+EnvironmentBasePtr \hyperlink{classOpenRAVE_1_1InterfaceBase_a847c7f827694fd3db16f20b5669e1743}{GetEnv} () const 
+\item 
+\hypertarget{classOpenRAVE_1_1InterfaceBase_a1b571821be060055bf6f2474e12fa5a3}{
+virtual const std::string \& \hyperlink{classOpenRAVE_1_1InterfaceBase_a1b571821be060055bf6f2474e12fa5a3}{GetDescription} () const }
+\label{classOpenRAVE_1_1InterfaceBase_a1b571821be060055bf6f2474e12fa5a3}
+
+\begin{DoxyCompactList}\small\item\em Documentation of the interface in reStructuredText format. See \hyperlink{writing__plugins_writing_plugins_doc}{Documenting Interfaces}. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1InterfaceBase_ab3a2d5e41d756988959d9f5cdccfe284}{
+virtual void \hyperlink{classOpenRAVE_1_1InterfaceBase_ab3a2d5e41d756988959d9f5cdccfe284}{SetUserData} (UserDataPtr data)}
+\label{classOpenRAVE_1_1InterfaceBase_ab3a2d5e41d756988959d9f5cdccfe284}
+
+\begin{DoxyCompactList}\small\item\em set user data \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1InterfaceBase_aba2de87983f5e6ad881df19cc6198018}{SetUserData} (boost::shared\_\-ptr$<$ void $>$ data) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+\hypertarget{classOpenRAVE_1_1InterfaceBase_a975ebca32c743c8530807758e7c46618}{
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1InterfaceBase_a975ebca32c743c8530807758e7c46618}{GetUserData} () const }
+\label{classOpenRAVE_1_1InterfaceBase_a975ebca32c743c8530807758e7c46618}
+
+\begin{DoxyCompactList}\small\item\em return the user custom data \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1InterfaceBase_a155ad446997ca5823937f9c171c17021}{
+virtual const std::string \& \hyperlink{classOpenRAVE_1_1InterfaceBase_a155ad446997ca5823937f9c171c17021}{GetURI} () const }
+\label{classOpenRAVE_1_1InterfaceBase_a155ad446997ca5823937f9c171c17021}
+
+\begin{DoxyCompactList}\small\item\em the URI used to load the interface (sometimes this is not possible if the definition lies inside an environment file). \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1InterfaceBase_aadffdb83bc22dcdd5dd50c27d1bb5496}{Clone} (InterfaceBaseConstPtr preference, int cloningoptions)
+\begin{DoxyCompactList}\small\item\em Clone the contents of an interface to the current interface. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1InterfaceBase_a1293cda647f18fe751e66b910af52407}{SendCommand} (std::ostream \&os, std::istream \&is)
+\begin{DoxyCompactList}\small\item\em Used to send special commands to the interface and receive output. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::function$<$ bool(std::ostream \&, std::istream \&)$>$ \hyperlink{classOpenRAVE_1_1InterfaceBase_af078e9e99c82cbd71d0bfa325438514e}{InterfaceCommandFn}
+\begin{DoxyCompactList}\small\item\em The function to be executed for every command. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1InterfaceBase_a840776899a1d3677582fc6ef87be6ef2}{RegisterCommand} (const std::string \&cmdname, \hyperlink{classOpenRAVE_1_1InterfaceBase_af078e9e99c82cbd71d0bfa325438514e}{InterfaceCommandFn} fncmd, const std::string \&strhelp)
+\begin{DoxyCompactList}\small\item\em Registers a command and its help string. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1InterfaceBase_a1a70446e03a29c6c9a5650886027cd2e}{
+virtual void \hyperlink{classOpenRAVE_1_1InterfaceBase_a1a70446e03a29c6c9a5650886027cd2e}{UnregisterCommand} (const std::string \&cmdname)}
+\label{classOpenRAVE_1_1InterfaceBase_a1a70446e03a29c6c9a5650886027cd2e}
+
+\begin{DoxyCompactList}\small\item\em Unregisters the command. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} Base class for all interfaces that \hyperlink{namespaceOpenRAVE}{OpenRAVE} provides. See \hyperlink{interface__concepts}{Base Interface Concepts}. 
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classOpenRAVE_1_1InterfaceBase_af078e9e99c82cbd71d0bfa325438514e}{
+\index{OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}!InterfaceCommandFn@{InterfaceCommandFn}}
+\index{InterfaceCommandFn@{InterfaceCommandFn}!OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}}
+\paragraph[{InterfaceCommandFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<$bool (std::ostream\&, std::istream\&)$>$ {\bf InterfaceCommandFn}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1InterfaceBase_af078e9e99c82cbd71d0bfa325438514e}
+
+
+The function to be executed for every command. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sinput}]-\/ input of the command \item[{\em sout}]-\/ output of the command \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If false, there was an error with the command, true if successful 
+\end{DoxyReturn}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1InterfaceBase_aadffdb83bc22dcdd5dd50c27d1bb5496}{
+\index{OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}!Clone@{Clone}}
+\index{Clone@{Clone}!OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}}
+\paragraph[{Clone}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Clone (InterfaceBaseConstPtr {\em preference}, \/  int {\em cloningoptions})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1InterfaceBase_aadffdb83bc22dcdd5dd50c27d1bb5496}
+
+
+Clone the contents of an interface to the current interface. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em preference}]the interface whose information to clone \item[{\em cloningoptions}]mask of CloningOptions \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]if command doesn't succeed \end{DoxyExceptions}
+
+
+Reimplemented in \hyperlink{classOpenRAVE_1_1RobotBase_aadffdb83bc22dcdd5dd50c27d1bb5496}{RobotBase}.
+
+\hypertarget{classOpenRAVE_1_1InterfaceBase_a847c7f827694fd3db16f20b5669e1743}{
+\index{OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}!GetEnv@{GetEnv}}
+\index{GetEnv@{GetEnv}!OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}}
+\paragraph[{GetEnv}]{\setlength{\rightskip}{0pt plus 5cm}EnvironmentBasePtr GetEnv () const}\hfill}
+\label{classOpenRAVE_1_1InterfaceBase_a847c7f827694fd3db16f20b5669e1743}
+\begin{DoxyReturn}{Returns}
+the environment that this interface is attached to 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Examples: ]\par
+\hyperlink{orconveyormovement_8cpp-example}{orconveyormovement.cpp}, \hyperlink{orpythonbinding_8cpp-example}{orpythonbinding.cpp}, and \hyperlink{plugincpp_8cpp-example}{plugincpp.cpp}.\end{Desc}
+\hypertarget{classOpenRAVE_1_1InterfaceBase_a909d5f1a5ae6d3fbb73b69c26b3e6bb4}{
+\index{OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}!GetPluginName@{GetPluginName}}
+\index{GetPluginName@{GetPluginName}!OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}}
+\paragraph[{GetPluginName}]{\setlength{\rightskip}{0pt plus 5cm}const std::string\& GetPluginName () const}\hfill}
+\label{classOpenRAVE_1_1InterfaceBase_a909d5f1a5ae6d3fbb73b69c26b3e6bb4}
+set internally by RaveDatabase \begin{DoxyReturn}{Returns}
+the pluginname this interface was loaded from 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1InterfaceBase_a23e085422cc13cf058b9f9558a7d9de6}{
+\index{OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}!GetXMLId@{GetXMLId}}
+\index{GetXMLId@{GetXMLId}!OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}}
+\paragraph[{GetXMLId}]{\setlength{\rightskip}{0pt plus 5cm}const std::string\& GetXMLId () const}\hfill}
+\label{classOpenRAVE_1_1InterfaceBase_a23e085422cc13cf058b9f9558a7d9de6}
+set internally by RaveDatabase \begin{DoxyReturn}{Returns}
+the unique identifier that describes this class type, case is ignored should be the same id used to create the object 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1InterfaceBase_a840776899a1d3677582fc6ef87be6ef2}{
+\index{OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}!RegisterCommand@{RegisterCommand}}
+\index{RegisterCommand@{RegisterCommand}!OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}}
+\paragraph[{RegisterCommand}]{\setlength{\rightskip}{0pt plus 5cm}virtual void RegisterCommand (const std::string \& {\em cmdname}, \/  {\bf InterfaceCommandFn} {\em fncmd}, \/  const std::string \& {\em strhelp})\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1InterfaceBase_a840776899a1d3677582fc6ef87be6ef2}
+
+
+Registers a command and its help string. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cmdname}]-\/ command name, converted to lower case \item[{\em fncmd}]function to execute for the command \item[{\em strhelp}]-\/ help string in reStructuredText, see \hyperlink{writing__plugins_writing_plugins_doc}{Documenting Interfaces}. \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Throw if there exists a registered command already. \end{DoxyExceptions}
+\begin{Desc}
+\item[Examples: ]\par
+\hyperlink{orconveyormovement_8cpp-example}{orconveyormovement.cpp}, and \hyperlink{plugincpp_8cpp-example}{plugincpp.cpp}.\end{Desc}
+\hypertarget{classOpenRAVE_1_1InterfaceBase_a1293cda647f18fe751e66b910af52407}{
+\index{OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}!SendCommand@{SendCommand}}
+\index{SendCommand@{SendCommand}!OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}}
+\paragraph[{SendCommand}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SendCommand (std::ostream \& {\em os}, \/  std::istream \& {\em is})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1InterfaceBase_a1293cda647f18fe751e66b910af52407}
+
+
+Used to send special commands to the interface and receive output. 
+
+The command must be registered by \hyperlink{classOpenRAVE_1_1InterfaceBase_a840776899a1d3677582fc6ef87be6ef2}{RegisterCommand}. A special command '{\bfseries help'} is always supported and provides a way for the user to query the current commands and the help string. The format of the returned help commands are in reStructuredText. The following commands are possible:
+\begin{DoxyItemize}
+\item '{\bfseries help} \mbox{[}command name\mbox{]}' -\/ get the help string of just that command.
+\item '{\bfseries help} commands' -\/ return the names of all the possible commands
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em is}]the input stream containing the command \item[{\em os}]the output stream containing the output \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Throw if the command is not supported. \end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+true if the command is successfully processed, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1InterfaceBase_aba2de87983f5e6ad881df19cc6198018}{
+\index{OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}!SetUserData@{SetUserData}}
+\index{SetUserData@{SetUserData}!OpenRAVE::InterfaceBase@{OpenRAVE::InterfaceBase}}
+\paragraph[{SetUserData}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetUserData (boost::shared\_\-ptr$<$ void $>$ {\em data})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1InterfaceBase_aba2de87983f5e6ad881df19cc6198018}

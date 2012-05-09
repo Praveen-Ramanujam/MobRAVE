@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1ConfigurationSpecification_1_1Group" kind="class" prot="public">
+    <compoundname>OpenRAVE::ConfigurationSpecification::Group</compoundname>
+    <includes refid="openrave_8h" local="no">openrave.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1aed7ea92f45bd273dde380a45ddced592" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+<para>For each data point, the number of values to offset before data for this group starts. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="829" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="829" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a03745287ca42590ead4a18807041fc66" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dof</definition>
+        <argsstring></argsstring>
+        <name>dof</name>
+        <briefdescription>
+<para>The number of values in this group. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="831" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a9b45b3e13bd9167aab02e17e08916231" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>semantic information on what part of the environment the group refers to. </para>        </briefdescription>
+        <detaileddescription>
+<para>Can be composed of multiple workds; the first word is the group type, and the words following narrow the specifics. Common types are:</para><para><itemizedlist>
+<listitem><para><bold>joint_values</bold> - The joint values of a kinbody/robot. The joint names with the name of the body can follow.</para></listitem><listitem><para><bold>joint_velocities</bold> - The joint velocities (1/second) of a kinbody/robot. The name of the body with the joint names can follow.</para></listitem><listitem><para><bold>joint_accelerations</bold> - The joint accelerations (1/second^2) of a kinbody/robot. The name of the body with the joint names can follow.</para></listitem><listitem><para><bold>joint_torques</bold> - The joint torques (Newton meter) of a kinbody/robot. The name of the body with the joint names can follow.</para></listitem><listitem><para><bold>affine_transform</bold> - An affine transformation [quaternion, translation]. The name of the body with selected affine dofs (see <ref refid="namespaceOpenRAVE_1a3016e2185103f3c1bdc5e4482893ca98" kindref="member">DOFAffine</ref>) can follow.</para></listitem><listitem><para><bold>affine_velocities</bold> - The velocity (1/second) of the affine transformation [rotation axis, translation velocity], the name of the body can follow.</para></listitem><listitem><para><bold>affine_accelerations</bold> - The velocity (1/second^2) of the affine transformation [rotation axis, translation velocity], the name of the body can follow.</para></listitem><listitem><para><bold>ikparam_values</bold> - The values of an IkParmeterization. The ikparam type is stored as the second value in name</para></listitem><listitem><para><bold>ikparam_velocities</bold> - velociti of an IkParmeterization. The ikparam type is stored as the second value in name </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="846" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1ac5505c39cf473d93d9ef8690d181d007" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string interpolation</definition>
+        <argsstring></argsstring>
+        <name>interpolation</name>
+        <briefdescription>
+<para>Describes how the data should be interpolated. Common methods are: </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para><bold>previous</bold> - the previous waypoint&apos;s value is always chosen</para></listitem><listitem><para><bold>next</bold> - the next waypoint&apos;s value is always chosen</para></listitem><listitem><para><bold>linear</bold> - linear interpolation (default)</para></listitem><listitem><para><bold>quadratic</bold> - position is piecewise-quadratic, velocity is piecewise-linear, acceleration is one of -amax, 0, or amax</para></listitem><listitem><para><bold>cubic</bold> - 3 degree polynomial</para></listitem><listitem><para><bold>quadric</bold> - 4 degree polynomial</para></listitem><listitem><para><bold>quintic</bold> - 5 degree polynomial </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="857" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="857" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a0b29b9393b4b6856ac75b759f4166c13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Group</definition>
+        <argsstring>()</argsstring>
+        <name>Group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="818" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="818" bodyend="819"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a4d23e4946389961edffed7e4217bae52" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const Group &amp;r) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group" kindref="compound">Group</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="821" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="821" bodyend="823"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a5ac71d2d4a0e2c9b67d2a7eb3bf100b5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const Group &amp;r) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group" kindref="compound">Group</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="824" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="824" bodyend="826"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A group referencing the values of one body in the environment. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1192">
+        <label>string</label>
+        <childnode refid="1193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1191">
+        <label>Group</label>
+        <link refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group"/>
+        <childnode refid="1192" relation="usage">
+          <edgelabel>interpolation</edgelabel>
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="1193">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="816" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="815" bodyend="858"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a03745287ca42590ead4a18807041fc66" prot="public" virt="non-virtual"><scope>OpenRAVE::ConfigurationSpecification::Group</scope><name>dof</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a0b29b9393b4b6856ac75b759f4166c13" prot="public" virt="non-virtual"><scope>OpenRAVE::ConfigurationSpecification::Group</scope><name>Group</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1ac5505c39cf473d93d9ef8690d181d007" prot="public" virt="non-virtual"><scope>OpenRAVE::ConfigurationSpecification::Group</scope><name>interpolation</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a9b45b3e13bd9167aab02e17e08916231" prot="public" virt="non-virtual"><scope>OpenRAVE::ConfigurationSpecification::Group</scope><name>name</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1aed7ea92f45bd273dde380a45ddced592" prot="public" virt="non-virtual"><scope>OpenRAVE::ConfigurationSpecification::Group</scope><name>offset</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a5ac71d2d4a0e2c9b67d2a7eb3bf100b5" prot="public" virt="non-virtual"><scope>OpenRAVE::ConfigurationSpecification::Group</scope><name>operator!=</name></member>
+      <member refid="classOpenRAVE_1_1ConfigurationSpecification_1_1Group_1a4d23e4946389961edffed7e4217bae52" prot="public" virt="non-virtual"><scope>OpenRAVE::ConfigurationSpecification::Group</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

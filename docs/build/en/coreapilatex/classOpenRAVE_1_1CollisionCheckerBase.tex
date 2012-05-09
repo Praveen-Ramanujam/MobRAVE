@@ -1,0 +1,205 @@
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase}{
+\subsection{CollisionCheckerBase Class Reference}
+\label{classOpenRAVE_1_1CollisionCheckerBase}\index{OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} Responsible for all collision checking queries of the environment. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__collisionchecker}{Collision Checker Concepts}.  
+
+
+
+
+Inheritance diagram for CollisionCheckerBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classOpenRAVE_1_1CollisionCheckerBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CollisionCheckerBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classOpenRAVE_1_1CollisionCheckerBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a41d4f0db9db82ee4517d5f375fea35f4}{
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a41d4f0db9db82ee4517d5f375fea35f4}{SetCollisionOptions} (int collisionoptions)=0}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a41d4f0db9db82ee4517d5f375fea35f4}
+
+\begin{DoxyCompactList}\small\item\em Set basic collision options using the CollisionOptions enum. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a0427686b93fdaf70674eb7d753fae48c}{
+virtual int \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a0427686b93fdaf70674eb7d753fae48c}{GetCollisionOptions} () const =0}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a0427686b93fdaf70674eb7d753fae48c}
+
+\begin{DoxyCompactList}\small\item\em get the current collision options \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_af137ac3b8d17b51632c04a450d415003}{
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_af137ac3b8d17b51632c04a450d415003}{InitKinBody} (KinBodyPtr pbody)=0}
+\label{classOpenRAVE_1_1CollisionCheckerBase_af137ac3b8d17b51632c04a450d415003}
+
+\begin{DoxyCompactList}\small\item\em notified when a new body has been initialized in the environment \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a1217341e547ceb062850dc9d05f4f409}{Enable} (KinBodyConstPtr pbody, bool bEnable) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_aad5eb39360dbde52e90efd9f2a466ab4}{EnableLink} (KinBody::LinkConstPtr pbody, bool bEnable)=0
+\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1CollisionCheckerBase_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em return the static interface type this class points to (used for safe casting) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Collision specific functions.}
+\label{_amgrpef0faa32f592cc67b0a4ecf86076aa0d}
+ Each function takes an optional pointer to a \hyperlink{classOpenRAVE_1_1CollisionReport}{CollisionReport} structure and returns true if collision occurs.
+
+\label{classOpenRAVE_1_1CollisionCheckerBase_collision_checking}
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_collision_checking}{}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a032bda10dc517c50606781511da243d3}{
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a032bda10dc517c50606781511da243d3}{CheckCollision} (KinBodyConstPtr pbody1, CollisionReportPtr report=CollisionReportPtr())=0}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a032bda10dc517c50606781511da243d3}
+
+\begin{DoxyCompactList}\small\item\em checks collision of a body and a scene. Attached bodies are respected. If CO\_\-ActiveDOFs is set, will only check affected links of the body. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_ab286174aabc8a0e8b090b25963a531b3}{
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_ab286174aabc8a0e8b090b25963a531b3}{CheckCollision} (KinBodyConstPtr pbody1, KinBodyConstPtr pbody2, CollisionReportPtr report=CollisionReportPtr())=0}
+\label{classOpenRAVE_1_1CollisionCheckerBase_ab286174aabc8a0e8b090b25963a531b3}
+
+\begin{DoxyCompactList}\small\item\em checks collision between two bodies. Attached bodies are respected. If CO\_\-ActiveDOFs is set, will only check affected links of the pbody1. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_ac4d2da56daf4dbd95074bf2dd72974a9}{
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_ac4d2da56daf4dbd95074bf2dd72974a9}{CheckCollision} (KinBody::LinkConstPtr plink, CollisionReportPtr report=CollisionReportPtr())=0}
+\label{classOpenRAVE_1_1CollisionCheckerBase_ac4d2da56daf4dbd95074bf2dd72974a9}
+
+\begin{DoxyCompactList}\small\item\em checks collision of a link and a scene. Attached bodies are ignored. CO\_\-ActiveDOFs option is ignored. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_abc391362f1952f15cd5a27fdd9b8a65d}{
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_abc391362f1952f15cd5a27fdd9b8a65d}{CheckCollision} (KinBody::LinkConstPtr plink1, KinBody::LinkConstPtr plink2, CollisionReportPtr report=CollisionReportPtr())=0}
+\label{classOpenRAVE_1_1CollisionCheckerBase_abc391362f1952f15cd5a27fdd9b8a65d}
+
+\begin{DoxyCompactList}\small\item\em checks collision of two links. Attached bodies are ignored. CO\_\-ActiveDOFs option is ignored. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_ab14f3598db6c781c3f2f6ef188fdeb3f}{
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_ab14f3598db6c781c3f2f6ef188fdeb3f}{CheckCollision} (KinBody::LinkConstPtr plink, KinBodyConstPtr pbody, CollisionReportPtr report=CollisionReportPtr())=0}
+\label{classOpenRAVE_1_1CollisionCheckerBase_ab14f3598db6c781c3f2f6ef188fdeb3f}
+
+\begin{DoxyCompactList}\small\item\em checks collision of a link and a body. Attached bodies for pbody are respected. CO\_\-ActiveDOFs option is ignored. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a8c2bdc1a68281fb48214f3c141dc26a9}{
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a8c2bdc1a68281fb48214f3c141dc26a9}{CheckCollision} (KinBody::LinkConstPtr plink, const std::vector$<$ KinBodyConstPtr $>$ \&vbodyexcluded, const std::vector$<$ KinBody::LinkConstPtr $>$ \&vlinkexcluded, CollisionReportPtr report=CollisionReportPtr())=0}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a8c2bdc1a68281fb48214f3c141dc26a9}
+
+\begin{DoxyCompactList}\small\item\em checks collision of a link and a scene. Attached bodies are ignored. CO\_\-ActiveDOFs option is ignored. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a013763101e3cb1fcad594c030e5472fe}{
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a013763101e3cb1fcad594c030e5472fe}{CheckCollision} (KinBodyConstPtr pbody, const std::vector$<$ KinBodyConstPtr $>$ \&vbodyexcluded, const std::vector$<$ KinBody::LinkConstPtr $>$ \&vlinkexcluded, CollisionReportPtr report=CollisionReportPtr())=0}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a013763101e3cb1fcad594c030e5472fe}
+
+\begin{DoxyCompactList}\small\item\em checks collision of a body and a scene. Attached bodies are respected. If CO\_\-ActiveDOFs is set, will only check affected links of pbody. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a0031940d50e5853bed26dd8f37eeb9d6}{CheckCollision} (const \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{RAY} \&ray, KinBody::LinkConstPtr plink, CollisionReportPtr report=CollisionReportPtr())=0
+\begin{DoxyCompactList}\small\item\em Check collision with a link and a ray with a specified length. CO\_\-ActiveDOFs option is ignored. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a91d971fb7be4e4b653fd02ee9bd6528c}{CheckCollision} (const \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{RAY} \&ray, KinBodyConstPtr pbody, CollisionReportPtr report=CollisionReportPtr())=0
+\begin{DoxyCompactList}\small\item\em Check collision with a link and a ray with a specified length. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a4c0906fc2d591ac8940c55ad5a16969f}{CheckCollision} (const \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{RAY} \&ray, CollisionReportPtr report=CollisionReportPtr())=0
+\begin{DoxyCompactList}\small\item\em Check collision with a body and a ray with a specified length. CO\_\-ActiveDOFs option is ignored. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a253ffd76b6c58523ff7813a7e777cce0}{InitEnvironment} ()=0
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_addd261b357621ad88f262f311792efb6}{DestroyEnvironment} ()=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a5e1f41d8d334da4d500a4cc107bfb696}{CheckSelfCollision} (KinBodyConstPtr pbody, CollisionReportPtr report=CollisionReportPtr())=0
+\begin{DoxyCompactList}\small\item\em Checks self collision only with the links of the passed in body. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a70dbb6e0a6d0ed48a1cdc8a18b7e9d6b}{
+virtual void {\bfseries SetCollisionData} (KinBodyPtr pbody, UserDataPtr data)}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a70dbb6e0a6d0ed48a1cdc8a18b7e9d6b}
+
+\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_af79569a9b259e0c635bb3067ea9705a0}{
+CollisionCheckerBasePtr {\bfseries shared\_\-collisionchecker} ()}
+\label{classOpenRAVE_1_1CollisionCheckerBase_af79569a9b259e0c635bb3067ea9705a0}
+
+\item 
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a6744c8192f44ad702df77f90feb1d9b9}{
+CollisionCheckerBaseConstPtr {\bfseries shared\_\-collisionchecker\_\-const} () const }
+\label{classOpenRAVE_1_1CollisionCheckerBase_a6744c8192f44ad702df77f90feb1d9b9}
+
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} Responsible for all collision checking queries of the environment. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__collisionchecker}{Collision Checker Concepts}. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a4c0906fc2d591ac8940c55ad5a16969f}{
+\index{OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (const {\bf RAY} \& {\em ray}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a4c0906fc2d591ac8940c55ad5a16969f}
+
+
+Check collision with a body and a ray with a specified length. CO\_\-ActiveDOFs option is ignored. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ray}]holds the origin and direction. The length of the ray is the length of the direction. \item[{\em pbody}]the kinbody to look for collisions \item[\mbox{$\rightarrow$} {\em report}]\mbox{[}optional\mbox{]} collision report to be filled with data about the collision. If a body was hit, CollisionReport::plink1 contains the hit link pointer. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a91d971fb7be4e4b653fd02ee9bd6528c}{
+\index{OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (const {\bf RAY} \& {\em ray}, \/  KinBodyConstPtr {\em pbody}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a91d971fb7be4e4b653fd02ee9bd6528c}
+
+
+Check collision with a link and a ray with a specified length. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ray}]holds the origin and direction. The length of the ray is the length of the direction. \item[{\em pbody}]the link to collide with. If CO\_\-ActiveDOFs is set, will only check affected links of the body. \item[\mbox{$\rightarrow$} {\em report}]\mbox{[}optional\mbox{]} collision report to be filled with data about the collision. If a body was hit, CollisionReport::plink1 contains the hit link pointer. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a0031940d50e5853bed26dd8f37eeb9d6}{
+\index{OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (const {\bf RAY} \& {\em ray}, \/  KinBody::LinkConstPtr {\em plink}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a0031940d50e5853bed26dd8f37eeb9d6}
+
+
+Check collision with a link and a ray with a specified length. CO\_\-ActiveDOFs option is ignored. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ray}]holds the origin and direction. The length of the ray is the length of the direction. \item[{\em plink}]the link to collide with \item[\mbox{$\rightarrow$} {\em report}]\mbox{[}optional\mbox{]} collision report to be filled with data about the collision. If a body was hit, CollisionReport::plink1 contains the hit link pointer. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a5e1f41d8d334da4d500a4cc107bfb696}{
+\index{OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}!CheckSelfCollision@{CheckSelfCollision}}
+\index{CheckSelfCollision@{CheckSelfCollision}!OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}}
+\paragraph[{CheckSelfCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckSelfCollision (KinBodyConstPtr {\em pbody}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a5e1f41d8d334da4d500a4cc107bfb696}
+
+
+Checks self collision only with the links of the passed in body. 
+
+Links that are joined together are ignored. \hypertarget{classOpenRAVE_1_1CollisionCheckerBase_addd261b357621ad88f262f311792efb6}{
+\index{OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}!DestroyEnvironment@{DestroyEnvironment}}
+\index{DestroyEnvironment@{DestroyEnvironment}!OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}}
+\paragraph[{DestroyEnvironment}]{\setlength{\rightskip}{0pt plus 5cm}virtual void DestroyEnvironment ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1CollisionCheckerBase_addd261b357621ad88f262f311792efb6}
+called when environment switches to a different collision checker engine has to clear/deallocate any memory associated with \hyperlink{classOpenRAVE_1_1KinBody_a0a17ef574c66277ef313e5e56d6b9bbc}{KinBody::\_\-pCollisionData} \hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a1217341e547ceb062850dc9d05f4f409}{
+\index{OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}!Enable@{Enable}}
+\index{Enable@{Enable}!OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}}
+\paragraph[{Enable}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Enable (KinBodyConstPtr {\em pbody}, \/  bool {\em bEnable})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a1217341e547ceb062850dc9d05f4f409}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_aad5eb39360dbde52e90efd9f2a466ab4}{EnableLink} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_aad5eb39360dbde52e90efd9f2a466ab4}{
+\index{OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}!EnableLink@{EnableLink}}
+\index{EnableLink@{EnableLink}!OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}}
+\paragraph[{EnableLink}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool EnableLink (KinBody::LinkConstPtr {\em pbody}, \/  bool {\em bEnable})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1CollisionCheckerBase_aad5eb39360dbde52e90efd9f2a466ab4}
+enables or disables a link from being considered in collisions \begin{DoxyReturn}{Returns}
+true if operation succeeded 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1CollisionCheckerBase_a253ffd76b6c58523ff7813a7e777cce0}{
+\index{OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}!InitEnvironment@{InitEnvironment}}
+\index{InitEnvironment@{InitEnvironment}!OpenRAVE::CollisionCheckerBase@{OpenRAVE::CollisionCheckerBase}}
+\paragraph[{InitEnvironment}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InitEnvironment ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1CollisionCheckerBase_a253ffd76b6c58523ff7813a7e777cce0}
+called when environment sets this collision checker, checker assumes responsibility for \hyperlink{classOpenRAVE_1_1KinBody_a0a17ef574c66277ef313e5e56d6b9bbc}{KinBody::\_\-pCollisionData} checker should also gather all current bodies in the environment and put them in its collision space 

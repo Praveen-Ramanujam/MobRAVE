@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/hanoi_puzzle
+END
+hanoimove.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/hanoi_puzzle/hanoimove.m
+END
+addopenravepaths_hanoi.m
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/hanoi_puzzle/addopenravepaths_hanoi.m
+END
+hanoisolve.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/hanoi_puzzle/hanoisolve.m
+END
+MoveToHandPosition.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/hanoi_puzzle/MoveToHandPosition.m
+END
+RobotCreatePuma.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/hanoi_puzzle/RobotCreatePuma.m
+END
+hanoi.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/hanoi_puzzle/hanoi.m
+END
+putblock.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/hanoi_puzzle/putblock.m
+END
+rodrigues.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/octave_matlab/examples/hanoi_puzzle/rodrigues.m
+END

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/praveen/Work/openrave/3rdparty/ivcon/ivcon.cpp
+cstdlib
+-
+cmath
+-
+cstdio
+-
+iostream
+-
+iomanip
+-
+fstream
+-
+cstring
+-
+assert.h
+-
+vector
+-
+boost/thread/mutex.hpp
+-
+

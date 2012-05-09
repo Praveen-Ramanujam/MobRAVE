@@ -1,0 +1,1430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: include/openrave/openrave.h 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>include/openrave/openrave.h</h1><h3 class="version">(r2848/r2811)</h3>
+<p>Defines the public headers that every plugin must include in order to use openrave properly.  
+<a href="#_details">[詳細]</a></p>
+<code>#include &lt;cstdio&gt;</code><br/>
+<code>#include &lt;stdarg.h&gt;</code><br/>
+<code>#include &lt;cstring&gt;</code><br/>
+<code>#include &lt;cstdlib&gt;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;list&gt;</code><br/>
+<code>#include &lt;map&gt;</code><br/>
+<code>#include &lt;set&gt;</code><br/>
+<code>#include &lt;exception&gt;</code><br/>
+<code>#include &lt;iomanip&gt;</code><br/>
+<code>#include &lt;fstream&gt;</code><br/>
+<code>#include &lt;sstream&gt;</code><br/>
+<code>#include &lt;boost/function.hpp&gt;</code><br/>
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
+<code>#include &lt;boost/weak_ptr.hpp&gt;</code><br/>
+<code>#include &lt;boost/tuple/tuple.hpp&gt;</code><br/>
+<code>#include &lt;boost/enable_shared_from_this.hpp&gt;</code><br/>
+<code>#include &lt;boost/thread/mutex.hpp&gt;</code><br/>
+<code>#include &lt;boost/thread/thread.hpp&gt;</code><br/>
+<code>#include &lt;boost/thread/recursive_mutex.hpp&gt;</code><br/>
+<code>#include &lt;boost/static_assert.hpp&gt;</code><br/>
+<code>#include &lt;boost/format.hpp&gt;</code><br/>
+<code>#include &lt;boost/array.hpp&gt;</code><br/>
+<code>#include &lt;boost/multi_array.hpp&gt;</code><br/>
+<code>#include &lt;<a class="el" href="config_8h_source.html">openrave/config.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="interfacehashes_8h_source.html">openrave/interfacehashes.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="geometry_8h_source.html">openrave/geometry.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="mathextra_8h_source.html">openrave/mathextra.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="plugininfo_8h_source.html">openrave/plugininfo.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="interface_8h_source.html">openrave/interface.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="spacesampler_8h_source.html">openrave/spacesampler.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="kinbody_8h_source.html">openrave/kinbody.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="trajectory_8h_source.html">openrave/trajectory.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="module_8h_source.html">openrave/module.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="collisionchecker_8h_source.html">openrave/collisionchecker.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="sensor_8h_source.html">openrave/sensor.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="robot_8h_source.html">openrave/robot.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="iksolver_8h_source.html">openrave/iksolver.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="planner_8h_source.html">openrave/planner.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="controller_8h_source.html">openrave/controller.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="physicsengine_8h_source.html">openrave/physicsengine.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="sensorsystem_8h_source.html">openrave/sensorsystem.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="viewer_8h_source.html">openrave/viewer.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="environment_8h_source.html">openrave/environment.h</a>&gt;</code><br/>
+<div class="dynheader">
+openrave.hのインクルード依存関係図</div>
+<div class="dynsection">
+<div class="center"><img src="openrave_8h__incl.png" border="0" usemap="#include_2openrave_2openrave_8h_map" alt=""/></div>
+<map name="include_2openrave_2openrave_8h_map" id="include_2openrave_2openrave_8h">
+<area shape="rect" href="config_8h.html" title="Defines OpenRAVE installation&#45;specific information." alt="" coords="3557,83,3680,112"/><area shape="rect" href="interfacehashes_8h.html" title="openrave/interfacehashes.h" alt="" coords="3704,83,3885,112"/><area shape="rect" href="geometry_8h.html" title="Basic gemoetric primitives and affine math functions on them." alt="" coords="277,83,421,112"/><area shape="rect" href="mathextra_8h.html" title="Extra math routines that are useful to have but don&#39;t really belong anywhere..." alt="" coords="445,83,592,112"/><area shape="rect" href="plugininfo_8h.html" title="Holds the plugin information structure." alt="" coords="3909,83,4053,112"/><area shape="rect" href="interface_8h.html" title="Base interface definition that all exported interfaces derive from." alt="" coords="4077,83,4216,112"/><area shape="rect" href="spacesampler_8h.html" title="Sampling definitions." alt="" coords="4240,83,4411,112"/><area shape="rect" href="kinbody_8h.html" title="Kinematics body related definitions." alt="" coords="4435,83,4568,112"/><area shape="rect" href="trajectory_8h.html" title="Definition of OpenRAVE::TrajectoryBase." alt="" coords="4592,83,4736,112"/><area shape="rect" href="module_8h.html" title="Modules containing useful routines and algorithms." alt="" coords="4760,83,4891,112"/><area shape="rect" href="collisionchecker_8h.html" title="Collision checking related definitions." alt="" coords="4915,83,5096,112"/><area shape="rect" href="sensor_8h.html" title="Sensor and sensing related defintions." alt="" coords="5120,83,5248,112"/><area shape="rect" href="robot_8h.html" title="Base robot and manipulator description." alt="" coords="5272,83,5389,112"/><area shape="rect" href="iksolver_8h.html" title="Inverse kinematics related definitions." alt="" coords="5413,83,5547,112"/><area shape="rect" href="planner_8h.html" title="Planning related defintions." alt="" coords="5571,83,5701,112"/><area shape="rect" href="controller_8h.html" title="Controller related definitions." alt="" coords="5725,83,5867,112"/><area shape="rect" href="physicsengine_8h.html" title="Physics engine related definitions." alt="" coords="5891,83,6061,112"/><area shape="rect" href="sensorsystem_8h.html" title="Sensor systems used to define how environment information is organized and how bodies..." alt="" coords="6085,83,6256,112"/><area shape="rect" href="viewer_8h.html" title="Graphical interface functions." alt="" coords="6280,83,6405,112"/><area shape="rect" href="environment_8h.html" title="Definition of the EnvironmentBase interface used for managing all objects in an environment..." alt="" coords="6429,83,6589,112"/></map>
+</div>
+<div class="dynheader">
+このグラフは、どのファイルから直接、間接的にインクルードされているかを示しています。</div>
+<div class="dynsection">
+<div class="center"><img src="openrave_8h__dep__incl.png" border="0" usemap="#include_2openrave_2openrave_8hdep_map" alt=""/></div>
+<map name="include_2openrave_2openrave_8hdep_map" id="include_2openrave_2openrave_8hdep">
+<area shape="rect" href="customreader_8cpp.html" title="src/cppexamples/customreader.cpp" alt="" coords="5,160,232,189"/><area shape="rect" href="orpythonbinding_8cpp.html" title="src/cppexamples/orpythonbinding.cpp" alt="" coords="473,83,713,112"/><area shape="rect" href="plugincpp_8cpp.html" title="src/cppexamples/plugincpp.cpp" alt="" coords="256,160,459,189"/><area shape="rect" href="planningutils_8h.html" title="Planning related utilities likes samplers, distance metrics, etc." alt="" coords="737,83,943,112"/><area shape="rect" href="plugin_8h.html" title="Provides helper functions for creating plugins. Defines all the necessary functions..." alt="" coords="231,83,399,112"/><area shape="rect" href="openrave-core_8h.html" title="src/libopenrave&#45;core/openrave&#45;core.h" alt="" coords="1736,83,1971,112"/><area shape="rect" href="libopenrave_8cpp.html" title="src/libopenrave/libopenrave.cpp" alt="" coords="1995,83,2197,112"/><area shape="rect" href="ormulticontrol_8cpp.html" title="src/cppexamples/ormulticontrol.cpp" alt="" coords="483,160,709,189"/><area shape="rect" href="ortrajectory_8cpp.html" title="src/cppexamples/ortrajectory.cpp" alt="" coords="733,160,947,189"/><area shape="rect" href="oryoubotcontrol_8cpp.html" title="src/cppexamples/oryoubotcontrol.cpp" alt="" coords="971,160,1208,189"/><area shape="rect" href="ikfastloader_8cpp.html" title="src/cppexamples/ikfastloader.cpp" alt="" coords="2544,160,2760,189"/><area shape="rect" href="opencvsaving_8cpp.html" title="src/cppexamples/opencvsaving.cpp" alt="" coords="2784,160,3013,189"/><area shape="rect" href="orcollision_8cpp.html" title="src/cppexamples/orcollision.cpp" alt="" coords="3037,160,3245,189"/><area shape="rect" href="orconveyormovement_8cpp.html" title="src/cppexamples/orconveyormovement.cpp" alt="" coords="3269,160,3544,189"/><area shape="rect" href="orikfilter_8cpp.html" title="src/cppexamples/orikfilter.cpp" alt="" coords="3568,160,3763,189"/><area shape="rect" href="orloadviewer_8cpp.html" title="src/cppexamples/orloadviewer.cpp" alt="" coords="1232,160,1453,189"/><area shape="rect" href="orplanning__ik_8cpp.html" title="src/cppexamples/orplanning_ik.cpp" alt="" coords="1477,160,1701,189"/><area shape="rect" href="orplanning__module_8cpp.html" title="src/cppexamples/orplanning_module.cpp" alt="" coords="1725,160,1981,189"/><area shape="rect" href="orplanning__planner_8cpp.html" title="src/cppexamples/orplanning_planner.cpp" alt="" coords="2005,160,2261,189"/><area shape="rect" href="orshowsensors_8cpp.html" title="src/cppexamples/orshowsensors.cpp" alt="" coords="2285,160,2520,189"/></map>
+</div>
+
+<p><a href="openrave_8h_source.html">ソースコードを見る。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>構成</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1openrave__exception.html">openrave_exception</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Exception that all <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> internal methods throw; the error codes are held in <a class="el" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262c">OpenRAVEErrorCode</a>.  <a href="classOpenRAVE_1_1openrave__exception.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1CaseInsensitiveCompare.html">CaseInsensitiveCompare</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1UserData.html">UserData</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">base class for all user data  <a href="classOpenRAVE_1_1UserData.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1XMLReadable.html">XMLReadable</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">base class for readable interfaces  <a href="classOpenRAVE_1_1XMLReadable.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1BaseXMLReader.html">BaseXMLReader</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1DummyXMLReader.html">DummyXMLReader</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">reads until the tag ends  <a href="classOpenRAVE_1_1DummyXMLReader.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification.html">ConfigurationSpecification</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A configuration specification references values in the environment that then define a configuration-space which can be searched for.  <a href="classOpenRAVE_1_1ConfigurationSpecification.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html">Group</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A group referencing the values of one body in the environment.  <a href="classOpenRAVE_1_1ConfigurationSpecification_1_1Group.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ConfigurationSpecification_1_1Reader.html">Reader</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1IkParameterization.html">IkParameterization</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Parameterization of basic primitives for querying inverse-kinematics solutions.  <a href="classOpenRAVE_1_1IkParameterization.html#_details">[詳細]</a><br/></td></tr>
+<tr><td colspan="2"><h2>ネームスペース</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a></td></tr>
+
+<p><tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The entire OpenRAVE library. </p>
+<br/></td></tr>
+</p>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceboost.html">boost</a></td></tr>
+
+<p><tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Modifications controlling boost library behavior. </p>
+<br/></td></tr>
+</p>
+<tr><td colspan="2"><h2>マクロ定義</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a21cda6239dffa6a622ca2946ea6f7455">BOOST_ENABLE_ASSERT_HANDLER</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a9ec560a833d334f15fb49fa937820347">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a280aa678a7e8c375487ffb5e10d70fd3">g_fEpsilon</a>&nbsp;&nbsp;&nbsp;1e-15</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a25aaf95d4ad22808cac742933db64a62">OPENRAVECOLOR_FATALLEVEL</a>&nbsp;&nbsp;&nbsp;5</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#ab7a18295c3800216becfc6c7dd538e12">OPENRAVECOLOR_ERRORLEVEL</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#ad686438ae73587abcf2616f01567a7ac">OPENRAVECOLOR_WARNLEVEL</a>&nbsp;&nbsp;&nbsp;3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a1a683fe6249e34720e4874720c74ba01">OPENRAVECOLOR_INFOLEVEL</a>&nbsp;&nbsp;&nbsp;0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a32f3ebce3b42c9014513ba54bbe362ec">OPENRAVECOLOR_DEBUGLEVEL</a>&nbsp;&nbsp;&nbsp;2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a735c10819ba5fb9736dc0665ba897b88">OPENRAVECOLOR_VERBOSELEVEL</a>&nbsp;&nbsp;&nbsp;4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#acb0790662796bcad938ccd98578b98ee">DefineRavePrintfW</a>(LEVEL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#affb69791e8c0d68b115e5b0fd06cfb1c">DefineRavePrintfA</a>(LEVEL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a5837ac396f0d2fe14a54ca77a0b79167">RAVEPRINTHEADER</a>(LEVEL)&nbsp;&nbsp;&nbsp;OpenRAVE::RavePrintfA ## LEVEL(&quot;[%s:%d] &quot;, OpenRAVE::RaveGetSourceFilename(__FILE__), __LINE__)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#ad4115bf75a40e57e26a10b308a1b604d">RAVELOG_LEVELW</a>(LEVEL, level)&nbsp;&nbsp;&nbsp;(OpenRAVE::RaveGetDebugLevel()&amp;OpenRAVE::Level_OutputMask)&gt;=(level)&amp;&amp;(RAVEPRINTHEADER(LEVEL)&gt;0)&amp;&amp;OpenRAVE::RavePrintfW ## LEVEL</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a97b1068d092cfe301c313a1eab67606b">RAVELOG_LEVELA</a>(LEVEL, level)&nbsp;&nbsp;&nbsp;(OpenRAVE::RaveGetDebugLevel()&amp;OpenRAVE::Level_OutputMask)&gt;=(level)&amp;&amp;(RAVEPRINTHEADER(LEVEL)&gt;0)&amp;&amp;OpenRAVE::RavePrintfA ## LEVEL</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a8ad77ae684d32522f13784512112c052">RAVELOG_FATALW</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_FATALLEVEL,OpenRAVE::Level_Fatal)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#ae55a84da99325119f5c69badfca25aea">RAVELOG_FATALA</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_FATALLEVEL,OpenRAVE::Level_Fatal)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a68fcb9db405202c59a760eed602b6658">RAVELOG_FATAL</a>&nbsp;&nbsp;&nbsp;RAVELOG_FATALA</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a65f08ba3e861309899be6a58699af7fa">RAVELOG_ERRORW</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_ERRORLEVEL,OpenRAVE::Level_Error)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#ae73eaa82f3c4151fc9595fb155b6f265">RAVELOG_ERRORA</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_ERRORLEVEL,OpenRAVE::Level_Error)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a4299f3db31dd3149dc36eeffbb6a65db">RAVELOG_ERROR</a>&nbsp;&nbsp;&nbsp;RAVELOG_ERRORA</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a3a429ed081af6611131176fcc097438e">RAVELOG_WARNW</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_WARNLEVEL,OpenRAVE::Level_Warn)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a84b18245e5f61fb84b20be3028240acd">RAVELOG_WARNA</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_WARNLEVEL,OpenRAVE::Level_Warn)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a9bbbf668aa39f398c341e946ab8a43f5">RAVELOG_WARN</a>&nbsp;&nbsp;&nbsp;RAVELOG_WARNA</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a152fac9cbf717b8eb1ec3a87b348b8a1">RAVELOG_INFOW</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_INFOLEVEL,OpenRAVE::Level_Info)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a545110e670ac69c5fbfe44dc874f08c5">RAVELOG_INFOA</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_INFOLEVEL,OpenRAVE::Level_Info)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a334922a6794604207afe36b4feda230e">RAVELOG_INFO</a>&nbsp;&nbsp;&nbsp;RAVELOG_INFOA</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a438d0bc2b4f2c596e7564a362c25282c">RAVELOG_DEBUGW</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_DEBUGLEVEL,OpenRAVE::Level_Debug)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#ac2e20bae3634222b0c13300d537e0dba">RAVELOG_DEBUGA</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_DEBUGLEVEL,OpenRAVE::Level_Debug)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a5c5058dd8a101f87dca4d6ca16bc7ebc">RAVELOG_DEBUG</a>&nbsp;&nbsp;&nbsp;RAVELOG_DEBUGA</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#adc984e232f832bb0c40e827bf20856ae">RAVELOG_VERBOSEW</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_VERBOSELEVEL,OpenRAVE::Level_Verbose)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#aada8fd1e037ac964f67f1762341d4331">RAVELOG_VERBOSEA</a>&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_VERBOSELEVEL,OpenRAVE::Level_Verbose)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a5731d8d29ec32fe32d4901990066a95c">RAVELOG_VERBOSE</a>&nbsp;&nbsp;&nbsp;RAVELOG_VERBOSEA</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a50f43bd646bc1bdd08ae8c3f60cf579a">IS_DEBUGLEVEL</a>(level)&nbsp;&nbsp;&nbsp;((OpenRAVE::RaveGetDebugLevel()&amp;OpenRAVE::Level_OutputMask)&gt;=(level))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#ad10ef3ff91ab904ff479d57d66ae2abd">OPENRAVE_EXCEPTION_FORMAT0</a>(s, errorcode)&nbsp;&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1openrave__exception.html">OpenRAVE::openrave_exception</a>(boost::str(boost::format(&quot;[%s:%d] &quot; s)%(__PRETTY_FUNCTION__)%(__LINE__)),errorcode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#ae21b57a0ab5ecc52fb9b4a9432a68b36">OPENRAVE_EXCEPTION_FORMAT</a>(s, args, errorcode)&nbsp;&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1openrave__exception.html">OpenRAVE::openrave_exception</a>(boost::str(boost::format(&quot;[%s:%d] &quot; s)%(__PRETTY_FUNCTION__)%(__LINE__)%args),errorcode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a8c8b71f8bce0e483451f3eeac08ac11b">OPENRAVE_DUMMY_IMPLEMENTATION</a>&nbsp;&nbsp;&nbsp;{ throw OPENRAVE_EXCEPTION_FORMAT0(&quot;not implemented&quot;,ORE_NotImplemented); }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a9eeb593dc39a364d67d6cfb380a374b1">MATH_EXP</a>&nbsp;&nbsp;&nbsp;RaveExp</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a6d45ed0ee701c308a9b0178eac483bb1">MATH_LOG</a>&nbsp;&nbsp;&nbsp;RaveLog</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#af2bd357c9fdbdeb72cd23a786485711d">MATH_COS</a>&nbsp;&nbsp;&nbsp;RaveCos</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a4a4d09f88bed6c6069cffeed54469fb3">MATH_SIN</a>&nbsp;&nbsp;&nbsp;RaveSin</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a21627843077aa6657daba05a0452338f">MATH_TAN</a>&nbsp;&nbsp;&nbsp;RaveTan</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a5fcd48c13d182b8debefa7626468a104">MATH_LOG2</a>&nbsp;&nbsp;&nbsp;RaveLog2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#ac93e7fa0292433fd3a0731997f3b4a8f">MATH_LOG10</a>&nbsp;&nbsp;&nbsp;RaveLog10</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a33810a34b021ce748f6beddd89a115f0">MATH_ACOS</a>&nbsp;&nbsp;&nbsp;RaveAcos</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a6423f3ab6f6a46fdc1f6bf1148ec6e04">MATH_ASIN</a>&nbsp;&nbsp;&nbsp;RaveAsin</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#ac33778394ce05639b2a25dbe8de0e4f2">MATH_ATAN2</a>&nbsp;&nbsp;&nbsp;RaveAtan2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a9ad4d09ac20563c1cea529e88b4a391e">MATH_POW</a>&nbsp;&nbsp;&nbsp;RavePow</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#aeb6aab6428be0644c979b648ba256534">MATH_SQRT</a>&nbsp;&nbsp;&nbsp;RaveSqrt</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#aab660c11001c27e6e524ae46b10a30e4">MATH_FABS</a>&nbsp;&nbsp;&nbsp;RaveFabs</td></tr>
+<tr><td colspan="2"><h2>型定義</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; UserData &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr&lt; UserData &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aae4d9d8b0adcdbb33c9ca59ea5794a3d">UserDataWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; CollisionReport &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; CollisionReport const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a8f13e492c6fd91ae6c477002d46ac9d8">CollisionReportConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; InterfaceBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; InterfaceBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a98930a0f0fa346643e6694577adac990">InterfaceBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; InterfaceBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a3909f864d48d5f8d05807a73ca9f1a9b">InterfaceBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; KinBody &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; KinBody const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr&lt; KinBody &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#af9b7d1a6c8cb513416c8e667f3c25418">KinBodyWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; RobotBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; RobotBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ae14278c03739b5661d2542c17ca5db8e">RobotBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; RobotBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#afca3cd803319e1caa2cfb0f763a601b8">RobotBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; CollisionCheckerBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ae3e7611a64b7d4204203d69014f45fe8">CollisionCheckerBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; CollisionCheckerBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a3926e37e3bbc1c29da84fe6cea27d1fc">CollisionCheckerBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; CollisionCheckerBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a0eb8f0ef4695bac98f7fedb026a50f85">CollisionCheckerBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; ControllerBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a93f3c54acfadfefe33b745f7df0c81cf">ControllerBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; ControllerBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a35ebe4450fa91a9ea87fbf4d491bf9d0">ControllerBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; ControllerBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a4ac9cacf04950bd0f0b75c16d11cf025">ControllerBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; IkSolverBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#adc64503b74e38e98eedcbc031b3e37ff">IkSolverBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; IkSolverBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#af393079e8e983a2de33101499192f6d0">IkSolverBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; IkSolverBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a7033f1a621c733d67a3630abc8881c6b">IkSolverBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; PhysicsEngineBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a1f7cd9b111d097614987d789deaf960e">PhysicsEngineBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; PhysicsEngineBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ad9e2cedb63c4f4193956f3a3ebbc168c">PhysicsEngineBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; PhysicsEngineBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ab69df58989d6cb26fc6c54fa5dad1cc7">PhysicsEngineBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; PlannerBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ab39121477d2dd841859e79f112b52a0b">PlannerBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; PlannerBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a2974ad0e9218ea646e192f2317495834">PlannerBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; PlannerBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a3c09f9cf640fdcfbf8d82516f74b3f57">PlannerBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; ModuleBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a8f388daa26e3d70da4f292f61554a4cd">ModuleBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; ModuleBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a145232a03f99f436846fad110e79a5c6">ModuleBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; ModuleBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a52d0d965afb4dfd64bde3b1000f87639">ModuleBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; SensorBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#adb9a2496735bc0d80ced5a5d7dfb653b">SensorBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; SensorBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a836a63a7104eea0f8e405aa9e1b88808">SensorBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; SensorBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#adf29f46857f132f13d3f889744dbd846">SensorBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; SensorSystemBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#adeaf3fbb73ee82de32efcd886d780f0b">SensorSystemBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; SensorSystemBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#af6f8f722992ed78a6be4a5e00f730cf5">SensorSystemBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; SensorSystemBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#afe93ae4b6851a3478f5995cfbfcb0446">SensorSystemBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; TrajectoryBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aa3c159b394f2e4ec46ac49416a2acf17">TrajectoryBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; TrajectoryBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ae4a194e7d8dcb23b1acad4ff9f84ad49">TrajectoryBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; TrajectoryBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a6396266c4d794f3ed1b71b667a3ad6de">TrajectoryBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; ViewerBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#af0d19499c5ac95f5e1ac60b29187d7c4">ViewerBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; ViewerBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aa8352f0d31944978b6a5cebf018b4596">ViewerBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; ViewerBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a16fc46bc510187b6672c34e268b59d95">ViewerBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; SpaceSamplerBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ad7176d63b178b8eab68b6947d4d850bb">SpaceSamplerBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; SpaceSamplerBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a52fb7d41ff2ea19fd899045561030a47">SpaceSamplerBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; SpaceSamplerBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a4c48eb3d7768751964409e193109b968">SpaceSamplerBaseWeakPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; EnvironmentBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; EnvironmentBase const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aae90d424b7f3d69b2f382c5e30d1ae57">EnvironmentBaseConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::weak_ptr<br class="typebreak"/>
+&lt; EnvironmentBase &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a07792c5083a23c50672e928bd20a026f">EnvironmentBaseWeakPtr</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cloning Options for interfaces and environments.  <a href="#a07792c5083a23c50672e928bd20a026f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; XMLReadable &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a4518fd20d196b853bb157999524b6fde">XMLReadablePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; XMLReadable const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a621f0dea132e9220594b6541cbbe4aab">XMLReadableConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; std::pair<br class="typebreak"/>
+&lt; std::string, std::string &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; BaseXMLReader &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a5465be4feef36a211b06feebdc5e3b42">BaseXMLReaderPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; BaseXMLReader const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a37212eda95928f64b1d7ede7a0ab4f8c">BaseXMLReaderConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function<br class="typebreak"/>
+&lt; BaseXMLReaderPtr(InterfaceBasePtr, <br class="typebreak"/>
+const AttributesList &amp;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#adec9e4596e96321e8bf28523753f5d2c">CreateXMLReaderFn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef RaveVector&lt; dReal &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ab815faf493a6d82304f7f202d59f2a36">Vector</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef RaveTransform&lt; dReal &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; RaveTransform&lt; dReal &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aec91352921c61bac216f8d1ccf32ce56">TransformPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; RaveTransform&lt; dReal &gt; const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a6d8be5f641c37cf8096b9bc60c49d763">TransformConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef RaveTransformMatrix<br class="typebreak"/>
+&lt; dReal &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aed57495d2314a15e0e3687936f1dfdf3">TransformMatrix</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; RaveTransformMatrix&lt; dReal &gt; &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a6fbe475f5a699c5d101228b1e029727b">TransformMatrixPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; RaveTransformMatrix&lt; dReal &gt;<br class="typebreak"/>
+ const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ab274fa74bb50e174b237e928d2c003b5">TransformMatrixConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef geometry::obb&lt; dReal &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ac5a84015329f62a31ef824074750c062">OBB</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef geometry::aabb&lt; dReal &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#add55daf8a497b9a79baeb6845a549538">AABB</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef geometry::ray&lt; dReal &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a761c9074489b8976875e9e97e6bc41cf">RAY</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; ConfigurationSpecification &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a62516ae082bfa0513ffd4bbc32b60f33">ConfigurationSpecificationPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; ConfigurationSpecification <br class="typebreak"/>
+const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a7fb282d26e2b05346ed591349a388ae7">ConfigurationSpecificationConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef InterfaceBasePtr(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plugin__exports.html#ga6ae2f1554f547f27e4a5399d8aef7377">PluginExportFn_OpenRAVECreateInterface</a> )(InterfaceType type, const std::string &amp;name, const char *pluginhash, const char *envhash, EnvironmentBasePtr penv)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create the interfaces, see <a class="el" href="group__plugin__exports.html#ga468c900067e08689383b3f8da642141f">CreateInterfaceValidated</a>.  <a href="group__plugin__exports.html#ga6ae2f1554f547f27e4a5399d8aef7377"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef bool(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plugin__exports.html#ga7cb4e2769bee1dca182b4432a900bc70">PluginExportFn_OpenRAVEGetPluginAttributes</a> )(PLUGININFO *pinfo, int size, const char *infohash)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Called to fill information about the plugin, see <a class="el" href="group__plugin__exports.html#gaf90c03438b94cc76e7b8a54d445ec106">GetPluginAttributesValidated</a>.  <a href="group__plugin__exports.html#ga7cb4e2769bee1dca182b4432a900bc70"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef void(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__plugin__exports.html#ga7164d2e9a268c6e44a296e9488df69cd">PluginExportFn_DestroyPlugin</a> )()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Called before plugin is unloaded from openrave. See <a class="el" href="group__plugin__exports.html#gad6773d91dae37d0ba9de59d2a05277e4">DestroyPlugin</a>.  <a href="group__plugin__exports.html#ga7164d2e9a268c6e44a296e9488df69cd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef InterfaceBasePtr(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#afd22dd103475de7006afbd1511a60ac4">PluginExportFn_CreateInterface</a> )(InterfaceType type, const std::string &amp;name, const char *pluginhash, EnvironmentBasePtr penv)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef bool(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a79dd40a56ad2aaee2fbb678a709e2572">PluginExportFn_GetPluginAttributes</a> )(PLUGININFO *pinfo, int size)</td></tr>
+<tr><td colspan="2"><h2>列挙型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262c">OpenRAVEErrorCode</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262caa22653a6ba4b451399c6e9f6aef60b10">ORE_Failed</a> = 0, 
+<a class="el" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262ca481978390d144f4f222a971b4e09b713">ORE_InvalidArguments</a> = 1, 
+<a class="el" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262cac10e4c55e82ea2bbb5b2028a4bf4e3cb">ORE_EnvironmentNotLocked</a> = 2, 
+<a class="el" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262cad33c9bd2b6b21be295e2a983f19e6006">ORE_CommandNotSupported</a> = 3, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262cabc7cf06618f512f7c2172b855dba7e20">ORE_Assert</a> = 4, 
+<a class="el" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262cab6eaf97936dda5f10b34d8106c929270">ORE_InvalidPlugin</a> = 5, 
+<a class="el" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262caea76ef8a6aa70c082da2d9dfeaaa2ed5">ORE_InvalidInterfaceHash</a> = 6, 
+<a class="el" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262cac8a3a340f3efbef5161746764a523a35">ORE_NotImplemented</a> = 7, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262caefba8dc1666cec415519f11ca1a6699b">ORE_InconsistentConstraints</a> = 8
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>OpenRAVE error codes </p>
+ <a href="namespaceOpenRAVE.html#adf2fa050995e80f643f8eddc14d7262c">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ab658e6d84759440dbf3c890446075395">DebugLevel</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#ab658e6d84759440dbf3c890446075395a76d84619fc069ef2ea9f6b6e0fb0cfb4">Level_Fatal</a> = 0, 
+<a class="el" href="namespaceOpenRAVE.html#ab658e6d84759440dbf3c890446075395a712e8173c9c8e165eeb876178ce4951c">Level_Error</a> = 1, 
+<a class="el" href="namespaceOpenRAVE.html#ab658e6d84759440dbf3c890446075395abb9cff4a96888fe88bf6db78559dc858">Level_Warn</a> = 2, 
+<a class="el" href="namespaceOpenRAVE.html#ab658e6d84759440dbf3c890446075395ad32083b6cd4e99dafeafe16581277430">Level_Info</a> = 3, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#ab658e6d84759440dbf3c890446075395abd3809f60dd27203b26d387b072b090f">Level_Debug</a> = 4, 
+<a class="el" href="namespaceOpenRAVE.html#ab658e6d84759440dbf3c890446075395a8082ec82e7e8d74a4543410fc7b79c39">Level_Verbose</a> = 5, 
+<a class="el" href="namespaceOpenRAVE.html#ab658e6d84759440dbf3c890446075395ac3819021a94149ef5002bd2e8628131d">Level_OutputMask</a> = 0xf, 
+<a class="el" href="namespaceOpenRAVE.html#ab658e6d84759440dbf3c890446075395a7ff14d37cfb2aeb879feb53b506cabde">Level_VerifyPlans</a> = 0x80000000
+<br/>
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a16bea31a72c441a002538eac01a118f2">CloningOptions</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#a16bea31a72c441a002538eac01a118f2a0c49bf8f6cc2b8f1731b1aa8326c5e63">Clone_Bodies</a> =  1, 
+<a class="el" href="namespaceOpenRAVE.html#a16bea31a72c441a002538eac01a118f2a63f15f42828f381ffc43e2c3a894e792">Clone_Viewer</a> =  2, 
+<a class="el" href="namespaceOpenRAVE.html#a16bea31a72c441a002538eac01a118f2a4f7d3c1c073424a486131d5516cbee6a">Clone_Simulation</a> =  4, 
+<a class="el" href="namespaceOpenRAVE.html#a16bea31a72c441a002538eac01a118f2a0f3adf019cab24fd7564e167aac6308b">Clone_RealControllers</a> =  8, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#a16bea31a72c441a002538eac01a118f2add1ddf3837f8e9fe41aa04fbdf1f10b1">Clone_Sensors</a> =  16
+<br/>
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2ea26d93743c6292ee325f9b2dc3fe17b7a">IKP_None</a> = 0, 
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2ea33b4f04338b6d55fe993b6bdd9f66956">IKP_Transform6D</a> = 0x67000001, 
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2ea125270b64ed51a89e7021ec7e6d71669">IKP_Rotation3D</a> = 0x34000002, 
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2eae24724faf9388c7f2ae2c7cbbc9c5e94">IKP_Translation3D</a> = 0x33000003, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2ea31424bec585106a5464b4ebe4831acc9">IKP_Direction3D</a> = 0x23000004, 
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2ea4971a1736a1ea39559c0c49601b17533">IKP_Ray4D</a> = 0x46000005, 
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2ea6c4188710cb0a7084725fefd4c80d642">IKP_Lookat3D</a> = 0x23000006, 
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2ea68c40080732ab8a017608e45a2f20d33">IKP_TranslationDirection5D</a> = 0x56000007, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2eadcf015cba2fad8597405a442c81e0612">IKP_TranslationXY2D</a> = 0x22000008, 
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2eacb13532b686d552c5a513aa5296a9465">IKP_TranslationXYOrientation3D</a> = 0x33000009, 
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2ea3acb8e5a6b84403f23286a338c46e5a7">IKP_TranslationLocalGlobal6D</a> = 0x3600000a, 
+<a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2eafc80ee4dec1e8de5665d49e6f4bb8d84">IKP_NumberOfParameterizations</a> = 10
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>The types of inverse kinematics parameterizations supported. </p>
+ <a href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98">DOFAffine</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98ad6c92a52af0fed351dd1660e0247feaa">DOF_NoTransform</a> =  0, 
+<a class="el" href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98a631e4be716fa05920e2708264c946507">DOF_X</a> =  1, 
+<a class="el" href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98a052eaa27c587eff647f89537d85414f2">DOF_Y</a> =  2, 
+<a class="el" href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98ab8457ea80d330d3a701781b6bc9a935b">DOF_Z</a> =  4, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98abf4ca11208a260b3c892db6f3aa87126">DOF_XYZ</a> = DOF_X|DOF_Y|DOF_Z, 
+<a class="el" href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98a5ee6baa8acb92c310cbc1ece082640d0">DOF_RotationAxis</a> =  8, 
+<a class="el" href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98aa05fc73c237a667dbc010b620704a58b">DOF_Rotation3D</a> =  16, 
+<a class="el" href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98a0bb7484621acd6987a116bc2b6f34a59">DOF_RotationQuat</a> =  32, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98a8d26ee42cff6b4d775040f3b8b7cda8d">DOF_RotationMask</a> = (DOF_RotationAxis|DOF_Rotation3D|DOF_RotationQuat), 
+<a class="el" href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98a7dc89bc3eae094319fe037d302928916">DOF_Transform</a> =  (DOF_XYZ|DOF_RotationQuat)
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Selects which DOFs of the affine transformation to include in the active configuration. </p>
+ <a href="namespaceOpenRAVE.html#a3016e2185103f3c1bdc5e4482893ca98">[詳細]</a><br/></td></tr>
+<tr><td colspan="2"><h2>関数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a985876f10adcdcd967c0293b7ec17022">ChangeTextColor</a> (int attribute, int fg, int bg)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Change the text color (on either stdout or stderr) with an attr:fg:bg (thanks to Radu Rusu for the code).  <a href="#a985876f10adcdcd967c0293b7ec17022"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ab58a943ef75af625e8f87e6d2f6f7b3c">ChangeTextColor</a> (int attribute, int fg)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Change the text color (on either stdout or stderr) with an attr:fg (thanks to Radu Rusu for the code).  <a href="#ab58a943ef75af625e8f87e6d2f6f7b3c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a3a8c6e48e14f9c6fc744d8abc2856f73">ResetTextColor</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reset the text color (on either stdout or stderr) to its original state (thanks to Radu Rusu for the code).  <a href="#a3a8c6e48e14f9c6fc744d8abc2856f73"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::wstring&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a2d3558bc665ebc1ddbadb53f22f79798">ChangeTextColorW</a> (int attribute, int fg)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::wstring&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a4430f512583612c6f45b334152ee4c10">RavePrintTransformString</a> (const wchar_t *fmt)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a4565818cc5d4875f6c462cb6c5ab1a80">RaveSetDebugLevel</a> (int level)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the global openrave debug level. A combination of <a class="el" href="namespaceOpenRAVE.html#ab658e6d84759440dbf3c890446075395">DebugLevel</a>.  <a href="#a4565818cc5d4875f6c462cb6c5ab1a80"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ab6231861994f01d7fb5732b54eef93d9">RaveGetDebugLevel</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the openrave debug level.  <a href="#ab6231861994f01d7fb5732b54eef93d9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a49875f4e0a05692a85b7b6b37113d4cc">RaveGetSourceFilename</a> (const char *pfilename)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">extracts only the filename  <a href="#a49875f4e0a05692a85b7b6b37113d4cc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a70b35304368c1cd00cc2b72b2d7e0925">RavePrintfA_INFOLEVEL</a> (const std::string &amp;s)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a8fe7028ff07903b2da4d1a4512360b50">RavePrintfA_INFOLEVEL</a> (const char *fmt,...)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#af9ada9fc41c33cad8c647dddb4259245">RavePrintfA</a> (const std::string &amp;s, uint32_t level)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a15759460275c5fa586f4ca9656d998b9">DefineRavePrintfW</a> (_FATALLEVEL) DefineRavePrintfW(_ERRORLEVEL) DefineRavePrintfW(_WARNLEVEL) DefineRavePrintfW(_DEBUGLEVEL) DefineRavePrintfW(_VERBOSELEVEL) DefineRavePrintfA(_FATALLEVEL) DefineRavePrintfA(_ERRORLEVEL) DefineRavePrintfA(_WARNLEVEL) DefineRavePrintfA(_DEBUGLEVEL) DefineRavePrintfA(_VERBOSELEVEL) enum InterfaceType</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">adds the function name and line number to an openrave exception  <a href="#a15759460275c5fa586f4ca9656d998b9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API std::ostream &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aaedb7f5b8cdd08c3b341da81d4ad8340">operator&lt;&lt;</a> (std::ostream &amp;O, const ConfigurationSpecification &amp;spec)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API std::istream &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ae9398a9daa44871c9233018c348f4b78">operator&gt;&gt;</a> (std::istream &amp;I, ConfigurationSpecification &amp;spec)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">IkParameterization&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ad448574d280fb7a33bbfc3873d50fc4f">operator*</a> (const Transform &amp;t, const IkParameterization &amp;ikparam)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API std::ostream &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a1d933f784084dc1ee9ebbf79f09ab8f1">operator&lt;&lt;</a> (std::ostream &amp;O, const IkParameterization &amp;ikparam)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API std::istream &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a4f83144b80873f248fb58410e992dced">operator&gt;&gt;</a> (std::istream &amp;I, IkParameterization &amp;ikparam)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a0b617aee4d884d669b0fec0d77b82b82">RaveGetIndexFromAffineDOF</a> (int affinedofs, DOFAffine dof)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Given a mask of affine dofs and a dof inside that mask, returns the index where the value could be found.  <a href="#a0b617aee4d884d669b0fec0d77b82b82"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API DOFAffine&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aa74e6e2a15fb305f40f1c111ccba4409">RaveGetAffineDOFFromIndex</a> (int affinedofs, int index)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Given a mask of affine dofs and an index into the array, returns the affine dof that is being referenced.  <a href="#aa74e6e2a15fb305f40f1c111ccba4409"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aeb82c0dbce4078c170f1f804768d63e3">RaveGetAffineDOF</a> (int affinedofs)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the degrees of freedom needed to represent all the values in the affine dof mask.  <a href="#aeb82c0dbce4078c170f1f804768d63e3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#acee29007f1d29ce38571cadfec3ba99e">RaveGetAffineDOFValuesFromTransform</a> (std::vector&lt; dReal &gt;::iterator itvalues, const Transform &amp;t, int affinedofs, const Vector &amp;vActvAffineRotationAxis=Vector(0, 0, 1))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts the transformation matrix into the specified affine values format.  <a href="#acee29007f1d29ce38571cadfec3ba99e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a065035f3b1323bcfd8ed090ea86a5e3d">RaveGetTransformFromAffineDOFValues</a> (Transform &amp;t, std::vector&lt; dReal &gt;::const_iterator itvalues, int affinedofs, const Vector &amp;vActvAffineRotationAxis=Vector(0, 0, 1))</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Converts affine dof values into a transform.  <a href="#a065035f3b1323bcfd8ed090ea86a5e3d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API <br class="typebreak"/>
+ConfigurationSpecification&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aaf02457d3c30e6e9439392175a6e23b4">RaveGetAffineConfigurationSpecification</a> (int affinedofs, KinBodyConstPtr pbody=KinBodyConstPtr())</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ac39e4bc60516ff7945dd5e506a2f7018">RaveInitRandomGeneration</a> (uint32_t seed)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API uint32_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a71fdac6520a636ef5daab82808551813">RaveRandomInt</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#af106eea57ab2fbb2e632347a3371a813">RaveRandomFloat</a> (IntervalType interval=IT_Closed)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API double&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#afca2ae5739f7ecc30350b9ab7ffad941">RaveRandomDouble</a> (IntervalType interval=IT_Closed)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a32f8afb07145a214f906ea827c14422d">RaveParseDirectories</a> (const char *pdirs, std::vector&lt; std::string &gt; &amp;vdirs)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">separates the directories from a string and returns them in a vector  <a href="#a32f8afb07145a214f906ea827c14422d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceboost.html#a6ea615b0e29a9b35870fb8662f0e1291">assertion_failed</a> (char const *expr, char const *function, char const *file, long line)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#aae6f701bfe3caa8d91ee9793ede76699">BOOST_STATIC_ASSERT</a> (OPENRAVE_VERSION_MAJOR &gt;=0 &amp;&amp;OPENRAVE_VERSION_MAJOR&lt;=255)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a3aab05ed9073cc385b2c97fb6280d118">BOOST_STATIC_ASSERT</a> (OPENRAVE_VERSION_MINOR &gt;=0 &amp;&amp;OPENRAVE_VERSION_MINOR&lt;=255)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="openrave_8h.html#a2a10c7d596cfa87d7ab42587c5c7e7e5">BOOST_STATIC_ASSERT</a> (OPENRAVE_VERSION_PATCH &gt;=0 &amp;&amp;OPENRAVE_VERSION_PATCH&lt;=255)</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpd41d8cd98f00b204e9800998ecf8427e"></a> </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga6adcc9e6c97a5451a24e9d2a007bc14e">RaveExp</a> (dReal f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">exponential  <a href="group__affine__math.html#ga6adcc9e6c97a5451a24e9d2a007bc14e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga83499e2abeec72291e96f7afc38120a4">RaveLog</a> (dReal f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">logarithm  <a href="group__affine__math.html#ga83499e2abeec72291e96f7afc38120a4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga7a5b5d031430f5e42038c4043a18d2a9">RaveCos</a> (dReal f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">cosine  <a href="group__affine__math.html#ga7a5b5d031430f5e42038c4043a18d2a9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gae4909179343022636db56f4e4b664415">RaveSin</a> (dReal f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">sine  <a href="group__affine__math.html#gae4909179343022636db56f4e4b664415"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga551bddbd42a69da9c05b4d3e659cec9c">RaveTan</a> (dReal f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">tangent  <a href="group__affine__math.html#ga551bddbd42a69da9c05b4d3e659cec9c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gae4b2138f29ce2883e27096d0e061e37d">RaveLog2</a> (dReal f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">base 2 logarithm  <a href="group__affine__math.html#gae4b2138f29ce2883e27096d0e061e37d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga1aa2efa7951a2a6a7c4f057081cc13a0">RaveLog10</a> (dReal f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">base 10 logarithm  <a href="group__affine__math.html#ga1aa2efa7951a2a6a7c4f057081cc13a0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga2ffd106aea1fe479ed88e7503a8c44f7">RaveAcos</a> (dReal f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">arccosine  <a href="group__affine__math.html#ga2ffd106aea1fe479ed88e7503a8c44f7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga756e28fdb4f459b0fbad627c6dfdae0e">RaveAsin</a> (dReal f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">arcsine  <a href="group__affine__math.html#ga756e28fdb4f459b0fbad627c6dfdae0e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga6221cab32e5309e3c0371b4f5cbb3a11">RaveAtan2</a> (dReal fy, dReal fx)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">arctangent2 covering entire circle  <a href="group__affine__math.html#ga6221cab32e5309e3c0371b4f5cbb3a11"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga13111a44a6a62bbb80f65566718457ad">RavePow</a> (dReal fx, dReal fy)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">power x^y  <a href="group__affine__math.html#ga13111a44a6a62bbb80f65566718457ad"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#gafa1579e29c1d08021a480474661ea385">RaveSqrt</a> (dReal f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">square-root  <a href="group__affine__math.html#gafa1579e29c1d08021a480474661ea385"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affine__math.html#ga500226250a97dadb70d64615b4526388">RaveFabs</a> (dReal f)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">absolute value  <a href="group__affine__math.html#ga500226250a97dadb70d64615b4526388"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Global Functionality - Interface Creation, Plugin Management, Logging</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpa44636317fec477debce11f23bc74d59"></a> <a class="anchor" id="global_functionality"></a> </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a58037fbef85e1f0c8695edd7e2537172">RaveGetInterfaceHash</a> (InterfaceType type)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the a 16 character null-terminated string specifying a hash of the interfaces used for checking changes.  <a href="#a58037fbef85e1f0c8695edd7e2537172"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; T &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a5f46fb9ff755f614ea5636851a89952c">RaveInterfaceCast</a> (InterfaceBasePtr pinterface)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Safely casts from the base interface class to an openrave interface using static_pointer_cast.  <a href="#a5f46fb9ff755f614ea5636851a89952c"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; T const  &gt;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#adf731ae412bd36fe76b35c4e2e4f6478">RaveInterfaceConstCast</a> (InterfaceBaseConstPtr pinterface)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Safely casts from the base interface class to an openrave interface using static_pointer_cast.  <a href="#adf731ae412bd36fe76b35c4e2e4f6478"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API const std::map<br class="typebreak"/>
+&lt; InterfaceType, std::string &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#acdcdc83c8812c47516259f9e89a3bd1b">RaveGetInterfaceNamesMap</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns a lower case string of the interface type  <a href="#acdcdc83c8812c47516259f9e89a3bd1b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a057d105393f37c597a34f0875ab247c6">RaveGetInterfaceName</a> (InterfaceType type)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API const std::map<br class="typebreak"/>
+&lt; IkParameterizationType, <br class="typebreak"/>
+std::string &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#adc91f5fc0031c945fcfe34baaa9b610e">RaveGetIkParameterizationMap</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns a string of the ik parameterization type names (can include upper case in order to match <a class="el" href="namespaceOpenRAVE.html#a16f7833e516a35d385ac594a44e44a2e">IkParameterizationType</a>)  <a href="#adc91f5fc0031c945fcfe34baaa9b610e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a87ddf8748858681ffdbe520817899d7f">RaveGetHomeDirectory</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the openrave home directory where settings, cache, and other files are stored.  <a href="#a87ddf8748858681ffdbe520817899d7f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a9405a328fe09cb60cccec64acd8d5b75">RaveFindDatabaseFile</a> (const std::string &amp;filename, bool bRead=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Searches for a filename in the database and returns a full path/URL to it.  <a href="#a9405a328fe09cb60cccec64acd8d5b75"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ab89ccf2331c4ee81662f687cedaa1781">RaveInitialize</a> (bool bLoadAllPlugins=true, int level=Level_Info)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Explicitly initializes the global <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> state (optional).  <a href="#ab89ccf2331c4ee81662f687cedaa1781"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a4cad8fb5664f22d9c877fc520ec20abe">RaveInitializeFromState</a> (UserDataPtr globalstate)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initializes the global state from an already loaded <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> environment.  <a href="#a4cad8fb5664f22d9c877fc520ec20abe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API UserDataPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a7e84c803da09036af3295e448bd0b17e">RaveGlobalState</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A pointer to the global openrave state.  <a href="#a7e84c803da09036af3295e448bd0b17e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a0f405b1e7e95e6386c892fb4ad54d9b5">RaveDestroy</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Destroys the entire <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> state and all loaded environments.  <a href="#a0f405b1e7e95e6386c892fb4ad54d9b5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aad059c41a95449e019f153dc827658e3">RaveGetPluginInfo</a> (std::list&lt; std::pair&lt; std::string, PLUGININFO &gt; &gt; &amp;plugins)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get all the loaded plugins and the interfaces they support.  <a href="#aad059c41a95449e019f153dc827658e3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a27b3193df26a41f8373e44b2a8bf5521">RaveGetLoadedInterfaces</a> (std::map&lt; InterfaceType, std::vector&lt; std::string &gt; &gt; &amp;interfacenames)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get a list of all the loaded interfaces.  <a href="#a27b3193df26a41f8373e44b2a8bf5521"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a26aae0eb8f16b559ffcbbacbb221d069">RaveReloadPlugins</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reloads all the plugins.  <a href="#a26aae0eb8f16b559ffcbbacbb221d069"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a0bdb20966417e80729f69b3d878c17b0">RaveLoadPlugin</a> (const std::string &amp;libraryname)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Load a plugin and its interfaces.  <a href="#a0bdb20966417e80729f69b3d878c17b0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a5a875a2efe2e581f83c7f00c0237488e">RaveHasInterface</a> (InterfaceType type, const std::string &amp;interfacename)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns true if interface can be created, otherwise false.  <a href="#a5a875a2efe2e581f83c7f00c0237488e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API InterfaceBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aec221546fbd969d5c0005a223d4e6f04">RaveCreateInterface</a> (EnvironmentBasePtr penv, InterfaceType type, const std::string &amp;interfacename)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API RobotBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a25751cf7b2fdb7f345101c5023224e46">RaveCreateRobot</a> (EnvironmentBasePtr penv, const std::string &amp;name=&quot;&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API PlannerBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a917047ebc086703b4eaf0bffd6ac9527">RaveCreatePlanner</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API SensorSystemBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#adaf28a3cc60e1de1993d002c62067df9">RaveCreateSensorSystem</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API ControllerBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a1df06dca7777efdfbd9e75b9ee568cd2">RaveCreateController</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API ModuleBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a85a2344a8c87ccc8573c58c05f17616e">RaveCreateModule</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API ModuleBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a211849aac354463d4a3617a20f13caea">RaveCreateProblem</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API ModuleBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a09d6138c724a27138cae1c19971ae205">RaveCreateProblemInstance</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API IkSolverBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aa2aeb37827349f5b7bf6d7d6a804cbd4">RaveCreateIkSolver</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API PhysicsEngineBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ab08a89586f8780b19a4da7cc142cbcf4">RaveCreatePhysicsEngine</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API SensorBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a198ddcd597357362c40e9353c5a70f31">RaveCreateSensor</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API <br class="typebreak"/>
+CollisionCheckerBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#adad7199c542d5330699204473c9eadcc">RaveCreateCollisionChecker</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API ViewerBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a75b6125ec62afca70c38afe81f572db1">RaveCreateViewer</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API SpaceSamplerBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ac30d0d73a3d6b5e06ee740fb978eeeba">RaveCreateSpaceSampler</a> (EnvironmentBasePtr penv, const std::string &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API KinBodyPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#af670bfd0341386b625f2290d8484c9d3">RaveCreateKinBody</a> (EnvironmentBasePtr penv, const std::string &amp;name=&quot;&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API TrajectoryBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#aa987900651248eee02dc1ce6647dc543">RaveCreateTrajectory</a> (EnvironmentBasePtr penv, const std::string &amp;name=&quot;&quot;)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return an empty trajectory instance.  <a href="#aa987900651248eee02dc1ce6647dc543"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API TrajectoryBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a50aeb06ab0f51d83c99d8938b01b747d">RaveCreateTrajectory</a> (EnvironmentBasePtr penv, int dof) RAVE_DEPRECATED</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API UserDataPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a331d3070544589695a6a05e7da0f419f">RaveRegisterInterface</a> (InterfaceType type, const std::string &amp;name, const char *interfacehash, const char *envhash, const boost::function&lt; InterfaceBasePtr(EnvironmentBasePtr, std::istream &amp;)&gt; &amp;createfn)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Registers a function to create an interface, this allows the interface to be created by other modules.  <a href="#a331d3070544589695a6a05e7da0f419f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API UserDataPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a9ad0884135aded97f58a39cd75e80bbf">RaveRegisterXMLReader</a> (InterfaceType type, const std::string &amp;xmltag, const CreateXMLReaderFn &amp;fn)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Registers a custom xml reader for a particular interface.  <a href="#a9ad0884135aded97f58a39cd75e80bbf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#af1fc16c7ab4d623ae6c95ab6575b0cca">RaveGetEnvironmentId</a> (EnvironmentBasePtr penv)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return the environment's unique id, returns 0 if environment could not be found or not registered  <a href="#af1fc16c7ab4d623ae6c95ab6575b0cca"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API EnvironmentBasePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ac5ad28f8313d016b3ecde4c01737d652">RaveGetEnvironment</a> (int id)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">get the environment from its unique id  <a href="#ac5ad28f8313d016b3ecde4c01737d652"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#ad85edb7064e01ebfc1bbef55e84df69d">RaveGetEnvironments</a> (std::list&lt; EnvironmentBasePtr &gt; &amp;listenvironments)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return all the created <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> environments.  <a href="#ad85edb7064e01ebfc1bbef55e84df69d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">OPENRAVE_API BaseXMLReaderPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a5d55294a3a1b108acea6bbf1ebe1555a">RaveCallXMLReader</a> (InterfaceType type, const std::string &amp;xmltag, InterfaceBasePtr pinterface, const AttributesList &amp;atts)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the current registered reader for the interface type/xmlid.  <a href="#a5d55294a3a1b108acea6bbf1ebe1555a"></a><br/></td></tr>
+<tr><td colspan="2"><h2>変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const dReal&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceOpenRAVE.html#a3f37499f2c749cd199222f3b02396613">PI</a> = (dReal)3.14159265358979323846</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">openrave constant for PI, could be replaced by accurate precision number depending on choice of dReal.  <a href="#a3f37499f2c749cd199222f3b02396613"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>Defines the public headers that every plugin must include in order to use openrave properly. </p>
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> で定義されています。</p>
+<hr/><h2>マクロ定義</h2>
+<a class="anchor" id="a21cda6239dffa6a622ca2946ea6f7455"></a><!-- doxytag: member="openrave.h::BOOST_ENABLE_ASSERT_HANDLER" ref="a21cda6239dffa6a622ca2946ea6f7455" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_ENABLE_ASSERT_HANDLER</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00024">24</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="affb69791e8c0d68b115e5b0fd06cfb1c"></a><!-- doxytag: member="openrave.h::DefineRavePrintfA" ref="affb69791e8c0d68b115e5b0fd06cfb1c" args="(LEVEL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DefineRavePrintfA</td>
+          <td>(</td>
+          <td class="paramtype">LEVEL&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>値:</b><div class="fragment"><pre class="fragment"><span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="namespaceOpenRAVE.html#af9ada9fc41c33cad8c647dddb4259245">RavePrintfA</a> ## LEVEL(<span class="keyword">const</span> std::string&amp; s) \
+    { \
+        <span class="keywordflow">if</span>((s.size() == 0)||(s[s.size()-1] != <span class="charliteral">&#39;\n&#39;</span>)) { \
+            printf (<span class="stringliteral">&quot;%c[0;%d;%dm%s%c[m\n&quot;</span>, 0x1B, OPENRAVECOLOR ## LEVEL + 30,8+40,s.c_str(),0x1B); \
+        } \
+        <span class="keywordflow">else</span> { \
+            printf (<span class="stringliteral">&quot;%c[0;%d;%dm%s%c[m&quot;</span>, 0x1B, OPENRAVECOLOR ## LEVEL + 30,8+40,s.c_str(),0x1B); \
+        } \
+        <span class="keywordflow">return</span> s.size(); \
+    } \
+    \
+    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="namespaceOpenRAVE.html#af9ada9fc41c33cad8c647dddb4259245">RavePrintfA</a> ## LEVEL(<span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...) \
+    { \
+        va_list list; \
+        va_start(list,fmt); \
+        <span class="keywordtype">int</span> r = vprintf((<a class="code" href="namespaceOpenRAVE.html#a985876f10adcdcd967c0293b7ec17022" title="Change the text color (on either stdout or stderr) with an attr:fg:bg (thanks to...">ChangeTextColor</a>(0, OPENRAVECOLOR ## LEVEL,8) + std::string(fmt) + <a class="code" href="namespaceOpenRAVE.html#a3a8c6e48e14f9c6fc744d8abc2856f73" title="Reset the text color (on either stdout or stderr) to its original state (thanks to...">ResetTextColor</a>()).c_str(), list); \
+        va_end(list); \
+        <span class="comment">/*if( fmt[0] != &#39;\n&#39; ) { printf(&quot;\n&quot;); } */</span> \
+        <span class="keywordflow">return</span> r; \
+    } \
+</pre></div>
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00439">439</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="acb0790662796bcad938ccd98578b98ee"></a><!-- doxytag: member="openrave.h::DefineRavePrintfW" ref="acb0790662796bcad938ccd98578b98ee" args="(LEVEL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DefineRavePrintfW</td>
+          <td>(</td>
+          <td class="paramtype">LEVEL&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>値:</b><div class="fragment"><pre class="fragment"><span class="keyword">inline</span> <span class="keywordtype">int</span> RavePrintfW ## LEVEL(<span class="keyword">const</span> <span class="keywordtype">wchar_t</span> *wfmt, ...) \
+    { \
+        va_list list; \
+        va_start(list,wfmt); \
+        <span class="comment">/* Allocate memory on the stack to avoid heap fragmentation */</span> \
+        <span class="keywordtype">size_t</span> allocsize = wcstombs(NULL, wfmt, 0)+32; \
+        <span class="keywordtype">char</span>* fmt = (<span class="keywordtype">char</span>*)alloca(allocsize); \
+        strcpy(fmt, <a class="code" href="namespaceOpenRAVE.html#a985876f10adcdcd967c0293b7ec17022" title="Change the text color (on either stdout or stderr) with an attr:fg:bg (thanks to...">ChangeTextColor</a>(0, OPENRAVECOLOR ## LEVEL,8).c_str()); \
+        snprintf(fmt+strlen(fmt),allocsize-16,<span class="stringliteral">&quot;%S&quot;</span>,wfmt); \
+        strcat(fmt, <a class="code" href="namespaceOpenRAVE.html#a3a8c6e48e14f9c6fc744d8abc2856f73" title="Reset the text color (on either stdout or stderr) to its original state (thanks to...">ResetTextColor</a>().c_str()); \
+        <span class="keywordtype">int</span> r = vprintf(fmt, list);        \
+        va_end(list); \
+        <span class="keywordflow">return</span> r; \
+    }
+</pre></div>
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00398">398</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a280aa678a7e8c375487ffb5e10d70fd3"></a><!-- doxytag: member="openrave.h::g_fEpsilon" ref="a280aa678a7e8c375487ffb5e10d70fd3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define g_fEpsilon&nbsp;&nbsp;&nbsp;1e-15</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00095">95</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a50f43bd646bc1bdd08ae8c3f60cf579a"></a><!-- doxytag: member="openrave.h::IS_DEBUGLEVEL" ref="a50f43bd646bc1bdd08ae8c3f60cf579a" args="(level)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IS_DEBUGLEVEL</td>
+          <td>(</td>
+          <td class="paramtype">level&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;((OpenRAVE::RaveGetDebugLevel()&amp;OpenRAVE::Level_OutputMask)&gt;=(level))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a33810a34b021ce748f6beddd89a115f0"></a><!-- doxytag: member="openrave.h::MATH_ACOS" ref="a33810a34b021ce748f6beddd89a115f0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_ACOS&nbsp;&nbsp;&nbsp;RaveAcos</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00737">737</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6423f3ab6f6a46fdc1f6bf1148ec6e04"></a><!-- doxytag: member="openrave.h::MATH_ASIN" ref="a6423f3ab6f6a46fdc1f6bf1148ec6e04" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_ASIN&nbsp;&nbsp;&nbsp;RaveAsin</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00738">738</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac33778394ce05639b2a25dbe8de0e4f2"></a><!-- doxytag: member="openrave.h::MATH_ATAN2" ref="ac33778394ce05639b2a25dbe8de0e4f2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_ATAN2&nbsp;&nbsp;&nbsp;RaveAtan2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00739">739</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="af2bd357c9fdbdeb72cd23a786485711d"></a><!-- doxytag: member="openrave.h::MATH_COS" ref="af2bd357c9fdbdeb72cd23a786485711d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_COS&nbsp;&nbsp;&nbsp;RaveCos</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00732">732</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9eeb593dc39a364d67d6cfb380a374b1"></a><!-- doxytag: member="openrave.h::MATH_EXP" ref="a9eeb593dc39a364d67d6cfb380a374b1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_EXP&nbsp;&nbsp;&nbsp;RaveExp</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00730">730</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aab660c11001c27e6e524ae46b10a30e4"></a><!-- doxytag: member="openrave.h::MATH_FABS" ref="aab660c11001c27e6e524ae46b10a30e4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_FABS&nbsp;&nbsp;&nbsp;RaveFabs</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00742">742</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d45ed0ee701c308a9b0178eac483bb1"></a><!-- doxytag: member="openrave.h::MATH_LOG" ref="a6d45ed0ee701c308a9b0178eac483bb1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_LOG&nbsp;&nbsp;&nbsp;RaveLog</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00731">731</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac93e7fa0292433fd3a0731997f3b4a8f"></a><!-- doxytag: member="openrave.h::MATH_LOG10" ref="ac93e7fa0292433fd3a0731997f3b4a8f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_LOG10&nbsp;&nbsp;&nbsp;RaveLog10</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00736">736</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fcd48c13d182b8debefa7626468a104"></a><!-- doxytag: member="openrave.h::MATH_LOG2" ref="a5fcd48c13d182b8debefa7626468a104" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_LOG2&nbsp;&nbsp;&nbsp;RaveLog2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00735">735</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ad4d09ac20563c1cea529e88b4a391e"></a><!-- doxytag: member="openrave.h::MATH_POW" ref="a9ad4d09ac20563c1cea529e88b4a391e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_POW&nbsp;&nbsp;&nbsp;RavePow</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00740">740</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a4d09f88bed6c6069cffeed54469fb3"></a><!-- doxytag: member="openrave.h::MATH_SIN" ref="a4a4d09f88bed6c6069cffeed54469fb3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_SIN&nbsp;&nbsp;&nbsp;RaveSin</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00733">733</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb6aab6428be0644c979b648ba256534"></a><!-- doxytag: member="openrave.h::MATH_SQRT" ref="aeb6aab6428be0644c979b648ba256534" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_SQRT&nbsp;&nbsp;&nbsp;RaveSqrt</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00741">741</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a21627843077aa6657daba05a0452338f"></a><!-- doxytag: member="openrave.h::MATH_TAN" ref="a21627843077aa6657daba05a0452338f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATH_TAN&nbsp;&nbsp;&nbsp;RaveTan</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00734">734</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c8b71f8bce0e483451f3eeac08ac11b"></a><!-- doxytag: member="openrave.h::OPENRAVE_DUMMY_IMPLEMENTATION" ref="a8c8b71f8bce0e483451f3eeac08ac11b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENRAVE_DUMMY_IMPLEMENTATION&nbsp;&nbsp;&nbsp;{ throw OPENRAVE_EXCEPTION_FORMAT0(&quot;not implemented&quot;,ORE_NotImplemented); }</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae21b57a0ab5ecc52fb9b4a9432a68b36"></a><!-- doxytag: member="openrave.h::OPENRAVE_EXCEPTION_FORMAT" ref="ae21b57a0ab5ecc52fb9b4a9432a68b36" args="(s, args, errorcode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENRAVE_EXCEPTION_FORMAT</td>
+          <td>(</td>
+          <td class="paramtype">s, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">args, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">errorcode&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1openrave__exception.html">OpenRAVE::openrave_exception</a>(boost::str(boost::format(&quot;[%s:%d] &quot; s)%(__PRETTY_FUNCTION__)%(__LINE__)%args),errorcode)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad10ef3ff91ab904ff479d57d66ae2abd"></a><!-- doxytag: member="openrave.h::OPENRAVE_EXCEPTION_FORMAT0" ref="ad10ef3ff91ab904ff479d57d66ae2abd" args="(s, errorcode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENRAVE_EXCEPTION_FORMAT0</td>
+          <td>(</td>
+          <td class="paramtype">s, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">errorcode&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1openrave__exception.html">OpenRAVE::openrave_exception</a>(boost::str(boost::format(&quot;[%s:%d] &quot; s)%(__PRETTY_FUNCTION__)%(__LINE__)),errorcode)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a32f3ebce3b42c9014513ba54bbe362ec"></a><!-- doxytag: member="openrave.h::OPENRAVECOLOR_DEBUGLEVEL" ref="a32f3ebce3b42c9014513ba54bbe362ec" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENRAVECOLOR_DEBUGLEVEL&nbsp;&nbsp;&nbsp;2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00320">320</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7a18295c3800216becfc6c7dd538e12"></a><!-- doxytag: member="openrave.h::OPENRAVECOLOR_ERRORLEVEL" ref="ab7a18295c3800216becfc6c7dd538e12" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENRAVECOLOR_ERRORLEVEL&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00317">317</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a25aaf95d4ad22808cac742933db64a62"></a><!-- doxytag: member="openrave.h::OPENRAVECOLOR_FATALLEVEL" ref="a25aaf95d4ad22808cac742933db64a62" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENRAVECOLOR_FATALLEVEL&nbsp;&nbsp;&nbsp;5</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00316">316</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a683fe6249e34720e4874720c74ba01"></a><!-- doxytag: member="openrave.h::OPENRAVECOLOR_INFOLEVEL" ref="a1a683fe6249e34720e4874720c74ba01" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENRAVECOLOR_INFOLEVEL&nbsp;&nbsp;&nbsp;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00319">319</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a735c10819ba5fb9736dc0665ba897b88"></a><!-- doxytag: member="openrave.h::OPENRAVECOLOR_VERBOSELEVEL" ref="a735c10819ba5fb9736dc0665ba897b88" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENRAVECOLOR_VERBOSELEVEL&nbsp;&nbsp;&nbsp;4</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00321">321</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad686438ae73587abcf2616f01567a7ac"></a><!-- doxytag: member="openrave.h::OPENRAVECOLOR_WARNLEVEL" ref="ad686438ae73587abcf2616f01567a7ac" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENRAVECOLOR_WARNLEVEL&nbsp;&nbsp;&nbsp;3</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00318">318</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ec560a833d334f15fb49fa937820347"></a><!-- doxytag: member="openrave.h::RAVE_DEPRECATED" ref="a9ec560a833d334f15fb49fa937820347" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVE_DEPRECATED</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="openrave_8h_source.html">openrave.h</a> の <a class="el" href="openrave_8h_source.html#l00084">84</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c5058dd8a101f87dca4d6ca16bc7ebc"></a><!-- doxytag: member="openrave.h::RAVELOG_DEBUG" ref="a5c5058dd8a101f87dca4d6ca16bc7ebc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_DEBUG&nbsp;&nbsp;&nbsp;RAVELOG_DEBUGA</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>例: </b></dt><dd><a class="el" href="orpythonbinding_8cpp-example.html#a11">orpythonbinding.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="ac2e20bae3634222b0c13300d537e0dba"></a><!-- doxytag: member="openrave.h::RAVELOG_DEBUGA" ref="ac2e20bae3634222b0c13300d537e0dba" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_DEBUGA&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_DEBUGLEVEL,OpenRAVE::Level_Debug)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a438d0bc2b4f2c596e7564a362c25282c"></a><!-- doxytag: member="openrave.h::RAVELOG_DEBUGW" ref="a438d0bc2b4f2c596e7564a362c25282c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_DEBUGW&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_DEBUGLEVEL,OpenRAVE::Level_Debug)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4299f3db31dd3149dc36eeffbb6a65db"></a><!-- doxytag: member="openrave.h::RAVELOG_ERROR" ref="a4299f3db31dd3149dc36eeffbb6a65db" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_ERROR&nbsp;&nbsp;&nbsp;RAVELOG_ERRORA</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>例: </b></dt><dd><a class="el" href="customreader_8cpp-example.html#a19">customreader.cpp</a>, <a class="el" href="ikfastloader_8cpp-example.html#a8">ikfastloader.cpp</a>, <a class="el" href="orcollision_8cpp-example.html#a11">orcollision.cpp</a>, <a class="el" href="orikfilter_8cpp-example.html#a15">orikfilter.cpp</a>, と <a class="el" href="orplanning__ik_8cpp-example.html#a11">orplanning_ik.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="ae73eaa82f3c4151fc9595fb155b6f265"></a><!-- doxytag: member="openrave.h::RAVELOG_ERRORA" ref="ae73eaa82f3c4151fc9595fb155b6f265" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_ERRORA&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_ERRORLEVEL,OpenRAVE::Level_Error)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a65f08ba3e861309899be6a58699af7fa"></a><!-- doxytag: member="openrave.h::RAVELOG_ERRORW" ref="a65f08ba3e861309899be6a58699af7fa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_ERRORW&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_ERRORLEVEL,OpenRAVE::Level_Error)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68fcb9db405202c59a760eed602b6658"></a><!-- doxytag: member="openrave.h::RAVELOG_FATAL" ref="a68fcb9db405202c59a760eed602b6658" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_FATAL&nbsp;&nbsp;&nbsp;RAVELOG_FATALA</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae55a84da99325119f5c69badfca25aea"></a><!-- doxytag: member="openrave.h::RAVELOG_FATALA" ref="ae55a84da99325119f5c69badfca25aea" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_FATALA&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_FATALLEVEL,OpenRAVE::Level_Fatal)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ad77ae684d32522f13784512112c052"></a><!-- doxytag: member="openrave.h::RAVELOG_FATALW" ref="a8ad77ae684d32522f13784512112c052" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_FATALW&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_FATALLEVEL,OpenRAVE::Level_Fatal)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a334922a6794604207afe36b4feda230e"></a><!-- doxytag: member="openrave.h::RAVELOG_INFO" ref="a334922a6794604207afe36b4feda230e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_INFO&nbsp;&nbsp;&nbsp;RAVELOG_INFOA</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>例: </b></dt><dd><a class="el" href="customreader_8cpp-example.html#a10">customreader.cpp</a>, <a class="el" href="ikfastloader_8cpp-example.html#a1">ikfastloader.cpp</a>, <a class="el" href="opencvsaving_8cpp-example.html#a17">opencvsaving.cpp</a>, <a class="el" href="orcollision_8cpp-example.html#a1">orcollision.cpp</a>, <a class="el" href="orikfilter_8cpp-example.html#a4">orikfilter.cpp</a>, <a class="el" href="orloadviewer_8cpp-example.html#a5">orloadviewer.cpp</a>, <a class="el" href="orplanning__ik_8cpp-example.html#a16">orplanning_ik.cpp</a>, <a class="el" href="orplanning__module_8cpp-example.html#a12">orplanning_module.cpp</a>, <a class="el" href="orplanning__planner_8cpp-example.html#a10">orplanning_planner.cpp</a>, と <a class="el" href="plugincpp_8cpp-example.html#a11">plugincpp.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a545110e670ac69c5fbfe44dc874f08c5"></a><!-- doxytag: member="openrave.h::RAVELOG_INFOA" ref="a545110e670ac69c5fbfe44dc874f08c5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_INFOA&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_INFOLEVEL,OpenRAVE::Level_Info)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>例: </b></dt><dd><a class="el" href="customreader_8cpp-example.html#a34">customreader.cpp</a>, と <a class="el" href="orcollision_8cpp-example.html#a19">orcollision.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a152fac9cbf717b8eb1ec3a87b348b8a1"></a><!-- doxytag: member="openrave.h::RAVELOG_INFOW" ref="a152fac9cbf717b8eb1ec3a87b348b8a1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_INFOW&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_INFOLEVEL,OpenRAVE::Level_Info)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a97b1068d092cfe301c313a1eab67606b"></a><!-- doxytag: member="openrave.h::RAVELOG_LEVELA" ref="a97b1068d092cfe301c313a1eab67606b" args="(LEVEL, level)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_LEVELA</td>
+          <td>(</td>
+          <td class="paramtype">LEVEL, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">level&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(OpenRAVE::RaveGetDebugLevel()&amp;OpenRAVE::Level_OutputMask)&gt;=(level)&amp;&amp;(RAVEPRINTHEADER(LEVEL)&gt;0)&amp;&amp;OpenRAVE::RavePrintfA ## LEVEL</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad4115bf75a40e57e26a10b308a1b604d"></a><!-- doxytag: member="openrave.h::RAVELOG_LEVELW" ref="ad4115bf75a40e57e26a10b308a1b604d" args="(LEVEL, level)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_LEVELW</td>
+          <td>(</td>
+          <td class="paramtype">LEVEL, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">level&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(OpenRAVE::RaveGetDebugLevel()&amp;OpenRAVE::Level_OutputMask)&gt;=(level)&amp;&amp;(RAVEPRINTHEADER(LEVEL)&gt;0)&amp;&amp;OpenRAVE::RavePrintfW ## LEVEL</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5731d8d29ec32fe32d4901990066a95c"></a><!-- doxytag: member="openrave.h::RAVELOG_VERBOSE" ref="a5731d8d29ec32fe32d4901990066a95c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_VERBOSE&nbsp;&nbsp;&nbsp;RAVELOG_VERBOSEA</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aada8fd1e037ac964f67f1762341d4331"></a><!-- doxytag: member="openrave.h::RAVELOG_VERBOSEA" ref="aada8fd1e037ac964f67f1762341d4331" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_VERBOSEA&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_VERBOSELEVEL,OpenRAVE::Level_Verbose)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc984e232f832bb0c40e827bf20856ae"></a><!-- doxytag: member="openrave.h::RAVELOG_VERBOSEW" ref="adc984e232f832bb0c40e827bf20856ae" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_VERBOSEW&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_VERBOSELEVEL,OpenRAVE::Level_Verbose)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9bbbf668aa39f398c341e946ab8a43f5"></a><!-- doxytag: member="openrave.h::RAVELOG_WARN" ref="a9bbbf668aa39f398c341e946ab8a43f5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_WARN&nbsp;&nbsp;&nbsp;RAVELOG_WARNA</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>例: </b></dt><dd><a class="el" href="customreader_8cpp-example.html#a35">customreader.cpp</a>, <a class="el" href="ormulticontrol_8cpp-example.html#a15">ormulticontrol.cpp</a>, <a class="el" href="orplanning__planner_8cpp-example.html#a19">orplanning_planner.cpp</a>, と <a class="el" href="orpythonbinding_8cpp-example.html#a15">orpythonbinding.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a84b18245e5f61fb84b20be3028240acd"></a><!-- doxytag: member="openrave.h::RAVELOG_WARNA" ref="a84b18245e5f61fb84b20be3028240acd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_WARNA&nbsp;&nbsp;&nbsp;RAVELOG_LEVELA(_WARNLEVEL,OpenRAVE::Level_Warn)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a429ed081af6611131176fcc097438e"></a><!-- doxytag: member="openrave.h::RAVELOG_WARNW" ref="a3a429ed081af6611131176fcc097438e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVELOG_WARNW&nbsp;&nbsp;&nbsp;RAVELOG_LEVELW(_WARNLEVEL,OpenRAVE::Level_Warn)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5837ac396f0d2fe14a54ca77a0b79167"></a><!-- doxytag: member="openrave.h::RAVEPRINTHEADER" ref="a5837ac396f0d2fe14a54ca77a0b79167" args="(LEVEL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAVEPRINTHEADER</td>
+          <td>(</td>
+          <td class="paramtype">LEVEL&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;OpenRAVE::RavePrintfA ## LEVEL(&quot;[%s:%d] &quot;, OpenRAVE::RaveGetSourceFilename(__FILE__), __LINE__)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a2a10c7d596cfa87d7ab42587c5c7e7e5"></a><!-- doxytag: member="openrave.h::BOOST_STATIC_ASSERT" ref="a2a10c7d596cfa87d7ab42587c5c7e7e5" args="(OPENRAVE_VERSION_PATCH &gt;=0 &amp;&amp;OPENRAVE_VERSION_PATCH&lt;=255)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_STATIC_ASSERT </td>
+          <td>(</td>
+          <td class="paramtype">OPENRAVE_VERSION_PATCH &gt;=0 &amp;&amp;OPENRAVE_VERSION_PATCH&lt;=&nbsp;</td>
+          <td class="paramname"> <em>255</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3aab05ed9073cc385b2c97fb6280d118"></a><!-- doxytag: member="openrave.h::BOOST_STATIC_ASSERT" ref="a3aab05ed9073cc385b2c97fb6280d118" args="(OPENRAVE_VERSION_MINOR &gt;=0 &amp;&amp;OPENRAVE_VERSION_MINOR&lt;=255)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_STATIC_ASSERT </td>
+          <td>(</td>
+          <td class="paramtype">OPENRAVE_VERSION_MINOR &gt;=0 &amp;&amp;OPENRAVE_VERSION_MINOR&lt;=&nbsp;</td>
+          <td class="paramname"> <em>255</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae6f701bfe3caa8d91ee9793ede76699"></a><!-- doxytag: member="openrave.h::BOOST_STATIC_ASSERT" ref="aae6f701bfe3caa8d91ee9793ede76699" args="(OPENRAVE_VERSION_MAJOR &gt;=0 &amp;&amp;OPENRAVE_VERSION_MAJOR&lt;=255)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_STATIC_ASSERT </td>
+          <td>(</td>
+          <td class="paramtype">OPENRAVE_VERSION_MAJOR &gt;=0 &amp;&amp;OPENRAVE_VERSION_MAJOR&lt;=&nbsp;</td>
+          <td class="paramname"> <em>255</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:42:56 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

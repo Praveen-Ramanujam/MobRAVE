@@ -1,0 +1,18 @@
+K 13
+svn:externals
+V 133
+arduino https://nxtduemu.googlecode.com/svn/trunk/
+motcont http://www.mindstorms.rwth-aachen.de/subversion/trunk/tools/MotorControl/
+
+K 10
+svn:ignore
+V 20
+MANIFEST
+build
+dist
+
+K 13
+svn:mergeinfo
+V 20
+/branches/rhn:89-100
+END

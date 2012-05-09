@@ -1,0 +1,1132 @@
+\hypertarget{classOpenRAVE_1_1EnvironmentBase}{
+\subsection{EnvironmentBase Class Reference}
+\label{classOpenRAVE_1_1EnvironmentBase}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+}
+
+
+Maintains a world state, which serves as the gateway to all functions offered through OpenRAVE. See \hyperlink{architecture__concepts_arch_environment}{Environment Concepts}.  
+
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a84693792fa8cba90b312c0b1caf53716}{Destroy} ()=0
+\begin{DoxyCompactList}\small\item\em Releases all environment resources, should be always called when environment stops being used. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a43a787400d2a563b9eee1a149225c18a}{Reset} ()=0
+\begin{DoxyCompactList}\small\item\em Resets all objects of the scene (preserves all problems, planners). {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ab3a2d5e41d756988959d9f5cdccfe284}{
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_ab3a2d5e41d756988959d9f5cdccfe284}{SetUserData} (UserDataPtr data)}
+\label{classOpenRAVE_1_1EnvironmentBase_ab3a2d5e41d756988959d9f5cdccfe284}
+
+\begin{DoxyCompactList}\small\item\em set user data \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a975ebca32c743c8530807758e7c46618}{
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a975ebca32c743c8530807758e7c46618}{GetUserData} () const }
+\label{classOpenRAVE_1_1EnvironmentBase_a975ebca32c743c8530807758e7c46618}
+
+\begin{DoxyCompactList}\small\item\em return the user custom data \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ae3e4c1172fe049726b74a1cb58e13a03}{
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_ae3e4c1172fe049726b74a1cb58e13a03}{GlobalState} ()=0}
+\label{classOpenRAVE_1_1EnvironmentBase_ae3e4c1172fe049726b74a1cb58e13a03}
+
+\begin{DoxyCompactList}\small\item\em Returns the \hyperlink{namespaceOpenRAVE}{OpenRAVE} global state, used for initializing plugins. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a86cc388f010ecee390ea6eadedb238e8}{
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a86cc388f010ecee390ea6eadedb238e8}{OwnInterface} (InterfaceBasePtr pinterface)=0}
+\label{classOpenRAVE_1_1EnvironmentBase_a86cc388f010ecee390ea6eadedb238e8}
+
+\begin{DoxyCompactList}\small\item\em Environment will own the interface until \hyperlink{classOpenRAVE_1_1EnvironmentBase_a84693792fa8cba90b312c0b1caf53716}{EnvironmentBase::Destroy} is called. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a714c39fcfdcdf7f096335896c998b30f}{
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a714c39fcfdcdf7f096335896c998b30f}{DisownInterface} (InterfaceBasePtr pinterface)=0}
+\label{classOpenRAVE_1_1EnvironmentBase_a714c39fcfdcdf7f096335896c998b30f}
+
+\begin{DoxyCompactList}\small\item\em Remove ownership of the interface. \item\end{DoxyCompactList}\item 
+virtual EnvironmentBasePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_aa3144d0f14a2da063a5dfde496941c40}{CloneSelf} (int options)=0
+\begin{DoxyCompactList}\small\item\em Create and return a clone of the current environment. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_aa5e2d9fb5347f1aff0b726279b98b130}{
+virtual int \hyperlink{classOpenRAVE_1_1EnvironmentBase_aa5e2d9fb5347f1aff0b726279b98b130}{AddModule} (ModuleBasePtr module, const std::string \&cmdargs)=0}
+\label{classOpenRAVE_1_1EnvironmentBase_aa5e2d9fb5347f1aff0b726279b98b130}
+
+\begin{DoxyCompactList}\small\item\em Load a new module, need to Lock if calling outside simulation thread. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a3d0482313a9ef3be17b91495f2fa9043}{RemoveProblem} (ModuleBasePtr prob) \hyperlink{classOpenRAVE_1_1EnvironmentBase_acb298cf75a95a9dcfdc2bfccd7321413}{RAVE\_\-DEPRECATED}=0
+\item 
+virtual boost::shared\_\-ptr$<$ void $>$ \hyperlink{classOpenRAVE_1_1EnvironmentBase_ac571ddc6ccffc3b7cb3bf345f8d29b78}{GetModules} (std::list$<$ ModuleBasePtr $>$ \&listModules) const =0
+\begin{DoxyCompactList}\small\item\em Returns a list of loaded problems with a pointer to a lock preventing the list from being modified. \item\end{DoxyCompactList}\item 
+virtual EnvironmentMutex \& \hyperlink{classOpenRAVE_1_1EnvironmentBase_a5279da67a9256d95ca7e1140d49af724}{GetMutex} () const =0
+\begin{DoxyCompactList}\small\item\em Return the global environment mutex used to protect environment information access in multi-\/threaded environments. \item\end{DoxyCompactList}\item 
+virtual const std::string \& \hyperlink{classOpenRAVE_1_1EnvironmentBase_abb0d60e241f34412cb0e002ddbbbdb50}{GetHomeDirectory} () const \hyperlink{classOpenRAVE_1_1EnvironmentBase_acb298cf75a95a9dcfdc2bfccd7321413}{RAVE\_\-DEPRECATED}=0
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Physics and Simulation}\par
+{\em \label{_amgrp989eadcf88740d0033db2c36bbbdd040}
+ }\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a4b682d62526e5840d8fdc25343ee563c}{SetPhysicsEngine} (PhysicsEngineBasePtr physics)=0
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a35c7646815b726666dde070c3bba6da0}{
+virtual PhysicsEngineBasePtr {\bfseries GetPhysicsEngine} () const =0}
+\label{classOpenRAVE_1_1EnvironmentBase_a35c7646815b726666dde070c3bba6da0}
+
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_aebf2566ccd76644b0040f01e70d2c189}{StepSimulation} (dReal timeStep)=0
+\begin{DoxyCompactList}\small\item\em Makes one simulation time step. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a4e00e5f00d51ae10aa6bc017f827fea7}{StartSimulation} (dReal fDeltaTime, bool bRealTime=true)=0
+\begin{DoxyCompactList}\small\item\em Start the internal simulation thread. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a2fcaf7d48ec497898ad0ef0c5a3eb89b}{StopSimulation} ()=0
+\begin{DoxyCompactList}\small\item\em Stops the internal physics loop, stops calling SimulateStep for all modules. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a0267abbf0177d8ee2570c6a57b59cc39}{IsSimulationRunning} () const =0
+\begin{DoxyCompactList}\small\item\em Return true if inner simulation loop is executing. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual uint64\_\-t \hyperlink{classOpenRAVE_1_1EnvironmentBase_aa9b102e35855f8dfd216e282e179fe3c}{GetSimulationTime} ()=0
+\begin{DoxyCompactList}\small\item\em Return simulation time since the start of the environment (in microseconds). {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Object Setting and Querying}\par
+{\em \label{_amgrpaf76c21bb2575e8baa8ec7b09e379de9}
+ \label{classOpenRAVE_1_1EnvironmentBase_env_objects}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_env_objects}{}
+ }\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a979950f27af5a2ce3d8b622cd98b33f5}{AddKinBody} (KinBodyPtr body, bool bAnonymous=false)=0
+\begin{DoxyCompactList}\small\item\em Add a body to the environment. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_ae16bdfaaed85f17bffd696e17284d359}{AddRobot} (RobotBasePtr robot, bool bAnonymous=false)=0
+\begin{DoxyCompactList}\small\item\em add a robot to the environment \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_ad1160d65f608b83f8830010a93ae2991}{AddSensor} (SensorBasePtr sensor, bool bAnonymous=false)=0
+\begin{DoxyCompactList}\small\item\em registers the sensor with the environment and turns its power on. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_aff29a5df3c89628089351e9cb68b474e}{GetSensors} (std::vector$<$ SensorBasePtr $>$ \&sensors) const =0
+\begin{DoxyCompactList}\small\item\em Fill an array with all sensors loaded in the environment. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a00f7d94b59a27465a1153c064b25903e}{RemoveKinBody} (KinBodyPtr body) \hyperlink{classOpenRAVE_1_1EnvironmentBase_acb298cf75a95a9dcfdc2bfccd7321413}{RAVE\_\-DEPRECATED}=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_add0aaa9d6ac1aaeb25b3c71b85a93e79}{Remove} (InterfaceBasePtr obj)=0
+\begin{DoxyCompactList}\small\item\em Removes a currently loaded interface from the environment. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual KinBodyPtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_ad56e81b8f92ad253a7a15bfc3e022e9d}{GetKinBody} (const std::string \&name) const =0
+\begin{DoxyCompactList}\small\item\em Query a body from its name. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual SensorBasePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a44f7b20622f42251dcdec78911f0fb20}{GetSensor} (const std::string \&name) const =0
+\begin{DoxyCompactList}\small\item\em Query a sensor from its name. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual RobotBasePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a97772e0635e9a310288a9a47977d81f2}{GetRobot} (const std::string \&name) const =0
+\begin{DoxyCompactList}\small\item\em Query a robot from its name. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a7d408bb4332225ed07ac388b13d11a59}{GetBodies} (std::vector$<$ KinBodyPtr $>$ \&bodies) const =0
+\begin{DoxyCompactList}\small\item\em Get all bodies loaded in the environment (including robots). {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a11cfa598243a4e0a9ced2e18e32f5c14}{
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a11cfa598243a4e0a9ced2e18e32f5c14}{GetRobots} (std::vector$<$ RobotBasePtr $>$ \&robots) const =0}
+\label{classOpenRAVE_1_1EnvironmentBase_a11cfa598243a4e0a9ced2e18e32f5c14}
+
+\begin{DoxyCompactList}\small\item\em Fill an array with all robots loaded in the environment. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_ab1f4975774bc81e490b22698302a61fa}{AddViewer} (ViewerBasePtr pviewer)=0
+\begin{DoxyCompactList}\small\item\em adds a viewer to the environment \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a90f75894de7b1b01e9a2e16021ac3f7d}{AttachViewer} (ViewerBasePtr pnewviewer) \hyperlink{classOpenRAVE_1_1EnvironmentBase_acb298cf75a95a9dcfdc2bfccd7321413}{RAVE\_\-DEPRECATED}
+\item 
+virtual ViewerBasePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a422dc0ce03020fb713107d287510af83}{GetViewer} (const std::string \&name=\char`\"{}\char`\"{}) const =0
+\begin{DoxyCompactList}\small\item\em Return a viewer with a particular name. \item\end{DoxyCompactList}\item 
+virtual boost::shared\_\-ptr$<$ boost::mutex::scoped\_\-lock $>$ \hyperlink{classOpenRAVE_1_1EnvironmentBase_aaabc93c6dca5c4a1362b20bddb5d1e14}{GetViewers} (std::list$<$ ViewerBasePtr $>$ \&listViewers) const =0
+\begin{DoxyCompactList}\small\item\em Returns a list of loaded viewers with a pointer to a lock preventing the list from being modified. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a58c19f8ad04b2a8b6341677420ad9b6a}{GetPublishedBodies} (std::vector$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1BodyState}{KinBody::BodyState} $>$ \&vbodies)=0
+\begin{DoxyCompactList}\small\item\em Retrieve published bodies, completes even if environment is locked. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a590ea693633476a7aa2bc1c79bff8549}{UpdatePublishedBodies} ()=0
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a9b293f0da231072d2e50a4a4e9299167}{
+virtual KinBodyPtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a9b293f0da231072d2e50a4a4e9299167}{GetBodyFromEnvironmentId} (int id)=0}
+\label{classOpenRAVE_1_1EnvironmentBase_a9b293f0da231072d2e50a4a4e9299167}
+
+\begin{DoxyCompactList}\small\item\em Get the corresponding body from its unique network id. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a19e34289d58ae5adeabd8fd431986dd5}{Triangulate} (\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{KinBody::Link::TRIMESH} \&trimesh, KinBodyConstPtr pbody)=0
+\begin{DoxyCompactList}\small\item\em Triangulation of the body including its current transformation. trimesh will be appended the new data. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a9773d98d124c6fcbfbcc1aa47ee4967e}{TriangulateScene} (\hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{KinBody::Link::TRIMESH} \&trimesh, \hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abee}{SelectionOptions} options, const std::string \&selectname)=0
+\begin{DoxyCompactList}\small\item\em General triangulation of the whole scene. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf }\par
+{\em \label{_amgrpd41d8cd98f00b204e9800998ecf8427e}
+ }\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a3b4f2f14db4059585686d8e457190df7}{SetDebugLevel} (uint32\_\-t level)=0
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsubsection*{File Loading and Parsing}
+\label{_amgrpbe57ebfdd5cd59b6daf2decf8cad30e1}
+ \label{classOpenRAVE_1_1EnvironmentBase_env_loading}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_env_loading}{}
+ \begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abee}{SelectionOptions} \{ \par
+\hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeadcf69b48faa9d608415e8c26b6f7d39f}{SO\_\-NoRobots} =  1, 
+\hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeaafafd3156ee342957abf594bac470fbc}{TO\_\-Obstacles} =  1, 
+\hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeaf7938037970de9827745550a0574d1bd}{SO\_\-Robots} =  2, 
+\hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea230100aa4237789f54a92882a3bd834a}{TO\_\-Robots} =  2, 
+\par
+\hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea6e30c932d2401d67c6dde8bae8e4f1a5}{SO\_\-Everything} =  3, 
+\hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea5162d38d0e4ad32bae85b3245dd68ace}{TO\_\-Everything} =  3, 
+\hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeead38e0a7ef6a153e9c2ee4485c3166fc9}{SO\_\-Body} =  4, 
+\hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeabc35894adcdc121dc829954c3e896944}{TO\_\-Body} =  4, 
+\par
+\hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeae9222060c4b6a63d6c03a7e0dc0a7f63}{SO\_\-AllExceptBody} =  5, 
+\hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeab6ffc5682ebdb916d35f360c3a2415a6}{TO\_\-AllExceptBody} =  5, 
+\hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea5448bc4aad573a961c579316fa195d92}{SO\_\-BodyList} =  6
+ \}
+\begin{DoxyCompactList}\small\item\em A set of options used to select particular parts of the scene. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a25f0d55fb1a4d37b618e28df346dcafe}{
+typedef \hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abee}{SelectionOptions} {\bfseries TriangulateOptions}}
+\label{classOpenRAVE_1_1EnvironmentBase_a25f0d55fb1a4d37b618e28df346dcafe}
+
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0937ee944308cece16c98c035c40eb7c}{
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a0937ee944308cece16c98c035c40eb7c}{Load} (const std::string \&filename, const AttributesList \&atts=AttributesList())=0}
+\label{classOpenRAVE_1_1EnvironmentBase_a0937ee944308cece16c98c035c40eb7c}
+
+\begin{DoxyCompactList}\small\item\em Loads a scene from a file and adds all objects in the environment. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0b1bc7ab475bb5cb1b1d7d0fb3c77b5d}{
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a0b1bc7ab475bb5cb1b1d7d0fb3c77b5d}{LoadData} (const std::string \&data, const AttributesList \&atts=AttributesList())=0}
+\label{classOpenRAVE_1_1EnvironmentBase_a0b1bc7ab475bb5cb1b1d7d0fb3c77b5d}
+
+\begin{DoxyCompactList}\small\item\em Loads a scene from in-\/memory data and adds all objects in the environment. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a41363bcb26f68d8d25a0f3270558219e}{
+virtual bool {\bfseries LoadXMLData} (const std::string \&data, const AttributesList \&atts=AttributesList())}
+\label{classOpenRAVE_1_1EnvironmentBase_a41363bcb26f68d8d25a0f3270558219e}
+
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1EnvironmentBase_a3ad623878891c5dc28f355d1cf348793}{Save} (const std::string \&filename, \hyperlink{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abee}{SelectionOptions} options=SO\_\-Everything, const std::string \&selectname=\char`\"{}\char`\"{})=0
+\begin{DoxyCompactList}\small\item\em Saves a scene depending on the filename extension. Default is in COLLADA format. \item\end{DoxyCompactList}\item 
+virtual RobotBasePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_ac8438f3ee051493a82ef78b92e9309f0}{ReadRobotURI} (RobotBasePtr robot, const std::string \&filename, const AttributesList \&atts=AttributesList())=0
+\begin{DoxyCompactList}\small\item\em Initializes a robot from a resource file. The robot is not added to the environment when calling this function. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a93df9cb2035fd4489282e9fbe0f96b93}{
+virtual RobotBasePtr {\bfseries ReadRobotXMLFile} (RobotBasePtr robot, const std::string \&filename, const AttributesList \&atts=AttributesList())}
+\label{classOpenRAVE_1_1EnvironmentBase_a93df9cb2035fd4489282e9fbe0f96b93}
+
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a3f8502be4e272feaacbcb5b7434170be}{
+virtual RobotBasePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a3f8502be4e272feaacbcb5b7434170be}{ReadRobotURI} (const std::string \&filename)}
+\label{classOpenRAVE_1_1EnvironmentBase_a3f8502be4e272feaacbcb5b7434170be}
+
+\begin{DoxyCompactList}\small\item\em Creates a new robot from a file with no extra load options specified. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a43c0a583e42aa537aa889a6a637a4568}{
+virtual RobotBasePtr {\bfseries ReadRobotXMLFile} (const std::string \&filename)}
+\label{classOpenRAVE_1_1EnvironmentBase_a43c0a583e42aa537aa889a6a637a4568}
+
+\item 
+virtual RobotBasePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a70931fb3eb67326208afdc830304a0b6}{ReadRobotData} (RobotBasePtr robot, const std::string \&data, const AttributesList \&atts=AttributesList())=0
+\begin{DoxyCompactList}\small\item\em Initialize a robot from in-\/memory data. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ab4facbc2ca164d0ffc5842fd898e682c}{
+virtual RobotBasePtr {\bfseries ReadRobotXMLData} (RobotBasePtr robot, const std::string \&data, const AttributesList \&atts=AttributesList())}
+\label{classOpenRAVE_1_1EnvironmentBase_ab4facbc2ca164d0ffc5842fd898e682c}
+
+\item 
+virtual KinBodyPtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_ab9fda0698f28bd76aefcad4f5ec4340a}{ReadKinBodyURI} (KinBodyPtr body, const std::string \&filename, const AttributesList \&atts=AttributesList())=0
+\begin{DoxyCompactList}\small\item\em Initializes a kinematic body from a resource file. The body is not added to the environment when calling this function. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a047abcaeeef915017c37dd31d34866e8}{
+virtual KinBodyPtr {\bfseries ReadKinBodyXMLFile} (KinBodyPtr body, const std::string \&filename, const AttributesList \&atts=AttributesList())}
+\label{classOpenRAVE_1_1EnvironmentBase_a047abcaeeef915017c37dd31d34866e8}
+
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_aaaa3f743069cc769e571f6e4ec3a732a}{
+virtual KinBodyPtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_aaaa3f743069cc769e571f6e4ec3a732a}{ReadKinBodyURI} (const std::string \&filename)}
+\label{classOpenRAVE_1_1EnvironmentBase_aaaa3f743069cc769e571f6e4ec3a732a}
+
+\begin{DoxyCompactList}\small\item\em Creates a new kinbody from an XML file with no extra load options specified. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ac70270fc6d4580cdaed771f5fe4d2795}{
+virtual KinBodyPtr {\bfseries ReadKinBodyXMLFile} (const std::string \&filename)}
+\label{classOpenRAVE_1_1EnvironmentBase_ac70270fc6d4580cdaed771f5fe4d2795}
+
+\item 
+virtual KinBodyPtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a5539fbbaefc308651ace750c133f3adf}{ReadKinBodyData} (KinBodyPtr body, const std::string \&data, const AttributesList \&atts=AttributesList())=0
+\begin{DoxyCompactList}\small\item\em Initializes a kinematic body from in-\/memory data. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_af8fde0c46dbd2c833936e7524ab54436}{
+virtual KinBodyPtr {\bfseries ReadKinBodyXMLData} (KinBodyPtr body, const std::string \&data, const AttributesList \&atts=AttributesList())}
+\label{classOpenRAVE_1_1EnvironmentBase_af8fde0c46dbd2c833936e7524ab54436}
+
+\item 
+virtual InterfaceBasePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_abe79c2e2ad5f11d0c978269d737816dd}{ReadInterfaceURI} (InterfaceBasePtr pinterface, InterfaceType type, const std::string \&filename, const AttributesList \&atts=AttributesList())=0
+\begin{DoxyCompactList}\small\item\em Initializes an interface from a resource file. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ae5185403a61b5ba3bf92fa8513bc108c}{
+virtual InterfaceBasePtr {\bfseries ReadInterfaceXMLFile} (InterfaceBasePtr pinterface, InterfaceType type, const std::string \&filename, const AttributesList \&atts=AttributesList())}
+\label{classOpenRAVE_1_1EnvironmentBase_ae5185403a61b5ba3bf92fa8513bc108c}
+
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a6aa2fca70fe18cb21cca37300669e025}{
+virtual InterfaceBasePtr {\bfseries ReadInterfaceURI} (const std::string \&filename, const AttributesList \&atts=AttributesList())=0}
+\label{classOpenRAVE_1_1EnvironmentBase_a6aa2fca70fe18cb21cca37300669e025}
+
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ae0eaa5085685e141912cb4ebbcaef986}{
+virtual InterfaceBasePtr {\bfseries ReadInterfaceXMLFile} (const std::string \&filename, const AttributesList \&atts=AttributesList())}
+\label{classOpenRAVE_1_1EnvironmentBase_ae0eaa5085685e141912cb4ebbcaef986}
+
+\item 
+virtual InterfaceBasePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_aceef6e28746bc88931aa1c863c9478f6}{ReadInterfaceData} (InterfaceBasePtr pinterface, InterfaceType type, const std::string \&data, const AttributesList \&atts=AttributesList())=0
+\begin{DoxyCompactList}\small\item\em Initializes an interface from in-\/memory data. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_aeef0fe370eea0dc498db5116aac227af}{
+virtual InterfaceBasePtr {\bfseries ReadInterfaceXMLData} (InterfaceBasePtr pinterface, InterfaceType type, const std::string \&data, const AttributesList \&atts=AttributesList())}
+\label{classOpenRAVE_1_1EnvironmentBase_aeef0fe370eea0dc498db5116aac227af}
+
+\item 
+virtual boost::shared\_\-ptr$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{KinBody::Link::TRIMESH} $>$ \hyperlink{classOpenRAVE_1_1EnvironmentBase_ac12a12b9515823e2371cd4c04b201a6c}{ReadTrimeshURI} (boost::shared\_\-ptr$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{KinBody::Link::TRIMESH} $>$ ptrimesh, const std::string \&filename, const AttributesList \&atts=AttributesList())=0
+\begin{DoxyCompactList}\small\item\em reads in the rigid geometry of a resource file into a TRIMESH structure \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ab7ec023d9a5f3435ee25f2be462d74c6}{
+virtual boost::shared\_\-ptr$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{KinBody::Link::TRIMESH} $>$ {\bfseries ReadTrimeshFile} (boost::shared\_\-ptr$<$ \hyperlink{classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH}{KinBody::Link::TRIMESH} $>$ ptrimesh, const std::string \&filename, const AttributesList \&atts=AttributesList())}
+\label{classOpenRAVE_1_1EnvironmentBase_ab7ec023d9a5f3435ee25f2be462d74c6}
+
+\item 
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a15f83ec6ea57058090ca016f06e63870}{RegisterXMLReader} (InterfaceType type, const std::string \&xmltag, const CreateXMLReaderFn \&fn) \hyperlink{classOpenRAVE_1_1EnvironmentBase_acb298cf75a95a9dcfdc2bfccd7321413}{RAVE\_\-DEPRECATED}=0
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a4a315546105f2114eb17188fd6cdcc93}{
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a4a315546105f2114eb17188fd6cdcc93}{ParseXMLFile} (BaseXMLReaderPtr preader, const std::string \&filename) \hyperlink{classOpenRAVE_1_1EnvironmentBase_acb298cf75a95a9dcfdc2bfccd7321413}{RAVE\_\-DEPRECATED}=0}
+\label{classOpenRAVE_1_1EnvironmentBase_a4a315546105f2114eb17188fd6cdcc93}
+
+\begin{DoxyCompactList}\small\item\em Parses a file for \hyperlink{namespaceOpenRAVE}{OpenRAVE} XML formatted data. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a9895152450985d0a439b851d8ec78d7f}{ParseXMLData} (BaseXMLReaderPtr preader, const std::string \&data) \hyperlink{classOpenRAVE_1_1EnvironmentBase_acb298cf75a95a9dcfdc2bfccd7321413}{RAVE\_\-DEPRECATED}=0
+\begin{DoxyCompactList}\small\item\em Parses a data file for XML data. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Collision specific functions.}
+\label{_amgrpef0faa32f592cc67b0a4ecf86076aa0d}
+Each function takes an optional pointer to a \hyperlink{classOpenRAVE_1_1CollisionReport}{CollisionReport} structure and returns true if collision occurs. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}}
+
+\label{classOpenRAVE_1_1EnvironmentBase_env_collision_checking}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_env_collision_checking}{}
+ \begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a28e410489b8d769bfc03a29283beff59}{
+typedef boost::function$<$ \hyperlink{namespaceOpenRAVE_aec38ff628d76ac03cb4ac5d8f5cf3664}{CollisionAction}(CollisionReportPtr, bool)$>$ {\bfseries CollisionCallbackFn}}
+\label{classOpenRAVE_1_1EnvironmentBase_a28e410489b8d769bfc03a29283beff59}
+
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a834baeb37724a8ec7c646f4dcb8068c4}{
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a834baeb37724a8ec7c646f4dcb8068c4}{SetCollisionChecker} (CollisionCheckerBasePtr pchecker)=0}
+\label{classOpenRAVE_1_1EnvironmentBase_a834baeb37724a8ec7c646f4dcb8068c4}
+
+\begin{DoxyCompactList}\small\item\em set the global environment collision checker \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a5ab1aa7fd5f2eb4b54dfac009c1e2804}{
+virtual CollisionCheckerBasePtr {\bfseries GetCollisionChecker} () const =0}
+\label{classOpenRAVE_1_1EnvironmentBase_a5ab1aa7fd5f2eb4b54dfac009c1e2804}
+
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a032bda10dc517c50606781511da243d3}{CheckCollision} (KinBodyConstPtr pbody1, CollisionReportPtr report=CollisionReportPtr())=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_ab286174aabc8a0e8b090b25963a531b3}{CheckCollision} (KinBodyConstPtr pbody1, KinBodyConstPtr pbody2, CollisionReportPtr report=CollisionReportPtr())=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_ac4d2da56daf4dbd95074bf2dd72974a9}{CheckCollision} (KinBody::LinkConstPtr plink, CollisionReportPtr report=CollisionReportPtr())=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_abc391362f1952f15cd5a27fdd9b8a65d}{CheckCollision} (KinBody::LinkConstPtr plink1, KinBody::LinkConstPtr plink2, CollisionReportPtr report=CollisionReportPtr())=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_ab14f3598db6c781c3f2f6ef188fdeb3f}{CheckCollision} (KinBody::LinkConstPtr plink, KinBodyConstPtr pbody, CollisionReportPtr report=CollisionReportPtr())=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a8c2bdc1a68281fb48214f3c141dc26a9}{CheckCollision} (KinBody::LinkConstPtr plink, const std::vector$<$ KinBodyConstPtr $>$ \&vbodyexcluded, const std::vector$<$ KinBody::LinkConstPtr $>$ \&vlinkexcluded, CollisionReportPtr report=CollisionReportPtr())=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a013763101e3cb1fcad594c030e5472fe}{CheckCollision} (KinBodyConstPtr pbody, const std::vector$<$ KinBodyConstPtr $>$ \&vbodyexcluded, const std::vector$<$ KinBody::LinkConstPtr $>$ \&vlinkexcluded, CollisionReportPtr report=CollisionReportPtr())=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a0031940d50e5853bed26dd8f37eeb9d6}{CheckCollision} (const \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{RAY} \&ray, KinBody::LinkConstPtr plink, CollisionReportPtr report=CollisionReportPtr())=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a91d971fb7be4e4b653fd02ee9bd6528c}{CheckCollision} (const \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{RAY} \&ray, KinBodyConstPtr pbody, CollisionReportPtr report=CollisionReportPtr())=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a4c0906fc2d591ac8940c55ad5a16969f}{CheckCollision} (const \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{RAY} \&ray, CollisionReportPtr report=CollisionReportPtr())=0
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1EnvironmentBase_a5e1f41d8d334da4d500a4cc107bfb696}{CheckSelfCollision} (KinBodyConstPtr pbody, CollisionReportPtr report=CollisionReportPtr())=0
+\item 
+virtual boost::shared\_\-ptr$<$ void $>$ \hyperlink{classOpenRAVE_1_1EnvironmentBase_a04548c3dc0b848f82c493a27ce85aedc}{RegisterCollisionCallback} (const CollisionCallbackFn \&callback)=0
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_af5c319a9f6a30e2dbc270ddb33199ffa}{
+virtual bool {\bfseries HasRegisteredCollisionCallbacks} () const =0}
+\label{classOpenRAVE_1_1EnvironmentBase_af5c319a9f6a30e2dbc270ddb33199ffa}
+
+\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a9333624d7ad9c3bc97f68bbe80d73f0f}{
+virtual void {\bfseries GetRegisteredCollisionCallbacks} (std::list$<$ CollisionCallbackFn $>$ \&) const =0}
+\label{classOpenRAVE_1_1EnvironmentBase_a9333624d7ad9c3bc97f68bbe80d73f0f}
+
+\end{DoxyCompactItemize}
+\subsubsection*{3D plotting methods.}
+\label{_amgrp17df1b1b7c6672ea6063fd55d8c517c4}
+ \label{classOpenRAVE_1_1EnvironmentBase_env_plotting}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_env_plotting}{}
+ \begin{DoxyCompactItemize}
+\item 
+typedef OpenRAVE::GraphHandlePtr GraphHandlePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_acb298cf75a95a9dcfdc2bfccd7321413}{RAVE\_\-DEPRECATED}
+\item 
+virtual OpenRAVE::GraphHandlePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a390a0a4590d91f0994d6bf2781688266}{plot3} (const float $\ast$ppoints, int numPoints, int stride, float fPointSize, const RaveVector$<$ float $>$ \&color=RaveVector$<$ float $>$(1, 0.5, 0.5, 1), int drawstyle=0)=0
+\begin{DoxyCompactList}\small\item\em Plot a point cloud with one color. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual OpenRAVE::GraphHandlePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a367a6d07f961f2ed0a48378c7dea2336}{plot3} (const float $\ast$ppoints, int numPoints, int stride, float fPointSize, const float $\ast$colors, int drawstyle=0, bool bhasalpha=false)=0
+\begin{DoxyCompactList}\small\item\em . Plots 3D points with individual colors. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual OpenRAVE::GraphHandlePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a378e5e874d3a39868cd787e5936cf7fa}{drawlinestrip} (const float $\ast$ppoints, int numPoints, int stride, float fwidth, const RaveVector$<$ float $>$ \&color=RaveVector$<$ float $>$(1, 0.5, 0.5, 1))=0
+\begin{DoxyCompactList}\small\item\em Draws a series of connected lines with one color. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual OpenRAVE::GraphHandlePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_ac1aba9c68455f30fe87d62624a31b1a6}{drawlinestrip} (const float $\ast$ppoints, int numPoints, int stride, float fwidth, const float $\ast$colors)=0
+\begin{DoxyCompactList}\small\item\em Draws a series of connected lines with individual colors. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual OpenRAVE::GraphHandlePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a4ad6149f9edca071a45a8d05f5713ecb}{drawlinelist} (const float $\ast$ppoints, int numPoints, int stride, float fwidth, const RaveVector$<$ float $>$ \&color=RaveVector$<$ float $>$(1, 0.5, 0.5, 1))=0
+\begin{DoxyCompactList}\small\item\em Draws a list of individual lines, each specified by a succeeding pair of points. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual OpenRAVE::GraphHandlePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a6b14130da89871c94465f94aed704f1e}{drawlinelist} (const float $\ast$ppoints, int numPoints, int stride, float fwidth, const float $\ast$colors)=0
+\begin{DoxyCompactList}\small\item\em Draws a list of individual lines, each specified by a succeeding pair of points. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual OpenRAVE::GraphHandlePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a3f00f299110fe455e0c4df096695b985}{drawarrow} (const RaveVector$<$ float $>$ \&p1, const RaveVector$<$ float $>$ \&p2, float fwidth, const RaveVector$<$ float $>$ \&color=RaveVector$<$ float $>$(1, 0.5, 0.5, 1))=0
+\begin{DoxyCompactList}\small\item\em Draws an arrow p1 is start, p2 is finish. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual OpenRAVE::GraphHandlePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a97ad30e79fe363aa5cbda928b4edee37}{drawbox} (const RaveVector$<$ float $>$ \&vpos, const RaveVector$<$ float $>$ \&vextents)=0
+\begin{DoxyCompactList}\small\item\em Draws a box. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+virtual OpenRAVE::GraphHandlePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_a11affcfff03b7440e0fbff2b1199a3e3}{drawplane} (const RaveTransform$<$ float $>$ \&tplane, const RaveVector$<$ float $>$ \&vextents, const boost::multi\_\-array$<$ float, 3 $>$ \&vtexture)=0
+\begin{DoxyCompactList}\small\item\em Draws a textured plane. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a427595245f33d750257f4410f8dcea5e}{
+virtual OpenRAVE::GraphHandlePtr {\bfseries drawtrimesh} (const float $\ast$ppoints, int stride, const int $\ast$pIndices, int numTriangles, const RaveVector$<$ float $>$ \&color)=0}
+\label{classOpenRAVE_1_1EnvironmentBase_a427595245f33d750257f4410f8dcea5e}
+
+\item 
+virtual OpenRAVE::GraphHandlePtr \hyperlink{classOpenRAVE_1_1EnvironmentBase_ac94bdee4f1ea190eb88bdbff026a35d3}{drawtrimesh} (const float $\ast$ppoints, int stride, const int $\ast$pIndices, int numTriangles, const boost::multi\_\-array$<$ float, 2 $>$ \&colors)=0
+\begin{DoxyCompactList}\small\item\em Draws a triangle mesh, each vertices of each triangle should be counter-\/clockwise. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Maintains a world state, which serves as the gateway to all functions offered through OpenRAVE. See \hyperlink{architecture__concepts_arch_environment}{Environment Concepts}. 
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_acb298cf75a95a9dcfdc2bfccd7321413}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}}
+\index{RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{RAVE\_\-DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}typedef OpenRAVE::GraphHandlePtr GraphHandlePtr {\bf RAVE\_\-DEPRECATED}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_acb298cf75a95a9dcfdc2bfccd7321413}
+
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abee}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!SelectionOptions@{SelectionOptions}}
+\index{SelectionOptions@{SelectionOptions}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{SelectionOptions}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf SelectionOptions}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abee}
+
+
+A set of options used to select particular parts of the scene. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{SO\_\-NoRobots@{SO\_\-NoRobots}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!SO\_\-NoRobots@{SO\_\-NoRobots}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeadcf69b48faa9d608415e8c26b6f7d39f}{
+SO\_\-NoRobots}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeadcf69b48faa9d608415e8c26b6f7d39f}
+}]everything but robots \index{TO\_\-Obstacles@{TO\_\-Obstacles}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!TO\_\-Obstacles@{TO\_\-Obstacles}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeaafafd3156ee342957abf594bac470fbc}{
+TO\_\-Obstacles}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeaafafd3156ee342957abf594bac470fbc}
+}]everything but robots \index{SO\_\-Robots@{SO\_\-Robots}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!SO\_\-Robots@{SO\_\-Robots}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeaf7938037970de9827745550a0574d1bd}{
+SO\_\-Robots}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeaf7938037970de9827745550a0574d1bd}
+}]all robots \index{TO\_\-Robots@{TO\_\-Robots}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!TO\_\-Robots@{TO\_\-Robots}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea230100aa4237789f54a92882a3bd834a}{
+TO\_\-Robots}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea230100aa4237789f54a92882a3bd834a}
+}]all robots \index{SO\_\-Everything@{SO\_\-Everything}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!SO\_\-Everything@{SO\_\-Everything}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea6e30c932d2401d67c6dde8bae8e4f1a5}{
+SO\_\-Everything}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea6e30c932d2401d67c6dde8bae8e4f1a5}
+}]all bodies and robots everything \index{TO\_\-Everything@{TO\_\-Everything}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!TO\_\-Everything@{TO\_\-Everything}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea5162d38d0e4ad32bae85b3245dd68ace}{
+TO\_\-Everything}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea5162d38d0e4ad32bae85b3245dd68ace}
+}]all bodies and robots everything \index{SO\_\-Body@{SO\_\-Body}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!SO\_\-Body@{SO\_\-Body}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeead38e0a7ef6a153e9c2ee4485c3166fc9}{
+SO\_\-Body}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeead38e0a7ef6a153e9c2ee4485c3166fc9}
+}]only triangulate robot/kinbody \index{TO\_\-Body@{TO\_\-Body}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!TO\_\-Body@{TO\_\-Body}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeabc35894adcdc121dc829954c3e896944}{
+TO\_\-Body}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeabc35894adcdc121dc829954c3e896944}
+}]only triangulate robot/kinbody \index{SO\_\-AllExceptBody@{SO\_\-AllExceptBody}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!SO\_\-AllExceptBody@{SO\_\-AllExceptBody}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeae9222060c4b6a63d6c03a7e0dc0a7f63}{
+SO\_\-AllExceptBody}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeae9222060c4b6a63d6c03a7e0dc0a7f63}
+}]select everything but the robot/kinbody \index{TO\_\-AllExceptBody@{TO\_\-AllExceptBody}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!TO\_\-AllExceptBody@{TO\_\-AllExceptBody}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeab6ffc5682ebdb916d35f360c3a2415a6}{
+TO\_\-AllExceptBody}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeeab6ffc5682ebdb916d35f360c3a2415a6}
+}]select everything but the robot/kinbody \index{SO\_\-BodyList@{SO\_\-BodyList}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!SO\_\-BodyList@{SO\_\-BodyList}}\item[{\em 
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea5448bc4aad573a961c579316fa195d92}{
+SO\_\-BodyList}
+\label{classOpenRAVE_1_1EnvironmentBase_a0abab749a8f5d8ff38d62672ae03abeea5448bc4aad573a961c579316fa195d92}
+}]provide a list of body names \end{description}
+\end{Desc}
+
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a979950f27af5a2ce3d8b622cd98b33f5}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!AddKinBody@{AddKinBody}}
+\index{AddKinBody@{AddKinBody}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{AddKinBody}]{\setlength{\rightskip}{0pt plus 5cm}virtual void AddKinBody (KinBodyPtr {\em body}, \/  bool {\em bAnonymous} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a979950f27af5a2ce3d8b622cd98b33f5}
+
+
+Add a body to the environment. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em body}]the pointer to an initialized body \item[\mbox{$\leftarrow$} {\em bAnonymous}]if true and there exists a body/robot with the same name, will make body's name unique \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Throw if body is invalid or already added \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ae16bdfaaed85f17bffd696e17284d359}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!AddRobot@{AddRobot}}
+\index{AddRobot@{AddRobot}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{AddRobot}]{\setlength{\rightskip}{0pt plus 5cm}virtual void AddRobot (RobotBasePtr {\em robot}, \/  bool {\em bAnonymous} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ae16bdfaaed85f17bffd696e17284d359}
+
+
+add a robot to the environment 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em robot}]the pointer to an initialized robot \item[\mbox{$\leftarrow$} {\em bAnonymous}]if true and there exists a body/robot with the same name, will make robot's name unique \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Throw if robot is invalid or already added \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ad1160d65f608b83f8830010a93ae2991}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!AddSensor@{AddSensor}}
+\index{AddSensor@{AddSensor}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{AddSensor}]{\setlength{\rightskip}{0pt plus 5cm}virtual void AddSensor (SensorBasePtr {\em sensor}, \/  bool {\em bAnonymous} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ad1160d65f608b83f8830010a93ae2991}
+
+
+registers the sensor with the environment and turns its power on. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em sensor}]the pointer to an initialized sensor \item[\mbox{$\leftarrow$} {\em bAnonymous}]if true and there exists a sensor with the same name, will make sensor's name unique \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Throw if sensor is invalid or already added \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ab1f4975774bc81e490b22698302a61fa}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!AddViewer@{AddViewer}}
+\index{AddViewer@{AddViewer}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{AddViewer}]{\setlength{\rightskip}{0pt plus 5cm}virtual void AddViewer (ViewerBasePtr {\em pviewer})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ab1f4975774bc81e490b22698302a61fa}
+
+
+adds a viewer to the environment 
+
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Throw if body is invalid or already added \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a90f75894de7b1b01e9a2e16021ac3f7d}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!AttachViewer@{AttachViewer}}
+\index{AttachViewer@{AttachViewer}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{AttachViewer}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool AttachViewer (ViewerBasePtr {\em pnewviewer})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a90f75894de7b1b01e9a2e16021ac3f7d}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a4c0906fc2d591ac8940c55ad5a16969f}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (const {\bf RAY} \& {\em ray}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a4c0906fc2d591ac8940c55ad5a16969f}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a4c0906fc2d591ac8940c55ad5a16969f}{CollisionCheckerBase::CheckCollision(const RAY\&,CollisionReportPtr)} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a91d971fb7be4e4b653fd02ee9bd6528c}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (const {\bf RAY} \& {\em ray}, \/  KinBodyConstPtr {\em pbody}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a91d971fb7be4e4b653fd02ee9bd6528c}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a91d971fb7be4e4b653fd02ee9bd6528c}{CollisionCheckerBase::CheckCollision(const RAY\&,KinBodyConstPtr,CollisionReportPtr)} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0031940d50e5853bed26dd8f37eeb9d6}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (const {\bf RAY} \& {\em ray}, \/  KinBody::LinkConstPtr {\em plink}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a0031940d50e5853bed26dd8f37eeb9d6}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a0031940d50e5853bed26dd8f37eeb9d6}{CollisionCheckerBase::CheckCollision(const RAY\&,KinBody::LinkConstPtr,CollisionReportPtr)} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a013763101e3cb1fcad594c030e5472fe}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (KinBodyConstPtr {\em pbody}, \/  const std::vector$<$ KinBodyConstPtr $>$ \& {\em vbodyexcluded}, \/  const std::vector$<$ KinBody::LinkConstPtr $>$ \& {\em vlinkexcluded}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a013763101e3cb1fcad594c030e5472fe}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a013763101e3cb1fcad594c030e5472fe}{CollisionCheckerBase::CheckCollision(KinBodyConstPtr,const std::vector$<$KinBodyConstPtr$>$\&,const std::vector$<$KinBody::LinkConstPtr$>$\&,CollisionReportPtr)} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a8c2bdc1a68281fb48214f3c141dc26a9}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (KinBody::LinkConstPtr {\em plink}, \/  const std::vector$<$ KinBodyConstPtr $>$ \& {\em vbodyexcluded}, \/  const std::vector$<$ KinBody::LinkConstPtr $>$ \& {\em vlinkexcluded}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a8c2bdc1a68281fb48214f3c141dc26a9}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a8c2bdc1a68281fb48214f3c141dc26a9}{CollisionCheckerBase::CheckCollision(KinBody::LinkConstPtr,const std::vector$<$KinBodyConstPtr$>$\&,const std::vector$<$KinBody::LinkConstPtr$>$\&,CollisionReportPtr)} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ab14f3598db6c781c3f2f6ef188fdeb3f}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (KinBody::LinkConstPtr {\em plink}, \/  KinBodyConstPtr {\em pbody}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ab14f3598db6c781c3f2f6ef188fdeb3f}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_ab14f3598db6c781c3f2f6ef188fdeb3f}{CollisionCheckerBase::CheckCollision(KinBody::LinkConstPtr,KinBodyConstPtr,CollisionReportPtr)} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_abc391362f1952f15cd5a27fdd9b8a65d}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (KinBody::LinkConstPtr {\em plink1}, \/  KinBody::LinkConstPtr {\em plink2}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_abc391362f1952f15cd5a27fdd9b8a65d}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_abc391362f1952f15cd5a27fdd9b8a65d}{CollisionCheckerBase::CheckCollision(KinBody::LinkConstPtr,KinBody::LinkConstPtr,CollisionReportPtr)} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ac4d2da56daf4dbd95074bf2dd72974a9}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (KinBody::LinkConstPtr {\em plink}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ac4d2da56daf4dbd95074bf2dd72974a9}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_ac4d2da56daf4dbd95074bf2dd72974a9}{CollisionCheckerBase::CheckCollision(KinBody::LinkConstPtr,CollisionReportPtr)} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ab286174aabc8a0e8b090b25963a531b3}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (KinBodyConstPtr {\em pbody1}, \/  KinBodyConstPtr {\em pbody2}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ab286174aabc8a0e8b090b25963a531b3}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_ab286174aabc8a0e8b090b25963a531b3}{CollisionCheckerBase::CheckCollision(KinBodyConstPtr,KinBodyConstPtr,CollisionReportPtr)} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a032bda10dc517c50606781511da243d3}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CheckCollision@{CheckCollision}}
+\index{CheckCollision@{CheckCollision}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CheckCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckCollision (KinBodyConstPtr {\em pbody1}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a032bda10dc517c50606781511da243d3}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a032bda10dc517c50606781511da243d3}{CollisionCheckerBase::CheckCollision(KinBodyConstPtr,CollisionReportPtr)} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a5e1f41d8d334da4d500a4cc107bfb696}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CheckSelfCollision@{CheckSelfCollision}}
+\index{CheckSelfCollision@{CheckSelfCollision}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CheckSelfCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CheckSelfCollision (KinBodyConstPtr {\em pbody}, \/  CollisionReportPtr {\em report} = {\ttfamily CollisionReportPtr()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a5e1f41d8d334da4d500a4cc107bfb696}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classOpenRAVE_1_1CollisionCheckerBase_a5e1f41d8d334da4d500a4cc107bfb696}{CollisionCheckerBase::CheckSelfCollision} 
+\end{DoxySeeAlso}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_aa3144d0f14a2da063a5dfde496941c40}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!CloneSelf@{CloneSelf}}
+\index{CloneSelf@{CloneSelf}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{CloneSelf}]{\setlength{\rightskip}{0pt plus 5cm}virtual EnvironmentBasePtr CloneSelf (int {\em options})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_aa3144d0f14a2da063a5dfde496941c40}
+
+
+Create and return a clone of the current environment. 
+
+Clones do not share any memory or resource between each other. or their parent making them ideal for performing separte planning experiments while keeping the parent environment unchanged. By default a clone only copies the collision checkers and physics engine. When bodies are cloned, the unique ids are preserved across environments (each body can be referenced with its id in both environments). The attached and grabbed bodies of each body/robot are also copied to the new environment. 
+\begin{DoxyParams}{Parameters}
+\item[{\em options}]A set of \hyperlink{namespaceOpenRAVE_a16bea31a72c441a002538eac01a118f2}{CloningOptions} describing what is actually cloned. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An environment of the same type as this environment containing the copied information. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a84693792fa8cba90b312c0b1caf53716}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{Destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Destroy ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a84693792fa8cba90b312c0b1caf53716}
+
+
+Releases all environment resources, should be always called when environment stops being used. 
+
+Removing all environment pointer might not be enough to destroy the environment resources. \hypertarget{classOpenRAVE_1_1EnvironmentBase_a3f00f299110fe455e0c4df096695b985}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!drawarrow@{drawarrow}}
+\index{drawarrow@{drawarrow}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{drawarrow}]{\setlength{\rightskip}{0pt plus 5cm}virtual OpenRAVE::GraphHandlePtr drawarrow (const RaveVector$<$ float $>$ \& {\em p1}, \/  const RaveVector$<$ float $>$ \& {\em p2}, \/  float {\em fwidth}, \/  const RaveVector$<$ float $>$ \& {\em color} = {\ttfamily RaveVector$<$~float~$>$(1,~0.5,~0.5,~1)})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a3f00f299110fe455e0c4df096695b985}
+
+
+Draws an arrow p1 is start, p2 is finish. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em color}]the rgb color of the point. The last component of the color is used for alpha blending. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+handle to plotted points, graph is removed when handle is destroyed (goes out of scope). This requires the user to always store the handle in a persistent variable if the plotted graphics are to remain on the viewer. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a97ad30e79fe363aa5cbda928b4edee37}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!drawbox@{drawbox}}
+\index{drawbox@{drawbox}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{drawbox}]{\setlength{\rightskip}{0pt plus 5cm}virtual OpenRAVE::GraphHandlePtr drawbox (const RaveVector$<$ float $>$ \& {\em vpos}, \/  const RaveVector$<$ float $>$ \& {\em vextents})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a97ad30e79fe363aa5cbda928b4edee37}
+
+
+Draws a box. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+extents are half the width, height, and depth of the box \begin{DoxyReturn}{Returns}
+handle to plotted points, graph is removed when handle is destroyed (goes out of scope). This requires the user to always store the handle in a persistent variable if the plotted graphics are to remain on the viewer. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a6b14130da89871c94465f94aed704f1e}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!drawlinelist@{drawlinelist}}
+\index{drawlinelist@{drawlinelist}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{drawlinelist}]{\setlength{\rightskip}{0pt plus 5cm}virtual OpenRAVE::GraphHandlePtr drawlinelist (const float $\ast$ {\em ppoints}, \/  int {\em numPoints}, \/  int {\em stride}, \/  float {\em fwidth}, \/  const float $\ast$ {\em colors})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a6b14130da89871c94465f94aed704f1e}
+
+
+Draws a list of individual lines, each specified by a succeeding pair of points. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stride}]stride in bytes to next point, ie: nextpoint = (float$\ast$)((char$\ast$)ppoints+stride) \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+handle to plotted points, graph is removed when handle is destroyed (goes out of scope). This requires the user to always store the handle in a persistent variable if the plotted graphics are to remain on the viewer. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a4ad6149f9edca071a45a8d05f5713ecb}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!drawlinelist@{drawlinelist}}
+\index{drawlinelist@{drawlinelist}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{drawlinelist}]{\setlength{\rightskip}{0pt plus 5cm}virtual OpenRAVE::GraphHandlePtr drawlinelist (const float $\ast$ {\em ppoints}, \/  int {\em numPoints}, \/  int {\em stride}, \/  float {\em fwidth}, \/  const RaveVector$<$ float $>$ \& {\em color} = {\ttfamily RaveVector$<$~float~$>$(1,~0.5,~0.5,~1)})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a4ad6149f9edca071a45a8d05f5713ecb}
+
+
+Draws a list of individual lines, each specified by a succeeding pair of points. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stride}]stride in bytes to next point, ie: nextpoint = (float$\ast$)((char$\ast$)ppoints+stride) \item[{\em color}]the rgb color of the point. The last component of the color is used for alpha blending. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+handle to plotted points, graph is removed when handle is destroyed (goes out of scope). This requires the user to always store the handle in a persistent variable if the plotted graphics are to remain on the viewer. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ac1aba9c68455f30fe87d62624a31b1a6}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!drawlinestrip@{drawlinestrip}}
+\index{drawlinestrip@{drawlinestrip}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{drawlinestrip}]{\setlength{\rightskip}{0pt plus 5cm}virtual OpenRAVE::GraphHandlePtr drawlinestrip (const float $\ast$ {\em ppoints}, \/  int {\em numPoints}, \/  int {\em stride}, \/  float {\em fwidth}, \/  const float $\ast$ {\em colors})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ac1aba9c68455f30fe87d62624a31b1a6}
+
+
+Draws a series of connected lines with individual colors. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stride}]stride in bytes to next point, ie: nextpoint = (float$\ast$)((char$\ast$)ppoints+stride) \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+handle to plotted points, graph is removed when handle is destroyed (goes out of scope). This requires the user to always store the handle in a persistent variable if the plotted graphics are to remain on the viewer. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a378e5e874d3a39868cd787e5936cf7fa}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!drawlinestrip@{drawlinestrip}}
+\index{drawlinestrip@{drawlinestrip}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{drawlinestrip}]{\setlength{\rightskip}{0pt plus 5cm}virtual OpenRAVE::GraphHandlePtr drawlinestrip (const float $\ast$ {\em ppoints}, \/  int {\em numPoints}, \/  int {\em stride}, \/  float {\em fwidth}, \/  const RaveVector$<$ float $>$ \& {\em color} = {\ttfamily RaveVector$<$~float~$>$(1,~0.5,~0.5,~1)})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a378e5e874d3a39868cd787e5936cf7fa}
+
+
+Draws a series of connected lines with one color. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em stride}]stride in bytes to next point, ie: nextpoint = (float$\ast$)((char$\ast$)ppoints+stride) \item[{\em color}]the rgb color of the point. The last component of the color is used for alpha blending \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+handle to plotted points, graph is removed when handle is destroyed (goes out of scope). This requires the user to always store the handle in a persistent variable if the plotted graphics are to remain on the viewer. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a11affcfff03b7440e0fbff2b1199a3e3}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!drawplane@{drawplane}}
+\index{drawplane@{drawplane}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{drawplane}]{\setlength{\rightskip}{0pt plus 5cm}virtual OpenRAVE::GraphHandlePtr drawplane (const RaveTransform$<$ float $>$ \& {\em tplane}, \/  const RaveVector$<$ float $>$ \& {\em vextents}, \/  const boost::multi\_\-array$<$ float, 3 $>$ \& {\em vtexture})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a11affcfff03b7440e0fbff2b1199a3e3}
+
+
+Draws a textured plane. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tplane}]describes the center of the plane. the zaxis of this coordinate is the normal of the plane \item[{\em vextents}]the extents of the plane along the x and y directions (z is ignored) \item[{\em vtexture}]a 3D array specifying height x width x color (the color dimension can be 1, 3, or 4 (for alpha blending)) \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+handle to plotted points, graph is removed when handle is destroyed (goes out of scope). This requires the user to always store the handle in a persistent variable if the plotted graphics are to remain on the viewer. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ac94bdee4f1ea190eb88bdbff026a35d3}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!drawtrimesh@{drawtrimesh}}
+\index{drawtrimesh@{drawtrimesh}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{drawtrimesh}]{\setlength{\rightskip}{0pt plus 5cm}virtual OpenRAVE::GraphHandlePtr drawtrimesh (const float $\ast$ {\em ppoints}, \/  int {\em stride}, \/  const int $\ast$ {\em pIndices}, \/  int {\em numTriangles}, \/  const boost::multi\_\-array$<$ float, 2 $>$ \& {\em colors})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ac94bdee4f1ea190eb88bdbff026a35d3}
+
+
+Draws a triangle mesh, each vertices of each triangle should be counter-\/clockwise. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ppoints}]-\/ array of 3D points \item[{\em stride}]stride in bytes to next point, ie: nextpoint = (float$\ast$)((char$\ast$)ppoints+stride) \item[{\em pIndices}]If not NULL, zero-\/based indices into the points for every triangle. pIndices should be of size numTriangles. If pIndices is NULL, ppoints is assumed to contain numTriangles$\ast$3 points and triangles will be rendered in list order. \item[{\em color}]The color of the triangle. The last component of the color is used for alpha blending \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+handle to plotted points, graph is removed when handle is destroyed (goes out of scope). This requires the user to always store the handle in a persistent variable if the plotted graphics are to remain on the viewer. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a7d408bb4332225ed07ac388b13d11a59}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetBodies@{GetBodies}}
+\index{GetBodies@{GetBodies}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetBodies}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetBodies (std::vector$<$ KinBodyPtr $>$ \& {\em bodies}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a7d408bb4332225ed07ac388b13d11a59}
+
+
+Get all bodies loaded in the environment (including robots). {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em bodies}]filled with all the bodies \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_abb0d60e241f34412cb0e002ddbbbdb50}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetHomeDirectory@{GetHomeDirectory}}
+\index{GetHomeDirectory@{GetHomeDirectory}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetHomeDirectory}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::string\& GetHomeDirectory () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_abb0d60e241f34412cb0e002ddbbbdb50}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ad56e81b8f92ad253a7a15bfc3e022e9d}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetKinBody@{GetKinBody}}
+\index{GetKinBody@{GetKinBody}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetKinBody}]{\setlength{\rightskip}{0pt plus 5cm}virtual KinBodyPtr GetKinBody (const std::string \& {\em name}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ad56e81b8f92ad253a7a15bfc3e022e9d}
+
+
+Query a body from its name. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+\begin{DoxyReturn}{Returns}
+first \hyperlink{classOpenRAVE_1_1KinBody}{KinBody} (including robots) that matches with name 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ac571ddc6ccffc3b7cb3bf345f8d29b78}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetModules@{GetModules}}
+\index{GetModules@{GetModules}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetModules}]{\setlength{\rightskip}{0pt plus 5cm}virtual boost::shared\_\-ptr$<$void$>$ GetModules (std::list$<$ ModuleBasePtr $>$ \& {\em listModules}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ac571ddc6ccffc3b7cb3bf345f8d29b78}
+
+
+Returns a list of loaded problems with a pointer to a lock preventing the list from being modified. 
+
+As long as the lock is held, the problems are guaranteed to stay loaded in the environment. \begin{DoxyReturn}{Returns}
+returns a pointer to a Lock. Destroying the shared\_\-ptr will release the lock 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a5279da67a9256d95ca7e1140d49af724}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetMutex@{GetMutex}}
+\index{GetMutex@{GetMutex}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetMutex}]{\setlength{\rightskip}{0pt plus 5cm}virtual EnvironmentMutex\& GetMutex () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a5279da67a9256d95ca7e1140d49af724}
+
+
+Return the global environment mutex used to protect environment information access in multi-\/threaded environments. 
+
+Accessing environment body information and adding/removing bodies or changing any type of scene property should have the environment lock acquired. Once the environment is locked, the user is guaranteed that nnothing will change in the environment. \hypertarget{classOpenRAVE_1_1EnvironmentBase_a58c19f8ad04b2a8b6341677420ad9b6a}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetPublishedBodies@{GetPublishedBodies}}
+\index{GetPublishedBodies@{GetPublishedBodies}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetPublishedBodies}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetPublishedBodies (std::vector$<$ {\bf KinBody::BodyState} $>$ \& {\em vbodies})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a58c19f8ad04b2a8b6341677420ad9b6a}
+
+
+Retrieve published bodies, completes even if environment is locked. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+Note that the pbody pointer might become invalid as soon as GetPublishedBodies returns. \hypertarget{classOpenRAVE_1_1EnvironmentBase_a97772e0635e9a310288a9a47977d81f2}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetRobot@{GetRobot}}
+\index{GetRobot@{GetRobot}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetRobot}]{\setlength{\rightskip}{0pt plus 5cm}virtual RobotBasePtr GetRobot (const std::string \& {\em name}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a97772e0635e9a310288a9a47977d81f2}
+
+
+Query a robot from its name. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+\begin{DoxyReturn}{Returns}
+first Robot that matches the name 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a44f7b20622f42251dcdec78911f0fb20}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetSensor@{GetSensor}}
+\index{GetSensor@{GetSensor}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetSensor}]{\setlength{\rightskip}{0pt plus 5cm}virtual SensorBasePtr GetSensor (const std::string \& {\em name}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a44f7b20622f42251dcdec78911f0fb20}
+
+
+Query a sensor from its name. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+\begin{DoxyReturn}{Returns}
+first sensor that matches with name, note that sensors attached to robots have the robot name as a prefix. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_aff29a5df3c89628089351e9cb68b474e}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetSensors@{GetSensors}}
+\index{GetSensors@{GetSensors}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetSensors}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetSensors (std::vector$<$ SensorBasePtr $>$ \& {\em sensors}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_aff29a5df3c89628089351e9cb68b474e}
+
+
+Fill an array with all sensors loaded in the environment. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+The sensors come from the currently loaded robots and the explicitly added sensors \hypertarget{classOpenRAVE_1_1EnvironmentBase_aa9b102e35855f8dfd216e282e179fe3c}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetSimulationTime@{GetSimulationTime}}
+\index{GetSimulationTime@{GetSimulationTime}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetSimulationTime}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint64\_\-t GetSimulationTime ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_aa9b102e35855f8dfd216e282e179fe3c}
+
+
+Return simulation time since the start of the environment (in microseconds). {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+See \hyperlink{architecture__concepts_arch_simulation}{Simulation Thread} for more about the simulation thread. \hypertarget{classOpenRAVE_1_1EnvironmentBase_a422dc0ce03020fb713107d287510af83}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetViewer@{GetViewer}}
+\index{GetViewer@{GetViewer}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetViewer}]{\setlength{\rightskip}{0pt plus 5cm}virtual ViewerBasePtr GetViewer (const std::string \& {\em name} = {\ttfamily \char`\"{}\char`\"{}}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a422dc0ce03020fb713107d287510af83}
+
+
+Return a viewer with a particular name. 
+
+When no name is specified, the first loaded viewer is returned. \hypertarget{classOpenRAVE_1_1EnvironmentBase_aaabc93c6dca5c4a1362b20bddb5d1e14}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!GetViewers@{GetViewers}}
+\index{GetViewers@{GetViewers}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{GetViewers}]{\setlength{\rightskip}{0pt plus 5cm}virtual boost::shared\_\-ptr$<$boost::mutex::scoped\_\-lock$>$ GetViewers (std::list$<$ ViewerBasePtr $>$ \& {\em listViewers}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_aaabc93c6dca5c4a1362b20bddb5d1e14}
+
+
+Returns a list of loaded viewers with a pointer to a lock preventing the list from being modified. 
+
+As long as the lock is held, the problems are guaranteed to stay loaded in the environment. \begin{DoxyReturn}{Returns}
+returns a pointer to a Lock. Destroying the shared\_\-ptr will release the lock 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a0267abbf0177d8ee2570c6a57b59cc39}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!IsSimulationRunning@{IsSimulationRunning}}
+\index{IsSimulationRunning@{IsSimulationRunning}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{IsSimulationRunning}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool IsSimulationRunning () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a0267abbf0177d8ee2570c6a57b59cc39}
+
+
+Return true if inner simulation loop is executing. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+See \hyperlink{architecture__concepts_arch_simulation}{Simulation Thread} for more about the simulation thread. \hypertarget{classOpenRAVE_1_1EnvironmentBase_a9895152450985d0a439b851d8ec78d7f}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!ParseXMLData@{ParseXMLData}}
+\index{ParseXMLData@{ParseXMLData}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{ParseXMLData}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool ParseXMLData (BaseXMLReaderPtr {\em preader}, \/  const std::string \& {\em data})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a9895152450985d0a439b851d8ec78d7f}
+
+
+Parses a data file for XML data. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pdata}]The data of the buffer \item[{\em len}]the number of bytes valid in pdata \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a367a6d07f961f2ed0a48378c7dea2336}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!plot3@{plot3}}
+\index{plot3@{plot3}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{plot3}]{\setlength{\rightskip}{0pt plus 5cm}virtual OpenRAVE::GraphHandlePtr plot3 (const float $\ast$ {\em ppoints}, \/  int {\em numPoints}, \/  int {\em stride}, \/  float {\em fPointSize}, \/  const float $\ast$ {\em colors}, \/  int {\em drawstyle} = {\ttfamily 0}, \/  bool {\em bhasalpha} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a367a6d07f961f2ed0a48378c7dea2336}
+
+
+. Plots 3D points with individual colors. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+Arguments same as plot3 with one color, except has an individual color for every point 
+\begin{DoxyParams}{Parameters}
+\item[{\em colors}]An array of rgb colors of size numPoints where each channel is in \mbox{[}0,1\mbox{]}. colors+(bhasalpha?4:3) points to the second color. \item[{\em stride}]stride in bytes to next point, ie: nextpoint = (float$\ast$)((char$\ast$)ppoints+stride) \item[{\em drawstyle}]if 0 will draw pixels. if 1, will draw 3D spherse \item[{\em bhasalpha}]if true, then each color consists of 4 values with the last value being the alpha of the point (1 means opaque). If false, then colors is 3 values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+handle to plotted points, graph is removed when handle is destroyed (goes out of scope). This requires the user to always store the handle in a persistent variable if the plotted graphics are to remain on the viewer. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a390a0a4590d91f0994d6bf2781688266}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!plot3@{plot3}}
+\index{plot3@{plot3}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{plot3}]{\setlength{\rightskip}{0pt plus 5cm}virtual OpenRAVE::GraphHandlePtr plot3 (const float $\ast$ {\em ppoints}, \/  int {\em numPoints}, \/  int {\em stride}, \/  float {\em fPointSize}, \/  const RaveVector$<$ float $>$ \& {\em color} = {\ttfamily RaveVector$<$~float~$>$(1,~0.5,~0.5,~1)}, \/  int {\em drawstyle} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a390a0a4590d91f0994d6bf2781688266}
+
+
+Plot a point cloud with one color. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ppoints}]array of points \item[{\em numPoints}]number of points to plot \item[{\em stride}]stride in bytes to next point, ie: nextpoint = (float$\ast$)((char$\ast$)ppoints+stride) \item[{\em fPointSize}]size of a point in pixels \item[{\em color}]the rgb color of the point. The last component of the color is used for alpha blending \item[{\em drawstyle}]if 0 will draw pixels. if 1, will draw 3D spheres \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+handle to plotted points, graph is removed when handle is destroyed (goes out of scope). This requires the user to always store the handle in a persistent variable if the plotted graphics are to remain on the viewer. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_aceef6e28746bc88931aa1c863c9478f6}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!ReadInterfaceData@{ReadInterfaceData}}
+\index{ReadInterfaceData@{ReadInterfaceData}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{ReadInterfaceData}]{\setlength{\rightskip}{0pt plus 5cm}virtual InterfaceBasePtr ReadInterfaceData (InterfaceBasePtr {\em pinterface}, \/  InterfaceType {\em type}, \/  const std::string \& {\em data}, \/  const AttributesList \& {\em atts} = {\ttfamily AttributesList()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_aceef6e28746bc88931aa1c863c9478f6}
+
+
+Initializes an interface from in-\/memory data. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pinterface}]If a null pointer is passed, a new interface will be created, otherwise an existing interface will be filled \item[{\em data}]string containing data \item[{\em atts}]The attribute/value pair specifying loading options. See the individual interface descriptions at \hyperlink{interface__concepts}{Base Interface Concepts}. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_abe79c2e2ad5f11d0c978269d737816dd}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!ReadInterfaceURI@{ReadInterfaceURI}}
+\index{ReadInterfaceURI@{ReadInterfaceURI}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{ReadInterfaceURI}]{\setlength{\rightskip}{0pt plus 5cm}virtual InterfaceBasePtr ReadInterfaceURI (InterfaceBasePtr {\em pinterface}, \/  InterfaceType {\em type}, \/  const std::string \& {\em filename}, \/  const AttributesList \& {\em atts} = {\ttfamily AttributesList()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_abe79c2e2ad5f11d0c978269d737816dd}
+
+
+Initializes an interface from a resource file. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pinterface}]If a null pointer is passed, a new interface will be created, otherwise an existing interface will be filled \item[{\em filename}]the name of the resource file, its extension determines the format of the file. See \hyperlink{architecture__concepts_supported_formats}{Resource File Formats}. \item[{\em atts}]The attribute/value pair specifying loading options. See the individual interface descriptions at \hyperlink{interface__concepts}{Base Interface Concepts}. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a5539fbbaefc308651ace750c133f3adf}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!ReadKinBodyData@{ReadKinBodyData}}
+\index{ReadKinBodyData@{ReadKinBodyData}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{ReadKinBodyData}]{\setlength{\rightskip}{0pt plus 5cm}virtual KinBodyPtr ReadKinBodyData (KinBodyPtr {\em body}, \/  const std::string \& {\em data}, \/  const AttributesList \& {\em atts} = {\ttfamily AttributesList()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a5539fbbaefc308651ace750c133f3adf}
+
+
+Initializes a kinematic body from in-\/memory data. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+The body should not be added to the environment when calling this function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em body}]If a null pointer is passed, a new body will be created, otherwise an existing robot will be filled \item[{\em atts}]The attribute/value pair specifying loading options. Defined in \hyperlink{arch__kinbody}{Kinematics Body Concepts}. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ab9fda0698f28bd76aefcad4f5ec4340a}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!ReadKinBodyURI@{ReadKinBodyURI}}
+\index{ReadKinBodyURI@{ReadKinBodyURI}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{ReadKinBodyURI}]{\setlength{\rightskip}{0pt plus 5cm}virtual KinBodyPtr ReadKinBodyURI (KinBodyPtr {\em body}, \/  const std::string \& {\em filename}, \/  const AttributesList \& {\em atts} = {\ttfamily AttributesList()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ab9fda0698f28bd76aefcad4f5ec4340a}
+
+
+Initializes a kinematic body from a resource file. The body is not added to the environment when calling this function. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]the name of the resource file, its extension determines the format of the file. See \hyperlink{architecture__concepts_supported_formats}{Resource File Formats}. \item[{\em body}]If a null pointer is passed, a new body will be created, otherwise an existing robot will be filled \item[{\em atts}]The attribute/value pair specifying loading options. Defined in \hyperlink{arch__kinbody}{Kinematics Body Concepts}. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a70931fb3eb67326208afdc830304a0b6}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!ReadRobotData@{ReadRobotData}}
+\index{ReadRobotData@{ReadRobotData}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{ReadRobotData}]{\setlength{\rightskip}{0pt plus 5cm}virtual RobotBasePtr ReadRobotData (RobotBasePtr {\em robot}, \/  const std::string \& {\em data}, \/  const AttributesList \& {\em atts} = {\ttfamily AttributesList()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a70931fb3eb67326208afdc830304a0b6}
+
+
+Initialize a robot from in-\/memory data. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+The robot should not be added the environment when calling this function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em robot}]If a null pointer is passed, a new robot will be created, otherwise an existing robot will be filled \item[{\em atts}]The attribute/value pair specifying loading options. Defined in \hyperlink{arch__robot}{Robot Concepts}. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ac8438f3ee051493a82ef78b92e9309f0}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!ReadRobotURI@{ReadRobotURI}}
+\index{ReadRobotURI@{ReadRobotURI}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{ReadRobotURI}]{\setlength{\rightskip}{0pt plus 5cm}virtual RobotBasePtr ReadRobotURI (RobotBasePtr {\em robot}, \/  const std::string \& {\em filename}, \/  const AttributesList \& {\em atts} = {\ttfamily AttributesList()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ac8438f3ee051493a82ef78b92e9309f0}
+
+
+Initializes a robot from a resource file. The robot is not added to the environment when calling this function. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em robot}]If a null pointer is passed, a new robot will be created, otherwise an existing robot will be filled \item[{\em filename}]the name of the resource file, its extension determines the format of the file. See \hyperlink{architecture__concepts_supported_formats}{Resource File Formats}. \item[{\em atts}]The attribute/value pair specifying loading options. Defined in \hyperlink{arch__robot}{Robot Concepts}. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_ac12a12b9515823e2371cd4c04b201a6c}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!ReadTrimeshURI@{ReadTrimeshURI}}
+\index{ReadTrimeshURI@{ReadTrimeshURI}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{ReadTrimeshURI}]{\setlength{\rightskip}{0pt plus 5cm}virtual boost::shared\_\-ptr$<${\bf KinBody::Link::TRIMESH}$>$ ReadTrimeshURI (boost::shared\_\-ptr$<$ {\bf KinBody::Link::TRIMESH} $>$ {\em ptrimesh}, \/  const std::string \& {\em filename}, \/  const AttributesList \& {\em atts} = {\ttfamily AttributesList()})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_ac12a12b9515823e2371cd4c04b201a6c}
+
+
+reads in the rigid geometry of a resource file into a TRIMESH structure 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]the name of the resource file, its extension determines the format of the file. Complex meshes and articulated meshes are all triangulated appropriately. See \hyperlink{architecture__concepts_supported_formats}{Resource File Formats}. \item[{\em options}]Options to control the parsing process. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a04548c3dc0b848f82c493a27ce85aedc}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!RegisterCollisionCallback@{RegisterCollisionCallback}}
+\index{RegisterCollisionCallback@{RegisterCollisionCallback}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{RegisterCollisionCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual boost::shared\_\-ptr$<$void$>$ RegisterCollisionCallback (const CollisionCallbackFn \& {\em callback})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a04548c3dc0b848f82c493a27ce85aedc}
+Register a collision callback.
+
+Whenever a collision is detected between between bodies during a CheckCollision call or physics simulation, the callback is called. The callback should return an action specifying how the collision should be handled: {\bfseries action = callback(CollisionReport,bool IsCalledFromPhysicsEngine)} \begin{DoxyReturn}{Returns}
+a handle to the registration, once the handle loses scope, the callback is unregistered 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a15f83ec6ea57058090ca016f06e63870}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!RegisterXMLReader@{RegisterXMLReader}}
+\index{RegisterXMLReader@{RegisterXMLReader}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{RegisterXMLReader}]{\setlength{\rightskip}{0pt plus 5cm}virtual UserDataPtr RegisterXMLReader (InterfaceType {\em type}, \/  const std::string \& {\em xmltag}, \/  const CreateXMLReaderFn \& {\em fn})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a15f83ec6ea57058090ca016f06e63870}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_add0aaa9d6ac1aaeb25b3c71b85a93e79}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!Remove@{Remove}}
+\index{Remove@{Remove}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{Remove}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Remove (InterfaceBasePtr {\em obj})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_add0aaa9d6ac1aaeb25b3c71b85a93e79}
+
+
+Removes a currently loaded interface from the environment. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+The function removes currently loaded bodies, robots, sensors, problems from the actively used interfaces of the environment. This does not destroy the interface, but it does remove all references managed. Some interfaces like problems have destroy methods that are called to signal unloading. Note that the active interfaces are different from the owned interfaces. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em obj}]interface to remove \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the interface was successfully removed from the environment. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a00f7d94b59a27465a1153c064b25903e}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!RemoveKinBody@{RemoveKinBody}}
+\index{RemoveKinBody@{RemoveKinBody}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{RemoveKinBody}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool RemoveKinBody (KinBodyPtr {\em body})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a00f7d94b59a27465a1153c064b25903e}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a3d0482313a9ef3be17b91495f2fa9043}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!RemoveProblem@{RemoveProblem}}
+\index{RemoveProblem@{RemoveProblem}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{RemoveProblem}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool RemoveProblem (ModuleBasePtr {\em prob})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a3d0482313a9ef3be17b91495f2fa9043}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a43a787400d2a563b9eee1a149225c18a}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!Reset@{Reset}}
+\index{Reset@{Reset}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Reset ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a43a787400d2a563b9eee1a149225c18a}
+
+
+Resets all objects of the scene (preserves all problems, planners). {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+Do not call inside a SimulationStep call \hypertarget{classOpenRAVE_1_1EnvironmentBase_a3ad623878891c5dc28f355d1cf348793}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!Save@{Save}}
+\index{Save@{Save}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{Save}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Save (const std::string \& {\em filename}, \/  {\bf SelectionOptions} {\em options} = {\ttfamily SO\_\-Everything}, \/  const std::string \& {\em selectname} = {\ttfamily \char`\"{}\char`\"{}})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a3ad623878891c5dc28f355d1cf348793}
+
+
+Saves a scene depending on the filename extension. Default is in COLLADA format. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]the filename to save the results at \item[{\em options}]controls what to save \item[{\em selectname}]\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Throw if failed to save anything \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a3b4f2f14db4059585686d8e457190df7}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!SetDebugLevel@{SetDebugLevel}}
+\index{SetDebugLevel@{SetDebugLevel}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{SetDebugLevel}]{\setlength{\rightskip}{0pt plus 5cm}virtual void SetDebugLevel (uint32\_\-t {\em level})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a3b4f2f14db4059585686d8e457190df7}
+sets the debug level 
+\begin{DoxyParams}{Parameters}
+\item[{\em level}]0 for no debug, 1 -\/ to print all debug messeges. Default value for release builds is 0, for debug builds it is 1 declaring variables with stdcall can be a little complex \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a4b682d62526e5840d8fdc25343ee563c}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!SetPhysicsEngine@{SetPhysicsEngine}}
+\index{SetPhysicsEngine@{SetPhysicsEngine}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{SetPhysicsEngine}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SetPhysicsEngine (PhysicsEngineBasePtr {\em physics})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a4b682d62526e5840d8fdc25343ee563c}
+set the physics engine, disabled by default 
+\begin{DoxyParams}{Parameters}
+\item[{\em physics}]the engine to set, if NULL, environment sets an dummy physics engine \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a4e00e5f00d51ae10aa6bc017f827fea7}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!StartSimulation@{StartSimulation}}
+\index{StartSimulation@{StartSimulation}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{StartSimulation}]{\setlength{\rightskip}{0pt plus 5cm}virtual void StartSimulation (dReal {\em fDeltaTime}, \/  bool {\em bRealTime} = {\ttfamily true})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a4e00e5f00d51ae10aa6bc017f827fea7}
+
+
+Start the internal simulation thread. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+Resets simulation time to 0. See \hyperlink{architecture__concepts_arch_simulation}{Simulation Thread} for more about the simulation thread.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fDeltaTime}]the delta step to take in simulation \item[{\em bRealTime}]if false will call SimulateStep as fast as possible, otherwise will time the simulate step calls so that simulation progresses with real system time. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_aebf2566ccd76644b0040f01e70d2c189}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!StepSimulation@{StepSimulation}}
+\index{StepSimulation@{StepSimulation}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{StepSimulation}]{\setlength{\rightskip}{0pt plus 5cm}virtual void StepSimulation (dReal {\em timeStep})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_aebf2566ccd76644b0040f01e70d2c189}
+
+
+Makes one simulation time step. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+Can be called manually by the user inside planners. Keep in mind that the internal simulation thread also calls this function periodically. See \hyperlink{architecture__concepts_arch_simulation}{Simulation Thread} for more about the simulation thread. \hypertarget{classOpenRAVE_1_1EnvironmentBase_a2fcaf7d48ec497898ad0ef0c5a3eb89b}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!StopSimulation@{StopSimulation}}
+\index{StopSimulation@{StopSimulation}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{StopSimulation}]{\setlength{\rightskip}{0pt plus 5cm}virtual void StopSimulation ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a2fcaf7d48ec497898ad0ef0c5a3eb89b}
+
+
+Stops the internal physics loop, stops calling SimulateStep for all modules. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+See \hyperlink{architecture__concepts_arch_simulation}{Simulation Thread} for more about the simulation thread. \hypertarget{classOpenRAVE_1_1EnvironmentBase_a19e34289d58ae5adeabd8fd431986dd5}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!Triangulate@{Triangulate}}
+\index{Triangulate@{Triangulate}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{Triangulate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Triangulate ({\bf KinBody::Link::TRIMESH} \& {\em trimesh}, \/  KinBodyConstPtr {\em pbody})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a19e34289d58ae5adeabd8fd431986dd5}
+
+
+Triangulation of the body including its current transformation. trimesh will be appended the new data. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em trimesh}]-\/ The output triangle mesh \item[\mbox{$\leftarrow$} {\em body}]body the triangulate \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Throw if failed to add anything \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a9773d98d124c6fcbfbcc1aa47ee4967e}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!TriangulateScene@{TriangulateScene}}
+\index{TriangulateScene@{TriangulateScene}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{TriangulateScene}]{\setlength{\rightskip}{0pt plus 5cm}virtual void TriangulateScene ({\bf KinBody::Link::TRIMESH} \& {\em trimesh}, \/  {\bf SelectionOptions} {\em options}, \/  const std::string \& {\em selectname})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a9773d98d124c6fcbfbcc1aa47ee4967e}
+
+
+General triangulation of the whole scene. {\bfseries \mbox{[}multi-\/thread safe\mbox{]}} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em trimesh}]-\/ The output triangle mesh. The new triangles are appended to the existing triangles! \item[\mbox{$\leftarrow$} {\em options}]-\/ Controlls what to triangulate. \item[\mbox{$\leftarrow$} {\em selectname}]-\/ name of the body used in options \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classOpenRAVE_1_1openrave__exception}{openrave\_\-exception}}]Throw if failed to add anything \end{DoxyExceptions}
+\hypertarget{classOpenRAVE_1_1EnvironmentBase_a590ea693633476a7aa2bc1c79bff8549}{
+\index{OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}!UpdatePublishedBodies@{UpdatePublishedBodies}}
+\index{UpdatePublishedBodies@{UpdatePublishedBodies}!OpenRAVE::EnvironmentBase@{OpenRAVE::EnvironmentBase}}
+\paragraph[{UpdatePublishedBodies}]{\setlength{\rightskip}{0pt plus 5cm}virtual void UpdatePublishedBodies ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1EnvironmentBase_a590ea693633476a7aa2bc1c79bff8549}
+updates the published bodies that viewers and other programs listening in on the environment see. For example, calling this function inside a planning loop allows the viewer to update the environment reflecting the status of the planner. Assumes that the physics are locked. 

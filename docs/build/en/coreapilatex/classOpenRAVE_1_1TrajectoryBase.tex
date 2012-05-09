@@ -1,0 +1,289 @@
+\hypertarget{classOpenRAVE_1_1TrajectoryBase}{
+\subsection{TrajectoryBase Class Reference}
+\label{classOpenRAVE_1_1TrajectoryBase}\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} Encapsulate a time-\/parameterized trajectories of robot configurations. {\bfseries If not specified, method is not multi-\/thread safe.} \href{../main/architecture/trajectory.html}{\tt Trajectory Concepts}  
+
+
+
+
+Inheritance diagram for TrajectoryBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classOpenRAVE_1_1TrajectoryBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for TrajectoryBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classOpenRAVE_1_1TrajectoryBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1TrajectoryBase_1_1Point}{Point}
+\end{DoxyCompactItemize}
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classOpenRAVE_1_1TrajectoryBase_1_1Point}{Point} TPOINT \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_a2d4b62249bd00ee23a28a491fce41dc1}{Insert} (size\_\-t index, const std::vector$<$ dReal $>$ \&data, bool bOverwrite=false)=0
+\begin{DoxyCompactList}\small\item\em Sets/inserts new waypoints in the same configuration specification as the trajectory. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_a1adb5dcb120bbec5da9e326a84d61fb9}{Insert} (size\_\-t index, const std::vector$<$ dReal $>$ \&data, const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \&spec, bool bOverwrite=false)=0
+\begin{DoxyCompactList}\small\item\em Sets/inserts new waypoints in a {\bfseries user-\/given} configuration specification. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_aa2b3c4b3091179afbb354f985e15701f}{
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_aa2b3c4b3091179afbb354f985e15701f}{Remove} (size\_\-t startindex, size\_\-t endindex)=0}
+\label{classOpenRAVE_1_1TrajectoryBase_aa2b3c4b3091179afbb354f985e15701f}
+
+\begin{DoxyCompactList}\small\item\em removes a number of waypoints starting at the specified index \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_a479f3837904daa33d4e11e7fadd28aed}{Sample} (std::vector$<$ dReal $>$ \&data, dReal time) const =0
+\begin{DoxyCompactList}\small\item\em samples a data point on the trajectory at a particular time \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_acbaf4d3d503703e9d8274b73b880e969}{Sample} (std::vector$<$ dReal $>$ \&data, dReal time, const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \&spec) const 
+\begin{DoxyCompactList}\small\item\em samples a data point on the trajectory at a particular time and returns data for the group specified. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_aee0058cd9ab78480cbef78db3bf1fc75}{
+virtual size\_\-t \hyperlink{classOpenRAVE_1_1TrajectoryBase_aee0058cd9ab78480cbef78db3bf1fc75}{GetNumWaypoints} () const =0}
+\label{classOpenRAVE_1_1TrajectoryBase_aee0058cd9ab78480cbef78db3bf1fc75}
+
+\begin{DoxyCompactList}\small\item\em return the number of waypoints \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_a27ce506aadd014e6c7e960daf5840e92}{GetWaypoints} (size\_\-t startindex, size\_\-t endindex, std::vector$<$ dReal $>$ \&data) const =0
+\begin{DoxyCompactList}\small\item\em return a set of waypoints in the range \mbox{[}startindex,endindex) \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_a6a20ad14d835b86e00ecfb25fd1b2b3b}{GetWaypoints} (size\_\-t startindex, size\_\-t endindex, std::vector$<$ dReal $>$ \&data, const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \&spec) const 
+\begin{DoxyCompactList}\small\item\em return a set of waypoints in the range \mbox{[}startindex,endindex) in a different configuration specification. \item\end{DoxyCompactList}\item 
+void \hyperlink{classOpenRAVE_1_1TrajectoryBase_aaf8eb26adc6ee1d49723d97bc5b06fc6}{GetWaypoint} (int index, std::vector$<$ dReal $>$ \&data) const 
+\begin{DoxyCompactList}\small\item\em returns one waypoint \item\end{DoxyCompactList}\item 
+void \hyperlink{classOpenRAVE_1_1TrajectoryBase_accf42064cea2190dc8756f945d40b59b}{GetWaypoint} (int index, std::vector$<$ dReal $>$ \&data, const \hyperlink{classOpenRAVE_1_1ConfigurationSpecification}{ConfigurationSpecification} \&spec) const 
+\begin{DoxyCompactList}\small\item\em returns one waypoint \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_adde787bbcf5b10de65353d70095ac74f}{
+virtual dReal \hyperlink{classOpenRAVE_1_1TrajectoryBase_adde787bbcf5b10de65353d70095ac74f}{GetDuration} () const =0}
+\label{classOpenRAVE_1_1TrajectoryBase_adde787bbcf5b10de65353d70095ac74f}
+
+\begin{DoxyCompactList}\small\item\em return the duration of the trajectory in seconds \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_adfa364ca828b73e2e46ebe94c16ab492}{
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_adfa364ca828b73e2e46ebe94c16ab492}{serialize} (std::ostream \&O, int options=0) const }
+\label{classOpenRAVE_1_1TrajectoryBase_adfa364ca828b73e2e46ebe94c16ab492}
+
+\begin{DoxyCompactList}\small\item\em output the trajectory in XML format \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_adaeacd32f1a27831c97032e1e6b24944}{
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_adaeacd32f1a27831c97032e1e6b24944}{deserialize} (std::istream \&I)}
+\label{classOpenRAVE_1_1TrajectoryBase_adaeacd32f1a27831c97032e1e6b24944}
+
+\begin{DoxyCompactList}\small\item\em initialize the trajectory \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1TrajectoryBase_a59dda2f7a9f5935bf9542c394069f6ee}{SampleTrajectory} (dReal time, \hyperlink{classOpenRAVE_1_1TrajectoryBase_1_1Point}{Point} \&tp) const \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\item 
+virtual const std::vector$<$ \hyperlink{classOpenRAVE_1_1TrajectoryBase_1_1Point}{Point} $>$ \& \hyperlink{classOpenRAVE_1_1TrajectoryBase_a28d819266bc461377ede27b048f0a2f5}{GetPoints} () const \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\item 
+int \hyperlink{classOpenRAVE_1_1TrajectoryBase_a181d63496678472a4e902bcea6fea659}{GetDOF} () const \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\item 
+virtual dReal \hyperlink{classOpenRAVE_1_1TrajectoryBase_a536656d38490de6aadc079c9f20b754d}{GetTotalDuration} () const \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1TrajectoryBase_af8ac97f47745ae12998f6637e11ceaab}{Write} (std::ostream \&O, int options) const \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1TrajectoryBase_ac92225ac78a03d41680a022e11a5f4b2}{Read} (std::istream \&I, RobotBaseConstPtr) \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\item 
+virtual int \hyperlink{classOpenRAVE_1_1TrajectoryBase_aadc88793694f7fdb20427e235bcfed49}{GetInterpMethod} () const \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1TrajectoryBase_ae8962475965fc74539a8a1ff1c227f61}{CalcTrajTiming} (RobotBasePtr probot, int interp, bool autocalc, bool activedof, dReal fmaxvelmult=1) \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_acff991618208e360f3c8f6af691fb947}{Clear} () \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_af75c151370d2a44fbd1c94bc2b6b06cd}{AddPoint} (const \hyperlink{classOpenRAVE_1_1TrajectoryBase_1_1Point}{Point} \&p) \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\item 
+virtual void \hyperlink{classOpenRAVE_1_1TrajectoryBase_acfa84d2797c5b267c12d0ef048493ba0}{Reset} (int dof) \hyperlink{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{RAVE\_\-DEPRECATED}
+\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1TrajectoryBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1TrajectoryBase_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em return the static interface type this class points to (used for safe casting) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int TO\_\-OneLine \hyperlink{classOpenRAVE_1_1TrajectoryBase_a52698d8bfef94dd709800b3ab81fdc7e}{RAVE\_\-DEPRECATED} = 1
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} Encapsulate a time-\/parameterized trajectories of robot configurations. {\bfseries If not specified, method is not multi-\/thread safe.} \href{../main/architecture/trajectory.html}{\tt Trajectory Concepts} 
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}}
+\index{RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{RAVE\_\-DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Point} TPOINT {\bf RAVE\_\-DEPRECATED}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_a16220697329e6c8f40dd5e0ec4f4b384}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_af75c151370d2a44fbd1c94bc2b6b06cd}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!AddPoint@{AddPoint}}
+\index{AddPoint@{AddPoint}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{AddPoint}]{\setlength{\rightskip}{0pt plus 5cm}virtual void AddPoint (const {\bf Point} \& {\em p})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_af75c151370d2a44fbd1c94bc2b6b06cd}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_ae8962475965fc74539a8a1ff1c227f61}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!CalcTrajTiming@{CalcTrajTiming}}
+\index{CalcTrajTiming@{CalcTrajTiming}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{CalcTrajTiming}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool CalcTrajTiming (RobotBasePtr {\em probot}, \/  int {\em interp}, \/  bool {\em autocalc}, \/  bool {\em activedof}, \/  dReal {\em fmaxvelmult} = {\ttfamily 1})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_ae8962475965fc74539a8a1ff1c227f61}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_acff991618208e360f3c8f6af691fb947}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!Clear@{Clear}}
+\index{Clear@{Clear}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Clear ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_acff991618208e360f3c8f6af691fb947}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_a181d63496678472a4e902bcea6fea659}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!GetDOF@{GetDOF}}
+\index{GetDOF@{GetDOF}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{GetDOF}]{\setlength{\rightskip}{0pt plus 5cm}int GetDOF () const}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_a181d63496678472a4e902bcea6fea659}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_aadc88793694f7fdb20427e235bcfed49}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!GetInterpMethod@{GetInterpMethod}}
+\index{GetInterpMethod@{GetInterpMethod}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{GetInterpMethod}]{\setlength{\rightskip}{0pt plus 5cm}virtual int GetInterpMethod () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_aadc88793694f7fdb20427e235bcfed49}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_a28d819266bc461377ede27b048f0a2f5}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!GetPoints@{GetPoints}}
+\index{GetPoints@{GetPoints}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{GetPoints}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std::vector$<${\bf Point}$>$\& GetPoints () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_a28d819266bc461377ede27b048f0a2f5}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_a536656d38490de6aadc079c9f20b754d}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!GetTotalDuration@{GetTotalDuration}}
+\index{GetTotalDuration@{GetTotalDuration}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{GetTotalDuration}]{\setlength{\rightskip}{0pt plus 5cm}virtual dReal GetTotalDuration () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_a536656d38490de6aadc079c9f20b754d}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_accf42064cea2190dc8756f945d40b59b}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!GetWaypoint@{GetWaypoint}}
+\index{GetWaypoint@{GetWaypoint}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{GetWaypoint}]{\setlength{\rightskip}{0pt plus 5cm}void GetWaypoint (int {\em index}, \/  std::vector$<$ dReal $>$ \& {\em data}, \/  const {\bf ConfigurationSpecification} \& {\em spec}) const}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_accf42064cea2190dc8756f945d40b59b}
+
+
+returns one waypoint 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index\mbox{[}in\mbox{]}}]index of the waypoint. If $<$ 0, then counting starts from the last waypoint. For example GetWaypoints(-\/1,data) returns the last waypoint. \item[{\em data\mbox{[}out\mbox{]}}]the data of the waypoint \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_aaf8eb26adc6ee1d49723d97bc5b06fc6}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!GetWaypoint@{GetWaypoint}}
+\index{GetWaypoint@{GetWaypoint}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{GetWaypoint}]{\setlength{\rightskip}{0pt plus 5cm}void GetWaypoint (int {\em index}, \/  std::vector$<$ dReal $>$ \& {\em data}) const}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_aaf8eb26adc6ee1d49723d97bc5b06fc6}
+
+
+returns one waypoint 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index\mbox{[}in\mbox{]}}]index of the waypoint. If $<$ 0, then counting starts from the last waypoint. For example GetWaypoints(-\/1,data) returns the last waypoint. \item[{\em data\mbox{[}out\mbox{]}}]the data of the waypoint \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_a6a20ad14d835b86e00ecfb25fd1b2b3b}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!GetWaypoints@{GetWaypoints}}
+\index{GetWaypoints@{GetWaypoints}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{GetWaypoints}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetWaypoints (size\_\-t {\em startindex}, \/  size\_\-t {\em endindex}, \/  std::vector$<$ dReal $>$ \& {\em data}, \/  const {\bf ConfigurationSpecification} \& {\em spec}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_a6a20ad14d835b86e00ecfb25fd1b2b3b}
+
+
+return a set of waypoints in the range \mbox{[}startindex,endindex) in a different configuration specification. 
+
+The default implementation is very slow, so trajectory developers should really override it. 
+\begin{DoxyParams}{Parameters}
+\item[{\em startindex\mbox{[}in\mbox{]}}]the start index of the waypoint (included) \item[{\em endindex\mbox{[}in\mbox{]}}]the end index of the waypoint (not included) \item[{\em spec\mbox{[}in\mbox{]}}]the specification to return the data in \item[{\em data\mbox{[}out\mbox{]}}]the data of the waypoint \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_a27ce506aadd014e6c7e960daf5840e92}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!GetWaypoints@{GetWaypoints}}
+\index{GetWaypoints@{GetWaypoints}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{GetWaypoints}]{\setlength{\rightskip}{0pt plus 5cm}virtual void GetWaypoints (size\_\-t {\em startindex}, \/  size\_\-t {\em endindex}, \/  std::vector$<$ dReal $>$ \& {\em data}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_a27ce506aadd014e6c7e960daf5840e92}
+
+
+return a set of waypoints in the range \mbox{[}startindex,endindex) 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em startindex\mbox{[}in\mbox{]}}]the start index of the waypoint (included) \item[{\em endindex\mbox{[}in\mbox{]}}]the end index of the waypoint (not included) \item[{\em data\mbox{[}out\mbox{]}}]the data of the waypoint \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_a1adb5dcb120bbec5da9e326a84d61fb9}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!Insert@{Insert}}
+\index{Insert@{Insert}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Insert (size\_\-t {\em index}, \/  const std::vector$<$ dReal $>$ \& {\em data}, \/  const {\bf ConfigurationSpecification} \& {\em spec}, \/  bool {\em bOverwrite} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_a1adb5dcb120bbec5da9e326a84d61fb9}
+
+
+Sets/inserts new waypoints in a {\bfseries user-\/given} configuration specification. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index where to start modifying the trajectory. \item[{\em data}]The data to insert, can represent multiple consecutive waypoints. data.size()/GetConfigurationSpecification().\hyperlink{classOpenRAVE_1_1TrajectoryBase_a181d63496678472a4e902bcea6fea659}{GetDOF()} waypoints are added. \item[{\em spec}]the specification in which the input data come in. Depending on what data is offered, some values of this trajectory's specification might not be initialized. \item[{\em bOverwrite}]If true, will overwrite the waypoints starting at index, and will insert new waypoints only if end of trajectory is reached. If false, will insert the points before index: a 0 index inserts the new data in the beginning, a \hyperlink{classOpenRAVE_1_1TrajectoryBase_aee0058cd9ab78480cbef78db3bf1fc75}{GetNumWaypoints()} index inserts the new data at the end. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_a2d4b62249bd00ee23a28a491fce41dc1}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!Insert@{Insert}}
+\index{Insert@{Insert}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Insert (size\_\-t {\em index}, \/  const std::vector$<$ dReal $>$ \& {\em data}, \/  bool {\em bOverwrite} = {\ttfamily false})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_a2d4b62249bd00ee23a28a491fce41dc1}
+
+
+Sets/inserts new waypoints in the same configuration specification as the trajectory. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index where to start modifying the trajectory. \item[{\em data}]The data to insert, can represent multiple consecutive waypoints. data.size()/GetConfigurationSpecification().\hyperlink{classOpenRAVE_1_1TrajectoryBase_a181d63496678472a4e902bcea6fea659}{GetDOF()} waypoints are added. \item[{\em bOverwrite}]If true, will overwrite the waypoints starting at index, and will insert new waypoints only if end of trajectory is reached. If false, will insert the points before index: a 0 index inserts the new data in the beginning, a \hyperlink{classOpenRAVE_1_1TrajectoryBase_aee0058cd9ab78480cbef78db3bf1fc75}{GetNumWaypoints()} index inserts the new data at the end. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_ac92225ac78a03d41680a022e11a5f4b2}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!Read@{Read}}
+\index{Read@{Read}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{Read}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Read (std::istream \& {\em I}, \/  RobotBaseConstPtr)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_ac92225ac78a03d41680a022e11a5f4b2}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_acfa84d2797c5b267c12d0ef048493ba0}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!Reset@{Reset}}
+\index{Reset@{Reset}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Reset (int {\em dof})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_acfa84d2797c5b267c12d0ef048493ba0}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_acbaf4d3d503703e9d8274b73b880e969}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!Sample@{Sample}}
+\index{Sample@{Sample}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{Sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sample (std::vector$<$ dReal $>$ \& {\em data}, \/  dReal {\em time}, \/  const {\bf ConfigurationSpecification} \& {\em spec}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_acbaf4d3d503703e9d8274b73b880e969}
+
+
+samples a data point on the trajectory at a particular time and returns data for the group specified. 
+
+The default implementation is slow, so interface developers should override it. 
+\begin{DoxyParams}{Parameters}
+\item[{\em data\mbox{[}out\mbox{]}}]the sampled point \item[{\em time\mbox{[}in\mbox{]}}]the time to sample \item[{\em spec\mbox{[}in\mbox{]}}]the specification format to return the data in \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_a479f3837904daa33d4e11e7fadd28aed}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!Sample@{Sample}}
+\index{Sample@{Sample}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{Sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Sample (std::vector$<$ dReal $>$ \& {\em data}, \/  dReal {\em time}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_a479f3837904daa33d4e11e7fadd28aed}
+
+
+samples a data point on the trajectory at a particular time 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em data\mbox{[}out\mbox{]}}]the sampled point \item[{\em time\mbox{[}in\mbox{]}}]the time to sample \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_a59dda2f7a9f5935bf9542c394069f6ee}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!SampleTrajectory@{SampleTrajectory}}
+\index{SampleTrajectory@{SampleTrajectory}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{SampleTrajectory}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool SampleTrajectory (dReal {\em time}, \/  {\bf Point} \& {\em tp}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_a59dda2f7a9f5935bf9542c394069f6ee}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_af8ac97f47745ae12998f6637e11ceaab}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!Write@{Write}}
+\index{Write@{Write}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{Write}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Write (std::ostream \& {\em O}, \/  int {\em options}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_af8ac97f47745ae12998f6637e11ceaab}
+
+
+\subsubsection{Member Data Documentation}
+\hypertarget{classOpenRAVE_1_1TrajectoryBase_a52698d8bfef94dd709800b3ab81fdc7e}{
+\index{OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}!RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}}
+\index{RAVE\_\-DEPRECATED@{RAVE\_\-DEPRECATED}!OpenRAVE::TrajectoryBase@{OpenRAVE::TrajectoryBase}}
+\paragraph[{RAVE\_\-DEPRECATED}]{\setlength{\rightskip}{0pt plus 5cm}const int TO\_\-OneLine {\bf RAVE\_\-DEPRECATED} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1TrajectoryBase_a52698d8bfef94dd709800b3ab81fdc7e}

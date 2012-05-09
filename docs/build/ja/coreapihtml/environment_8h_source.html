@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: include/openrave/environment.h (r2848/r2803) ソースファイル 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<h1>include/openrave/environment.h (r2848/r2803)</h1><a href="environment_8h.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// -*- coding: utf-8 -*-</span>
+<a name="l00002"></a>00002 <span class="comment">// Copyright (C) 2006-2011 Rosen Diankov &lt;rosen.diankov@gmail.com&gt;</span>
+<a name="l00003"></a>00003 <span class="comment">//</span>
+<a name="l00004"></a>00004 <span class="comment">// This file is part of OpenRAVE.</span>
+<a name="l00005"></a>00005 <span class="comment">// OpenRAVE is free software: you can redistribute it and/or modify</span>
+<a name="l00006"></a>00006 <span class="comment">// it under the terms of the GNU Lesser General Public License as published by</span>
+<a name="l00007"></a>00007 <span class="comment">// the Free Software Foundation, either version 3 of the License, or</span>
+<a name="l00008"></a>00008 <span class="comment">// at your option) any later version.</span>
+<a name="l00009"></a>00009 <span class="comment">//</span>
+<a name="l00010"></a>00010 <span class="comment">// This program is distributed in the hope that it will be useful,</span>
+<a name="l00011"></a>00011 <span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<a name="l00012"></a>00012 <span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<a name="l00013"></a>00013 <span class="comment">// GNU Lesser General Public License for more details.</span>
+<a name="l00014"></a>00014 <span class="comment">//</span>
+<a name="l00015"></a>00015 <span class="comment">// You should have received a copy of the GNU Lesser General Public License</span>
+<a name="l00016"></a>00016 <span class="comment">// along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
+<a name="l00020"></a>00020 <span class="comment"></span><span class="preprocessor">#ifndef  OPENRAVE_ENVIRONMENTBASE_H</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#define  OPENRAVE_ENVIRONMENTBASE_H</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span>
+<a name="l00023"></a>00023 <span class="keyword">namespace </span>OpenRAVE {
+<a name="l00024"></a>00024 
+<a name="l00025"></a><a class="code" href="namespaceOpenRAVE.html#aad17188f9ff53a4373ef77ecad831ed1">00025</a> <span class="keyword">typedef</span> boost::recursive_try_mutex <a class="code" href="namespaceOpenRAVE.html#aad17188f9ff53a4373ef77ecad831ed1">EnvironmentMutex</a>;
+<a name="l00026"></a>00026 
+<a name="l00029"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html">00029</a> <span class="keyword">class </span><a class="code" href="config_8h.html#a5570a9c8b03ef026009d5233c146aa0c">OPENRAVE_API</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html" title="Maintains a world state, which serves as the gateway to all functions offered through...">EnvironmentBase</a> : <span class="keyword">public</span> boost::enable_shared_from_this&lt;EnvironmentBase&gt;
+<a name="l00030"></a>00030 {
+<a name="l00031"></a>00031 <span class="keyword">public</span>:
+<a name="l00032"></a>00032     <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html" title="Maintains a world state, which serves as the gateway to all functions offered through...">EnvironmentBase</a>();
+<a name="l00033"></a>00033     <span class="keyword">virtual</span> ~<a class="code" href="classOpenRAVE_1_1EnvironmentBase.html" title="Maintains a world state, which serves as the gateway to all functions offered through...">EnvironmentBase</a>();
+<a name="l00034"></a>00034 
+<a name="l00038"></a>00038     <span class="keyword">virtual</span> <span class="keywordtype">void</span> Destroy()=0;
+<a name="l00039"></a>00039 
+<a name="l00043"></a>00043     <span class="keyword">virtual</span> <span class="keywordtype">void</span> Reset()=0;
+<a name="l00044"></a>00044 
+<a name="l00046"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ab3a2d5e41d756988959d9f5cdccfe284">00046</a>     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ab3a2d5e41d756988959d9f5cdccfe284" title="set user data">SetUserData</a>(<a class="code" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a> data) {
+<a name="l00047"></a>00047         __pUserData = data;
+<a name="l00048"></a>00048     }
+<a name="l00050"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a975ebca32c743c8530807758e7c46618">00050</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a975ebca32c743c8530807758e7c46618" title="return the user custom data">GetUserData</a>()<span class="keyword"> const </span>{
+<a name="l00051"></a>00051         <span class="keywordflow">return</span> __pUserData;
+<a name="l00052"></a>00052     }
+<a name="l00053"></a>00053 
+<a name="l00055"></a>00055     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a> GlobalState() = 0;
+<a name="l00056"></a>00056 
+<a name="l00058"></a>00058     <span class="keyword">virtual</span> <span class="keywordtype">void</span> OwnInterface(<a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> pinterface) = 0;
+<a name="l00059"></a>00059 
+<a name="l00061"></a>00061     <span class="keyword">virtual</span> <span class="keywordtype">void</span> DisownInterface(<a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> pinterface) = 0;
+<a name="l00062"></a>00062 
+<a name="l00072"></a>00072     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> CloneSelf(<span class="keywordtype">int</span> options) = 0;
+<a name="l00073"></a>00073 
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SetCollisionChecker(<a class="code" href="namespaceOpenRAVE.html#ae3e7611a64b7d4204203d69014f45fe8">CollisionCheckerBasePtr</a> pchecker)=0;
+<a name="l00081"></a>00081     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#ae3e7611a64b7d4204203d69014f45fe8">CollisionCheckerBasePtr</a> GetCollisionChecker() <span class="keyword">const</span> =0;
+<a name="l00082"></a>00082 
+<a name="l00084"></a>00084     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckCollision(<a class="code" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody1, <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report = <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>())=0;
+<a name="l00085"></a>00085 
+<a name="l00087"></a>00087     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckCollision(<a class="code" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody1, <a class="code" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody2, <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report = <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>())=0;
+<a name="l00088"></a>00088 
+<a name="l00090"></a>00090     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckCollision(<a class="code" href="classOpenRAVE_1_1KinBody.html#a99c416f979a09dfc6ef42fd62bd4e77e">KinBody::LinkConstPtr</a> plink, <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report = <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>())=0;
+<a name="l00091"></a>00091 
+<a name="l00093"></a>00093     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckCollision(<a class="code" href="classOpenRAVE_1_1KinBody.html#a99c416f979a09dfc6ef42fd62bd4e77e">KinBody::LinkConstPtr</a> plink1, <a class="code" href="classOpenRAVE_1_1KinBody.html#a99c416f979a09dfc6ef42fd62bd4e77e">KinBody::LinkConstPtr</a> plink2, <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report = <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>())=0;
+<a name="l00094"></a>00094 
+<a name="l00096"></a>00096     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckCollision(<a class="code" href="classOpenRAVE_1_1KinBody.html#a99c416f979a09dfc6ef42fd62bd4e77e">KinBody::LinkConstPtr</a> plink, <a class="code" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody, <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report = <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>())=0;
+<a name="l00097"></a>00097 
+<a name="l00099"></a>00099     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckCollision(<a class="code" href="classOpenRAVE_1_1KinBody.html#a99c416f979a09dfc6ef42fd62bd4e77e">KinBody::LinkConstPtr</a> plink, <span class="keyword">const</span> std::vector&lt;KinBodyConstPtr&gt;&amp; vbodyexcluded, <span class="keyword">const</span> std::vector&lt;KinBody::LinkConstPtr&gt;&amp; vlinkexcluded, <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report = <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>())=0;
+<a name="l00100"></a>00100 
+<a name="l00102"></a>00102     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckCollision(<a class="code" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody, <span class="keyword">const</span> std::vector&lt;KinBodyConstPtr&gt;&amp; vbodyexcluded, <span class="keyword">const</span> std::vector&lt;KinBody::LinkConstPtr&gt;&amp; vlinkexcluded, <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report = <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>())=0;
+<a name="l00103"></a>00103 
+<a name="l00105"></a>00105     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckCollision(<span class="keyword">const</span> <a class="code" href="classOpenRAVE_1_1geometry_1_1ray.html" title="A ray defined by an origin and a direction.">RAY</a>&amp; ray, <a class="code" href="classOpenRAVE_1_1KinBody.html#a99c416f979a09dfc6ef42fd62bd4e77e">KinBody::LinkConstPtr</a> plink, <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report = <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>()) = 0;
+<a name="l00106"></a>00106 
+<a name="l00108"></a>00108     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckCollision(<span class="keyword">const</span> <a class="code" href="classOpenRAVE_1_1geometry_1_1ray.html" title="A ray defined by an origin and a direction.">RAY</a>&amp; ray, <a class="code" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody, <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report = <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>()) = 0;
+<a name="l00109"></a>00109 
+<a name="l00111"></a>00111     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckCollision(<span class="keyword">const</span> <a class="code" href="classOpenRAVE_1_1geometry_1_1ray.html" title="A ray defined by an origin and a direction.">RAY</a>&amp; ray, <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report = <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>()) = 0;
+<a name="l00112"></a>00112 
+<a name="l00114"></a>00114     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckSelfCollision(<a class="code" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody, <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report = <a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a>()) = 0;
+<a name="l00115"></a>00115 
+<a name="l00116"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a28e410489b8d769bfc03a29283beff59">00116</a>     <span class="keyword">typedef</span> boost::function&lt;CollisionAction(CollisionReportPtr,bool)&gt; CollisionCallbackFn;
+<a name="l00117"></a>00117 
+<a name="l00124"></a>00124     <span class="keyword">virtual</span> boost::shared_ptr&lt;void&gt; RegisterCollisionCallback(<span class="keyword">const</span> CollisionCallbackFn&amp; callback) = 0;
+<a name="l00125"></a>00125     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> HasRegisteredCollisionCallbacks() <span class="keyword">const</span> = 0;
+<a name="l00126"></a>00126     <span class="keyword">virtual</span> <span class="keywordtype">void</span> GetRegisteredCollisionCallbacks(std::list&lt;CollisionCallbackFn&gt;&amp;) <span class="keyword">const</span> = 0;
+<a name="l00128"></a>00128 
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SetPhysicsEngine(<a class="code" href="namespaceOpenRAVE.html#a1f7cd9b111d097614987d789deaf960e">PhysicsEngineBasePtr</a> physics) = 0;
+<a name="l00134"></a>00134     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a1f7cd9b111d097614987d789deaf960e">PhysicsEngineBasePtr</a> GetPhysicsEngine() <span class="keyword">const</span> = 0;
+<a name="l00135"></a>00135 
+<a name="l00139"></a>00139     <span class="keyword">virtual</span> <span class="keywordtype">void</span> StepSimulation(<a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> timeStep) = 0;
+<a name="l00140"></a>00140 
+<a name="l00148"></a>00148     <span class="keyword">virtual</span> <span class="keywordtype">void</span> StartSimulation(<a class="code" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> fDeltaTime, <span class="keywordtype">bool</span> bRealTime=<span class="keyword">true</span>) = 0;
+<a name="l00149"></a>00149 
+<a name="l00153"></a>00153     <span class="keyword">virtual</span> <span class="keywordtype">void</span> StopSimulation() = 0;
+<a name="l00154"></a>00154 
+<a name="l00158"></a>00158     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsSimulationRunning() <span class="keyword">const</span> = 0;
+<a name="l00159"></a>00159 
+<a name="l00163"></a>00163     <span class="keyword">virtual</span> uint64_t GetSimulationTime() = 0;
+<a name="l00165"></a>00165 
+<a name="l00168"></a>00168 
+<a name="l00169"></a>00169 
+<a name="l00171"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abee">00171</a>     <span class="keyword">enum</span> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abee" title="A set of options used to select particular parts of the scene.">SelectionOptions</a>
+<a name="l00172"></a>00172     {
+<a name="l00173"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abeeadcf69b48faa9d608415e8c26b6f7d39f">00173</a>         SO_NoRobots = 1,               
+<a name="l00174"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abeeaafafd3156ee342957abf594bac470fbc">00174</a>         TO_Obstacles = 1,               
+<a name="l00175"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abeeaf7938037970de9827745550a0574d1bd">00175</a>         SO_Robots = 2,                  
+<a name="l00176"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abeea230100aa4237789f54a92882a3bd834a">00176</a>         TO_Robots = 2,                  
+<a name="l00177"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abeea6e30c932d2401d67c6dde8bae8e4f1a5">00177</a>         SO_Everything = 3,              
+<a name="l00178"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abeea5162d38d0e4ad32bae85b3245dd68ace">00178</a>         TO_Everything = 3,              
+<a name="l00179"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abeead38e0a7ef6a153e9c2ee4485c3166fc9">00179</a>         SO_Body = 4,                    
+<a name="l00180"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abeeabc35894adcdc121dc829954c3e896944">00180</a>         TO_Body = 4,                    
+<a name="l00181"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abeeae9222060c4b6a63d6c03a7e0dc0a7f63">00181</a>         SO_AllExceptBody = 5,             
+<a name="l00182"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abeeab6ffc5682ebdb916d35f360c3a2415a6">00182</a>         TO_AllExceptBody = 5,             
+<a name="l00183"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abeea5448bc4aad573a961c579316fa195d92">00183</a>         SO_BodyList = 6,                 
+<a name="l00184"></a>00184     };
+<a name="l00185"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a25f0d55fb1a4d37b618e28df346dcafe">00185</a>     <span class="keyword">typedef</span> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abee" title="A set of options used to select particular parts of the scene.">SelectionOptions</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a0abab749a8f5d8ff38d62672ae03abee" title="A set of options used to select particular parts of the scene.">TriangulateOptions</a>;
+<a name="l00186"></a>00186 
+<a name="l00188"></a>00188     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Load(<span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) = 0;
+<a name="l00189"></a>00189 
+<a name="l00191"></a>00191     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> LoadData(<span class="keyword">const</span> std::string&amp; data, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) = 0;
+<a name="l00192"></a>00192 
+<a name="l00193"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a41363bcb26f68d8d25a0f3270558219e">00193</a>     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a41363bcb26f68d8d25a0f3270558219e">LoadXMLData</a>(<span class="keyword">const</span> std::string&amp; data, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) {
+<a name="l00194"></a>00194         <span class="keywordflow">return</span> LoadData(data,atts);
+<a name="l00195"></a>00195     }
+<a name="l00196"></a>00196 
+<a name="l00203"></a>00203     <span class="keyword">virtual</span> <span class="keywordtype">void</span> Save(<span class="keyword">const</span> std::string&amp; filename, SelectionOptions options=SO_Everything, <span class="keyword">const</span> std::string&amp; selectname=<span class="stringliteral">&quot;&quot;</span>) = 0;
+<a name="l00204"></a>00204 
+<a name="l00211"></a>00211     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> ReadRobotURI(<a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> robot, <span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) = 0;
+<a name="l00212"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a93df9cb2035fd4489282e9fbe0f96b93">00212</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a93df9cb2035fd4489282e9fbe0f96b93">ReadRobotXMLFile</a>(<a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> robot, <span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) {
+<a name="l00213"></a>00213         <span class="keywordflow">return</span> ReadRobotURI(robot,filename,atts);
+<a name="l00214"></a>00214     }
+<a name="l00215"></a>00215 
+<a name="l00217"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a3f8502be4e272feaacbcb5b7434170be">00217</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a3f8502be4e272feaacbcb5b7434170be" title="Creates a new robot from a file with no extra load options specified. [multi-thread...">ReadRobotURI</a>(<span class="keyword">const</span> std::string&amp; filename) {
+<a name="l00218"></a>00218         <span class="keywordflow">return</span> ReadRobotURI(<a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a>(),filename,<a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>());
+<a name="l00219"></a>00219     }
+<a name="l00220"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a43c0a583e42aa537aa889a6a637a4568">00220</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a43c0a583e42aa537aa889a6a637a4568">ReadRobotXMLFile</a>(<span class="keyword">const</span> std::string&amp; filename) {
+<a name="l00221"></a>00221         <span class="keywordflow">return</span> ReadRobotURI(filename);
+<a name="l00222"></a>00222     }
+<a name="l00223"></a>00223 
+<a name="l00230"></a>00230     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> ReadRobotData(<a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> robot, <span class="keyword">const</span> std::string&amp; data, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) = 0;
+<a name="l00231"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ab4facbc2ca164d0ffc5842fd898e682c">00231</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ab4facbc2ca164d0ffc5842fd898e682c">ReadRobotXMLData</a>(<a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> robot, <span class="keyword">const</span> std::string&amp; data, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) {
+<a name="l00232"></a>00232         <span class="keywordflow">return</span> ReadRobotData(robot,data,atts);
+<a name="l00233"></a>00233     }
+<a name="l00234"></a>00234 
+<a name="l00241"></a>00241     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> ReadKinBodyURI(<a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> body, <span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) = 0;
+<a name="l00242"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a047abcaeeef915017c37dd31d34866e8">00242</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a047abcaeeef915017c37dd31d34866e8">ReadKinBodyXMLFile</a>(<a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> body, <span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) {
+<a name="l00243"></a>00243         <span class="keywordflow">return</span> ReadKinBodyURI(body,filename,atts);
+<a name="l00244"></a>00244     }
+<a name="l00245"></a>00245 
+<a name="l00247"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#aaaa3f743069cc769e571f6e4ec3a732a">00247</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#aaaa3f743069cc769e571f6e4ec3a732a" title="Creates a new kinbody from an XML file with no extra load options specified. [multi-thread...">ReadKinBodyURI</a>(<span class="keyword">const</span> std::string&amp; filename) {
+<a name="l00248"></a>00248         <span class="keywordflow">return</span> ReadKinBodyURI(<a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a>(),filename,<a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>());
+<a name="l00249"></a>00249     }
+<a name="l00250"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ac70270fc6d4580cdaed771f5fe4d2795">00250</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ac70270fc6d4580cdaed771f5fe4d2795">ReadKinBodyXMLFile</a>(<span class="keyword">const</span> std::string&amp; filename) {
+<a name="l00251"></a>00251         <span class="keywordflow">return</span> ReadKinBodyURI(filename);
+<a name="l00252"></a>00252     }
+<a name="l00253"></a>00253 
+<a name="l00260"></a>00260     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> ReadKinBodyData(<a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> body, <span class="keyword">const</span> std::string&amp; data, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) = 0;
+<a name="l00261"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#af8fde0c46dbd2c833936e7524ab54436">00261</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#af8fde0c46dbd2c833936e7524ab54436">ReadKinBodyXMLData</a>(<a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> body, <span class="keyword">const</span> std::string&amp; data, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) {
+<a name="l00262"></a>00262         <span class="keywordflow">return</span> ReadKinBodyData(body,data,atts);
+<a name="l00263"></a>00263     }
+<a name="l00264"></a>00264 
+<a name="l00271"></a>00271     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> ReadInterfaceURI(<a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> pinterface, InterfaceType type, <span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) = 0;
+<a name="l00272"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ae5185403a61b5ba3bf92fa8513bc108c">00272</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ae5185403a61b5ba3bf92fa8513bc108c">ReadInterfaceXMLFile</a>(<a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> pinterface, InterfaceType type, <span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) {
+<a name="l00273"></a>00273         <span class="keywordflow">return</span> ReadInterfaceURI(pinterface,type,filename,atts);
+<a name="l00274"></a>00274     }
+<a name="l00275"></a>00275 
+<a name="l00276"></a>00276     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> ReadInterfaceURI(<span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) = 0;
+<a name="l00277"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ae0eaa5085685e141912cb4ebbcaef986">00277</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ae0eaa5085685e141912cb4ebbcaef986">ReadInterfaceXMLFile</a>(<span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) {
+<a name="l00278"></a>00278         <span class="keywordflow">return</span> ReadInterfaceURI(filename,atts);
+<a name="l00279"></a>00279     }
+<a name="l00280"></a>00280 
+<a name="l00287"></a>00287     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> ReadInterfaceData(<a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> pinterface, InterfaceType type, <span class="keyword">const</span> std::string&amp; data, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) = 0;
+<a name="l00288"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#aeef0fe370eea0dc498db5116aac227af">00288</a>     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#aeef0fe370eea0dc498db5116aac227af">ReadInterfaceXMLData</a>(<a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> pinterface, InterfaceType type, <span class="keyword">const</span> std::string&amp; data, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) {
+<a name="l00289"></a>00289         <span class="keywordflow">return</span> ReadInterfaceData(pinterface,type,data,atts);
+<a name="l00290"></a>00290     }
+<a name="l00291"></a>00291 
+<a name="l00297"></a>00297     <span class="keyword">virtual</span> boost::shared_ptr&lt;KinBody::Link::TRIMESH&gt; ReadTrimeshURI(boost::shared_ptr&lt;KinBody::Link::TRIMESH&gt; ptrimesh, <span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) = 0;
+<a name="l00298"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ab7ec023d9a5f3435ee25f2be462d74c6">00298</a>     <span class="keyword">virtual</span> boost::shared_ptr&lt;KinBody::Link::TRIMESH&gt; <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#ab7ec023d9a5f3435ee25f2be462d74c6">ReadTrimeshFile</a>(boost::shared_ptr&lt;KinBody::Link::TRIMESH&gt; ptrimesh, <span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>&amp; atts = <a class="code" href="namespaceOpenRAVE.html#a7372895c7fd9541aa829987c3eb9aaf9">AttributesList</a>()) {
+<a name="l00299"></a>00299         <span class="keywordflow">return</span> ReadTrimeshURI(ptrimesh,filename,atts);
+<a name="l00300"></a>00300     }
+<a name="l00301"></a>00301 
+<a name="l00303"></a>00303     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a> RegisterXMLReader(InterfaceType type, <span class="keyword">const</span> std::string&amp; xmltag, <span class="keyword">const</span> <a class="code" href="namespaceOpenRAVE.html#adec9e4596e96321e8bf28523753f5d2c">CreateXMLReaderFn</a>&amp; fn) <a class="code" href="namespaceOpenRAVE.html#af23fc4c2c72950a8c02f38ef71680bc6">RAVE_DEPRECATED</a> = 0;
+<a name="l00304"></a>00304 
+<a name="l00306"></a>00306     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ParseXMLFile(<a class="code" href="namespaceOpenRAVE.html#a5465be4feef36a211b06feebdc5e3b42">BaseXMLReaderPtr</a> preader, <span class="keyword">const</span> std::string&amp; filename) <a class="code" href="namespaceOpenRAVE.html#af23fc4c2c72950a8c02f38ef71680bc6">RAVE_DEPRECATED</a> = 0;
+<a name="l00307"></a>00307 
+<a name="l00313"></a>00313     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceOpenRAVE_1_1LocalXML.html#a509c2492a6af93fb83c0e25ba24867f8">ParseXMLData</a>(<a class="code" href="namespaceOpenRAVE.html#a5465be4feef36a211b06feebdc5e3b42">BaseXMLReaderPtr</a> preader, <span class="keyword">const</span> std::string&amp; data) <a class="code" href="namespaceOpenRAVE.html#af23fc4c2c72950a8c02f38ef71680bc6">RAVE_DEPRECATED</a> = 0;
+<a name="l00315"></a>00315 
+<a name="l00318"></a>00318 
+<a name="l00319"></a>00319 
+<a name="l00325"></a>00325     <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddKinBody(<a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> body, <span class="keywordtype">bool</span> bAnonymous=<span class="keyword">false</span>) = 0;
+<a name="l00326"></a>00326 
+<a name="l00332"></a>00332     <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddRobot(<a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> robot, <span class="keywordtype">bool</span> bAnonymous=<span class="keyword">false</span>) = 0;
+<a name="l00333"></a>00333 
+<a name="l00339"></a>00339     <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddSensor(<a class="code" href="namespaceOpenRAVE.html#adb9a2496735bc0d80ced5a5d7dfb653b">SensorBasePtr</a> sensor, <span class="keywordtype">bool</span> bAnonymous=<span class="keyword">false</span>) = 0;
+<a name="l00340"></a>00340 
+<a name="l00344"></a>00344     <span class="keyword">virtual</span> <span class="keywordtype">void</span> GetSensors(std::vector&lt;SensorBasePtr&gt;&amp; sensors) <span class="keyword">const</span> = 0;
+<a name="l00345"></a>00345 
+<a name="l00347"></a>00347     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> RemoveKinBody(<a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> body) <a class="code" href="namespaceOpenRAVE.html#af23fc4c2c72950a8c02f38ef71680bc6">RAVE_DEPRECATED</a> = 0;
+<a name="l00348"></a>00348 
+<a name="l00357"></a>00357     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Remove(<a class="code" href="namespaceOpenRAVE.html#a0c35179adf3473a44ad9b4436e12e088">InterfaceBasePtr</a> obj) = 0;
+<a name="l00358"></a>00358 
+<a name="l00361"></a>00361     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> GetKinBody(<span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span> =0;
+<a name="l00362"></a>00362 
+<a name="l00365"></a>00365     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#adb9a2496735bc0d80ced5a5d7dfb653b">SensorBasePtr</a> GetSensor(<span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span> =0;
+<a name="l00366"></a>00366 
+<a name="l00369"></a>00369     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a5a9955dc6058f09c4462952478dfcf58">RobotBasePtr</a> GetRobot(<span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span> =0;
+<a name="l00370"></a>00370 
+<a name="l00373"></a>00373     <span class="keyword">virtual</span> <span class="keywordtype">void</span> GetBodies(std::vector&lt;KinBodyPtr&gt;&amp; bodies) <span class="keyword">const</span> = 0;
+<a name="l00374"></a>00374 
+<a name="l00376"></a>00376     <span class="keyword">virtual</span> <span class="keywordtype">void</span> GetRobots(std::vector&lt;RobotBasePtr&gt;&amp; robots) <span class="keyword">const</span> = 0;
+<a name="l00377"></a>00377 
+<a name="l00381"></a>00381     <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddViewer(<a class="code" href="namespaceOpenRAVE.html#af0d19499c5ac95f5e1ac60b29187d7c4">ViewerBasePtr</a> pviewer) = 0;
+<a name="l00382"></a>00382 
+<a name="l00384"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a90f75894de7b1b01e9a2e16021ac3f7d">00384</a>     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a90f75894de7b1b01e9a2e16021ac3f7d">AttachViewer</a>(<a class="code" href="namespaceOpenRAVE.html#af0d19499c5ac95f5e1ac60b29187d7c4">ViewerBasePtr</a> pnewviewer) <a class="code" href="namespaceOpenRAVE.html#af23fc4c2c72950a8c02f38ef71680bc6">RAVE_DEPRECATED</a> {
+<a name="l00385"></a>00385         AddViewer(pnewviewer); <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00386"></a>00386     }
+<a name="l00387"></a>00387 
+<a name="l00391"></a>00391     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#af0d19499c5ac95f5e1ac60b29187d7c4">ViewerBasePtr</a> GetViewer(<span class="keyword">const</span> std::string&amp; name=<span class="stringliteral">&quot;&quot;</span>) <span class="keyword">const</span> = 0;
+<a name="l00392"></a>00392 
+<a name="l00397"></a>00397     <span class="keyword">virtual</span> boost::shared_ptr&lt;boost::mutex::scoped_lock&gt; GetViewers(std::list&lt;ViewerBasePtr&gt;&amp; listViewers) <span class="keyword">const</span> = 0;
+<a name="l00398"></a>00398 
+<a name="l00399"></a>00399 
+<a name="l00403"></a>00403     <span class="keyword">virtual</span> <span class="keywordtype">void</span> GetPublishedBodies(std::vector&lt;KinBody::BodyState&gt;&amp; vbodies) = 0;
+<a name="l00404"></a>00404 
+<a name="l00409"></a>00409     <span class="keyword">virtual</span> <span class="keywordtype">void</span> UpdatePublishedBodies() = 0;
+<a name="l00410"></a>00410 
+<a name="l00412"></a>00412     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> GetBodyFromEnvironmentId(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) = 0;
+<a name="l00413"></a>00413 
+<a name="l00419"></a>00419     <span class="keyword">virtual</span> <span class="keywordtype">void</span> Triangulate(<a class="code" href="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH.html" title="User data for trimesh geometries. Vertices are defined in counter-clockwise order...">KinBody::Link::TRIMESH</a>&amp; trimesh, <a class="code" href="namespaceOpenRAVE.html#a7ad9b63f36f8be408ec6e70ebe8130f7">KinBodyConstPtr</a> pbody) = 0;
+<a name="l00420"></a>00420 
+<a name="l00427"></a>00427     <span class="keyword">virtual</span> <span class="keywordtype">void</span> TriangulateScene(<a class="code" href="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH.html" title="User data for trimesh geometries. Vertices are defined in counter-clockwise order...">KinBody::Link::TRIMESH</a>&amp; trimesh, SelectionOptions options, <span class="keyword">const</span> std::string&amp; selectname) = 0;
+<a name="l00429"></a>00429 
+<a name="l00431"></a>00431     <span class="keyword">virtual</span> <span class="keywordtype">int</span> AddModule(<a class="code" href="namespaceOpenRAVE.html#a8f388daa26e3d70da4f292f61554a4cd">ModuleBasePtr</a> module, <span class="keyword">const</span> std::string&amp; cmdargs) = 0;
+<a name="l00432"></a>00432 
+<a name="l00433"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a894143f07e4d22cba8a79aec3e9eb4d9">00433</a>     <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#a894143f07e4d22cba8a79aec3e9eb4d9">LoadProblem</a>(<a class="code" href="namespaceOpenRAVE.html#a8f388daa26e3d70da4f292f61554a4cd">ModuleBasePtr</a> module, <span class="keyword">const</span> std::string&amp; cmdargs) {
+<a name="l00434"></a>00434         <span class="keywordflow">return</span> AddModule(module,cmdargs);
+<a name="l00435"></a>00435     }
+<a name="l00436"></a>00436 
+<a name="l00438"></a>00438     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> RemoveProblem(<a class="code" href="namespaceOpenRAVE.html#a8f388daa26e3d70da4f292f61554a4cd">ModuleBasePtr</a> prob) <a class="code" href="namespaceOpenRAVE.html#af23fc4c2c72950a8c02f38ef71680bc6">RAVE_DEPRECATED</a> = 0;
+<a name="l00439"></a>00439 
+<a name="l00444"></a>00444     <span class="keyword">virtual</span> boost::shared_ptr&lt;void&gt; GetModules(std::list&lt;ModuleBasePtr&gt;&amp; listModules) <span class="keyword">const</span> = 0;
+<a name="l00445"></a>00445 
+<a name="l00446"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#aea33763b1ece23f17dd09d709b3d4f88">00446</a>     <span class="keyword">virtual</span> boost::shared_ptr&lt;void&gt; <a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#aea33763b1ece23f17dd09d709b3d4f88">GetLoadedProblems</a>(std::list&lt;ModuleBasePtr&gt;&amp; listModules)<span class="keyword"> const </span>{
+<a name="l00447"></a>00447         <span class="keywordflow">return</span> GetModules(listModules);
+<a name="l00448"></a>00448     }
+<a name="l00449"></a>00449 
+<a name="l00455"></a>00455     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#aad17188f9ff53a4373ef77ecad831ed1">EnvironmentMutex</a>&amp; GetMutex() <span class="keyword">const</span> = 0;
+<a name="l00456"></a>00456 
+<a name="l00459"></a>00459 
+<a name="l00460"></a>00460 
+<a name="l00462"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#acb298cf75a95a9dcfdc2bfccd7321413">00462</a>     <span class="keyword">typedef</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> <a class="code" href="namespaceOpenRAVE.html#af23fc4c2c72950a8c02f38ef71680bc6">RAVE_DEPRECATED</a>;
+<a name="l00463"></a>00463 
+<a name="l00473"></a>00473     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> plot3(<span class="keyword">const</span> <span class="keywordtype">float</span>* ppoints, <span class="keywordtype">int</span> numPoints, <span class="keywordtype">int</span> stride, <span class="keywordtype">float</span> fPointSize, <span class="keyword">const</span> RaveVector&lt;float&gt;&amp; color = RaveVector&lt;float&gt;(1,0.5,0.5,1), <span class="keywordtype">int</span> drawstyle = 0) = 0;
+<a name="l00474"></a>00474 
+<a name="l00484"></a>00484     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> plot3(<span class="keyword">const</span> <span class="keywordtype">float</span>* ppoints, <span class="keywordtype">int</span> numPoints, <span class="keywordtype">int</span> stride, <span class="keywordtype">float</span> fPointSize, <span class="keyword">const</span> <span class="keywordtype">float</span>* colors, <span class="keywordtype">int</span> drawstyle = 0, <span class="keywordtype">bool</span> bhasalpha = <span class="keyword">false</span>) = 0;
+<a name="l00485"></a>00485 
+<a name="l00491"></a>00491     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> drawlinestrip(<span class="keyword">const</span> <span class="keywordtype">float</span>* ppoints, <span class="keywordtype">int</span> numPoints, <span class="keywordtype">int</span> stride, <span class="keywordtype">float</span> fwidth, <span class="keyword">const</span> RaveVector&lt;float&gt;&amp; color = RaveVector&lt;float&gt;(1,0.5,0.5,1)) = 0;
+<a name="l00492"></a>00492 
+<a name="l00497"></a>00497     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> drawlinestrip(<span class="keyword">const</span> <span class="keywordtype">float</span>* ppoints, <span class="keywordtype">int</span> numPoints, <span class="keywordtype">int</span> stride, <span class="keywordtype">float</span> fwidth, <span class="keyword">const</span> <span class="keywordtype">float</span>* colors) = 0;
+<a name="l00498"></a>00498 
+<a name="l00504"></a>00504     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> drawlinelist(<span class="keyword">const</span> <span class="keywordtype">float</span>* ppoints, <span class="keywordtype">int</span> numPoints, <span class="keywordtype">int</span> stride, <span class="keywordtype">float</span> fwidth, <span class="keyword">const</span> RaveVector&lt;float&gt;&amp; color = RaveVector&lt;float&gt;(1,0.5,0.5,1)) = 0;
+<a name="l00505"></a>00505 
+<a name="l00510"></a>00510     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> drawlinelist(<span class="keyword">const</span> <span class="keywordtype">float</span>* ppoints, <span class="keywordtype">int</span> numPoints, <span class="keywordtype">int</span> stride, <span class="keywordtype">float</span> fwidth, <span class="keyword">const</span> <span class="keywordtype">float</span>* colors) = 0;
+<a name="l00511"></a>00511 
+<a name="l00516"></a>00516     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> drawarrow(<span class="keyword">const</span> RaveVector&lt;float&gt;&amp; p1, <span class="keyword">const</span> RaveVector&lt;float&gt;&amp; p2, <span class="keywordtype">float</span> fwidth, <span class="keyword">const</span> RaveVector&lt;float&gt;&amp; color = RaveVector&lt;float&gt;(1,0.5,0.5,1)) = 0;
+<a name="l00517"></a>00517 
+<a name="l00522"></a>00522     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> drawbox(<span class="keyword">const</span> RaveVector&lt;float&gt;&amp; vpos, <span class="keyword">const</span> RaveVector&lt;float&gt;&amp; vextents) = 0;
+<a name="l00523"></a>00523 
+<a name="l00530"></a>00530     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> drawplane(<span class="keyword">const</span> RaveTransform&lt;float&gt;&amp; tplane, <span class="keyword">const</span> RaveVector&lt;float&gt;&amp; vextents, <span class="keyword">const</span> boost::multi_array&lt;float,3&gt;&amp; vtexture) = 0;
+<a name="l00531"></a>00531 
+<a name="l00532"></a>00532     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> drawtrimesh(<span class="keyword">const</span> <span class="keywordtype">float</span>* ppoints, <span class="keywordtype">int</span> stride, <span class="keyword">const</span> <span class="keywordtype">int</span>* pIndices, <span class="keywordtype">int</span> numTriangles, <span class="keyword">const</span> RaveVector&lt;float&gt;&amp; color) = 0;
+<a name="l00533"></a>00533 
+<a name="l00543"></a>00543     <span class="keyword">virtual</span> <a class="code" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">OpenRAVE::GraphHandlePtr</a> drawtrimesh(<span class="keyword">const</span> <span class="keywordtype">float</span>* ppoints, <span class="keywordtype">int</span> stride, <span class="keyword">const</span> <span class="keywordtype">int</span>* pIndices, <span class="keywordtype">int</span> numTriangles, <span class="keyword">const</span> boost::multi_array&lt;float,2&gt;&amp; colors) = 0;
+<a name="l00545"></a>00545 
+<a name="l00547"></a>00547     <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; GetHomeDirectory() const <a class="code" href="namespaceOpenRAVE.html#af23fc4c2c72950a8c02f38ef71680bc6">RAVE_DEPRECATED</a> = 0;
+<a name="l00548"></a>00548 
+<a name="l00550"></a>00550 
+<a name="l00555"></a>00555     virtual <span class="keywordtype">void</span> SetDebugLevel(uint32_t level) = 0;
+<a name="l00556"></a>00556     virtual uint32_t GetDebugLevel() const = 0;
+<a name="l00558"></a>00558 
+<a name="l00559"></a>00559 protected:
+<a name="l00560"></a><a class="code" href="classOpenRAVE_1_1EnvironmentBase.html#af386ad7515f485242895df543029d333">00560</a>     virtual const <span class="keywordtype">char</span>* GetHash()<span class="keyword"> const </span>{
+<a name="l00561"></a>00561         <span class="keywordflow">return</span> <a class="code" href="interfacehashes_8h.html#a9aed328f2c74952f51841514b2bb211a">OPENRAVE_ENVIRONMENT_HASH</a>;
+<a name="l00562"></a>00562     }
+<a name="l00563"></a>00563 <span class="keyword">private</span>:
+<a name="l00564"></a>00564     <a class="code" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a> __pUserData;         
+<a name="l00565"></a>00565     <span class="keywordtype">int</span> __nUniqueId;         
+<a name="l00566"></a>00566 };
+<a name="l00567"></a>00567 
+<a name="l00568"></a>00568 } <span class="comment">// end namespace OpenRAVE</span>
+<a name="l00569"></a>00569 
+<a name="l00570"></a>00570 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:42:53 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

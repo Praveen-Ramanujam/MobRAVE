@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/sphinxext
+END
+gen_gallery.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/sphinxext/gen_gallery.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/sphinxext/__init__.py
+END
+shellblock_directive.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/sphinxext/shellblock_directive.py
+END
+only_directives.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/sphinxext/only_directives.py
+END
+exampleblock_directive.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/docs/sphinxext/exampleblock_directive.py
+END

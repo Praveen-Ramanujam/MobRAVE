@@ -1,0 +1,793 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: クラス SensorBase 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="classOpenRAVE_1_1SensorBase.html">SensorBase</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス SensorBase<br/>
+<small>
+[<a class="el" href="group__interfaces.html">Base Interface Classes</a>]</small>
+</h1><!-- doxytag: class="OpenRAVE::SensorBase" --><!-- doxytag: inherits="OpenRAVE::InterfaceBase" -->
+<p><b>[interface]</b> A sensor measures physical properties from the environment. <b>If not specified, method is not multi-thread safe.</b> See <a class="el" href="arch__sensor.html">Sensor Concepts</a>.  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="sensor_8h_source.html">sensor.h</a>&gt;</code></p>
+<div class="dynheader">
+SensorBaseに対する継承グラフ</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1SensorBase__inherit__graph.png" border="0" usemap="#SensorBase_inherit__map" alt="Inheritance graph"/></div>
+<map name="SensorBase_inherit__map" id="SensorBase_inherit__map">
+<area shape="rect" href="classOpenRAVE_1_1InterfaceBase.html" title="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface..." alt="" coords="5,5,107,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+SensorBaseのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1SensorBase__coll__graph.png" border="0" usemap="#SensorBase_coll__map" alt="Collaboration graph"/></div>
+<map name="SensorBase_coll__map" id="SensorBase_coll__map">
+<area shape="rect" href="classOpenRAVE_1_1InterfaceBase.html" title="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface..." alt="" coords="1055,155,1156,184"/><area shape="rect" title="STL class." alt="" coords="197,152,251,181"/><area shape="rect" title="STL class." alt="" coords="7,152,145,181"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="classOpenRAVE_1_1SensorBase-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>構成</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorGeomData.html">ActuatorGeomData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html">ActuatorSensorData</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An actuator for modeling motors and other mechanisms that produce torque/force. The actuator has only one degree of freedom.  <a href="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1CameraGeomData.html">CameraGeomData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1CameraSensorData.html">CameraSensorData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1Force6DGeomData.html">Force6DGeomData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData.html">Force6DSensorData</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Stores force data.  <a href="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1IMUGeomData.html">IMUGeomData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1IMUSensorData.html">IMUSensorData</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Stores IMU data.  <a href="classOpenRAVE_1_1SensorBase_1_1IMUSensorData.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1JointEncoderGeomData.html">JointEncoderGeomData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData.html">JointEncoderSensorData</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Stores joint angles and EE position.  <a href="classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1LaserGeomData.html">LaserGeomData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1LaserSensorData.html">LaserSensorData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1OdometryGeomData.html">OdometryGeomData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData.html">OdometrySensorData</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">odometry data storing full 6D pose and velocity  <a href="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorData.html">SensorData</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">used to pass sensor data around  <a href="classOpenRAVE_1_1SensorBase_1_1SensorData.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorGeometry.html">SensorGeometry</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">permanent properties of the sensors  <a href="classOpenRAVE_1_1SensorBase_1_1SensorGeometry.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1TactileGeomData.html">TactileGeomData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1TactileSensorData.html">TactileSensorData</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">tactle data  <a href="classOpenRAVE_1_1SensorBase_1_1TactileSensorData.html#_details">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1TouchGeomData.html">TouchGeomData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase_1_1TouchSensorData.html">TouchSensorData</a></td></tr>
+<tr><td colspan="2"><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435a936ea626f25292f8acfc15830a7ad202">ST_Invalid</a> = 0, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435a4541d21a4d11deb0969d56dd284fa075">ST_Laser</a> = 1, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435ae11c3a3455d4bd69e29d3adcdc516485">ST_Camera</a> = 2, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435aa5d3d03a421042b56e9ed7041b03d96b">ST_JointEncoder</a> = 3, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435a5357cf23ce464e19f67c73122a0a42d9">ST_Force6D</a> = 4, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435ad1d86d8a2bfe8a9d7aff51d2dfff434b">ST_IMU</a> = 5, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435a95bd0b32d2de8ad24080c0bae1d1b09e">ST_Odometry</a> = 6, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435ad222298b6f04034b44003e0f29536cc2">ST_Tactile</a> = 7, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435a92435db0e476a975a85f3040d7227215">ST_Actuator</a> = 8, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435a335d8820608490ed884ecbbec504eb68">ST_Touch</a> =  9, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435ad7cbba96be0dc71f7b614e056dd780ab">ST_Gyro</a> =  10, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435a63dc1952ea8ab1be1a9d393fdfd080c1">ST_Intensity</a> =  11, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435aaf1a7495fb60915da5d25784d355d346">ST_Color</a> =  12, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435a59b9461851a9a00c41589c55aa33a9d3">ST_Accelerometer</a> =  13, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435af148609b52480eb24a6ada7fa17cef6c">ST_NumberofSensorTypes</a> = 14
+<br/>
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbc">ConfigureCommand</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbcaa12aa3389243d888c0211e5e84a2bec3">CC_PowerOn</a> = 0x10, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbcabe79d3489e53b22662cb01e3fd5a2aa4">CC_PowerOff</a> = 0x11, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbcadf063ee2e225c3f6714361882241089f">CC_PowerCheck</a> = 0x12, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbcaaf7af7837769edb49e4b9366044b8ebc">CC_RenderDataOn</a> = 0x20, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbca6b764a7cba110931b6035302dd83b574">CC_RenderDataOff</a> = 0x21, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbcadc438b5d23e19d70df1e4425302e26d0">CC_RenderDataCheck</a> = 0x23, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbca6041933887566ae587fb1babcfa3794d">CC_RenderGeometryOn</a> = 0x30, 
+<a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbcac80f84e0b1dab127526e2c7517f9fd16">CC_RenderGeometryOff</a> = 0x31, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbca0f1f04ef2d988fc5e5bc061c6eba352e">CC_RenderGeometryCheck</a> = 0x32
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>A set of commands used for run-time sensor configuration. </p>
+ <a href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbc">[詳細]</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics.html">geometry::RaveCameraIntrinsics</a><br class="typebreak"/>
+&lt; <a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#aa5104349256c671083819c3d801f99fc">CameraIntrinsics</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorData.html">SensorBase::SensorData</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#adfb77411b1a558ad93cf53a7da1ca06f">SensorDataPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorData.html">SensorBase::SensorData</a> const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a8a80a84d6814d2de51a5b66cf2295814">SensorDataConstPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorGeometry.html">SensorBase::SensorGeometry</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a91b8c682028d7df3a937281bd419680d">SensorGeometryPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorGeometry.html">SensorBase::SensorGeometry</a> <br class="typebreak"/>
+const  &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a8bf7987bcbc067f1ac9da6d99e3f0273">SensorGeometryConstPtr</a></td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a5a4f9536984507dfa311d57f00ece076">SensorBase</a> (<a class="el" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> penv)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a6801281af326361f11f3768255cd2319">~SensorBase</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#ae02c7c4987dd11f5fb7657e18c7c8318">Configure</a> (<a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbc">ConfigureCommand</a> command, bool blocking=false)=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Configures properties of the sensor like power.  <a href="#ae02c7c4987dd11f5fb7657e18c7c8318"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#afa04259a5131e4b12c964d7c66d7c89a">SimulationStep</a> (<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a> fTimeElapsed) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Simulate one step forward for sensors.  <a href="#afa04259a5131e4b12c964d7c66d7c89a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1SensorBase.html#a91b8c682028d7df3a937281bd419680d">SensorGeometryPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a080408b00865d76ab0890ae98207d980">GetSensorGeometry</a> (<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a> type=ST_Invalid)=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the sensor geometry. This method is thread safe.  <a href="#a080408b00865d76ab0890ae98207d980"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classOpenRAVE_1_1SensorBase.html#adfb77411b1a558ad93cf53a7da1ca06f">SensorDataPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#ae4531cd4b3e1de9708d9fc2cce769eff">CreateSensorData</a> (<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a> type=ST_Invalid)=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Creates the sensor data to be specifically used by this class.  <a href="#ae4531cd4b3e1de9708d9fc2cce769eff"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#ad7b2e5f8884dd4897de003828e8e8146">GetSensorData</a> (<a class="el" href="classOpenRAVE_1_1SensorBase.html#adfb77411b1a558ad93cf53a7da1ca06f">SensorDataPtr</a> psensordata)=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copy the most recent published data of the sensor given the type.  <a href="#ad7b2e5f8884dd4897de003828e8e8146"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a3d9771c99399198411c3715160d7d415">Supports</a> (<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a> type)=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">returns true if sensor supports a particular sensor type  <a href="#a3d9771c99399198411c3715160d7d415"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a2b064fc102932710baf4ada2799d7236">SetTransform</a> (const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;trans)=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set the transform of a sensor (global coordinate system).  <a href="#a2b064fc102932710baf4ada2799d7236"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a11e61e806d5650919a0c8d2cfd76a358">GetTransform</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#ab17d44ea62751790d35594754f7069e5">RegisterDataCallback</a> (<a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a> type, const boost::function&lt; void(<a class="el" href="classOpenRAVE_1_1SensorBase.html#a8a80a84d6814d2de51a5b66cf2295814">SensorDataConstPtr</a>)&gt; &amp;callback) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Register a callback whenever new sensor data comes in.  <a href="#ab17d44ea62751790d35594754f7069e5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a3cc720dbc55fa8e07a0f85343d3bb136">GetName</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#acd410c7697191dd9af60ce515fb94215">SetName</a> (const std::string &amp;newname)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a90092f801b2f4091b5509d6ea1307ce9">Init</a> (const std::string &amp;) <a class="el" href="namespaceOpenRAVE.html#af23fc4c2c72950a8c02f38ef71680bc6">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#ad04571abe5ee94304a92c24bd2863d2f">Reset</a> (int) <a class="el" href="namespaceOpenRAVE.html#af23fc4c2c72950a8c02f38ef71680bc6">RAVE_DEPRECATED</a></td></tr>
+<tr><td colspan="2"><h2>Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static InterfaceType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#affeafe65e7c4094f282d273dedbf069b">GetInterfaceTypeStatic</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return the static interface type this class points to (used for safe casting)  <a href="#affeafe65e7c4094f282d273dedbf069b"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1SensorBase.html#aaf2ed934b37cbbd236fdd1b01a5f5005">_name</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">name of the sensor  <a href="#aaf2ed934b37cbbd236fdd1b01a5f5005"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p><b>[interface]</b> A sensor measures physical properties from the environment. <b>If not specified, method is not multi-thread safe.</b> See <a class="el" href="arch__sensor.html">Sensor Concepts</a>. </p>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00028">28</a> 行で定義されています。</p>
+<hr/><h2>型定義</h2>
+<a class="anchor" id="aa5104349256c671083819c3d801f99fc"></a><!-- doxytag: member="OpenRAVE::SensorBase::CameraIntrinsics" ref="aa5104349256c671083819c3d801f99fc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics.html">geometry::RaveCameraIntrinsics</a>&lt;<a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&gt; <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics.html">CameraIntrinsics</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00050">50</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a80a84d6814d2de51a5b66cf2295814"></a><!-- doxytag: member="OpenRAVE::SensorBase::SensorDataConstPtr" ref="a8a80a84d6814d2de51a5b66cf2295814" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorData.html">SensorBase::SensorData</a> const&gt; <a class="el" href="classOpenRAVE_1_1SensorBase.html#a8a80a84d6814d2de51a5b66cf2295814">SensorDataConstPtr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00067">67</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="adfb77411b1a558ad93cf53a7da1ca06f"></a><!-- doxytag: member="OpenRAVE::SensorBase::SensorDataPtr" ref="adfb77411b1a558ad93cf53a7da1ca06f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorData.html">SensorBase::SensorData</a>&gt; <a class="el" href="classOpenRAVE_1_1SensorBase.html#adfb77411b1a558ad93cf53a7da1ca06f">SensorDataPtr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00066">66</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8bf7987bcbc067f1ac9da6d99e3f0273"></a><!-- doxytag: member="OpenRAVE::SensorBase::SensorGeometryConstPtr" ref="a8bf7987bcbc067f1ac9da6d99e3f0273" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorGeometry.html">SensorBase::SensorGeometry</a> const&gt; <a class="el" href="classOpenRAVE_1_1SensorBase.html#a8bf7987bcbc067f1ac9da6d99e3f0273">SensorGeometryConstPtr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00203">203</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a91b8c682028d7df3a937281bd419680d"></a><!-- doxytag: member="OpenRAVE::SensorBase::SensorGeometryPtr" ref="a91b8c682028d7df3a937281bd419680d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorGeometry.html">SensorBase::SensorGeometry</a>&gt; <a class="el" href="classOpenRAVE_1_1SensorBase.html#a91b8c682028d7df3a937281bd419680d">SensorGeometryPtr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00202">202</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>列挙型</h2>
+<a class="anchor" id="a48dea54d66d3cd48fda033d19cad7dbc"></a><!-- doxytag: member="OpenRAVE::SensorBase::ConfigureCommand" ref="a48dea54d66d3cd48fda033d19cad7dbc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbc">ConfigureCommand</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>A set of commands used for run-time sensor configuration. </p>
+<dl><dt><b>列挙型の値: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a48dea54d66d3cd48fda033d19cad7dbcaa12aa3389243d888c0211e5e84a2bec3"></a><!-- doxytag: member="CC_PowerOn" ref="a48dea54d66d3cd48fda033d19cad7dbcaa12aa3389243d888c0211e5e84a2bec3" args="" -->CC_PowerOn</em>&nbsp;</td><td>
+<p>turns the sensor on, starts gathering data and using processor cycles. If the power is already on, servers as a reset. (off by default) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a48dea54d66d3cd48fda033d19cad7dbcabe79d3489e53b22662cb01e3fd5a2aa4"></a><!-- doxytag: member="CC_PowerOff" ref="a48dea54d66d3cd48fda033d19cad7dbcabe79d3489e53b22662cb01e3fd5a2aa4" args="" -->CC_PowerOff</em>&nbsp;</td><td>
+<p>turns the sensor off, stops gathering data (off by default). </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a48dea54d66d3cd48fda033d19cad7dbcadf063ee2e225c3f6714361882241089f"></a><!-- doxytag: member="CC_PowerCheck" ref="a48dea54d66d3cd48fda033d19cad7dbcadf063ee2e225c3f6714361882241089f" args="" -->CC_PowerCheck</em>&nbsp;</td><td>
+<p>returns whether power is on </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a48dea54d66d3cd48fda033d19cad7dbcaaf7af7837769edb49e4b9366044b8ebc"></a><!-- doxytag: member="CC_RenderDataOn" ref="a48dea54d66d3cd48fda033d19cad7dbcaaf7af7837769edb49e4b9366044b8ebc" args="" -->CC_RenderDataOn</em>&nbsp;</td><td>
+<p>turns on any rendering of the sensor data (off by default) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a48dea54d66d3cd48fda033d19cad7dbca6b764a7cba110931b6035302dd83b574"></a><!-- doxytag: member="CC_RenderDataOff" ref="a48dea54d66d3cd48fda033d19cad7dbca6b764a7cba110931b6035302dd83b574" args="" -->CC_RenderDataOff</em>&nbsp;</td><td>
+<p>turns off any rendering of the sensor data (off by default) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a48dea54d66d3cd48fda033d19cad7dbcadc438b5d23e19d70df1e4425302e26d0"></a><!-- doxytag: member="CC_RenderDataCheck" ref="a48dea54d66d3cd48fda033d19cad7dbcadc438b5d23e19d70df1e4425302e26d0" args="" -->CC_RenderDataCheck</em>&nbsp;</td><td>
+<p>returns whether data rendering is on </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a48dea54d66d3cd48fda033d19cad7dbca6041933887566ae587fb1babcfa3794d"></a><!-- doxytag: member="CC_RenderGeometryOn" ref="a48dea54d66d3cd48fda033d19cad7dbca6041933887566ae587fb1babcfa3794d" args="" -->CC_RenderGeometryOn</em>&nbsp;</td><td>
+<p>turns on any rendering of the sensor geometry (on by default) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a48dea54d66d3cd48fda033d19cad7dbcac80f84e0b1dab127526e2c7517f9fd16"></a><!-- doxytag: member="CC_RenderGeometryOff" ref="a48dea54d66d3cd48fda033d19cad7dbcac80f84e0b1dab127526e2c7517f9fd16" args="" -->CC_RenderGeometryOff</em>&nbsp;</td><td>
+<p>turns off any rendering of the sensor geometry (on by default) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a48dea54d66d3cd48fda033d19cad7dbca0f1f04ef2d988fc5e5bc061c6eba352e"></a><!-- doxytag: member="CC_RenderGeometryCheck" ref="a48dea54d66d3cd48fda033d19cad7dbca0f1f04ef2d988fc5e5bc061c6eba352e" args="" -->CC_RenderGeometryCheck</em>&nbsp;</td><td>
+<p>returns whether geometry rendering is on </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00331">331</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a213c434cb928c4ca22513e2302632435"></a><!-- doxytag: member="OpenRAVE::SensorBase::SensorType" ref="a213c434cb928c4ca22513e2302632435" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>列挙型の値: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435a936ea626f25292f8acfc15830a7ad202"></a><!-- doxytag: member="ST_Invalid" ref="a213c434cb928c4ca22513e2302632435a936ea626f25292f8acfc15830a7ad202" args="" -->ST_Invalid</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435a4541d21a4d11deb0969d56dd284fa075"></a><!-- doxytag: member="ST_Laser" ref="a213c434cb928c4ca22513e2302632435a4541d21a4d11deb0969d56dd284fa075" args="" -->ST_Laser</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435ae11c3a3455d4bd69e29d3adcdc516485"></a><!-- doxytag: member="ST_Camera" ref="a213c434cb928c4ca22513e2302632435ae11c3a3455d4bd69e29d3adcdc516485" args="" -->ST_Camera</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435aa5d3d03a421042b56e9ed7041b03d96b"></a><!-- doxytag: member="ST_JointEncoder" ref="a213c434cb928c4ca22513e2302632435aa5d3d03a421042b56e9ed7041b03d96b" args="" -->ST_JointEncoder</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435a5357cf23ce464e19f67c73122a0a42d9"></a><!-- doxytag: member="ST_Force6D" ref="a213c434cb928c4ca22513e2302632435a5357cf23ce464e19f67c73122a0a42d9" args="" -->ST_Force6D</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435ad1d86d8a2bfe8a9d7aff51d2dfff434b"></a><!-- doxytag: member="ST_IMU" ref="a213c434cb928c4ca22513e2302632435ad1d86d8a2bfe8a9d7aff51d2dfff434b" args="" -->ST_IMU</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435a95bd0b32d2de8ad24080c0bae1d1b09e"></a><!-- doxytag: member="ST_Odometry" ref="a213c434cb928c4ca22513e2302632435a95bd0b32d2de8ad24080c0bae1d1b09e" args="" -->ST_Odometry</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435ad222298b6f04034b44003e0f29536cc2"></a><!-- doxytag: member="ST_Tactile" ref="a213c434cb928c4ca22513e2302632435ad222298b6f04034b44003e0f29536cc2" args="" -->ST_Tactile</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435a92435db0e476a975a85f3040d7227215"></a><!-- doxytag: member="ST_Actuator" ref="a213c434cb928c4ca22513e2302632435a92435db0e476a975a85f3040d7227215" args="" -->ST_Actuator</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435a335d8820608490ed884ecbbec504eb68"></a><!-- doxytag: member="ST_Touch" ref="a213c434cb928c4ca22513e2302632435a335d8820608490ed884ecbbec504eb68" args="" -->ST_Touch</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435ad7cbba96be0dc71f7b614e056dd780ab"></a><!-- doxytag: member="ST_Gyro" ref="a213c434cb928c4ca22513e2302632435ad7cbba96be0dc71f7b614e056dd780ab" args="" -->ST_Gyro</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435a63dc1952ea8ab1be1a9d393fdfd080c1"></a><!-- doxytag: member="ST_Intensity" ref="a213c434cb928c4ca22513e2302632435a63dc1952ea8ab1be1a9d393fdfd080c1" args="" -->ST_Intensity</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435aaf1a7495fb60915da5d25784d355d346"></a><!-- doxytag: member="ST_Color" ref="a213c434cb928c4ca22513e2302632435aaf1a7495fb60915da5d25784d355d346" args="" -->ST_Color</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435a59b9461851a9a00c41589c55aa33a9d3"></a><!-- doxytag: member="ST_Accelerometer" ref="a213c434cb928c4ca22513e2302632435a59b9461851a9a00c41589c55aa33a9d3" args="" -->ST_Accelerometer</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a213c434cb928c4ca22513e2302632435af148609b52480eb24a6ada7fa17cef6c"></a><!-- doxytag: member="ST_NumberofSensorTypes" ref="a213c434cb928c4ca22513e2302632435af148609b52480eb24a6ada7fa17cef6c" args="" -->ST_NumberofSensorTypes</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00031">31</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a5a4f9536984507dfa311d57f00ece076"></a><!-- doxytag: member="OpenRAVE::SensorBase::SensorBase" ref="a5a4f9536984507dfa311d57f00ece076" args="(EnvironmentBasePtr penv)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1SensorBase.html">SensorBase</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a>&nbsp;</td>
+          <td class="paramname"> <em>penv</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00320">320</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6801281af326361f11f3768255cd2319"></a><!-- doxytag: member="OpenRAVE::SensorBase::~SensorBase" ref="a6801281af326361f11f3768255cd2319" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="classOpenRAVE_1_1SensorBase.html">SensorBase</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00322">322</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="ae02c7c4987dd11f5fb7657e18c7c8318"></a><!-- doxytag: member="OpenRAVE::SensorBase::Configure" ref="ae02c7c4987dd11f5fb7657e18c7c8318" args="(ConfigureCommand command, bool blocking=false)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int Configure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbc">ConfigureCommand</a>&nbsp;</td>
+          <td class="paramname"> <em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>blocking</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Configures properties of the sensor like power. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td><a class="el" href="classOpenRAVE_1_1SensorBase.html#a48dea54d66d3cd48fda033d19cad7dbc">ConfigureCommand</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>blocking</em>&nbsp;</td><td>If set to true, makes sure the configuration ends before this function returns.(might cause problems if environment is locked). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>例外:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="classOpenRAVE_1_1openrave__exception.html" title="Exception that all OpenRAVE internal methods throw; the error codes are held in OpenRAVEErrorCode...">openrave_exception</a></em>&nbsp;</td><td>if command doesn't succeed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae4531cd4b3e1de9708d9fc2cce769eff"></a><!-- doxytag: member="OpenRAVE::SensorBase::CreateSensorData" ref="ae4531cd4b3e1de9708d9fc2cce769eff" args="(SensorType type=ST_Invalid)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1SensorBase.html#adfb77411b1a558ad93cf53a7da1ca06f">SensorDataPtr</a> CreateSensorData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a>&nbsp;</td>
+          <td class="paramname"> <em>type</em> = <code>ST_Invalid</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Creates the sensor data to be specifically used by this class. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>the requested sensor type to create. A sensor can support many types. If type is ST_Invalid, then returns a data structure of the type most representative of this sensor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>new <a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorData.html" title="used to pass sensor data around">SensorData</a> class </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="affeafe65e7c4094f282d273dedbf069b"></a><!-- doxytag: member="OpenRAVE::SensorBase::GetInterfaceTypeStatic" ref="affeafe65e7c4094f282d273dedbf069b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static InterfaceType GetInterfaceTypeStatic </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return the static interface type this class points to (used for safe casting) </p>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00326">326</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3cc720dbc55fa8e07a0f85343d3bb136"></a><!-- doxytag: member="OpenRAVE::SensorBase::GetName" ref="a3cc720dbc55fa8e07a0f85343d3bb136" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; GetName </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>戻り値:</b></dt><dd>the name of the sensor </dd></dl>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00392">392</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7b2e5f8884dd4897de003828e8e8146"></a><!-- doxytag: member="OpenRAVE::SensorBase::GetSensorData" ref="ad7b2e5f8884dd4897de003828e8e8146" args="(SensorDataPtr psensordata)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool GetSensorData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1SensorBase.html#adfb77411b1a558ad93cf53a7da1ca06f">SensorDataPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>psensordata</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Copy the most recent published data of the sensor given the type. </p>
+<p>Once GetSensorData returns, the caller has full unrestricted access to the data. This method is thread safe. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>psensordata</em>&nbsp;</td><td>A pointer to <a class="el" href="classOpenRAVE_1_1SensorBase_1_1SensorData.html" title="used to pass sensor data around">SensorData</a> returned from CreateSensorData, the plugin will use psensordata-&gt;GetType() in order to return the correctly supported type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a080408b00865d76ab0890ae98207d980"></a><!-- doxytag: member="OpenRAVE::SensorBase::GetSensorGeometry" ref="a080408b00865d76ab0890ae98207d980" args="(SensorType type=ST_Invalid)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1SensorBase.html#a91b8c682028d7df3a937281bd419680d">SensorGeometryPtr</a> GetSensorGeometry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a>&nbsp;</td>
+          <td class="paramname"> <em>type</em> = <code>ST_Invalid</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the sensor geometry. This method is thread safe. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>the requested sensor type to create. A sensor can support many types. If type is ST_Invalid, then returns a data structure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>sensor geometry pointer, use delete to destroy it </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a11e61e806d5650919a0c8d2cfd76a358"></a><!-- doxytag: member="OpenRAVE::SensorBase::GetTransform" ref="a11e61e806d5650919a0c8d2cfd76a358" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> GetTransform </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a90092f801b2f4091b5509d6ea1307ce9"></a><!-- doxytag: member="OpenRAVE::SensorBase::Init" ref="a90092f801b2f4091b5509d6ea1307ce9" args="(const std::string &amp;) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Init </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000053">非推奨:</a></b></dt><dd>(11/03/28) </dd></dl>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00400">400</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab17d44ea62751790d35594754f7069e5"></a><!-- doxytag: member="OpenRAVE::SensorBase::RegisterDataCallback" ref="ab17d44ea62751790d35594754f7069e5" args="(SensorType type, const boost::function&lt; void(SensorDataConstPtr)&gt; &amp;callback) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a> RegisterDataCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a>&nbsp;</td>
+          <td class="paramname"> <em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::function&lt; void(<a class="el" href="classOpenRAVE_1_1SensorBase.html#a8a80a84d6814d2de51a5b66cf2295814">SensorDataConstPtr</a>)&gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>callback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Register a callback whenever new sensor data comes in. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>the sensor type to register for </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>callback</em>&nbsp;</td><td>the user function to call, note that this might block the thread generating/receiving sensor data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad04571abe5ee94304a92c24bd2863d2f"></a><!-- doxytag: member="OpenRAVE::SensorBase::Reset" ref="ad04571abe5ee94304a92c24bd2863d2f" args="(int) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Reset </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00403">403</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="acd410c7697191dd9af60ce515fb94215"></a><!-- doxytag: member="OpenRAVE::SensorBase::SetName" ref="acd410c7697191dd9af60ce515fb94215" args="(const std::string &amp;newname)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>newname</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00395">395</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b064fc102932710baf4ada2799d7236"></a><!-- doxytag: member="OpenRAVE::SensorBase::SetTransform" ref="a2b064fc102932710baf4ada2799d7236" args="(const Transform &amp;trans)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetTransform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceOpenRAVE.html#ad7d44b5a2b65bf3c814d2983528b2e85">Transform</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>trans</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the transform of a sensor (global coordinate system). </p>
+<p>Sensors attached to the robot have their transforms automatically set every time the robot is moved </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>trans</em>&nbsp;</td><td>- The transform defining the frame of the sensor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afa04259a5131e4b12c964d7c66d7c89a"></a><!-- doxytag: member="OpenRAVE::SensorBase::SimulationStep" ref="afa04259a5131e4b12c964d7c66d7c89a" args="(dReal fTimeElapsed) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SimulationStep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a973ec569e405922437be98473d2aa6f8">dReal</a>&nbsp;</td>
+          <td class="paramname"> <em>fTimeElapsed</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Simulate one step forward for sensors. </p>
+<p>Only valid if this sensor is simulation based. A sensor hooked up to a real device can ignore this call </p>
+
+</div>
+</div>
+<a class="anchor" id="a3d9771c99399198411c3715160d7d415"></a><!-- doxytag: member="OpenRAVE::SensorBase::Supports" ref="a3d9771c99399198411c3715160d7d415" args="(SensorType type)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Supports </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classOpenRAVE_1_1SensorBase.html#a213c434cb928c4ca22513e2302632435">SensorType</a>&nbsp;</td>
+          <td class="paramname"> <em>type</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>returns true if sensor supports a particular sensor type </p>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="aaf2ed934b37cbbd236fdd1b01a5f5005"></a><!-- doxytag: member="OpenRAVE::SensorBase::_name" ref="aaf2ed934b37cbbd236fdd1b01a5f5005" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classOpenRAVE_1_1SensorBase.html#aaf2ed934b37cbbd236fdd1b01a5f5005">_name</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>name of the sensor </p>
+
+<p> <a class="el" href="sensor_8h_source.html">sensor.h</a> の <a class="el" href="sensor_8h_source.html#l00408">408</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>include/openrave/<a class="el" href="sensor_8h_source.html">sensor.h (r2848/r2761)</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:13 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

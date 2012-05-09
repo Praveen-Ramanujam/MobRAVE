@@ -1,0 +1,750 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1RaveGlobal" kind="class" prot="public">
+    <compoundname>OpenRAVE::RaveGlobal</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1UserData" prot="public" virt="non-virtual">UserData</basecompoundref>
+    <innerclass refid="classOpenRAVE_1_1RaveGlobal_1_1XMLReaderFunctionData" prot="public">OpenRAVE::RaveGlobal::XMLReaderFunctionData</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classOpenRAVE_1_1RaveGlobal_1a99a38015fdc2be328c055cf5bc50e929" prot="private" static="no">
+        <type>std::map&lt; std::string, <ref refid="namespaceOpenRAVE_1adec9e4596e96321e8bf28523753f5d2c" kindref="member">CreateXMLReaderFn</ref>, <ref refid="classOpenRAVE_1_1CaseInsensitiveCompare" kindref="compound">CaseInsensitiveCompare</ref> &gt;</type>
+        <definition>typedef std::map&lt;std::string, CreateXMLReaderFn, CaseInsensitiveCompare&gt; READERSMAP</definition>
+        <argsstring></argsstring>
+        <name>READERSMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="303" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1abab0a714674e7df96e7e1d139243a50d" prot="private" static="yes" mutable="no">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1RaveGlobal" kindref="compound">RaveGlobal</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt; RaveGlobal &gt; _state</definition>
+        <argsstring></argsstring>
+        <name>_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="594" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="594" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1a37e406905628803a69ab58ca091a50b7" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; RaveDatabase &gt;</type>
+        <definition>boost::shared_ptr&lt;RaveDatabase&gt; _pdatabase</definition>
+        <argsstring></argsstring>
+        <name>_pdatabase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="598" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1a0323776d0d66f97271f47ce937c5f5a6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _nDebugLevel</definition>
+        <argsstring></argsstring>
+        <name>_nDebugLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="599" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1a755c7f2a9b4746926422281eeefd962c" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex _mutexXML</definition>
+        <argsstring></argsstring>
+        <name>_mutexXML</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="600" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1ab98dbd61cd1d721245851853b9975392" prot="private" static="no" mutable="no">
+        <type>std::map&lt; InterfaceType, READERSMAP &gt;</type>
+        <definition>std::map&lt;InterfaceType, READERSMAP &gt; _mapreaders</definition>
+        <argsstring></argsstring>
+        <name>_mapreaders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="601" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1afaf19917cfc2a39781a4a13c28d54f03" prot="private" static="no" mutable="no">
+        <type>std::map&lt; InterfaceType, string &gt;</type>
+        <definition>std::map&lt;InterfaceType,string&gt; _mapinterfacenames</definition>
+        <argsstring></argsstring>
+        <name>_mapinterfacenames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="602" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1adbcc9fb0c07b3e284e95c8a6c720820d" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref>, string &gt;</type>
+        <definition>std::map&lt;IkParameterizationType,string&gt; _mapikparameterization</definition>
+        <argsstring></argsstring>
+        <name>_mapikparameterization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="603" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1a0742a549298b4ee887176cdf6ad13ab7" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, <ref refid="classOpenRAVE_1_1EnvironmentBase" kindref="compound">EnvironmentBase</ref> * &gt;</type>
+        <definition>std::map&lt;int, EnvironmentBase*&gt; _mapenvironments</definition>
+        <argsstring></argsstring>
+        <name>_mapenvironments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="604" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1a5765bec2c7ca77bbbfbc06fda7733e75" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _homedirectory</definition>
+        <argsstring></argsstring>
+        <name>_homedirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="605" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1a351759a316089c0d06115df0e5bdf153" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; _vdbdirectories</definition>
+        <argsstring></argsstring>
+        <name>_vdbdirectories</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="606" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="606" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1a4edcf9a47ce27d9eb3251a047a619c1b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _nGlobalEnvironmentId</definition>
+        <argsstring></argsstring>
+        <name>_nGlobalEnvironmentId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="607" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1RaveGlobal_1ae75d94506beff89e7baf28e90262103e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7176d63b178b8eab68b6947d4d850bb" kindref="member">SpaceSamplerBasePtr</ref></type>
+        <definition>SpaceSamplerBasePtr _pdefaultsampler</definition>
+        <argsstring></argsstring>
+        <name>_pdefaultsampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="608" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="608" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1a537b595dc35b12cd0b14d7dfb30874e0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RaveGlobal</definition>
+        <argsstring>()</argsstring>
+        <name>RaveGlobal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="306" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="305" bodyend="339"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1ac2539fefc0daeaade543ac67f490fef7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~RaveGlobal</definition>
+        <argsstring>()</argsstring>
+        <name>~RaveGlobal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="341" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="341" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1a50aa1ff8ff27a294702189de445c180a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Initialize</definition>
+        <argsstring>(bool bLoadAllPlugins, int level)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>bool</type>
+          <declname>bLoadAllPlugins</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="352" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="351" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1ac919a991060ede6983343719401686de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Destroy</definition>
+        <argsstring>()</argsstring>
+        <name>Destroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="400" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="399" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1aef9910441ce581b6378f0774c05a20f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string GetHomeDirectory</definition>
+        <argsstring>()</argsstring>
+        <name>GetHomeDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="424" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="423" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1adf292de5999ffe77b742e5419f49d819" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string FindDatabaseFile</definition>
+        <argsstring>(const std::string &amp;filename, bool bRead)</argsstring>
+        <name>FindDatabaseFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bRead</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="429" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="428" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1a34843268c054cbafe3593f44d0a5addb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetDebugLevel</definition>
+        <argsstring>(int level)</argsstring>
+        <name>SetDebugLevel</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="451" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="450" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1a95c27d789f04ceca6d61ccd1038a2917" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetDebugLevel</definition>
+        <argsstring>()</argsstring>
+        <name>GetDebugLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="456" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="455" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1a25e7f8f2670b052795003bb26d4f5be9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref></type>
+        <definition>UserDataPtr RegisterXMLReader</definition>
+        <argsstring>(InterfaceType type, const std::string &amp;xmltag, const CreateXMLReaderFn &amp;fn)</argsstring>
+        <name>RegisterXMLReader</name>
+        <param>
+          <type>InterfaceType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>xmltag</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1adec9e4596e96321e8bf28523753f5d2c" kindref="member">CreateXMLReaderFn</ref> &amp;</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="485" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="484" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1a32bcb503114c722348dea239ba7aa75d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1a5465be4feef36a211b06feebdc5e3b42" kindref="member">BaseXMLReaderPtr</ref></type>
+        <definition>const BaseXMLReaderPtr CallXMLReader</definition>
+        <argsstring>(InterfaceType type, const std::string &amp;xmltag, InterfaceBasePtr pinterface, const AttributesList &amp;atts)</argsstring>
+        <name>CallXMLReader</name>
+        <param>
+          <type>InterfaceType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>xmltag</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">InterfaceBasePtr</ref></type>
+          <declname>pinterface</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1a7372895c7fd9541aa829987c3eb9aaf9" kindref="member">AttributesList</ref> &amp;</type>
+          <declname>atts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="490" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="489" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1ae58f5951903e445037f1e5f3bd05a91d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::shared_ptr&lt; RaveDatabase &gt;</type>
+        <definition>boost::shared_ptr&lt;RaveDatabase&gt; GetDatabase</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDatabase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="499" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="499" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1a0f07ab97140ee0a8d6626e09f4eab39c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::map&lt; InterfaceType, std::string &gt; &amp;</type>
+        <definition>const std::map&lt;InterfaceType,std::string&gt;&amp; GetInterfaceNamesMap</definition>
+        <argsstring>() const </argsstring>
+        <name>GetInterfaceNamesMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="502" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="502" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1a6250df26548e52b1c1c652ed6e29c933" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::map&lt; <ref refid="namespaceOpenRAVE_1a16f7833e516a35d385ac594a44e44a2e" kindref="member">IkParameterizationType</ref>, std::string &gt; &amp;</type>
+        <definition>const std::map&lt;IkParameterizationType,std::string&gt;&amp; GetIkParameterizationMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetIkParameterizationMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="505" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="505" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1ada3adbcd8d765013b1966784795bf887" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; GetInterfaceName</definition>
+        <argsstring>(InterfaceType type)</argsstring>
+        <name>GetInterfaceName</name>
+        <param>
+          <type>InterfaceType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="510" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="509" bodyend="516"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1a5a6cb32da5503770ce1adc19368033fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int RegisterEnvironment</definition>
+        <argsstring>(EnvironmentBase *penv)</argsstring>
+        <name>RegisterEnvironment</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1EnvironmentBase" kindref="compound">EnvironmentBase</ref> *</type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="520" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="519" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1abd8cbcc02982435ee5a3df16092a470a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnregisterEnvironment</definition>
+        <argsstring>(EnvironmentBase *penv)</argsstring>
+        <name>UnregisterEnvironment</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1EnvironmentBase" kindref="compound">EnvironmentBase</ref> *</type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="528" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="527" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1ae01c4576e19ea56ac9229d7a568ffbe1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetEnvironmentId</definition>
+        <argsstring>(EnvironmentBasePtr penv)</argsstring>
+        <name>GetEnvironmentId</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="539" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="538" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1ade0cc732205f416430ad758daadfea7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref></type>
+        <definition>EnvironmentBasePtr GetEnvironment</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetEnvironment</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="550" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="549" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1a7069f23418920ea13d985c390d5d2bc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetEnvironments</definition>
+        <argsstring>(std::list&lt; EnvironmentBasePtr &gt; &amp;listenvironments)</argsstring>
+        <name>GetEnvironments</name>
+        <param>
+          <type>std::list&lt; <ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">EnvironmentBasePtr</ref> &gt; &amp;</type>
+          <declname>listenvironments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="560" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="559" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1abd166dd5e3b8635f6a672b2694aa4b2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1ad7176d63b178b8eab68b6947d4d850bb" kindref="member">SpaceSamplerBasePtr</ref></type>
+        <definition>SpaceSamplerBasePtr GetDefaultSampler</definition>
+        <argsstring>()</argsstring>
+        <name>GetDefaultSampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="572" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="571" bodyend="579"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1a50e66cf68a1a02c3b7b4e4f7405a0c26" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1RaveGlobal" kindref="compound">RaveGlobal</ref> &gt; &amp;</type>
+        <definition>static boost::shared_ptr&lt;RaveGlobal&gt;&amp; instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="346" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="345" bodyend="349"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1aaefb65b6173e1904e4287a61020634f6" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _create</definition>
+        <argsstring>()</argsstring>
+        <name>_create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="583" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="582" bodyend="587"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1RaveGlobal_1aa77713671793cd5226b3437bda30e353" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool _IsInitialized</definition>
+        <argsstring>() const </argsstring>
+        <name>_IsInitialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="589" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="589" bodyend="591"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1RaveGlobal_1a615b6f709467f6f0aa45c3cea686ba39" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend void</type>
+        <definition>void RaveInitializeFromState</definition>
+        <argsstring>(UserDataPtr)</argsstring>
+        <name>RaveInitializeFromState</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref></type>
+          <defname>globalstate</defname>
+        </param>
+        <briefdescription>
+<para>Initializes the global state from an already loaded <ref refid="namespaceOpenRAVE" kindref="compound">OpenRAVE</ref> environment. </para>        </briefdescription>
+        <detaileddescription>
+<para>Because of shared object boundaries, it is necessary to pass the global state pointer around. If using <ref refid="plugin_8h" kindref="compound">plugin.h</ref>, this function is automatically called by <ref refid="group__plugin__exports_1ga468c900067e08689383b3f8da642141f" kindref="member">CreateInterfaceValidated</ref>. It is also called by and every <ref refid="classOpenRAVE_1_1InterfaceBase" kindref="compound">InterfaceBase</ref> constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">globalstate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="613" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="659" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="friend" id="classOpenRAVE_1_1RaveGlobal_1a7e84c803da09036af3295e448bd0b17e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="namespaceOpenRAVE_1aa02b5cd826890fa31fb80f0d469312d9" kindref="member">UserDataPtr</ref></type>
+        <definition>UserDataPtr RaveGlobalState</definition>
+        <argsstring>()</argsstring>
+        <name>RaveGlobalState</name>
+        <briefdescription>
+<para>A pointer to the global openrave state. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a managed pointer to the state. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="614" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="664" bodyend="672"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>there is only once global openrave state. It is created when openrave is first used, and destroyed when the program quits or RaveDestroy is called. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1684">
+        <label>UserData</label>
+        <link refid="classOpenRAVE_1_1UserData"/>
+      </node>
+      <node id="1683">
+        <label>RaveGlobal</label>
+        <link refid="classOpenRAVE_1_1RaveGlobal"/>
+        <childnode refid="1684" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1696">
+        <label>K</label>
+      </node>
+      <node id="1697">
+        <label>T</label>
+      </node>
+      <node id="1695">
+        <label>map&lt; K, T &gt;</label>
+        <childnode refid="1696" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="1697" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1688">
+        <label>EnvironmentBase</label>
+        <link refid="classOpenRAVE_1_1EnvironmentBase"/>
+      </node>
+      <node id="1687">
+        <label>map&lt; int, EnvironmentBase * &gt;</label>
+        <childnode refid="1688" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1690">
+        <label>string</label>
+        <childnode refid="1691" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1689">
+        <label>map&lt; InterfaceType, string &gt;</label>
+        <childnode refid="1690" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1693">
+        <label>vector&lt; std::string &gt;</label>
+        <childnode refid="1690" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1686">
+        <label>UserData</label>
+        <link refid="classOpenRAVE_1_1UserData"/>
+      </node>
+      <node id="1691">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1694">
+        <label>map&lt; InterfaceType, READERSMAP &gt;</label>
+        <childnode refid="1695" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1685">
+        <label>RaveGlobal</label>
+        <link refid="classOpenRAVE_1_1RaveGlobal"/>
+        <childnode refid="1686" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1687" relation="usage">
+          <edgelabel>_mapenvironments</edgelabel>
+        </childnode>
+        <childnode refid="1689" relation="usage">
+          <edgelabel>_mapinterfacenames</edgelabel>
+        </childnode>
+        <childnode refid="1692" relation="usage">
+          <edgelabel>_mapikparameterization</edgelabel>
+        </childnode>
+        <childnode refid="1690" relation="usage">
+          <edgelabel>_homedirectory</edgelabel>
+        </childnode>
+        <childnode refid="1693" relation="usage">
+          <edgelabel>_vdbdirectories</edgelabel>
+        </childnode>
+        <childnode refid="1694" relation="usage">
+          <edgelabel>_mapreaders</edgelabel>
+        </childnode>
+      </node>
+      <node id="1692">
+        <label>map&lt; IkParameterizationType, string &gt;</label>
+        <childnode refid="1690" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" line="302" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="301" bodyend="615"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1aaefb65b6173e1904e4287a61020634f6" prot="protected" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_create</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a5765bec2c7ca77bbbfbc06fda7733e75" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_homedirectory</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1aa77713671793cd5226b3437bda30e353" prot="protected" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_IsInitialized</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a0742a549298b4ee887176cdf6ad13ab7" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_mapenvironments</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1adbcc9fb0c07b3e284e95c8a6c720820d" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_mapikparameterization</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1afaf19917cfc2a39781a4a13c28d54f03" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_mapinterfacenames</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1ab98dbd61cd1d721245851853b9975392" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_mapreaders</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a755c7f2a9b4746926422281eeefd962c" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_mutexXML</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a0323776d0d66f97271f47ce937c5f5a6" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_nDebugLevel</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a4edcf9a47ce27d9eb3251a047a619c1b" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_nGlobalEnvironmentId</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a37e406905628803a69ab58ca091a50b7" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_pdatabase</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1ae75d94506beff89e7baf28e90262103e" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_pdefaultsampler</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1abab0a714674e7df96e7e1d139243a50d" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_state</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a351759a316089c0d06115df0e5bdf153" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>_vdbdirectories</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a32bcb503114c722348dea239ba7aa75d" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>CallXMLReader</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1ac919a991060ede6983343719401686de" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>Destroy</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1adf292de5999ffe77b742e5419f49d819" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>FindDatabaseFile</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1ae58f5951903e445037f1e5f3bd05a91d" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>GetDatabase</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a95c27d789f04ceca6d61ccd1038a2917" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>GetDebugLevel</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1abd166dd5e3b8635f6a672b2694aa4b2b" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>GetDefaultSampler</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1ade0cc732205f416430ad758daadfea7f" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>GetEnvironment</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1ae01c4576e19ea56ac9229d7a568ffbe1" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>GetEnvironmentId</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a7069f23418920ea13d985c390d5d2bc0" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>GetEnvironments</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1aef9910441ce581b6378f0774c05a20f7" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>GetHomeDirectory</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a6250df26548e52b1c1c652ed6e29c933" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>GetIkParameterizationMap</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1ada3adbcd8d765013b1966784795bf887" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>GetInterfaceName</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a0f07ab97140ee0a8d6626e09f4eab39c" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>GetInterfaceNamesMap</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a50aa1ff8ff27a294702189de445c180a" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>Initialize</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a50e66cf68a1a02c3b7b4e4f7405a0c26" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>instance</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a537b595dc35b12cd0b14d7dfb30874e0" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>RaveGlobal</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a7e84c803da09036af3295e448bd0b17e" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>RaveGlobalState</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a615b6f709467f6f0aa45c3cea686ba39" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>RaveInitializeFromState</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a99a38015fdc2be328c055cf5bc50e929" prot="private" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>READERSMAP</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a5a6cb32da5503770ce1adc19368033fd" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>RegisterEnvironment</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a25e7f8f2670b052795003bb26d4f5be9" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>RegisterXMLReader</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1a34843268c054cbafe3593f44d0a5addb" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>SetDebugLevel</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1abd8cbcc02982435ee5a3df16092a470a" prot="public" virt="non-virtual"><scope>OpenRAVE::RaveGlobal</scope><name>UnregisterEnvironment</name></member>
+      <member refid="classOpenRAVE_1_1RaveGlobal_1ac2539fefc0daeaade543ac67f490fef7" prot="public" virt="virtual"><scope>OpenRAVE::RaveGlobal</scope><name>~RaveGlobal</name></member>
+      <member refid="classOpenRAVE_1_1UserData_1aaaa5baf9761b9e8f4c120b58d379ab12" prot="public" virt="virtual"><scope>OpenRAVE::RaveGlobal</scope><name>~UserData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

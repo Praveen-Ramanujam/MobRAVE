@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: Robot Concepts 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="index.html">Open Robotics Automation Virtual Environment</a>&nbsp;&raquo;&nbsp;<a class="el" href="interface__concepts.html">Base Interface Concepts</a>
+  </div>
+</div>
+<div class="contents">
+
+
+<h1><a class="anchor" id="arch_robot">Robot Concepts </a></h1><p><b>Reference:</b> <a class="el" href="classOpenRAVE_1_1RobotBase.html">OpenRAVE::RobotBase</a></p>
+<p>Robots are a special type of KinBody that need higher level functionality for their control and movement in the environment. There are a couple of differences between a Robot and a regular KinBody.</p>
+<h2><a class="anchor" id="arch_robot_manipulator">
+Manipulators</a></h2>
+<p>Every robot supports a list of <a class="el" href="classOpenRAVE_1_1RobotBase_1_1Manipulator.html">Manipulator</a> objects that describe the links the robot should use when manipulating parts of the environment. Usually manipulators are serial chains with a Base link and an End Effector link. Each manipulator is also decomposed into two parts: the arm and the hand. The hand usually makes contact with the objects while the arm transfers the hand to its destination. The Manipulator class also has an optional pointer to a IkSolverBase class providing inverse kinematics functionality. The IK solver used by a Manipulator can be changed by Manipulator::SetIKSolver, so plugins can provide and set their own IK solvers.</p>
+<h2><a class="anchor" id="arch_robot_activedof">
+Active Degrees of Freedom</a></h2>
+<p>When controlling and planning for a robot, it is possible to set the degrees of freedom that should be used. For example, consider a humanoid robot. There should be in easy way to specify to planners that only the right hand of the robot should be taken into consideration when planning; the rest of the joints should be ignored. Or consider the case where we care about navigation of the humanoid robot. Here we would want to control the translation of the robot on the plane and its orientation. Perhaps we want to do footstep planning and also care about controlling the two legs. All this is possible with the Active Degrees of Freedom feature provided by <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a>. First call RobotBase::SetActiveDOFs to set the degrees of freedom of the robot; it is also possible to set translation about the XYZ axes or the angle around a rotation axis as a degree of freedom. Each RobotBase function with the word Active expects the active DOF values to be specified. Basically, for any function in KinBody that deals with Joints, there is a corresponding active function in RobotBase.</p>
+<h2><a class="anchor" id="arch_robot_grabbing">
+Grabbing Bodies</a></h2>
+<p>It is possible for a robot to attach a <a class="el" href="classOpenRAVE_1_1KinBody.html">KinBody</a> onto one of its links so that when the link moves, the KinBody also moves. Because collision detection will stop being checked between the robot and the KinBody, you could say that the KinBody becomes a part of the robot temporarily. This functionality is necessary for manipulation planning. Whenever the robot is carrying a body, all collisions between the robot and that item should be ignored once the body has been grasped.</p>
+<h2><a class="anchor" id="arch_robot_sensors">
+Attaching Sensors</a></h2>
+<p>Can attach any number of sensors to the robot's links through the <a class="el" href="classOpenRAVE_1_1RobotBase_1_1AttachedSensor.html">AttachedSensor</a> class. The sensor transformation will be completely owned by the robot. A robot can be attached with any number of sensors on any number of links. As the robot link moves, the sensor moves with it preserving its relative transformation.</p>
+<p>AttachedSensor object holds a <a class="el" href="classOpenRAVE_1_1SensorBase.html">SensorBase</a> object that contains the actual object gathering and publishing data.</p>
+<h2><a class="anchor" id="arch_robot_options">
+Loading Options</a></h2>
+<p>This is the set of loading options passed as a AttributesList into functions like <a class="el" href="classOpenRAVE_1_1EnvironmentBase.html#a93df9cb2035fd4489282e9fbe0f96b93">OpenRAVE::EnvironmentBase::ReadRobotXMLFile</a>.</p>
+<p>KinBody <a class="el" href="arch__kinbody.html#arch_kinbody_options">Loading Options</a> is also valid. </p>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:06 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

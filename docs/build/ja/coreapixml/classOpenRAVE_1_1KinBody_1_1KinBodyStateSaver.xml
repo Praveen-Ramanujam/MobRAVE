@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver" kind="class" prot="public">
+    <compoundname>OpenRAVE::KinBody::KinBodyStateSaver</compoundname>
+    <includes refid="kinbody_8h" local="no">kinbody.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a20928871868b555189b97697f24ec986" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _options</definition>
+        <argsstring></argsstring>
+        <name>_options</name>
+        <briefdescription>
+<para>saved options </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="845" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="845" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a2f3412de5eba65860974e9b6618d7159" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &gt;</type>
+        <definition>std::vector&lt;Transform&gt; _vLinkTransforms</definition>
+        <argsstring></argsstring>
+        <name>_vLinkTransforms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="846" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a0d210ddab68fd1b14e5c5841103c56e6" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; _vEnabledLinks</definition>
+        <argsstring></argsstring>
+        <name>_vEnabledLinks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="847" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a6f8c909c925badb5b017d57225290c00" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref>, <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;Vector,Vector&gt; &gt; _vLinkVelocities</definition>
+        <argsstring></argsstring>
+        <name>_vLinkVelocities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="848" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1ab58730adfaf5cb096034338c57fd81b8" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+        <definition>KinBodyPtr _pbody</definition>
+        <argsstring></argsstring>
+        <name>_pbody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="849" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1ac2e2b319e2ef28796765fe6c92ea44a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>KinBodyStateSaver</definition>
+        <argsstring>(KinBodyPtr pbody, int options=Save_LinkTransformation|Save_LinkEnable)</argsstring>
+        <name>KinBodyStateSaver</name>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+          <declname>pbody</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+          <defval>Save_LinkTransformation|Save_LinkEnable</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="838"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a280a87d534427c750c8b16260e777d25" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~KinBodyStateSaver</definition>
+        <argsstring>()</argsstring>
+        <name>~KinBodyStateSaver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="839"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a2bd6204ea5906897280ba134891ec6dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1abdcbe7a0abc56f7fd090dbd298a5a44c" kindref="member">KinBodyPtr</ref></type>
+        <definition>KinBodyPtr GetBody</definition>
+        <argsstring>() const </argsstring>
+        <name>GetBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="840" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="840" bodyend="842"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a684f358bcf26cab5022f7d33465d1568" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Restore</definition>
+        <argsstring>()</argsstring>
+        <name>Restore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="843"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a15049376e6919afecfc53db4008a2da7" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void _RestoreKinBody</definition>
+        <argsstring>()</argsstring>
+        <name>_RestoreKinBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="851"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper class to save and restore the entire kinbody state. </para>    </briefdescription>
+    <detaileddescription>
+<para>Options can be passed to the constructor in order to choose which parameters to save (see <ref refid="classOpenRAVE_1_1KinBody_1ac26237c033a41ea5d14733a01e1dd388" kindref="member">SaveParameters</ref>) </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1405">
+        <label>RaveTransform</label>
+      </node>
+      <node id="1401">
+        <label>KinBodyStateSaver</label>
+        <link refid="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver"/>
+        <childnode refid="1402" relation="usage">
+          <edgelabel>_vEnabledLinks</edgelabel>
+        </childnode>
+        <childnode refid="1403" relation="usage">
+          <edgelabel>_vLinkVelocities</edgelabel>
+        </childnode>
+        <childnode refid="1404" relation="usage">
+          <edgelabel>_vLinkTransforms</edgelabel>
+        </childnode>
+      </node>
+      <node id="1402">
+        <label>vector&lt; uint8_t &gt;</label>
+      </node>
+      <node id="1404">
+        <label>vector&lt; Transform &gt;</label>
+        <childnode refid="1405" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1403">
+        <label>vector&lt; std::pair&lt; Vector, Vector &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="836" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="835" bodyend="852"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a20928871868b555189b97697f24ec986" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::KinBodyStateSaver</scope><name>_options</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1ab58730adfaf5cb096034338c57fd81b8" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::KinBodyStateSaver</scope><name>_pbody</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a15049376e6919afecfc53db4008a2da7" prot="private" virt="virtual"><scope>OpenRAVE::KinBody::KinBodyStateSaver</scope><name>_RestoreKinBody</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a0d210ddab68fd1b14e5c5841103c56e6" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::KinBodyStateSaver</scope><name>_vEnabledLinks</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a2f3412de5eba65860974e9b6618d7159" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::KinBodyStateSaver</scope><name>_vLinkTransforms</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a6f8c909c925badb5b017d57225290c00" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::KinBodyStateSaver</scope><name>_vLinkVelocities</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a2bd6204ea5906897280ba134891ec6dc" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::KinBodyStateSaver</scope><name>GetBody</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1ac2e2b319e2ef28796765fe6c92ea44a5" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::KinBodyStateSaver</scope><name>KinBodyStateSaver</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a684f358bcf26cab5022f7d33465d1568" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::KinBodyStateSaver</scope><name>Restore</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1KinBodyStateSaver_1a280a87d534427c750c8b16260e777d25" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::KinBodyStateSaver</scope><name>~KinBodyStateSaver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

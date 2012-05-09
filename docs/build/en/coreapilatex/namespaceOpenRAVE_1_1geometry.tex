@@ -1,0 +1,165 @@
+\hypertarget{namespaceOpenRAVE_1_1geometry}{
+\subsection{OpenRAVE::geometry Namespace Reference}
+\label{namespaceOpenRAVE_1_1geometry}\index{OpenRAVE::geometry@{OpenRAVE::geometry}}
+}
+
+
+Templated math and geometric functions.  
+
+
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}
+\begin{DoxyCompactList}\small\item\em Vector class containing 4 dimensions. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform}{RaveTransform}
+\begin{DoxyCompactList}\small\item\em Affine transformation parameterized with quaterions. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}
+\begin{DoxyCompactList}\small\item\em Affine transformation parameterized with rotation matrices. Scales and shears are not supported. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{ray}
+\begin{DoxyCompactList}\small\item\em A ray defined by an origin and a direction. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1aabb}{aabb}
+\begin{DoxyCompactList}\small\item\em An axis aligned bounding box. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb}
+\begin{DoxyCompactList}\small\item\em An oriented bounding box. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1triangle}{triangle}
+\begin{DoxyCompactList}\small\item\em A triangle defined by 3 points. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1frustum}{frustum}
+\begin{DoxyCompactList}\small\item\em A pyramid with its vertex clipped. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics}{RaveCameraIntrinsics}
+\begin{DoxyCompactList}\small\item\em intrinsic parameters for a camera. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{group__affine__math_ga8a5d9ee6c215ae740e449a8310e4e9d4}{quatFromAxisAngle} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&axis, T angle)
+\begin{DoxyCompactList}\small\item\em Converts an axis-\/angle rotation into a quaternion. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{group__affine__math_gacf8a968523673f5e3e3c08ffafd75a84}{quatFromAxisAngle} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&axisangle)
+\begin{DoxyCompactList}\small\item\em Converts an axis-\/angle rotation into a quaternion. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{group__affine__math_gad512ee3ebabb8c45bea16c84ca9ea9d4}{quatFromMatrix} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \&rotation)
+\begin{DoxyCompactList}\small\item\em Converts the rotation of a matrix into a quaternion. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \hyperlink{group__affine__math_gadee9ddfd3bb8c56e599cf252853ff144}{matrixFromQuat} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&quat)
+\begin{DoxyCompactList}\small\item\em Converts a quaternion to a 3x3 matrix. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{group__affine__math_gacf10676c714b228545f93be252163d76}{matrixFromQuat} (\hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \&rotation, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&quat)
+\begin{DoxyCompactList}\small\item\em Converts a quaternion to a 3x3 matrix. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \hyperlink{group__affine__math_gad596e9d743a4d08e54db0f01b1657002}{matrixFromAxisAngle} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&axis, T angle)
+\begin{DoxyCompactList}\small\item\em Converts an axis-\/angle rotation to a 3x3 matrix. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \hyperlink{group__affine__math_ga25cf5562e674415477d2bcd80f95cc5b}{matrixFromAxisAngle} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&axisangle)
+\begin{DoxyCompactList}\small\item\em Converts an axis-\/angle rotation to a 3x3 matrix. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{group__affine__math_gac36d0b93e56274bdfb6e1e648b829536}{quatMultiply} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&quat0, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&quat1)
+\begin{DoxyCompactList}\small\item\em Multiply two quaternions. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{group__affine__math_ga7aa03948b7cc76653b754376dcd55bae}{quatInverse} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&quat)
+\begin{DoxyCompactList}\small\item\em Inverted a quaternion rotation. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{group__affine__math_gab1abf41daa0f130493c4a0591b03b4ec}{quatSlerp} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&quat0, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&quat1, T t)
+\begin{DoxyCompactList}\small\item\em Sphereical linear interpolation between two quaternions. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{group__affine__math_ga53ddf2e9014f577a6915e180a3cf01e1}{quatRotate} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&q, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&t)
+\begin{DoxyCompactList}\small\item\em transform a vector by a quaternion \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{group__affine__math_gaa6b1411c303ea16ecb279ae4a08735c0}{quatRotateDirection} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&sourcedir, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&targetdir)
+\begin{DoxyCompactList}\small\item\em Return the minimal quaternion that orients sourcedir to targetdir. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std::pair$<$ T, \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ $>$ \hyperlink{group__affine__math_ga436efaa950bb38f3b3b8a891e5da5591}{normalizeAxisRotation} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&axis, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&quat)
+\begin{DoxyCompactList}\small\item\em Find the rotation theta around axis such that rot(axis,theta) $\ast$ q is closest to the identity rotation. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{group__affine__math_ga95a2de86a8789000c0a12ce91bbefe0c}{axisAngleFromQuat} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&quat)
+\begin{DoxyCompactList}\small\item\em Converts a quaternion into the axis-\/angle representation. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \hyperlink{group__affine__math_gabf46823a4c5b59c9ac3e72f0905bea24}{axisAngleFromMatrix} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \&rotation)
+\begin{DoxyCompactList}\small\item\em Converts the rotation of a matrix into axis-\/angle representation. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \hyperlink{group__affine__math_ga9db1071fa2f5264616dabb3b3d16eec9}{transformLookat} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&vlookat, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&vcamerapos, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&vcameraup)
+\begin{DoxyCompactList}\small\item\em Returns a camera matrix that looks along a ray with a desired up vector. \item\end{DoxyCompactList}\item 
+\hypertarget{group__geometric__primitives_ga3264b6e233d1bacaa2176bf9e7a74399}{
+{\footnotesize template$<$typename T $>$ }\\int \hyperlink{group__geometric__primitives_ga3264b6e233d1bacaa2176bf9e7a74399}{insideQuadrilateral} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&v, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&verts)}
+\label{group__geometric__primitives_ga3264b6e233d1bacaa2176bf9e7a74399}
+
+\begin{DoxyCompactList}\small\item\em Tests a point inside a 3D quadrilateral. \item\end{DoxyCompactList}\item 
+\hypertarget{group__geometric__primitives_gafa7d69f62abeb6dcb2784b10ad6ef8a5}{
+{\footnotesize template$<$typename T $>$ }\\int \hyperlink{group__geometric__primitives_gafa7d69f62abeb6dcb2784b10ad6ef8a5}{insideTriangle} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ v, const \hyperlink{classOpenRAVE_1_1geometry_1_1triangle}{triangle}$<$ T $>$ \&tri)}
+\label{group__geometric__primitives_gafa7d69f62abeb6dcb2784b10ad6ef8a5}
+
+\begin{DoxyCompactList}\small\item\em Tests a point insdie a 3D triangle. \item\end{DoxyCompactList}\item 
+\hypertarget{group__geometric__primitives_ga1c4f9c919f34e3f44e4dbe3fd4abfb8e}{
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{group__geometric__primitives_ga1c4f9c919f34e3f44e4dbe3fd4abfb8e}{RayAABBTest} (const \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{ray}$<$ T $>$ \&r, const \hyperlink{classOpenRAVE_1_1geometry_1_1aabb}{aabb}$<$ T $>$ \&ab)}
+\label{group__geometric__primitives_ga1c4f9c919f34e3f44e4dbe3fd4abfb8e}
+
+\begin{DoxyCompactList}\small\item\em Test collision of a ray with an axis aligned bounding box. \item\end{DoxyCompactList}\item 
+\hypertarget{group__geometric__primitives_gabd242edf62b381f793017cce0f2bec93}{
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{group__geometric__primitives_gabd242edf62b381f793017cce0f2bec93}{RayOBBTest} (const \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{ray}$<$ T $>$ \&r, const \hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb}$<$ T $>$ \&o)}
+\label{group__geometric__primitives_gabd242edf62b381f793017cce0f2bec93}
+
+\begin{DoxyCompactList}\small\item\em Test collision of a ray and an oriented bounding box. \item\end{DoxyCompactList}\item 
+\hypertarget{group__geometric__primitives_gadda8d6c416e9ccfdbaf22e6755929e7e}{
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{group__geometric__primitives_gadda8d6c416e9ccfdbaf22e6755929e7e}{IsOBBinFrustum} (const \hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb}$<$ T $>$ \&o, const \hyperlink{classOpenRAVE_1_1geometry_1_1frustum}{frustum}$<$ T $>$ \&fr)}
+\label{group__geometric__primitives_gadda8d6c416e9ccfdbaf22e6755929e7e}
+
+\begin{DoxyCompactList}\small\item\em Test collision of an oriented bounding box and a frustum. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\bool \hyperlink{group__geometric__primitives_ga0d29be0998203e5a7b521ccb728533f6}{IsOBBinConvexHull} (const \hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb}$<$ T $>$ \&o, const U \&vplanes)
+\begin{DoxyCompactList}\small\item\em Tests if an oriented bounding box is inside a 3D convex hull. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{group__geometric__primitives_ga07425830ea25e001f8682da7f2504875}{TriTriCollision} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&u1, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&u2, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&u3, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&v1, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&v2, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&v3, \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&contactpos, \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&contactnorm)
+\begin{DoxyCompactList}\small\item\em Test collision if two 3D triangles.
+
+Assuming triangle vertices are declared counter-\/clockwise!! \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb}$<$ T $>$ \hyperlink{group__geometric__primitives_ga1aaf2360c518e6a9106315a87aaec95d}{OBBFromAABB} (const \hyperlink{classOpenRAVE_1_1geometry_1_1aabb}{aabb}$<$ T $>$ \&ab, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \&t)
+\begin{DoxyCompactList}\small\item\em Transform an axis aligned bounding box to an oriented bounding box. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb}$<$ T $>$ \hyperlink{group__geometric__primitives_ga645564c4c561b14b14b90d6d02c0e766}{OBBFromAABB} (const \hyperlink{classOpenRAVE_1_1geometry_1_1aabb}{aabb}$<$ T $>$ \&ab, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform}{RaveTransform}$<$ T $>$ \&t)
+\begin{DoxyCompactList}\small\item\em Transform an axis aligned bounding box to an oriented bounding box. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb}$<$ T $>$ \hyperlink{group__geometric__primitives_ga94bf61739c3a0110d5230da07bde8b37}{TransformOBB} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform}{RaveTransform}$<$ T $>$ \&t, const \hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb}$<$ T $>$ \&o)
+\begin{DoxyCompactList}\small\item\em Transforms an oriented bounding box. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb}$<$ T $>$ \hyperlink{group__geometric__primitives_ga588d811884a84cddef8910f749dc5aee}{TransformOBB} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ T $>$ \&t, const \hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb}$<$ T $>$ \&o)
+\begin{DoxyCompactList}\small\item\em Transforms an oriented bounding box. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{group__geometric__primitives_gaa3201f1b56aca79d1fd12499f5c66e50}{AABBCollision} (const \hyperlink{classOpenRAVE_1_1geometry_1_1aabb}{aabb}$<$ T $>$ \&ab1, const \hyperlink{classOpenRAVE_1_1geometry_1_1aabb}{aabb}$<$ T $>$ \&ab2)
+\begin{DoxyCompactList}\small\item\em projects an obb along the world axes \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}{\bf Primitive Serialization functions.}\par
+{\em \label{_amgrp7d51180c86e76dfc0132e641a7316a52}
+ Don't add new lines to the output $<$$<$ operators. Some applications use it to serialize the data to send across the network. }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespaceOpenRAVE_1_1geometry_aae7311f073989970a1ab1d34fa8b946c}{
+{\footnotesize template$<$typename U $>$ }\\std::ostream \& {\bfseries operator$<$$<$} (std::ostream \&O, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ U $>$ \&v)}
+\label{namespaceOpenRAVE_1_1geometry_aae7311f073989970a1ab1d34fa8b946c}
+
+\item 
+\hypertarget{namespaceOpenRAVE_1_1geometry_aa2e16d81c858602abbc4a828510d6ab4}{
+{\footnotesize template$<$typename U $>$ }\\std::istream \& {\bfseries operator$>$$>$} (std::istream \&I, \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ U $>$ \&v)}
+\label{namespaceOpenRAVE_1_1geometry_aa2e16d81c858602abbc4a828510d6ab4}
+
+\item 
+\hypertarget{namespaceOpenRAVE_1_1geometry_ab90ce8155aaf777b0fdf95736fcc7be7}{
+{\footnotesize template$<$typename U $>$ }\\std::ostream \& {\bfseries operator$<$$<$} (std::ostream \&O, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform}{RaveTransform}$<$ U $>$ \&v)}
+\label{namespaceOpenRAVE_1_1geometry_ab90ce8155aaf777b0fdf95736fcc7be7}
+
+\item 
+\hypertarget{namespaceOpenRAVE_1_1geometry_a0f7c3ef1ef9d18db3c693dc1cf483dcc}{
+{\footnotesize template$<$typename U $>$ }\\std::istream \& {\bfseries operator$>$$>$} (std::istream \&I, \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransform}{RaveTransform}$<$ U $>$ \&v)}
+\label{namespaceOpenRAVE_1_1geometry_a0f7c3ef1ef9d18db3c693dc1cf483dcc}
+
+\item 
+\hypertarget{namespaceOpenRAVE_1_1geometry_a6ff518fbec39bea10fbe04d53590d7f0}{
+{\footnotesize template$<$typename U $>$ }\\std::ostream \& {\bfseries operator$<$$<$} (std::ostream \&O, const \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{ray}$<$ U $>$ \&r)}
+\label{namespaceOpenRAVE_1_1geometry_a6ff518fbec39bea10fbe04d53590d7f0}
+
+\item 
+\hypertarget{namespaceOpenRAVE_1_1geometry_aaf84acd33cf41c2c199720aa2ecaf317}{
+{\footnotesize template$<$typename U $>$ }\\std::istream \& {\bfseries operator$>$$>$} (std::istream \&I, \hyperlink{classOpenRAVE_1_1geometry_1_1ray}{ray}$<$ U $>$ \&r)}
+\label{namespaceOpenRAVE_1_1geometry_aaf84acd33cf41c2c199720aa2ecaf317}
+
+\item 
+\hypertarget{namespaceOpenRAVE_1_1geometry_ad671f7a65724072dcc220442b480b0a2}{
+{\footnotesize template$<$typename U $>$ }\\std::ostream \& \hyperlink{namespaceOpenRAVE_1_1geometry_ad671f7a65724072dcc220442b480b0a2}{operator$<$$<$} (std::ostream \&O, const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ U $>$ \&v)}
+\label{namespaceOpenRAVE_1_1geometry_ad671f7a65724072dcc220442b480b0a2}
+
+\begin{DoxyCompactList}\small\item\em serialize in column order! This is the format transformations are passed across the network \item\end{DoxyCompactList}\item 
+\hypertarget{namespaceOpenRAVE_1_1geometry_a0b70ec7b3559a0cacd66d2b3f98a11d6}{
+{\footnotesize template$<$typename U $>$ }\\std::istream \& \hyperlink{namespaceOpenRAVE_1_1geometry_a0b70ec7b3559a0cacd66d2b3f98a11d6}{operator$>$$>$} (std::istream \&I, \hyperlink{classOpenRAVE_1_1geometry_1_1RaveTransformMatrix}{RaveTransformMatrix}$<$ U $>$ \&v)}
+\label{namespaceOpenRAVE_1_1geometry_a0b70ec7b3559a0cacd66d2b3f98a11d6}
+
+\begin{DoxyCompactList}\small\item\em de-\/serialize in column order! This is the format transformations are passed across the network \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Distnace functions.}\par
+{\em \label{_amgrpb5b6051cc2ee505e55561aa9d30eee1e}
+ }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group__geometric__primitives_ga9b1575cfd9a4571c57d72449b303ba6e}{
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{group__geometric__primitives_ga9b1575cfd9a4571c57d72449b303ba6e}{DistVertexOBBSq} (const \hyperlink{classOpenRAVE_1_1geometry_1_1RaveVector}{RaveVector}$<$ T $>$ \&v, const \hyperlink{classOpenRAVE_1_1geometry_1_1obb}{obb}$<$ T $>$ \&o)}
+\label{group__geometric__primitives_ga9b1575cfd9a4571c57d72449b303ba6e}
+
+\begin{DoxyCompactList}\small\item\em The minimum distance form the vertex to the oriented bounding box. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsubsection{Detailed Description}
+Templated math and geometric functions. 

@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="group__geometric__primitives" kind="group">
+    <compoundname>geometric_primitives</compoundname>
+    <title>Geometric Primitives</title>
+    <innerclass refid="classOpenRAVE_1_1geometry_1_1ray" prot="public">OpenRAVE::geometry::ray</innerclass>
+    <innerclass refid="classOpenRAVE_1_1geometry_1_1aabb" prot="public">OpenRAVE::geometry::aabb</innerclass>
+    <innerclass refid="classOpenRAVE_1_1geometry_1_1obb" prot="public">OpenRAVE::geometry::obb</innerclass>
+    <innerclass refid="classOpenRAVE_1_1geometry_1_1triangle" prot="public">OpenRAVE::geometry::triangle</innerclass>
+    <innerclass refid="classOpenRAVE_1_1geometry_1_1frustum" prot="public">OpenRAVE::geometry::frustum</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Distnace functions.</header>
+      <description><para><anchor id="_1amgrpb5b6051cc2ee505e55561aa9d30eee1e"/> </para></description>
+      <memberdef kind="function" id="group__geometric__primitives_1ga9b1575cfd9a4571c57d72449b303ba6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T OpenRAVE::geometry::DistVertexOBBSq</definition>
+        <argsstring>(const RaveVector&lt; T &gt; &amp;v, const obb&lt; T &gt; &amp;o)</argsstring>
+        <name>DistVertexOBBSq</name>
+        <param>
+          <type>const RaveVector&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const obb&lt; T &gt; &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>The minimum distance form the vertex to the oriented bounding box. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="2257" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="2256" bodyend="2274"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__geometric__primitives_1ga3264b6e233d1bacaa2176bf9e7a74399" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int OpenRAVE::geometry::insideQuadrilateral</definition>
+        <argsstring>(const RaveVector&lt; T &gt; &amp;v, const RaveVector&lt; T &gt; &amp;verts)</argsstring>
+        <name>insideQuadrilateral</name>
+        <param>
+          <type>const RaveVector&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; T &gt; &amp;</type>
+          <declname>verts</declname>
+        </param>
+        <briefdescription>
+<para>Tests a point inside a 3D quadrilateral. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1099" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1098" bodyend="1122"/>
+      </memberdef>
+      <memberdef kind="function" id="group__geometric__primitives_1gafa7d69f62abeb6dcb2784b10ad6ef8a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int OpenRAVE::geometry::insideTriangle</definition>
+        <argsstring>(const RaveVector&lt; T &gt; v, const triangle&lt; T &gt; &amp;tri)</argsstring>
+        <name>insideTriangle</name>
+        <param>
+          <type>const RaveVector&lt; T &gt;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const triangle&lt; T &gt; &amp;</type>
+          <declname>tri</declname>
+        </param>
+        <briefdescription>
+<para>Tests a point insdie a 3D triangle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1128" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1127" bodyend="1152"/>
+      </memberdef>
+      <memberdef kind="function" id="group__geometric__primitives_1ga1c4f9c919f34e3f44e4dbe3fd4abfb8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool OpenRAVE::geometry::RayAABBTest</definition>
+        <argsstring>(const ray&lt; T &gt; &amp;r, const aabb&lt; T &gt; &amp;ab)</argsstring>
+        <name>RayAABBTest</name>
+        <param>
+          <type>const ray&lt; T &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const aabb&lt; T &gt; &amp;</type>
+          <declname>ab</declname>
+        </param>
+        <briefdescription>
+<para>Test collision of a ray with an axis aligned bounding box. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1158" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1157" bodyend="1174"/>
+      </memberdef>
+      <memberdef kind="function" id="group__geometric__primitives_1gabd242edf62b381f793017cce0f2bec93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool OpenRAVE::geometry::RayOBBTest</definition>
+        <argsstring>(const ray&lt; T &gt; &amp;r, const obb&lt; T &gt; &amp;o)</argsstring>
+        <name>RayOBBTest</name>
+        <param>
+          <type>const ray&lt; T &gt; &amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const obb&lt; T &gt; &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Test collision of a ray and an oriented bounding box. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1180" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1179" bodyend="1205"/>
+      </memberdef>
+      <memberdef kind="function" id="group__geometric__primitives_1gadda8d6c416e9ccfdbaf22e6755929e7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool OpenRAVE::geometry::IsOBBinFrustum</definition>
+        <argsstring>(const obb&lt; T &gt; &amp;o, const frustum&lt; T &gt; &amp;fr)</argsstring>
+        <name>IsOBBinFrustum</name>
+        <param>
+          <type>const obb&lt; T &gt; &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const frustum&lt; T &gt; &amp;</type>
+          <declname>fr</declname>
+        </param>
+        <briefdescription>
+<para>Test collision of an oriented bounding box and a frustum. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1375" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1374" bodyend="1404"/>
+      </memberdef>
+      <memberdef kind="function" id="group__geometric__primitives_1ga0d29be0998203e5a7b521ccb728533f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool OpenRAVE::geometry::IsOBBinConvexHull</definition>
+        <argsstring>(const obb&lt; T &gt; &amp;o, const U &amp;vplanes)</argsstring>
+        <name>IsOBBinConvexHull</name>
+        <param>
+          <type>const obb&lt; T &gt; &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const U &amp;</type>
+          <declname>vplanes</declname>
+        </param>
+        <briefdescription>
+<para>Tests if an oriented bounding box is inside a 3D convex hull. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vplanes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the plane normals of the convex hull, normals should be facing inside. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1447" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1446" bodyend="1455"/>
+      </memberdef>
+      <memberdef kind="function" id="group__geometric__primitives_1ga07425830ea25e001f8682da7f2504875" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool OpenRAVE::geometry::TriTriCollision</definition>
+        <argsstring>(const RaveVector&lt; T &gt; &amp;u1, const RaveVector&lt; T &gt; &amp;u2, const RaveVector&lt; T &gt; &amp;u3, const RaveVector&lt; T &gt; &amp;v1, const RaveVector&lt; T &gt; &amp;v2, const RaveVector&lt; T &gt; &amp;v3, RaveVector&lt; T &gt; &amp;contactpos, RaveVector&lt; T &gt; &amp;contactnorm)</argsstring>
+        <name>TriTriCollision</name>
+        <param>
+          <type>const RaveVector&lt; T &gt; &amp;</type>
+          <declname>u1</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; T &gt; &amp;</type>
+          <declname>u2</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; T &gt; &amp;</type>
+          <declname>u3</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; T &gt; &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; T &gt; &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>const RaveVector&lt; T &gt; &amp;</type>
+          <declname>v3</declname>
+        </param>
+        <param>
+          <type>RaveVector&lt; T &gt; &amp;</type>
+          <declname>contactpos</declname>
+        </param>
+        <param>
+          <type>RaveVector&lt; T &gt; &amp;</type>
+          <declname>contactnorm</declname>
+        </param>
+        <briefdescription>
+<para>Test collision if two 3D triangles.</para><para>Assuming triangle vertices are declared counter-clockwise!! </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">contactnorm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if triangles collide, then filled with the normal of the second triangle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if triangles collide. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1524" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1523" bodyend="1613"/>
+      </memberdef>
+      <memberdef kind="function" id="group__geometric__primitives_1ga1aaf2360c518e6a9106315a87aaec95d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>obb&lt; T &gt;</type>
+        <definition>obb&lt;T&gt; OpenRAVE::geometry::OBBFromAABB</definition>
+        <argsstring>(const aabb&lt; T &gt; &amp;ab, const RaveTransformMatrix&lt; T &gt; &amp;t)</argsstring>
+        <name>OBBFromAABB</name>
+        <param>
+          <type>const aabb&lt; T &gt; &amp;</type>
+          <declname>ab</declname>
+        </param>
+        <param>
+          <type>const RaveTransformMatrix&lt; T &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Transform an axis aligned bounding box to an oriented bounding box. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>transformation used to set the coordinate system of ab. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1621" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1620" bodyend="1629"/>
+      </memberdef>
+      <memberdef kind="function" id="group__geometric__primitives_1ga645564c4c561b14b14b90d6d02c0e766" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>obb&lt; T &gt;</type>
+        <definition>obb&lt;T&gt; OpenRAVE::geometry::OBBFromAABB</definition>
+        <argsstring>(const aabb&lt; T &gt; &amp;ab, const RaveTransform&lt; T &gt; &amp;t)</argsstring>
+        <name>OBBFromAABB</name>
+        <param>
+          <type>const aabb&lt; T &gt; &amp;</type>
+          <declname>ab</declname>
+        </param>
+        <param>
+          <type>const RaveTransform&lt; T &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Transform an axis aligned bounding box to an oriented bounding box. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>transformation used to set the coordinate system of ab. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1637" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1636" bodyend="1639"/>
+      </memberdef>
+      <memberdef kind="function" id="group__geometric__primitives_1ga94bf61739c3a0110d5230da07bde8b37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>obb&lt; T &gt;</type>
+        <definition>obb&lt;T&gt; OpenRAVE::geometry::TransformOBB</definition>
+        <argsstring>(const RaveTransform&lt; T &gt; &amp;t, const obb&lt; T &gt; &amp;o)</argsstring>
+        <name>TransformOBB</name>
+        <param>
+          <type>const RaveTransform&lt; T &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const obb&lt; T &gt; &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Transforms an oriented bounding box. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>transformation used to set the coordinate system of o. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1647" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1646" bodyend="1655"/>
+      </memberdef>
+      <memberdef kind="function" id="group__geometric__primitives_1ga588d811884a84cddef8910f749dc5aee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>obb&lt; T &gt;</type>
+        <definition>obb&lt;T&gt; OpenRAVE::geometry::TransformOBB</definition>
+        <argsstring>(const RaveTransformMatrix&lt; T &gt; &amp;t, const obb&lt; T &gt; &amp;o)</argsstring>
+        <name>TransformOBB</name>
+        <param>
+          <type>const RaveTransformMatrix&lt; T &gt; &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const obb&lt; T &gt; &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Transforms an oriented bounding box. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>transformation used to set the coordinate system of o. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1663" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1662" bodyend="1671"/>
+      </memberdef>
+      <memberdef kind="function" id="group__geometric__primitives_1gaa3201f1b56aca79d1fd12499f5c66e50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool OpenRAVE::geometry::AABBCollision</definition>
+        <argsstring>(const aabb&lt; T &gt; &amp;ab1, const aabb&lt; T &gt; &amp;ab2)</argsstring>
+        <name>AABBCollision</name>
+        <param>
+          <type>const aabb&lt; T &gt; &amp;</type>
+          <declname>ab1</declname>
+        </param>
+        <param>
+          <type>const aabb&lt; T &gt; &amp;</type>
+          <declname>ab2</declname>
+        </param>
+        <briefdescription>
+<para>projects an obb along the world axes </para>        </briefdescription>
+        <detaileddescription>
+<para>Test collision between two axis-aligned bounding boxes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="1689" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="1688" bodyend="1692"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A set of geometric primitives and functions offering collision detection and other distance measurement capabilities. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

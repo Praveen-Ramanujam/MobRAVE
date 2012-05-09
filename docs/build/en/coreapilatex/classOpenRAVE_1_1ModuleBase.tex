@@ -1,0 +1,71 @@
+\hypertarget{classOpenRAVE_1_1ModuleBase}{
+\subsection{ModuleBase Class Reference}
+\label{classOpenRAVE_1_1ModuleBase}\index{OpenRAVE::ModuleBase@{OpenRAVE::ModuleBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} A loadable module of user code meant to solve a specific domain. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__module}{Module Concepts}.  
+
+
+
+
+Inheritance diagram for ModuleBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{classOpenRAVE_1_1ModuleBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ModuleBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{classOpenRAVE_1_1ModuleBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classOpenRAVE_1_1ModuleBase_a9272536a00bca7f32ec0e4a7e131ac23}{main} (const std::string \&cmd)
+\item 
+\hypertarget{classOpenRAVE_1_1ModuleBase_a941c8e8d2c5aa963d76aef113f19d835}{
+virtual void \hyperlink{classOpenRAVE_1_1ModuleBase_a941c8e8d2c5aa963d76aef113f19d835}{Destroy} ()}
+\label{classOpenRAVE_1_1ModuleBase_a941c8e8d2c5aa963d76aef113f19d835}
+
+\begin{DoxyCompactList}\small\item\em called when problem gets unloaded from environment \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ModuleBase_a4c4ba0ffe635d14b93794268bd8e5995}{
+virtual void \hyperlink{classOpenRAVE_1_1ModuleBase_a4c4ba0ffe635d14b93794268bd8e5995}{Reset} ()}
+\label{classOpenRAVE_1_1ModuleBase_a4c4ba0ffe635d14b93794268bd8e5995}
+
+\begin{DoxyCompactList}\small\item\em called when environment is reset \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1ModuleBase_affeafe65e7c4094f282d273dedbf069b}{
+static InterfaceType \hyperlink{classOpenRAVE_1_1ModuleBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()}
+\label{classOpenRAVE_1_1ModuleBase_affeafe65e7c4094f282d273dedbf069b}
+
+\begin{DoxyCompactList}\small\item\em return the static interface type this class points to (used for safe casting) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} A loadable module of user code meant to solve a specific domain. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__module}{Module Concepts}. \begin{Desc}
+\item[Examples: ]\par
+
+
+\hyperlink{orconveyormovement_8cpp-example}{orconveyormovement.cpp}, \hyperlink{orpythonbinding_8cpp-example}{orpythonbinding.cpp}, and \hyperlink{plugincpp_8cpp-example}{plugincpp.cpp}.
+
+\end{Desc}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1ModuleBase_a9272536a00bca7f32ec0e4a7e131ac23}{
+\index{OpenRAVE::ModuleBase@{OpenRAVE::ModuleBase}!main@{main}}
+\index{main@{main}!OpenRAVE::ModuleBase@{OpenRAVE::ModuleBase}}
+\paragraph[{main}]{\setlength{\rightskip}{0pt plus 5cm}virtual int main (const std::string \& {\em cmd})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1ModuleBase_a9272536a00bca7f32ec0e4a7e131ac23}
+gets called every time a problem instance is loaded to initialize the problem. Robots might not necessarily be set before this function call returns 0 on success \begin{Desc}
+\item[Examples: ]\par
+\hyperlink{plugincpp_8cpp-example}{plugincpp.cpp}.\end{Desc}

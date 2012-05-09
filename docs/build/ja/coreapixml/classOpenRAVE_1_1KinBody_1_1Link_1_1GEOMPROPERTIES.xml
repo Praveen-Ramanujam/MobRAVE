@@ -1,0 +1,778 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES" kind="class" prot="public">
+    <compoundname>OpenRAVE::KinBody::Link::GEOMPROPERTIES</compoundname>
+    <includes refid="kinbody_8h" local="no">kinbody.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2ae" prot="public" static="no">
+        <name>GeomType</name>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2aeabbb1cd9a9cd706f9bd3c9210aea7507c" prot="public">
+          <name>GeomNone</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2aea5ddc3adce6221252478bda994356a120" prot="public">
+          <name>GeomBox</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2aea034d1a18050243ffe6714d47ac2a42fb" prot="public">
+          <name>GeomSphere</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2aeaebd51cb8baf642610317260d2546e158" prot="public">
+          <name>GeomCylinder</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2aea99f8c6e7d641cfec75bf1b3245b0db41" prot="public">
+          <name>GeomTrimesh</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of geometry primitive. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="92" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="92" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a977fd0705030a465c7557df422869f35" prot="protected" static="no" mutable="no">
+        <type>boost::weak_ptr&lt; <ref refid="classOpenRAVE_1_1KinBody_1_1Link" kindref="compound">Link</ref> &gt;</type>
+        <definition>boost::weak_ptr&lt;Link&gt; _parent</definition>
+        <argsstring></argsstring>
+        <name>_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="188" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1adcfc5692c983a70c6021762566cdc7e0" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform _t</definition>
+        <argsstring></argsstring>
+        <name>_t</name>
+        <briefdescription>
+<para>see <ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aaf48415e05caa5f9a9c3fa88cb8ed8a9" kindref="member">GetTransform</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="189" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ab53daa871a8650d27546b395400354e2" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector vGeomData</definition>
+        <argsstring></argsstring>
+        <name>vGeomData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for boxes, first 3 values are extents for sphere it is radius for cylinder, first 2 values are radius and height for trimesh, none </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="193" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ab67f218bd2f19ff31750799e67cf47c4" prot="protected" static="no" mutable="no">
+        <type>RaveVector&lt; float &gt;</type>
+        <definition>RaveVector&lt;float&gt; diffuseColor</definition>
+        <argsstring></argsstring>
+        <name>diffuseColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="194" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a625ee04b635d18df5da9cbf040362a32" prot="protected" static="no" mutable="no">
+        <type>RaveVector&lt; float &gt;</type>
+        <definition>RaveVector&lt;float&gt; ambientColor</definition>
+        <argsstring></argsstring>
+        <name>ambientColor</name>
+        <briefdescription>
+<para>hints for how to color the meshes </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="194" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a77688c4f07cf7aef096e1ca3fe962dc4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH" kindref="compound">TRIMESH</ref></type>
+        <definition>TRIMESH collisionmesh</definition>
+        <argsstring></argsstring>
+        <name>collisionmesh</name>
+        <briefdescription>
+<para>see <ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a387688dd5bde34a4dd34be211886a8d1" kindref="member">GetCollisionMesh</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="195" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a45d36ea9e7f9e1f1bead94f06ab1fad4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2ae" kindref="member">GeomType</ref></type>
+        <definition>GeomType _type</definition>
+        <argsstring></argsstring>
+        <name>_type</name>
+        <briefdescription>
+<para>the type of geometry primitive </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="196" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a13d02d4b3303b3acce44af4330fb5fde" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string _renderfilename</definition>
+        <argsstring></argsstring>
+        <name>_renderfilename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>ref <ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a4474cb22f6457503715435d2f3e34496" kindref="member">GetRenderFilename</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="197" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a0fbaf8a5fc118f2b82607c21e98c0a74" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref></type>
+        <definition>Vector vRenderScale</definition>
+        <argsstring></argsstring>
+        <name>vRenderScale</name>
+        <briefdescription>
+<para>render scale of the object (x,y,z) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="198" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a7e9bda892b07417274d200ecf6a19743" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ftransparency</definition>
+        <argsstring></argsstring>
+        <name>ftransparency</name>
+        <briefdescription>
+<para>value from 0-1 for the transparency of the rendered object, 0 is opaque </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="199" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a570497cb0feb2ef7ab31b3a899f2251d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _bDraw</definition>
+        <argsstring></argsstring>
+        <name>_bDraw</name>
+        <briefdescription>
+<para>if true, object is drawn as part of the 3d model (default is true) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="201" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ae91866aa8217eccdfc515df0474872fe" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _bModifiable</definition>
+        <argsstring></argsstring>
+        <name>_bModifiable</name>
+        <briefdescription>
+<para>if true, object geometry can be dynamically modified (default is true) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="202" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a05156daee84eb0b5dd4b0802dae57fa6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class KinBody</definition>
+        <argsstring></argsstring>
+        <name>KinBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="215" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a65fed6a301d02422a1ac6f55f8e6fc4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class KinBody::Link</definition>
+        <argsstring></argsstring>
+        <name>KinBody::Link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="216" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a32ac068d1cd4dc5669acce4f9d200140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GEOMPROPERTIES</definition>
+        <argsstring>(boost::shared_ptr&lt; Link &gt; parent)</argsstring>
+        <name>GEOMPROPERTIES</name>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="classOpenRAVE_1_1KinBody_1_1Link" kindref="compound">Link</ref> &gt;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a53928e131c2ce5093660f32f22936449" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~GEOMPROPERTIES</definition>
+        <argsstring>()</argsstring>
+        <name>~GEOMPROPERTIES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="101" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="101" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aaf48415e05caa5f9a9c3fa88cb8ed8a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+        <definition>const Transform&amp; GetTransform</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTransform</name>
+        <briefdescription>
+<para>Local transformation of the geom primitive with respect to the link&apos;s coordinate system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="105" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aa812cc367013278a634a0a7b1f0f34a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2ae" kindref="member">GeomType</ref></type>
+        <definition>GeomType GetType</definition>
+        <argsstring>() const </argsstring>
+        <name>GetType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="108" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a6b1be2b1bd5f5fbdda5eedb57ba92ef3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetRenderScale</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRenderScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="111" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a4474cb22f6457503715435d2f3e34496" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; GetRenderFilename</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRenderFilename</name>
+        <briefdescription>
+<para>render resource file, should be transformed by _t before rendering </para>        </briefdescription>
+        <detaileddescription>
+<para>If the value is &quot;__norenderif__:x&quot;, then the viewer should not render the object if it supports *.x files where&quot;x&quot; is the file extension. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="118" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aa8e0e0527868c29f262f7dd22bbcf3c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float GetTransparency</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTransparency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="121" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1af1f175e9d1351405042d6edda89b2d06" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsDraw</definition>
+        <argsstring>() const </argsstring>
+        <name>IsDraw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="124" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a2e8af4ed75eb51faef1883bcc4d0e740" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsModifiable</definition>
+        <argsstring>() const </argsstring>
+        <name>IsModifiable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="127" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="127" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ac44b9ad6bf948943042866c309df031f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal GetSphereRadius</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSphereRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="131" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a9160efe55ca6988b0a575527c28fb5fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal GetCylinderRadius</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCylinderRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="134" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a3d1dde0f2ea1f364cea880ec2e85583f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a973ec569e405922437be98473d2aa6f8" kindref="member">dReal</ref></type>
+        <definition>dReal GetCylinderHeight</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCylinderHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="137" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a6cce1feffcf129f1402c7f5154168250" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+        <definition>const Vector&amp; GetBoxExtents</definition>
+        <argsstring>() const </argsstring>
+        <name>GetBoxExtents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="140" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="140" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ac565d90aed277e0cf419d89de6a52be8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const RaveVector&lt; float &gt; &amp;</type>
+        <definition>const RaveVector&lt;float&gt;&amp; GetDiffuseColor</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDiffuseColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="143" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1af02a0d3f21f80fd194a08352ff2b5ac7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const RaveVector&lt; float &gt; &amp;</type>
+        <definition>const RaveVector&lt;float&gt;&amp; GetAmbientColor</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAmbientColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="146" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a387688dd5bde34a4dd34be211886a8d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH" kindref="compound">TRIMESH</ref> &amp;</type>
+        <definition>const TRIMESH&amp; GetCollisionMesh</definition>
+        <argsstring>() const </argsstring>
+        <name>GetCollisionMesh</name>
+        <briefdescription>
+<para>collision data of the specific object in its local coordinate system. </para>        </briefdescription>
+        <detaileddescription>
+<para>Should be transformed by <ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aaf48415e05caa5f9a9c3fa88cb8ed8a9" kindref="member">GEOMPROPERTIES::GetTransform()</ref> before rendering. For spheres and cylinders, an appropriate discretization value is chosen. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="154" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a17d17302d5a602a234230b12323618f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1aabb" kindref="compound">AABB</ref></type>
+        <definition>virtual AABB ComputeAABB</definition>
+        <argsstring>(const Transform &amp;trans) const </argsstring>
+        <name>ComputeAABB</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref> &amp;</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+<para>returns an axis aligned bounding box given that the geometry is transformed by trans </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ac3d3423a3fae6eb66bc8e0ff6fc23e3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void serialize</definition>
+        <argsstring>(std::ostream &amp;o, int options) const </argsstring>
+        <name>serialize</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a3e5d551673c42bb134bf843946a0403b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetCollisionMesh</definition>
+        <argsstring>(const TRIMESH &amp;mesh)</argsstring>
+        <name>SetCollisionMesh</name>
+        <param>
+          <type>const <ref refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH" kindref="compound">TRIMESH</ref> &amp;</type>
+          <declname>mesh</declname>
+        </param>
+        <briefdescription>
+<para>sets a new collision mesh and notifies every registered callback about it </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aca7864afdc94867792c10f09e53735e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetDraw</definition>
+        <argsstring>(bool bDraw)</argsstring>
+        <name>SetDraw</name>
+        <param>
+          <type>bool</type>
+          <declname>bDraw</declname>
+        </param>
+        <briefdescription>
+<para>sets a drawing and notifies every registered callback about it </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a6b8232d86a71abe734ff516888b3d2f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetTransparency</definition>
+        <argsstring>(float f)</argsstring>
+        <name>SetTransparency</name>
+        <param>
+          <type>float</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>set transparency level (0 is opaque) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ace7920853d82ecfa046fc6195104a529" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetDiffuseColor</definition>
+        <argsstring>(const RaveVector&lt; float &gt; &amp;color)</argsstring>
+        <name>SetDiffuseColor</name>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>override diffuse color of geometry material </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ad1572d41cb6d899e83ce4ba952ae93d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetAmbientColor</definition>
+        <argsstring>(const RaveVector&lt; float &gt; &amp;color)</argsstring>
+        <name>SetAmbientColor</name>
+        <param>
+          <type>const RaveVector&lt; float &gt; &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>override ambient color of geometry material </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a80c6877ca0a3b0f5104b00ccfbc7b591" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool ValidateContactNormal</definition>
+        <argsstring>(const Vector &amp;position, Vector &amp;normal) const </argsstring>
+        <name>ValidateContactNormal</name>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1ab815faf493a6d82304f7f202d59f2a36" kindref="member">Vector</ref> &amp;</type>
+          <declname>normal</declname>
+        </param>
+        <briefdescription>
+<para>validates the contact normal on the surface of the geometry and makes sure the normal faces &quot;outside&quot; of the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the position of the contact point specified in the link&apos;s coordinate system </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the unit normal of the contact point specified in the link&apos;s coordinate system </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the normal is changed to face outside of the shape </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aa558a74c9ca66b0b53f772e6a6893c0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SetRenderFilename</definition>
+        <argsstring>(const std::string &amp;renderfilename)</argsstring>
+        <name>SetRenderFilename</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>renderfilename</declname>
+        </param>
+        <briefdescription>
+<para>sets a new render filename for the geometry. This does not change the collision </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="181"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a77e9273e5d79606152b85b4863f3b6b4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool InitCollisionMesh</definition>
+        <argsstring>(float fTessellation=1)</argsstring>
+        <name>InitCollisionMesh</name>
+        <param>
+          <type>float</type>
+          <declname>fTessellation</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>triangulates the geometry object and initializes collisionmesh. GeomTrimesh types must already be triangulated <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fTessellation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to control how fine the triangles need to be. 1.0f is the default value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Describes the properties of a basic geometric primitive. Contains everything associated with a physical body along with a seprate (optional) render file. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1177">
+        <label>vector&lt; Vector &gt;</label>
+        <childnode refid="1178" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1179">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1174">
+        <label>GEOMPROPERTIES</label>
+        <link refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES"/>
+        <childnode refid="1175" relation="usage">
+          <edgelabel>collisionmesh</edgelabel>
+        </childnode>
+        <childnode refid="1179" relation="usage">
+          <edgelabel>_t</edgelabel>
+        </childnode>
+        <childnode refid="1180" relation="usage">
+          <edgelabel>vGeomData</edgelabel>
+          <edgelabel>vRenderScale</edgelabel>
+        </childnode>
+        <childnode refid="1181" relation="usage">
+          <edgelabel>_renderfilename</edgelabel>
+        </childnode>
+        <childnode refid="1183" relation="usage">
+          <edgelabel>diffuseColor</edgelabel>
+          <edgelabel>ambientColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="1181">
+        <label>string</label>
+        <childnode refid="1182" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1180">
+        <label>RaveVector&lt; dReal &gt;</label>
+      </node>
+      <node id="1175">
+        <label>TRIMESH</label>
+        <link refid="classOpenRAVE_1_1KinBody_1_1Link_1_1TRIMESH"/>
+        <childnode refid="1176" relation="usage">
+          <edgelabel>indices</edgelabel>
+        </childnode>
+        <childnode refid="1177" relation="usage">
+          <edgelabel>vertices</edgelabel>
+        </childnode>
+      </node>
+      <node id="1182">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1176">
+        <label>vector&lt; int &gt;</label>
+      </node>
+      <node id="1178">
+        <label>RaveVector</label>
+      </node>
+      <node id="1183">
+        <label>RaveVector&lt; float &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/kinbody.h" line="89" bodyfile="/home/pra3cob/openrave/include/openrave/kinbody.h" bodystart="88" bodyend="217"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a570497cb0feb2ef7ab31b3a899f2251d" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>_bDraw</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ae91866aa8217eccdfc515df0474872fe" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>_bModifiable</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a977fd0705030a465c7557df422869f35" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>_parent</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a13d02d4b3303b3acce44af4330fb5fde" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>_renderfilename</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1adcfc5692c983a70c6021762566cdc7e0" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>_t</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a45d36ea9e7f9e1f1bead94f06ab1fad4" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>_type</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a625ee04b635d18df5da9cbf040362a32" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>ambientColor</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a77688c4f07cf7aef096e1ca3fe962dc4" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>collisionmesh</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a17d17302d5a602a234230b12323618f9" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>ComputeAABB</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ab67f218bd2f19ff31750799e67cf47c4" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>diffuseColor</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a7e9bda892b07417274d200ecf6a19743" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>ftransparency</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2aea5ddc3adce6221252478bda994356a120" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GeomBox</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2aeaebd51cb8baf642610317260d2546e158" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GeomCylinder</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2aeabbb1cd9a9cd706f9bd3c9210aea7507c" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GeomNone</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a32ac068d1cd4dc5669acce4f9d200140" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GEOMPROPERTIES</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2aea034d1a18050243ffe6714d47ac2a42fb" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GeomSphere</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2aea99f8c6e7d641cfec75bf1b3245b0db41" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GeomTrimesh</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a49306adaab0c755befa56ed92085f2ae" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GeomType</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1af02a0d3f21f80fd194a08352ff2b5ac7" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetAmbientColor</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a6cce1feffcf129f1402c7f5154168250" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetBoxExtents</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a387688dd5bde34a4dd34be211886a8d1" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetCollisionMesh</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a3d1dde0f2ea1f364cea880ec2e85583f" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetCylinderHeight</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a9160efe55ca6988b0a575527c28fb5fd" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetCylinderRadius</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ac565d90aed277e0cf419d89de6a52be8" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetDiffuseColor</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a4474cb22f6457503715435d2f3e34496" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetRenderFilename</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a6b1be2b1bd5f5fbdda5eedb57ba92ef3" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetRenderScale</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ac44b9ad6bf948943042866c309df031f" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetSphereRadius</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aaf48415e05caa5f9a9c3fa88cb8ed8a9" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetTransform</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aa8e0e0527868c29f262f7dd22bbcf3c8" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetTransparency</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aa812cc367013278a634a0a7b1f0f34a1" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a77e9273e5d79606152b85b4863f3b6b4" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>InitCollisionMesh</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1af1f175e9d1351405042d6edda89b2d06" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>IsDraw</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a2e8af4ed75eb51faef1883bcc4d0e740" prot="public" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>IsModifiable</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ac3d3423a3fae6eb66bc8e0ff6fc23e3e" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ad1572d41cb6d899e83ce4ba952ae93d4" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>SetAmbientColor</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a3e5d551673c42bb134bf843946a0403b" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>SetCollisionMesh</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ace7920853d82ecfa046fc6195104a529" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>SetDiffuseColor</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aca7864afdc94867792c10f09e53735e6" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>SetDraw</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1aa558a74c9ca66b0b53f772e6a6893c0f" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>SetRenderFilename</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a6b8232d86a71abe734ff516888b3d2f0" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>SetTransparency</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a80c6877ca0a3b0f5104b00ccfbc7b591" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>ValidateContactNormal</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1ab53daa871a8650d27546b395400354e2" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>vGeomData</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a0fbaf8a5fc118f2b82607c21e98c0a74" prot="protected" virt="non-virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>vRenderScale</name></member>
+      <member refid="classOpenRAVE_1_1KinBody_1_1Link_1_1GEOMPROPERTIES_1a53928e131c2ce5093660f32f22936449" prot="public" virt="virtual"><scope>OpenRAVE::KinBody::Link::GEOMPROPERTIES</scope><name>~GEOMPROPERTIES</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

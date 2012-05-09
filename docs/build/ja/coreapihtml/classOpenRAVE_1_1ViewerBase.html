@@ -1,0 +1,1410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: クラス ViewerBase 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="namespaceOpenRAVE.html">OpenRAVE</a>::<a class="el" href="classOpenRAVE_1_1ViewerBase.html">ViewerBase</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス ViewerBase<br/>
+<small>
+[<a class="el" href="group__interfaces.html">Base Interface Classes</a>]</small>
+</h1><!-- doxytag: class="OpenRAVE::ViewerBase" --><!-- doxytag: inherits="OpenRAVE::InterfaceBase" -->
+<p><b>[interface]</b> Base class for the graphics and gui engine that renders the environment and provides visual sensor information. <b>If not specified, method is not multi-thread safe.</b> See <a class="el" href="arch__viewer.html">Viewer Concepts</a>.  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="viewer_8h_source.html">viewer.h</a>&gt;</code></p>
+<div class="dynheader">
+ViewerBaseに対する継承グラフ</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1ViewerBase__inherit__graph.png" border="0" usemap="#ViewerBase_inherit__map" alt="Inheritance graph"/></div>
+<map name="ViewerBase_inherit__map" id="ViewerBase_inherit__map">
+<area shape="rect" href="classOpenRAVE_1_1InterfaceBase.html" title="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface..." alt="" coords="5,5,107,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+ViewerBaseのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="classOpenRAVE_1_1ViewerBase__coll__graph.png" border="0" usemap="#ViewerBase_coll__map" alt="Collaboration graph"/></div>
+<map name="ViewerBase_coll__map" id="ViewerBase_coll__map">
+<area shape="rect" href="classOpenRAVE_1_1InterfaceBase.html" title="[interface] Base class for all interfaces that OpenRAVE provides. See Base Interface..." alt="" coords="1055,93,1156,123"/><area shape="rect" title="STL class." alt="" coords="197,93,251,123"/><area shape="rect" title="STL class." alt="" coords="7,93,145,123"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="classOpenRAVE_1_1ViewerBase-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public 型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ad5d8dc37aba1d6a686f461d48d29727a">ViewerEvents</a> { <a class="el" href="classOpenRAVE_1_1ViewerBase.html#ad5d8dc37aba1d6a686f461d48d29727aaba3d470046d1fbaa4e3c883403fc9940">VE_ItemSelection</a> =  1
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; bool(<a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">KinBody::LinkPtr</a> <br class="typebreak"/>
+plink, RaveVector&lt; float &gt;<br class="typebreak"/>
+, RaveVector&lt; float &gt;)&gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#aab6d9553843a6d593ee530045d7fff9f">ItemSelectionCallbackFn</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">callback function for item selection  <a href="#aab6d9553843a6d593ee530045d7fff9f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::function&lt; void(const <br class="typebreak"/>
+uint8_t *, int, int, int)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a33dae9848e343e6740ad259e09e92607">ViewerImageCallbackFn</a> )</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">callback function for item selection callback(imagememory,width,height,pixeldepth)  <a href="#a33dae9848e343e6740ad259e09e92607"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="classOpenRAVE_1_1ViewerBase.html#aab6d9553843a6d593ee530045d7fff9f">ItemSelectionCallbackFn</a> <br class="typebreak"/>
+ViewerCallbackFn&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab0582044ee7b7222de5e7406ad64f93a">RAVE_DEPRECATED</a></td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a4791e23f1e8900e29e1b5158d266400a">ViewerBase</a> (<a class="el" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> penv)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#acaaab7fd961a857cc0dc41abd8750d7c">~ViewerBase</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ada75ea5cccc17a8cf81b638117139c1c">main</a> (bool bShow=true)=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">goes into the main loop  <a href="#ada75ea5cccc17a8cf81b638117139c1c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab8fc69e4de743e14207ea400de2f3824">quitmainloop</a> ()=0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">destroys the main loop  <a href="#ab8fc69e4de743e14207ea400de2f3824"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a50aaed4618b2b23eaed8f22b280caa72">Reset</a> () OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ad7e2a3f748b9d369d13c4591a89a659d">SetBkgndColor</a> (const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual boost::shared_ptr&lt; void &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a22844e2b6584a0673cc82cfd7e2fa01d">RegisterItemSelectionCallback</a> (const <a class="el" href="classOpenRAVE_1_1ViewerBase.html#aab6d9553843a6d593ee530045d7fff9f">ItemSelectionCallbackFn</a> &amp;fncallback) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">registers a function with the viewer that gets called everytime mouse button is clicked  <a href="#a22844e2b6584a0673cc82cfd7e2fa01d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual boost::shared_ptr&lt; void &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ad23099fd4b95a0b7587ec4efe5454043">RegisterViewerImageCallback</a> (const <a class="el" href="classOpenRAVE_1_1ViewerBase.html#a33dae9848e343e6740ad259e09e92607">ViewerImageCallbackFn</a> &amp;fncallback) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">registers a function with the viewer that gets called for every new image rendered.  <a href="#ad23099fd4b95a0b7587ec4efe5454043"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a3807c4e1bbec9f2d0e9f71cadb7efdd1">SetEnvironmentSync</a> (bool bUpdate) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">controls whether the viewer synchronizes with the newest environment automatically  <a href="#a3807c4e1bbec9f2d0e9f71cadb7efdd1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a252e5291c15eb4d6956ee5c824a4c56d">EnvironmentSync</a> () OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">forces synchronization with the environment, returns when the environment is fully synchronized.  <a href="#a252e5291c15eb4d6956ee5c824a4c56d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a4d6091b23c3c415fd662d4974957b072">SetSize</a> (int w, int h) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a93a7763493f3da4687ca55db4a32b05e">ViewerSetSize</a> (int w, int h) <a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab0582044ee7b7222de5e7406ad64f93a">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a548e4f89261156f972a2a463cffab365">Move</a> (int x, int y) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a00e98066bc03fa4d2b287d2a6a2d2b4c">ViewerMove</a> (int x, int y) <a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab0582044ee7b7222de5e7406ad64f93a">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#aefe54c55090e1487ba372243e0da6e4a">SetName</a> (const std::string &amp;name) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#adfc56134be2ef5b157c9a0b55d5d4e13">ViewerSetTitle</a> (const std::string &amp;ptitle) <a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab0582044ee7b7222de5e7406ad64f93a">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ace14ad2fd8a6c9de2477bfcfb66d84cc">GetName</a> () const OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a8ba08e058dbbaf19090cc79cd22055f6">UpdateCameraTransform</a> () <a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab0582044ee7b7222de5e7406ad64f93a">RAVE_DEPRECATED</a> OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual boost::shared_ptr&lt; void &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a87bb8fc16f70e17fc3955a734a5a9cc5">RegisterCallback</a> (int properties, const <a class="el" href="classOpenRAVE_1_1ViewerBase.html#aab6d9553843a6d593ee530045d7fff9f">ItemSelectionCallbackFn</a> &amp;fncallback) <a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab0582044ee7b7222de5e7406ad64f93a">RAVE_DEPRECATED</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a4b6920a362f58dfd5113a5163266780d">LoadModel</a> (const std::string &amp;pfilename) <a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab0582044ee7b7222de5e7406ad64f93a">RAVE_DEPRECATED</a> OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpd41d8cd98f00b204e9800998ecf8427e"></a> </p>
+</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ae426230d17214ba9e81e7ca30a1437e6">SetCamera</a> (const RaveTransform&lt; float &gt; &amp;trans, float focalDistance=0) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set the camera transformation.  <a href="#ae426230d17214ba9e81e7ca30a1437e6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual RaveTransform&lt; float &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ac63f4828ecf7cfd87feb7f67be71bb04">GetCameraTransform</a> () const OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the current camera transform that the viewer is rendering the environment at.  <a href="#ac63f4828ecf7cfd87feb7f67be71bb04"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
+<a class="el" href="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics.html">geometry::RaveCameraIntrinsics</a><br class="typebreak"/>
+&lt; float &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#aa280b50e2cd6e717b03a83245546e467">GetCameraIntrinsics</a> () const OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return the closest camera intrinsics that the viewer is rendering the environment at.  <a href="#aa280b50e2cd6e717b03a83245546e467"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ad149822b9f25bf1adf3d76e78379cca5">GetCameraImage</a> (std::vector&lt; uint8_t &gt; &amp;memory, int width, int height, const RaveTransform&lt; float &gt; &amp;t, const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics.html">SensorBase::CameraIntrinsics</a> &amp;intrinsics) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renders a 24bit RGB image of dimensions width and height from the current scene.  <a href="#ad149822b9f25bf1adf3d76e78379cca5"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Static Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static InterfaceType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#affeafe65e7c4094f282d273dedbf069b">GetInterfaceTypeStatic</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">return the static interface type this class points to (used for safe casting)  <a href="#affeafe65e7c4094f282d273dedbf069b"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Public 変数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum <br class="typebreak"/>
+<a class="el" href="classOpenRAVE_1_1ViewerBase.html#ad5d8dc37aba1d6a686f461d48d29727a">OpenRAVE::ViewerBase::ViewerEvents</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ac9591ef8e174b06e6021c7ecb216c7c2">RAVE_DEPRECATED</a></td></tr>
+<tr><td colspan="2"><h2>Protected メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab89b5888abf5a74bd6571a47cf83b7cd">SetViewerData</a> (<a class="el" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> body, <a class="el" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a> data)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ae9d5173833570ef0af490242cf87aabf">plot3</a> (const float *ppoints, int numPoints, int stride, float fPointSize, const RaveVector&lt; float &gt; &amp;color, int drawstyle=0) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a9ab9d7fee44e672f4fb7c01491520a51">plot3</a> (const float *ppoints, int numPoints, int stride, float fPointSize, const float *colors, int drawstyle=0, bool bhasalpha=false) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ad6c4f2147642166ff9978d2364d561f0">drawlinestrip</a> (const float *ppoints, int numPoints, int stride, float fwidth, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a89917d0d227ef17ae86be8312159e689">drawlinestrip</a> (const float *ppoints, int numPoints, int stride, float fwidth, const float *colors) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a3021be834c6cf039ea736ded93666763">drawlinelist</a> (const float *ppoints, int numPoints, int stride, float fwidth, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a849d5032f57ca31b3ef3b8150c804ce3">drawlinelist</a> (const float *ppoints, int numPoints, int stride, float fwidth, const float *colors) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a82e9a740092b00ca6db56e613bf703b3">drawarrow</a> (const RaveVector&lt; float &gt; &amp;p1, const RaveVector&lt; float &gt; &amp;p2, float fwidth, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab31ba8d06861efe4e21c28bd312eb242">drawbox</a> (const RaveVector&lt; float &gt; &amp;vpos, const RaveVector&lt; float &gt; &amp;vextents) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a22f2bb37771f5e0f772a7c102c944cbb">drawplane</a> (const RaveTransform&lt; float &gt; &amp;tplane, const RaveVector&lt; float &gt; &amp;vextents, const boost::multi_array&lt; float, 3 &gt; &amp;vtexture) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#acbbb5716b51f6588f7396ad847c1ed5c">drawtrimesh</a> (const float *ppoints, int stride, const int *pIndices, int numTriangles, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a37378978bd107d362cec82ac9972c3cc">drawtrimesh</a> (const float *ppoints, int stride, const int *pIndices, int numTriangles, const boost::multi_array&lt; float, 2 &gt; &amp;colors) OPENRAVE_DUMMY_IMPLEMENTATION</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#af0d19499c5ac95f5e1ac60b29187d7c4">ViewerBasePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a4bedf8fe190553ca2e13881b58faebf4">shared_viewer</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceOpenRAVE.html#aa8352f0d31944978b6a5cebf018b4596">ViewerBaseConstPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenRAVE_1_1ViewerBase.html#a9f2f2a97b74fe4a12b5df509ececc31d">shared_viewer_const</a> () const </td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p><b>[interface]</b> Base class for the graphics and gui engine that renders the environment and provides visual sensor information. <b>If not specified, method is not multi-thread safe.</b> See <a class="el" href="arch__viewer.html">Viewer Concepts</a>. </p>
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00051">51</a> 行で定義されています。</p>
+<hr/><h2>型定義</h2>
+<a class="anchor" id="aab6d9553843a6d593ee530045d7fff9f"></a><!-- doxytag: member="OpenRAVE::ViewerBase::ItemSelectionCallbackFn" ref="aab6d9553843a6d593ee530045d7fff9f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;bool (<a class="el" href="classOpenRAVE_1_1KinBody.html#a8dea7b02ac1900156e6776d795c476c3">KinBody::LinkPtr</a> plink,RaveVector&lt;float&gt;,RaveVector&lt;float&gt;)&gt; <a class="el" href="classOpenRAVE_1_1ViewerBase.html#aab6d9553843a6d593ee530045d7fff9f">ItemSelectionCallbackFn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>callback function for item selection </p>
+<p>If the function returns true, then the object will be selected. Otherwise, the object remains unselected. callback(target link,offset,direction) </p>
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00112">112</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0582044ee7b7222de5e7406ad64f93a"></a><!-- doxytag: member="OpenRAVE::ViewerBase::RAVE_DEPRECATED" ref="ab0582044ee7b7222de5e7406ad64f93a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classOpenRAVE_1_1ViewerBase.html#aab6d9553843a6d593ee530045d7fff9f">ItemSelectionCallbackFn</a> ViewerCallbackFn <a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab0582044ee7b7222de5e7406ad64f93a">RAVE_DEPRECATED</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000074">非推奨:</a></b></dt><dd>(11/06/10) </dd></dl>
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00164">164</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a33dae9848e343e6740ad259e09e92607"></a><!-- doxytag: member="OpenRAVE::ViewerBase::ViewerImageCallbackFn" ref="a33dae9848e343e6740ad259e09e92607" args=")" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::function&lt;void (const uint8_t*,int,int,int) <a class="el" href="classOpenRAVE_1_1ViewerBase.html#a33dae9848e343e6740ad259e09e92607">ViewerImageCallbackFn</a>)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>callback function for item selection callback(imagememory,width,height,pixeldepth) </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>imagememory</em>&nbsp;</td><td>width x height x pixeldepth RGB image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00123">123</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>列挙型</h2>
+<a class="anchor" id="ad5d8dc37aba1d6a686f461d48d29727a"></a><!-- doxytag: member="OpenRAVE::ViewerBase::ViewerEvents" ref="ad5d8dc37aba1d6a686f461d48d29727a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classOpenRAVE_1_1ViewerBase.html#ad5d8dc37aba1d6a686f461d48d29727a">ViewerEvents</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>列挙型の値: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ad5d8dc37aba1d6a686f461d48d29727aaba3d470046d1fbaa4e3c883403fc9940"></a><!-- doxytag: member="VE_ItemSelection" ref="ad5d8dc37aba1d6a686f461d48d29727aaba3d470046d1fbaa4e3c883403fc9940" args="" -->VE_ItemSelection</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00054">54</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a4791e23f1e8900e29e1b5158d266400a"></a><!-- doxytag: member="OpenRAVE::ViewerBase::ViewerBase" ref="a4791e23f1e8900e29e1b5158d266400a" args="(EnvironmentBasePtr penv)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classOpenRAVE_1_1ViewerBase.html">ViewerBase</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a>&nbsp;</td>
+          <td class="paramname"> <em>penv</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00059">59</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="acaaab7fd961a857cc0dc41abd8750d7c"></a><!-- doxytag: member="OpenRAVE::ViewerBase::~ViewerBase" ref="acaaab7fd961a857cc0dc41abd8750d7c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ~<a class="el" href="classOpenRAVE_1_1ViewerBase.html">ViewerBase</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00061">61</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a82e9a740092b00ca6db56e613bf703b3"></a><!-- doxytag: member="OpenRAVE::ViewerBase::drawarrow" ref="a82e9a740092b00ca6db56e613bf703b3" args="(const RaveVector&lt; float &gt; &amp;p1, const RaveVector&lt; float &gt; &amp;p2, float fwidth, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> drawarrow </td>
+          <td>(</td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fwidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>color</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab31ba8d06861efe4e21c28bd312eb242"></a><!-- doxytag: member="OpenRAVE::ViewerBase::drawbox" ref="ab31ba8d06861efe4e21c28bd312eb242" args="(const RaveVector&lt; float &gt; &amp;vpos, const RaveVector&lt; float &gt; &amp;vextents) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> drawbox </td>
+          <td>(</td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>vpos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>vextents</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a849d5032f57ca31b3ef3b8150c804ce3"></a><!-- doxytag: member="OpenRAVE::ViewerBase::drawlinelist" ref="a849d5032f57ca31b3ef3b8150c804ce3" args="(const float *ppoints, int numPoints, int stride, float fwidth, const float *colors) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> drawlinelist </td>
+          <td>(</td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>ppoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fwidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>colors</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3021be834c6cf039ea736ded93666763"></a><!-- doxytag: member="OpenRAVE::ViewerBase::drawlinelist" ref="a3021be834c6cf039ea736ded93666763" args="(const float *ppoints, int numPoints, int stride, float fwidth, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> drawlinelist </td>
+          <td>(</td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>ppoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fwidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>color</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a89917d0d227ef17ae86be8312159e689"></a><!-- doxytag: member="OpenRAVE::ViewerBase::drawlinestrip" ref="a89917d0d227ef17ae86be8312159e689" args="(const float *ppoints, int numPoints, int stride, float fwidth, const float *colors) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> drawlinestrip </td>
+          <td>(</td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>ppoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fwidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>colors</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad6c4f2147642166ff9978d2364d561f0"></a><!-- doxytag: member="OpenRAVE::ViewerBase::drawlinestrip" ref="ad6c4f2147642166ff9978d2364d561f0" args="(const float *ppoints, int numPoints, int stride, float fwidth, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> drawlinestrip </td>
+          <td>(</td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>ppoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fwidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>color</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22f2bb37771f5e0f772a7c102c944cbb"></a><!-- doxytag: member="OpenRAVE::ViewerBase::drawplane" ref="a22f2bb37771f5e0f772a7c102c944cbb" args="(const RaveTransform&lt; float &gt; &amp;tplane, const RaveVector&lt; float &gt; &amp;vextents, const boost::multi_array&lt; float, 3 &gt; &amp;vtexture) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> drawplane </td>
+          <td>(</td>
+          <td class="paramtype">const RaveTransform&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>tplane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>vextents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::multi_array&lt; float, 3 &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>vtexture</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a37378978bd107d362cec82ac9972c3cc"></a><!-- doxytag: member="OpenRAVE::ViewerBase::drawtrimesh" ref="a37378978bd107d362cec82ac9972c3cc" args="(const float *ppoints, int stride, const int *pIndices, int numTriangles, const boost::multi_array&lt; float, 2 &gt; &amp;colors) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> drawtrimesh </td>
+          <td>(</td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>ppoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&nbsp;</td>
+          <td class="paramname"> <em>pIndices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numTriangles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::multi_array&lt; float, 2 &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>colors</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acbbb5716b51f6588f7396ad847c1ed5c"></a><!-- doxytag: member="OpenRAVE::ViewerBase::drawtrimesh" ref="acbbb5716b51f6588f7396ad847c1ed5c" args="(const float *ppoints, int stride, const int *pIndices, int numTriangles, const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> drawtrimesh </td>
+          <td>(</td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>ppoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&nbsp;</td>
+          <td class="paramname"> <em>pIndices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numTriangles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>color</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a252e5291c15eb4d6956ee5c824a4c56d"></a><!-- doxytag: member="OpenRAVE::ViewerBase::EnvironmentSync" ref="a252e5291c15eb4d6956ee5c824a4c56d" args="() OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void EnvironmentSync </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>forces synchronization with the environment, returns when the environment is fully synchronized. </p>
+<p>Note that this method might not work if environment is locked in current thread </p>
+
+</div>
+</div>
+<a class="anchor" id="ad149822b9f25bf1adf3d76e78379cca5"></a><!-- doxytag: member="OpenRAVE::ViewerBase::GetCameraImage" ref="ad149822b9f25bf1adf3d76e78379cca5" args="(std::vector&lt; uint8_t &gt; &amp;memory, int width, int height, const RaveTransform&lt; float &gt; &amp;t, const SensorBase::CameraIntrinsics &amp;intrinsics) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool GetCameraImage </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>memory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveTransform&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics.html">SensorBase::CameraIntrinsics</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>intrinsics</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renders a 24bit RGB image of dimensions width and height from the current scene. </p>
+<p>The camera is meant to show the underlying <a class="el" href="namespaceOpenRAVE.html" title="The entire OpenRAVE library.">OpenRAVE</a> world as a robot would see it, so all graphs rendered with the plotX and drawX functions are hidden by default. Some viewers support the SetFiguresInCamera command to allow graphs to be also displayed. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>memory</em>&nbsp;</td><td>the memory where the image will be stored at, has to store 3*width*height </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>width</em>&nbsp;</td><td>width of the image, if 0 the width of the viewer is used </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>height</em>&nbsp;</td><td>height of the image, if 0 the width of the viewer is used </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>t</em>&nbsp;</td><td>the rotation and translation of the camera. Note that +z is treated as the camera direction axis! So all points in front of the camera have a positive dot product with its +z direction. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>intrinsics</em>&nbsp;</td><td>the intrinsic parameters of the camera defining FOV, distortion, principal point, and focal length. The focal length is used to define the near plane for culling. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa280b50e2cd6e717b03a83245546e467"></a><!-- doxytag: member="OpenRAVE::ViewerBase::GetCameraIntrinsics" ref="aa280b50e2cd6e717b03a83245546e467" args="() const OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classOpenRAVE_1_1geometry_1_1RaveCameraIntrinsics.html">geometry::RaveCameraIntrinsics</a>&lt;float&gt; GetCameraIntrinsics </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the closest camera intrinsics that the viewer is rendering the environment at. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac63f4828ecf7cfd87feb7f67be71bb04"></a><!-- doxytag: member="OpenRAVE::ViewerBase::GetCameraTransform" ref="ac63f4828ecf7cfd87feb7f67be71bb04" args="() const OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual RaveTransform&lt;float&gt; GetCameraTransform </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the current camera transform that the viewer is rendering the environment at. </p>
+
+</div>
+</div>
+<a class="anchor" id="affeafe65e7c4094f282d273dedbf069b"></a><!-- doxytag: member="OpenRAVE::ViewerBase::GetInterfaceTypeStatic" ref="affeafe65e7c4094f282d273dedbf069b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static InterfaceType GetInterfaceTypeStatic </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return the static interface type this class points to (used for safe casting) </p>
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00065">65</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ace14ad2fd8a6c9de2477bfcfb66d84cc"></a><!-- doxytag: member="OpenRAVE::ViewerBase::GetName" ref="ace14ad2fd8a6c9de2477bfcfb66d84cc" args="() const OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; GetName </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b6920a362f58dfd5113a5163266780d"></a><!-- doxytag: member="OpenRAVE::ViewerBase::LoadModel" ref="a4b6920a362f58dfd5113a5163266780d" args="(const std::string &amp;pfilename) RAVE_DEPRECATED OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool LoadModel </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>pfilename</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000076">非推奨:</a></b></dt><dd>(11/03/02) Any type of model should be added through the openrave environment instead of viewer directly. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ada75ea5cccc17a8cf81b638117139c1c"></a><!-- doxytag: member="OpenRAVE::ViewerBase::main" ref="ada75ea5cccc17a8cf81b638117139c1c" args="(bool bShow=true)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int main </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>bShow</em> = <code>true</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>goes into the main loop </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>bShow</em>&nbsp;</td><td>if true will show the window </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a548e4f89261156f972a2a463cffab365"></a><!-- doxytag: member="OpenRAVE::ViewerBase::Move" ref="a548e4f89261156f972a2a463cffab365" args="(int x, int y) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Move </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9ab9d7fee44e672f4fb7c01491520a51"></a><!-- doxytag: member="OpenRAVE::ViewerBase::plot3" ref="a9ab9d7fee44e672f4fb7c01491520a51" args="(const float *ppoints, int numPoints, int stride, float fPointSize, const float *colors, int drawstyle=0, bool bhasalpha=false) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> plot3 </td>
+          <td>(</td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>ppoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fPointSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>colors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>drawstyle</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>bhasalpha</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9d5173833570ef0af490242cf87aabf"></a><!-- doxytag: member="OpenRAVE::ViewerBase::plot3" ref="ae9d5173833570ef0af490242cf87aabf" args="(const float *ppoints, int numPoints, int stride, float fPointSize, const RaveVector&lt; float &gt; &amp;color, int drawstyle=0) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceOpenRAVE.html#a11bae0ab3a7dd29755f7af2e5376c47d">GraphHandlePtr</a> plot3 </td>
+          <td>(</td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>ppoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>numPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>fPointSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>drawstyle</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab8fc69e4de743e14207ea400de2f3824"></a><!-- doxytag: member="OpenRAVE::ViewerBase::quitmainloop" ref="ab8fc69e4de743e14207ea400de2f3824" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void quitmainloop </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>destroys the main loop </p>
+
+</div>
+</div>
+<a class="anchor" id="a87bb8fc16f70e17fc3955a734a5a9cc5"></a><!-- doxytag: member="OpenRAVE::ViewerBase::RegisterCallback" ref="a87bb8fc16f70e17fc3955a734a5a9cc5" args="(int properties, const ItemSelectionCallbackFn &amp;fncallback) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual boost::shared_ptr&lt;void&gt; RegisterCallback </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ViewerBase.html#aab6d9553843a6d593ee530045d7fff9f">ItemSelectionCallbackFn</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fncallback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000075">非推奨:</a></b></dt><dd>(11/06/10) </dd></dl>
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00166">166</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a22844e2b6584a0673cc82cfd7e2fa01d"></a><!-- doxytag: member="OpenRAVE::ViewerBase::RegisterItemSelectionCallback" ref="a22844e2b6584a0673cc82cfd7e2fa01d" args="(const ItemSelectionCallbackFn &amp;fncallback) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual boost::shared_ptr&lt;void&gt; RegisterItemSelectionCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ViewerBase.html#aab6d9553843a6d593ee530045d7fff9f">ItemSelectionCallbackFn</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fncallback</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>registers a function with the viewer that gets called everytime mouse button is clicked </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>a handle to the callback. If this handle is deleted, the callback will be unregistered. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad23099fd4b95a0b7587ec4efe5454043"></a><!-- doxytag: member="OpenRAVE::ViewerBase::RegisterViewerImageCallback" ref="ad23099fd4b95a0b7587ec4efe5454043" args="(const ViewerImageCallbackFn &amp;fncallback) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual boost::shared_ptr&lt;void&gt; RegisterViewerImageCallback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classOpenRAVE_1_1ViewerBase.html#a33dae9848e343e6740ad259e09e92607">ViewerImageCallbackFn</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fncallback</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>registers a function with the viewer that gets called for every new image rendered. </p>
+<dl class="return"><dt><b>戻り値:</b></dt><dd>a handle to the callback. If this handle is deleted, the callback will be unregistered. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a50aaed4618b2b23eaed8f22b280caa72"></a><!-- doxytag: member="OpenRAVE::ViewerBase::Reset" ref="a50aaed4618b2b23eaed8f22b280caa72" args="() OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Reset </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad7e2a3f748b9d369d13c4591a89a659d"></a><!-- doxytag: member="OpenRAVE::ViewerBase::SetBkgndColor" ref="ad7e2a3f748b9d369d13c4591a89a659d" args="(const RaveVector&lt; float &gt; &amp;color) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetBkgndColor </td>
+          <td>(</td>
+          <td class="paramtype">const RaveVector&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>color</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae426230d17214ba9e81e7ca30a1437e6"></a><!-- doxytag: member="OpenRAVE::ViewerBase::SetCamera" ref="ae426230d17214ba9e81e7ca30a1437e6" args="(const RaveTransform&lt; float &gt; &amp;trans, float focalDistance=0) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetCamera </td>
+          <td>(</td>
+          <td class="paramtype">const RaveTransform&lt; float &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>focalDistance</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the camera transformation. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>trans</em>&nbsp;</td><td>new camera transformation in the world coordinate system </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>focalDistance</em>&nbsp;</td><td>The new focal distance of the camera (higher values is higher zoom). If 0, then the previous focal distance is preserved. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3807c4e1bbec9f2d0e9f71cadb7efdd1"></a><!-- doxytag: member="OpenRAVE::ViewerBase::SetEnvironmentSync" ref="a3807c4e1bbec9f2d0e9f71cadb7efdd1" args="(bool bUpdate) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetEnvironmentSync </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>bUpdate</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>controls whether the viewer synchronizes with the newest environment automatically </p>
+
+</div>
+</div>
+<a class="anchor" id="aefe54c55090e1487ba372243e0da6e4a"></a><!-- doxytag: member="OpenRAVE::ViewerBase::SetName" ref="aefe54c55090e1487ba372243e0da6e4a" args="(const std::string &amp;name) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4d6091b23c3c415fd662d4974957b072"></a><!-- doxytag: member="OpenRAVE::ViewerBase::SetSize" ref="a4d6091b23c3c415fd662d4974957b072" args="(int w, int h) OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetSize </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>h</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab89b5888abf5a74bd6571a47cf83b7cd"></a><!-- doxytag: member="OpenRAVE::ViewerBase::SetViewerData" ref="ab89b5888abf5a74bd6571a47cf83b7cd" args="(KinBodyPtr body, UserDataPtr data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SetViewerData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>body</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceOpenRAVE.html#aa02b5cd826890fa31fb80f0d469312d9">UserDataPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>data</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline, protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00175">175</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bedf8fe190553ca2e13881b58faebf4"></a><!-- doxytag: member="OpenRAVE::ViewerBase::shared_viewer" ref="a4bedf8fe190553ca2e13881b58faebf4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#af0d19499c5ac95f5e1ac60b29187d7c4">ViewerBasePtr</a> shared_viewer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00196">196</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f2f2a97b74fe4a12b5df509ececc31d"></a><!-- doxytag: member="OpenRAVE::ViewerBase::shared_viewer_const" ref="a9f2f2a97b74fe4a12b5df509ececc31d" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceOpenRAVE.html#aa8352f0d31944978b6a5cebf018b4596">ViewerBaseConstPtr</a> shared_viewer_const </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00199">199</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ba08e058dbbaf19090cc79cd22055f6"></a><!-- doxytag: member="OpenRAVE::ViewerBase::UpdateCameraTransform" ref="a8ba08e058dbbaf19090cc79cd22055f6" args="() RAVE_DEPRECATED OPENRAVE_DUMMY_IMPLEMENTATION" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UpdateCameraTransform </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000073">非推奨:</a></b></dt><dd>(11/06/10) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a00e98066bc03fa4d2b287d2a6a2d2b4c"></a><!-- doxytag: member="OpenRAVE::ViewerBase::ViewerMove" ref="a00e98066bc03fa4d2b287d2a6a2d2b4c" args="(int x, int y) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ViewerMove </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000071">非推奨:</a></b></dt><dd>(11/06/13) </dd></dl>
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00148">148</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a93a7763493f3da4687ca55db4a32b05e"></a><!-- doxytag: member="OpenRAVE::ViewerBase::ViewerSetSize" ref="a93a7763493f3da4687ca55db4a32b05e" args="(int w, int h) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ViewerSetSize </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>h</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000070">非推奨:</a></b></dt><dd>(11/06/13) </dd></dl>
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00141">141</a> 行で定義されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="adfc56134be2ef5b157c9a0b55d5d4e13"></a><!-- doxytag: member="OpenRAVE::ViewerBase::ViewerSetTitle" ref="adfc56134be2ef5b157c9a0b55d5d4e13" args="(const std::string &amp;ptitle) RAVE_DEPRECATED" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ViewerSetTitle </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>ptitle</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000072">非推奨:</a></b></dt><dd>(11/06/13) </dd></dl>
+
+<p> <a class="el" href="viewer_8h_source.html">viewer.h</a> の <a class="el" href="viewer_8h_source.html#l00155">155</a> 行で定義されています。</p>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="ac9591ef8e174b06e6021c7ecb216c7c2"></a><!-- doxytag: member="OpenRAVE::ViewerBase::RAVE_DEPRECATED" ref="ac9591ef8e174b06e6021c7ecb216c7c2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classOpenRAVE_1_1ViewerBase.html#ad5d8dc37aba1d6a686f461d48d29727a">OpenRAVE::ViewerBase::ViewerEvents</a>  <a class="el" href="classOpenRAVE_1_1ViewerBase.html#ab0582044ee7b7222de5e7406ad64f93a">RAVE_DEPRECATED</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>include/openrave/<a class="el" href="viewer_8h_source.html">viewer.h (r2848/r2831)</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:43:16 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae
+END
+daeMetaElementAttribute.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeMetaElementAttribute.cpp
+END
+daeIDRef.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeIDRef.cpp
+END
+daeZAEUncompressHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeZAEUncompressHandler.cpp
+END
+daeUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeUtils.cpp
+END
+daeSIDResolver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeSIDResolver.cpp
+END
+daeMetaChoice.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeMetaChoice.cpp
+END
+daeStandardURIResolver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeStandardURIResolver.cpp
+END
+daeRawResolver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeRawResolver.cpp
+END
+daeMemorySystem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeMemorySystem.cpp
+END
+daeArray.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeArray.cpp
+END
+daeAtomicType.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeAtomicType.cpp
+END
+daeMetaSequence.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeMetaSequence.cpp
+END
+daeTinyXMLPlugin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeTinyXMLPlugin.cpp
+END
+daeMetaCMPolicy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeMetaCMPolicy.cpp
+END
+daeErrorHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeErrorHandler.cpp
+END
+daeRefCountedObj.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeRefCountedObj.cpp
+END
+daeElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeElement.cpp
+END
+daeError.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeError.cpp
+END
+daeMetaAny.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeMetaAny.cpp
+END
+daeURI.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeURI.cpp
+END
+daeIOPluginCommon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeIOPluginCommon.cpp
+END
+daeMetaElement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeMetaElement.cpp
+END
+daeStringRef.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeStringRef.cpp
+END
+daeMetaGroup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeMetaGroup.cpp
+END
+daeDatabase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeDatabase.cpp
+END
+daeMetaAttribute.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeMetaAttribute.cpp
+END
+domAny.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/domAny.cpp
+END
+daeStringTable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeStringTable.cpp
+END
+daeDocument.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeDocument.cpp
+END
+dae.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/dae.cpp
+END
+daeDom.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/3rdparty/collada/dae/daeDom.cpp
+END

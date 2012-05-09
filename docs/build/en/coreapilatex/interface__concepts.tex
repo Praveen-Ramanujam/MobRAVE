@@ -1,0 +1,331 @@
+New interfaces are provided by plugins and are dynamically loaded into OpenRAVE. All interfaces are derived from the \hyperlink{classOpenRAVE_1_1InterfaceBase}{OpenRAVE::InterfaceBase} class and contain basic information such as the type, the owning \hyperlink{classOpenRAVE_1_1EnvironmentBase}{environment}, setting user data, cloning, and allowing custom string commands to be sent.
+
+Every instantiated interface belongs to only one \hyperlink{classOpenRAVE_1_1EnvironmentBase}{environment}. Interfaces can be cloned using \hyperlink{classOpenRAVE_1_1InterfaceBase_aadffdb83bc22dcdd5dd50c27d1bb5496}{OpenRAVE::InterfaceBase::Clone}.
+
+Every interface can have its own custom commands. Sending {\bfseries help} will return a list of all the commands the interface supports (think of it as a command-\/line way of sending commands to the interface). The GetDescription() returns a string briefly explaining the functionality, the authors, and the license of the plugin.
+
+Ability to register custom xml reader interfaces.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{arch__collisionchecker}{Collision Checker Concepts}
+\item \hyperlink{arch__controller}{Controller Concepts}
+\item \hyperlink{arch__iksolver}{Inverse Kinematics Solver Concepts}
+\item \hyperlink{arch__kinbody}{Kinematics Body Concepts}
+\item \hyperlink{arch__physicsengine}{Physics Engine Concepts}
+\item \hyperlink{arch__planner}{Planner Concepts}
+\item \hyperlink{arch__module}{Module Concepts}
+\item \hyperlink{arch__robot}{Robot Concepts}
+\item \hyperlink{arch__sensor}{Sensor Concepts}
+\item \hyperlink{arch__sensorsystem}{Sensor System Concepts}
+\item \hyperlink{arch__spacesampler}{SpaceSampler Concepts}
+\item \href{../main/architecture/trajectory.html}{\tt Trajectory Concepts}
+\item \hyperlink{arch__viewer}{Viewer Concepts} 
+\end{DoxyItemize}\hypertarget{arch_collisionchecker}{}\subsection{Collision Checker Concepts}\label{arch_collisionchecker}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1CollisionCheckerBase}{OpenRAVE::CollisionCheckerBase}.
+
+All {\bfseries CheckCollision} functions accept an optional pointer to a \hyperlink{classOpenRAVE_1_1CollisionReport}{OpenRAVE::CollisionReport} struct, which gets filled with information about the collision that takes place. Usually requesting more precise information like distance to obstacles is computationally expensive; therefore to save computation, the user can specify what collision information should be filled in the \hyperlink{classOpenRAVE_1_1CollisionReport}{OpenRAVE::CollisionReport} with the SetCollisionOptions function.
+
+\hyperlink{namespaceOpenRAVE}{OpenRAVE} is not tied to a particular collision checker. Collision checkers can be changed with SetCollisionChecker. In order to add a new collision checker, derive a class from \hyperlink{classOpenRAVE_1_1CollisionCheckerBase}{OpenRAVE::CollisionCheckerBase} and fill all the methods it provides. Then register it in 'src/environment.cpp' and CollisionCheckers. All collision checking is done through the overloaded EnvironmentBase::CheckCollision. \hypertarget{arch_controller}{}\subsection{Controller Concepts}\label{arch_controller}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1ControllerBase}{OpenRAVE::ControllerBase}
+
+In order for openrave to control certain robot hardware, a \hyperlink{classOpenRAVE_1_1ControllerBase}{OpenRAVE::ControllerBase} controller has to be created that will interface with the hardware-\/specific libraries. This controller interface then has to be created through the environment and set onto an existing robot. All commands given to the robot are first filtered through the controller, then translated to joint commands. Different controllers can have different path inputs (ie: a robot walking on a floor might just have x,y,angle), but the default is the DOF joint values.\hypertarget{arch__controller_arch_controller_writing}{}\subsubsection{Writing and Using Controllers}\label{arch__controller_arch_controller_writing}
+Assuming that there exists a plugin with a controller interface named {\bfseries MyController}, here are some ways to set an openrave robot to use it:
+
+
+\begin{DoxyItemize}
+\item XML
+\begin{DoxyItemize}
+\item add a {\bfseries } $<$controller$>$ tag in the openrave robot XML file like this: \begin{DoxyVerb}
+<robot file="robots/schunk-lwa3.robot.xml">
+  <controller type="MyController controller arguments here"></controller>
+</robot>
+\end{DoxyVerb}
+
+\item It is also possible to set a controller outside of the robot definition by specifying the robot's name. For example: \begin{DoxyVerb}
+<environment>
+  <robot name="schunk-lwa3" file="robots/schunk-lwa3.robot.xml">
+  </robot>
+  <controller type="MyController" robot="schunk-lwa3 controller arguments here"></controller>
+  </environment>
+\end{DoxyVerb}
+
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item C++ 
+\begin{DoxyCode}
+RobotBasePtr probot = GetEnv()->GetRobot("schunk-lwa3");
+ControllerBasePtr pcontroller = RaveCreateController(GetEnv(),"MyController contr
+      oller arguments here");
+vector<int> dofindices(probot->GetDOF());
+for(int i = 0; i < probot->GetDOF(); ++i) {
+    dofindices[i] = i;
+}
+int nControlTransformation = 1;
+probot->SetController(pcontroller,dofindices,nControlTransformation);
+\end{DoxyCode}
+
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Python 
+\begin{DoxyCode}
+robot = env.GetRobot('schunk-lwa3')
+controller = RaveCreateController(env,'MyController controller arguments here')
+robot.SetController(controller,range(robot.GetDOF()),controltransform=1)
+\end{DoxyCode}
+
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Octave/MATLAB \begin{DoxyVerb}
+robotid = orEnvGetBody('schunk-lwa3');
+orRobotControllerSet(robotid,'MyController','controller arguments here')
+\end{DoxyVerb}
+ 
+\end{DoxyItemize}\hypertarget{arch_iksolver}{}\subsection{Inverse Kinematics Solver Concepts}\label{arch_iksolver}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1IkSolverBase}{OpenRAVE::IkSolverBase}
+
+Each IK solver is defined on a subset of joints of a Robot specified by the robot's manipulator. Given the position in the 3D workspace that an end effector should go to, an IK solver will find the joint configuration to take that end-\/effector there. Because it is common for an IK solution to have a null space, the IK solver give functionality to expose the free parameters to move the joints in null space. \hypertarget{arch_kinbody}{}\subsection{Kinematics Body Concepts}\label{arch_kinbody}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1KinBody}{OpenRAVE::KinBody}
+
+Each KinBody can be thought of as the basic rigid body element in \hyperlink{namespaceOpenRAVE}{OpenRAVE}. It is composed of a collection of links (rigid bodies) connected with joints. The KinBody class provides a lot of functionality (from a planning perspective) needed to perform complex tasks:
+
+
+\begin{DoxyItemize}
+\item Setting and getting joint values
+\item Setting and getting the transformations of all links
+\item Getting the velocities of each joint (or link)
+\item Self collision detection functions
+\item Kinematic hierarchy querying -\/ The underlying structure of KinBody is a list of links, not a tree. However, after some careful analysis, the parent and child links of a particular link can be extracted.
+\item Jacobian calculation -\/ both translational and rotational.
+\item Attaching bodies online -\/ a necessary function for manipulation planning; is called, for example, when an object is rigidly grasped by a hand
+\end{DoxyItemize}\hypertarget{arch__kinbody_arch_kinbody_options}{}\subsubsection{Loading Options}\label{arch__kinbody_arch_kinbody_options}
+This is the set of loading options passed as a AttributesList into functions like OpenRAVE::EnvironmentBase::ReadKinBodyXMLFile:
+\begin{DoxyItemize}
+\item {\bfseries prefix}: prefix link, joint, manipulator, and sensor names with a string
+\item {\bfseries skipgeometry}: if 1 or true, will skip loading all geometry of the links 
+\end{DoxyItemize}\hypertarget{arch_physicsengine}{}\subsection{Physics Engine Concepts}\label{arch_physicsengine}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1PhysicsEngineBase}{OpenRAVE::PhysicsEngineBase}
+
+The physics engine for the environment can be set through \hyperlink{classOpenRAVE_1_1EnvironmentBase_a4b682d62526e5840d8fdc25343ee563c}{OpenRAVE::EnvironmentBase::SetPhysicsEngine}. \hypertarget{arch_planner}{}\subsection{Planner Concepts}\label{arch_planner}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1PlannerBase}{OpenRAVE::PlannerBase}\hypertarget{arch__planner_planner_intro}{}\subsubsection{Introduction}\label{arch__planner_planner_intro}
+In \hyperlink{namespaceOpenRAVE}{OpenRAVE}, the basic purpose of a planner is to find a trajectory starting at some initial configuration that reaches a goal condition while satisfying various navigation constraints. All planners are assumed to be geometric in nature (ie, not planning in the space of policies that depend on sensor data). Planners can have any configuration space defined by using the \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{OpenRAVE::PlannerBase::PlannerParameters} structure. A planner should never use the raw joint values functions defined in KinBody.
+
+The usage of a planner is simple:
+
+
+\begin{DoxyItemize}
+\item Acquire its pointer from RaveCreatePlanner.
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Fill a \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters} structure defining the instance of the problem. The structure has many fields for describing planning entities like start position, goal condition, and the distance metric. Try to use these fields as much as possible. Later on, this will allow users to easily swap planners without having to change the PlannerBase::PlannerParameters structure much.
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Call \hyperlink{classOpenRAVE_1_1PlannerBase_a109c37d3de7ee99f93c740a2df0e5e34}{InitPlan} passing in the robot and planner parameters. This also resets any previous information the planner had stored.
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Call \hyperlink{classOpenRAVE_1_1PlannerBase_a7ce22311b1f81ec6b9bacdf457d4631a}{PlanPath} passing in a \hyperlink{classOpenRAVE_1_1TrajectoryBase}{trajectory} (and optionally an output stream) to start planning. If the function returns true, then the Trajectory will be filled with the geometric solution in the active DOF configuration space of the robot. By calling SetParameters, then PlanPath again, it could be possible to preserve the previous search space for the planner while changing the goal conditions.
+\end{DoxyItemize}\hypertarget{arch__planner_planner_planning}{}\subsubsection{Planning Details}\label{arch__planner_planner_planning}
+\hypertarget{arch__planner_planner_parameters}{}\paragraph{Planner Parameters -\/ Calling a Planner}\label{arch__planner_planner_parameters}
+All the information defining a planning problem should be specified in PlannerBase::PlannerParameters. {\ttfamily PlannerParameters} tries to cover most of the common data like distance metrics, sampling distributions, initial and goal configurations. However there are many different types of inputs to a planner, so it is impossible to cover everything with one class. Instead, {\ttfamily PlannerParameters} has a very flexible and safe way to extend its parameters without destroying compatibility with a particular planner or user of the planner. This is enabled by the serialization to XML capabilities of {\ttfamily PlannerParameters}
+
+
+\begin{DoxyCode}
+PlannerBase::PlannerParametersPtr params(new PlannerBase::PlannerParameters());
+params->vinitialconfig.push_back(2);
+ostream os;
+os << *params;
+\end{DoxyCode}
+
+
+will produce something in the form of \begin{DoxyVerb}
+<PlannerParameters>
+  <initialconfig>2</initialconfig>
+</PlannerParameters>
+\end{DoxyVerb}
+
+
+Furthermore \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters} can read such an XML file given an input stream \begin{DoxyVerb}
+istream is;
+is >> *params;
+\end{DoxyVerb}
+
+
+Using XML as a medium, it is easy to exchange data across different derivations of \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters} without much effort. To add new parameters for planners to take advantage of
+
+
+\begin{DoxyItemize}
+\item make a derived class from \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters}
+\item overload the \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters_a2084222cd1b9f555406d306d65680d7b}{PlannerParameters}, startElement, endElement, and characters functions to process the new variables.
+\end{DoxyItemize}
+
+As long as the user of the planner passes a {\ttfamily PlannerParameters} that can serialize to the same format of data that the planner expects, the data will be passed. This allows the planner and the caller of \hyperlink{classOpenRAVE_1_1PlannerBase_a7ce22311b1f81ec6b9bacdf457d4631a}{PlanPath} to use different {\ttfamily PlannerParameters}. definitions without any conflicts.\hypertarget{arch__planner_planner_basicusage}{}\paragraph{Basic Usage}\label{arch__planner_planner_basicusage}
+This is a simple call to a birrt planner, let {\bfseries activegoal} hold the goal configuration and {\bfseries activejoints} hold indices to the robot joints interested to plan for.
+
+
+\begin{DoxyCode}
+PlannerBase::PlannerParametersPtr params(new PlannerBase::PlannerParameters);
+params->SetRobotActiveJoints(robot); // sets the active joint indices 
+robot->GetActiveDOFValues(params.vinitialconfig); // set initial config (use curr
+      ent robot configuration)
+params.vgoalconfig = activegoal;
+ 
+// set other params values like
+ 
+PlannerBasePtr rrtplanner = RaveCreatePlanner(GetEnv(),"rBiRRT");
+TrajectoryBasePtr ptraj = RaveCreateTrajectory(GetEnv(),robot->GetActiveDOF());
+if( !rrtplanner->InitPlan(robot, params) ) {
+    return false;
+}
+
+PlannerStatus status = rrtplanner->Plan(ptraj);
+if( status & PS_HasSolution ) {
+    robot->SetActiveMotion(ptraj); // trajectory is done, execute on the robot
+}
+\end{DoxyCode}
+
+
+In order to speed up computations further, planners can use the CO\_\-ActiveDOFs collision checker option, which only focuses collision on the currently moving links in the robot. If using the robot active DOF, before calling the planner, the user should insert this statement:
+
+
+\begin{DoxyCode}
+CollisionOptionsStateSaver optionstate(GetEnv()->GetCollisionChecker(),GetEnv()->
+      GetCollisionChecker()->GetCollisionOptions()|CO_ActiveDOFs,false);
+\end{DoxyCode}
+\hypertarget{arch__planner_planner_extraparameters}{}\paragraph{Defining Extra Planner Parameters}\label{arch__planner_planner_extraparameters}
+Here is how to derive from a \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters} class in order to introduce new parameters.
+
+
+\begin{DoxyCode}
+class BasicRRTParameters : public PlannerBase::PlannerParameters
+{
+public:
+BasicRRTParameters() : _fGoalBiasProb(0.05f), _bProcessing(false) {
+        _vXMLParameters.push_back("goalbias");
+    }
+    
+    dReal _fGoalBiasProb; 
+
+ protected:
+    bool _bProcessing;
+    virtual bool serialize(std::ostream& O) const
+    {
+        if( !PlannerParameters::serialize(O) )
+            return false;
+        O << "<goalbias>" << _fGoalBiasProb << "</goalbias>" << endl;
+        return !!O;
+    }
+
+    ProcessElement startElement(const std::string& name, const std::list<std::pai
+      r<std::string,std::string> >& atts)
+    {
+        if( _bProcessing )
+            return PE_Ignore;
+        switch( PlannerBase::PlannerParameters::startElement(name,atts) ) {
+            case PE_Pass: break;
+            case PE_Support: return PE_Support;
+            case PE_Ignore: return PE_Ignore;
+        }
+        
+        _bProcessing = name=="goalbias";
+        return _bProcessing ? PE_Support : PE_Pass;
+    }
+    
+    virtual bool endElement(const string& name)
+    {
+        if( _bProcessing ) {
+            if( name == "goalbias")
+                _ss >> _fGoalBiasProb;
+            else
+                RAVELOG_WARN(str(boost::format("unknown tag %s\n")%name));
+            _bProcessing = false;
+            return false;
+        }
+
+        // give a chance for the default parameters to get processed
+        return PlannerParameters::endElement(name);
+    }
+};
+\end{DoxyCode}
+\hypertarget{arch__planner_planner_development}{}\paragraph{Planner Development}\label{arch__planner_planner_development}
+Most planners do their computation iteratively, and they take lots of computation time. It is very frequent for a user to want to early-\/terminate the planner, or tell it to return the best solution it has founds immediately. Users might also want to visualize the planning process without getting into the internals of the planner. In order to do this, \hyperlink{namespaceOpenRAVE}{OpenRAVE} allows users to register callbacks via \hyperlink{classOpenRAVE_1_1PlannerBase_a7b72116e4770d98f2a78297246a679e8}{OpenRAVE::PlannerBase::RegisterPlanCallback}. Planner developers should {\bfseries always} call \hyperlink{classOpenRAVE_1_1PlannerBase_a4b980a3cc0e8fc7abd2d0afe472ef695}{OpenRAVE::PlannerBase::\_\-CallCallbacks} inside their planning loop and process the input correctly.\hypertarget{arch__planner_planner_examples}{}\subsubsection{Planner Examples}\label{arch__planner_planner_examples}
+Examples of planners are:
+\begin{DoxyItemize}
+\item Manipulation -\/ manipulable objects need to be specified. Objects like doors should be special cases that planners knows about.
+\item Following -\/ Goal easily changes. Attributes can change.
+\item Path Smoothing -\/ uses the input trajectory
+\item Trajectory Re-\/timing -\/ uses the input trajectory
+\item Object Building -\/ Need to describe how parts of object fit together into a bigger part.
+\item Dish Washing -\/ Specific goals are not specified, just a condition that all plates need to be inside.
+\item Foot step planning -\/ Need discrete footsteps and other capabilities from robot.
+\end{DoxyItemize}
+
+Planner should be able to query sensor information from the Robot like its current camera image etc. Planner should be compatible with Robot presented; some hand-\/shaking should happen between the two during InitPlan function.\hypertarget{arch__planner_planner_pathoptimization}{}\subsubsection{Path Optimization}\label{arch__planner_planner_pathoptimization}
+Path smoothing/optimization can be regarded as a post-\/processing step to planners. \char`\"{}Path optimization\char`\"{} algorithms take in an existing trajectory and filter it using the existing constraints of the planner. In fact, functionality there is no difference between a \char`\"{}path optimization\char`\"{} planner and a regular planner besides the fact that a trajectory is used as input. Because PlannerBase::PlanPath already has a trajectory as an argument, this does not cause any major API changes to the infrastructure.
+
+However, the PlannerParameters structure had to reflect what 'path optimization' algorithm to use for post processing the trajectory. This is now reflected in the PlannerParameters::\_\-sPostProcessingPlanner and PlannerParameters::\_\-sPostProcessingParameters arguments. By default, this is the default \char`\"{}linear shortcut\char`\"{} path optimizer. There is also a helper function in PlannerBase to help users easily call the post-\/processing step:
+
+
+\begin{DoxyCode}
+_ProcessPostPlanners(RobotBasePtr probot, TrajectoryBasePtr ptraj);
+\end{DoxyCode}
+
+
+Please take a look at how the default RRT algorithms are now structured.
+
+Planner post-\/processing actually allows users to chain planners in the same way that filters are chained, all through specifying planner parameters. Of course, users can continue to smooth in planners without relying on this framework. However, explicit control of path smoothing allows custom parameter to be easily specified. \hypertarget{arch_module}{}\subsection{Module Concepts}\label{arch_module}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1ModuleBase}{OpenRAVE::ModuleBase}
+
+Base class for modules the user might want to instantiate. A module registers itself with OpenRAVE's SimulateStep calls and can accept commands from the server or other plugins via SendCommand. A module stops receiving commands when it is destroyed. Modules are an easy way for developers to run and test their own code. \hypertarget{arch_robot}{}\subsection{Robot Concepts}\label{arch_robot}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1RobotBase}{OpenRAVE::RobotBase}
+
+Robots are a special type of KinBody that need higher level functionality for their control and movement in the environment. There are a couple of differences between a Robot and a regular KinBody.\hypertarget{arch__robot_arch_robot_manipulator}{}\subsubsection{Manipulators}\label{arch__robot_arch_robot_manipulator}
+Every robot supports a list of \hyperlink{classOpenRAVE_1_1RobotBase_1_1Manipulator}{Manipulator} objects that describe the links the robot should use when manipulating parts of the environment. Usually manipulators are serial chains with a Base link and an End Effector link. Each manipulator is also decomposed into two parts: the arm and the hand. The hand usually makes contact with the objects while the arm transfers the hand to its destination. The Manipulator class also has an optional pointer to a IkSolverBase class providing inverse kinematics functionality. The IK solver used by a Manipulator can be changed by Manipulator::SetIKSolver, so plugins can provide and set their own IK solvers.\hypertarget{arch__robot_arch_robot_activedof}{}\subsubsection{Active Degrees of Freedom}\label{arch__robot_arch_robot_activedof}
+When controlling and planning for a robot, it is possible to set the degrees of freedom that should be used. For example, consider a humanoid robot. There should be in easy way to specify to planners that only the right hand of the robot should be taken into consideration when planning; the rest of the joints should be ignored. Or consider the case where we care about navigation of the humanoid robot. Here we would want to control the translation of the robot on the plane and its orientation. Perhaps we want to do footstep planning and also care about controlling the two legs. All this is possible with the Active Degrees of Freedom feature provided by \hyperlink{namespaceOpenRAVE}{OpenRAVE}. First call RobotBase::SetActiveDOFs to set the degrees of freedom of the robot; it is also possible to set translation about the XYZ axes or the angle around a rotation axis as a degree of freedom. Each RobotBase function with the word Active expects the active DOF values to be specified. Basically, for any function in KinBody that deals with Joints, there is a corresponding active function in RobotBase.\hypertarget{arch__robot_arch_robot_grabbing}{}\subsubsection{Grabbing Bodies}\label{arch__robot_arch_robot_grabbing}
+It is possible for a robot to attach a \hyperlink{classOpenRAVE_1_1KinBody}{KinBody} onto one of its links so that when the link moves, the KinBody also moves. Because collision detection will stop being checked between the robot and the KinBody, you could say that the KinBody becomes a part of the robot temporarily. This functionality is necessary for manipulation planning. Whenever the robot is carrying a body, all collisions between the robot and that item should be ignored once the body has been grasped.\hypertarget{arch__robot_arch_robot_sensors}{}\subsubsection{Attaching Sensors}\label{arch__robot_arch_robot_sensors}
+Can attach any number of sensors to the robot's links through the \hyperlink{classOpenRAVE_1_1RobotBase_1_1AttachedSensor}{AttachedSensor} class. The sensor transformation will be completely owned by the robot. A robot can be attached with any number of sensors on any number of links. As the robot link moves, the sensor moves with it preserving its relative transformation.
+
+AttachedSensor object holds a \hyperlink{classOpenRAVE_1_1SensorBase}{SensorBase} object that contains the actual object gathering and publishing data.\hypertarget{arch__robot_arch_robot_options}{}\subsubsection{Loading Options}\label{arch__robot_arch_robot_options}
+This is the set of loading options passed as a AttributesList into functions like OpenRAVE::EnvironmentBase::ReadRobotXMLFile.
+
+KinBody \hyperlink{arch__kinbody_arch_kinbody_options}{Loading Options} is also valid. \hypertarget{arch_sensor}{}\subsection{Sensor Concepts}\label{arch_sensor}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1SensorBase}{OpenRAVE::SensorBase}
+
+A sensor measures physical properties from the environment and converts them to data. Each sensor is associated with a particular position in space, has a geometry with properties defining the type of sensor, and can be queried for sensor data. Available sensor types are specified by SensorType.
+
+By default, all the sensors start with power off, meaning that the sensor does not gather data. The power can be turned on by using \hyperlink{classOpenRAVE_1_1SensorBase_ae02c7c4987dd11f5fb7657e18c7c8318}{OpenRAVE::SensorBase::Configure} and sending the SensorBase::CC\_\-PowerOn command. All programs should manually turn sensor power on before using the sensors.
+
+The sensor has two different rendering options:.
+
+
+\begin{DoxyItemize}
+\item {\bfseries Geometry Rendering} -\/ Renders a small icon that represents where the laser is placed in the environment, the icon's image should only be dependent on the geometry parameters of the sensor, and not the actual sensor data. Geometry rendering should be turned on by default. To configure this, use the SensorBase::CC\_\-RenderDataX commands.
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item {\bfseries Data Rendering} -\/ Data rendering shows the measured sensor data coming out of the GetSensorData(). Usually the data can be very heavy, especially when a sensor's update rate is high, so data rendering is turned off by default. If the power is off, data should not be rendered. To configure this, use the SensorBase::CC\_\-RenderGeometryX commands.
+\end{DoxyItemize}
+
+Check out the \href{../main/plugins.html#basesensors}{\tt basesensors} plugin for an example of how to implement a basic laser range and camera sensors. \hypertarget{arch_sensorsystem}{}\subsection{Sensor System Concepts}\label{arch_sensorsystem}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1SensorSystemBase}{OpenRAVE::SensorSystemBase} New objects can be created, existing objects can be updated. Every managed object should set the kinbody's Manager pointer \hypertarget{arch_spacesampler}{}\subsection{SpaceSampler Concepts}\label{arch_spacesampler}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1SpaceSamplerBase}{OpenRAVE::SpaceSamplerBase}
+
+Space samplers are responsible for generating samples in spaces like R$^\wedge$n, SO(3), SE(3), etc. The samples can be randomized or deterministic.
+
+Each sampler can support returning the values in a floating-\/point precision or unsigned integer format. There are sampling calls for each version. The samplers could choose to implement only one of the types of both, this should be clear in the Supports function.
+
+Each sampler has a state and can be configured with different dimensions and seeds. \hypertarget{arch_viewer}{}\subsection{Viewer Concepts}\label{arch_viewer}
+{\bfseries Reference:} \hyperlink{classOpenRAVE_1_1ViewerBase}{OpenRAVE::ViewerBase} Viewer is responsible only for the environment it is attached to. 

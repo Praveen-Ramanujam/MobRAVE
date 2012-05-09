@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave
+END
+item.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave/item.cpp
+END
+ivselector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave/ivselector.cpp
+END
+qtcoinviewer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave/qtcoinviewer.cpp
+END
+qtcoin.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave/qtcoin.h
+END
+item.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave/item.h
+END
+ivselector.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave/ivselector.h
+END
+qtcameraviewer.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave/qtcameraviewer.h
+END
+qtcoinviewer.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave/qtcoinviewer.h
+END
+ivmodelloader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave/ivmodelloader.cpp
+END
+qtcoinrave.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave/qtcoinrave.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/plugins/qtcoinrave/CMakeLists.txt
+END

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O2 -g  -shared -Wl,-soname,pyANN_int.so -o pyANN_int.so CMakeFiles/pyANN_int.dir/pyann.cpp.o CMakeFiles/pyANN_int.dir/bindings.cpp.o -lstdc++ ../../3rdparty/ann/libANN.a -lpython2.6 -lboost_python -lboost_thread-mt -lrt -Wl,-rpath,:::::::::::::: 

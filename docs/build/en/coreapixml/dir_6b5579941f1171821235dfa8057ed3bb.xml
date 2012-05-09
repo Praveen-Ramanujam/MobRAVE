@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="dir_6b5579941f1171821235dfa8057ed3bb" kind="dir">
+    <compoundname>src/cppexamples/</compoundname>
+    <innerfile refid="customreader_8cpp">customreader.cpp</innerfile>
+    <innerfile refid="ikfastloader_8cpp">ikfastloader.cpp</innerfile>
+    <innerfile refid="opencvsaving_8cpp">opencvsaving.cpp</innerfile>
+    <innerfile refid="orcollision_8cpp">orcollision.cpp</innerfile>
+    <innerfile refid="orconveyormovement_8cpp">orconveyormovement.cpp</innerfile>
+    <innerfile refid="orikfilter_8cpp">orikfilter.cpp</innerfile>
+    <innerfile refid="orloadviewer_8cpp">orloadviewer.cpp</innerfile>
+    <innerfile refid="ormulticontrol_8cpp">ormulticontrol.cpp</innerfile>
+    <innerfile refid="orplanning__ik_8cpp">orplanning_ik.cpp</innerfile>
+    <innerfile refid="orplanning__module_8cpp">orplanning_module.cpp</innerfile>
+    <innerfile refid="orplanning__planner_8cpp">orplanning_planner.cpp</innerfile>
+    <innerfile refid="orpythonbinding_8cpp">orpythonbinding.cpp</innerfile>
+    <innerfile refid="orshowsensors_8cpp">orshowsensors.cpp</innerfile>
+    <innerfile refid="ortrajectory_8cpp">ortrajectory.cpp</innerfile>
+    <innerfile refid="oryoubotcontrol_8cpp">oryoubotcontrol.cpp</innerfile>
+    <innerfile refid="plugincpp_8cpp">plugincpp.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/src/cppexamples/"/>
+  </compounddef>
+</doxygen>

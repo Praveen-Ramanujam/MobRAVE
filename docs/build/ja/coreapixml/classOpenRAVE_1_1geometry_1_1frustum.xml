@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1geometry_1_1frustum" kind="class" prot="public">
+    <compoundname>OpenRAVE::geometry::frustum</compoundname>
+    <includes refid="geometry_8h" local="no">geometry.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1a03eaac86e9a1081f590fefde96d049d8" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="616" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1a0a2211068fc366a7a037b35f81d6ebcf" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; up</definition>
+        <argsstring></argsstring>
+        <name>up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="616" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1a358d165f685f7746473d110c6cfe7198" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="616" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1ab7f63b564ef04ccd22dfa2899cdd2b10" prot="public" static="no" mutable="no">
+        <type><ref refid="classOpenRAVE_1_1geometry_1_1RaveVector" kindref="compound">RaveVector</ref>&lt; T &gt;</type>
+        <definition>RaveVector&lt;T&gt; pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="616" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1ad511bbc6825e34fd66f43e620fd5de59" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T fnear</definition>
+        <argsstring></argsstring>
+        <name>fnear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="617" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1a6907422b3462622d8e76bdad88e2535b" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T ffar</definition>
+        <argsstring></argsstring>
+        <name>ffar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="617" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1a9fbdd20c524b8f343eef7d93749613d5" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T ffovx</definition>
+        <argsstring></argsstring>
+        <name>ffovx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="618" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1ac1784dfd0255681de0e4680860fef216" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T ffovy</definition>
+        <argsstring></argsstring>
+        <name>ffovy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="618" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1a383150aa997b64c06bd8a483342af2d2" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T fcosfovx</definition>
+        <argsstring></argsstring>
+        <name>fcosfovx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="619" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1a8fe3f22ca5538dc41a0bfbb853f1140d" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T fsinfovx</definition>
+        <argsstring></argsstring>
+        <name>fsinfovx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="619" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1a1c5077019a5b3c29e95c1ee3a8f1b4e4" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T fcosfovy</definition>
+        <argsstring></argsstring>
+        <name>fcosfovy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="619" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1geometry_1_1frustum_1a0fedb83d9a1f775ab738dc8c5c938540" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T fsinfovy</definition>
+        <argsstring></argsstring>
+        <name>fsinfovy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="619" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A pyramid with its vertex clipped. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pra3cob/openrave/include/openrave/geometry.h" line="614" bodyfile="/home/pra3cob/openrave/include/openrave/geometry.h" bodystart="613" bodyend="620"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1a358d165f685f7746473d110c6cfe7198" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>dir</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1a383150aa997b64c06bd8a483342af2d2" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>fcosfovx</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1a1c5077019a5b3c29e95c1ee3a8f1b4e4" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>fcosfovy</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1a6907422b3462622d8e76bdad88e2535b" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>ffar</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1a9fbdd20c524b8f343eef7d93749613d5" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>ffovx</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1ac1784dfd0255681de0e4680860fef216" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>ffovy</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1ad511bbc6825e34fd66f43e620fd5de59" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>fnear</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1a8fe3f22ca5538dc41a0bfbb853f1140d" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>fsinfovx</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1a0fedb83d9a1f775ab738dc8c5c938540" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>fsinfovy</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1ab7f63b564ef04ccd22dfa2899cdd2b10" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>pos</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1a03eaac86e9a1081f590fefde96d049d8" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>right</name></member>
+      <member refid="classOpenRAVE_1_1geometry_1_1frustum_1a0a2211068fc366a7a037b35f81d6ebcf" prot="public" virt="non-virtual"><scope>OpenRAVE::geometry::frustum</scope><name>up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

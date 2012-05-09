@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>OpenRAVE: orcollision.cpp 0.5.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<h1><a href="http://openrave.org"><img src="openrave_banner_dark.png" border="0" alt="openrave.org" width="400"/></a></h1>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="pages.html"><span>関連ページ</span></a></li>
+      <li><a href="modules.html"><span>モジュール</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li><a href="examples.html"><span>例</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>orcollision.cpp</h1><dl class="author"><dt><b>作者:</b></dt><dd>Rosen Diankov</dd></dl>
+<p>Load a robot into the openrave environment, set it at [joint values] and check for self collisions. Returns number of contact points.</p>
+<p>Usage: </p>
+<div class="fragment"><pre class="fragment">
+    orcollision [--list] [--checker checker_name] [--joints #values [values]] body_model
+    </pre></div><ul>
+<li><b>--list</b> - List all the loadable interfaces (ie, collision checkers).</li>
+<li><b>--checker</b> - name Load a different collision checker instead of the default one.</li>
+<li><b>--joints #values [values]</b> - Set the robot to specific joint values</li>
+</ul>
+<p>Example: </p>
+<div class="fragment"><pre class="fragment">
+    orcollision --checker ode robots/barrettwam.robot.xml
+    </pre></div><p><b>Full Example Code:</b></p>
+<div class="fragment"><pre class="fragment">
+<span class="preprocessor">#include &lt;<a class="code" href="openrave-core_8h.html">openrave-core.h</a>&gt;</span>
+<span class="preprocessor">#include &lt;vector&gt;</span>
+<span class="preprocessor">#include &lt;cstring&gt;</span>
+<span class="preprocessor">#include &lt;sstream&gt;</span>
+
+<span class="keyword">using namespace </span>OpenRAVE;
+<span class="keyword">using namespace </span>std;
+
+
+<span class="keywordtype">void</span> <a name="a0"></a><a class="code" href="orcollision_8cpp.html#ae11683d4f44426c27f006bdb1e7db95f">printhelp</a>()
+{
+    <a name="a1"></a><a class="code" href="openrave_8h.html#a334922a6794604207afe36b4feda230e">RAVELOG_INFO</a>(<span class="stringliteral">&quot;orcollision [--list] [--checker checker_name] [--joints #values [values]] body_model\n&quot;</span>);
+}
+
+<span class="keywordtype">void</span> <a name="a2"></a><a class="code" href="orcollision_8cpp.html#a702f2b41e8e709a82d6efe9b0627e63e">printinterfaces</a>(<a name="a3"></a><a class="code" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> penv)
+{
+    std::map&lt;InterfaceType, std::vector&lt;std::string&gt; &gt; interfacenames;
+    <a name="a4"></a><a class="code" href="namespaceOpenRAVE.html#a27b3193df26a41f8373e44b2a8bf5521" title="Get a list of all the loaded interfaces.">RaveGetLoadedInterfaces</a>(interfacenames);
+    stringstream ss;
+
+    ss &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;Loadable interfaces: &quot;</span> &lt;&lt; endl;
+    <span class="keywordflow">for</span>(std::map&lt;InterfaceType, std::vector&lt;std::string&gt; &gt;::iterator itinterface = interfacenames.begin(); itinterface != interfacenames.end(); ++itinterface) {
+        ss &lt;&lt; <a name="a5"></a><a class="code" href="namespaceOpenRAVE.html#a057d105393f37c597a34f0875ab247c6">RaveGetInterfaceName</a>(itinterface-&gt;first) &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; itinterface-&gt;second.size() &lt;&lt; <span class="stringliteral">&quot;):&quot;</span> &lt;&lt; endl;
+        <span class="keywordflow">for</span>(vector&lt;string&gt;::iterator it = itinterface-&gt;second.begin(); it != itinterface-&gt;second.end(); ++it)
+            ss &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; *it &lt;&lt; endl;
+        ss &lt;&lt; endl;
+    }
+    <a class="code" href="openrave_8h.html#a334922a6794604207afe36b4feda230e">RAVELOG_INFO</a>(ss.str());
+}
+
+<span class="keywordtype">int</span> <a name="a6"></a><a class="code" href="ikfastloader_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> ** argv)
+{
+    <span class="keywordflow">if</span>( argc &lt; 2 ) {
+        <a class="code" href="orcollision_8cpp.html#ae11683d4f44426c27f006bdb1e7db95f">printhelp</a>();
+        <span class="keywordflow">return</span> -1; <span class="comment">// no robots to load</span>
+    }
+
+    <a name="a7"></a><a class="code" href="namespaceOpenRAVE.html#ab89ccf2331c4ee81662f687cedaa1781" title="Explicitly initializes the global OpenRAVE state (optional).">RaveInitialize</a>(<span class="keyword">true</span>); <span class="comment">// start openrave core</span>
+    <a class="code" href="namespaceOpenRAVE.html#a652cd59d4cc9e3262d85e6776ec8ff9b">EnvironmentBasePtr</a> penv = <a name="a8"></a><a class="code" href="namespaceOpenRAVE.html#aec9c3dd6a1f2908a1eb84ca59243e00a">RaveCreateEnvironment</a>(); <span class="comment">// create the main environment</span>
+    vector&lt;dReal&gt; vsetvalues;
+
+    <span class="comment">// parse the command line options</span>
+    <span class="keywordtype">int</span> i = 1;
+    <span class="keywordflow">while</span>(i &lt; argc) {
+        <span class="keywordflow">if</span>((strcmp(argv[i], <span class="stringliteral">&quot;-h&quot;</span>) == 0)||(strcmp(argv[i], <span class="stringliteral">&quot;-?&quot;</span>) == 0)||(strcmp(argv[i], <span class="stringliteral">&quot;/?&quot;</span>) == 0)||(strcmp(argv[i], <span class="stringliteral">&quot;--help&quot;</span>) == 0)||(strcmp(argv[i], <span class="stringliteral">&quot;-help&quot;</span>) == 0)) {
+            <a class="code" href="orcollision_8cpp.html#ae11683d4f44426c27f006bdb1e7db95f">printhelp</a>();
+            <span class="keywordflow">return</span> 0;
+        }
+        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( strcmp(argv[i], <span class="stringliteral">&quot;--checker&quot;</span>) == 0 ) {
+            <span class="comment">// create requested collision checker</span>
+            <a name="a9"></a><a class="code" href="namespaceOpenRAVE.html#ae3e7611a64b7d4204203d69014f45fe8">CollisionCheckerBasePtr</a> pchecker = <a name="a10"></a><a class="code" href="namespaceOpenRAVE.html#adad7199c542d5330699204473c9eadcc">RaveCreateCollisionChecker</a>(penv,argv[i+1]);
+            <span class="keywordflow">if</span>( !pchecker ) {
+                <a name="a11"></a><a class="code" href="openrave_8h.html#a4299f3db31dd3149dc36eeffbb6a65db">RAVELOG_ERROR</a>(<span class="stringliteral">&quot;failed to create checker %s\n&quot;</span>, argv[i+1]);
+                <span class="keywordflow">return</span> -3;
+            }
+            penv-&gt;SetCollisionChecker(pchecker);
+            i += 2;
+        }
+        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( strcmp(argv[i], <span class="stringliteral">&quot;--list&quot;</span>) == 0 ) {
+            <a class="code" href="orcollision_8cpp.html#a702f2b41e8e709a82d6efe9b0627e63e">printinterfaces</a>(penv);
+            <span class="keywordflow">return</span> 0;
+        }
+        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( strcmp(argv[i], <span class="stringliteral">&quot;--joints&quot;</span>) == 0 ) {
+            vsetvalues.resize(atoi(argv[i+1]));
+            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; (int)vsetvalues.size(); ++j)
+                vsetvalues[j] = atoi(argv[i+j+2]);
+
+            i += 2+vsetvalues.size();
+        }
+        <span class="keywordflow">else</span>
+            <span class="keywordflow">break</span>;
+    }
+
+    <span class="keywordflow">if</span>( i &gt;= argc ) {
+        <a class="code" href="openrave_8h.html#a4299f3db31dd3149dc36eeffbb6a65db">RAVELOG_ERROR</a>(<span class="stringliteral">&quot;not enough parameters\n&quot;</span>);
+        <a class="code" href="orcollision_8cpp.html#ae11683d4f44426c27f006bdb1e7db95f">printhelp</a>();
+        <span class="keywordflow">return</span> 1;
+    }
+
+    <span class="comment">// load the scene</span>
+    <span class="keywordflow">if</span>( !penv-&gt;Load(argv[i]) ) {
+        <span class="keywordflow">return</span> 2;
+    }
+
+    <span class="comment">// lock the environment to prevent thigns from changes</span>
+    EnvironmentMutex::scoped_lock lock(penv-&gt;GetMutex());
+
+    vector&lt;KinBodyPtr&gt; vbodies;
+    penv-&gt;GetBodies(vbodies);
+    <span class="comment">// get the first body</span>
+    <span class="keywordflow">if</span>( vbodies.size() == 0 ) {
+        <a class="code" href="openrave_8h.html#a4299f3db31dd3149dc36eeffbb6a65db">RAVELOG_ERROR</a>(<span class="stringliteral">&quot;no bodies loaded\n&quot;</span>);
+        <span class="keywordflow">return</span> -3;
+    }
+
+    <a name="a12"></a><a class="code" href="namespaceOpenRAVE.html#abdcbe7a0abc56f7fd090dbd298a5a44c">KinBodyPtr</a> pbody = vbodies.at(0);
+    vector&lt;dReal&gt; values;
+    pbody-&gt;GetDOFValues(values);
+
+    <span class="comment">// set new values</span>
+    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; (int)vsetvalues.size() &amp;&amp; i &lt; (int)values.size(); ++i) {
+        values[i] = vsetvalues[i];
+    }
+    pbody-&gt;SetDOFValues(values,<span class="keyword">true</span>);
+
+    <span class="keywordtype">int</span> contactpoints = 0;
+    <a name="a13"></a><a class="code" href="namespaceOpenRAVE.html#ae3a01279d893036b26d4bb1b74d3ef0f">CollisionReportPtr</a> report(<span class="keyword">new</span> <a name="_a14"></a><a class="code" href="classOpenRAVE_1_1CollisionReport.html" title="Holds information about a particular collision that occured.">CollisionReport</a>());
+    penv-&gt;GetCollisionChecker()-&gt;SetCollisionOptions(<a name="a15"></a><a class="code" href="namespaceOpenRAVE.html#a6963e4ecb981351b8fb2e3f9e85acf77a9bc2191e9e7b6bfc5fa1807812c45c6c" title="Return the contact points of the collision in the CollisionReport. Note that this...">CO_Contacts</a>);
+    <span class="keywordflow">if</span>( pbody-&gt;CheckSelfCollision(report) ) {
+        contactpoints = (int)report-&gt;contacts.size();
+        stringstream ss;
+        ss &lt;&lt; <span class="stringliteral">&quot;body in self-collision &quot;</span>
+           &lt;&lt; (!!report-&gt;plink1 ? report-&gt;plink1-&gt;GetName() : <span class="stringliteral">&quot;&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;:&quot;</span>
+           &lt;&lt; (!!report-&gt;plink2 ? report-&gt;plink2-&gt;GetName() : <span class="stringliteral">&quot;&quot;</span>) &lt;&lt; <span class="stringliteral">&quot; at &quot;</span>
+           &lt;&lt; contactpoints &lt;&lt; <span class="stringliteral">&quot;contacts&quot;</span> &lt;&lt; endl;
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; contactpoints; ++i) {
+            <a name="_a16"></a><a class="code" href="classOpenRAVE_1_1CollisionReport_1_1CONTACT.html">CollisionReport::CONTACT</a>&amp; c = report-&gt;contacts[i];
+            ss &lt;&lt; <span class="stringliteral">&quot;contact&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;: pos=(&quot;</span>
+               &lt;&lt; c.<a name="a17"></a><a class="code" href="classOpenRAVE_1_1CollisionReport_1_1CONTACT.html#ae19a907bc741ffa358691997cd93774b" title="where the contact occured">pos</a>.x &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; c.<a class="code" href="classOpenRAVE_1_1CollisionReport_1_1CONTACT.html#ae19a907bc741ffa358691997cd93774b" title="where the contact occured">pos</a>.y &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; c.<a class="code" href="classOpenRAVE_1_1CollisionReport_1_1CONTACT.html#ae19a907bc741ffa358691997cd93774b" title="where the contact occured">pos</a>.z &lt;&lt; <span class="stringliteral">&quot;), norm=(&quot;</span>
+               &lt;&lt; c.<a name="a18"></a><a class="code" href="classOpenRAVE_1_1CollisionReport_1_1CONTACT.html#ab75019187f78449b47afc5a9d3dddfa9" title="the normals of the faces">norm</a>.x &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; c.<a class="code" href="classOpenRAVE_1_1CollisionReport_1_1CONTACT.html#ab75019187f78449b47afc5a9d3dddfa9" title="the normals of the faces">norm</a>.y &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; c.<a class="code" href="classOpenRAVE_1_1CollisionReport_1_1CONTACT.html#ab75019187f78449b47afc5a9d3dddfa9" title="the normals of the faces">norm</a>.z &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; endl;
+        }
+
+        <a name="a19"></a><a class="code" href="openrave_8h.html#a545110e670ac69c5fbfe44dc874f08c5">RAVELOG_INFOA</a>(ss.str());
+    }
+    <span class="keywordflow">else</span> {
+        <a class="code" href="openrave_8h.html#a334922a6794604207afe36b4feda230e">RAVELOG_INFO</a>(<span class="stringliteral">&quot;body not in collision\n&quot;</span>);
+    }
+
+    <span class="comment">// get the transformations of all the links</span>
+    vector&lt;Transform&gt; vlinktransforms;
+    pbody-&gt;GetLinkTransformations(vlinktransforms);
+
+    penv-&gt;Destroy(); <span class="comment">// destroy</span>
+    <span class="keywordflow">return</span> contactpoints;
+}
+</pre></div> </div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>OpenRAVEに対してThu Mar 22 20:42:52 2012に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classCustomController_1_1PIDXMLReader" kind="class" prot="public">
+    <compoundname>CustomController::PIDXMLReader</compoundname>
+    <basecompoundref refid="classOpenRAVE_1_1BaseXMLReader" prot="public" virt="non-virtual">BaseXMLReader</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCustomController_1_1PIDXMLReader_1ad1498147455332c7663359faced0138d" prot="protected" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; <ref refid="classCustomController_1_1XMLData" kindref="compound">XMLData</ref> &gt;</type>
+        <definition>boost::shared_ptr&lt;XMLData&gt; _piddata</definition>
+        <argsstring></argsstring>
+        <name>_piddata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="69" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCustomController_1_1PIDXMLReader_1a03f1dbc12ea62359d119e3a489d1b55e" prot="protected" static="no" mutable="no">
+        <type>stringstream</type>
+        <definition>stringstream _ss</definition>
+        <argsstring></argsstring>
+        <name>_ss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="70" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCustomController_1_1PIDXMLReader_1af465460c8243442a0b497f681eeb0243" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PIDXMLReader</definition>
+        <argsstring>(boost::shared_ptr&lt; XMLData &gt; piddata, const AttributesList &amp;atts)</argsstring>
+        <name>PIDXMLReader</name>
+        <param>
+          <type>boost::shared_ptr&lt; <ref refid="classCustomController_1_1XMLData" kindref="compound">XMLData</ref> &gt;</type>
+          <declname>piddata</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1a7372895c7fd9541aa829987c3eb9aaf9" kindref="member">AttributesList</ref> &amp;</type>
+          <declname>atts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="28" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="28" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1_1PIDXMLReader_1a96a8303765bddf9742cbc422f8a9c2d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>XMLReadablePtr</type>
+        <definition>virtual XMLReadablePtr GetReadable</definition>
+        <argsstring>()</argsstring>
+        <name>GetReadable</name>
+        <reimplements refid="classOpenRAVE_1_1BaseXMLReader_1a96a8303765bddf9742cbc422f8a9c2d6">GetReadable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a readable interface that stores the information processsed for the current tag This pointer is used to the InterfaceBase class registered readers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="37" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1_1PIDXMLReader_1aeef176e516fa467c3a1ea9c210f96d48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9" kindref="member">ProcessElement</ref></type>
+        <definition>virtual ProcessElement startElement</definition>
+        <argsstring>(const std::string &amp;name, const AttributesList &amp;atts)</argsstring>
+        <name>startElement</name>
+        <reimplements refid="classOpenRAVE_1_1BaseXMLReader_1a96b3e3b4503108964001ad58ab724ac3">startElement</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceOpenRAVE_1a7372895c7fd9541aa829987c3eb9aaf9" kindref="member">AttributesList</ref> &amp;</type>
+          <declname>atts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets called in the beginning of each &quot;&lt;type&gt;&quot; expression. In this case, name is &quot;type&quot; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the tag, will be always lower case </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>atts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string of attributes where the first std::string is the attribute name and second is the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if tag is accepted and this class will process it, otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="41" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1_1PIDXMLReader_1afc6f1ff707e6fd690100c89e3cd4c291" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool endElement</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>endElement</name>
+        <reimplements refid="classOpenRAVE_1_1BaseXMLReader_1a3b5c1a1dc1e0965a9e27f139b18db4d9">endElement</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets called at the end of each &quot;&lt;/type&gt;&quot; expression. In this case, name is &quot;type&quot; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the tag, will be always lower case </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if XMLReader has finished parsing (one condition is that name==_fieldname) , otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="47" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="46" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classCustomController_1_1PIDXMLReader_1a91544148bc143140fe0474224180233d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void characters</definition>
+        <argsstring>(const std::string &amp;ch)</argsstring>
+        <name>characters</name>
+        <reimplements refid="classOpenRAVE_1_1BaseXMLReader_1a0b124434353fd2e48d951c2053e63408">characters</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gets called for all data in between tags. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string to the data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="63" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="62" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1601">
+        <label>PIDXMLReader</label>
+        <link refid="classCustomController_1_1PIDXMLReader"/>
+        <childnode refid="1602" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1602">
+        <label>BaseXMLReader</label>
+        <link refid="classOpenRAVE_1_1BaseXMLReader"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1607">
+        <label>stringstream</label>
+        <childnode refid="1608" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1610">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="1611" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1605">
+        <label>string</label>
+        <childnode refid="1606" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1609">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="1610" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1613" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1603">
+        <label>PIDXMLReader</label>
+        <link refid="classCustomController_1_1PIDXMLReader"/>
+        <childnode refid="1604" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1607" relation="usage">
+          <edgelabel>_ss</edgelabel>
+        </childnode>
+      </node>
+      <node id="1606">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1612">
+        <label>ios_base</label>
+      </node>
+      <node id="1613">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="1611" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1611">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="1612" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1604">
+        <label>BaseXMLReader</label>
+        <link refid="classOpenRAVE_1_1BaseXMLReader"/>
+        <childnode refid="1605" relation="usage">
+          <edgelabel>_filename</edgelabel>
+        </childnode>
+      </node>
+      <node id="1608">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="1609" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" line="26" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="25" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a895aefe990ffe9af66bb5cd4e37d3579" prot="public" virt="non-virtual"><scope>CustomController::PIDXMLReader</scope><name>_filename</name></member>
+      <member refid="classCustomController_1_1PIDXMLReader_1ad1498147455332c7663359faced0138d" prot="protected" virt="non-virtual"><scope>CustomController::PIDXMLReader</scope><name>_piddata</name></member>
+      <member refid="classCustomController_1_1PIDXMLReader_1a03f1dbc12ea62359d119e3a489d1b55e" prot="protected" virt="non-virtual"><scope>CustomController::PIDXMLReader</scope><name>_ss</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5143187ada5e3a593490b42b2851bbbe" prot="public" virt="non-virtual"><scope>CustomController::PIDXMLReader</scope><name>BaseXMLReader</name></member>
+      <member refid="classCustomController_1_1PIDXMLReader_1a91544148bc143140fe0474224180233d" prot="public" virt="virtual"><scope>CustomController::PIDXMLReader</scope><name>characters</name></member>
+      <member refid="classCustomController_1_1PIDXMLReader_1afc6f1ff707e6fd690100c89e3cd4c291" prot="public" virt="virtual"><scope>CustomController::PIDXMLReader</scope><name>endElement</name></member>
+      <member refid="classCustomController_1_1PIDXMLReader_1a96a8303765bddf9742cbc422f8a9c2d6" prot="public" virt="virtual"><scope>CustomController::PIDXMLReader</scope><name>GetReadable</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9a14953fbbe151fd55cd76395cdccc4af6" prot="public" virt="non-virtual"><scope>CustomController::PIDXMLReader</scope><name>PE_Ignore</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9a55670b1a206d4da09ef69e3690ee7bba" prot="public" virt="non-virtual"><scope>CustomController::PIDXMLReader</scope><name>PE_Pass</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9a5123a3d32d744694919844d9675ede67" prot="public" virt="non-virtual"><scope>CustomController::PIDXMLReader</scope><name>PE_Support</name></member>
+      <member refid="classCustomController_1_1PIDXMLReader_1af465460c8243442a0b497f681eeb0243" prot="public" virt="non-virtual"><scope>CustomController::PIDXMLReader</scope><name>PIDXMLReader</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a5f6b74d2490bcfd578227b002ec9c5d9" prot="public" virt="non-virtual"><scope>CustomController::PIDXMLReader</scope><name>ProcessElement</name></member>
+      <member refid="classCustomController_1_1PIDXMLReader_1aeef176e516fa467c3a1ea9c210f96d48" prot="public" virt="virtual"><scope>CustomController::PIDXMLReader</scope><name>startElement</name></member>
+      <member refid="classOpenRAVE_1_1BaseXMLReader_1a034ab256eb83ff95644a30e038957979" prot="public" virt="virtual"><scope>CustomController::PIDXMLReader</scope><name>~BaseXMLReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

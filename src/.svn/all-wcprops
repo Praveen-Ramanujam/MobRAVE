@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src
+END
+check_libm_accuracy_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/check_libm_accuracy_main.cpp
+END
+openrave.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/openrave.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/CMakeLists.txt
+END

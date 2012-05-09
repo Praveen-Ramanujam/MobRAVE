@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O2 -g  -shared -Wl,-soname,orpythonbinding.so -o orpythonbinding.so CMakeFiles/orpythonbinding.dir/orpythonbinding.cpp.o -L/usr/local/lib -lopenrave0.5 -lpython2.6 -lboost_python -lboost_thread-mt -Wl,-rpath,/usr/local/lib 

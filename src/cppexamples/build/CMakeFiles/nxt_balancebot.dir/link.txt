@@ -1,0 +1,1 @@
+/usr/bin/c++   -O2 -g   CMakeFiles/nxt_balancebot.dir/nxt_balancebot.cpp.o  -o nxt_balancebot -rdynamic -L/usr/local/lib -lopenrave0.5 -lopenrave0.5 -lopenrave-core0.5 -Wl,-rpath,/usr/local/lib: 

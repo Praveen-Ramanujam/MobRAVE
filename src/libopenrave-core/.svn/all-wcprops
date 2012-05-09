@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core
+END
+environment-core.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/environment-core.h
+END
+colladareader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/colladareader.cpp
+END
+genericrobot.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/genericrobot.cpp
+END
+ravep.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/ravep.h
+END
+generictrajectory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/generictrajectory.cpp
+END
+genericphysicsengine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/genericphysicsengine.cpp
+END
+openrave-core.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/openrave-core.cpp
+END
+xmlreaders.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/xmlreaders.cpp
+END
+openrave-core.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/openrave-core.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/CMakeLists.txt
+END
+colladawriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/colladawriter.cpp
+END
+genericcollisionchecker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openrave/!svn/ver/2848/tags/latest_stable/src/libopenrave-core/genericcollisionchecker.cpp
+END

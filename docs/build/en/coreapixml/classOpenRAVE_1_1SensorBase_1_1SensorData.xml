@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="classOpenRAVE_1_1SensorBase_1_1SensorData" kind="class" prot="public">
+    <compoundname>OpenRAVE::SensorBase::SensorData</compoundname>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData" prot="public" virt="non-virtual">ActuatorSensorData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData" prot="public" virt="non-virtual">CameraSensorData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData" prot="public" virt="non-virtual">Force6DSensorData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData" prot="public" virt="non-virtual">IMUSensorData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData" prot="public" virt="non-virtual">JointEncoderSensorData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData" prot="public" virt="non-virtual">LaserSensorData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData" prot="public" virt="non-virtual">OdometrySensorData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1TactileSensorData" prot="public" virt="non-virtual">TactileSensorData</derivedcompoundref>
+    <derivedcompoundref refid="classOpenRAVE_1_1SensorBase_1_1TouchSensorData" prot="public" virt="non-virtual">TouchSensorData</derivedcompoundref>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1SensorData_1a0503a26959ec94efdab737ce47842afe" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t __stamp</definition>
+        <argsstring></argsstring>
+        <name>__stamp</name>
+        <briefdescription>
+<para>time stamp of the sensor data in microseconds. If 0, then the data is uninitialized! (floating-point precision is bad here). This can be either simulation or real time depending on the sensor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="63" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOpenRAVE_1_1SensorBase_1_1SensorData_1a5786ccc78c0aae6ca580507121b3c24a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceOpenRAVE_1ad7d44b5a2b65bf3c814d2983528b2e85" kindref="member">Transform</ref></type>
+        <definition>Transform __trans</definition>
+        <argsstring></argsstring>
+        <name>__trans</name>
+        <briefdescription>
+<para>the coordinate system the sensor was when the measurement was taken, this is taken directly from <ref refid="classOpenRAVE_1_1SensorBase_1a11e61e806d5650919a0c8d2cfd76a358" kindref="member">SensorBase::GetTransform</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="64" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1SensorData_1a2ce106fe3cd9771a5b0770339c411829" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~SensorData</definition>
+        <argsstring>()</argsstring>
+        <name>~SensorData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="56" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="56" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1SensorData_1a3cf408517e49fe46f25b023c690c2ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classOpenRAVE_1_1SensorBase_1a213c434cb928c4ca22513e2302632435" kindref="member">SensorType</ref></type>
+        <definition>virtual SensorType GetType</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetType</name>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1TactileSensorData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1TouchSensorData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1a73d4e01a2ea086a5e37ef209abd23526">GetType</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classOpenRAVE_1_1SensorBase_1_1SensorData_1a27324341bb2e28fa2be2cfd0b7f0e985" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool serialize</definition>
+        <argsstring>(std::ostream &amp;O) const </argsstring>
+        <name>serialize</name>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData_1a27324341bb2e28fa2be2cfd0b7f0e985">serialize</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1TouchSensorData_1a27324341bb2e28fa2be2cfd0b7f0e985">serialize</reimplementedby>
+        <reimplementedby refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData_1a27324341bb2e28fa2be2cfd0b7f0e985">serialize</reimplementedby>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>O</declname>
+        </param>
+        <briefdescription>
+<para>Serialize the sensor data to stream in XML format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="61" bodyfile="/home/pra3cob/openrave/src/libopenrave/libopenrave.cpp" bodystart="2108" bodyend="2112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>used to pass sensor data around </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1811">
+        <label>CameraSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1CameraSensorData"/>
+        <childnode refid="1809" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1814">
+        <label>JointEncoderSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1JointEncoderSensorData"/>
+        <childnode refid="1809" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1813">
+        <label>IMUSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1IMUSensorData"/>
+        <childnode refid="1809" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1816">
+        <label>OdometrySensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1OdometrySensorData"/>
+        <childnode refid="1809" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1812">
+        <label>Force6DSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1Force6DSensorData"/>
+        <childnode refid="1809" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1818">
+        <label>TouchSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1TouchSensorData"/>
+        <childnode refid="1809" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1809">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+      </node>
+      <node id="1817">
+        <label>TactileSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1TactileSensorData"/>
+        <childnode refid="1809" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1815">
+        <label>LaserSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1LaserSensorData"/>
+        <childnode refid="1809" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1810">
+        <label>ActuatorSensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1ActuatorSensorData"/>
+        <childnode refid="1809" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1820">
+        <label>RaveTransform&lt; dReal &gt;</label>
+      </node>
+      <node id="1819">
+        <label>SensorData</label>
+        <link refid="classOpenRAVE_1_1SensorBase_1_1SensorData"/>
+        <childnode refid="1820" relation="usage">
+          <edgelabel>__trans</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pra3cob/openrave/include/openrave/sensor.h" line="54" bodyfile="/home/pra3cob/openrave/include/openrave/sensor.h" bodystart="53" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a0503a26959ec94efdab737ce47842afe" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::SensorData</scope><name>__stamp</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a5786ccc78c0aae6ca580507121b3c24a" prot="public" virt="non-virtual"><scope>OpenRAVE::SensorBase::SensorData</scope><name>__trans</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a3cf408517e49fe46f25b023c690c2ea0" prot="public" virt="pure-virtual"><scope>OpenRAVE::SensorBase::SensorData</scope><name>GetType</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a27324341bb2e28fa2be2cfd0b7f0e985" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::SensorData</scope><name>serialize</name></member>
+      <member refid="classOpenRAVE_1_1SensorBase_1_1SensorData_1a2ce106fe3cd9771a5b0770339c411829" prot="public" virt="virtual"><scope>OpenRAVE::SensorBase::SensorData</scope><name>~SensorData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

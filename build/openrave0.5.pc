@@ -1,0 +1,14 @@
+# Package Information for pkg-config
+
+prefix=/usr/local
+exec_prefix=/usr/local/bin
+libdir=/usr/local/lib
+includedir=/usr/local/include/openrave-0.5
+
+Name: openrave
+Description: Open Robotics Automation Virtual Environment
+Version: 0.5.0
+URL: http://openrave.org
+Libs: -L${libdir} -lopenrave0.5
+Libs.private:  -L/usr/lib /usr/lib/libboost_thread-mt.so
+Cflags: -I${includedir}  -I/usr/include 

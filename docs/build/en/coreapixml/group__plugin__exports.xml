@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.6.3">
+  <compounddef id="group__plugin__exports" kind="group">
+    <compoundname>plugin_exports</compoundname>
+    <title>Plugin Export Functions</title>
+    <innerclass refid="classOpenRAVE_1_1PLUGININFO" prot="public">OpenRAVE::PLUGININFO</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__plugin__exports_1ga6ae2f1554f547f27e4a5399d8aef7377" prot="public" static="no">
+        <type>InterfaceBasePtr(*</type>
+        <definition>typedef InterfaceBasePtr(* PluginExportFn_OpenRAVECreateInterface)(InterfaceType type, const std::string &amp;name, const char *pluginhash, const char *envhash, EnvironmentBasePtr penv)</definition>
+        <argsstring>)(InterfaceType type, const std::string &amp;name, const char *pluginhash, const char *envhash, EnvironmentBasePtr penv)</argsstring>
+        <name>PluginExportFn_OpenRAVECreateInterface</name>
+        <briefdescription>
+<para>Create the interfaces, see <ref refid="group__plugin__exports_1ga468c900067e08689383b3f8da642141f" kindref="member">CreateInterfaceValidated</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1803" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__plugin__exports_1ga7cb4e2769bee1dca182b4432a900bc70" prot="public" static="no">
+        <type>bool(*</type>
+        <definition>typedef bool(* PluginExportFn_OpenRAVEGetPluginAttributes)(PLUGININFO *pinfo, int size, const char *infohash)</definition>
+        <argsstring>)(PLUGININFO *pinfo, int size, const char *infohash)</argsstring>
+        <name>PluginExportFn_OpenRAVEGetPluginAttributes</name>
+        <briefdescription>
+<para>Called to fill information about the plugin, see <ref refid="group__plugin__exports_1gaf90c03438b94cc76e7b8a54d445ec106" kindref="member">GetPluginAttributesValidated</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1807" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1807" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__plugin__exports_1ga7164d2e9a268c6e44a296e9488df69cd" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* PluginExportFn_DestroyPlugin)()</definition>
+        <argsstring>)()</argsstring>
+        <name>PluginExportFn_DestroyPlugin</name>
+        <briefdescription>
+<para>Called before plugin is unloaded from openrave. See <ref refid="group__plugin__exports_1gad6773d91dae37d0ba9de59d2a05277e4" kindref="member">DestroyPlugin</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/openrave.h" line="1811" bodyfile="/home/pra3cob/openrave/include/openrave/openrave.h" bodystart="1811" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__plugin__exports_1ga468c900067e08689383b3f8da642141f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">OpenRAVE::InterfaceBasePtr</ref></type>
+        <definition>OpenRAVE::InterfaceBasePtr CreateInterfaceValidated</definition>
+        <argsstring>(OpenRAVE::InterfaceType type, const std::string &amp;name, std::istream &amp;sinput, OpenRAVE::EnvironmentBasePtr penv)</argsstring>
+        <name>CreateInterfaceValidated</name>
+        <param>
+          <type>OpenRAVE::InterfaceType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>sinput</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">OpenRAVE::EnvironmentBasePtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+<para><bold><bold></bold>[helper]</bold> Validated function callback for creating an interface function. No checks need to be made on the parmaeters. </para>        </briefdescription>
+        <detaileddescription>
+<para>If possible, always returns a valid pointer regardless of initialization failure since the actual interface pointer stores documentation information and is used in introspection. Only use when <ref refid="plugin_8h" kindref="compound">rave/plugin.h</ref> is included. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interface type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the lowercase letters of the interface name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sinput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a stream to the rest of the input args to <ref refid="group__plugin__exports_1ga6251cc7d3b33f6109ca5d346def08370" kindref="member">OpenRAVECreateInterface</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">penv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the environment pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer to the interface if one could have been created. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/plugin.h" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__exports_1gaf90c03438b94cc76e7b8a54d445ec106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetPluginAttributesValidated</definition>
+        <argsstring>(OpenRAVE::PLUGININFO &amp;info)</argsstring>
+        <name>GetPluginAttributesValidated</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1PLUGININFO" kindref="compound">OpenRAVE::PLUGININFO</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para><bold><bold></bold>[helper]</bold> Validated function callback for returning a plugin&apos;s information. No checks need to be made on the parmaeters. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is called only once initially to determine what the plugin offers. It should be the safest funcdtion and should not create any static resources for the plugin. Only use when <ref refid="plugin_8h" kindref="compound">rave/plugin.h</ref> is included. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Holds information on what services this plugin provides. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/plugin.h" line="53" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__exports_1ga6251cc7d3b33f6109ca5d346def08370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OPENRAVE_PLUGIN_API <ref refid="namespaceOpenRAVE_1a0c35179adf3473a44ad9b4436e12e088" kindref="member">OpenRAVE::InterfaceBasePtr</ref></type>
+        <definition>OPENRAVE_PLUGIN_API OpenRAVE::InterfaceBasePtr OpenRAVECreateInterface</definition>
+        <argsstring>(OpenRAVE::InterfaceType type, const std::string &amp;name, const char *interfacehash, const char *envhash, OpenRAVE::EnvironmentBasePtr penv)</argsstring>
+        <name>OpenRAVECreateInterface</name>
+        <param>
+          <type>OpenRAVE::InterfaceType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>interfacehash</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>envhash</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceOpenRAVE_1a652cd59d4cc9e3262d85e6776ec8ff9b" kindref="member">OpenRAVE::EnvironmentBasePtr</ref></type>
+          <declname>penv</declname>
+        </param>
+        <briefdescription>
+<para><bold>[export]</bold> Definition of a plugin export. Requires <ref refid="group__plugin__exports_1ga468c900067e08689383b3f8da642141f" kindref="member">CreateInterfaceValidated</ref> to be defined. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/plugin.h" line="58" bodyfile="/home/pra3cob/openrave/include/openrave/plugin.h" bodystart="57" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__exports_1gafc96682ac1d9ff550d6f95d1837f3dc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OPENRAVE_PLUGIN_API void</type>
+        <definition>OPENRAVE_PLUGIN_API void OpenRAVEGetPluginAttributes</definition>
+        <argsstring>(OpenRAVE::PLUGININFO *pinfo, int size, const char *infohash)</argsstring>
+        <name>OpenRAVEGetPluginAttributes</name>
+        <param>
+          <type><ref refid="classOpenRAVE_1_1PLUGININFO" kindref="compound">OpenRAVE::PLUGININFO</ref> *</type>
+          <declname>pinfo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>infohash</declname>
+        </param>
+        <briefdescription>
+<para><bold><bold></bold>[export]</bold> Definition of a plugin export. Requires <ref refid="group__plugin__exports_1gaf90c03438b94cc76e7b8a54d445ec106" kindref="member">GetPluginAttributesValidated</ref> to be defined. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/plugin.h" line="79" bodyfile="/home/pra3cob/openrave/include/openrave/plugin.h" bodystart="78" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__exports_1gad6773d91dae37d0ba9de59d2a05277e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OPENRAVE_PLUGIN_API void</type>
+        <definition>OPENRAVE_PLUGIN_API void DestroyPlugin</definition>
+        <argsstring>()</argsstring>
+        <name>DestroyPlugin</name>
+        <briefdescription>
+<para><bold><bold></bold>[export]</bold> Stub function to be defined by plugin that includes <ref refid="plugin_8h" kindref="compound">rave/plugin.h</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pra3cob/openrave/include/openrave/plugin.h" line="95" bodyfile="/home/pra3cob/openrave/src/cppexamples/customreader.cpp" bodystart="166" bodyend="169"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Every plugin needs to export these functions </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

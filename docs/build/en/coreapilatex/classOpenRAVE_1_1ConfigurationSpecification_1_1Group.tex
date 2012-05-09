@@ -1,0 +1,73 @@
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_1_1Group}{
+\subsection{Group Class Reference}
+\label{classOpenRAVE_1_1ConfigurationSpecification_1_1Group}\index{OpenRAVE::ConfigurationSpecification::Group@{OpenRAVE::ConfigurationSpecification::Group}}
+}
+
+
+A group referencing the values of one body in the environment.  
+
+
+\subsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_aed7ea92f45bd273dde380a45ddced592}{
+int \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_aed7ea92f45bd273dde380a45ddced592}{offset}}
+\label{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_aed7ea92f45bd273dde380a45ddced592}
+
+\begin{DoxyCompactList}\small\item\em For each data point, the number of values to offset before data for this group starts. \item\end{DoxyCompactList}\item 
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_a03745287ca42590ead4a18807041fc66}{
+int \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_a03745287ca42590ead4a18807041fc66}{dof}}
+\label{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_a03745287ca42590ead4a18807041fc66}
+
+\begin{DoxyCompactList}\small\item\em The number of values in this group. \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_a9b45b3e13bd9167aab02e17e08916231}{name}
+\begin{DoxyCompactList}\small\item\em semantic information on what part of the environment the group refers to. \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_ac5505c39cf473d93d9ef8690d181d007}{interpolation}
+\begin{DoxyCompactList}\small\item\em Describes how the data should be interpolated. Common methods are: \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+A group referencing the values of one body in the environment. 
+
+\subsubsection{Member Data Documentation}
+\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_ac5505c39cf473d93d9ef8690d181d007}{
+\index{OpenRAVE::ConfigurationSpecification::Group@{OpenRAVE::ConfigurationSpecification::Group}!interpolation@{interpolation}}
+\index{interpolation@{interpolation}!OpenRAVE::ConfigurationSpecification::Group@{OpenRAVE::ConfigurationSpecification::Group}}
+\paragraph[{interpolation}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf interpolation}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_ac5505c39cf473d93d9ef8690d181d007}
+
+
+Describes how the data should be interpolated. Common methods are: 
+
+
+\begin{DoxyItemize}
+\item {\bfseries previous} -\/ the previous waypoint's value is always chosen
+\item {\bfseries next} -\/ the next waypoint's value is always chosen
+\item {\bfseries linear} -\/ linear interpolation (default)
+\item {\bfseries quadratic} -\/ position is piecewise-\/quadratic, velocity is piecewise-\/linear, acceleration is one of -\/amax, 0, or amax
+\item {\bfseries cubic} -\/ 3 degree polynomial
+\item {\bfseries quadric} -\/ 4 degree polynomial
+\item {\bfseries quintic} -\/ 5 degree polynomial 
+\end{DoxyItemize}\hypertarget{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_a9b45b3e13bd9167aab02e17e08916231}{
+\index{OpenRAVE::ConfigurationSpecification::Group@{OpenRAVE::ConfigurationSpecification::Group}!name@{name}}
+\index{name@{name}!OpenRAVE::ConfigurationSpecification::Group@{OpenRAVE::ConfigurationSpecification::Group}}
+\paragraph[{name}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf name}}\hfill}
+\label{classOpenRAVE_1_1ConfigurationSpecification_1_1Group_a9b45b3e13bd9167aab02e17e08916231}
+
+
+semantic information on what part of the environment the group refers to. 
+
+Can be composed of multiple workds; the first word is the group type, and the words following narrow the specifics. Common types are:
+
+
+\begin{DoxyItemize}
+\item {\bfseries joint\_\-values} -\/ The joint values of a kinbody/robot. The joint names with the name of the body can follow.
+\item {\bfseries joint\_\-velocities} -\/ The joint velocities (1/second) of a kinbody/robot. The name of the body with the joint names can follow.
+\item {\bfseries joint\_\-accelerations} -\/ The joint accelerations (1/second$^\wedge$2) of a kinbody/robot. The name of the body with the joint names can follow.
+\item {\bfseries joint\_\-torques} -\/ The joint torques (Newton meter) of a kinbody/robot. The name of the body with the joint names can follow.
+\item {\bfseries affine\_\-transform} -\/ An affine transformation \mbox{[}quaternion, translation\mbox{]}. The name of the body with selected affine dofs (see \hyperlink{namespaceOpenRAVE_a3016e2185103f3c1bdc5e4482893ca98}{DOFAffine}) can follow.
+\item {\bfseries affine\_\-velocities} -\/ The velocity (1/second) of the affine transformation \mbox{[}rotation axis, translation velocity\mbox{]}, the name of the body can follow.
+\item {\bfseries affine\_\-accelerations} -\/ The velocity (1/second$^\wedge$2) of the affine transformation \mbox{[}rotation axis, translation velocity\mbox{]}, the name of the body can follow.
+\item {\bfseries ikparam\_\-values} -\/ The values of an IkParmeterization. The ikparam type is stored as the second value in name
+\item {\bfseries ikparam\_\-velocities} -\/ velociti of an IkParmeterization. The ikparam type is stored as the second value in name 
+\end{DoxyItemize}

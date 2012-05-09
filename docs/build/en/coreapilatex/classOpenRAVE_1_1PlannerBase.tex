@@ -1,0 +1,179 @@
+\hypertarget{classOpenRAVE_1_1PlannerBase}{
+\subsection{PlannerBase Class Reference}
+\label{classOpenRAVE_1_1PlannerBase}\index{OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}}
+}
+
+
+{\bfseries \mbox{[}interface\mbox{]}} Planner interface that generates trajectories for target objects to follow through the environment. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__planner}{Planner Concepts}.  
+
+
+
+
+Inheritance diagram for PlannerBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{classOpenRAVE_1_1PlannerBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for PlannerBase:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=120pt]{classOpenRAVE_1_1PlannerBase__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters}
+\begin{DoxyCompactList}\small\item\em Describes a common and serializable interface for planning parameters. \item\end{DoxyCompactList}\item 
+class \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerProgress}{PlannerProgress}
+\begin{DoxyCompactList}\small\item\em Planner progress information passed to each callback function. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::function$<$ \hyperlink{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853}{PlannerAction}(const \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerProgress}{PlannerProgress} \&)$>$ \hyperlink{classOpenRAVE_1_1PlannerBase_af66cf367615e6c51bab4473f4fcf1018}{PlanCallbackFn}
+\begin{DoxyCompactList}\small\item\em Callback function during planner execute. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PlannerBase_a109c37d3de7ee99f93c740a2df0e5e34}{InitPlan} (RobotBasePtr robot, PlannerParametersConstPtr params)=0
+\begin{DoxyCompactList}\small\item\em Setup scene, robot, and properties of the plan, and reset all internal structures. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classOpenRAVE_1_1PlannerBase_ac1d85f92b0e42d911c1cab6db2c90b61}{InitPlan} (RobotBasePtr robot, std::istream \&isParameters)
+\begin{DoxyCompactList}\small\item\em Setup scene, robot, and properties of the plan, and reset all structures with pparams. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200e}{PlannerStatus} \hyperlink{classOpenRAVE_1_1PlannerBase_a7ce22311b1f81ec6b9bacdf457d4631a}{PlanPath} (TrajectoryBasePtr ptraj)=0
+\begin{DoxyCompactList}\small\item\em Executes the main planner trying to solve for the goal condition. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200e}{PlannerStatus} \hyperlink{classOpenRAVE_1_1PlannerBase_a9ec338cf4116a2bf8b874cde2aa28967}{PlanPath} (TrajectoryBasePtr ptraj, boost::shared\_\-ptr$<$ std::ostream $>$ pOutStream) \hyperlink{namespaceOpenRAVE_af23fc4c2c72950a8c02f38ef71680bc6}{RAVE\_\-DEPRECATED}
+\item 
+\hypertarget{classOpenRAVE_1_1PlannerBase_a2d4fa4877d4f75fc207f1e8243b647dc}{
+virtual PlannerParametersConstPtr \hyperlink{classOpenRAVE_1_1PlannerBase_a2d4fa4877d4f75fc207f1e8243b647dc}{GetParameters} () const =0}
+\label{classOpenRAVE_1_1PlannerBase_a2d4fa4877d4f75fc207f1e8243b647dc}
+
+\begin{DoxyCompactList}\small\item\em return the internal parameters of the planner \item\end{DoxyCompactList}\item 
+virtual UserDataPtr \hyperlink{classOpenRAVE_1_1PlannerBase_a7b72116e4770d98f2a78297246a679e8}{RegisterPlanCallback} (const \hyperlink{classOpenRAVE_1_1PlannerBase_af66cf367615e6c51bab4473f4fcf1018}{PlanCallbackFn} \&callbackfn)
+\begin{DoxyCompactList}\small\item\em register a function that is called periodically during the plan loop. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static InterfaceType \hyperlink{classOpenRAVE_1_1PlannerBase_affeafe65e7c4094f282d273dedbf069b}{GetInterfaceTypeStatic} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{namespaceOpenRAVE_a7cead738b92cbe2f332dea20dd2f200e}{PlannerStatus} \hyperlink{classOpenRAVE_1_1PlannerBase_a0e418a8cb5f9392ed0db1f1f9ec9d8ce}{\_\-ProcessPostPlanners} (RobotBasePtr probot, TrajectoryBasePtr ptraj)
+\begin{DoxyCompactList}\small\item\em Calls a planner to optimizes the trajectory path. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{namespaceOpenRAVE_a16104fe58cdf1075c47eb709e58ba853}{PlannerAction} \hyperlink{classOpenRAVE_1_1PlannerBase_a4b980a3cc0e8fc7abd2d0afe472ef695}{\_\-CallCallbacks} (const \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerProgress}{PlannerProgress} \&progress)
+\begin{DoxyCompactList}\small\item\em Calls the registered callbacks in order and returns immediately when an action other than PA\_\-None is returned. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+{\bfseries \mbox{[}interface\mbox{]}} Planner interface that generates trajectories for target objects to follow through the environment. {\bfseries If not specified, method is not multi-\/thread safe.} See \hyperlink{arch__planner}{Planner Concepts}. 
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classOpenRAVE_1_1PlannerBase_af66cf367615e6c51bab4473f4fcf1018}{
+\index{OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}!PlanCallbackFn@{PlanCallbackFn}}
+\index{PlanCallbackFn@{PlanCallbackFn}!OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}}
+\paragraph[{PlanCallbackFn}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::function$<${\bf PlannerAction}(const {\bf PlannerProgress}\&)$>$ {\bf PlanCallbackFn}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_af66cf367615e6c51bab4473f4fcf1018}
+
+
+Callback function during planner execute. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em progress}]planner progress information \end{DoxyParams}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classOpenRAVE_1_1PlannerBase_a4b980a3cc0e8fc7abd2d0afe472ef695}{
+\index{OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}!\_\-CallCallbacks@{\_\-CallCallbacks}}
+\index{\_\-CallCallbacks@{\_\-CallCallbacks}!OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}}
+\paragraph[{\_\-CallCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf PlannerAction} \_\-CallCallbacks (const {\bf PlannerProgress} \& {\em progress})\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_a4b980a3cc0e8fc7abd2d0afe472ef695}
+
+
+Calls the registered callbacks in order and returns immediately when an action other than PA\_\-None is returned. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em progress}]planner progress information \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PlannerBase_a0e418a8cb5f9392ed0db1f1f9ec9d8ce}{
+\index{OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}!\_\-ProcessPostPlanners@{\_\-ProcessPostPlanners}}
+\index{\_\-ProcessPostPlanners@{\_\-ProcessPostPlanners}!OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}}
+\paragraph[{\_\-ProcessPostPlanners}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf PlannerStatus} \_\-ProcessPostPlanners (RobotBasePtr {\em probot}, \/  TrajectoryBasePtr {\em ptraj})\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_a0e418a8cb5f9392ed0db1f1f9ec9d8ce}
+
+
+Calls a planner to optimizes the trajectory path. 
+
+The \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters} structure passed into the optimization planner is constructed with the same freespace constraints as this planner. This function should always be called in PlanPath to post-\/process the trajectory. 
+\begin{DoxyParams}{Parameters}
+\item[{\em probot}]the robot this trajectory is meant for, also uses the robot for checking collisions. \item[{\em ptraj}]Initial trajectory to be smoothed is inputted. If optimization path succeeds, final trajectory output is set in this variable. The trajectory is for the configuration degrees of freedom defined by the planner parameters. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PlannerBase_affeafe65e7c4094f282d273dedbf069b}{
+\index{OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}!GetInterfaceTypeStatic@{GetInterfaceTypeStatic}}
+\index{GetInterfaceTypeStatic@{GetInterfaceTypeStatic}!OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}}
+\paragraph[{GetInterfaceTypeStatic}]{\setlength{\rightskip}{0pt plus 5cm}static InterfaceType GetInterfaceTypeStatic ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_affeafe65e7c4094f282d273dedbf069b}
+\begin{DoxyReturn}{Returns}
+the static interface type this class points to (used for safe casting) 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1PlannerBase_ac1d85f92b0e42d911c1cab6db2c90b61}{
+\index{OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}!InitPlan@{InitPlan}}
+\index{InitPlan@{InitPlan}!OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}}
+\paragraph[{InitPlan}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InitPlan (RobotBasePtr {\em robot}, \/  std::istream \& {\em isParameters})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_ac1d85f92b0e42d911c1cab6db2c90b61}
+
+
+Setup scene, robot, and properties of the plan, and reset all structures with pparams. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em robot}]main robot to be used for planning \item[{\em isParameters}]The serialized form of the parameters. By default, this exists to allow third parties to pass information to planners without excplicitly knowning the format/internal structures used \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if plan is initialized successfully and initial conditions are satisfied. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1PlannerBase_a109c37d3de7ee99f93c740a2df0e5e34}{
+\index{OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}!InitPlan@{InitPlan}}
+\index{InitPlan@{InitPlan}!OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}}
+\paragraph[{InitPlan}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool InitPlan (RobotBasePtr {\em robot}, \/  PlannerParametersConstPtr {\em params})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_a109c37d3de7ee99f93c740a2df0e5e34}
+
+
+Setup scene, robot, and properties of the plan, and reset all internal structures. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em robot}]main robot to be used for planning \item[{\em params}]The parameters of the planner, any class derived from \hyperlink{classOpenRAVE_1_1PlannerBase_1_1PlannerParameters}{PlannerParameters} can be passed. The planner should copy these parameters for future instead of storing the pointer. \end{DoxyParams}
+\hypertarget{classOpenRAVE_1_1PlannerBase_a9ec338cf4116a2bf8b874cde2aa28967}{
+\index{OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}!PlanPath@{PlanPath}}
+\index{PlanPath@{PlanPath}!OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}}
+\paragraph[{PlanPath}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf PlannerStatus} PlanPath (TrajectoryBasePtr {\em ptraj}, \/  boost::shared\_\-ptr$<$ std::ostream $>$ {\em pOutStream})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_a9ec338cf4116a2bf8b874cde2aa28967}
+\hypertarget{classOpenRAVE_1_1PlannerBase_a7ce22311b1f81ec6b9bacdf457d4631a}{
+\index{OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}!PlanPath@{PlanPath}}
+\index{PlanPath@{PlanPath}!OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}}
+\paragraph[{PlanPath}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf PlannerStatus} PlanPath (TrajectoryBasePtr {\em ptraj})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_a7ce22311b1f81ec6b9bacdf457d4631a}
+
+
+Executes the main planner trying to solve for the goal condition. 
+
+Fill ptraj with the trajectory of the planned path that the robot needs to execute 
+\begin{DoxyParams}{Parameters}
+\item[{\em ptraj}]The output trajectory the robot has to follow in order to successfully complete the plan. If this planner is a path optimizer, the trajectory can be used as an input for generating a smoother path. The trajectory is for the configuration degrees of freedom defined by the planner parameters. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status that the planner returned in. 
+\end{DoxyReturn}
+\hypertarget{classOpenRAVE_1_1PlannerBase_a7b72116e4770d98f2a78297246a679e8}{
+\index{OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}!RegisterPlanCallback@{RegisterPlanCallback}}
+\index{RegisterPlanCallback@{RegisterPlanCallback}!OpenRAVE::PlannerBase@{OpenRAVE::PlannerBase}}
+\paragraph[{RegisterPlanCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual UserDataPtr RegisterPlanCallback (const {\bf PlanCallbackFn} \& {\em callbackfn})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classOpenRAVE_1_1PlannerBase_a7b72116e4770d98f2a78297246a679e8}
+
+
+register a function that is called periodically during the plan loop. 
+
+Allows the calling process to control the behavior of the planner from a high-\/level perspective 
